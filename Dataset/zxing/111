@@ -1,0 +1,1308 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Add support for Android portrait mode · Issue #111 · zxing/zxing · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Add support for Android portrait mode · Issue #111 · zxing/zxing" name="twitter:title" /><meta content="" name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/57275?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/57275?v=3&amp;s=400" property="og:image" /><meta content="Add support for Android portrait mode · Issue #111 · zxing/zxing" property="og:title" /><meta content="https://github.com/zxing/zxing/issues/111" property="og:url" /><meta content="" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:4803:727B30:55DB589F" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="18ix2LUkN8uNhrSpoXk4wmmBPyV2SNqA+FdVFBsNmyAtKQvnxu/eGpCfgn3EgBX0iDCgmBYL0dTLPOXUwlc3fQ==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="22e6cb7d309429ee0eaff86792eaf1c3">
+
+      
+  <meta name="description" content="zxing - Official ZXing (&quot;Zebra Crossing&quot;) project home">
+  <meta name="go-import" content="github.com/zxing/zxing git https://github.com/zxing/zxing.git">
+
+  <meta content="1122572" name="octolytics-dimension-user_id" /><meta content="zxing" name="octolytics-dimension-user_login" /><meta content="2562751" name="octolytics-dimension-repository_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2562751" name="octolytics-dimension-repository_network_root_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/zxing/zxing/commits/master.atom" rel="alternate" title="Recent Commits to zxing:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fzxing%2Fzxing%2Fissues%2F111" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/zxing/zxing/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/zxing/zxing/watchers">
+    789
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/zxing/zxing/stargazers">
+      5,886
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/zxing/zxing/network" class="social-count">
+        3,739
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/zxing" class="url fn" itemprop="url" rel="author"><span itemprop="title">zxing</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/zxing/zxing" data-pjax="#js-repo-pjax-container">zxing</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/zxing/zxing/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/zxing/zxing" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /zxing/zxing">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/zxing/zxing/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /zxing/zxing/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/zxing/zxing/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /zxing/zxing/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/zxing/zxing/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /zxing/zxing/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/zxing/zxing/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /zxing/zxing/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/zxing/zxing/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /zxing/zxing/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="e0ce741453ed6cf39fdbb347ec019421718f1f46" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Yv5QNVosHnFTsfSKHWfvgCE5BF4nSCu+4N6u7Vv93Cmy17gd/rJEkZpb3zsu2zbIJUeXb+RFFjayvaLB8AE+ZQ==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="e0ce741453ed6cf39fdbb347ec019421718f1f46" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="LWYsKtGS44Dt5ci6EKQQl0HygaPP9+GumyuXZ5+ozD9eK2sSi4DMLgvC6Z3o+SWglyZjvXadhFdPrOY5+IMZKA==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/zxing/zxing/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of zxing/zxing as a zip file"
+                 title="Download the contents of zxing/zxing as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #fff !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #fff !important;}.label-select-menu .labelstyle-009800.selected {  background:rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #fff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #fff !important;}.label-select-menu .labelstyle-e11d21.selected {  background:rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #282d33 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #282d33 !important;}.label-select-menu .labelstyle-c7def8.selected {  background:rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="zxing/zxing:issue:31326895"
+    data-url="/zxing/zxing/issues/111/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/zxing/zxing/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Add support for Android portrait mode</span>
+      <span class="gh-header-number">#111</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-open">
+          <span class="octicon octicon-issue-opened"></span>
+          Open
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/donv" class="author">donv</a> opened this <span class="noun">Issue</span> <time datetime="2014-04-11T13:23:43Z" is="relative-time">Apr 11, 2014</time>
+        &middot; 17 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:issue:31326895"
+     data-url="/zxing/zxing/issues/111/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/111?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="e0ce741453ed6cf39fdbb347ec019421718f1f46" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="HScgW65DiHI7K7FW9soOLroervDBJGvLsFxCE6YhXIjVurbHB8py7894yuspCfwGSYc2fcITT+NaheyCEqKnZg==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+      <a href="/zxing/zxing/labels/android" class="label css-truncate-target linked-labelstyle-c7def8" title="android">android</a>
+  <a href="/zxing/zxing/labels/enhancement" class="label css-truncate-target linked-labelstyle-009800" title="enhancement">enhancement</a>
+
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/111/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="e0ce741453ed6cf39fdbb347ec019421718f1f46" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="nyWhLPi6B1tcVepJLux4MA4r89aRVoOb1NeqkZxI8vWdSL3IQKX0ezNjBZ5cQ4a8dz6IdF49ivhxlFyThF3Ptw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/111?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="e0ce741453ed6cf39fdbb347ec019421718f1f46" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="hJsH10XsUUkuGYoPLY5rUyjNhmLEUl/LT6NYNxSxjc83vIJ3uqlmZZKRALk1T/XSwiFXH2QafgRAzhdGz9G1aw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:issue:31326895"
+      data-url="/zxing/zxing/issues/111/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      14 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="donv" href="/donv"><img alt="@donv" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/57275?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="srowen" href="/srowen"><img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="peitek" href="/peitek"><img alt="@peitek" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/3457989?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="devjack" href="/devjack"><img alt="@devjack" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/3516066?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="youyi1314" href="/youyi1314"><img alt="@youyi1314" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/8391468?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="dpolivy" href="/dpolivy"><img alt="@dpolivy" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/3200655?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="WACMemphis" href="/WACMemphis"><img alt="@WACMemphis" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/3762841?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="fbreda" href="/fbreda"><img alt="@fbreda" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/8764415?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="chepe263" href="/chepe263"><img alt="@chepe263" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/2464891?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="edy1" href="/edy1"><img alt="@edy1" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/2520211?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="mifa" href="/mifa"><img alt="@mifa" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/323650?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="dimitrovskif" href="/dimitrovskif"><img alt="@dimitrovskif" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/8115972?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="skzinzuwadia" href="/skzinzuwadia"><img alt="@skzinzuwadia" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/2544203?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="schildbach" href="/schildbach"><img alt="@schildbach" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/743306?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="zxing/zxing:marked-as-read:31326895">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/donv"><img alt="@donv" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/57275?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-31326895"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="d41d8cd98f00b204e9800998ecf8427e">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/donv" class="author">donv</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-31326895" class="timestamp">
+      <time datetime="2014-04-11T13:23:43Z" is="relative-time">Apr 11, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p class="text-muted">
+            <em>No description provided.</em>
+          </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-40204600"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="82682e5ed54c9650bfef46db678f955a">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-40204600" class="timestamp">
+      <time datetime="2014-04-11T13:44:36Z" is="relative-time">Apr 11, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>A bit of good news -- it already exists, although in the for-pay version.<br>
+<a href="https://play.google.com/store/apps/details?id=com.srowen.bs.android">https://play.google.com/store/apps/details?id=com.srowen.bs.android</a></p>
+
+<p>It seems inevitable that this UI will be back-ported, like other features in that app. It's more feasible than it was. </p>
+
+<p>It would be strange to have two quite different new UIs, so on the one hand you could say, no, nobody submit a new different portrait UI here. But then I'd be in the position of arguing against a valid enhancement just because I hadn't gotten around to back-porting the other UI.</p>
+
+<p>But nobody has proposed any work on a portrait UI, so the issue hasn't been forced.</p>
+
+<p>I think we could do two ways here. If someone suggested a minimal update to the current UI that made it work in portrait, I'd merge that with whatever internal changes are needed to really get it right and commit the result. It seems reasonable to entertain a new UI that is not the same as in BS+ but is as like the BS UI as possible.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/peitek"><img alt="@peitek" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/3457989?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46125851"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="7015440590904d38e35615ff0672d21c">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/peitek" class="author">peitek</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46125851" class="timestamp">
+      <time datetime="2014-06-15T19:54:01Z" is="relative-time">Jun 15, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>+1</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devjack"><img alt="@devjack" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/3516066?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-51706160"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="e7b06da91b00e0309f4d16bb0704be37">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devjack" class="author">devjack</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-51706160" class="timestamp">
+      <time datetime="2014-08-10T04:43:07Z" is="relative-time">Aug 10, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm looking at implementing support for the BarcodeScannerFragment to be used in portrait mode, similar size and dimensions to Facebook Messengers 'quick photo' feature.  Problem being (I think) the framingRect passed into PlanarYUVLuminanceSource from CameraManager is of the wrong dimentions.</p>
+
+<p>This goes a little beyond my android experience here w/ the camera manager so keen to hear thoughts on solving.  From what I've been able to determine so far I suspect making the crop/framingrect more flexible will mean the fragment can be used in any dimension.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-51709979"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="90cbf796d15206de888c1e81b81c6df3">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-51709979" class="timestamp">
+      <time datetime="2014-08-10T09:16:11Z" is="relative-time">Aug 10, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yes, you have to request a preview size like "480x800" instead of "800x480" in portrait. You will also need to account for rotation, since the preview frame you get is still relative to the camera's orientation and may need to be 'rotated' to be read. And, the camera's orientation is not necessarily the same on all devices. And it's flipped for front cameras!</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/youyi1314"><img alt="@youyi1314" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/8391468?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-52219757"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="5420f747b90d55ff7d002caa8a6913fc">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/youyi1314" class="author">youyi1314</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-52219757" class="timestamp">
+      <time datetime="2014-08-14T18:06:24Z" is="relative-time">Aug 14, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Nice, <br>
+I wish to have it support both portrait and landscape by using rotate the phone.<br>
+and also i like the barcodescanner+ layout, wish to has it update.</p>
+
+<p>Thanks srowen for the source, I'm still learning android development skill.<br>
+Best Regards.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+      
+
+
+  <div class="discussion-item discussion-item-labeled">
+    <div class="discussion-item-header" id="event-156647840">
+
+      <span class="octicon octicon-tag discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+        added <span class="label-color" style="background-color: #009800;" title="by srowen at 2014-08-25 08:22:53"><a href="/zxing/zxing/labels/enhancement" style="color: #fff">enhancement</a></span> <span class="label-color" style="background-color: #c7def8;" title="by srowen at 2014-08-25 08:23:59"><a href="/zxing/zxing/labels/android" style="color: #282d33">android</a></span> labels <a href="https://github.com/zxing/zxing/issues/111#event-156647840" class="timestamp"><time class="timestamp" datetime="2014-08-25T08:22:53Z" is="relative-time">Aug 25, 2014</time></a>
+    </div>
+  </div>
+
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/dpolivy"><img alt="@dpolivy" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/3200655?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-62766218"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="ef878c197c3ccb9d6c7f67eccdc71f9e">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/dpolivy" class="author">dpolivy</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-62766218" class="timestamp">
+      <time datetime="2014-11-12T18:25:40Z" is="relative-time">Nov 12, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'd love to see this added, as well. Using <a href="http://stackoverflow.com/questions/10216943/android-zxing-change-orientation-to-portrait">this post</a> as a guide, I'm able to get it working for the majority of users -- but I'm not sure it correctly accounts for base camera orientation. I have one user, who is using a custom ROM (Temasek, based on CM 11.0, and SlimKat) where the preview output is completely garbled.</p>
+
+<p>Any tips on how/where to detect and compensate for camera orientation if it isn't defaulting to landscape? I'm happy to help contribute to this item if I can.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/WACMemphis"><img alt="@WACMemphis" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/3762841?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-73738798"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="7015440590904d38e35615ff0672d21c">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/WACMemphis" class="author">WACMemphis</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-73738798" class="timestamp">
+      <time datetime="2015-02-10T17:06:23Z" is="relative-time">Feb 10, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>+1</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/fbreda"><img alt="@fbreda" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/8764415?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-73739215"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="28ad81c28572283c0cef15c5af4a0453">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-73739215" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/fbreda" class="author">fbreda</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-73739215" class="timestamp">
+      <time datetime="2015-02-10T17:08:25Z" is="relative-time">Feb 10, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">+1
+
+2015-02-10 15:06 GMT-02:00 WACMemphis &lt;notifications@github.com&gt;:</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply"> +1
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/zxing/zxing/issues/111#issuecomment-73738798">https://github.com/zxing/zxing/issues/111#issuecomment-73738798</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-73740366"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="0528cd8b2b31e5cdd16dc37f7a4e1aeb">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-73740366" class="timestamp">
+      <time datetime="2015-02-10T17:14:07Z" is="relative-time">Feb 10, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi all, +1 won't do anything, there's nobody taking feature requests, but I'll work with someone who wants to implement this to merge it with my implementation to make something best of both worlds.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/chepe263"><img alt="@chepe263" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/2464891?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-85667979"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="e01f3ed83d4ab0b1f08daaf442f1ec9b">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/chepe263" class="author">chepe263</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-85667979" class="timestamp">
+      <time datetime="2015-03-24T19:55:37Z" is="relative-time">Mar 24, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I was reading the help in the application. When my deviced changed orientation to landscape, the help went white. Is this the same issue?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/edy1"><img alt="@edy1" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2520211?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-89483904"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="7015440590904d38e35615ff0672d21c">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/edy1" class="author">edy1</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-89483904" class="timestamp">
+      <time datetime="2015-04-04T02:17:26Z" is="relative-time">Apr 4, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>+1</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mifa"><img alt="@mifa" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/323650?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-95532973"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="7015440590904d38e35615ff0672d21c">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mifa" class="author">mifa</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-95532973" class="timestamp">
+      <time datetime="2015-04-23T10:43:42Z" is="relative-time">Apr 23, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>+1</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-95534859"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="f7fdeb7bbf66fb66634eca9fd839a1dc">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-95534859" class="timestamp">
+      <time datetime="2015-04-23T10:45:54Z" is="relative-time">Apr 23, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><a href="https://github.com/edy1" class="user-mention">@edy1</a> <a href="https://github.com/mifa" class="user-mention">@mifa</a> did you read my comment? +1 is just spam unless you are going to contribute code.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/dimitrovskif"><img alt="@dimitrovskif" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/8115972?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-96389284"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="6e0bb0ecdde023b4968efd68e3fc6ead">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/dimitrovskif" class="author">dimitrovskif</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-96389284" class="timestamp">
+      <time datetime="2015-04-26T14:15:33Z" is="relative-time">Apr 26, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The method described <a href="http://stackoverflow.com/questions/16252791/zxing-camera-in-portrait-mode-on-android">here</a> doesn't work on ZXing 3.2 because the viewport is a little bit stretched.</p>
+
+<p>Any fix? I have rough idea of how <code>SurfaceView</code>, <code>CameraConfigurationManager</code> and <code>CameraManager</code> work, but I can't figure out why the preview math doesn't work.</p>
+
+<p>(I have a 5 day deadline to finish QR scanning, and our app is portrait - I am basically f*cked)</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/dimitrovskif"><img alt="@dimitrovskif" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/8115972?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-96788654"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="8068f2ea0e34aa26d32190206b24fab8">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/dimitrovskif" class="author">dimitrovskif</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-96788654" class="timestamp">
+      <time datetime="2015-04-27T19:28:51Z" is="relative-time">Apr 27, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think this problem can be solved by using some code from <a href="https://github.com/dlazaro66/QRCodeReaderView">this project</a></p>
+
+<p>It's a lightweight library for <code>zxing-core</code> which works in portrait mode. I compared scanning QR codes, there are only two differences: </p>
+
+<ul>
+<li><p>QRCodeReaderView has higher autofocus interval (easily modifiable)</p></li>
+<li><p>QRCodeReaderView does not crop a specific zone, it scans the whole camera frame (easily modifiable)</p></li>
+</ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/skzinzuwadia"><img alt="@skzinzuwadia" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/2544203?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-101619864"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="115acd74385edce58e0f1b66763d4ed8">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/skzinzuwadia" class="author">skzinzuwadia</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-101619864" class="timestamp">
+      <time datetime="2015-05-13T10:41:51Z" is="relative-time">May 13, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi,<br>
+<a href="https://github.com/dlazaro66/QRCodeReaderView">https://github.com/dlazaro66/QRCodeReaderView</a><br>
+it did not support code 128</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/schildbach"><img alt="@schildbach" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/743306?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-101745590"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="da40be5fa58e7f5296b47bed1c5a783d">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/schildbach" class="author">schildbach</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-101745590" class="timestamp">
+      <time datetime="2015-05-13T16:55:00Z" is="relative-time">May 13, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Does QRCodeReaderView work <em>only</em> in portrait orientation? Unfortunately, then it would not solve my problem. My app works both in portrait and landscape, and the goal is using the scanner should not switch orientations.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+
+
+<!-- Rendered timeline since 2015-05-13 09:55:00 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:issue:31326895"
+      data-url="/zxing/zxing/issues/111/show_partial?partial=issues%2Ftimeline_marker&amp;since=1431536100"
+      data-last-modified="Wed, 13 May 2015 16:55:00 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/notifications/mark?ids=29804791" class="hidden js-timeline-marker-form" data-form-nonce="e0ce741453ed6cf39fdbb347ec019421718f1f46" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="x4/2jkYYLPYmC3kGCAW8Vnf0yomkPUWxL8LgmnRM8xwyN/Uv1vsrF/DrCueJaef5WkR9qORFStov4Feh2xiZnw==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fzxing%2Fzxing%2Fissues%2F111" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.16511s from github-fe116-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2ba3b257a78c3bd28dab11d07ddc8e6b1cf5280066968cc8501b99bf58f64a63.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-dd3051b3b36fed71a99e2c164f3e1eb38a8beaf40dc272fd2807febc8bd46a7f.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

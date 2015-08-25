@@ -1,0 +1,1554 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Minimum change needed to get the camera working on Glass by paulpv · Pull Request #38 · zxing/zxing · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Minimum change needed to get the camera working on Glass by paulpv · Pull Request #38 · zxing/zxing" name="twitter:title" /><meta content="" name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/1393897?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/1393897?v=3&amp;s=400" property="og:image" /><meta content="Minimum change needed to get the camera working on Glass by paulpv · Pull Request #38 · zxing/zxing" property="og:title" /><meta content="https://github.com/zxing/zxing/pull/38" property="og:url" /><meta content="" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:349E:28AE3F4:55DB5811" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="fpAxFkw2vn2UbxZj5GBQL2rZZizdw5dhAVPof+At1UsDr4o4lUunHk7QlHFletaqF66QeeQBJEgHR1C5TxsIsw==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="22e6cb7d309429ee0eaff86792eaf1c3">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/zxing/zxing/pull/38.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/zxing/zxing/pull/38.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #fff !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #fff !important;}.label-select-menu .labelstyle-009800.selected {  background:rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #fff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #fff !important;}.label-select-menu .labelstyle-e11d21.selected {  background:rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #282d33 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #282d33 !important;}.label-select-menu .labelstyle-c7def8.selected {  background:rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/zxing/zxing/pull/38" data-pjax-transient>
+
+  <meta name="description" content="zxing - Official ZXing (&quot;Zebra Crossing&quot;) project home">
+  <meta name="go-import" content="github.com/zxing/zxing git https://github.com/zxing/zxing.git">
+
+  <meta content="1122572" name="octolytics-dimension-user_id" /><meta content="zxing" name="octolytics-dimension-user_login" /><meta content="2562751" name="octolytics-dimension-repository_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2562751" name="octolytics-dimension-repository_network_root_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/zxing/zxing/commits/d1f5627551d8a1dd19ca2c618bb233a1d2c590f2.atom" rel="alternate" title="Recent Commits to zxing:d1f5627551d8a1dd19ca2c618bb233a1d2c590f2" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fzxing%2Fzxing%2Fpull%2F38" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/zxing/zxing/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/zxing/zxing/watchers">
+    789
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/zxing/zxing/stargazers">
+      5,886
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/zxing/zxing/network" class="social-count">
+        3,739
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/zxing" class="url fn" itemprop="url" rel="author"><span itemprop="title">zxing</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/zxing/zxing" data-pjax="#js-repo-pjax-container">zxing</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/zxing/zxing/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/zxing/zxing" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /zxing/zxing">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/zxing/zxing/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /zxing/zxing/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/zxing/zxing/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /zxing/zxing/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/zxing/zxing/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /zxing/zxing/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/zxing/zxing/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /zxing/zxing/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/zxing/zxing/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /zxing/zxing/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="276424b57f25f48d8fbc7349fcd9da2a05283dbc" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="phFYUk5MaSn4Dh6524Pry2/jqW3UT1n2fKElmwTRKcbbzHx26ut8icxaI20Yj6Oc4vwyr1mtevGTSvAsc3HtJQ==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="276424b57f25f48d8fbc7349fcd9da2a05283dbc" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="YVtG2NQetZNg286LdRLI98D24vrVqxiIQO/+SnrOOTtNaVQ2KiuGopsssp0gXLN1TgNp0NrCwCDnyS93oczM9w==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/zxing/zxing/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of zxing/zxing as a zip file"
+                 title="Download the contents of zxing/zxing as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;42cfa9ca3edaf561c91098207a0f65d7f1713146&quot; -->
+<!-- head sha1: &quot;d1f5627551d8a1dd19ca2c618bb233a1d2c590f2&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="zxing/zxing:pull_request:11826166"
+    data-url="/zxing/zxing/pull/38/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Minimum change needed to get the camera working on Glass</span>
+      <span class="gh-header-number">#38</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-merged">
+          <span class="octicon octicon-git-pull-request"></span>
+          Merged
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/srowen" class="author pull-header-username css-truncate css-truncate-target expandable">
+    srowen
+  </a>
+  merged 1 commit into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">zxing</span>:<span class="css-truncate-target">master</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">paulpv</span>:<span class="css-truncate-target">glass-gdk</span></span>
+
+
+  <time datetime="2014-01-24T08:08:38Z" is="relative-time">Jan 24, 2014</time>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="zxing/zxing:branch:glass-gdk"
+    data-url=/zxing/zxing/pull/38/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +5
+        </span>
+        <span class="text-diff-deleted">
+          −0
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="5 lines changed">
+          <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span>
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/zxing/zxing/pull/38" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        3
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/38/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/38/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          1
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:issue:26208444"
+     data-url="/zxing/zxing/issues/38/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/38?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="276424b57f25f48d8fbc7349fcd9da2a05283dbc" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="v+zQkjrcr4nnjpvy6kl/woyUJT3qkYKNIGr+W8IcVJoRiRT9G5du6hZdACQduUdtOuYDiTUqueIfVxrYdObKcQ==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/38/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="276424b57f25f48d8fbc7349fcd9da2a05283dbc" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="tKcubmelj2mvwjhqv2E9f9p8o2Dm5cgWzzDoSQFMuUonS1+AfA5VkHIXPcD8ha2tNfvQRC10EFmMTaKNpdoenQ==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      <span class="progress-bar"><span class="progress" style="width: 100.0%">&nbsp;</span></span>
+  <a title="3.0.0" href="/zxing/zxing/milestones/3.0.0" class="milestone-name css-truncate">
+    <span class="css-truncate-target">3.0.0</span>
+  </a>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/38?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="276424b57f25f48d8fbc7349fcd9da2a05283dbc" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="hX7qrt2zyRNnnWMeggPKOsg5aqQ/te2VZ7FDPBG2AGTASPJyiq1LK+u/ghWGm1DcRtwF8lbdYdSHzsZxZoGjNA==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+    <img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" />
+    <a href="/zxing/zxing/pulls/assigned/srowen" class="assignee css-truncate-target">srowen</a>
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:issue:26208444"
+      data-url="/zxing/zxing/issues/38/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="paulpv" href="/paulpv"><img alt="@paulpv" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/1393897?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="srowen" href="/srowen"><img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="zxing/zxing:marked-as-read:11826166">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/paulpv"><img alt="@paulpv" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/1393897?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-26208444"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="d41d8cd98f00b204e9800998ecf8427e">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/paulpv" class="author">paulpv</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-26208444" class="timestamp">
+      <time datetime="2014-01-23T23:38:03Z" is="relative-time">Jan 23, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p class="text-muted">
+            <em>No description provided.</em>
+          </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-d1f5627">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:d1f5627551d8a1dd19ca2c618bb233a1d2c590f2"
+    data-url="/zxing/zxing/commit/d1f5627551d8a1dd19ca2c618bb233a1d2c590f2/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/paulpv"><img alt="@paulpv" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/1393897?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/paulpv" class="author" rel="contributor">paulpv</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/paulpv/zxing-eclipse/commit/d1f5627551d8a1dd19ca2c618bb233a1d2c590f2" class="message" data-pjax="true" title="Minimum change needed to get the camera working on Glass.">Minimum change needed to get the camera working on Glass.</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+    <div class="commit-build-statuses">
+        <a class="text-success tooltipped tooltipped-w"
+           aria-label="Success: The Travis CI build passed"
+           href="https://travis-ci.org/zxing/zxing/builds/17515255">
+          <span class="octicon octicon-check"></span>
+        </a>
+    </div>
+
+
+      <code><a href="/paulpv/zxing-eclipse/commit/d1f5627551d8a1dd19ca2c618bb233a1d2c590f2" class="commit-id">d1f5627</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  
+
+
+      
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-merged js-details-container">
+  <div class="discussion-item-header" id="event-88354591">
+
+      <button type="button" class="btn btn-outline js-details-target">
+        <span class="discussion-item-toggler-opened">Hide details</span>
+        <span class="discussion-item-toggler-closed">View details</span>
+      </button>
+
+    <span class="octicon octicon-git-merge discussion-item-icon"></span>
+    <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+    <a href="/srowen" class="author">srowen</a>
+    merged commit <a href="/zxing/zxing/commit/9e08da655eb6d5423b286f83aa356230536b13a5"><code class="discussion-item-entity">9e08da6</code></a> into <span class="commit-ref js-selectable-text"><span class="css-truncate-target user">zxing</span>:<span class="css-truncate-target">master</span></span>  <a href="https://github.com/zxing/zxing/pull/38#event-88354591" class="timestamp"><time class="timestamp" datetime="2014-01-24T08:08:38Z" is="relative-time">Jan 24, 2014</time></a>
+
+      <div class="discussion-item-footer">
+        1 check passed
+      </div>
+  </div>
+
+
+    <div class="discussion-item-details">
+      <h4 class="discussion-item-details-header">
+        1 check passed
+      </h4>
+      <div class="build-statuses-list">
+          <div class="build-status-item">
+              <a href="https://travis-ci.org/zxing/zxing/builds/17515255" class="build-status-details right">Details</a>
+
+            <span class="build-status-icon octicon octicon-check text-success"></span>
+            <span class="text-muted css-truncate css-truncate-target">
+              <strong class="text-emphasized">
+                default
+              </strong>
+              The Travis CI build passed
+            </span>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+  <div class="closed-banner"></div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-33204228"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="ec743aa29e206c0ecdbd1ee66207b5b5">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-33204228" class="timestamp">
+      <time datetime="2014-01-24T08:08:42Z" is="relative-time">Jan 24, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm always reluctant to set additional camera parameters, since I guarantee you there's some awful off-brand tablet that will crash even on this 100% correct code. Since we're on to Android 4+ now, and most of the awfulness is/was contained to Android 2.x-based clones, maybe time to stop fearing the camera API.</p>
+
+<p>This will pick the range with the smallest <em>max</em> instead of smallest <em>min</em>. I assume that's desired and/or what happens to work?</p>
+
+<p>I'd like to make a slightly more conservative change, to call set only if the value doesn't match the current setting. Sounds weird but I've learned to be extremely defensive in coding here.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/paulpv"><img alt="@paulpv" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/1393897?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-33204654"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="a9ae485f24ca8e7501d5aa8b29343a93">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/paulpv" class="author">paulpv</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-33204654" class="timestamp">
+      <time datetime="2014-01-24T08:18:08Z" is="relative-time">Jan 24, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sounds good to me!<br>
+The default FPS on Glass was 60000,60000.<br>
+That was causing the skewing.<br>
+The recommend value in the forums was 30000,30000.<br>
+That worked fine, but I tried 5000,5000 and that looked OK to me; 5 FPS seems fast enough for a barcode scanner powered by a tiny battery.<br>
+Feel free to play around; I'll pull any change you make and verify it works on Glass.</p>
+
+<p>One heads up: while running the app in scan mode for over a minute, the Glass home screen actually started to complain that "Glass must cool down to run smoothly".<br>
+That's the main reason I chose the lowest FPS instead of the forums' 30k.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-33206800"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="7df12441a26d40010b766f44c30e008c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-33206800" class="timestamp">
+      <time datetime="2014-01-24T09:00:36Z" is="relative-time">Jan 24, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Agree, that should be generally a good idea. Although, hmm, I suppose that we should establish a minimum of... 5fps? If a phone says it will happily provide data at 0.1fps, probably not good to select that.</p>
+
+<p>I am going to back-port a few other advanced camera features from BS+, separately. Will be interesting to see whether Glass likes them or not.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-28f2a30">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author" truncate="true">srowen</a>
+
+      referenced
+      this pull request
+      from a commit
+      <a href="#ref-commit-28f2a30" class="timestamp">
+        <time datetime="2014-01-24T09:37:32Z" is="relative-time">Jan 24, 2014</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:28f2a301c20bb74fe4827a1bceca4b8f2e5be61c"
+    data-url="/zxing/zxing/commit/28f2a301c20bb74fe4827a1bceca4b8f2e5be61c/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/srowen"><img alt="@srowen" class="avatar avatar-small" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/srowen" class="author" rel="contributor">srowen</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/zxing/zxing/commit/28f2a301c20bb74fe4827a1bceca4b8f2e5be61c" class="message" data-pjax="true" title="Issue #38 : Add minimum FPS to be safe">Issue</a> <a href="https://github.com/zxing/zxing/pull/38" class="issue-link" title="Minimum change needed to get the camera working on Glass">#38</a> <a href="/zxing/zxing/commit/28f2a301c20bb74fe4827a1bceca4b8f2e5be61c" class="message" data-pjax="true" title="Issue #38 : Add minimum FPS to be safe">: Add minimum FPS to be safe</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+        <a href="/zxing/zxing/commit/28f2a301c20bb74fe4827a1bceca4b8f2e5be61c#comments" aria-label="View comments on this commit">
+          <span class="octicon octicon-comment-discussion"></span>
+</a>
+
+      <code><a href="/zxing/zxing/commit/28f2a301c20bb74fe4827a1bceca4b8f2e5be61c" class="commit-id">28f2a30</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-a8c9897">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author" truncate="true">srowen</a>
+
+      referenced
+      this pull request
+      from a commit
+      <a href="#ref-commit-a8c9897" class="timestamp">
+        <time datetime="2014-01-24T20:23:21Z" is="relative-time">Jan 24, 2014</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:a8c9897da3d26ac8da7c0eac6b6fc1db45d6fd40"
+    data-url="/zxing/zxing/commit/a8c9897da3d26ac8da7c0eac6b6fc1db45d6fd40/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/srowen"><img alt="@srowen" class="avatar avatar-small" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/srowen" class="author" rel="contributor">srowen</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/zxing/zxing/commit/a8c9897da3d26ac8da7c0eac6b6fc1db45d6fd40" class="message" data-pjax="true" title="Issue #38 : extra defensive -- don't even assume the list is sorted in case of buggy phones">Issue</a> <a href="https://github.com/zxing/zxing/pull/38" class="issue-link" title="Minimum change needed to get the camera working on Glass">#38</a> <a href="/zxing/zxing/commit/a8c9897da3d26ac8da7c0eac6b6fc1db45d6fd40" class="message" data-pjax="true" title="Issue #38 : extra defensive -- don't even assume the list is sorted in case of buggy phones">: extra defensive -- don't even assume the list is sorted i…</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>…n case of buggy phones</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/zxing/zxing/commit/a8c9897da3d26ac8da7c0eac6b6fc1db45d6fd40" class="commit-id">a8c9897</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-db7008b">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@michaelochs" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/1901926?v=3&amp;s=32" width="16" />
+      <a href="/michaelochs" class="author" truncate="true">michaelochs</a>
+
+      referenced
+      this pull request
+      from a commit
+        in rockabyte/zxing
+      <a href="#ref-commit-db7008b" class="timestamp">
+        <time datetime="2014-02-21T13:26:54Z" is="relative-time">Feb 21, 2014</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:db7008b49417b7ded60110eeec3dfcc48ac5b9cb"
+    data-url="/zxing/zxing/commit/db7008b49417b7ded60110eeec3dfcc48ac5b9cb/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/srowen"><img alt="@srowen" class="avatar avatar-small" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/srowen" class="author" rel="contributor">srowen</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/rockabyte/zxing/commit/db7008b49417b7ded60110eeec3dfcc48ac5b9cb" class="message" data-pjax="true" title="Issue #38 : Add minimum FPS to be safe">Issue</a> <a href="https://github.com/zxing/zxing/pull/38" class="issue-link" title="Minimum change needed to get the camera working on Glass">#38</a> <a href="/rockabyte/zxing/commit/db7008b49417b7ded60110eeec3dfcc48ac5b9cb" class="message" data-pjax="true" title="Issue #38 : Add minimum FPS to be safe">: Add minimum FPS to be safe</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/rockabyte/zxing/commit/db7008b49417b7ded60110eeec3dfcc48ac5b9cb" class="commit-id">db7008b</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-16e425f">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@michaelochs" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/1901926?v=3&amp;s=32" width="16" />
+      <a href="/michaelochs" class="author" truncate="true">michaelochs</a>
+
+      referenced
+      this pull request
+      from a commit
+        in rockabyte/zxing
+      <a href="#ref-commit-16e425f" class="timestamp">
+        <time datetime="2014-02-21T13:26:54Z" is="relative-time">Feb 21, 2014</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:16e425f1b24e35d1df570c781a55c379431738db"
+    data-url="/zxing/zxing/commit/16e425f1b24e35d1df570c781a55c379431738db/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/srowen"><img alt="@srowen" class="avatar avatar-small" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/srowen" class="author" rel="contributor">srowen</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/rockabyte/zxing/commit/16e425f1b24e35d1df570c781a55c379431738db" class="message" data-pjax="true" title="Issue #38 : extra defensive -- don't even assume the list is sorted in case of buggy phones">Issue</a> <a href="https://github.com/zxing/zxing/pull/38" class="issue-link" title="Minimum change needed to get the camera working on Glass">#38</a> <a href="/rockabyte/zxing/commit/16e425f1b24e35d1df570c781a55c379431738db" class="message" data-pjax="true" title="Issue #38 : extra defensive -- don't even assume the list is sorted in case of buggy phones">: extra defensive -- don't even assume the list is sorted i…</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>…n case of buggy phones</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/rockabyte/zxing/commit/16e425f1b24e35d1df570c781a55c379431738db" class="commit-id">16e425f</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-milestoned">
+    <div class="discussion-item-header" id="event-97016254">
+
+      <span class="octicon octicon-milestone discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+      added this to the <a href="/zxing/zxing/milestones/3.0.0" class="discussion-item-entity">3.0.0</a> milestone <a href="https://github.com/zxing/zxing/pull/38#event-97016254" class="timestamp"><time class="timestamp" datetime="2014-02-26T14:27:06Z" is="relative-time">Feb 26, 2014</time></a>
+    </div>
+  </div>
+
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-assigned">
+    <div class="discussion-item-header" id="event-97020579">
+
+      <span class="octicon octicon-person discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+      self-assigned this   <a href="https://github.com/zxing/zxing/pull/38#event-97020579" class="timestamp"><time class="timestamp" datetime="2014-02-26T14:38:47Z" is="relative-time">Feb 26, 2014</time></a>
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- Rendered timeline since 2014-02-26 06:38:47 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:pull_request:11826166"
+      data-url="/zxing/zxing/pull/38/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1393425527"
+      data-last-modified="Wed, 26 Feb 2014 14:38:47 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/notifications/mark?ids=24156590" class="hidden js-timeline-marker-form" data-form-nonce="276424b57f25f48d8fbc7349fcd9da2a05283dbc" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="b4leuJqCzZ2Wxqlwz1rk0kIiHsX+SxFogm9k11kBpry567IjaYXcVNBhSI188q7KBTnCMZmgGldswRtRRmqFQg==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fzxing%2Fzxing%2Fpull%2F38" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:branch:glass-gdk"
+     data-url="/zxing/zxing/pull/38/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Jan 23, 2014
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:commit:d1f5627551d8a1dd19ca2c618bb233a1d2c590f2"
+      data-url="/zxing/zxing/commit/d1f5627551d8a1dd19ca2c618bb233a1d2c590f2/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/paulpv" data-skip-pjax="true" rel="contributor"><img alt="@paulpv" class="avatar" height="36" src="https://avatars0.githubusercontent.com/u/1393897?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/paulpv/zxing-eclipse/commit/d1f5627551d8a1dd19ca2c618bb233a1d2c590f2" class="message" data-pjax="true" title="Minimum change needed to get the camera working on Glass.">Minimum change needed to get the camera working on Glass.</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/paulpv" class="commit-author" rel="contributor">paulpv</a>
+ authored <time datetime="2014-01-23T23:37:19Z" is="relative-time">Jan 23, 2014</time>
+
+
+        <span class="commit-indicator">
+          
+    <div class="commit-build-statuses">
+        <a class="text-success tooltipped tooltipped-e"
+           aria-label="Success: The Travis CI build passed"
+           href="https://travis-ci.org/zxing/zxing/builds/17515255">
+          <span class="octicon octicon-check"></span>
+        </a>
+    </div>
+
+        </span>
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="d1f5627551d8a1dd19ca2c618bb233a1d2c590f2" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/paulpv/zxing-eclipse/commit/d1f5627551d8a1dd19ca2c618bb233a1d2c590f2" class="sha btn btn-outline">
+        d1f5627
+      </a>
+    </div>
+    <a href="/zxing/zxing/tree/d1f5627551d8a1dd19ca2c618bb233a1d2c590f2" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+    <div id="files_bucket" class="files-bucket tab-content pull-request-tab-content ">
+
+      <div class="flash flash-warn stale-files-tab js-pull-request-stale-files js-socket-channel"
+   data-channel="zxing/zxing:pull_request:11826166:diff"
+   data-url="https://github.com/zxing/zxing/pull/38/live_update">
+    This page is out of date. <a href="https://github.com/zxing/zxing/pull/38/files">Refresh</a> to see the latest.
+</div>
+
+
+      
+
+
+
+
+      <div id='diff' class="uncommentable">
+        <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/zxing/zxing/pull/38/files?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/zxing/zxing/pull/38/files?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <span class="octicon octicon-diff"></span>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      1 changed file
+    </button>
+    with
+    <strong>5 additions</strong>
+    and <strong>0 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +5
+          </span>
+          <span class="text-diff-deleted">
+            −0
+          </span>
+          <a href="#diff-f89f2e06bb1157a5aaeb1784b0c0d796" class="tooltipped tooltipped-s" aria-label="5 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span>
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-f89f2e06bb1157a5aaeb1784b0c0d796">android/src/com/google/zxing/client/android/camera/CameraConfigurationManager.java</a>
+    </li>
+  </ol>
+</div>
+
+        <div id="files" class="diff-view ">
+    
+      <a name="diff-f89f2e06bb1157a5aaeb1784b0c0d796"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="android/src/com/google/zxing/client/android/camera/CameraConfigurationManager.java">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/paulpv/zxing-eclipse/blob/d1f5627551d8a1dd19ca2c618bb233a1d2c590f2/android/src/com/google/zxing/client/android/camera/CameraConfigurationManager.java" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version d1f5627 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="5 additions &amp; 0 deletions">5 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span></span></span>
+
+            <span class="js-selectable-text" title="android/src/com/google/zxing/client/android/camera/CameraConfigurationManager.java">
+              android/src/com/google/zxing/client/android/camera/CameraConfigurationManager.java
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-f89f2e06bb1157a5aaeb1784b0c0d796"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/8782d9787c3ea2bfd10800691acc830849b859f0?diff=unified&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=90&amp;next_line_num_right=90&amp;path=android%2Fsrc%2Fcom%2Fgoogle%2Fzxing%2Fclient%2Fandroid%2Fcamera%2FCameraConfigurationManager.java&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=11"
+            data-left-range="1-89" data-right-range="1-89">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -90,6 +90,11 @@ void setDesiredCameraParameters(Camera camera, boolean safeMode) {</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796L90" data-line-number="90"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R90" data-line-number="90"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-smi">SharedPreferences</span> prefs <span class="pl-k">=</span> <span class="pl-smi">PreferenceManager</span><span class="pl-k">.</span>getDefaultSharedPreferences(context);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796L91" data-line-number="91"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R91" data-line-number="91"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796L92" data-line-number="92"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R92" data-line-number="92"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     initializeTorch(parameters, prefs, safeMode);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R93" data-line-number="93"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R94" data-line-number="94"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-c">// Required for Glass compatibility; also improves battery/CPU performance a tad</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R95" data-line-number="95"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">List&lt;int[]&gt;</span> supportedPreviewFpsRanges <span class="pl-k">=</span> parameters<span class="pl-k">.</span>getSupportedPreviewFpsRange();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R96" data-line-number="96"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">int</span>[] minimumPreviewFpsRange <span class="pl-k">=</span> supportedPreviewFpsRanges<span class="pl-k">.</span>get(<span class="pl-c1">0</span>);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R97" data-line-number="97"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    parameters<span class="pl-k">.</span>setPreviewFpsRange(minimumPreviewFpsRange[<span class="pl-c1">0</span>], minimumPreviewFpsRange[<span class="pl-c1">1</span>]);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796L93" data-line-number="93"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R98" data-line-number="98"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796L94" data-line-number="94"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R99" data-line-number="99"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-smi">String</span> focusMode <span class="pl-k">=</span> <span class="pl-c1">null</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796L95" data-line-number="95"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-f89f2e06bb1157a5aaeb1784b0c0d796R100" data-line-number="100"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (prefs<span class="pl-k">.</span>getBoolean(<span class="pl-smi">PreferencesActivity</span><span class="pl-c1"><span class="pl-k">.</span>KEY_AUTO_FOCUS</span>, <span class="pl-c1">true</span>)) {</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-f89f2e06bb1157a5aaeb1784b0c0d796"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/zxing/zxing/blob_excerpt/8782d9787c3ea2bfd10800691acc830849b859f0?diff=unified&amp;mode=100644&amp;path=android%2Fsrc%2Fcom%2Fgoogle%2Fzxing%2Fclient%2Fandroid%2Fcamera%2FCameraConfigurationManager.java&amp;prev_line_num_left=95&amp;prev_line_num_right=100"
+          data-left-range="96-312"
+          data-right-range="101-312">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+      </div>
+
+      
+
+    <div class="clearfix"></div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.33811s from github-fe132-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2ba3b257a78c3bd28dab11d07ddc8e6b1cf5280066968cc8501b99bf58f64a63.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-dd3051b3b36fed71a99e2c164f3e1eb38a8beaf40dc272fd2807febc8bd46a7f.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

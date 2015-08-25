@@ -1,0 +1,1298 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>NPE when rotating device several times within short time · Issue #584 · mapsforge/mapsforge · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="NPE when rotating device several times within short time · Issue #584 · mapsforge/mapsforge" name="twitter:title" /><meta content="One of our users reported a strange bug: when rotating the device several times in a very short times, mapsforge crashes with a null pointer exception. (for reference https://code.google.com/p/open..." name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/8270020?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/8270020?v=3&amp;s=400" property="og:image" /><meta content="NPE when rotating device several times within short time · Issue #584 · mapsforge/mapsforge" property="og:title" /><meta content="https://github.com/mapsforge/mapsforge/issues/584" property="og:url" /><meta content="One of our users reported a strange bug: when rotating the device several times in a very short times, mapsforge crashes with a null pointer exception. (for reference https://code.google.com/p/open..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:5D11:FCEED7:55DB65AE" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="IQb5Vok177sMMN9bL1Gsbvy39EgB+g5VV4YzOvXrNIfropegnaLLAxkyGcFWS8fvqqWA6M1qRoBRTCiqIHLSUA==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+      
+  <meta name="description" content="The new home of mapsforge.">
+  <meta name="go-import" content="github.com/mapsforge/mapsforge git https://github.com/mapsforge/mapsforge.git">
+
+  <meta content="430042" name="octolytics-dimension-user_id" /><meta content="mapsforge" name="octolytics-dimension-user_login" /><meta content="26262349" name="octolytics-dimension-repository_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="26262349" name="octolytics-dimension-repository_network_root_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/mapsforge/mapsforge/commits/master.atom" rel="alternate" title="Recent Commits to mapsforge:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fmapsforge%2Fmapsforge%2Fissues%2F584" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/mapsforge/mapsforge/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/mapsforge/mapsforge/watchers">
+    35
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/mapsforge/mapsforge/stargazers">
+      161
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/mapsforge/mapsforge/network" class="social-count">
+        82
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/mapsforge" class="url fn" itemprop="url" rel="author"><span itemprop="title">mapsforge</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/mapsforge/mapsforge" data-pjax="#js-repo-pjax-container">mapsforge</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/mapsforge/mapsforge/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/mapsforge/mapsforge" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /mapsforge/mapsforge">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/mapsforge/mapsforge/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /mapsforge/mapsforge/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/mapsforge/mapsforge/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /mapsforge/mapsforge/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/mapsforge/mapsforge/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /mapsforge/mapsforge/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/mapsforge/mapsforge/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /mapsforge/mapsforge/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/mapsforge/mapsforge/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /mapsforge/mapsforge/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="46145470c25654a93705d6571aee349f10584908" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="gaAJrhmHaXFYvGdgrck2mzV3mEmW8BdymZHeilucsiwkdqdgBbYjKoaDcJC3xUhaZYiZieFPXmWpNxsQ5Gyd5w==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="46145470c25654a93705d6571aee349f10584908" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QwwoxWLsfBrHTqm8/7VY9zm6+tLlZ9QPxeO9tgY+OlVsV+aRR+/ryF/yJ1yka43mMDOP8G9ENCyHMDo/Qr6z4w==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/mapsforge/mapsforge/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of mapsforge/mapsforge as a zip file"
+                 title="Download the contents of mapsforge/mapsforge as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-FFFFFF, .linked-labelstyle-FFFFFF {  background-color: #FFFFFF !important;  color: #333333 !important;}.labelstyle-FFFFFF.selected {  background-color: #FFFFFF !important;  color: #333333 !important;}.label-select-menu .labelstyle-FFFFFF.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-84b6eb, .linked-labelstyle-84b6eb {  background-color: #84b6eb !important;  color: #1c2733 !important;}.labelstyle-84b6eb.selected {  background-color: #84b6eb !important;  color: #1c2733 !important;}.label-select-menu .labelstyle-84b6eb.selected {  background:rgba(132, 182, 235, 0.12) !important;  color: #557699 !important;}
+
+span.labelstyle-159818, .linked-labelstyle-159818 {  background-color: #159818 !important;  color: #fff !important;}.labelstyle-159818.selected {  background-color: #159818 !important;  color: #fff !important;}.label-select-menu .labelstyle-159818.selected {  background:rgba(21, 152, 24, 0.12) !important;  color: #159918 !important;}
+
+span.labelstyle-e6e6e6, .linked-labelstyle-e6e6e6 {  background-color: #e6e6e6 !important;  color: #333333 !important;}.labelstyle-e6e6e6.selected {  background-color: #e6e6e6 !important;  color: #333333 !important;}.label-select-menu .labelstyle-e6e6e6.selected {  background:rgba(230, 230, 230, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-cc317c, .linked-labelstyle-cc317c {  background-color: #cc317c !important;  color: #fff !important;}.labelstyle-cc317c.selected {  background-color: #cc317c !important;  color: #fff !important;}.label-select-menu .labelstyle-cc317c.selected {  background:rgba(204, 49, 124, 0.12) !important;  color: #99245c !important;}
+
+span.labelstyle-ffffff, .linked-labelstyle-ffffff {  background-color: #ffffff !important;  color: #333333 !important;}.labelstyle-ffffff.selected {  background-color: #ffffff !important;  color: #333333 !important;}.label-select-menu .labelstyle-ffffff.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="mapsforge/mapsforge:issue:59355405"
+    data-url="/mapsforge/mapsforge/issues/584/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/mapsforge/mapsforge/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">NPE when rotating device several times within short time</span>
+      <span class="gh-header-number">#584</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-issue-closed"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/wish7code" class="author">wish7code</a> opened this <span class="noun">Issue</span> <time datetime="2015-02-28T19:53:02Z" is="relative-time">Feb 28, 2015</time>
+        &middot; 11 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:issue:59355405"
+     data-url="/mapsforge/mapsforge/issues/584/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/584?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="46145470c25654a93705d6571aee349f10584908" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="nWzV/Fc1fF/E8cg5u2w5qGoggTqbi+pFjnjrqp/opedyeRKmsW/yVB/o+izsI3C5XG9WqVwpVFcR9VmJe5Inkg==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/584/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="46145470c25654a93705d6571aee349f10584908" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="s9iIfg3JJdHvHzExdLuTva4cXLB/rqT0kGmIGtJoV0s9y4OzKMeoNUHGvf7sQR5cJl8LGVpwYsX+ZppHQgno4g==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/584?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="46145470c25654a93705d6571aee349f10584908" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="fquuG0vIlccA89FgtOO1jVWh5RPVahr4fLv2My8nDQWD580cHDz+4gbr6d08WAixdff7XxENMvl9drMLxQUxiA==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:issue:59355405"
+      data-url="/mapsforge/mapsforge/issues/584/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      3 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="wish7code" href="/wish7code"><img alt="@wish7code" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/8270020?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="devemux86" href="/devemux86"><img alt="@devemux86" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="applantation" href="/applantation"><img alt="@applantation" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="mapsforge/mapsforge:marked-as-read:59355405">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/wish7code"><img alt="@wish7code" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/8270020?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-59355405"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="7f670ee0f6e98245a38b911df1a8c6ec">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/wish7code" class="author">wish7code</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-59355405" class="timestamp">
+      <time datetime="2015-02-28T19:53:02Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>One of our users reported a strange bug: when rotating the device several times in a very short times, mapsforge crashes with a null pointer exception. (for reference <a href="https://code.google.com/p/openbmap/issues/detail?id=72">https://code.google.com/p/openbmap/issues/detail?id=72</a>)</p>
+
+<p>Version is mapsforge-0.5.0.<br>
+I can reproduce the NPE on my Nexus 4 device (although I need to shake for several seconds and it doesn't happen in every case)</p>
+
+<p>Relevant log cat from my Nexus 4:<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442): Caused by: java.lang.NullPointerException<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at org.mapsforge.map.layer.cache.FileSystemTileCache.deleteDirectory(FileSystemTileCache.java:99)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at org.mapsforge.map.layer.cache.FileSystemTileCache.destroy(FileSystemTileCache.java:198)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at org.mapsforge.map.layer.cache.TwoLevelTileCache.destroy(TwoLevelTileCache.java:49)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at org.openbmap.activities.MapViewActivity.releaseMap(MapViewActivity.java:1006)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at org.openbmap.activities.MapViewActivity.onDestroy(MapViewActivity.java:380)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at android.support.v4.app.Fragment.performDestroy(Fragment.java:2006)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1076)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1126)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1108)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at android.support.v4.app.FragmentManagerImpl.dispatchDestroy(FragmentManager.java:1954)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at android.support.v4.app.FragmentActivity.onDestroy(FragmentActivity.java:313)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at com.actionbarsherlock.app.SherlockFragmentActivity.onDestroy(SherlockFragmentActivity.java:87)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at org.openbmap.activities.HostActivity.onDestroy(HostActivity.java:306)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at android.app.Activity.performDestroy(Activity.java:5491)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1117)<br>
+02-28 20:43:26.710 E/AndroidRuntime(15442):     at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3491)</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76542887"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="55fdac369c47f35d35a4eeb55c1d74f3">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76542887" class="timestamp">
+      <time datetime="2015-02-28T19:56:33Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks for the report. Are you using threaded cache?</p>
+
+<p>By the way you don't need to restart the activity at each device orientation change (if you don't want).</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/wish7code"><img alt="@wish7code" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/8270020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76543819"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="84541b4494ee805c628afc765e09f9b4">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/wish7code" class="author">wish7code</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76543819" class="timestamp">
+      <time datetime="2015-02-28T20:17:27Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hey emux!</p>
+
+<blockquote>
+<p>Are you using threaded cache?</p>
+</blockquote>
+
+<p>Well, I can't say exactly. I think I used some code snippet from the mailing list or the sample app.<br>
+Here's the cache initialization:</p>
+
+<p><code><br>
+public static TileCache createExternalStorageTileCache(final Context c, final String id) {<br>
+        TileCache firstLevelTileCache = new InMemoryTileCache(32);<br>
+        String cacheDirectoryName = c.getExternalCacheDir().getAbsolutePath() + File.separator + id;<br>
+        File cacheDirectory = new File(cacheDirectoryName);<br>
+        if (!cacheDirectory.exists()) {<br>
+            cacheDirectory.mkdir();<br>
+        }<br>
+        TileCache secondLevelTileCache = new FileSystemTileCache(1024, cacheDirectory, AndroidGraphicFactory.INSTANCE);<br>
+        return new TwoLevelTileCache(firstLevelTileCache, secondLevelTileCache);<br>
+    }<br>
+</code></p>
+
+<p>Can you determine from the code, whether this is a threaded cache?</p>
+
+<blockquote>
+<p>By the way you don't need to restart the activity at each device orientation change (if you don't want).</p>
+</blockquote>
+
+<p>I remember there were some issues when not recreating the app. Anyways this screen rotation thing is sort of a personal nightmare for me :-)</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76544871"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="efafb9d8f16d64bbaf96946108d097c8">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76544871" class="timestamp">
+      <time datetime="2015-02-28T20:40:04Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>That code doesn't create a threaded cache.<br>
+But you're using fixed values for memory and file cache sizes (probably from AWT sample).</p>
+
+<p>I recommend to use one of <code>AndroidUtil.createTileCache</code> methods which perform the needed calculations for cache size based on device characteristics.</p>
+
+<p>You can check <a href="https://github.com/mapsforge/mapsforge/blob/master/docs/Getting-Started-Android-App.md">Getting-Started-Android-App</a> wiki for a complete implementation.</p>
+
+<p>About activity restart you can read also <a href="https://groups.google.com/d/msg/mapsforge-dev/7Mem4S1Aotw/ryJJqB2Li4MJ">here</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/wish7code"><img alt="@wish7code" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/8270020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76546571"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="170ecff1b8728c9fd9dbf09299cf6e9e">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/wish7code" class="author">wish7code</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76546571" class="timestamp">
+      <time datetime="2015-02-28T21:17:49Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I changed the code as you suggested and now I sitting here shaking and spinning my phone (quite funny picture):<br>
+The NPE seems gone so far, but I wondering: does the suggested fix just circumvent the problem or was the NPE a real bug?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76546656"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="2475de62c60e997e20cd2526823134d6">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76546656" class="timestamp">
+      <time datetime="2015-02-28T21:20:11Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>I changed the code as you suggested</p>
+</blockquote>
+
+<p>What code do you mean, for the cache creation or the activity restart?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/wish7code"><img alt="@wish7code" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/8270020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76546810"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="fabf52b0c0bff61ad3ed490527f81940">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/wish7code" class="author">wish7code</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76546810" class="timestamp">
+      <time datetime="2015-02-28T21:23:40Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sorry, meant the cache creation (activity restart remained unchanged)..<br>
+Now cache creation reads</p>
+
+<p><code>AndroidUtil.createTileCache(this.getActivity(), "mapcache", mMapView.getModel().displayModel.getTileSize(), 1f, this.mMapView.getModel().frameBufferModel.getOverdrawFactor());</code></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-7d7dd3c">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author" truncate="true">devemux86</a>
+
+      referenced
+      this issue
+      from a commit
+      <a href="#ref-commit-7d7dd3c" class="timestamp">
+        <time datetime="2015-02-28T21:38:42Z" is="relative-time">Feb 28, 2015</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:7d7dd3c3954673cd47850f3955eb34b61c139d0b"
+    data-url="/mapsforge/mapsforge/commit/7d7dd3c3954673cd47850f3955eb34b61c139d0b/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/devemux86"><img alt="@devemux86" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/devemux86" class="author" rel="contributor">devemux86</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mapsforge/mapsforge/commit/7d7dd3c3954673cd47850f3955eb34b61c139d0b" class="message" data-pjax="true" title="FileSystemTileCache fix for #584: NPE during cache dir delete">FileSystemTileCache fix for</a> <a href="https://github.com/mapsforge/mapsforge/issues/584" class="issue-link" title="NPE when rotating device several times within short time">#584</a><a href="/mapsforge/mapsforge/commit/7d7dd3c3954673cd47850f3955eb34b61c139d0b" class="message" data-pjax="true" title="FileSystemTileCache fix for #584: NPE during cache dir delete">: NPE during cache dir delete</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/mapsforge/mapsforge/commit/7d7dd3c3954673cd47850f3955eb34b61c139d0b" class="commit-id">7d7dd3c</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76547634"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="6134fabb750ad1c59851fb8d6310f3fa">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76547634" class="timestamp">
+      <time datetime="2015-02-28T21:43:15Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The suggested code is for creating a properly calculated cache for mobile use.</p>
+
+<p>I checked the 0.5.0 src, the NPE is at the point of <a href="https://github.com/mapsforge/mapsforge/blob/0.5.0/mapsforge-map/src/main/java/org/mapsforge/map/layer/cache/FileSystemTileCache.java#L99">deleting</a> the cache folder at activity end.</p>
+
+<p>Apparently during consecutive restarts, the cache folder does not have enough time to be created and we try to delete a non existed directory.</p>
+
+<p>I pushed a fix with <a href="https://github.com/mapsforge/mapsforge/commit/7d7dd3c3954673cd47850f3955eb34b61c139d0b" class="commit-link"><tt>7d7dd3c</tt></a> at dev.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/applantation"><img alt="@applantation" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76547755"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="66c19eb2047d39206aec0a2f72d841e9">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-76547755" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/applantation" class="author">applantation</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76547755" class="timestamp">
+      <time datetime="2015-02-28T21:45:51Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">Thanks, that fix should probably soon be integrated into master, that way
+it would make it into the 0.5.1 release.
+
+Ludwig</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 28 February 2015 at 18:43, Emux &lt;notifications@github.com&gt; wrote:
+ The suggested code is for creating a properly calculated cache for mobile
+ use.
+
+ I checked the 0.5.0 src, the NPE is at the point of deleting
+ &lt;<a href="https://github.com/mapsforge/mapsforge/blob/0.5.0/mapsforge-map/src/main/java/org/mapsforge/map/layer/cache/FileSystemTileCache.java#L99">https://github.com/mapsforge/mapsforge/blob/0.5.0/mapsforge-map/src/main/java/org/mapsforge/map/layer/cache/FileSystemTileCache.java#L99</a>&gt;
+ the cache folder at activity end.
+
+ Apparently during consecutive restarts, the cache folder does not have
+ enough time to be created and we try to delete a non existed directory.
+
+ I pushed a fix with <a href="https://github.com/mapsforge/mapsforge/commit/7d7dd3c3954673cd47850f3955eb34b61c139d0b" class="commit-link"><tt>7d7dd3c</tt></a>
+ &lt;<a href="https://github.com/mapsforge/mapsforge/commit/7d7dd3c3954673cd47850f3955eb34b61c139d0b">https://github.com/mapsforge/mapsforge/commit/7d7dd3c3954673cd47850f3955eb34b61c139d0b</a>&gt;
+ at dev.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/584#issuecomment-76547634">https://github.com/mapsforge/mapsforge/issues/584#issuecomment-76547634</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76548178"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="7015440590904d38e35615ff0672d21c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76548178" class="timestamp">
+      <time datetime="2015-02-28T21:50:13Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>+1</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/wish7code"><img alt="@wish7code" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/8270020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76549086"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="0ca7c6283a66fc02a841a9eee6447764">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/wish7code" class="author">wish7code</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76549086" class="timestamp">
+      <time datetime="2015-02-28T21:56:01Z" is="relative-time">Feb 28, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Let me say thanks to both of you!!!!!!!<br>
+Your joint efforts to make mapsforge better and better are so incredible :-)<br>
+Thanks a lot!</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-243927882">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author">devemux86</a>
+      closed this   <a href="https://github.com/mapsforge/mapsforge/issues/584#event-243927882" class="timestamp"><time class="timestamp" datetime="2015-03-01T09:36:46Z" is="relative-time">Mar 1, 2015</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-5be8efc">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author" truncate="true">devemux86</a>
+
+      referenced
+      this issue
+      from a commit
+      <a href="#ref-commit-5be8efc" class="timestamp">
+        <time datetime="2015-03-03T12:01:27Z" is="relative-time">Mar 3, 2015</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:5be8efc97fc03c84a85684a05129e230a3ca5f74"
+    data-url="/mapsforge/mapsforge/commit/5be8efc97fc03c84a85684a05129e230a3ca5f74/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/devemux86"><img alt="@devemux86" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/devemux86" class="author" rel="contributor">devemux86</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mapsforge/mapsforge/commit/5be8efc97fc03c84a85684a05129e230a3ca5f74" class="message" data-pjax="true" title="FileSystemTileCache fix for #584: NPE during cache dir delete
+(cherry picked from commit 7d7dd3c3954673cd47850f3955eb34b61c139d0b)">FileSystemTileCache fix for</a> <a href="https://github.com/mapsforge/mapsforge/issues/584" class="issue-link" title="NPE when rotating device several times within short time">#584</a><a href="/mapsforge/mapsforge/commit/5be8efc97fc03c84a85684a05129e230a3ca5f74" class="message" data-pjax="true" title="FileSystemTileCache fix for #584: NPE during cache dir delete
+(cherry picked from commit 7d7dd3c3954673cd47850f3955eb34b61c139d0b)">: NPE during cache dir delete</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>(cherry picked from commit <a href="https://github.com/mapsforge/mapsforge/commit/7d7dd3c3954673cd47850f3955eb34b61c139d0b" class="commit-link"><tt>7d7dd3c</tt></a>)</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/mapsforge/mapsforge/commit/5be8efc97fc03c84a85684a05129e230a3ca5f74" class="commit-id">5be8efc</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/applantation"><img alt="@applantation" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76933298"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="eca2a7c4b2791b96d3dfb66778151aea">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-76933298" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/applantation" class="author">applantation</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76933298" class="timestamp">
+      <time datetime="2015-03-03T12:02:37Z" is="relative-time">Mar 3, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">I have pushed this fix to master.</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 1 March 2015 at 06:36, Emux &lt;notifications@github.com&gt; wrote:
+ Closed <a href="https://github.com/mapsforge/mapsforge/issues/584" class="issue-link" title="NPE when rotating device several times within short time">#584</a> &lt;<a href="https://github.com/mapsforge/mapsforge/issues/584">https://github.com/mapsforge/mapsforge/issues/584</a>&gt;.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/584#event-243927882">https://github.com/mapsforge/mapsforge/issues/584#event-243927882</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+      <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-pullrequest-86710080">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@ludwigb" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" />
+      <a href="/ludwigb" class="author" truncate="true">ludwigb</a>
+
+      referenced
+      this issue
+      <a class="timestamp" href="#ref-pullrequest-86710080">
+        <time datetime="2015-06-10T04:39:32Z" is="relative-time">Jun 10, 2015</time>
+      </a>
+    </div>
+
+      <span class="state state-open right">
+          <span class="octicon octicon-git-pull-request"></span>
+        Open
+      </span>
+
+
+
+    <h3 class="discussion-item-ref-title">
+      <a href="/mapsforge/mapsforge/issues/625" class="title-link">
+        Cluster-Marker Example 
+        <span class="issue-num">#625</span>
+</a>    </h3>
+    
+  </div>
+
+
+
+
+
+<!-- Rendered timeline since 2015-06-09 21:39:32 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:issue:59355405"
+      data-url="/mapsforge/mapsforge/issues/584/show_partial?partial=issues%2Ftimeline_marker&amp;since=1433911172"
+      data-last-modified="Wed, 10 Jun 2015 04:39:32 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/notifications/mark?ids=60685020" class="hidden js-timeline-marker-form" data-form-nonce="46145470c25654a93705d6571aee349f10584908" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Waxt+Q32Tgn3d0kjekyJQTTcNJ06lqOSQDZ9PUu0G+HRcHNQ/HktXD98CwB6dUtRehcVx/+Yfohng68zheWs4Q==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fmapsforge%2Fmapsforge%2Fissues%2F584" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.24975s from github-fe123-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

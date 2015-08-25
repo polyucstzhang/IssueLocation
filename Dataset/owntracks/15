@@ -1,0 +1,1257 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>[CLOSED] Layout Issues v4.02 on Galaxy S2 · Issue #15 · owntracks/android · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="[CLOSED] Layout Issues v4.02 on Galaxy S2 · Issue #15 · owntracks/android" name="twitter:title" /><meta content="Issue by ijwhite from Thursday Nov 28, 2013 at 21:31 GMT
+Originally opened as binarybucks/mqttitude#216
+
+
+
+On the samsung Galaxy S2:
+
+
+Datetime is truncated leaving on the seconds value of the time..." name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=400" property="og:image" /><meta content="[CLOSED] Layout Issues v4.02 on Galaxy S2 · Issue #15 · owntracks/android" property="og:title" /><meta content="https://github.com/owntracks/android/issues/15" property="og:url" /><meta content="Issue by ijwhite from Thursday Nov 28, 2013 at 21:31 GMT
+Originally opened as binarybucks/mqttitude#216
+
+
+
+On the samsung Galaxy S2:
+
+
+Datetime is truncated leaving on the seconds value of the time..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:5D18:270C2C4:55DB5C0F" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="Py+NzQTkHUh0JnU9sjUeiM7/tlHlpopwJwyh9qljxMEBEVHLf3VVoCtLjyG3YXNWJ1USMciuPcOW1bdbiGlMNw==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+      
+  <meta name="description" content="android - OwnTracks Android App">
+  <meta name="go-import" content="github.com/owntracks/android git https://github.com/owntracks/android.git">
+
+  <meta content="6574523" name="octolytics-dimension-user_id" /><meta content="owntracks" name="octolytics-dimension-user_login" /><meta content="16479425" name="octolytics-dimension-repository_id" /><meta content="owntracks/android" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="16479425" name="octolytics-dimension-repository_network_root_id" /><meta content="owntracks/android" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/owntracks/android/commits/master.atom" rel="alternate" title="Recent Commits to android:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fowntracks%2Fandroid%2Fissues%2F15" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/owntracks/android/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fowntracks%2Fandroid"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/owntracks/android/watchers">
+    34
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fowntracks%2Fandroid"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/owntracks/android/stargazers">
+      162
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fowntracks%2Fandroid"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/owntracks/android/network" class="social-count">
+        103
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/owntracks" class="url fn" itemprop="url" rel="author"><span itemprop="title">owntracks</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/owntracks/android" data-pjax="#js-repo-pjax-container">android</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/owntracks/android/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/owntracks/android" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /owntracks/android">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/owntracks/android/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /owntracks/android/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/owntracks/android/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /owntracks/android/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/owntracks/android/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /owntracks/android/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/owntracks/android/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /owntracks/android/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/owntracks/android.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/owntracks/android" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="65a82d5f187b2f87830f464893e92ff5b31aa808" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="TFW26lRc3GhN/M67XVrlXf9r7t/yD3T2p0F4sGJnIS+9/EFspoHs3evNvhdrIrhA9vt/us7ETNd7juYCiN0e4A==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="65a82d5f187b2f87830f464893e92ff5b31aa808" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ATie4plJR7o2OpHh+zzfLdNla5SFwgV/79+lBZgFZjetHHv2We6RnPUuchzFOP5G7erRDxwTir2ME0TX3NM58A==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/owntracks/android/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of owntracks/android as a zip file"
+                 title="Download the contents of owntracks/android as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-fef2c0, .linked-labelstyle-fef2c0 {  background-color: #fef2c0 !important;  color: #333026 !important;}.labelstyle-fef2c0.selected {  background-color: #fef2c0 !important;  color: #333026 !important;}.label-select-menu .labelstyle-fef2c0.selected {  background:rgba(254, 242, 192, 0.12) !important;  color: #989173 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="owntracks/android:issue:26878994"
+    data-url="/owntracks/android/issues/15/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/owntracks/android/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">[CLOSED] Layout Issues v4.02 on Galaxy S2</span>
+      <span class="gh-header-number">#15</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-issue-closed"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/jpmens" class="author">jpmens</a> opened this <span class="noun">Issue</span> <time datetime="2014-02-04T12:46:58Z" is="relative-time">Feb 4, 2014</time>
+        &middot; 13 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="owntracks/android:issue:26878994"
+     data-url="/owntracks/android/issues/15/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/issues/15?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="65a82d5f187b2f87830f464893e92ff5b31aa808" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="G+cVWAazrbqRxozSxxKVnnPqf9SH5omMwWRMMdvkNb4wd6uERLnuviS6kQ7l4HYBiQ5VWFmqbQ++r8Tq0f4qGw==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/issues/15/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="65a82d5f187b2f87830f464893e92ff5b31aa808" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="adgoyXF2ydLfld6vU/h+E9uSyvvqgnWJFT+ZvM+3YrZbaC7Ahmi8tc3UjKyueHGX9xw36JTXy+ssaKZotZkcig==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/issues/15?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="65a82d5f187b2f87830f464893e92ff5b31aa808" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="diJ97EV2K8S1cO/jIs+CiWIvBxNG7XJ7JnHwQA0v5gfclLzps0tDGw2epqIYSX67e/gmLi58x4yCUCwFWLR/nw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:issue:26878994"
+      data-url="/owntracks/android/issues/15/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      1 participant
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="jpmens" href="/jpmens"><img alt="@jpmens" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="owntracks/android:marked-as-read:26878994">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-26878994"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="44f96d28447dbcdd12cf0083eeadf621">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-26878994" class="timestamp">
+      <time datetime="2014-02-04T12:46:58Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Issue by <strong><a href="https://github.com/ijwhite">ijwhite</a></strong> from Thursday Nov 28, 2013 at 21:31 GMT</em><br>
+<em>Originally opened as <a href="https://github.com/binarybucks/mqttitude/issues/216" class="issue-link" title="Layout Issues v4.02 on Galaxy S2">binarybucks/mqttitude#216</a></em></p>
+
+<hr>
+
+<p>On the samsung Galaxy S2:</p>
+
+<ol>
+<li><p>Datetime is truncated leaving on the seconds value of the time visible (the rest is scrolled off the top of the view) both on the map view and Locations view</p></li>
+<li><p>Lng/Lat overwrite each other due to fine precision values </p></li>
+</ol>
+
+<p>Galaxy S4 is fine.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055768"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="fa21cb44ecbf9773d28a819423e9f632">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055768" class="timestamp">
+      <time datetime="2014-02-04T12:46:59Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/binarybucks">binarybucks</a></strong> from Friday Nov 29, 2013 at 08:33 GMT</em></p>
+
+<hr>
+
+<p>Could you please attach a screenshot?</p>
+
+<p>On Thu, Nov 28, 2013 at 10:31 PM, ijwhite <a href="mailto:notifications@github.com">notifications@github.com</a> wrote:</p>
+
+<blockquote>
+<p>On the samsung Galaxy S2:</p>
+
+<p>1.</p>
+
+<p>Datetime is truncated leaving on the seconds value of the time visible<br>
+   (the rest is scrolled off the top of the view) both on the map view and<br>
+   Locations view<br>
+   2.</p>
+
+<p>Lng/Lat overwrite each other due to fine precision values</p>
+
+<p>Galaxy S4 is fine.</p>
+
+<p>—<br>
+Reply to this email directly or view it on GitHub<a href="https://github.com/binarybucks/mqttitude/issues/216" class="issue-link" title="Layout Issues v4.02 on Galaxy S2">binarybucks/mqttitude#216</a><br>
+.</p>
+</blockquote>
+
+<h2></h2>
+
+<p>Mit freundlichen Grüßen / With kind regards<br>
+Alexander Rust</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055769"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="bfbc6f1be5227aaa4b14bf9cd03fe8ea">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055769" class="timestamp">
+      <time datetime="2014-02-04T12:46:59Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/jpmens">jpmens</a></strong> from Friday Dec 20, 2013 at 17:45 GMT</em></p>
+
+<hr>
+
+<p><a href="https://github.com/ijwhite" class="user-mention">@ijwhite</a> Is this still an issue? Could you  please show us a screenshot?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055771"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="1f247eaf60a8a90b56b390121484eaa3">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055771" class="timestamp">
+      <time datetime="2014-02-04T12:47:00Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/ijwhite">ijwhite</a></strong> from Friday Dec 20, 2013 at 17:56 GMT</em></p>
+
+<hr>
+
+<p>Yes it is.  I'll grab a screen capture.</p>
+
+<p>-------- Original message --------<br>
+From: JP Mens <a href="mailto:notifications@github.com">notifications@github.com</a><br>
+Date:20/12/2013  17:45  (GMT+00:00)<br>
+To: binarybucks/mqttitude <a href="mailto:mqttitude@noreply.github.com">mqttitude@noreply.github.com</a><br>
+Cc: ijwhite <a href="mailto:iandl@tiscali.co.uk">iandl@tiscali.co.uk</a><br>
+Subject: Re: [mqttitude] Layout Issues v4.02 on Galaxy S2 (<a href="https://github.com/owntracks/android/issues/216" class="issue-link" title="ActivityImport.java line 119">#216</a>)</p>
+
+<p><a href="https://github.com/ijwhite" class="user-mention">@ijwhite</a> Is this still an issue? Could you  please show us a screenshot?</p>
+
+<hr>
+
+<p>Reply to this email directly or view it on GitHub:<br>
+<a href="https://github.com/binarybucks/mqttitude/issues/216#issuecomment-31027681" class="issue-link" title="Layout Issues v4.02 on Galaxy S2">binarybucks/mqttitude#216 (comment)</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055773"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="ea8692dab09780c4b8b03072cb7209a9">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055773" class="timestamp">
+      <time datetime="2014-02-04T12:47:01Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/binarybucks">binarybucks</a></strong> from Friday Dec 20, 2013 at 18:01 GMT</em></p>
+
+<hr>
+
+<p>I'm just reworking the layouts to easier support different screen-sizes. <br>
+I generally have an issue with the accuracy and time information shown together with a contact's location. </p>
+
+<p>I don't want to make a contact view higher than two rows, of which one is needed for the name and one for the location. Both, however, could take up the whole row horizontally</p>
+
+<p>Can we come up with a clever way to display the information that doesn't take up so much space? Mind, that a single tap on a contact is taken for any popup invoking touch action. I thought of a long press on a contact to bring up a dialog with additional information (somewhere I also have to integrate future geofence UI things).</p>
+
+<p>Any better idea?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055774"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="e95c2f4bce06658953148df0c7c9fffc">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055774" class="timestamp">
+      <time datetime="2014-02-04T12:47:01Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/jpmens">jpmens</a></strong> from Friday Dec 20, 2013 at 18:07 GMT</em></p>
+
+<hr>
+
+<p>I like the long press idea, unless you there's the possibility, like on iOS, to have an additional 'click' area? </p>
+
+<p>This is what it looks like in iOS:</p>
+
+<p><a href="https://camo.githubusercontent.com/6ad040780f755c09521b3e4d4ab49fadac80e69e/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36303730362f313739323532332f36623465636538322d363961312d313165332d393861652d3231343937353838306336352e6a7067" target="_blank"><img src="https://camo.githubusercontent.com/6ad040780f755c09521b3e4d4ab49fadac80e69e/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36303730362f313739323532332f36623465636538322d363961312d313165332d393861652d3231343937353838306336352e6a7067" alt="zz2eb7fecb" data-canonical-src="https://f.cloud.github.com/assets/60706/1792523/6b4ece82-69a1-11e3-98ae-214975880c65.jpg" style="max-width:100%;"></a></p>
+
+<ol>
+<li>Tap the <code>(I)</code> for more info on THIS entry.</li>
+<li>Tap the <code>&gt;</code> (right-arrow) for list</li>
+<li>Tap anywhere else, to take you to the map location for this person</li>
+</ol>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055775"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="f8db4dc7dcaa264fb853ee36b2c23c3a">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055775" class="timestamp">
+      <time datetime="2014-02-04T12:47:02Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/binarybucks">binarybucks</a></strong> from Saturday Dec 21, 2013 at 13:25 GMT</em></p>
+
+<hr>
+
+<p>The problem is that the additional click area takes up approximately the same space </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055776"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="ed78ebdfd63a4410e03b0875e60479c6">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055776" class="timestamp">
+      <time datetime="2014-02-04T12:47:03Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/ijwhite">ijwhite</a></strong> from Tuesday Dec 24, 2013 at 12:28 GMT</em></p>
+
+<hr>
+
+<p>It's taken me some time,  had to wrestle hold of the phone from the good lady.</p>
+
+<p>-------- Original message --------<br>
+From: Alexander Rust <a href="mailto:notifications@github.com">notifications@github.com</a><br>
+Date:21/12/2013  13:25  (GMT+00:00)<br>
+To: binarybucks/mqttitude <a href="mailto:mqttitude@noreply.github.com">mqttitude@noreply.github.com</a><br>
+Cc: ijwhite <a href="mailto:iandl@tiscali.co.uk">iandl@tiscali.co.uk</a><br>
+Subject: Re: [mqttitude] Layout Issues v4.02 on Galaxy S2 (<a href="https://github.com/owntracks/android/issues/216" class="issue-link" title="ActivityImport.java line 119">#216</a>)</p>
+
+<p>The problem is that the additional click area takes up approximately the same space</p>
+
+<hr>
+
+<p>Reply to this email directly or view it on GitHub:<br>
+<a href="https://github.com/binarybucks/mqttitude/issues/216#issuecomment-31063204" class="issue-link" title="Layout Issues v4.02 on Galaxy S2">binarybucks/mqttitude#216 (comment)</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055779"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="c20247b803e57782286477aba527b114">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055779" class="timestamp">
+      <time datetime="2014-02-04T12:47:03Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/jpmens">jpmens</a></strong> from Tuesday Dec 24, 2013 at 12:54 GMT</em></p>
+
+<hr>
+
+<p><a href="https://github.com/ijwhite" class="user-mention">@ijwhite</a> Not much to be seen ... I don't think you can attach images to tickets in reply-to-email; you have to drag them into the ticket on the Web interface. ;)</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055785"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="ebc11044d0b3cd5744a6f4128ce6d315">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055785" class="timestamp">
+      <time datetime="2014-02-04T12:47:07Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/ijwhite">ijwhite</a></strong> from Tuesday Dec 24, 2013 at 13:18 GMT</em></p>
+
+<hr>
+
+<p><a href="https://camo.githubusercontent.com/c1c7aa1df05690b9d17145c95b3a7453034c7900/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f353530343038302f313830363033382f63356362316230612d366339642d313165332d396666332d3336393733303134623330622e706e67" target="_blank"><img src="https://camo.githubusercontent.com/c1c7aa1df05690b9d17145c95b3a7453034c7900/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f353530343038302f313830363033382f63356362316230612d366339642d313165332d396666332d3336393733303134623330622e706e67" alt="screenshot_2013-12-24-11-00-44" data-canonical-src="https://f.cloud.github.com/assets/5504080/1806038/c5cb1b0a-6c9d-11e3-9ff3-36973014b30b.png" style="max-width:100%;"></a></p>
+
+<p>Ok try this. Ian</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055787"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="77a2695c7eb69d73cedfa06be742f331">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055787" class="timestamp">
+      <time datetime="2014-02-04T12:47:08Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/jpmens">jpmens</a></strong> from Tuesday Dec 24, 2013 at 13:25 GMT</em></p>
+
+<hr>
+
+<p><a href="https://github.com/ijwhite" class="user-mention">@ijwhite</a> Thank you.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055790"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="2ba74802de5141fe40ffd167a5619ae6">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055790" class="timestamp">
+      <time datetime="2014-02-04T12:47:09Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/binarybucks">binarybucks</a></strong> from Tuesday Dec 24, 2013 at 13:44 GMT</em></p>
+
+<hr>
+
+<p>Thanks, I'll see what I can do. </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055791"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="b4f1f80a22b3e8271a526c8fe793b4fa">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055791" class="timestamp">
+      <time datetime="2014-02-04T12:47:10Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/binarybucks">binarybucks</a></strong> from Tuesday Jan 21, 2014 at 18:08 GMT</em></p>
+
+<hr>
+
+<p><a href="https://github.com/ijwhite" class="user-mention">@ijwhite</a> can you check if it looks better in the recent beta version?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jpmens"><img alt="@jpmens" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/60706?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34055792"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="9476927596d3e70906207bf7295d7530">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jpmens" class="author">jpmens</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34055792" class="timestamp">
+      <time datetime="2014-02-04T12:47:10Z" is="relative-time">Feb 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Comment by <strong><a href="https://github.com/binarybucks">binarybucks</a></strong> from Sunday Jan 26, 2014 at 11:11 GMT</em></p>
+
+<hr>
+
+<p>please reopen if layout issues persist with the newer versions</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-91019676">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@jpmens" class="avatar" height="16" src="https://avatars3.githubusercontent.com/u/60706?v=3&amp;s=32" width="16" />
+      <a href="/jpmens" class="author">jpmens</a>
+      closed this   <a href="https://github.com/owntracks/android/issues/15#event-91019676" class="timestamp"><time class="timestamp" datetime="2014-02-05T16:44:52Z" is="relative-time">Feb 5, 2014</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+
+
+
+<!-- Rendered timeline since 2014-02-05 08:44:52 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:issue:26878994"
+      data-url="/owntracks/android/issues/15/show_partial?partial=issues%2Ftimeline_marker&amp;since=1391618692"
+      data-last-modified="Wed, 05 Feb 2014 16:44:52 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/notifications/mark?ids=24895622" class="hidden js-timeline-marker-form" data-form-nonce="65a82d5f187b2f87830f464893e92ff5b31aa808" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="+Ie7CIO3JCNw0MmWFYM7xJHgNWNS+veMvIApyDaV6YhQs0rcLZA5vG86H/VlY4UKQu4rlodS03zXYvfwC/iyuA==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fowntracks%2Fandroid%2Fissues%2F15" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.33074s from github-fe136-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

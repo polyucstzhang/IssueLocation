@@ -1,0 +1,1119 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Reopening #52 (Coastline problems) · Issue #117 · mapsforge/mapsforge · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Reopening #52 (Coastline problems) · Issue #117 · mapsforge/mapsforge" name="twitter:title" /><meta content="From LudwigBr...@gmail.com on May 10, 2011 05:08:27
+
+Unfortunately, the fixes for #52 have caused some regressions with some coastlines that were previously ok now being displayed incorrectly.
+
+I h..." name="twitter:description" /><meta content="https://avatars2.githubusercontent.com/u/430042?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars2.githubusercontent.com/u/430042?v=3&amp;s=400" property="og:image" /><meta content="Reopening #52 (Coastline problems) · Issue #117 · mapsforge/mapsforge" property="og:title" /><meta content="https://github.com/mapsforge/mapsforge/issues/117" property="og:url" /><meta content="From LudwigBr...@gmail.com on May 10, 2011 05:08:27
+
+Unfortunately, the fixes for #52 have caused some regressions with some coastlines that were previously ok now being displayed incorrectly.
+
+I h..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:1685:2646356:55DB6243" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="jMCyLqF6iQXPxyFDz29f4kl8/Hp0tLTaLwoQVlY9fb4bgDx++bQ0Ssv5kbAk27shC1pLsT0Oo9JTc1rvUCZqQw==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+      
+  <meta name="description" content="The new home of mapsforge.">
+  <meta name="go-import" content="github.com/mapsforge/mapsforge git https://github.com/mapsforge/mapsforge.git">
+
+  <meta content="430042" name="octolytics-dimension-user_id" /><meta content="mapsforge" name="octolytics-dimension-user_login" /><meta content="26262349" name="octolytics-dimension-repository_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="26262349" name="octolytics-dimension-repository_network_root_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/mapsforge/mapsforge/commits/master.atom" rel="alternate" title="Recent Commits to mapsforge:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fmapsforge%2Fmapsforge%2Fissues%2F117" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/mapsforge/mapsforge/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/mapsforge/mapsforge/watchers">
+    35
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/mapsforge/mapsforge/stargazers">
+      161
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/mapsforge/mapsforge/network" class="social-count">
+        82
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/mapsforge" class="url fn" itemprop="url" rel="author"><span itemprop="title">mapsforge</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/mapsforge/mapsforge" data-pjax="#js-repo-pjax-container">mapsforge</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/mapsforge/mapsforge/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/mapsforge/mapsforge" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /mapsforge/mapsforge">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/mapsforge/mapsforge/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /mapsforge/mapsforge/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/mapsforge/mapsforge/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /mapsforge/mapsforge/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/mapsforge/mapsforge/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /mapsforge/mapsforge/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/mapsforge/mapsforge/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /mapsforge/mapsforge/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/mapsforge/mapsforge/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /mapsforge/mapsforge/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="dfa2df62d6d36c2c83fc8284973d0f8ac5383842" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="0DXpIhUeUDPsx9B6htPustvJVek+gKE2dR0j70OHy8Irrhg8CWmJoQjArYzxAm+kZMXrdEaMTLmJhNxFBAZwvg==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="dfa2df62d6d36c2c83fc8284973d0f8ac5383842" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="SxlI/DubNO1aVrcIPe0+xve0SK+qwF8snNm7sKGYUQI27g6zjfvemxmuk3UBzNAKOHGU8Pz3qsAW/OVKfI8g8A==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/mapsforge/mapsforge/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of mapsforge/mapsforge as a zip file"
+                 title="Download the contents of mapsforge/mapsforge as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-FFFFFF, .linked-labelstyle-FFFFFF {  background-color: #FFFFFF !important;  color: #333333 !important;}.labelstyle-FFFFFF.selected {  background-color: #FFFFFF !important;  color: #333333 !important;}.label-select-menu .labelstyle-FFFFFF.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-84b6eb, .linked-labelstyle-84b6eb {  background-color: #84b6eb !important;  color: #1c2733 !important;}.labelstyle-84b6eb.selected {  background-color: #84b6eb !important;  color: #1c2733 !important;}.label-select-menu .labelstyle-84b6eb.selected {  background:rgba(132, 182, 235, 0.12) !important;  color: #557699 !important;}
+
+span.labelstyle-159818, .linked-labelstyle-159818 {  background-color: #159818 !important;  color: #fff !important;}.labelstyle-159818.selected {  background-color: #159818 !important;  color: #fff !important;}.label-select-menu .labelstyle-159818.selected {  background:rgba(21, 152, 24, 0.12) !important;  color: #159918 !important;}
+
+span.labelstyle-e6e6e6, .linked-labelstyle-e6e6e6 {  background-color: #e6e6e6 !important;  color: #333333 !important;}.labelstyle-e6e6e6.selected {  background-color: #e6e6e6 !important;  color: #333333 !important;}.label-select-menu .labelstyle-e6e6e6.selected {  background:rgba(230, 230, 230, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-cc317c, .linked-labelstyle-cc317c {  background-color: #cc317c !important;  color: #fff !important;}.labelstyle-cc317c.selected {  background-color: #cc317c !important;  color: #fff !important;}.label-select-menu .labelstyle-cc317c.selected {  background:rgba(204, 49, 124, 0.12) !important;  color: #99245c !important;}
+
+span.labelstyle-ffffff, .linked-labelstyle-ffffff {  background-color: #ffffff !important;  color: #333333 !important;}.labelstyle-ffffff.selected {  background-color: #ffffff !important;  color: #333333 !important;}.label-select-menu .labelstyle-ffffff.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="mapsforge/mapsforge:issue:47941000"
+    data-url="/mapsforge/mapsforge/issues/117/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/mapsforge/mapsforge/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Reopening #52 (Coastline problems)</span>
+      <span class="gh-header-number">#117</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-issue-closed"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/mapsforge" class="author">mapsforge</a> opened this <span class="noun">Issue</span> <time datetime="2014-11-06T09:36:48Z" is="relative-time">Nov 6, 2014</time>
+        &middot; 9 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:issue:47941000"
+     data-url="/mapsforge/mapsforge/issues/117/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/117?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="dfa2df62d6d36c2c83fc8284973d0f8ac5383842" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="xFUYdT2OymFpYD2ZnmCg6e+kgysMwtia+nosUmQ96jmhuby1TwSkSsFOB/qCnVC65Q3dDo2FJtfHMpluTx04TA==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+      <a href="/mapsforge/mapsforge/labels/bug" class="label css-truncate-target linked-labelstyle-fc2929" title="bug">bug</a>
+  <a href="/mapsforge/mapsforge/labels/imported" class="label css-truncate-target linked-labelstyle-FFFFFF" title="imported">imported</a>
+  <a href="/mapsforge/mapsforge/labels/Priority-Medium" class="label css-truncate-target linked-labelstyle-FFFFFF" title="Priority-Medium">Priority-Medium</a>
+  <a href="/mapsforge/mapsforge/labels/wontfix" class="label css-truncate-target linked-labelstyle-ffffff" title="wontfix">wontfix</a>
+
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/117/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="dfa2df62d6d36c2c83fc8284973d0f8ac5383842" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="7BjBJWrUs2z6cA9fvW/NO2yq12vfKtEuOBwum2bUSBnvq95CZtds+7SBghFI84KH+YLYn0Znfw5IfhB2sYKFQw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/117?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="dfa2df62d6d36c2c83fc8284973d0f8ac5383842" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="kWsfOxUTfx60y1kpIhwea0CIhUk7pg6ZIu//TnhTXVmcOAn9rBtEMO/oJlXGYtBu/LItzxKTp7vqfM+8bPBO4Q==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:issue:47941000"
+      data-url="/mapsforge/mapsforge/issues/117/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      1 participant
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="mapsforge" href="/mapsforge"><img alt="@mapsforge" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="mapsforge/mapsforge:marked-as-read:47941000">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-47941000"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="82a565da542c40186790b76c7bf3ddd1">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-47941000" class="timestamp">
+      <time datetime="2014-11-06T09:36:48Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/113327232123772191739/">LudwigBr...@gmail.com</a> on May 10, 2011 05:08:27</em></p>
+
+<p>Unfortunately, the fixes for <a href="https://github.com/mapsforge/mapsforge/issues/52" class="issue-link" title="Coastlines not displayed correctly">#52</a> have caused some regressions with some coastlines that were previously ok now being displayed incorrectly.</p>
+
+<p>I have tried various ways to try to extract a mapfile that will display correctly, including cutting out the area from the full planet, using the whole europe extract from geofabrik etc, but nothing seems to make a difference.</p>
+
+<p>export OSMOSIS_HOME=/software/osmosis-0.39<br>
+export LAT=38.115<br>
+export LON=13.36<br>
+export LEFT=12.3<br>
+export RIGHT=15.6<br>
+export TOP=38.3<br>
+export BOTTOM=36.6</p>
+
+<p>$OSMOSIS_HOME/bin/osmosis --rb file=europe.pbf --mapfile-writer file=${EXTRACT}.map  map-start-position=$LAT,$LON bbox=$BOTTOM,$LEFT,$TOP,$RIGHT </p>
+
+<p>The problem generally appears when zoomed out, with coastlines often correct when zoomed onto details.</p>
+
+<p>Similar problems to this with Sardinia, Gran Canaria, while other like Tenerife can be displayed correctly. Gran Canaria and Sicily (as in the cutout above) were ok previously.</p>
+
+<p>The mapfile here is fairly large, so I do not want to attach it. I can supply more info if needed.</p>
+
+<p><strong>Attachment:</strong> <a href="http://code.google.com/p/mapsforge/issues/detail?id=117">device.png</a></p>
+
+<p><em>Original issue: <a href="http://code.google.com/p/mapsforge/issues/detail?id=117">http://code.google.com/p/mapsforge/issues/detail?id=117</a></em></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+      
+
+
+  <div class="discussion-item discussion-item-labeled">
+    <div class="discussion-item-header" id="event-189199528">
+
+      <span class="octicon octicon-tag discussion-item-icon"></span>
+      <img alt="@mapsforge" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/430042?v=3&amp;s=32" width="16" />
+      <a href="/mapsforge" class="author">mapsforge</a>
+        added <span class="label-color" style="background-color: #fc2929;" title="by mapsforge at 2014-11-06 09:36:48"><a href="/mapsforge/mapsforge/labels/bug" style="color: #fff">bug</a></span> <span class="label-color" style="background-color: #ffffff;" title="by mapsforge at 2014-11-06 09:36:48"><a href="/mapsforge/mapsforge/labels/wontfix" style="color: #333333">wontfix</a></span> <span class="label-color" style="background-color: #FFFFFF;" title="by mapsforge at 2014-11-06 09:36:48"><a href="/mapsforge/mapsforge/labels/imported" style="color: #333333">imported</a></span> <span class="label-color" style="background-color: #FFFFFF;" title="by mapsforge at 2014-11-06 09:36:48"><a href="/mapsforge/mapsforge/labels/Priority-Medium" style="color: #333333">Priority-Medium</a></span> labels <a href="https://github.com/mapsforge/mapsforge/issues/117#event-189199528" class="timestamp"><time class="timestamp" datetime="2014-11-06T09:36:48Z" is="relative-time">Nov 6, 2014</time></a>
+    </div>
+  </div>
+
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61950330"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="da277b631c5d85ee279c1fd1699d535c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61950330" class="timestamp">
+      <time datetime="2014-11-06T09:36:49Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109067824594513388759/">thilo.mu...@gmail.com</a> on May 10, 2011 14:09:18</em></p>
+
+<p>Do you see false positives (too much water), false negatives (missing water) or both of them? Are you using the latest version from our SVN repository (mapfile-writer and maps library)?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61950331"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="b00c4bf56f94952f8e6ceb557d6cbbd2">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61950331" class="timestamp">
+      <time datetime="2014-11-06T09:36:50Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/113327232123772191739/">LudwigBr...@gmail.com</a> on May 11, 2011 07:50:34</em></p>
+
+<p>The problem I see are false negatives only, I have not noticed any false positives. I have just tried another example running both the mapfile writer and the phone client with r1027 which exhibits the same problem when cutting out Sardinia. I have the feeling that somehow this problem relates specifically to islands, with the app not 'knowing' that island is surrounded by water. The data should be there, as you can see on the first screenshot that the international boundary line is included  in the mapfile. Generally the problem only appears when zoomed out, when zooming in the water begins to appear (pic 2)</p>
+
+<p>The following screenshot was done from the europe.osm.pbf file from geofabrik with the following boundaries:</p>
+
+<p>export LAT=39.21<br>
+export LON=9.12<br>
+export LEFT=8<br>
+export RIGHT=10<br>
+export TOP=41.4<br>
+export BOTTOM=38.8</p>
+
+<p>$OSMOSIS_HOME/bin/osmosis --rb file=extract.pbf --mapfile-writer file=sardinia.map  map-start-position=$LAT,$LON bbox=$BOTTOM,$LEFT,$TOP,$RIGHT </p>
+
+<p>I put the mapfile at <a href="http://www.yunnanexplorer.com/static/download/sardinia.map">http://www.yunnanexplorer.com/static/download/sardinia.map</a> Ludwig</p>
+
+<p><strong>Attachment:</strong> <a href="http://code.google.com/p/mapsforge/issues/detail?id=117#hc2">device.png device2.png</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61950333"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="54ca4b104f42b02977040879a02b7b44">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61950333" class="timestamp">
+      <time datetime="2014-11-06T09:36:50Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109067824594513388759/">thilo.mu...@gmail.com</a> on May 13, 2011 11:47:25</em></p>
+
+<p>Thank you for the map file, i think i can now explain the cause of the problem:</p>
+
+<p>The algorithm for generating closed (water or land) polygons works with all coastline data of a tile. Your map file is - by default - written with two subfiles. The lower one is used up to zoom level 11, the higher one from zoom level 12 on. Each of these subfiles contains blocks of a certain size (the so called "base zoom level" blocks). The blocks in the lower subfile equal map tiles on zoom level 8, the blocks in the higher subfile equal map tiles on zoom level 14.</p>
+
+<p>[Just for the protocol: all these numbers are the default values of the mapfile-writer, they can be overridden if necessary, but only people who really understand what they are doing should consider using it.]</p>
+
+<p>If you now open the provided sardinia.map file and go to zoom level 8, you will see that large areas of water are white and not filled with blue color. This is caused by incomplete coastlines. Having incomplete segments which cannot be joined to a closed way (= polygon), the algorithm cannot safely distinguish water from land. As a hint, it draws the incomplete coastline segments with a dark blue color, which makes it easier to see where some parts are missing.</p>
+
+<p>So to cut a long story short: if a base tile (zoom level 8 in this case) includes one or more incomplete coastline segments, the algorithm cannot work correctly and outputs no water polygons at all (better to have white water areas than land covered with blue water).</p>
+
+<p>This is the theory behind the process. Practically there might still be bugs in our implementation, but debugging this is a very painful investigation ...</p>
+
+<p><strong>Status:</strong> Accepted  </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61950335"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="617f288151596d7def8cb441b6018030">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61950335" class="timestamp">
+      <time datetime="2014-11-06T09:36:51Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/102682863694681270711/">rijackso...@gmail.com</a> on June 27, 2011 12:13:54</em></p>
+
+<p>I have similar problems with some of the .bz2 map file from the Cloudmade site: <a href="http://downloads.cloudmade.com/">http://downloads.cloudmade.com/</a> I converted Thailand, Hong Kong, and Singapore as follows:<br>
+osmosis --rx file=hong_kong.osm.bz2 --mapfile-writer file=Hong_Kong-osm.map bbox=22.126355,113.807373,22.573438,114.510498<br>
+osmosis --rx file=singapore.osm.bz2 --mapfile-writer file=Singapore-osm.map bbox=1.142503,103.557129,1.482989,104.095459<br>
+osmosis --rx file=thailand.osm.bz2 --mapfile-writer file=Thailand-osm.map bbox=5.266008,97.03125,20.632784,105.820312</p>
+
+<p>Thailand has no national boundaries or coastlines. The only indication you have of their location is the sudden termination of roads. Hong Kong and Singapore are worse. They have both false positives and false negatives.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61950336"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="03624bca7087c58e643c759068355dd6">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61950336" class="timestamp">
+      <time datetime="2014-11-06T09:36:51Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109067824594513388759/">thilo.mu...@gmail.com</a> on October 24, 2011 22:13:21</em></p>
+
+<p>Issue 142 has been merged into this issue.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61950339"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="05ed345f9ccc23b5f2d772b9cab2e142">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61950339" class="timestamp">
+      <time datetime="2014-11-06T09:36:52Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109067824594513388759/">thilo.mu...@gmail.com</a> on October 24, 2011 22:14:14</em></p>
+
+<p>This issue is blocked by issue <a href="https://github.com/mapsforge/mapsforge/issues/185" class="issue-link" title="Integrate the coastline algorithm into the mapfile-writer">#185</a> .</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61950340"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="91a509ba780cccf68fe2bc8eaef2be60">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61950340" class="timestamp">
+      <time datetime="2014-11-06T09:36:53Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109067824594513388759/">thilo.mu...@gmail.com</a> on March 27, 2012 11:24:30</em></p>
+
+<p>Since we have removed the coastline processing from the map library already some time ago, i am closing this issue here as "won't fix". We will track any progress in issue <a href="https://github.com/mapsforge/mapsforge/issues/185" class="issue-link" title="Integrate the coastline algorithm into the mapfile-writer">#185</a> .</p>
+
+<p><strong>Status:</strong> WontFix  </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61950341"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="c4f3e674c3044652ca704c9cc0a306c6">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61950341" class="timestamp">
+      <time datetime="2014-11-06T09:36:53Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/103525559061021176074/">carlito...@gmail.com</a> on January 14, 2013 13:10:58</em></p>
+
+<p>Thilo, will it be working again the coastline processing? It looks quite different now, in comparison with the 0.2.4 version.</p>
+
+<p>Thanks for your work!</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61950344"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="0c768ec68fefde35b6c035e721bafdfb">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61950344" class="timestamp">
+      <time datetime="2014-11-06T09:36:54Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/103525559061021176074/">carlito...@gmail.com</a> on March 19, 2013 13:59:16</em></p>
+
+<p>Ok, I've implemented the new version with the coastline file. It worked very good!!! <a href="http://mapsforgecoastline.wikia.com/wiki/Mapsforge_%28Coastline-Enabled%29_Wiki">http://mapsforgecoastline.wikia.com/wiki/Mapsforge_%28Coastline-Enabled%29_Wiki</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-189199575">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@mapsforge" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/430042?v=3&amp;s=32" width="16" />
+      <a href="/mapsforge" class="author">mapsforge</a>
+      closed this   <a href="https://github.com/mapsforge/mapsforge/issues/117#event-189199575" class="timestamp"><time class="timestamp" datetime="2014-11-06T09:36:55Z" is="relative-time">Nov 6, 2014</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+  
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+      This was referenced <time datetime="2014-11-06T09:38:49Z" is="relative-time">Nov 6, 2014</time>
+    </div>
+
+
+      <div class="discussion-item-rollup-ref">
+          <span class="state state-closed right">
+                <span class="octicon octicon-issue-closed"></span>
+            Closed
+          </span>
+
+
+
+        <div class="discussion-item-header" id="ref-issue-47941224">
+          <h3 class="discussion-item-ref-title">
+            <a href="/mapsforge/mapsforge/issues/142" class="title-link">
+              Rendering problem North Sea / Baltic Sea
+
+              <span class="issue-num">
+                #142
+              </span>
+</a>          </h3>
+        </div>
+      </div>
+
+      <div class="discussion-item-rollup-ref">
+          <span class="state state-closed right">
+                <span class="octicon octicon-issue-closed"></span>
+            Closed
+          </span>
+
+
+
+        <div class="discussion-item-header" id="ref-issue-47941605">
+          <h3 class="discussion-item-ref-title">
+            <a href="/mapsforge/mapsforge/issues/185" class="title-link">
+              Integrate the coastline algorithm into the mapfile-writer
+
+              <span class="issue-num">
+                #185
+              </span>
+</a>          </h3>
+        </div>
+      </div>
+
+  </div>
+
+
+
+
+<!-- Rendered timeline since 2014-11-06 01:42:42 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:issue:47941000"
+      data-url="/mapsforge/mapsforge/issues/117/show_partial?partial=issues%2Ftimeline_marker&amp;since=1415266962"
+      data-last-modified="Thu, 06 Nov 2014 09:42:42 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/notifications/mark?ids=48161662" class="hidden js-timeline-marker-form" data-form-nonce="dfa2df62d6d36c2c83fc8284973d0f8ac5383842" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="V8sOqbPcLE0ZrINmptA8HPNMDcPlc6wWTi8c9eazh9dPbHQJOHLUlHNupSL8x6TqJ7dZEaE++b/odYjs655z3g==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fmapsforge%2Fmapsforge%2Fissues%2F117" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.26033s from github-fe116-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

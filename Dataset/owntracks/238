@@ -1,0 +1,2027 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Fixed crash introduced with latest change to statistics view by friesenkiwi · Pull Request #238 · owntracks/android · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Fixed crash introduced with latest change to statistics view by friesenkiwi · Pull Request #238 · owntracks/android" name="twitter:title" /><meta content="Only a different Fragment ID" name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/13440054?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/13440054?v=3&amp;s=400" property="og:image" /><meta content="Fixed crash introduced with latest change to statistics view by friesenkiwi · Pull Request #238 · owntracks/android" property="og:title" /><meta content="https://github.com/owntracks/android/pull/238" property="og:url" /><meta content="Only a different Fragment ID" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:480B:289CFE8:55DB5D98" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="qp+YpFvroxVV5WmxCeySvaZ/6xw4jJ9Vygk0MTZ7LFkFqzLYJOlzY2XH2C4xhgYMOhkyTeDtWMFva6Ga6tuAzA==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/owntracks/android/pull/238.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/owntracks/android/pull/238.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-fef2c0, .linked-labelstyle-fef2c0 {  background-color: #fef2c0 !important;  color: #333026 !important;}.labelstyle-fef2c0.selected {  background-color: #fef2c0 !important;  color: #333026 !important;}.label-select-menu .labelstyle-fef2c0.selected {  background:rgba(254, 242, 192, 0.12) !important;  color: #989173 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/owntracks/android/pull/238" data-pjax-transient>
+
+  <meta name="description" content="android - OwnTracks Android App">
+  <meta name="go-import" content="github.com/owntracks/android git https://github.com/owntracks/android.git">
+
+  <meta content="6574523" name="octolytics-dimension-user_id" /><meta content="owntracks" name="octolytics-dimension-user_login" /><meta content="16479425" name="octolytics-dimension-repository_id" /><meta content="owntracks/android" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="16479425" name="octolytics-dimension-repository_network_root_id" /><meta content="owntracks/android" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/owntracks/android/commits/3f69b9a2281312ed44f82c9c0f65a978649786a0.atom" rel="alternate" title="Recent Commits to android:3f69b9a2281312ed44f82c9c0f65a978649786a0" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fowntracks%2Fandroid%2Fpull%2F238" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/owntracks/android/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fowntracks%2Fandroid"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/owntracks/android/watchers">
+    34
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fowntracks%2Fandroid"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/owntracks/android/stargazers">
+      162
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fowntracks%2Fandroid"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/owntracks/android/network" class="social-count">
+        103
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/owntracks" class="url fn" itemprop="url" rel="author"><span itemprop="title">owntracks</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/owntracks/android" data-pjax="#js-repo-pjax-container">android</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/owntracks/android/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/owntracks/android" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /owntracks/android">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/owntracks/android/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /owntracks/android/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/owntracks/android/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /owntracks/android/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/owntracks/android/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /owntracks/android/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/owntracks/android/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /owntracks/android/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/owntracks/android.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/owntracks/android" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="52c9ecb889d0d1087fa9402397d60ee1434be758" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Q1AKvspsCuXGhhIdLRuISmLCHxpoGpSuUx+3Bgay8eW3hiTLkxH2TWYlcqiqUaXOO+BnFFNXS2ixA5f9Ql1wDg==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="52c9ecb889d0d1087fa9402397d60ee1434be758" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4DzS7sb1oE3EXcsXRulGwzHgqw2Sj3P1+PnNEqNoYvaHKDzTqiJZ9KA0li4GBspDmMZS369UsHe3aDNJ20Bxqw==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/owntracks/android/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of owntracks/android as a zip file"
+                 title="Download the contents of owntracks/android as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;69609185eb14ccc8f230a5ac690584fbe11270e4&quot; -->
+<!-- head sha1: &quot;3f69b9a2281312ed44f82c9c0f65a978649786a0&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="owntracks/android:pull_request:42231551"
+    data-url="/owntracks/android/pull/238/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Fixed crash introduced with latest change to statistics view</span>
+      <span class="gh-header-number">#238</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-merged">
+          <span class="octicon octicon-git-pull-request"></span>
+          Merged
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/binarybucks" class="author pull-header-username css-truncate css-truncate-target expandable">
+    binarybucks
+  </a>
+  merged 2 commits into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">owntracks</span>:<span class="css-truncate-target">master</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">friesenkiwi</span>:<span class="css-truncate-target">master</span></span>
+
+
+  <time datetime="2015-08-12T19:08:51Z" is="relative-time">Aug 12, 2015</time>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="owntracks/android:branch:master"
+    data-url=/owntracks/android/pull/238/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +9
+        </span>
+        <span class="text-diff-deleted">
+          −9
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="18 lines changed">
+          <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/owntracks/android/pull/238" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        3
+      </span>
+    </a>
+    <a href="/owntracks/android/pull/238/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        2
+      </span>
+    </a>
+    <a href="/owntracks/android/pull/238/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          3
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="owntracks/android:issue:100526393"
+     data-url="/owntracks/android/issues/238/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/issues/238?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="52c9ecb889d0d1087fa9402397d60ee1434be758" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="dVt3KVVbIq+f0xQe8gG8bB39jfR4Reouhh7XM69dqMJG5DOKlwKtM8mjVCa02BmkRxzOvdJPhOlFSZoi6Zrl7A==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/issues/238/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="52c9ecb889d0d1087fa9402397d60ee1434be758" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="D7jGIBI7AMnTPi26Q7okge6hoWMtctRPKL/zu+lQah/kIq0i4aLr8OIjED2oE2RWYEKb5tl8h4/2YPOSKgaz/g==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/issues/238?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="52c9ecb889d0d1087fa9402397d60ee1434be758" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="cFxY58ELqjJSojmCIDOjC/2EiHxrVrpY4L135c2tRlVKZkvR+kHGb0Lgjiq9aJ7MDZkMeNRUu35XS2PPlwpgjA==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:issue:100526393"
+      data-url="/owntracks/android/issues/238/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="friesenkiwi" href="/friesenkiwi"><img alt="@friesenkiwi" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/13440054?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="binarybucks" href="/binarybucks"><img alt="@binarybucks" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/782356?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="owntracks/android:marked-as-read:42231551">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/friesenkiwi"><img alt="@friesenkiwi" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/13440054?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-100526393"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="61aba14cb9aa06ea75981fbebdc5e4ef">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/friesenkiwi" class="author">friesenkiwi</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-100526393" class="timestamp">
+      <time datetime="2015-08-12T11:58:18Z" is="relative-time">Aug 12, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Only a different Fragment ID</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-8d93a5d">
+    <div class="discussion-item-header">
+      <span class="octicon octicon-repo-push discussion-item-icon"></span>
+      <a href="/friesenkiwi" class="author" rel="contributor" truncate="true">friesenkiwi</a>
+      added
+        some commits
+      <a href="#commits-pushed-8d93a5d" class="timestamp">
+        <time datetime="2015-08-12T09:16:54Z" is="relative-time">Aug 12, 2015</time>
+      </a>
+    </div>
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:commit:8d93a5dd9b639b9fb5ff397fcd62383446cf8c7a"
+    data-url="/owntracks/android/commit/8d93a5dd9b639b9fb5ff397fcd62383446cf8c7a/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/friesenkiwi"><img alt="@friesenkiwi" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/13440054?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/friesenkiwi" class="author" rel="contributor">friesenkiwi</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/friesenkiwi/android/commit/8d93a5dd9b639b9fb5ff397fcd62383446cf8c7a" class="message" data-pjax="true" title="workspace modifications">workspace modifications</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/friesenkiwi/android/commit/8d93a5dd9b639b9fb5ff397fcd62383446cf8c7a" class="commit-id">8d93a5d</a></code>
+  </td>
+</tr>
+
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:commit:3f69b9a2281312ed44f82c9c0f65a978649786a0"
+    data-url="/owntracks/android/commit/3f69b9a2281312ed44f82c9c0f65a978649786a0/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/friesenkiwi"><img alt="@friesenkiwi" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/13440054?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/friesenkiwi" class="author" rel="contributor">friesenkiwi</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/friesenkiwi/android/commit/3f69b9a2281312ed44f82c9c0f65a978649786a0" class="message" data-pjax="true" title="fixed crash">fixed crash</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/friesenkiwi/android/commit/3f69b9a2281312ed44f82c9c0f65a978649786a0" class="commit-id">3f69b9a</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/binarybucks"><img alt="@binarybucks" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/782356?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-130272830"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="ec1e1182245e2bf4b01baca04c0fd0fa">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/binarybucks" class="author">binarybucks</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-130272830" class="timestamp">
+      <time datetime="2015-08-12T11:59:57Z" is="relative-time">Aug 12, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks. Out does the inner layout of the include use the id of the include or why did it crash? </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/friesenkiwi"><img alt="@friesenkiwi" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/13440054?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-130281699"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="02382fbeeceb610e2bac0a02f7d65f77">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/friesenkiwi" class="author">friesenkiwi</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-130281699" class="timestamp">
+      <time datetime="2015-08-12T12:25:29Z" is="relative-time">Aug 12, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Line 31 in ActivityStatistics tried to find the <em>fragmentToolbar</em> but there was no (but the <em>include</em>), so it returned null:<br>
+<code>Toolbar toolbar = (Toolbar) findViewById(R.id.fragmentToolbar);</code></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/binarybucks"><img alt="@binarybucks" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/782356?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-130414548"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="02ce2b172b1615aee3bf0e3e50dd8857">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/binarybucks" class="author">binarybucks</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-130414548" class="timestamp">
+      <time datetime="2015-08-12T19:08:48Z" is="relative-time">Aug 12, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ah perfect, thanks. </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-merged js-details-container">
+  <div class="discussion-item-header" id="event-380677693">
+
+
+    <span class="octicon octicon-git-merge discussion-item-icon"></span>
+    <img alt="@binarybucks" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/782356?v=3&amp;s=32" width="16" />
+    <a href="/binarybucks" class="author">binarybucks</a>
+    merged commit <a href="/owntracks/android/commit/9437d77a033ef649740644a564c6822adec39877"><code class="discussion-item-entity">9437d77</code></a> into <span class="commit-ref js-selectable-text"><span class="css-truncate-target user">owntracks</span>:<span class="css-truncate-target">master</span></span>  <a href="https://github.com/owntracks/android/pull/238#event-380677693" class="timestamp"><time class="timestamp" datetime="2015-08-12T19:08:51Z" is="relative-time">Aug 12, 2015</time></a>
+
+  </div>
+
+
+</div>
+
+
+  <div class="closed-banner"></div>
+
+
+
+
+
+<!-- Rendered timeline since 2015-08-12 12:08:51 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:pull_request:42231551"
+      data-url="/owntracks/android/pull/238/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1439406531"
+      data-last-modified="Wed, 12 Aug 2015 19:08:51 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/notifications/mark?ids=94933882" class="hidden js-timeline-marker-form" data-form-nonce="52c9ecb889d0d1087fa9402397d60ee1434be758" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="qLt7e2qJIXSc86MFDvv0OFBBwxfEYHgIUodRyDUwzQYJZjEQ7hJzltqq4+2fRXJD7GQmPv1A1moTuvIg/LowHQ==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fowntracks%2Fandroid%2Fpull%2F238" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="owntracks/android:branch:master"
+     data-url="/owntracks/android/pull/238/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Aug 12, 2015
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:commit:8d93a5dd9b639b9fb5ff397fcd62383446cf8c7a"
+      data-url="/owntracks/android/commit/8d93a5dd9b639b9fb5ff397fcd62383446cf8c7a/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/friesenkiwi" data-skip-pjax="true" rel="contributor"><img alt="@friesenkiwi" class="avatar" height="36" src="https://avatars0.githubusercontent.com/u/13440054?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/friesenkiwi/android/commit/8d93a5dd9b639b9fb5ff397fcd62383446cf8c7a" class="message" data-pjax="true" title="workspace modifications">workspace modifications</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/friesenkiwi" class="commit-author" rel="contributor">friesenkiwi</a>
+ authored <time datetime="2015-08-12T09:16:54Z" is="relative-time">Aug 12, 2015</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="8d93a5dd9b639b9fb5ff397fcd62383446cf8c7a" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/friesenkiwi/android/commit/8d93a5dd9b639b9fb5ff397fcd62383446cf8c7a" class="sha btn btn-outline">
+        8d93a5d
+      </a>
+    </div>
+    <a href="/owntracks/android/tree/8d93a5dd9b639b9fb5ff397fcd62383446cf8c7a" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:commit:3f69b9a2281312ed44f82c9c0f65a978649786a0"
+      data-url="/owntracks/android/commit/3f69b9a2281312ed44f82c9c0f65a978649786a0/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/friesenkiwi" data-skip-pjax="true" rel="contributor"><img alt="@friesenkiwi" class="avatar" height="36" src="https://avatars0.githubusercontent.com/u/13440054?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/friesenkiwi/android/commit/3f69b9a2281312ed44f82c9c0f65a978649786a0" class="message" data-pjax="true" title="fixed crash">fixed crash</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/friesenkiwi" class="commit-author" rel="contributor">friesenkiwi</a>
+ authored <time datetime="2015-08-12T11:55:12Z" is="relative-time">Aug 12, 2015</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="3f69b9a2281312ed44f82c9c0f65a978649786a0" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/friesenkiwi/android/commit/3f69b9a2281312ed44f82c9c0f65a978649786a0" class="sha btn btn-outline">
+        3f69b9a
+      </a>
+    </div>
+    <a href="/owntracks/android/tree/3f69b9a2281312ed44f82c9c0f65a978649786a0" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+    <div id="files_bucket" class="files-bucket tab-content pull-request-tab-content ">
+
+      <div class="flash flash-warn stale-files-tab js-pull-request-stale-files js-socket-channel"
+   data-channel="owntracks/android:pull_request:42231551:diff"
+   data-url="https://github.com/owntracks/android/pull/238/live_update">
+    This page is out of date. <a href="https://github.com/owntracks/android/pull/238/files">Refresh</a> to see the latest.
+</div>
+
+
+      
+
+
+
+
+      <div id='diff' class="uncommentable">
+        <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/owntracks/android/pull/238/files?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/owntracks/android/pull/238/files?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <span class="octicon octicon-diff"></span>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      3 changed files
+    </button>
+    with
+    <strong>9 additions</strong>
+    and <strong>9 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +6
+          </span>
+          <span class="text-diff-deleted">
+            −6
+          </span>
+          <a href="#diff-b1703d91eaa64b1c2cb4759d549e813e" class="tooltipped tooltipped-s" aria-label="12 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-b1703d91eaa64b1c2cb4759d549e813e">owntracks-android.iml</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +1
+          </span>
+          <span class="text-diff-deleted">
+            −1
+          </span>
+          <a href="#diff-88b7c47e47b8ee65263b6784b86fa0a7" class="tooltipped tooltipped-s" aria-label="2 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;&#xf053;&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-88b7c47e47b8ee65263b6784b86fa0a7">settings.gradle</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +2
+          </span>
+          <span class="text-diff-deleted">
+            −2
+          </span>
+          <a href="#diff-8b5f61c767fdf02c4dde32f5c22fe5bb" class="tooltipped tooltipped-s" aria-label="4 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-8b5f61c767fdf02c4dde32f5c22fe5bb">src/main/res/layout/activity_statistics.xml</a>
+    </li>
+  </ol>
+</div>
+
+        <div id="files" class="diff-view ">
+    
+      <a name="diff-b1703d91eaa64b1c2cb4759d549e813e"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="owntracks-android.iml">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/friesenkiwi/android/blob/3f69b9a2281312ed44f82c9c0f65a978649786a0/owntracks-android.iml" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 3f69b9a ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="6 additions &amp; 6 deletions">12 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="owntracks-android.iml">
+              owntracks-android.iml
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-b1703d91eaa64b1c2cb4759d549e813e"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/owntracks/android/blob_excerpt/3a67e31db350c19b0acaab68cec263ea529b1993?diff=unified&amp;left_hunk_size=10&amp;mode=100644&amp;next_line_num_left=75&amp;next_line_num_right=75&amp;path=owntracks-android.iml&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=10"
+            data-left-range="1-74" data-right-range="1-74">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -75,10 +75,10 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL75" data-line-number="75"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR75" data-line-number="75"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL76" data-line-number="76"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR76" data-line-number="76"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/jars<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL77" data-line-number="77"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR77" data-line-number="77"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL78" data-line-number="78"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">"</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.<span class="x x-first x-last">0</span>/jars<span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR78" data-line-number="78"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">"</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.<span class="x x-first x-last">1</span>/jars<span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL79" data-line-number="79"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR79" data-line-number="79"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.3/jars<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL80" data-line-number="80"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">"</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.<span class="x x-first x-last">3</span>/jars<span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL81" data-line-number="81"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">"</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.<span class="x x-first x-last">0</span>/jars<span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR80" data-line-number="80"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">"</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.<span class="x x-first x-last">4</span>/jars<span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR81" data-line-number="81"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">"</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.<span class="x x-first x-last">1</span>/jars<span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL82" data-line-number="82"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR82" data-line-number="82"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.github.curioustechizen.android-ago/library/1.3.0/jars<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL83" data-line-number="83"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR83" data-line-number="83"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/jars<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL84" data-line-number="84"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR84" data-line-number="84"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       &lt;<span class="pl-ent">excludeFolder</span> <span class="pl-e">url</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/jars<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="14">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-b1703d91eaa64b1c2cb4759d549e813e"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/owntracks/android/blob_excerpt/3a67e31db350c19b0acaab68cec263ea529b1993?diff=unified&amp;left_hunk_size=13&amp;mode=100644&amp;next_line_num_left=108&amp;next_line_num_right=108&amp;path=owntracks-android.iml&amp;prev_line_num_left=84&amp;prev_line_num_right=84&amp;right_hunk_size=13"
+            data-left-range="85-107" data-right-range="85-107">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -108,13 +108,13 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL108" data-line-number="108"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR108" data-line-number="108"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>sourceFolder<span class="pl-pds">&quot;</span></span> <span class="pl-e">forTests</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>false<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL109" data-line-number="109"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR109" data-line-number="109"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>design-22.2.1<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL110" data-line-number="110"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR110" data-line-number="110"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>greendao-1.3.7<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR111" data-line-number="111"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>crashlytics-2.5.1<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL111" data-line-number="111"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR112" data-line-number="112"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>iconics-1.0.2<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL112" data-line-number="112"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR113" data-line-number="113"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>material-dialogs-0.7.5.2<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL113" data-line-number="113"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR114" data-line-number="114"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>play-services-base-7.5.0<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL114" data-line-number="114"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>library<span class="pl-pds">"</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>crashlytics-core-2.3.<span class="x x-first x-last">3</span><span class="pl-pds">"</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">"</span>project<span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL115" data-line-number="115"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>library<span class="pl-pds">"</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>answers-1.3.<span class="x x-first x-last">0</span><span class="pl-pds">"</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">"</span>project<span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR115" data-line-number="115"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>library<span class="pl-pds">"</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>crashlytics-core-2.3.<span class="x x-first x-last">4</span><span class="pl-pds">"</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">"</span>project<span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR116" data-line-number="116"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>library<span class="pl-pds">"</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>answers-1.3.<span class="x x-first x-last">1</span><span class="pl-pds">"</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">"</span>project<span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL116" data-line-number="116"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR117" data-line-number="117"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library-2.1.4<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL117" data-line-number="117"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>crashlytics-2.5.0<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL118" data-line-number="118"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR118" data-line-number="118"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>filechooser-1.1.2<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL119" data-line-number="119"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR119" data-line-number="119"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>android-section-adapter-1.0.1<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eL120" data-line-number="120"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b1703d91eaa64b1c2cb4759d549e813eR120" data-line-number="120"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">orderEntry</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>library<span class="pl-pds">&quot;</span></span> <span class="pl-e">exported</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>android-beacon-library-2.5.1<span class="pl-pds">&quot;</span></span> <span class="pl-e">level</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>project<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-b1703d91eaa64b1c2cb4759d549e813e"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/owntracks/android/blob_excerpt/3a67e31db350c19b0acaab68cec263ea529b1993?diff=unified&amp;mode=100644&amp;path=owntracks-android.iml&amp;prev_line_num_left=120&amp;prev_line_num_right=120"
+          data-left-range="121-137"
+          data-right-range="121-137">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-88b7c47e47b8ee65263b6784b86fa0a7"></a>
+      <div id="diff-1"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="settings.gradle">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/friesenkiwi/android/blob/3f69b9a2281312ed44f82c9c0f65a978649786a0/settings.gradle" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 3f69b9a ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="1 addition &amp; 1 deletion">2 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;&#xf053;&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="settings.gradle">
+              settings.gradle
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr data-position="0">
+    <td id="diff-88b7c47e47b8ee65263b6784b86fa0a7L0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td id="diff-88b7c47e47b8ee65263b6784b86fa0a7R0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1 +1 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-88b7c47e47b8ee65263b6784b86fa0a7L1" data-line-number="1"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-include <span class="pl-s"><span class="pl-pds">'</span>:DaoGenerator<span class="pl-pds">'</span></span>,<span class="x x-first x-last"> </span><span class="pl-s"><span class="pl-pds">'</span>:<span class="pl-pds">'</span></span></span>
+
+      <span class="no-nl-marker tooltipped tooltipped-n" aria-label="No newline at end of file">
+        <span class="octicon octicon-no-newline"></span>
+      </span>
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-88b7c47e47b8ee65263b6784b86fa0a7R1" data-line-number="1"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+include <span class="pl-s"><span class="pl-pds">'</span>:DaoGenerator<span class="pl-pds">'</span></span>,<span class="pl-s"><span class="pl-pds">'</span>:<span class="pl-pds">'</span></span></span>
+
+      <span class="no-nl-marker tooltipped tooltipped-n" aria-label="No newline at end of file">
+        <span class="octicon octicon-no-newline"></span>
+      </span>
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-8b5f61c767fdf02c4dde32f5c22fe5bb"></a>
+      <div id="diff-2"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="src/main/res/layout/activity_statistics.xml">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/friesenkiwi/android/blob/3f69b9a2281312ed44f82c9c0f65a978649786a0/src/main/res/layout/activity_statistics.xml" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 3f69b9a ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="2 additions &amp; 2 deletions">4 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="src/main/res/layout/activity_statistics.xml">
+              src/main/res/layout/activity_statistics.xml
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-8b5f61c767fdf02c4dde32f5c22fe5bb"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/owntracks/android/blob_excerpt/50353f12bf0c278bbd0086f4f560738b8453ee69?diff=unified&amp;left_hunk_size=12&amp;mode=100644&amp;next_line_num_left=6&amp;next_line_num_right=6&amp;path=src%2Fmain%2Fres%2Flayout%2Factivity_statistics.xml&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=12"
+            data-left-range="1-5" data-right-range="1-5">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -6,12 +6,12 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>wrap_content<span class="pl-pds">&quot;</span></span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">include</span> <span class="pl-e">layout</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>@layout/toolbar<span class="pl-pds">&quot;</span></span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL9" data-line-number="9"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/<span class="x x-first x-last">include</span><span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR9" data-line-number="9"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/<span class="x x-first x-last">fragmentToolbar</span><span class="pl-pds">"</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL11" data-line-number="11"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR11" data-line-number="11"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;<span class="pl-ent">ScrollView</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>match_parent<span class="pl-pds">&quot;</span></span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL13" data-line-number="13"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR13" data-line-number="13"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>wrap_content<span class="pl-pds">&quot;</span></span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL14" data-line-number="14"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_below</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/<span class="x x-first x-last">include</span><span class="pl-pds">"</span></span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR14" data-line-number="14"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_below</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/<span class="x x-first x-last">fragmentToolbar</span><span class="pl-pds">"</span></span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         &lt;<span class="pl-ent">LinearLayout</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL16" data-line-number="16"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR16" data-line-number="16"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">             <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">orientation</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>vertical<span class="pl-pds">&quot;</span></span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbL17" data-line-number="17"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8b5f61c767fdf02c4dde32f5c22fe5bbR17" data-line-number="17"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">             <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">android</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>http://schemas.android.com/apk/res/android<span class="pl-pds">&quot;</span></span></span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-8b5f61c767fdf02c4dde32f5c22fe5bb"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/owntracks/android/blob_excerpt/50353f12bf0c278bbd0086f4f560738b8453ee69?diff=unified&amp;mode=100644&amp;path=src%2Fmain%2Fres%2Flayout%2Factivity_statistics.xml&amp;prev_line_num_left=17&amp;prev_line_num_right=17"
+          data-left-range="18-278"
+          data-right-range="18-278">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+      </div>
+
+      
+
+    <div class="clearfix"></div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.33255s from github-fe135-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

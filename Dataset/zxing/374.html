@@ -1,0 +1,879 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Unexpected error initializing camera · Issue #374 · zxing/zxing · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Unexpected error initializing camera · Issue #374 · zxing/zxing" name="twitter:title" /><meta content="Error while starting application - Unexpected error while initializing camera try restart device...or something similar:
+
+
+version 4.3.2 works OK
+version 4.7.3 does not work
+
+
+The error appear imme..." name="twitter:description" /><meta content="https://avatars2.githubusercontent.com/u/7554187?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars2.githubusercontent.com/u/7554187?v=3&amp;s=400" property="og:image" /><meta content="Unexpected error initializing camera · Issue #374 · zxing/zxing" property="og:title" /><meta content="https://github.com/zxing/zxing/issues/374" property="og:url" /><meta content="Error while starting application - Unexpected error while initializing camera try restart device...or something similar:
+
+
+version 4.3.2 works OK
+version 4.7.3 does not work
+
+
+The error appear imme..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:5D16:24F04E5:55DB5A86" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="2qK7jFC4pvGa4d3ZXsmBnXIl7sfm2dWQIj6QvZs/bYCT3DU7Og6+TaCcZobs5F3xHtKM/g3QjFQzMCPSGHFFvQ==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="22e6cb7d309429ee0eaff86792eaf1c3">
+
+      
+  <meta name="description" content="zxing - Official ZXing (&quot;Zebra Crossing&quot;) project home">
+  <meta name="go-import" content="github.com/zxing/zxing git https://github.com/zxing/zxing.git">
+
+  <meta content="1122572" name="octolytics-dimension-user_id" /><meta content="zxing" name="octolytics-dimension-user_login" /><meta content="2562751" name="octolytics-dimension-repository_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2562751" name="octolytics-dimension-repository_network_root_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/zxing/zxing/commits/master.atom" rel="alternate" title="Recent Commits to zxing:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fzxing%2Fzxing%2Fissues%2F374" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/zxing/zxing/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/zxing/zxing/watchers">
+    789
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/zxing/zxing/stargazers">
+      5,886
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/zxing/zxing/network" class="social-count">
+        3,739
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/zxing" class="url fn" itemprop="url" rel="author"><span itemprop="title">zxing</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/zxing/zxing" data-pjax="#js-repo-pjax-container">zxing</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/zxing/zxing/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/zxing/zxing" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /zxing/zxing">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/zxing/zxing/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /zxing/zxing/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/zxing/zxing/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /zxing/zxing/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/zxing/zxing/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /zxing/zxing/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/zxing/zxing/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /zxing/zxing/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/zxing/zxing/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /zxing/zxing/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="7ad078fb4749d64b7ec042aeb708e7788b4e1bca" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="m8H2i4kBiwy6hB5lhCz+4Kf+W6ClESSEaLc6ZWAtfI5NiqKz6i+tENuyOBhm+JIfQgCCNJ7+3aCeN8fuiXCurQ==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="7ad078fb4749d64b7ec042aeb708e7788b4e1bca" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="flcE7jImjGMgrNA+SdTdBUZbmh/nUBrMyQka4le07H4AQFAO01FQFABddwoeNd1ePIYkuRIvx0MWlBSruVMh6w==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/zxing/zxing/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of zxing/zxing as a zip file"
+                 title="Download the contents of zxing/zxing as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #fff !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #fff !important;}.label-select-menu .labelstyle-009800.selected {  background:rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #fff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #fff !important;}.label-select-menu .labelstyle-e11d21.selected {  background:rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #282d33 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #282d33 !important;}.label-select-menu .labelstyle-c7def8.selected {  background:rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="zxing/zxing:issue:74310454"
+    data-url="/zxing/zxing/issues/374/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/zxing/zxing/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Unexpected error initializing camera</span>
+      <span class="gh-header-number">#374</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-issue-closed"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/kosnar" class="author">kosnar</a> opened this <span class="noun">Issue</span> <time datetime="2015-05-08T10:09:28Z" is="relative-time">May 8, 2015</time>
+        &middot; 2 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:issue:74310454"
+     data-url="/zxing/zxing/issues/374/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/374?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="7ad078fb4749d64b7ec042aeb708e7788b4e1bca" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="4Z3ePn3Sy4t0tjCJyZ8X23VLi+J8GL95JcKJnhOASzJ5oydabmjTHMSX0DhmSntGo2MTWJ/3XYvbd3Gxy8E69w==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/374/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="7ad078fb4749d64b7ec042aeb708e7788b4e1bca" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="kcb7ittoBIjnoLQ7PaN3alXSEkoIZB8ViRGvgM8LAASVwegnpCc5fuM2KdRVYd0NMM2p1REskn9xF+zk0ai33g==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/374?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="7ad078fb4749d64b7ec042aeb708e7788b4e1bca" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="AeCiVdTbs6yAlipB//lfSwQFTKrGbR5RVIqthNagjLTuZkQBLCEv3OCgkcuj7zjC4t6d0c9v2Jl0KHTghDLJRw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:issue:74310454"
+      data-url="/zxing/zxing/issues/374/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="kosnar" href="/kosnar"><img alt="@kosnar" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/7554187?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="srowen" href="/srowen"><img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="zxing/zxing:marked-as-read:74310454">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/kosnar"><img alt="@kosnar" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/7554187?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-74310454"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="c8b71105a2410bb39e25d67c1652782e">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/kosnar" class="author">kosnar</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-74310454" class="timestamp">
+      <time datetime="2015-05-08T10:09:28Z" is="relative-time">May 8, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Error while starting application - Unexpected error while initializing camera try restart device...or something similar:</p>
+
+<ul>
+<li>version 4.3.2 works OK</li>
+<li>version 4.7.3 does not work</li>
+</ul>
+
+<p>The error appear immediately after start of the app I can only close the app...there is no possibility to change any setting.<br>
+I tried a few versions before 4.7.3 and them don't work too.<br>
+I have P760 CM12.1 and this problem I have with any alternative room I tried.</p>
+
+<pre>------ zxing.log ------
+05-08 11:23:38.461: I/Timeline(1685): Timeline: Activity_launch_request id:com.google.zxing.client.android time:703927
+05-08 11:23:38.466: I/ActivityManager(455): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.zxing.client.android/.CaptureActivity bnds=[18,678][144,838]} from uid 10094 on display 0
+05-08 11:23:38.479: E/AudioTrack(455): AudioTrack::set : Exit
+05-08 11:23:38.514: V/WindowManager(455): addAppToken: AppWindowToken{30328a37 token=Token{2907ab36 ActivityRecord{24aec4d1 u0 com.google.zxing.client.android/.CaptureActivity t428}}} to stack=1 task=428 at 0
+05-08 11:23:38.561: V/WindowManager(455): Adding window Window{aa1a u0 Starting com.google.zxing.client.android} at 4 of 7 (after Window{14183657 u0 com.android.vending/com.google.android.finsky.activities.MainActivity})
+05-08 11:23:38.576: D/bsthal(455): activate, handle: 1598182229, enabled: 1
+05-08 11:23:38.576: I/bsthal(455):  enable sensor 
+05-08 11:23:38.577: D/bsthal(455): setDelay, handle: 1598182229 delay: 66667000
+05-08 11:23:38.577: I/bsthal(455):  set delay of  to 66ms
+05-08 11:23:38.577: D/bsthal(455): setDelay, handle: 1598182229 delay: 66667000
+05-08 11:23:38.577: I/bsthal(455):  set delay of  to 66ms
+05-08 11:23:38.617: W/SurfaceFlinger(151): captureScreen: error creating EGL fence: 0x3004
+05-08 11:23:38.668: I/ActivityManager(455): Config changes=480 {1.0 230mcc3mnc cs_CZ ?layoutDir sw360dp w640dp h334dp 240dpi nrml long land finger -keyb/v/h -nav/h s.12 themeResource=themes:{default=overlay:system, iconPack:system, fontPkg:system, com.android.systemui=overlay:system, com.android.systemui.navbar=overlay:system}}
+05-08 11:23:38.720: D/GeckoApplication(5341): onConfigurationChanged: cs_CZ, background: false
+05-08 11:23:38.721: D/GeckoLocales(5341): No selected locale. No correction needed.
+05-08 11:23:38.770: V/ActivityManager(455): Display changed displayId=0
+05-08 11:23:38.777: I/InputReader(455): Reconfiguring input devices.  changes=0x00000004
+05-08 11:23:38.777: I/InputReader(455): Device reconfigured: id=3, name='touch_dev', size 540x960, orientation 1, mode 1, display id 0
+05-08 11:23:38.784: I/InputReader(455): Reconfiguring input devices.  changes=0x00000004
+05-08 11:23:38.949: I/WindowManager(455): Screen frozen for +364ms due to Window{aa1a u0 Starting com.google.zxing.client.android}
+05-08 11:23:38.978: E/ExtMediaPlayer-JNI(5289): QCMediaPlayer could not be located....
+05-08 11:23:38.979: E/MediaPlayer-JNI(5289): QCMediaPlayer mediaplayer NOT present
+05-08 11:23:38.982: D/AwesomePlayer(165): Before reset_l
+05-08 11:23:38.982: D/AwesomePlayer(165): printFileName fd(24) -&gt; /data/app/com.google.zxing.client.android-2/base.apk
+05-08 11:23:39.000: I/FFmpegExtractor(165): android-source:0x41e8a600
+05-08 11:23:39.039: I/FFMPEG(165): Input #0, ogg, from 'android-source:0x41e8a600':
+05-08 11:23:39.039: I/FFMPEG(165):   Duration: 00:00:00.20, start: 0.000000, bitrate: 256 kb/s
+05-08 11:23:39.041: I/FFMPEG(165):     Stream #0:0: Audio: vorbis, 44100 Hz, mono, fltp, 86 kb/s
+05-08 11:23:39.041: D/FFmpegExtractor(165): FFmpegExtrator, url: android-source:0x41e8a600, format_name: ogg, format_long_name: Ogg
+05-08 11:23:39.041: I/FFmpegExtractor(165): adjust mime(application/ogg -&gt; audio/vorbis)
+05-08 11:23:39.042: D/FFmpegExtractor(165): suppoted codec(vorbis) by official Stagefright
+05-08 11:23:39.042: D/FFmpegExtractor(165): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+05-08 11:23:39.079: W/Utils(165): bool android::canOffloadStream(const android::sp&amp;, bool, const android::sp&amp;, bool, audio_stream_type_t) No sample bit depth info in meta data
+05-08 11:23:39.080: I/str_params(165): key: 'SND_CARD_STATUS' value: ''
+05-08 11:23:39.082: D/OMXCodec(165): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 8192 on input port
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414ae470 on input port
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414ae560 on input port
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414ae830 on input port
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414ae880 on input port
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 32768 on output port
+05-08 11:23:39.089: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414ae920 on output port
+05-08 11:23:39.089: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414aec40 on output port
+05-08 11:23:39.089: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414aec90 on output port
+05-08 11:23:39.089: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414aece0 on output port
+05-08 11:23:39.091: E/MediaPlayer(5289): Should have subtitle controller already set
+05-08 11:23:39.114: D/bsthal(455): activate, handle: 1598182229, enabled: 0
+05-08 11:23:39.114: I/bsthal(455):  disable sensor 
+05-08 11:23:39.234: V/WindowManager(455): Adding window Window{830b40 u0 com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity} at 4 of 8 (before Window{aa1a u0 Starting com.google.zxing.client.android})
+05-08 11:23:39.241: E/MediaPlayer(5289): Should have subtitle controller already set
+05-08 11:23:39.469: V/WindowManager(455): Adding window Window{3ce033be u0 SurfaceView} at 4 of 9 (before Window{830b40 u0 com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity})
+05-08 11:23:39.499: I/com.google.zxing.client.android.camera.open.OpenCameraInterface(5289): Opening camera #0
+05-08 11:23:39.502: I/AwesomePlayer(165): setDataSource_l()
+05-08 11:23:39.502: D/AwesomePlayer(165): printFileName /system/media/audio/ui/camera_click.ogg
+05-08 11:23:39.517: I/FFmpegExtractor(165): android-source:0x41da2ce0
+05-08 11:23:39.528: I/FFMPEG(165): Input #0, ogg, from 'android-source:0x41da2ce0':
+05-08 11:23:39.528: I/FFMPEG(165):   Duration: 00:00:00.42, start: 0.000000, bitrate: 113 kb/s
+05-08 11:23:39.529: I/FFMPEG(165):     Stream #0:0: Audio: vorbis, 48000 Hz, mono, fltp, 48 kb/s
+05-08 11:23:39.529: I/FFMPEG(165):     Metadata:
+05-08 11:23:39.529: I/FFMPEG(165):       TITLE           : Camera Shutter
+05-08 11:23:39.529: I/FFMPEG(165):       ARTIST          : (c) 2012 Android Open Source Project
+05-08 11:23:39.529: D/FFmpegExtractor(165): FFmpegExtrator, url: android-source:0x41da2ce0, format_name: ogg, format_long_name: Ogg
+05-08 11:23:39.529: I/FFmpegExtractor(165): adjust mime(application/ogg -&gt; audio/vorbis)
+05-08 11:23:39.529: D/FFmpegExtractor(165): suppoted codec(vorbis) by official Stagefright
+05-08 11:23:39.529: D/FFmpegExtractor(165): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+05-08 11:23:39.559: W/Utils(165): bool android::canOffloadStream(const android::sp&amp;, bool, const android::sp&amp;, bool, audio_stream_type_t) No sample bit depth info in meta data
+05-08 11:23:39.559: E/AudioPolicyManager(165): isOffloadSupported: stream_type != MUSIC, returning false
+05-08 11:23:39.560: D/OMXCodec(165): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+05-08 11:23:39.560: I/OMXCodec(165): Codec outputs at different sampling rate than what the input stream contains (contains data at 48000 Hz, codec outputs 44100 Hz)
+05-08 11:23:39.560: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 8192 on input port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41da2ec0 on input port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41da2f10 on input port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41da2f60 on input port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41e37060 on input port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 32768 on output port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41e370b0 on output port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41e371f0 on output port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41e37240 on output port
+05-08 11:23:39.562: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41e37290 on output port
+05-08 11:23:39.564: I/AwesomePlayer(165): setDataSource_l()
+05-08 11:23:39.564: D/AwesomePlayer(165): printFileName /system/media/audio/ui/VideoRecord.ogg
+05-08 11:23:39.577: I/FFmpegExtractor(165): android-source:0x414aedd0
+05-08 11:23:39.589: I/FFMPEG(165): Input #0, ogg, from 'android-source:0x414aedd0':
+05-08 11:23:39.589: I/FFMPEG(165):   Duration: 00:00:00.54, start: 0.000000, bitrate: 95 kb/s
+05-08 11:23:39.590: I/FFMPEG(165):     Stream #0:0: Audio: vorbis, 48000 Hz, mono, fltp, 48 kb/s
+05-08 11:23:39.590: I/FFMPEG(165):     Metadata:
+05-08 11:23:39.590: I/FFMPEG(165):       TITLE           : Video Record
+05-08 11:23:39.590: I/FFMPEG(165):       ARTIST          : (c) 2012 Android Open Source Project
+05-08 11:23:39.590: D/FFmpegExtractor(165): FFmpegExtrator, url: android-source:0x414aedd0, format_name: ogg, format_long_name: Ogg
+05-08 11:23:39.590: I/FFmpegExtractor(165): adjust mime(application/ogg -&gt; audio/vorbis)
+05-08 11:23:39.590: D/FFmpegExtractor(165): suppoted codec(vorbis) by official Stagefright
+05-08 11:23:39.590: D/FFmpegExtractor(165): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+05-08 11:23:39.614: W/Utils(165): bool android::canOffloadStream(const android::sp&amp;, bool, const android::sp&amp;, bool, audio_stream_type_t) No sample bit depth info in meta data
+05-08 11:23:39.614: E/AudioPolicyManager(165): isOffloadSupported: stream_type != MUSIC, returning false
+05-08 11:23:39.615: D/OMXCodec(165): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+05-08 11:23:39.615: I/OMXCodec(165): Codec outputs at different sampling rate than what the input stream contains (contains data at 48000 Hz, codec outputs 44100 Hz)
+05-08 11:23:39.615: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 8192 on input port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41630290 on input port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x416302e0 on input port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41630330 on input port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41630380 on input port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 32768 on output port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x416303d0 on output port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x416304c0 on output port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41630510 on output port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41630560 on output port
+05-08 11:23:39.619: I/CameraClient(165): Opening camera 0
+05-08 11:23:39.619: I/CameraHal(165): (414a4e80)   device/lge/u2-common/camera/CameraHal_Module.cpp:639 camera_device_open - camera_device open
+05-08 11:23:39.756: D/bsthal(455): activate, handle: 1598182229, enabled: 1
+05-08 11:23:39.756: I/bsthal(455):  enable sensor 
+05-08 11:23:39.756: D/bsthal(455): setDelay, handle: 1598182229 delay: 1000000
+05-08 11:23:39.756: I/bsthal(455):  set delay of  to 1ms
+05-08 11:23:39.756: D/bsthal(455): setDelay, handle: 1598182229 delay: 1000000
+05-08 11:23:39.756: I/bsthal(455):  set delay of  to 1ms
+05-08 11:23:39.757: D/bsthal(455): setDelay, handle: 1598182229 delay: 100000000
+05-08 11:23:39.757: I/bsthal(455):  set delay of  to 100ms
+05-08 11:23:39.764: I/CameraConfiguration(5289): Screen resolution: Point(960, 540)
+05-08 11:23:39.765: I/CameraConfiguration(5289): Supported preview sizes: 1088x1920 1920x1080 1280x720 720x1280 960x720 768x576 576x768 720x576 576x720 800x480 480x800 720x480 480x720 640x480 480x640 352x288 288x352 320x240 240x320 240x160 160x240 176x144 144x176 160x120 120x160 128x96 96x128 
+05-08 11:23:39.766: I/CameraConfiguration(5289): Using largest suitable preview size: Point(1088, 1920)
+05-08 11:23:39.766: I/CameraConfiguration(5289): Camera resolution: Point(1088, 1920)
+05-08 11:23:39.776: I/CameraConfiguration(5289): Initial camera parameters: antibanding=off;antibanding-values=off,auto,50hz,60hz;auto-convergence-mode=frame;auto-convergence-mode-values=;auto-exposure-lock=false;auto-exposure-lock-supported=true;auto-whitebalance-lock=false;auto-whitebalance-lock-supported=true;brightness=50;camera-name=UNKNOWN_SENSOR;contrast=100;current-iso=100;effect=none;effect-values=none,negative,solarize,sepia,mono,natural,vivid,color-swap,blackwhite,whiteboard,blackboard,aqua,posterize;exif-make=LGE;exif-model=LG-P765;exposure=auto;exposure-compensation=0;exposure-compensation-step=0.1;exposure-mode-values=manual,auto,night,backlighting,spotlight,sports,snow,beach,aperture,small-aperture;flash-mode=off;flash-mode-values=on,off,auto,torch;focal-length=4.60;focus-distances=Infinity,Infinity,Infinity;focus-mode=auto;focus-mode-values=off,continuous-video,continuous-picture,auto,macro,infinity,infinity,portrait,extended,face-priority;gbce=false;gbce-supported=true;glbce=false;glbce-supported=true;horizontal-view-angle=54.8;ipp=off;ipp-values=off,ldc,nsf,ldc-nsf;iso=auto;iso-mode-values=auto,100,200,400,800;jpeg-quality=95;jpeg-thumbnail-height=120;jpeg-thumbnail-quality=60;jpeg-thumbnail-size-values=640x480,160x120,200x120,320x240,512x384,352x144,176x144,96x96,0x0;jpeg-thumbnail-width=160;manual-convergence=0;manual-exposure=1;manual-exposure-right=1;manual-gain-iso=100;manual-gain-iso-right=100;max-exposure-compensation=150;max-num-detected-faces-hw=35;max-num-detected-faces-sw=0;max-num-focus-areas=10;max-num-metering-areas=10;max-zoom=40;mechanical-misalignment-correction=true;mechanical-misalignment-correction-supported=false;min-exposure-compensation=-150;mode-values=high-quality,video-mode,high-performance,high-quality-zsl,zoom-bracketing,exposure-bracketing,temporal-bracketing;picture-format=jpeg;picture-format-values=unused,yuv420sp,yuv420p,yuv422i-yuyv,rgb565,bayer-rggb,jpeg;picture-size=320x240;picture-size-values=2592x1944,2592x1728,2592x1458,2400x1350,2304x1296,2240x1344,2160x1440,2112x1728,2112x1188,2048x1536,2016x1512,2016x1134,2000x1600,1920x1080,1600x1200,1600x900,1536x864,1408x792,1344x756,1280x1024,1280x720,1152x864,1280x960,1024x768,640x480,320x240;preview-format=yuv420sp;preview-format-values=yuv420sp,yuv420p,yuv422i-yuyv,yuv420p;preview-fps-ext-values=10,15,20,24,30;preview-fps-range=30000,30000;preview-fps-range-ext-values=(10000,10000),(15000,15000),(20000,20000),(24000,24000),(10000,30000),(30000,30000);preview-fps-range-values=(10000,10000),(15000,15000),(20000,20000),(24000,24000),(10000,30000),(30000,30000);preview-frame-rate=30;preview-frame-rate-range=30000,30000;preview-frame-rate-values=10,15,20,24,30;preview-size=640x480;preview-size-values=1920x1080,1280x720,960x720,800x480,720x576,720x480,768x576,640x480,320x240,352x288,240x160,176x144,160x120,128x96,1088x1920,720x1280,480x800,576x720,576x768,480x720,480x640,288x352,240x320,160x240,144x176,120x160,96x128;raw-height=1944;raw-width=2592;recording-hint=;s3d-cap-frame-layout=none;s3d-cap-frame-layout-values=none;s3d-prv-frame-layout=none;s3d-prv-frame-layout-values=none;saturation=100;scene-mode=auto;scene-mode-values=auto,closeup,landscape,aqua,sports,mood,night-portrait,night-indoor,fireworks,document,barcode,super-night,cine,old-film,action,beach,candlelight,night,party,portrait,snow,steadyphoto,sunset,theatre;sensor-orientation=0;sharpness=100;smooth-zoom-supported=true;supported-manual-convergence-max=100;supported-manual-convergence-min=-100;supported-manual-convergence-step=1;supported-manual-exposure-max=125;supported-manual-exposure-min=1;supported-manual-exposure-step=1;supported-manual-gain-iso-max=800;supported-manual-gain-iso-min=100;supported-manual-gain-iso-step=100;supported-picture-sidebyside-size-values=;supported-picture-subsampled-size-values=;supported-picture-topbottom-size-values=;supported-preview-sidebyside-size-values=;supported-preview-subsampled-size-values=;supported-preview-topbottom-size-values=;ti-algo-external-gamma=false;ti-algo-gic=true;ti-algo-nsf1=true;ti-algo-nsf2=true;ti-algo-sharpening=t
+05-08 11:23:39.776: I/CameraConfiguration(5289): Requesting flash mode value from among: [off]
+05-08 11:23:39.776: I/CameraConfiguration(5289): Supported flash mode values: [on, off, auto, torch]
+05-08 11:23:39.776: I/CameraConfiguration(5289): Can set flash mode to: off
+05-08 11:23:39.777: I/CameraConfiguration(5289): Flash mode already set to off
+05-08 11:23:39.777: I/CameraConfiguration(5289): Requesting focus mode value from among: [auto]
+05-08 11:23:39.777: I/CameraConfiguration(5289): Supported focus mode values: [off, continuous-video, continuous-picture, auto, macro, infinity, infinity, portrait, extended, face-priority]
+05-08 11:23:39.777: I/CameraConfiguration(5289): Can set focus mode to: auto
+05-08 11:23:39.778: I/CameraConfiguration(5289): Focus mode already set to auto
+05-08 11:23:39.780: I/CameraConfiguration(5289): Final camera parameters: antibanding=off;antibanding-values=off,auto,50hz,60hz;auto-convergence-mode=frame;auto-convergence-mode-values=;auto-exposure-lock=false;auto-exposure-lock-supported=true;auto-whitebalance-lock=false;auto-whitebalance-lock-supported=true;brightness=50;camera-name=UNKNOWN_SENSOR;contrast=100;current-iso=100;effect=none;effect-values=none,negative,solarize,sepia,mono,natural,vivid,color-swap,blackwhite,whiteboard,blackboard,aqua,posterize;exif-make=LGE;exif-model=LG-P765;exposure=auto;exposure-compensation=0;exposure-compensation-step=0.1;exposure-mode-values=manual,auto,night,backlighting,spotlight,sports,snow,beach,aperture,small-aperture;flash-mode=off;flash-mode-values=on,off,auto,torch;focal-length=4.60;focus-distances=Infinity,Infinity,Infinity;focus-mode=auto;focus-mode-values=off,continuous-video,continuous-picture,auto,macro,infinity,infinity,portrait,extended,face-priority;gbce=false;gbce-supported=true;glbce=false;glbce-supported=true;horizontal-view-angle=54.8;ipp=off;ipp-values=off,ldc,nsf,ldc-nsf;iso=auto;iso-mode-values=auto,100,200,400,800;jpeg-quality=95;jpeg-thumbnail-height=120;jpeg-thumbnail-quality=60;jpeg-thumbnail-size-values=640x480,160x120,200x120,320x240,512x384,352x144,176x144,96x96,0x0;jpeg-thumbnail-width=160;manual-convergence=0;manual-exposure=1;manual-exposure-right=1;manual-gain-iso=100;manual-gain-iso-right=100;max-exposure-compensation=150;max-num-detected-faces-hw=35;max-num-detected-faces-sw=0;max-num-focus-areas=10;max-num-metering-areas=10;max-zoom=40;mechanical-misalignment-correction=true;mechanical-misalignment-correction-supported=false;min-exposure-compensation=-150;mode-values=high-quality,video-mode,high-performance,high-quality-zsl,zoom-bracketing,exposure-bracketing,temporal-bracketing;picture-format=jpeg;picture-format-values=unused,yuv420sp,yuv420p,yuv422i-yuyv,rgb565,bayer-rggb,jpeg;picture-size=320x240;picture-size-values=2592x1944,2592x1728,2592x1458,2400x1350,2304x1296,2240x1344,2160x1440,2112x1728,2112x1188,2048x1536,2016x1512,2016x1134,2000x1600,1920x1080,1600x1200,1600x900,1536x864,1408x792,1344x756,1280x1024,1280x720,1152x864,1280x960,1024x768,640x480,320x240;preview-format=yuv420sp;preview-format-values=yuv420sp,yuv420p,yuv422i-yuyv,yuv420p;preview-fps-ext-values=10,15,20,24,30;preview-fps-range=30000,30000;preview-fps-range-ext-values=(10000,10000),(15000,15000),(20000,20000),(24000,24000),(10000,30000),(30000,30000);preview-fps-range-values=(10000,10000),(15000,15000),(20000,20000),(24000,24000),(10000,30000),(30000,30000);preview-frame-rate=30;preview-frame-rate-range=30000,30000;preview-frame-rate-values=10,15,20,24,30;preview-size-values=1920x1080,1280x720,960x720,800x480,720x576,720x480,768x576,640x480,320x240,352x288,240x160,176x144,160x120,128x96,1088x1920,720x1280,480x800,576x720,576x768,480x720,480x640,288x352,240x320,160x240,144x176,120x160,96x128;raw-height=1944;raw-width=2592;recording-hint=;s3d-cap-frame-layout=none;s3d-cap-frame-layout-values=none;s3d-prv-frame-layout=none;s3d-prv-frame-layout-values=none;saturation=100;scene-mode=auto;scene-mode-values=auto,closeup,landscape,aqua,sports,mood,night-portrait,night-indoor,fireworks,document,barcode,super-night,cine,old-film,action,beach,candlelight,night,party,portrait,snow,steadyphoto,sunset,theatre;sensor-orientation=0;sharpness=100;smooth-zoom-supported=true;supported-manual-convergence-max=100;supported-manual-convergence-min=-100;supported-manual-convergence-step=1;supported-manual-exposure-max=125;supported-manual-exposure-min=1;supported-manual-exposure-step=1;supported-manual-gain-iso-max=800;supported-manual-gain-iso-min=100;supported-manual-gain-iso-step=100;supported-picture-sidebyside-size-values=;supported-picture-subsampled-size-values=;supported-picture-topbottom-size-values=;supported-preview-sidebyside-size-values=;supported-preview-subsampled-size-values=;supported-preview-topbottom-size-values=;ti-algo-external-gamma=false;ti-algo-gic=true;ti-algo-nsf1=true;ti-algo-nsf2=true;ti-algo-sharpening=true;ti-algo-threelineco
+05-08 11:23:39.792: I/DecodeThread(5289): Hints: {POSSIBLE_FORMATS=[CODABAR, CODE_39, CODE_93, CODE_128, DATA_MATRIX, EAN_8, EAN_13, ITF, QR_CODE, RSS_14, RSS_EXPANDED, UPC_A, UPC_E], NEED_RESULT_POINT_CALLBACK=com.google.zxing.client.android.ViewfinderResultPointCallback@3e2184c9}
+05-08 11:23:39.837: D/DOMX(165): device/lge/u2-common/domx/domx/omx_proxy_common/src/omx_proxy_common.c:1406    __PROXY_SetParameter()  
+05-08 11:23:39.837: D/DOMX(165): ERROR: failed check:(eError == OMX_ErrorNone) || (eError == OMX_ErrorNoMore) - returning error: 0x80001001 - Error returned from OMX API in ducati
+05-08 11:23:39.837: D/DOMX(165): device/lge/u2-common/domx/omx_proxy_component/omx_camera/src/omx_proxy_camera.c:476    CameraSetParam()    
+05-08 11:23:39.837: D/DOMX(165): ERROR:  CameraSetParam: Error in SetParam 0x80001001
+05-08 11:23:39.837: E/CameraHal(165): (414a3a80)   device/lge/u2-common/camera/OMXCameraAdapter/OMXCameraAdapter.cpp:1205 setFormat - OMX_SetParameter - 80001001
+05-08 11:23:39.838: E/CameraHal(165): (414a3a80)   device/lge/u2-common/camera/OMXCameraAdapter/OMXCameraAdapter.cpp:1266 setFormat - Exiting function setFormat because of eError = 0x80001001
+05-08 11:23:39.838: E/CameraHal(165): (414a3a80)   device/lge/u2-common/camera/OMXCameraAdapter/OMXAlgo.cpp:1165 setSensorOrientation - Error while configuring format 0xffffffea
+05-08 11:23:39.838: E/CameraHal(165): (414a3a80)   device/lge/u2-common/camera/OMXCameraAdapter/OMXCameraAdapter.cpp:2858 getFrameSize - Error configuring Sensor Orientation ffffffea
+05-08 11:23:39.838: E/CameraHal(165): (414a3a80)   device/lge/u2-common/camera/CameraHal.cpp:1889 cameraPreviewInitialization - Error: CAMERA_QUERY_RESOLUTION_PREVIEW -22
+05-08 11:23:39.839: W/CaptureActivity(5289): Unexpected error initializing camera
+05-08 11:23:39.839: W/CaptureActivity(5289): java.lang.RuntimeException: startPreview failed
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.hardware.Camera.startPreview(Native Method)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.google.zxing.client.android.camera.CameraManager.startPreview(CameraManager.java:146)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.google.zxing.client.android.CaptureActivityHandler.(CaptureActivityHandler.java:74)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.google.zxing.client.android.CaptureActivity.initCamera(CaptureActivity.java:716)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.google.zxing.client.android.CaptureActivity.surfaceCreated(CaptureActivity.java:413)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.SurfaceView.updateWindow(SurfaceView.java:580)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.SurfaceView$3.onPreDraw(SurfaceView.java:176)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:944)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1970)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1061)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5891)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.Choreographer$CallbackRecord.run(Choreographer.java:767)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.Choreographer.doCallbacks(Choreographer.java:580)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.Choreographer.doFrame(Choreographer.java:550)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:753)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.os.Handler.handleCallback(Handler.java:739)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.os.Handler.dispatchMessage(Handler.java:95)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.os.Looper.loop(Looper.java:135)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.app.ActivityThread.main(ActivityThread.java:5293)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at java.lang.reflect.Method.invoke(Native Method)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at java.lang.reflect.Method.invoke(Method.java:372)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+05-08 11:23:39.861: V/WindowManager(455): Adding window Window{1b4e4535 u0 com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity} at 6 of 10 (before Window{aa1a u0 Starting com.google.zxing.client.android})
+05-08 11:23:39.871: I/Choreographer(5289): Skipped 41 frames!  The application may be doing too much work on its main thread.
+05-08 11:23:39.886: D/CameraManager(5289): Calculated framing rect: Rect(180, 101 - 780, 438)
+05-08 11:23:40.015: W/IInputConnectionWrapper(1685): showStatusIcon on inactive InputConnection
+05-08 11:23:40.051: I/ActivityManager(455): Displayed com.google.zxing.client.android/.CaptureActivity: +1s482ms
+05-08 11:23:40.182: I/Timeline(5289): Timeline: Activity_idle id: android.os.BinderProxy@1c66ee64 time:705649
+05-08 11:23:40.310: I/Timeline(455): Timeline: Activity_windows_visible id: ActivityRecord{24aec4d1 u0 com.google.zxing.client.android/.CaptureActivity t428} time:705776
+05-08 11:23:41.191: I/art(455): Explicit concurrent mark sweep GC freed 11194(620KB) AllocSpace objects, 4(992KB) LOS objects, 19% free, 17MB/22MB, paused 3.234ms total 202.026ms
+05-08 11:23:42.021: D/TaskPersister(455): removeObsoleteFile: deleting file=427_task.xml
+05-08 11:23:42.022: D/TaskPersister(455): removeObsoleteFile: deleting file=427_task_thumbnail.png</pre>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-100184026"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="ea2265d19753989c5e789a7c238caac9">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-100184026" class="timestamp">
+      <time datetime="2015-05-08T10:18:18Z" is="relative-time">May 8, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>You can see this is an error from the driver, not the app</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-300114605">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+      closed this   <a href="https://github.com/zxing/zxing/issues/374#event-300114605" class="timestamp"><time class="timestamp" datetime="2015-05-08T10:18:18Z" is="relative-time">May 8, 2015</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/kosnar"><img alt="@kosnar" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/7554187?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-100806698"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="989185f795475a2c3ff36940906d20e3">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/kosnar" class="author">kosnar</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-100806698" class="timestamp">
+      <time datetime="2015-05-11T08:02:40Z" is="relative-time">May 11, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Maybe this error is caused by driver, but older version works great.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+
+
+<!-- Rendered timeline since 2015-05-11 01:02:40 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:issue:74310454"
+      data-url="/zxing/zxing/issues/374/show_partial?partial=issues%2Ftimeline_marker&amp;since=1431331360"
+      data-last-modified="Mon, 11 May 2015 08:02:40 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/notifications/mark?ids=72240279" class="hidden js-timeline-marker-form" data-form-nonce="7ad078fb4749d64b7ec042aeb708e7788b4e1bca" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="gA06/p7tSbYF7gAWo3UKu8nbdAddQgOkpSs/XibZMeBSPvY+CCQ+2+ftKeO+uLOABL0RmG2lC+oeWqXraZ7eJA==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fzxing%2Fzxing%2Fissues%2F374" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.24360s from github-fe119-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2ba3b257a78c3bd28dab11d07ddc8e6b1cf5280066968cc8501b99bf58f64a63.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-dd3051b3b36fed71a99e2c164f3e1eb38a8beaf40dc272fd2807febc8bd46a7f.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

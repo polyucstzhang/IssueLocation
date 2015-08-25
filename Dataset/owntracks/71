@@ -1,0 +1,1919 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Support AltBeacons by GeorgeHahn · Pull Request #71 · owntracks/android · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Support AltBeacons by GeorgeHahn · Pull Request #71 · owntracks/android" name="twitter:title" /><meta content="Working towards #70. Feedback appreciated.
+
+Issues:
+
+
+
+ Foreground scanning is constant
+
+ Background scan timing is once every 30 seconds
+
+ didExitRegion never seems to get called - inconvenient, b..." name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/502747?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/502747?v=3&amp;s=400" property="og:image" /><meta content="Support AltBeacons by GeorgeHahn · Pull Request #71 · owntracks/android" property="og:title" /><meta content="https://github.com/owntracks/android/pull/71" property="og:url" /><meta content="Working towards #70. Feedback appreciated.
+
+Issues:
+
+
+
+ Foreground scanning is constant
+
+ Background scan timing is once every 30 seconds
+
+ didExitRegion never seems to get called - inconvenient, b..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:480B:28769E7:55DB5C71" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="i7MMZ/jVV2gCo0+XgPDkcKHBPX/SRGmfQwzPWAry3trOmcbJv7haL/thO+Lkxls5GctHAgRodcGoGvFdyRtNiA==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/owntracks/android/pull/71.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/owntracks/android/pull/71.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-fef2c0, .linked-labelstyle-fef2c0 {  background-color: #fef2c0 !important;  color: #333026 !important;}.labelstyle-fef2c0.selected {  background-color: #fef2c0 !important;  color: #333026 !important;}.label-select-menu .labelstyle-fef2c0.selected {  background:rgba(254, 242, 192, 0.12) !important;  color: #989173 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/owntracks/android/pull/71" data-pjax-transient>
+
+  <meta name="description" content="android - OwnTracks Android App">
+  <meta name="go-import" content="github.com/owntracks/android git https://github.com/owntracks/android.git">
+
+  <meta content="6574523" name="octolytics-dimension-user_id" /><meta content="owntracks" name="octolytics-dimension-user_login" /><meta content="16479425" name="octolytics-dimension-repository_id" /><meta content="owntracks/android" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="16479425" name="octolytics-dimension-repository_network_root_id" /><meta content="owntracks/android" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/owntracks/android/commits/ca5bb4362fad9fd17431bb440d382bd3878483b3.atom" rel="alternate" title="Recent Commits to android:ca5bb4362fad9fd17431bb440d382bd3878483b3" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fowntracks%2Fandroid%2Fpull%2F71" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/owntracks/android/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fowntracks%2Fandroid"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/owntracks/android/watchers">
+    34
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fowntracks%2Fandroid"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/owntracks/android/stargazers">
+      162
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fowntracks%2Fandroid"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/owntracks/android/network" class="social-count">
+        103
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/owntracks" class="url fn" itemprop="url" rel="author"><span itemprop="title">owntracks</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/owntracks/android" data-pjax="#js-repo-pjax-container">android</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/owntracks/android/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/owntracks/android" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /owntracks/android">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/owntracks/android/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /owntracks/android/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/owntracks/android/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /owntracks/android/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/owntracks/android/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /owntracks/android/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/owntracks/android/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /owntracks/android/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/owntracks/android.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/owntracks/android" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="14bbfe74e4989c08e579152fbb39f328866e699e" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="yWtKsxrMMyp2GXIMP9UMHxW1sdU7Asozv7G6YhWciyyDQJLuEuLQEUJDMybdIS7IimGOuYvQnUpQPtzzK58GTA==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="14bbfe74e4989c08e579152fbb39f328866e699e" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="anwa+Hn1PqyGraycqWq0CtltgfDabc6i1FVrl9ZIFspXKe4P/JTb2kouHrPYOsukrzkQ4xzJO/9I6uPXQirpgg==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/owntracks/android/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of owntracks/android as a zip file"
+                 title="Download the contents of owntracks/android as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;7454a2770eb76c82214edee6d613f75219033155&quot; -->
+<!-- head sha1: &quot;ca5bb4362fad9fd17431bb440d382bd3878483b3&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="owntracks/android:pull_request:22246369"
+    data-url="/owntracks/android/pull/71/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Support AltBeacons</span>
+      <span class="gh-header-number">#71</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-merged">
+          <span class="octicon octicon-git-pull-request"></span>
+          Merged
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/binarybucks" class="author pull-header-username css-truncate css-truncate-target expandable">
+    binarybucks
+  </a>
+  merged 8 commits into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">owntracks</span>:<span class="css-truncate-target">master</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">GeorgeHahn</span>:<span class="css-truncate-target">AltBeacon</span></span>
+
+
+  <time datetime="2014-10-08T09:50:17Z" is="relative-time">Oct 8, 2014</time>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="owntracks/android:branch:AltBeacon"
+    data-url=/owntracks/android/pull/71/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +1,261
+        </span>
+        <span class="text-diff-deleted">
+          −920
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="2,181 lines changed">
+          <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/owntracks/android/pull/71" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        10
+      </span>
+    </a>
+    <a href="/owntracks/android/pull/71/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        8
+      </span>
+    </a>
+    <a href="/owntracks/android/pull/71/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          20
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="owntracks/android:issue:44890394"
+     data-url="/owntracks/android/issues/71/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/issues/71?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="14bbfe74e4989c08e579152fbb39f328866e699e" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="9/cYe+MGTRH+Ae/T7iiwjjjZjotWu/zZHa6khzbmCkjRT5nTrq3M+a/MhHDA7l3sgTSaJPBF0FjqVeT0S2JoIw==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/issues/71/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="14bbfe74e4989c08e579152fbb39f328866e699e" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="Ax2kKXoCQaSHLTlB7xRhRxvhMCj2H9+zS+y6zuJtLpG7PksuPASPvSz0kKfovuSIkQTI2XVRkVcFSqxB4K5UtA==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/issues/71?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="14bbfe74e4989c08e579152fbb39f328866e699e" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="e6+51RHN4HnE+UDppYwzw/kT4cAQQ6jIs4preZlBCUxQXT1vwR4aXnmNMA+G+XKms8PAO7qLGsxpLGYiSrRkDQ==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:issue:44890394"
+      data-url="/owntracks/android/issues/71/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      4 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="GeorgeHahn" href="/GeorgeHahn"><img alt="@GeorgeHahn" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/502747?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="binarybucks" href="/binarybucks"><img alt="@binarybucks" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/782356?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="bluewindthings" href="/bluewindthings"><img alt="@bluewindthings" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/3198092?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="ckrey" href="/ckrey"><img alt="@ckrey" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/4027289?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="owntracks/android:marked-as-read:22246369">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/502747?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-44890394"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="85fa7e41082ef1cd431b8c9559130412">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/GeorgeHahn" class="author">GeorgeHahn</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-44890394" class="timestamp">
+      <time datetime="2014-10-04T18:22:42Z" is="relative-time">Oct 4, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Working towards <a href="https://github.com/owntracks/android/issues/70" class="issue-link" title="Add AltBeacon support">#70</a>. Feedback appreciated.</p>
+
+<p><s>Issues:</s></p>
+
+<ul class="task-list">
+<li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" checked disabled> Foreground scanning is constant</li>
+<li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" checked disabled> Background scan timing is once every 30 seconds</li>
+<li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" checked disabled> <code>didExitRegion</code> never seems to get called - inconvenient, because it makes it hard to tell if the phone is in range of a beacon at any given time</li>
+<li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" checked disabled> <s>The beacon message is a different than the existing iBeacon message. The main difference is that distance is given in meters as a double rather than Near/Far/etc. For the time being, I've also included some BT info - beacon manufacturer, etc</s> Still a little different, but much closer now.</li>
+<li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" checked disabled> <s>No rate limiting - when a beacon is found, it publishes a MQTT message for every BLE report (could be as high as 1Hz). Should be modified to push a report when beacon first found, maybe every meter of change (?), and when beacon is no longer detected</s>
+</li>
+<li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" checked disabled> Beacon message class not idiomatic, is hastily thrown together</li>
+<li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" checked disabled> <s>Untested for reliability; I'm trusting the AltBeacon library to do its thing (and trusting that I'm working with it perfectly, which is unlikely)</s>
+</li>
+<li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" checked disabled> <s>No battery saving mode - to do this, I think I need to get at the Application.context from my Beacon ProxyService. Haven't looked into this very deeply, may be mistaken.</s> Doesn't seem to have hit my battery too hard. Will reserve this for a future contrib if necessary.</li>
+</ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-1570ab9">
+    <div class="discussion-item-header">
+      <span class="octicon octicon-repo-push discussion-item-icon"></span>
+      <a href="/GeorgeHahn" class="author" rel="contributor" truncate="true">GeorgeHahn</a>
+      added
+        some commits
+      <a href="#commits-pushed-1570ab9" class="timestamp">
+        <time datetime="2014-10-04T15:35:34Z" is="relative-time">Oct 4, 2014</time>
+      </a>
+    </div>
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:commit:1570ab9c61c04dc529c6abb5b3088715c4e8a755"
+    data-url="/owntracks/android/commit/1570ab9c61c04dc529c6abb5b3088715c4e8a755/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/GeorgeHahn" class="author" rel="contributor">GeorgeHahn</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/GeorgeHahn/android/commit/1570ab9c61c04dc529c6abb5b3088715c4e8a755" class="message" data-pjax="true" title="Added android-beacon-library">Added android-beacon-library</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/GeorgeHahn/android/commit/1570ab9c61c04dc529c6abb5b3088715c4e8a755" class="commit-id">1570ab9</a></code>
+  </td>
+</tr>
+
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:commit:6a8487de067000441bf85da439100d65531e1cbb"
+    data-url="/owntracks/android/commit/6a8487de067000441bf85da439100d65531e1cbb/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/GeorgeHahn" class="author" rel="contributor">GeorgeHahn</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/GeorgeHahn/android/commit/6a8487de067000441bf85da439100d65531e1cbb" class="message" data-pjax="true" title="Added BT permissions">Added BT permissions</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/GeorgeHahn/android/commit/6a8487de067000441bf85da439100d65531e1cbb" class="commit-id">6a8487d</a></code>
+  </td>
+</tr>
+
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:commit:3dd6cd61bee08103ad335d4fc518a1b21d6b771a"
+    data-url="/owntracks/android/commit/3dd6cd61bee08103ad335d4fc518a1b21d6b771a/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/GeorgeHahn" class="author" rel="contributor">GeorgeHahn</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/GeorgeHahn/android/commit/3dd6cd61bee08103ad335d4fc518a1b21d6b771a" class="message" data-pjax="true" title="Added primitive AltBeacon support">Added primitive AltBeacon support</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/GeorgeHahn/android/commit/3dd6cd61bee08103ad335d4fc518a1b21d6b771a" class="commit-id">3dd6cd6</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/binarybucks"><img alt="@binarybucks" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/782356?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-57932892"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="3929cacfb6b32210f59276e8bb8ac1bd">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/binarybucks" class="author">binarybucks</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-57932892" class="timestamp">
+      <time datetime="2014-10-05T11:10:03Z" is="relative-time">Oct 5, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Looks promising so far, good job. Just clean up your ServiceBeacon a bit and tell me when you're ready to merge the code. <br>
+I cannot test the functionality for a lack of beacons. Can an iDevice be used to emulate one?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/502747?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-57934600"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="4b0a62c8044f565e437e4ccccb22acee">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/GeorgeHahn" class="author">GeorgeHahn</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-57934600" class="timestamp">
+      <time datetime="2014-10-05T12:31:26Z" is="relative-time">Oct 5, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I believe the AltBeacon library can be told how to decode the iBeacon format, but it's not there by default. I'm using <a href="http://www.amazon.com/gp/product/B00DJ83070/ref=oh_aui_detailpage_o01_s00?ie=UTF8&amp;psc=1">one of these</a> dongles as a beacon with a Raspberry Pi (<a href="https://github.com/RadiusNetworks/altbeacon-reference">can be done on any Linux device</a>).</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-7f0356d">
+    <div class="discussion-item-header">
+      <span class="octicon octicon-repo-push discussion-item-icon"></span>
+      <a href="/GeorgeHahn" class="author" rel="contributor" truncate="true">GeorgeHahn</a>
+      added
+        some commits
+      <a href="#commits-pushed-7f0356d" class="timestamp">
+        <time datetime="2014-10-05T13:41:12Z" is="relative-time">Oct 5, 2014</time>
+      </a>
+    </div>
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:commit:7f0356dc9d925f5557c73f6a7cc479485b80ead1"
+    data-url="/owntracks/android/commit/7f0356dc9d925f5557c73f6a7cc479485b80ead1/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/GeorgeHahn" class="author" rel="contributor">GeorgeHahn</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/GeorgeHahn/android/commit/7f0356dc9d925f5557c73f6a7cc479485b80ead1" class="message" data-pjax="true" title="Cleaning up ServiceBeacon">Cleaning up ServiceBeacon</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/GeorgeHahn/android/commit/7f0356dc9d925f5557c73f6a7cc479485b80ead1" class="commit-id">7f0356d</a></code>
+  </td>
+</tr>
+
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:commit:a783145003a8f4fb90347abc7ee7a2caf4f60da7"
+    data-url="/owntracks/android/commit/a783145003a8f4fb90347abc7ee7a2caf4f60da7/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/GeorgeHahn" class="author" rel="contributor">GeorgeHahn</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/GeorgeHahn/android/commit/a783145003a8f4fb90347abc7ee7a2caf4f60da7" class="message" data-pjax="true" title="Clean up beacon report, add iBeacon parser">Clean up beacon report, add iBeacon parser</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/GeorgeHahn/android/commit/a783145003a8f4fb90347abc7ee7a2caf4f60da7" class="commit-id">a783145</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/502747?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-57937816"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="67cb902902ca51227b9f0b4228690bed">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/GeorgeHahn" class="author">GeorgeHahn</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-57937816" class="timestamp">
+      <time datetime="2014-10-05T14:35:34Z" is="relative-time">Oct 5, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I just added an iBeacon parser to this. I'm not currently able to test it and I'm not sure about its IP status. Let me know whether you think it should be kept or removed.</p>
+
+<p>ATM I'm trying to figure out what's up with the AltBeacon library scanning times. It appears to do a scan every ~3 minutes when it's running in the background and a bit more often when it's in foreground mode. I'd like to crank that up a bit. (What good does granular location info do if it's three minutes late.) I suppose a good future addition would be a few prefs to allow users to choose how often/whether to scan.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/bluewindthings"><img alt="@bluewindthings" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/3198092?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-57946512"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="e3b6653da4273979ae819a6b15deebd3">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-57946512" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/bluewindthings" class="author">bluewindthings</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-57946512" class="timestamp">
+      <time datetime="2014-10-05T18:13:37Z" is="relative-time">Oct 5, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">Il 05/10/2014 14:31, George Hahn ha scritto:</div>
+<div class="email-quoted-reply"> I believe the AltBeacon library can be told how to decode the iBeacon
+ format, but it's not there by default. I'm using one of these
+ &lt;<a href="http://www.amazon.com/gp/product/B00DJ83070/ref=oh_aui_detailpage_o01_s00?ie=UTF8&amp;psc=1">http://www.amazon.com/gp/product/B00DJ83070/ref=oh_aui_detailpage_o01_s00?ie=UTF8&amp;psc=1</a>&gt;
+ dongles as a beacon with a Raspberry Pi (can be done on any Linux device
+ &lt;<a href="https://github.com/RadiusNetworks/altbeacon-reference&gt;">https://github.com/RadiusNetworks/altbeacon-reference&gt;</a>).
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/owntracks/android/pull/71#issuecomment-57934600">https://github.com/owntracks/android/pull/71#issuecomment-57934600</a>&gt;.
+</div>
+<div class="email-fragment">iBeacon format appears to be patented by Apple (while being a rather
+simple "use mode" over Bluetooth LE) and for this reason it could be
+difficult for the company behind AltBeacon to publish anything openly
+compatible to iBeacon.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/502747?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-58210973"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="696b4754bbe292c13dc67dd3d0a1dcff">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/GeorgeHahn" class="author">GeorgeHahn</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-58210973" class="timestamp">
+      <time datetime="2014-10-07T16:15:09Z" is="relative-time">Oct 7, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I've increased the frequency of background scanning and made background scans shorter to compensate. These parameters should probably be added as user preferences at some point.</p>
+
+<p>Let me know if you'd like me to add full getters and setters to the BeaconMessage class. Otherwise, I just have a bit of cleanup to do before this is ready to be merged.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-3cafeec">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:commit:3cafeec12faafa22555578740f727051e78f11da"
+    data-url="/owntracks/android/commit/3cafeec12faafa22555578740f727051e78f11da/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/GeorgeHahn" class="author" rel="contributor">GeorgeHahn</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/GeorgeHahn/android/commit/3cafeec12faafa22555578740f727051e78f11da" class="message" data-pjax="true" title="Cleaning up - added proper ServiceBeacon state and messages, added error handling, and reduced background scan time for increased responsiveness">Cleaning up - added proper ServiceBeacon state and messages, added er…</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>…ror handling, and reduced background scan time for increased responsiveness</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/GeorgeHahn/android/commit/3cafeec12faafa22555578740f727051e78f11da" class="commit-id">3cafeec</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/502747?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-58214861"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="f7ac8186554808a69b9df2c0c7ad3b52">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/GeorgeHahn" class="author">GeorgeHahn</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-58214861" class="timestamp">
+      <time datetime="2014-10-07T16:38:21Z" is="relative-time">Oct 7, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It sounds like there's no hard definition for iBeacon's proximity measurement. Would you like me to pick some arbitrary values for distance and translate that to an immediate/close/far <code>prox</code> measurement for increased iBeacon-AltBeacon compatibility?</p>
+
+<p>AltBeacon lacks an <code>acc</code> value. Should I report it as 0 or leave it out of the message?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ckrey"><img alt="@ckrey" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/4027289?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-58218997"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="f153b15d4205b1f59104bf46b16cafcb">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ckrey" class="author">ckrey</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-58218997" class="timestamp">
+      <time datetime="2014-10-07T17:00:52Z" is="relative-time">Oct 7, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Please put in -1 for <code>acc</code>, as IOS would:</p>
+
+<pre><code>A negative value in this property signifies that the actual accuracy could not be determined.
+</code></pre>
+
+<p>You are right, no hard definition:</p>
+
+<pre><code>CLProximityImmediate : The beacon is in the user’s immediate vicinity.
+CLProximityNear: The beacon is relatively close to the user.
+CLProximityFar: The beacon is far away.
+</code></pre>
+
+<p>Yes, please translate your measurements into <code>prox</code>. A widely used assumption seems to be</p>
+
+<pre><code>Immediate: a few centimeters
+Near: a few meters
+Far: approximately 10 meters
+</code></pre>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-7b3159e">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:commit:7b3159e27791b916b5b46f73095891479451dacc"
+    data-url="/owntracks/android/commit/7b3159e27791b916b5b46f73095891479451dacc/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/GeorgeHahn" class="author" rel="contributor">GeorgeHahn</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/GeorgeHahn/android/commit/7b3159e27791b916b5b46f73095891479451dacc" class="message" data-pjax="true" title="Adjusted beacon message for iOS compatibility">Adjusted beacon message for iOS compatibility</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/GeorgeHahn/android/commit/7b3159e27791b916b5b46f73095891479451dacc" class="commit-id">7b3159e</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/502747?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-58282694"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="1daaa81ff3fc9640483db5430c1da150">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/GeorgeHahn" class="author">GeorgeHahn</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-58282694" class="timestamp">
+      <time datetime="2014-10-07T23:56:58Z" is="relative-time">Oct 7, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Done. The beacon message is now compatible with the iOS app's beacon messages.</p>
+
+<p>As far as I'm concerned, this is complete. I'll open a new issue for adding a few of the fields to the GUI preferences (enable/disable &amp; set scan timing).</p>
+
+<p>Any final comments?</p>
+
+<p>Edit: Ah, one last thing. The iBeacon parser is still in there. I'm siding with <a href="https://github.com/bluewindthings" class="user-mention">@bluewindthings</a> comment; unless anyone has an objection, I'm going to remove it.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-ca5bb43">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="owntracks/android:commit:ca5bb4362fad9fd17431bb440d382bd3878483b3"
+    data-url="/owntracks/android/commit/ca5bb4362fad9fd17431bb440d382bd3878483b3/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/GeorgeHahn"><img alt="@GeorgeHahn" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/GeorgeHahn" class="author" rel="contributor">GeorgeHahn</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/GeorgeHahn/android/commit/ca5bb4362fad9fd17431bb440d382bd3878483b3" class="message" data-pjax="true" title="Remove iBeacon support due to IP concerns">Remove iBeacon support due to IP concerns</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/GeorgeHahn/android/commit/ca5bb4362fad9fd17431bb440d382bd3878483b3" class="commit-id">ca5bb43</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/binarybucks"><img alt="@binarybucks" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/782356?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-58327325"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="2a5fd11a2f42577a76ec7ff5b5a698e7">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/binarybucks" class="author">binarybucks</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-58327325" class="timestamp">
+      <time datetime="2014-10-08T08:43:18Z" is="relative-time">Oct 8, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm not sure. The beacon layout is all over the web so it shouldn't be a problem. One idea, if it's really just a string we make a preference from it so the user can provide a custom beacon layout string. So we do not distribute the string but still have the functionality. </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/binarybucks"><img alt="@binarybucks" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/782356?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-58333071"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="3f1fe535c613d6fb23212e9afde9ec13">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/binarybucks" class="author">binarybucks</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-58333071" class="timestamp">
+      <time datetime="2014-10-08T09:37:08Z" is="relative-time">Oct 8, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Merging things into master now. </p>
+
+<p>I'll add preferences to enable/disable the feature and add preferences for a custom layout and bg/fg scan periods. </p>
+
+<p>Shall we let the user enter seconds for the scan periods and betweenScanPeriods or shall we define 4 classes similar to the locator accuracy settings? </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-merged js-details-container">
+  <div class="discussion-item-header" id="event-175655865">
+
+
+    <span class="octicon octicon-git-merge discussion-item-icon"></span>
+    <img alt="@binarybucks" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/782356?v=3&amp;s=32" width="16" />
+    <a href="/binarybucks" class="author">binarybucks</a>
+    merged commit <a href="/owntracks/android/commit/ca5bb4362fad9fd17431bb440d382bd3878483b3"><code class="discussion-item-entity">ca5bb43</code></a> into <span class="commit-ref js-selectable-text"><span class="css-truncate-target user">owntracks</span>:<span class="css-truncate-target">master</span></span>  <a href="https://github.com/owntracks/android/pull/71#event-175655865" class="timestamp"><time class="timestamp" datetime="2014-10-08T09:50:17Z" is="relative-time">Oct 8, 2014</time></a>
+
+  </div>
+
+
+</div>
+
+
+  <div class="closed-banner"></div>
+
+
+  
+      <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-issue-45225130">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@binarybucks" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/782356?v=3&amp;s=32" width="16" />
+      <a href="/binarybucks" class="author" truncate="true">binarybucks</a>
+
+      referenced
+      this pull request
+      <a class="timestamp" href="#ref-issue-45225130">
+        <time datetime="2014-10-08T09:57:57Z" is="relative-time">Oct 8, 2014</time>
+      </a>
+    </div>
+
+      <span class="state state-closed right">
+          <span class="octicon octicon-issue-opened"></span>
+        Closed
+      </span>
+
+
+
+    <h3 class="discussion-item-ref-title">
+      <a href="/owntracks/android/issues/73" class="title-link">
+        Preferencs for AltBeacon support
+        <span class="issue-num">#73</span>
+</a>    </h3>
+    <span class="issue-meta-section task-progress"><span class="octicon octicon-checklist"></span><span class="task-progress-counts">3 of 3 tasks complete</span><span class="progress-bar"><span class="progress" style="width: 100%"></span></span></span>
+  </div>
+
+
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-head_ref_deleted">
+    <div class="discussion-item-header" id="event-176409771">
+
+      <span class="octicon octicon-git-branch-delete discussion-item-icon"></span>
+      <img alt="@GeorgeHahn" class="avatar" height="16" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=32" width="16" />
+      <a href="/GeorgeHahn" class="author">GeorgeHahn</a>
+      deleted the  <span class="commit-ref js-selectable-text"><span class="css-truncate-target user">GeorgeHahn</span>:<span class="css-truncate-target">AltBeacon</span></span> branch <a href="https://github.com/owntracks/android/pull/71#event-176409771" class="timestamp"><time class="timestamp" datetime="2014-10-09T15:32:40Z" is="relative-time">Oct 9, 2014</time></a>
+    </div>
+  </div>
+
+
+
+  
+      <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-pullrequest-45446910">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@GeorgeHahn" class="avatar" height="16" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=32" width="16" />
+      <a href="/GeorgeHahn" class="author" truncate="true">GeorgeHahn</a>
+
+      referenced
+      this pull request
+      <a class="timestamp" href="#ref-pullrequest-45446910">
+        <time datetime="2014-10-10T05:10:41Z" is="relative-time">Oct 10, 2014</time>
+      </a>
+    </div>
+
+      <span class="state state-merged right">
+          <span class="octicon octicon-git-pull-request"></span>
+        Merged
+      </span>
+
+
+
+    <h3 class="discussion-item-ref-title">
+      <a href="/owntracks/android/issues/74" class="title-link">
+        AltBeacon Improvements
+        <span class="issue-num">#74</span>
+</a>    </h3>
+    <span class="issue-meta-section task-progress"><span class="octicon octicon-checklist"></span><span class="task-progress-counts">3 of 3 tasks complete</span><span class="progress-bar"><span class="progress" style="width: 100%"></span></span></span>
+  </div>
+
+
+
+
+
+<!-- Rendered timeline since 2014-10-09 22:10:41 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:pull_request:22246369"
+      data-url="/owntracks/android/pull/71/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1412917841"
+      data-last-modified="Fri, 10 Oct 2014 05:10:41 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/owntracks/android/notifications/mark?ids=44786296" class="hidden js-timeline-marker-form" data-form-nonce="14bbfe74e4989c08e579152fbb39f328866e699e" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="P3csiVG+7Os9RjoO5aqXzH5W6ITge9QM2+RTe+HACeYqwnC8HQlULflLdiYS3PxGmHBVlLKwUEbj0YEIJhoUOw==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fowntracks%2Fandroid%2Fpull%2F71" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="owntracks/android:branch:AltBeacon"
+     data-url="/owntracks/android/pull/71/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Oct 4, 2014
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:commit:1570ab9c61c04dc529c6abb5b3088715c4e8a755"
+      data-url="/owntracks/android/commit/1570ab9c61c04dc529c6abb5b3088715c4e8a755/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/GeorgeHahn" data-skip-pjax="true" rel="contributor"><img alt="@GeorgeHahn" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/GeorgeHahn/android/commit/1570ab9c61c04dc529c6abb5b3088715c4e8a755" class="message" data-pjax="true" title="Added android-beacon-library">Added android-beacon-library</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/GeorgeHahn" class="commit-author" rel="contributor">GeorgeHahn</a>
+ authored <time datetime="2014-10-04T15:35:34Z" is="relative-time">Oct 4, 2014</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="1570ab9c61c04dc529c6abb5b3088715c4e8a755" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/GeorgeHahn/android/commit/1570ab9c61c04dc529c6abb5b3088715c4e8a755" class="sha btn btn-outline">
+        1570ab9
+      </a>
+    </div>
+    <a href="/owntracks/android/tree/1570ab9c61c04dc529c6abb5b3088715c4e8a755" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:commit:6a8487de067000441bf85da439100d65531e1cbb"
+      data-url="/owntracks/android/commit/6a8487de067000441bf85da439100d65531e1cbb/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/GeorgeHahn" data-skip-pjax="true" rel="contributor"><img alt="@GeorgeHahn" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/GeorgeHahn/android/commit/6a8487de067000441bf85da439100d65531e1cbb" class="message" data-pjax="true" title="Added BT permissions">Added BT permissions</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/GeorgeHahn" class="commit-author" rel="contributor">GeorgeHahn</a>
+ authored <time datetime="2014-10-04T15:36:31Z" is="relative-time">Oct 4, 2014</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="6a8487de067000441bf85da439100d65531e1cbb" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/GeorgeHahn/android/commit/6a8487de067000441bf85da439100d65531e1cbb" class="sha btn btn-outline">
+        6a8487d
+      </a>
+    </div>
+    <a href="/owntracks/android/tree/6a8487de067000441bf85da439100d65531e1cbb" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:commit:3dd6cd61bee08103ad335d4fc518a1b21d6b771a"
+      data-url="/owntracks/android/commit/3dd6cd61bee08103ad335d4fc518a1b21d6b771a/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/GeorgeHahn" data-skip-pjax="true" rel="contributor"><img alt="@GeorgeHahn" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/GeorgeHahn/android/commit/3dd6cd61bee08103ad335d4fc518a1b21d6b771a" class="message" data-pjax="true" title="Added primitive AltBeacon support">Added primitive AltBeacon support</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/GeorgeHahn" class="commit-author" rel="contributor">GeorgeHahn</a>
+ authored <time datetime="2014-10-04T18:02:29Z" is="relative-time">Oct 4, 2014</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="3dd6cd61bee08103ad335d4fc518a1b21d6b771a" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/GeorgeHahn/android/commit/3dd6cd61bee08103ad335d4fc518a1b21d6b771a" class="sha btn btn-outline">
+        3dd6cd6
+      </a>
+    </div>
+    <a href="/owntracks/android/tree/3dd6cd61bee08103ad335d4fc518a1b21d6b771a" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Oct 5, 2014
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:commit:7f0356dc9d925f5557c73f6a7cc479485b80ead1"
+      data-url="/owntracks/android/commit/7f0356dc9d925f5557c73f6a7cc479485b80ead1/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/GeorgeHahn" data-skip-pjax="true" rel="contributor"><img alt="@GeorgeHahn" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/GeorgeHahn/android/commit/7f0356dc9d925f5557c73f6a7cc479485b80ead1" class="message" data-pjax="true" title="Cleaning up ServiceBeacon">Cleaning up ServiceBeacon</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/GeorgeHahn" class="commit-author" rel="contributor">GeorgeHahn</a>
+ authored <time datetime="2014-10-05T13:41:12Z" is="relative-time">Oct 5, 2014</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="7f0356dc9d925f5557c73f6a7cc479485b80ead1" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/GeorgeHahn/android/commit/7f0356dc9d925f5557c73f6a7cc479485b80ead1" class="sha btn btn-outline">
+        7f0356d
+      </a>
+    </div>
+    <a href="/owntracks/android/tree/7f0356dc9d925f5557c73f6a7cc479485b80ead1" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:commit:a783145003a8f4fb90347abc7ee7a2caf4f60da7"
+      data-url="/owntracks/android/commit/a783145003a8f4fb90347abc7ee7a2caf4f60da7/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/GeorgeHahn" data-skip-pjax="true" rel="contributor"><img alt="@GeorgeHahn" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/GeorgeHahn/android/commit/a783145003a8f4fb90347abc7ee7a2caf4f60da7" class="message" data-pjax="true" title="Clean up beacon report, add iBeacon parser">Clean up beacon report, add iBeacon parser</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/GeorgeHahn" class="commit-author" rel="contributor">GeorgeHahn</a>
+ authored <time datetime="2014-10-05T14:08:22Z" is="relative-time">Oct 5, 2014</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="a783145003a8f4fb90347abc7ee7a2caf4f60da7" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/GeorgeHahn/android/commit/a783145003a8f4fb90347abc7ee7a2caf4f60da7" class="sha btn btn-outline">
+        a783145
+      </a>
+    </div>
+    <a href="/owntracks/android/tree/a783145003a8f4fb90347abc7ee7a2caf4f60da7" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Oct 7, 2014
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:commit:3cafeec12faafa22555578740f727051e78f11da"
+      data-url="/owntracks/android/commit/3cafeec12faafa22555578740f727051e78f11da/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/GeorgeHahn" data-skip-pjax="true" rel="contributor"><img alt="@GeorgeHahn" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/GeorgeHahn/android/commit/3cafeec12faafa22555578740f727051e78f11da" class="message" data-pjax="true" title="Cleaning up - added proper ServiceBeacon state and messages, added error handling, and reduced background scan time for increased responsiveness">Cleaning up - added proper ServiceBeacon state and messages, added er…</a>
+
+    <span class="hidden-text-expander inline"><a href="#" class="js-details-target">…</a></span>
+    </p>
+
+    <div class="commit-meta">
+        <a href="/GeorgeHahn" class="commit-author" rel="contributor">GeorgeHahn</a>
+ authored <time datetime="2014-10-07T16:34:34Z" is="relative-time">Oct 7, 2014</time>
+
+
+    </div>
+
+      <div class="commit-desc"><pre>…ror handling, and reduced background scan time for increased responsiveness</pre></div>
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="3cafeec12faafa22555578740f727051e78f11da" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/GeorgeHahn/android/commit/3cafeec12faafa22555578740f727051e78f11da" class="sha btn btn-outline">
+        3cafeec
+      </a>
+    </div>
+    <a href="/owntracks/android/tree/3cafeec12faafa22555578740f727051e78f11da" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:commit:7b3159e27791b916b5b46f73095891479451dacc"
+      data-url="/owntracks/android/commit/7b3159e27791b916b5b46f73095891479451dacc/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/GeorgeHahn" data-skip-pjax="true" rel="contributor"><img alt="@GeorgeHahn" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/GeorgeHahn/android/commit/7b3159e27791b916b5b46f73095891479451dacc" class="message" data-pjax="true" title="Adjusted beacon message for iOS compatibility">Adjusted beacon message for iOS compatibility</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/GeorgeHahn" class="commit-author" rel="contributor">GeorgeHahn</a>
+ authored <time datetime="2014-10-07T23:47:35Z" is="relative-time">Oct 7, 2014</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="7b3159e27791b916b5b46f73095891479451dacc" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/GeorgeHahn/android/commit/7b3159e27791b916b5b46f73095891479451dacc" class="sha btn btn-outline">
+        7b3159e
+      </a>
+    </div>
+    <a href="/owntracks/android/tree/7b3159e27791b916b5b46f73095891479451dacc" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Oct 8, 2014
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="owntracks/android:commit:ca5bb4362fad9fd17431bb440d382bd3878483b3"
+      data-url="/owntracks/android/commit/ca5bb4362fad9fd17431bb440d382bd3878483b3/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/GeorgeHahn" data-skip-pjax="true" rel="contributor"><img alt="@GeorgeHahn" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/502747?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/GeorgeHahn/android/commit/ca5bb4362fad9fd17431bb440d382bd3878483b3" class="message" data-pjax="true" title="Remove iBeacon support due to IP concerns">Remove iBeacon support due to IP concerns</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/GeorgeHahn" class="commit-author" rel="contributor">GeorgeHahn</a>
+ authored <time datetime="2014-10-08T00:03:05Z" is="relative-time">Oct 7, 2014</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="ca5bb4362fad9fd17431bb440d382bd3878483b3" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/GeorgeHahn/android/commit/ca5bb4362fad9fd17431bb440d382bd3878483b3" class="sha btn btn-outline">
+        ca5bb43
+      </a>
+    </div>
+    <a href="/owntracks/android/tree/ca5bb4362fad9fd17431bb440d382bd3878483b3" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.31494s from github-fe129-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

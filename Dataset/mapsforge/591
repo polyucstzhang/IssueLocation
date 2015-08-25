@@ -1,0 +1,2873 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Multithreaded Rendering: rendering errors · Issue #591 · mapsforge/mapsforge · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Multithreaded Rendering: rendering errors · Issue #591 · mapsforge/mapsforge" name="twitter:title" /><meta content="The new multi-threaded renderer does not play well with labels/icons across tile borders. 
+
+For the original discussion see: 
+https://groups.google.com/forum/?utm_medium=email&amp;utm_source=footer#!ms..." name="twitter:description" /><meta content="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=400" property="og:image" /><meta content="Multithreaded Rendering: rendering errors · Issue #591 · mapsforge/mapsforge" property="og:title" /><meta content="https://github.com/mapsforge/mapsforge/issues/591" property="og:url" /><meta content="The new multi-threaded renderer does not play well with labels/icons across tile borders. 
+
+For the original discussion see: 
+https://groups.google.com/forum/?utm_medium=email&amp;utm_source=footer#!ms..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:1687:290A19E:55DB65BC" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="QrbZOWa07hOeOgMk/i27TJ7cDB+O9x8ev+7YmZ/JLdy9cZeSW6qbGsKNQrRHF8mb16gU3aRnaAJecqf+Qm5lyw==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+      
+  <meta name="description" content="The new home of mapsforge.">
+  <meta name="go-import" content="github.com/mapsforge/mapsforge git https://github.com/mapsforge/mapsforge.git">
+
+  <meta content="430042" name="octolytics-dimension-user_id" /><meta content="mapsforge" name="octolytics-dimension-user_login" /><meta content="26262349" name="octolytics-dimension-repository_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="26262349" name="octolytics-dimension-repository_network_root_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/mapsforge/mapsforge/commits/master.atom" rel="alternate" title="Recent Commits to mapsforge:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fmapsforge%2Fmapsforge%2Fissues%2F591" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/mapsforge/mapsforge/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/mapsforge/mapsforge/watchers">
+    35
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/mapsforge/mapsforge/stargazers">
+      161
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/mapsforge/mapsforge/network" class="social-count">
+        82
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/mapsforge" class="url fn" itemprop="url" rel="author"><span itemprop="title">mapsforge</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/mapsforge/mapsforge" data-pjax="#js-repo-pjax-container">mapsforge</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/mapsforge/mapsforge/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/mapsforge/mapsforge" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /mapsforge/mapsforge">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/mapsforge/mapsforge/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /mapsforge/mapsforge/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/mapsforge/mapsforge/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /mapsforge/mapsforge/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/mapsforge/mapsforge/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /mapsforge/mapsforge/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/mapsforge/mapsforge/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /mapsforge/mapsforge/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/mapsforge/mapsforge/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /mapsforge/mapsforge/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="422438b08bbcd7be74f957a30cc7915bff356a8b" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="lui5wEuPuKREMkktm0vAHaAKNaoaii/AwuZNLlfdkwdavL+fnURR4XD/0ITf72omfeFAbG1RuSeOyasH9Xbpjw==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="422438b08bbcd7be74f957a30cc7915bff356a8b" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="iDieck0htwLpLWqqhkjaibvDchHCvE1SH5ytYsk6hyCYThc2SQ9+927vfywmLi/nckYsZjOfmIMXl9oV7jP6Bg==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/mapsforge/mapsforge/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of mapsforge/mapsforge as a zip file"
+                 title="Download the contents of mapsforge/mapsforge as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-FFFFFF, .linked-labelstyle-FFFFFF {  background-color: #FFFFFF !important;  color: #333333 !important;}.labelstyle-FFFFFF.selected {  background-color: #FFFFFF !important;  color: #333333 !important;}.label-select-menu .labelstyle-FFFFFF.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-84b6eb, .linked-labelstyle-84b6eb {  background-color: #84b6eb !important;  color: #1c2733 !important;}.labelstyle-84b6eb.selected {  background-color: #84b6eb !important;  color: #1c2733 !important;}.label-select-menu .labelstyle-84b6eb.selected {  background:rgba(132, 182, 235, 0.12) !important;  color: #557699 !important;}
+
+span.labelstyle-159818, .linked-labelstyle-159818 {  background-color: #159818 !important;  color: #fff !important;}.labelstyle-159818.selected {  background-color: #159818 !important;  color: #fff !important;}.label-select-menu .labelstyle-159818.selected {  background:rgba(21, 152, 24, 0.12) !important;  color: #159918 !important;}
+
+span.labelstyle-e6e6e6, .linked-labelstyle-e6e6e6 {  background-color: #e6e6e6 !important;  color: #333333 !important;}.labelstyle-e6e6e6.selected {  background-color: #e6e6e6 !important;  color: #333333 !important;}.label-select-menu .labelstyle-e6e6e6.selected {  background:rgba(230, 230, 230, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-cc317c, .linked-labelstyle-cc317c {  background-color: #cc317c !important;  color: #fff !important;}.labelstyle-cc317c.selected {  background-color: #cc317c !important;  color: #fff !important;}.label-select-menu .labelstyle-cc317c.selected {  background:rgba(204, 49, 124, 0.12) !important;  color: #99245c !important;}
+
+span.labelstyle-ffffff, .linked-labelstyle-ffffff {  background-color: #ffffff !important;  color: #333333 !important;}.labelstyle-ffffff.selected {  background-color: #ffffff !important;  color: #333333 !important;}.label-select-menu .labelstyle-ffffff.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="mapsforge/mapsforge:issue:63280505"
+    data-url="/mapsforge/mapsforge/issues/591/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/mapsforge/mapsforge/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Multithreaded Rendering: rendering errors</span>
+      <span class="gh-header-number">#591</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-open">
+          <span class="octicon octicon-issue-opened"></span>
+          Open
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/ludwigb" class="author">ludwigb</a> opened this <span class="noun">Issue</span> <time datetime="2015-03-20T18:38:55Z" is="relative-time">Mar 20, 2015</time>
+        &middot; 39 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:issue:63280505"
+     data-url="/mapsforge/mapsforge/issues/591/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/591?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="422438b08bbcd7be74f957a30cc7915bff356a8b" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="SPFHaAOVun3aGP1NA9I6NC00rwnZdd8CrnstIoWhCsRvKEzpg69r7AmlCeOz6++ewAfRkYfd+a/AJ9p3VIEJfw==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+      <a href="/mapsforge/mapsforge/labels/bug" class="label css-truncate-target linked-labelstyle-fc2929" title="bug">bug</a>
+
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/591/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="422438b08bbcd7be74f957a30cc7915bff356a8b" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="3mGtiEdATcF9qzBYoJUDSBDu2PJWMmB3x/6RN8M+wziwG0Jyg0pzHhqVw9/YnuH3zMe3OhQbEu8k3YaYMxBjfA==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/591?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="422438b08bbcd7be74f957a30cc7915bff356a8b" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="HvRKlRKzREsGQ1hJoSSCwNP0wtUxg1YKb4Y8rrslFX6Vm8HsG8VKJ6IHoj5DtaBbR0bvVakvDKl1CjgsMluSnw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:issue:63280505"
+      data-url="/mapsforge/mapsforge/issues/591/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      3 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="ludwigb" href="/ludwigb"><img alt="@ludwigb" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="devemux86" href="/devemux86"><img alt="@devemux86" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="applantation" href="/applantation"><img alt="@applantation" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="mapsforge/mapsforge:marked-as-read:63280505">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-63280505"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="fc77a852a2b37f9a3260f2fe1ab18dc3">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-63280505" class="timestamp">
+      <time datetime="2015-03-20T18:38:55Z" is="relative-time">Mar 20, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The new multi-threaded renderer does not play well with labels/icons across tile borders. </p>
+
+<p>For the original discussion see: <br>
+<a href="https://groups.google.com/forum/?utm_medium=email&amp;utm_source=footer#!msg/mapsforge-dev/x19w0iPealM/K3SgbhwdcowJ">https://groups.google.com/forum/?utm_medium=email&amp;utm_source=footer#!msg/mapsforge-dev/x19w0iPealM/K3SgbhwdcowJ</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-c16993b">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@ludwigb" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" />
+      <a href="/ludwigb" class="author" truncate="true">ludwigb</a>
+
+      referenced
+      this issue
+      from a commit
+      <a href="#ref-commit-c16993b" class="timestamp">
+        <time datetime="2015-03-21T14:00:53Z" is="relative-time">Mar 21, 2015</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:c16993bc7c00344542ec48500b5833cba13b91c0"
+    data-url="/mapsforge/mapsforge/commit/c16993bc7c00344542ec48500b5833cba13b91c0/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/ludwigb"><img alt="@ludwigb" class="avatar avatar-small" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/ludwigb" class="author" rel="contributor">ludwigb</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mapsforge/mapsforge/commit/c16993bc7c00344542ec48500b5833cba13b91c0" class="message" data-pjax="true" title="Partial fix for #591, labels cut by multi-threaded renderer">Partial fix for</a> <a href="https://github.com/mapsforge/mapsforge/issues/591" class="issue-link" title="Multithreaded Rendering: rendering errors">#591</a><a href="/mapsforge/mapsforge/commit/c16993bc7c00344542ec48500b5833cba13b91c0" class="message" data-pjax="true" title="Partial fix for #591, labels cut by multi-threaded renderer">, labels cut by multi-threaded renderer</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/mapsforge/mapsforge/commit/c16993bc7c00344542ec48500b5833cba13b91c0" class="commit-id">c16993b</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-84347630"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="ba7697033ff1878245e0b7d39de575e3">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-84347630" class="timestamp">
+      <time datetime="2015-03-21T14:03:37Z" is="relative-time">Mar 21, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>With <a href="https://github.com/mapsforge/mapsforge/commit/c16993bc7c00344542ec48500b5833cba13b91c0" class="commit-link"><tt>c16993b</tt></a> I have just pushed a fix for this. </p>
+
+<p>The problem is that the LabelCache was not synchronized properly and that also tiles that were in the process of being rendered were not taken into account for the label boundary overlap calculations. </p>
+
+<p>With a threaded TileStore there is still a window for this to happen. As with a multi-threaded renderer the TileStore does not need threading anymore, this should be removed, closing this window. With that done it will also be possible to simplify the synchronization with the LabelCache a bit. </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-84364459"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="0dfd365b5fbc642d1df042951e150836">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-84364459" class="timestamp">
+      <time datetime="2015-03-21T14:56:30Z" is="relative-time">Mar 21, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>With <a href="https://github.com/mapsforge/mapsforge/commit/ff0ca396ea4dcc45ee67e592adc00e75fba07a70" class="commit-link"><tt>ff0ca39</tt></a> I pushed a fix for a NPE happening with <code>LabelLayer</code>.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-84368974"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="5eb3dff281ddd77f27f5ed8cc3f70287">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-84368974" class="timestamp">
+      <time datetime="2015-03-21T15:12:40Z" is="relative-time">Mar 21, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>About the multi-threaded renderer so far the tests work fine (threaded cache off).</p>
+
+<p>I have seen once some rendering artifacts that went away when I reloaded the map.<br>
+Somehow part of a tile showed blurry graphics, like above zoom level.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-labeled">
+    <div class="discussion-item-header" id="event-261191572">
+
+      <span class="octicon octicon-tag discussion-item-icon"></span>
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author">devemux86</a>
+      added the <span class="label-color" style="background-color: #fc2929;"><a href="/mapsforge/mapsforge/labels/bug" style="color: #fff">bug</a></span> label <a href="https://github.com/mapsforge/mapsforge/issues/591#event-261191572" class="timestamp"><time class="timestamp" datetime="2015-03-21T15:32:09Z" is="relative-time">Mar 21, 2015</time></a>
+    </div>
+  </div>
+
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-84373767"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="b8475d6a65e580affb9c161b35960776">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-84373767" class="timestamp">
+      <time datetime="2015-03-21T15:35:02Z" is="relative-time">Mar 21, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Playing with 8 threads, tile mixes show up (screenshot).</p>
+
+<p><a href="https://cloud.githubusercontent.com/assets/3484020/6765606/810afaa0-cff0-11e4-9c9f-e3138a3d3a72.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3484020/6765606/810afaa0-cff0-11e4-9c9f-e3138a3d3a72.png" alt="8_threads" style="max-width:100%;"></a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-13d3682">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@ludwigb" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" />
+      <a href="/ludwigb" class="author" truncate="true">ludwigb</a>
+
+      referenced
+      this issue
+      from a commit
+      <a href="#ref-commit-13d3682" class="timestamp">
+        <time datetime="2015-03-22T02:08:29Z" is="relative-time">Mar 22, 2015</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:13d3682060031f1dbf9fcf7142ef8d39ae94ca55"
+    data-url="/mapsforge/mapsforge/commit/13d3682060031f1dbf9fcf7142ef8d39ae94ca55/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/ludwigb"><img alt="@ludwigb" class="avatar avatar-small" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/ludwigb" class="author" rel="contributor">ludwigb</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mapsforge/mapsforge/commit/13d3682060031f1dbf9fcf7142ef8d39ae94ca55" class="message" data-pjax="true" title="FileSystemTileCache: remove threading (not needed anymore, see:wqq #591)">FileSystemTileCache: remove threading (not needed anymore, see:wqq</a> <a href="https://github.com/mapsforge/mapsforge/issues/591" class="issue-link" title="Multithreaded Rendering: rendering errors">#591</a><a href="/mapsforge/mapsforge/commit/13d3682060031f1dbf9fcf7142ef8d39ae94ca55" class="message" data-pjax="true" title="FileSystemTileCache: remove threading (not needed anymore, see:wqq #591)">)</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/mapsforge/mapsforge/commit/13d3682060031f1dbf9fcf7142ef8d39ae94ca55" class="commit-id">13d3682</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-84649792"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="3a1ab898afd9c7731d2b7584de775204">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-84649792" class="timestamp">
+      <time datetime="2015-03-22T16:34:42Z" is="relative-time">Mar 22, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It's very easy to mix the tiles with consecutive pan / zoom actions (screenshot).<br>
+Playing with default settings of 6 threads.</p>
+
+<p>Also with large maps I have very often app crashes at small zoom levels (whole country view).. </p>
+
+<p><a href="https://cloud.githubusercontent.com/assets/3484020/6770187/a1dceb18-d0c1-11e4-885d-ca9971017f84.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3484020/6770187/a1dceb18-d0c1-11e4-885d-ca9971017f84.png" alt="sample" style="max-width:100%;"></a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-84656570"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="fb80015714e5d56564e803936ffbd91d">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-84656570" class="timestamp">
+      <time datetime="2015-03-22T17:14:01Z" is="relative-time">Mar 22, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>And the exception from the app crash:</p>
+
+<div class="highlight highlight-java"><pre><span class="pl-smi">Caught</span> a <span class="pl-smi">RuntimeException</span> from the binder stub <span class="pl-smi">implementation.java.lang<span class="pl-k">.</span>NullPointerException</span>
+    at <span class="pl-smi">android.inputmethodservice<span class="pl-k">.</span>IInputMethodWrapper</span><span class="pl-k">.</span>setSessionEnabled(<span class="pl-smi">IInputMethodWrapper</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">280</span>)
+    at <span class="pl-smi">com.android.internal.view<span class="pl-k">.</span>IInputMethod</span>$<span class="pl-smi">Stub</span><span class="pl-k">.</span>onTransact(<span class="pl-smi">IInputMethod</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">129</span>)
+    at <span class="pl-smi">android.os<span class="pl-k">.</span>Binder</span><span class="pl-k">.</span>execTransact(<span class="pl-smi">Binder</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">404</span>)
+    at <span class="pl-smi">dalvik.system<span class="pl-k">.</span>NativeStart</span><span class="pl-k">.</span>run(<span class="pl-smi">Native</span> <span class="pl-smi">Method</span>)</pre></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-87016663"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="377864f8f49bee6136c7e5ae6361296d">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-87016663" class="timestamp">
+      <time datetime="2015-03-27T17:16:47Z" is="relative-time">Mar 27, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think we are hitting two things here: <br>
+the app crash is likely to come from an OOM error somewhere way below, which is not totally unlikely with too many threads that all load a bit of data. <br>
+the mixing might come from a situation where somehow the bitmap is already reused before it should be. </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-87064134"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="548d1fd913f096a83f5eca6e08a3a2b6">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-87064134" class="timestamp">
+      <time datetime="2015-03-27T19:22:52Z" is="relative-time">Mar 27, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Is there any trick to reproduce the problem? I cannot get it to paint the tiles incorrectly. <br>
+Anything special with the device?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-87067329"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="bc4eaf0d58189b6163393bdb02c7ba4e">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-87067329" class="timestamp">
+      <time datetime="2015-03-27T19:35:53Z" is="relative-time">Mar 27, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It happens in Android and Java with consecutive zooms and pans in a row.</p>
+
+<p>For Android I have tried also in Genymotion and see it there too.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-87451791"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="b30e3ad2cd94a6de3cea3d99a0af2be3">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-87451791" class="timestamp">
+      <time datetime="2015-03-29T18:11:37Z" is="relative-time">Mar 29, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I cannot really reproduce this, but my understanding is that the ill-painted tiles are actually zoom-up tiles from lower zoom levels that should be replaced by the right zoom level once the tiles have been produced. So, it looks like some tiles are never produced.</p>
+
+<p>In <a href="https://github.com/mapsforge/mapsforge/commit/104713bbf6ab1d771980ab46e37093ca54e68edf" class="commit-link"><tt>104713b</tt></a> I have put a timeout on the wait and added a missing notify call.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-87455315"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="29e0dd4f3aaf1f4c1abaa19420f83238">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-87455315" class="timestamp">
+      <time datetime="2015-03-29T18:59:03Z" is="relative-time">Mar 29, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>I cannot really reproduce this</p>
+</blockquote>
+
+<p><img class="emoji" title=":worried:" alt=":worried:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61f.png" height="20" width="20" align="absmiddle"><br>
+That's the kind of errors I don't like, the not deterministic ones..</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-87455924"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="f4e087124e8d1c36151cc9fc025fad8c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-87455924" class="timestamp">
+      <time datetime="2015-03-29T19:08:18Z" is="relative-time">Mar 29, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ludwig I don't see any new commit.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-104713b">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@ludwigb" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" />
+      <a href="/ludwigb" class="author" truncate="true">ludwigb</a>
+
+      referenced
+      this issue
+      from a commit
+      <a href="#ref-commit-104713b" class="timestamp">
+        <time datetime="2015-03-29T19:27:36Z" is="relative-time">Mar 29, 2015</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:104713bbf6ab1d771980ab46e37093ca54e68edf"
+    data-url="/mapsforge/mapsforge/commit/104713bbf6ab1d771980ab46e37093ca54e68edf/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/ludwigb"><img alt="@ludwigb" class="avatar avatar-small" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/ludwigb" class="author" rel="contributor">ludwigb</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mapsforge/mapsforge/commit/104713bbf6ab1d771980ab46e37093ca54e68edf" class="message" data-pjax="true" title="Synchronization: fixed some potential synchronization issues, see #591">Synchronization: fixed some potential synchronization issues, see</a> <a href="https://github.com/mapsforge/mapsforge/issues/591" class="issue-link" title="Multithreaded Rendering: rendering errors">#591</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/mapsforge/mapsforge/commit/104713bbf6ab1d771980ab46e37093ca54e68edf" class="commit-id">104713b</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-87460926"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="2b2dfd2497ab4a3941e40808977b008c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-87460926" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-87460926" class="timestamp">
+      <time datetime="2015-03-29T19:30:28Z" is="relative-time">Mar 29, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">It is there now.
+
+I could not push for a while, timeout after timeout, and then I decided to
+back off for a moment, because that way I was contributing to the DDOS on
+github.
+
+Ludwig</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 29 March 2015 at 16:08, Emux &lt;notifications@github.com&gt; wrote:
+ Ludwig I don't see any new commit.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/591#issuecomment-87455924">https://github.com/mapsforge/mapsforge/issues/591#issuecomment-87455924</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-87589830"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="58449eba25c888e47d0a4ec87eace440">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-87589830" class="timestamp">
+      <time datetime="2015-03-30T08:26:04Z" is="relative-time">Mar 30, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I see (often) again the tiles mix (screenshot).</p>
+
+<p><a href="https://cloud.githubusercontent.com/assets/3484020/6892775/7b12df24-d6cf-11e4-837b-975947b0a1df.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3484020/6892775/7b12df24-d6cf-11e4-837b-975947b0a1df.png" alt="sample" style="max-width:100%;"></a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/applantation"><img alt="@applantation" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-87656304"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="967b5c56b0d601d65a7aa61c9e925be2">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-87656304" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/applantation" class="author">applantation</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-87656304" class="timestamp">
+      <time datetime="2015-03-30T12:23:22Z" is="relative-time">Mar 30, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">That is again a tile from a lower zoom level blown up to fit the space
+until the real rendered tile becomes available.
+So the missing tile either never gets rendered or the missing tile gets
+rendered but the screen is not redrawn when it is finished. (If you then
+pan on the screen does the middle tile get redrawn correctly?)
+
+I only have two devices with me at the moment, running 5.0 and 5.1, maybe
+too fast to show the behaviour.
+
+I will probably try to put some debugging messages into dev later, maybe
+from reading a trace what happens will help me understand what is wrong.</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 30 March 2015 at 05:26, Emux &lt;notifications@github.com&gt; wrote:
+ I see often again the tiles mix.
+
+ [image: sample]
+ &lt;<a href="https://cloud.githubusercontent.com/assets/3484020/6892775/7b12df24-d6cf-11e4-837b-975947b0a1df.png">https://cloud.githubusercontent.com/assets/3484020/6892775/7b12df24-d6cf-11e4-837b-975947b0a1df.png</a>&gt;
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/591#issuecomment-87589830">https://github.com/mapsforge/mapsforge/issues/591#issuecomment-87589830</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-87661530"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="19959346793b4eea832192c5de7f3384">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-87661530" class="timestamp">
+      <time datetime="2015-03-30T12:34:17Z" is="relative-time">Mar 30, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>No the cache is already altered at that point (none panning or zoom fixes that tile).<br>
+I mean I find the blurry tile in the cache at this zoom level (where it does not belong).</p>
+
+<p>The exact same behavior happens also in Java.<br>
+(I recommend to try the Genymotion VMs, they can help in debugging)</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/applantation"><img alt="@applantation" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88070966"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="d5dd954f19a4ec8bc63802d858aca57b">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-88070966" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/applantation" class="author">applantation</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88070966" class="timestamp">
+      <time datetime="2015-03-31T12:46:30Z" is="relative-time">Mar 31, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">Can you confirm that tile really is in the file system tile cache?
+
+Because this is never a tile that we would render that way, blurry and all.
+It is definitely a tile that is drawn with the drawParentTile, scaling up a
+tile from a lower zoom level, that fits into that space (see how the roads
+line up).
+
+My suspicion is that for some reason the tile never gets written to the
+cache, so in the following code the tileCache never returns a bitmap, and
+the code always falls back to the parent bitmap (TileLayer.java):
+
+TileBitmap bitmap = this.tileCache.getImmediately(job);
+
+if (bitmap == null) {
+if (this.hasJobQueue &amp;&amp; !this.tileCache.containsKey(job)) {
+this.jobQueue.add(job);
+}
+drawParentTileBitmap(canvas, point, tile);
+} else {
+if (isTileStale(tile, bitmap) &amp;&amp; this.hasJobQueue &amp;&amp;
+!this.tileCache.containsKey(job)) {
+this.jobQueue.add(job);
+}
+retrieveLabelsOnly(job);
+canvas.drawBitmap(bitmap, (int) Math.round(point.x), (int)
+Math.round(point.y));
+bitmap.decrementRefCount();
+}
+
+
+Ludwig</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 30 March 2015 at 09:34, Emux &lt;notifications@github.com&gt; wrote:
+ No the cache is already altered at that point (none pan or zoom fixes that
+ tile).
+ I mean I find the blurry tile in the cache at this zoom level (where it
+ does not belong).
+
+ The exact same behavior happens also in Java.
+ (I recommend to try the Genymotion VMs, they can help in debugging)
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/591#issuecomment-87661530">https://github.com/mapsforge/mapsforge/issues/591#issuecomment-87661530</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88075643"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="3d1019bdebd47b0c258886066adecbf6">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88075643" class="timestamp">
+      <time datetime="2015-03-31T13:03:56Z" is="relative-time">Mar 31, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sure, here is a fresh example - quite easy to reproduce along with a lot of crashes too.</p>
+
+<p>The blurry tile (12/2200/1344.tile) is taken from the cache on the file system:<br>
+<a href="https://cloud.githubusercontent.com/assets/3484020/6919410/633be148-d7bf-11e4-9807-233a9ed6b2fb.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3484020/6919410/633be148-d7bf-11e4-9807-233a9ed6b2fb.png" alt="1344" style="max-width:100%;"></a></p>
+
+<p>The app screenshot:<br>
+<a href="https://cloud.githubusercontent.com/assets/3484020/6919368/0fab6a12-d7bf-11e4-9efe-d33faa40faf2.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3484020/6919368/0fab6a12-d7bf-11e4-9efe-d33faa40faf2.png" alt="sample" style="max-width:100%;"></a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88079272"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="1531a8e11dc23af111f93d4a95fe0c90">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88079272" class="timestamp">
+      <time datetime="2015-03-31T13:13:47Z" is="relative-time">Mar 31, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I just tried in Android 2.3 and after drawing 3-4 tiles we have immediate OOM crashes:</p>
+
+<div class="highlight highlight-java"><pre><span class="pl-smi">java.lang<span class="pl-k">.</span>OutOfMemoryError</span><span class="pl-k">:</span> bitmap size exceeds <span class="pl-c1">VM</span> budget
+    at <span class="pl-smi">android.graphics<span class="pl-k">.</span>Bitmap</span><span class="pl-k">.</span>nativeCreate(<span class="pl-smi">Native</span> <span class="pl-smi">Method</span>)
+    at <span class="pl-smi">android.graphics<span class="pl-k">.</span>Bitmap</span><span class="pl-k">.</span>createBitmap(<span class="pl-smi">Bitmap</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">477</span>)
+    at <span class="pl-smi">org.mapsforge.map.android.graphics<span class="pl-k">.</span>AndroidBitmap</span><span class="pl-k">.</span>createAndroidBitmap(<span class="pl-smi">AndroidBitmap</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">55</span>)
+    at <span class="pl-smi">org.mapsforge.map.android.graphics<span class="pl-k">.</span>AndroidTileBitmap</span><span class="pl-k">.</span><span class="pl-k">&lt;</span>init<span class="pl-k">&gt;</span>(<span class="pl-smi">AndroidTileBitmap</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">142</span>)
+    at <span class="pl-smi">org.mapsforge.map.android.graphics<span class="pl-k">.</span>AndroidGraphicFactory</span><span class="pl-k">.</span>createTileBitmap(<span class="pl-smi">AndroidGraphicFactory</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">233</span>)
+    at <span class="pl-smi">org.mapsforge.map.layer.renderer<span class="pl-k">.</span>DatabaseRenderer</span><span class="pl-k">.</span>executeJob(<span class="pl-smi">DatabaseRenderer</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">144</span>)
+    at <span class="pl-smi">org.mapsforge.map.layer.renderer<span class="pl-k">.</span>MapWorkerPool</span>$<span class="pl-smi">MapWorker</span><span class="pl-k">.</span>run(<span class="pl-smi">MapWorkerPool</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">111</span>)
+    at <span class="pl-smi">java.util.concurrent<span class="pl-k">.</span>ThreadPoolExecutor</span><span class="pl-k">.</span>runWorker(<span class="pl-smi">ThreadPoolExecutor</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">1088</span>)
+    at <span class="pl-smi">java.util.concurrent<span class="pl-k">.</span>ThreadPoolExecutor</span>$<span class="pl-smi">Worker</span><span class="pl-k">.</span>run(<span class="pl-smi">ThreadPoolExecutor</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">581</span>)
+    at <span class="pl-smi">java.lang<span class="pl-k">.</span>Thread</span><span class="pl-k">.</span>run(<span class="pl-smi">Thread</span><span class="pl-k">.</span>java<span class="pl-k">:</span><span class="pl-c1">1019</span>)</pre></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88085337"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="e55406da5b785d2156cd8b5d1918c7b9">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-88085337" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88085337" class="timestamp">
+      <time datetime="2015-03-31T13:30:11Z" is="relative-time">Mar 31, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">The crash is most likely to having too many threads retrieving data at the
+same time, we will need to find a way of aligning threads not only with
+processor capacity, but also available memory. Six, like at the moment, is
+definitely too many, but it seems worthwhile to try with so many as that
+shakes out some of the problems we are having.
+
+Interesting to see that that tile really ends up in the cache, currently I
+have no explication.
+
+Ludwig</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 31 March 2015 at 10:13, Emux &lt;notifications@github.com&gt; wrote:
+ I just tried in Android 2.3 and we have after drawing 3-4 tiles immediate
+ OOM crash:
+
+ java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+     at android.graphics.Bitmap.nativeCreate(Native Method)
+     at android.graphics.Bitmap.createBitmap(Bitmap.java:477)
+     at org.mapsforge.map.android.graphics.AndroidBitmap.createAndroidBitmap(AndroidBitmap.java:55)
+     at org.mapsforge.map.android.graphics.AndroidTileBitmap.&lt;init&gt;(AndroidTileBitmap.java:142)
+     at org.mapsforge.map.android.graphics.AndroidGraphicFactory.createTileBitmap(AndroidGraphicFactory.java:233)
+     at org.mapsforge.map.layer.renderer.DatabaseRenderer.executeJob(DatabaseRenderer.java:144)
+     at org.mapsforge.map.layer.renderer.MapWorkerPool$MapWorker.run(MapWorkerPool.java:111)
+     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+     at java.lang.Thread.run(Thread.java:1019)
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/591#issuecomment-88079272">https://github.com/mapsforge/mapsforge/issues/591#issuecomment-88079272</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88507972"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="5d2611dc27fc9b95ed7a59a350a57146">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88507972" class="timestamp">
+      <time datetime="2015-04-01T14:36:28Z" is="relative-time">Apr 1, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think I have an explantation for what is happening now, but not yet a solution. </p>
+
+<p>The wrong tiles that we see are not zoomed-up versions from lower levels, that was a wrong hunch. </p>
+
+<p>The problem lies in the rendertheme matching somewhere. The tiles that are drawn incorrectly are drawn with rendertheme instructions that match a different zoom level from the one that is actually shown. That is why we see this mismatch, which I have now managed to recreate, at zoom levels where there is a change in the render theme instructions for the levels involved. It looks like something is not quite thread-safe at this point: I assume the wrong tiles are already scheduled, then the zoom level changes, but the zoom level for matching stays at the previous level.</p>
+
+<p>Some progress, but not quite a solution yet.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88552815"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="41656345edd6db49921dcd0c5b3d68c8">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88552815" class="timestamp">
+      <time datetime="2015-04-01T16:53:53Z" is="relative-time">Apr 1, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The problem with the tiles are the text and line width scaling that is zoom level specific, but only applied once to each render instruction. When changing the zoom level the scale factors change, which affects all tiles that are being drawn at the time. So, that is why with zoom level changes we get tiles that appear half drawn and some that are drawn thicker than others. </p>
+
+<p>Fixing this is not trivial as it requires storing more information per render instruction, as we need to keep the information around for each zoom level. </p>
+
+<p>I made an attempt to store the render theme instructions properly scaled for each zoom level, but that uses so much memory that it is not an option. </p>
+
+<p>Equally, it is not an option to apply the scaling factors only at drawing time, as the correct size information is already needed at layout time (label clashes).</p>
+
+<p>Again, some progress, but not quite a solution yet.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88583640"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="8c143cbd056e4e8ffa0f703236203ab7">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88583640" class="timestamp">
+      <time datetime="2015-04-01T18:19:23Z" is="relative-time">Apr 1, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks for the feedback Ludwig.</p>
+
+<p>You mean the <a href="https://github.com/mapsforge/mapsforge/blob/dev/mapsforge-map/src/main/java/org/mapsforge/map/rendertheme/RenderContext.java#L98-L101">RenderContext.setScaleStrokeWidth(zoomLevel)</a> ?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88654825"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="0c2d19d550cd34f9a1f5dcf42b362dfb">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88654825" class="timestamp">
+      <time datetime="2015-04-01T22:41:32Z" is="relative-time">Apr 1, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yes, strokes and text sizes are scaled per zoom level, but this is not thread safe.</p>
+
+<p>I have now a working solution (I hope), but I will need a bit more testing and cleanup. Will hopefull push fix tomorrow.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-renamed">
+    <div class="discussion-item-header" id="event-271201744">
+
+      <span class="octicon octicon-pencil discussion-item-icon"></span>
+      <img alt="@ludwigb" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" />
+      <a href="/ludwigb" class="author">ludwigb</a>
+      changed the title from  <span class="renamed-was">Multithreaded Rendering: labels not rendered correctly on borders</span> to <span class="renamed-is">Multithreaded Rendering: rendering errors</span> <a href="https://github.com/mapsforge/mapsforge/issues/591#event-271201744" class="timestamp"><time class="timestamp" datetime="2015-04-02T00:40:24Z" is="relative-time">Apr 2, 2015</time></a>
+    </div>
+  </div>
+
+
+
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-6e2bfa5">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@ludwigb" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" />
+      <a href="/ludwigb" class="author" truncate="true">ludwigb</a>
+
+      referenced
+      this issue
+      from a commit
+      <a href="#ref-commit-6e2bfa5" class="timestamp">
+        <time datetime="2015-04-02T00:46:07Z" is="relative-time">Apr 2, 2015</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:6e2bfa5587f7b104deba203bd83cc92aa512e73c"
+    data-url="/mapsforge/mapsforge/commit/6e2bfa5587f7b104deba203bd83cc92aa512e73c/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/ludwigb"><img alt="@ludwigb" class="avatar avatar-small" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/ludwigb" class="author" rel="contributor">ludwigb</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mapsforge/mapsforge/commit/6e2bfa5587f7b104deba203bd83cc92aa512e73c" class="message" data-pjax="true" title="Multithreaded Rendering: fix for #591 by making textScale and strokeScale thread-safe">Multithreaded Rendering: fix for</a> <a href="https://github.com/mapsforge/mapsforge/issues/591" class="issue-link" title="Multithreaded Rendering: rendering errors">#591</a> <a href="/mapsforge/mapsforge/commit/6e2bfa5587f7b104deba203bd83cc92aa512e73c" class="message" data-pjax="true" title="Multithreaded Rendering: fix for #591 by making textScale and strokeScale thread-safe">by making textScale and strokeS…</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>…cale thread-safe</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/mapsforge/mapsforge/commit/6e2bfa5587f7b104deba203bd83cc92aa512e73c" class="commit-id">6e2bfa5</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88677348"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="e7aedd98f1ca3e62dbb6ab3e54316362">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88677348" class="timestamp">
+      <time datetime="2015-04-02T00:55:44Z" is="relative-time">Apr 2, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>With <a href="https://github.com/mapsforge/mapsforge/commit/6e2bfa5587f7b104deba203bd83cc92aa512e73c" class="commit-link"><tt>6e2bfa5</tt></a> I have pushed a change that hopefully fixes the rendering problem.</p>
+
+<p>The problem was that each zoom level has its own stroke and text scaling to increase text size and stroke width even if there is no change in the rendertheme. The problem was that this was a fixed change on the rendertheme object that then applied to all threads rendering. This was not a problem in the single-threaded case, for obvious reasons.</p>
+
+<p>In the multithreaded case it would also not have been a problem, had we been only rendering tiles at the same zoom level. However, when tiles from two different zoom levels were rendered at the same time (which can happen with a rapid change of zoom levels, when e.g. a lower zoom level has not yet been fully rendered while changing to a higher one) the setting for some of the tiles was wrong. This appeared as thicker line rendering that mostly applied to whole tiles, but could also apply just to part tiles.</p>
+
+<p>The solution was to have different paints for the renderinstructions for different zoom levels. The paints are instantiated when tiles at that level are actually rendered and are copied from the original paint, which now remains something like a template for the paints actually used. </p>
+
+<p>A different approach attempted was to have specific rules for all zoom levels, but this turned out to be too memory hungry to be feasible. </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-3d4c465">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author" truncate="true">devemux86</a>
+
+      referenced
+      this issue
+      from a commit
+      <a href="#ref-commit-3d4c465" class="timestamp">
+        <time datetime="2015-04-02T08:31:00Z" is="relative-time">Apr 2, 2015</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:3d4c465af62fbd49e9859c527d0e90f7824e5cd1"
+    data-url="/mapsforge/mapsforge/commit/3d4c465af62fbd49e9859c527d0e90f7824e5cd1/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/devemux86"><img alt="@devemux86" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/devemux86" class="author" rel="contributor">devemux86</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mapsforge/mapsforge/commit/3d4c465af62fbd49e9859c527d0e90f7824e5cd1" class="message" data-pjax="true" title="Multithreaded Rendering #591: fix NPE">Multithreaded Rendering</a> <a href="https://github.com/mapsforge/mapsforge/issues/591" class="issue-link" title="Multithreaded Rendering: rendering errors">#591</a><a href="/mapsforge/mapsforge/commit/3d4c465af62fbd49e9859c527d0e90f7824e5cd1" class="message" data-pjax="true" title="Multithreaded Rendering #591: fix NPE">: fix NPE</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/mapsforge/mapsforge/commit/3d4c465af62fbd49e9859c527d0e90f7824e5cd1" class="commit-id">3d4c465</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88823602"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="a6c67b580192e8e6d866c0dfc3122280">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88823602" class="timestamp">
+      <time datetime="2015-04-02T08:32:30Z" is="relative-time">Apr 2, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>With <a href="https://github.com/mapsforge/mapsforge/commit/3d4c465af62fbd49e9859c527d0e90f7824e5cd1" class="commit-link"><tt>3d4c465</tt></a> I pushed a NPE fix.</p>
+
+<p>I studied the changes, I'm a bit hesitant for the paints recreation during the map lifetime.<br>
+I'll continue with the testing.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88828740"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="bf643c645f45fc89bccaab7305efab5c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88828740" class="timestamp">
+      <time datetime="2015-04-02T08:44:36Z" is="relative-time">Apr 2, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>We have drawing issues, like the thick black lines (screenshot):</p>
+
+<p><a href="https://cloud.githubusercontent.com/assets/3484020/6960636/218eefe6-d92d-11e4-9f78-118a247783e0.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3484020/6960636/218eefe6-d92d-11e4-9f78-118a247783e0.png" alt="sample" style="max-width:100%;"></a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88834599"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="bdbbe6fa424c5d42fecdd4f4d24e6a51">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88834599" class="timestamp">
+      <time datetime="2015-04-02T08:59:29Z" is="relative-time">Apr 2, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>By the way, we still have OOM errors.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/applantation"><img alt="@applantation" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88908039"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="25b0c26af4c5f3128ffb1a7d67b8156e">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-88908039" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/applantation" class="author">applantation</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88908039" class="timestamp">
+      <time datetime="2015-04-02T13:47:08Z" is="relative-time">Apr 2, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-quoted-reply">On 2 April 2015 at 05:59, Emux &lt;notifications@github.com&gt; wrote:
+ By the way, we still have OOM errors.
+</div>
+<div class="email-fragment">I had, more for testing, set the number of concurrent threads very high: as
+each thread holds the data for a tile that can obviously be too much memory
+for low-memory devices. In <a href="https://github.com/mapsforge/mapsforge/commit/c82ff4306165debfa5e09b0343bcc297c7e6247c" class="commit-link"><tt>c82ff43</tt></a> I have reduced the number of threads
+to availableProcessors() + 1, which should go some way of adapting to
+device capabilities, but it would still be better if we had some better
+idea about the device.
+
+I studied the changes, I'm a bit hesitant for the paints recreation during</div>
+<div class="email-quoted-reply"> the map lifetime.</div>
+<div class="email-fragment">Yes, that is obviously not ideal. With <a href="https://github.com/mapsforge/mapsforge/commit/ce4890885f7c1d9795e579c371d4cb409465b1f5" class="commit-link"><tt>ce48908</tt></a> it again introduces a
+test so that at least the paints are only created once per zoom level.
+I had previously thought of only applying the scaling at the point of
+drawing, but correct size (at least of text) is also required when laying
+out labels.
+A better idea how to achieve this would be welcome, but at least we now
+know where the problem with the tiles came from.
+
+We have some drawing issues, like the thick black lines (screenshot):
+
+I have now seen this. I have, at this point, not again tried to recreate
+it, but it is possible that the latest change  <a href="https://github.com/mapsforge/mapsforge/commit/ce4890885f7c1d9795e579c371d4cb409465b1f5" class="commit-link"><tt>ce48908</tt></a> fixes this as
+my hunch is that it was caused by a synchronization error (the paint was
+just being replaced when a new RenderContext was created). This now only
+happens once per zoom level and is synchronized, so all the paints should
+be there when a thread starts rendering.
+
+Ludwig</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-88910538"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="30e2255d77f3e69019ba9f2ad5de6fe3">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-88910538" class="timestamp">
+      <time datetime="2015-04-02T13:56:27Z" is="relative-time">Apr 2, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>I have reduced the number of threads to availableProcessors() + 1</p>
+</blockquote>
+
+<p><img class="emoji" title=":+1:" alt=":+1:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20" align="absmiddle"> </p>
+
+<p>About the black lines, I still see them.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-89096911"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="7cef9c404cea4974d367829e129f39a5">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-89096911" class="timestamp">
+      <time datetime="2015-04-03T00:52:54Z" is="relative-time">Apr 3, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>With <a href="https://github.com/mapsforge/mapsforge/commit/ef7dad69beef1176e6aea1df5d1f768a26279a51" class="commit-link"><tt>ef7dad6</tt></a> I have pushed a fix for the black line problem. Black lines sometimes appeared where lines had a bitmap shader defined (e.g. private access roads with a hatched pattern).</p>
+
+<p>The problem was that access to a bitmap shader was not synchronized. This should now be fixed.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-89199499"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="6bb0738b457200a17652fd5df44d2c82">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-89199499" class="timestamp">
+      <time datetime="2015-04-03T07:17:14Z" is="relative-time">Apr 3, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I see strange things with the rendering (we need thorough testing).</p>
+
+<p>The same tile in file cache appears different in 2 platforms, in Java it has transparencies.<br>
+(save the 2 images and open them with an image viewer to see the transparency at 2nd one)</p>
+
+<p>Android 17/70404/42985.tile<br>
+<a href="https://cloud.githubusercontent.com/assets/3484020/6979233/2f57a476-d9e9-11e4-8dd0-c1ae1743426f.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3484020/6979233/2f57a476-d9e9-11e4-8dd0-c1ae1743426f.png" alt="android_42985" style="max-width:100%;"></a></p>
+
+<p>Java 17/70404/42985.tile<br>
+<a href="https://cloud.githubusercontent.com/assets/3484020/6979234/3796c0ea-d9e9-11e4-8f1c-e0075e4fdb86.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3484020/6979234/3796c0ea-d9e9-11e4-8f1c-e0075e4fdb86.png" alt="java_42985" style="max-width:100%;"></a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-89200148"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="0e9cf44e6cae0468d86641147c1f72d9">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-89200148" class="timestamp">
+      <time datetime="2015-04-03T07:19:42Z" is="relative-time">Apr 3, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Also e.g. in Java I see bold black rendering at some elements that goes away with little pan at same zoom level.</p>
+
+<p>Before drag:<br>
+<a href="https://cloud.githubusercontent.com/assets/3484020/6979313/d9509cc0-d9ea-11e4-83ee-fbbc932c6520.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3484020/6979313/d9509cc0-d9ea-11e4-83ee-fbbc932c6520.png" alt="1" style="max-width:100%;"></a></p>
+
+<p>After drag:<br>
+<a href="https://cloud.githubusercontent.com/assets/3484020/6979314/df0e4ec8-d9ea-11e4-8671-caee6cf70138.png" target="_blank"><img src="https://cloud.githubusercontent.com/assets/3484020/6979314/df0e4ec8-d9ea-11e4-8671-caee6cf70138.png" alt="2" style="max-width:100%;"></a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-89212550"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="8278b6f3eb84d33ae4ed3636fa716594">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-89212550" class="timestamp">
+      <time datetime="2015-04-03T08:08:51Z" is="relative-time">Apr 3, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ok the above behavior happens because in <a href="https://github.com/mapsforge/mapsforge/blob/dev/SwingMapViewer/src/main/java/org/mapsforge/map/swing/MapViewer.java#L98">SwingMapViewer</a> we create the <code>TileRendererLayer</code> with <code>isTransparent=true</code>.</p>
+
+<p>Nevertheless it's something to check.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-90764030"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="a11b0557525bce3699c646166293a93e">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-90764030" class="timestamp">
+      <time datetime="2015-04-07T23:55:26Z" is="relative-time">Apr 7, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Where are we with this? </p>
+
+<p>I understand that the rendering issues regarding the Swing MapViewer are caused by the transparency, is this something that still needs to be addressed? </p>
+
+<p>I am internally testing the threaded rendering, so far I do not see any issues, but this is one device only.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-90814937"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="3b22523be7ff4d74751bb5bdf80f4bcc">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-90814937" class="timestamp">
+      <time datetime="2015-04-08T06:06:15Z" is="relative-time">Apr 8, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The transparency issue exists and I think we should check it eventually, the optical result for the end user is certainly not good.<br>
+See also <a href="https://github.com/mapsforge/mapsforge/issues/579" class="issue-link" title="TileRendererLayer alpha">#579</a> where we have another transparency issue introduced some time ago by former code changes.</p>
+
+<p>About the multithreaded rendering I find it currently unusable because of the continuous crashes.<br>
+With various tests in Android (Gingerbread to Lollipop) and Java, with my apps and Samples.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-91045243"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="2333f48d20d3e474fd3abac4ab109292">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-91045243" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-91045243" class="timestamp">
+      <time datetime="2015-04-08T21:46:28Z" is="relative-time">Apr 8, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">What happens if you set the thread number to 1? I would be interested if
+that still creates crashes or if that behaves ok.
+The biggest problem that we have is with the multiplication of resources as
+every different zoom level needs its own paints.
+
+(Obviously, there are more resources required to process two tiles at once,
+but that is the question if we still get the crashes with just one thread)</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 8 April 2015 at 03:06, Emux &lt;notifications@github.com&gt; wrote:
+ The transparency issue exists and I think we should check it eventually,
+ the optical result for the end user is certainly not good.
+ See also <a href="https://github.com/mapsforge/mapsforge/issues/579" class="issue-link" title="TileRendererLayer alpha">#579</a> &lt;<a href="https://github.com/mapsforge/mapsforge/issues/579">https://github.com/mapsforge/mapsforge/issues/579</a>&gt; where
+ we have another transparency issue introduced some time ago with former
+ code changes.
+
+ About the multi-threaded rendering I find it currently unusable because of
+ the continuous crashes.
+ Various tests in Java and Android (from Gingerbread to Lollipop), with my
+ apps and Samples.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/591#issuecomment-90814937">https://github.com/mapsforge/mapsforge/issues/591#issuecomment-90814937</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-91124979"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="a2a3e0df354c1ca1d5671926cb6bbcce">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-91124979" class="timestamp">
+      <time datetime="2015-04-09T06:12:45Z" is="relative-time">Apr 9, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sorry for not mentioning it earlier..</p>
+
+<p>Actually I currently use dev branch with thread number to 1.<br>
+(that's how I publish my Beta versions too)</p>
+
+<p>So far I have not seen any issues with 1 thread.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-92038647"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="eabb11456e793f1d281327c70ad9e65a">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-92038647" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-92038647" class="timestamp">
+      <time datetime="2015-04-12T11:28:49Z" is="relative-time">Apr 12, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">I think the problem is that we are sailing so close to the memory limit
+that, at least on some devices, we do not have the memory available to load
+the data for two tiles at the same time.
+
+The problem with the map reader interface is that we
+
+   1. load the data from the tile at once and only then start rendering
+   2. load all the data from the tile regardless if it is needed for
+   rendering (what is rendered is only decided later through the rendering
+   process, but all the ways at that point have to be decoded already)
+
+This is a fundamental flaw in the design of the interaction, which has, in
+a generic fashion, been solved a long time ago: with database access:
+
+
+   1. use a cursor to iterate over data as it is loaded from the DB, never
+   load all the data at once.
+   2. only load the data the data that is actually required, the loading
+   process could be decided by the rendertheme, iterating through the layers.</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 9 April 2015 at 03:12, Emux &lt;notifications@github.com&gt; wrote:
+ Sorry for not mentioning earlier..
+
+ Actually I currently use dev branch with thread number to 1.
+ (that's how I publish my Beta versions too)
+
+ So far I have not seen any issue with 1 thread.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/591#issuecomment-91124979">https://github.com/mapsforge/mapsforge/issues/591#issuecomment-91124979</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-6f411c4">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author" truncate="true">devemux86</a>
+
+      referenced
+      this issue
+      from a commit
+      <a href="#ref-commit-6f411c4" class="timestamp">
+        <time datetime="2015-07-21T08:30:48Z" is="relative-time">Jul 21, 2015</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:6f411c4dd962bdbfbd957b2389bd37168cd7c87d"
+    data-url="/mapsforge/mapsforge/commit/6f411c4dd962bdbfbd957b2389bd37168cd7c87d/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/devemux86"><img alt="@devemux86" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/devemux86" class="author" rel="contributor">devemux86</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mapsforge/mapsforge/commit/6f411c4dd962bdbfbd957b2389bd37168cd7c87d" class="message" data-pjax="true" title="Multithreaded Rendering: for stability reasons we set number of threads
+to 1, #591">Multithreaded Rendering: for stability reasons we set number of threads</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>to 1, <a href="https://github.com/mapsforge/mapsforge/issues/591" class="issue-link" title="Multithreaded Rendering: rendering errors">#591</a></pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/mapsforge/mapsforge/commit/6f411c4dd962bdbfbd957b2389bd37168cd7c87d" class="commit-id">6f411c4</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+  
+      <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-issue-47940653">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author" truncate="true">devemux86</a>
+
+      referenced
+      this issue
+      <a class="timestamp" href="#ref-issue-47940653">
+        <time datetime="2015-08-13T10:46:45Z" is="relative-time">Aug 13, 2015</time>
+      </a>
+    </div>
+
+      <span class="state state-closed right">
+          <span class="octicon octicon-issue-opened"></span>
+        Closed
+      </span>
+
+
+
+    <h3 class="discussion-item-ref-title">
+      <a href="/mapsforge/mapsforge/issues/73" class="title-link">
+        Use several threads for parallel map tile rendering on multi-core CPUs
+        <span class="issue-num">#73</span>
+</a>    </h3>
+    
+  </div>
+
+
+
+
+
+<!-- Rendered timeline since 2015-08-13 03:46:45 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:issue:63280505"
+      data-url="/mapsforge/mapsforge/issues/591/show_partial?partial=issues%2Ftimeline_marker&amp;since=1439462805"
+      data-last-modified="Thu, 13 Aug 2015 10:46:45 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/notifications/mark?ids=63484363" class="hidden js-timeline-marker-form" data-form-nonce="422438b08bbcd7be74f957a30cc7915bff356a8b" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="a3awHigUwdj4YVEzpvofZhO1LAdZNh0G8+3dUdAnELh11egINScqW9rQSsbSuwxlnHTY3sUhbt3fbUhJ4M+Z7g==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fmapsforge%2Fmapsforge%2Fissues%2F591" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.30022s from github-fe124-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,1285 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Problem of generating a map file with Mapfile-Writer Osmosis-Plugin · Issue #53 · mapsforge/mapsforge · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Problem of generating a map file with Mapfile-Writer Osmosis-Plugin · Issue #53 · mapsforge/mapsforge" name="twitter:title" /><meta content="From leila.me...@gmail.com on November 29, 2010 16:47:56
+
+Hi!
+I want to create a map file from a file &quot;osm&quot; exported from the Official Site OpenStreeetMaps ( http://www.openstreetmap.org/ ) by foll..." name="twitter:description" /><meta content="https://avatars2.githubusercontent.com/u/430042?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars2.githubusercontent.com/u/430042?v=3&amp;s=400" property="og:image" /><meta content="Problem of generating a map file with Mapfile-Writer Osmosis-Plugin · Issue #53 · mapsforge/mapsforge" property="og:title" /><meta content="https://github.com/mapsforge/mapsforge/issues/53" property="og:url" /><meta content="From leila.me...@gmail.com on November 29, 2010 16:47:56
+
+Hi!
+I want to create a map file from a file &quot;osm&quot; exported from the Official Site OpenStreeetMaps ( http://www.openstreetmap.org/ ) by foll..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:5D16:25DC5C6:55DB61CE" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="+VdTXYB3nbFrR5jfC5jJbm8kQpfNjkzEPd5BoHMj3ktWAJVeHEsMR1T+BH/8DvNRqKvMViOKopJM/yr25q2U3Q==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+      
+  <meta name="description" content="The new home of mapsforge.">
+  <meta name="go-import" content="github.com/mapsforge/mapsforge git https://github.com/mapsforge/mapsforge.git">
+
+  <meta content="430042" name="octolytics-dimension-user_id" /><meta content="mapsforge" name="octolytics-dimension-user_login" /><meta content="26262349" name="octolytics-dimension-repository_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="26262349" name="octolytics-dimension-repository_network_root_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/mapsforge/mapsforge/commits/master.atom" rel="alternate" title="Recent Commits to mapsforge:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fmapsforge%2Fmapsforge%2Fissues%2F53" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/mapsforge/mapsforge/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/mapsforge/mapsforge/watchers">
+    35
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/mapsforge/mapsforge/stargazers">
+      161
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/mapsforge/mapsforge/network" class="social-count">
+        82
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/mapsforge" class="url fn" itemprop="url" rel="author"><span itemprop="title">mapsforge</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/mapsforge/mapsforge" data-pjax="#js-repo-pjax-container">mapsforge</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/mapsforge/mapsforge/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/mapsforge/mapsforge" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /mapsforge/mapsforge">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/mapsforge/mapsforge/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /mapsforge/mapsforge/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/mapsforge/mapsforge/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /mapsforge/mapsforge/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/mapsforge/mapsforge/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /mapsforge/mapsforge/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/mapsforge/mapsforge/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /mapsforge/mapsforge/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/mapsforge/mapsforge/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /mapsforge/mapsforge/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="a6cf1cf4e5142509efc24f233f78e588cfe95c55" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="48gGBlW6dB8tuSBQONNr3YcH4HOK5U1t22V5LnriOhrPA6NErKkTAd1C6g7X4N5B3tixjRQvEGQy8jv49+Im8g==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="a6cf1cf4e5142509efc24f233f78e588cfe95c55" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="5v40HENS68H/MrseDDOriiIc99TXYDr1/Ixi9vRHY149JiYY7xqFKXilatf/uLhB5GRYZJGDO72GNqhY03xoMw==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/mapsforge/mapsforge/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of mapsforge/mapsforge as a zip file"
+                 title="Download the contents of mapsforge/mapsforge as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-FFFFFF, .linked-labelstyle-FFFFFF {  background-color: #FFFFFF !important;  color: #333333 !important;}.labelstyle-FFFFFF.selected {  background-color: #FFFFFF !important;  color: #333333 !important;}.label-select-menu .labelstyle-FFFFFF.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-84b6eb, .linked-labelstyle-84b6eb {  background-color: #84b6eb !important;  color: #1c2733 !important;}.labelstyle-84b6eb.selected {  background-color: #84b6eb !important;  color: #1c2733 !important;}.label-select-menu .labelstyle-84b6eb.selected {  background:rgba(132, 182, 235, 0.12) !important;  color: #557699 !important;}
+
+span.labelstyle-159818, .linked-labelstyle-159818 {  background-color: #159818 !important;  color: #fff !important;}.labelstyle-159818.selected {  background-color: #159818 !important;  color: #fff !important;}.label-select-menu .labelstyle-159818.selected {  background:rgba(21, 152, 24, 0.12) !important;  color: #159918 !important;}
+
+span.labelstyle-e6e6e6, .linked-labelstyle-e6e6e6 {  background-color: #e6e6e6 !important;  color: #333333 !important;}.labelstyle-e6e6e6.selected {  background-color: #e6e6e6 !important;  color: #333333 !important;}.label-select-menu .labelstyle-e6e6e6.selected {  background:rgba(230, 230, 230, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-cc317c, .linked-labelstyle-cc317c {  background-color: #cc317c !important;  color: #fff !important;}.labelstyle-cc317c.selected {  background-color: #cc317c !important;  color: #fff !important;}.label-select-menu .labelstyle-cc317c.selected {  background:rgba(204, 49, 124, 0.12) !important;  color: #99245c !important;}
+
+span.labelstyle-ffffff, .linked-labelstyle-ffffff {  background-color: #ffffff !important;  color: #333333 !important;}.labelstyle-ffffff.selected {  background-color: #ffffff !important;  color: #333333 !important;}.label-select-menu .labelstyle-ffffff.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="mapsforge/mapsforge:issue:47940465"
+    data-url="/mapsforge/mapsforge/issues/53/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/mapsforge/mapsforge/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Problem of generating a map file with Mapfile-Writer Osmosis-Plugin</span>
+      <span class="gh-header-number">#53</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-issue-closed"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/mapsforge" class="author">mapsforge</a> opened this <span class="noun">Issue</span> <time datetime="2014-11-06T09:31:26Z" is="relative-time">Nov 6, 2014</time>
+        &middot; 12 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:issue:47940465"
+     data-url="/mapsforge/mapsforge/issues/53/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/53?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="a6cf1cf4e5142509efc24f233f78e588cfe95c55" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="qS6XKyY7NhuO0kVoR7k/QcD6YtfOd1i7EwwJ7p024csEwvejJmOMPu0cAkdZGcQIeEc2mse+2f5iV8ea+msflw==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+      <a href="/mapsforge/mapsforge/labels/bug" class="label css-truncate-target linked-labelstyle-fc2929" title="bug">bug</a>
+  <a href="/mapsforge/mapsforge/labels/imported" class="label css-truncate-target linked-labelstyle-FFFFFF" title="imported">imported</a>
+  <a href="/mapsforge/mapsforge/labels/Priority-Medium" class="label css-truncate-target linked-labelstyle-FFFFFF" title="Priority-Medium">Priority-Medium</a>
+
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/53/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="a6cf1cf4e5142509efc24f233f78e588cfe95c55" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="WP5II2qOifGPRKcUpWxsfIgSxxMHpog2C/g8CHNI/zafppYdWQyW+nBRt8pJukj1INOO3u2IH3tQCZtBiCvOsw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/53?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="a6cf1cf4e5142509efc24f233f78e588cfe95c55" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="tQdkRlVHa14fT5xO0n0RHP7r+gb+aWZHz3QW3oGDsC35IeEdDO5++tRmngfgLroMCog9yHTr2O/tfaKSdEveRw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:issue:47940465"
+      data-url="/mapsforge/mapsforge/issues/53/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      1 participant
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="mapsforge" href="/mapsforge"><img alt="@mapsforge" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="mapsforge/mapsforge:marked-as-read:47940465">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-47940465"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="1471f5473734300c12dd54c85f1499bd">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-47940465" class="timestamp">
+      <time datetime="2014-11-06T09:31:26Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109736993322173673388/">leila.me...@gmail.com</a> on November 29, 2010 16:47:56</em></p>
+
+<p>Hi!<br>
+I want to create a map file from a file "osm" exported from the Official Site OpenStreeetMaps ( <a href="http://www.openstreetmap.org/">http://www.openstreetmap.org/</a> ) by following the steps in the documentation for the map file writer plugin Osmosis ( <a href="https://code.google.com/p/mapsforge/wiki/MapFileWriterOsmosis">https://code.google.com/p/mapsforge/wiki/MapFileWriterOsmosis</a> )</p>
+
+<p>steps<br>
+1. I downloaded the latest version of osmosis 0.38 from this link (Downloading <a href="http://wiki.openstreetmap.org/wiki/Osmosis">http://wiki.openstreetmap.org/wiki/Osmosis</a> #)</p>
+
+<ol>
+<li><p>I downloaded mapfile-writer plugin From The download section and I added it to the plugins folder (home/.openstreetmap/osmosis/plugins)</p></li>
+<li><p>I downloaded and added the files .jar (1.11.jar jts and trove 3.x.jar) in the plugins folder</p></li>
+<li><p>I installed java6 Environment (Sun JRE / JDK 6) --&gt;<br>
+leila @ ubuntu: / $ java-version home/.openstreetmap/osmosis-0.38<br>
+java version "1.6.0_21"<br>
+Java (TM) SE Runtime Environment (build 1.6.0_21-b06)<br>
+Java HotSpot (TM) Client VM (build 17.0-b16, mixed mode, sharing)</p></li>
+<li><p>I use the Operating system Ubuntu 10.10</p></li>
+</ol>
+
+<p>When execution the command osmosis, i still have this problem : SEVERE: Execution aborted.</p>
+
+<p>You find the trace of the execution as an attachment.</p>
+
+<p>Thanks for your help !!!</p>
+
+<p><strong>Attachment:</strong> <a href="http://code.google.com/p/mapsforge/issues/detail?id=53">resultat.txt</a></p>
+
+<p><em>Original issue: <a href="http://code.google.com/p/mapsforge/issues/detail?id=53">http://code.google.com/p/mapsforge/issues/detail?id=53</a></em></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+      
+
+
+  <div class="discussion-item discussion-item-labeled">
+    <div class="discussion-item-header" id="event-189196706">
+
+      <span class="octicon octicon-tag discussion-item-icon"></span>
+      <img alt="@mapsforge" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/430042?v=3&amp;s=32" width="16" />
+      <a href="/mapsforge" class="author">mapsforge</a>
+        added <span class="label-color" style="background-color: #fc2929;" title="by mapsforge at 2014-11-06 09:31:26"><a href="/mapsforge/mapsforge/labels/bug" style="color: #fff">bug</a></span> <span class="label-color" style="background-color: #FFFFFF;" title="by mapsforge at 2014-11-06 09:31:26"><a href="/mapsforge/mapsforge/labels/imported" style="color: #333333">imported</a></span> <span class="label-color" style="background-color: #FFFFFF;" title="by mapsforge at 2014-11-06 09:31:26"><a href="/mapsforge/mapsforge/labels/Priority-Medium" style="color: #333333">Priority-Medium</a></span> labels <a href="https://github.com/mapsforge/mapsforge/issues/53#event-189196706" class="timestamp"><time class="timestamp" datetime="2014-11-06T09:31:26Z" is="relative-time">Nov 6, 2014</time></a>
+    </div>
+  </div>
+
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949385"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="b214561a6ca8f6a54593a9538e419719">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949385" class="timestamp">
+      <time datetime="2014-11-06T09:31:27Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/jjbross@gmail.com/">jjbross@gmail.com</a> on November 29, 2010 09:40:17</em></p>
+
+<p>Hi,</p>
+
+<p>please try to copy the library jars (jts-1.11.jar and trove-3.x.jar) to $OSMOSIS_HOME/lib/default and report if that works.</p>
+
+<p>There had been some other remarks that the plugins directory doesn't work for the libraries.</p>
+
+<p><strong>Status:</strong> Accepted  </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949386"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="31b206a2c0aa39dcde17665e64ac9df9">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949386" class="timestamp">
+      <time datetime="2014-11-06T09:31:28Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/114940430101437556310/">aymentou...@gmail.com</a> on November 29, 2010 13:45:41</em></p>
+
+<p>Hi,</p>
+
+<p>I'm working with Leila on this project.<br>
+Used release : Osmosis 0.34<br>
+I tried the solution posted above and this is the trace of my execution :<br>
+aymen@aymen-LapTop:/home/.openstreetmap/osmosis/bin$ osmosis --rx file=/home/aymen/TestAL/map.osm --mapfile-writer file=/home/aymen/TestAL/Tunis.map bbox=36.9390000,9.9830000,36.6200000,10.4170000 zoom-interval-conf=13,6,17<br>
+29 nov. 2010 22:40:58 org.openstreetmap.osmosis.core.Osmosis run<br>
+INFO: Osmosis Version 0.34<br>
+log4j:WARN No appenders could be found for logger (org.java.plugin.ObjectFactory).<br>
+log4j:WARN Please initialize the log4j system properly.<br>
+29 nov. 2010 22:40:58 org.openstreetmap.osmosis.core.Osmosis run<br>
+INFO: Preparing pipeline.<br>
+29 nov. 2010 22:40:58 org.openstreetmap.osmosis.core.Osmosis main<br>
+GRAVE: Execution aborted.<br>
+org.openstreetmap.osmosis.core.OsmosisRuntimeException: Task type mapfile-writer doesn't exist.<br>
+    at org.openstreetmap.osmosis.core.pipeline.common.TaskManagerFactoryRegister.getInstance(TaskManagerFactoryRegister.java:60)<br>
+    at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.buildTasks(Pipeline.java:50)<br>
+    at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.prepare(Pipeline.java:112)<br>
+    at org.openstreetmap.osmosis.core.Osmosis.run(Osmosis.java:79)<br>
+    at org.openstreetmap.osmosis.core.Osmosis.main(Osmosis.java:30)<br>
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>
+    at java.lang.reflect.Method.invoke(Method.java:616)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:328)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:238)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:408)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:351)<br>
+    at org.codehaus.classworlds.Launcher.main(Launcher.java:31)</p>
+
+<p>Thanks a lot</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949389"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="5548bf5f1e54fb1bd54b97938027ac39">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949389" class="timestamp">
+      <time datetime="2014-11-06T09:31:29Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/114940430101437556310/">aymentou...@gmail.com</a> on November 29, 2010 13:47:19</em></p>
+
+<p>This error remains from the moment I tried to work with Osmosis</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949391"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="f0133fc77e34c2190df5ef0cfb6179b7">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949391" class="timestamp">
+      <time datetime="2014-11-06T09:31:29Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109067824594513388759/">thilo.mu...@gmail.com</a> on November 29, 2010 14:44:14</em></p>
+
+<p>Just for the protocol: the official documentation ( <a href="https://code.google.com/p/mapsforge/wiki/MapFileWriterOsmosis">https://code.google.com/p/mapsforge/wiki/MapFileWriterOsmosis</a> ) says that the plugin has been tested only with Osmosis &gt;= 0.36. It might be totally unrelated to your problem, but version 0.34 is not even officially supported.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949395"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="572b146caed1aa4ccf4f68a38b8ef295">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949395" class="timestamp">
+      <time datetime="2014-11-06T09:31:30Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/114940430101437556310/">aymentou...@gmail.com</a> on November 29, 2010 14:57:23</em></p>
+
+<p>This is my trace execution with Osmosis 0.38</p>
+
+<p>aymen@aymen-LapTop:/osmosis-0.38$ bin/osmosis --rx file=/home/aymen/TestAL/map.osm --mapfile-writer file=/home/aymen/TestAL/Tunis.map bbox=36.9390000,9.9830000,36.6200000,10.4170000 zoom-interval-conf=13,6,17<br>
+29 nov. 2010 23:55:59 org.openstreetmap.osmosis.core.Osmosis run<br>
+INFO: Osmosis Version 0.38<br>
+29 nov. 2010 23:56:00 org.java.plugin.registry.xml.ManifestParser <br>
+INFO: got SAX parser factory - org.apache.xerces.jaxp.SAXParserFactoryImpl@cac268<br>
+29 nov. 2010 23:56:00 org.java.plugin.registry.xml.PluginRegistryImpl configure<br>
+INFO: configured, stopOnError=false, isValidating=true<br>
+29 nov. 2010 23:56:00 org.java.plugin.registry.xml.PluginRegistryImpl register<br>
+INFO: plug-in and fragment descriptors registered - 1<br>
+29 nov. 2010 23:56:00 org.java.plugin.standard.StandardPluginManager activatePlugin<br>
+INFO: plug-in started - org.openstreetmap.osmosis.core.plugin.Core@0.38.0<br>
+29 nov. 2010 23:56:00 org.openstreetmap.osmosis.core.Osmosis run<br>
+INFO: Preparing pipeline.<br>
+29 nov. 2010 23:56:00 org.openstreetmap.osmosis.core.Osmosis main<br>
+GRAVE: Execution aborted.<br>
+org.openstreetmap.osmosis.core.OsmosisRuntimeException: Task type mapfile-writer doesn't exist.<br>
+    at org.openstreetmap.osmosis.core.pipeline.common.TaskManagerFactoryRegister.getInstance(TaskManagerFactoryRegister.java:60)<br>
+    at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.buildTasks(Pipeline.java:50)<br>
+    at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.prepare(Pipeline.java:112)<br>
+    at org.openstreetmap.osmosis.core.Osmosis.run(Osmosis.java:86)<br>
+    at org.openstreetmap.osmosis.core.Osmosis.main(Osmosis.java:37)<br>
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>
+    at java.lang.reflect.Method.invoke(Method.java:616)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:329)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:239)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)<br>
+    at org.codehaus.classworlds.Launcher.main(Launcher.java:31)<br>
+ Any help??</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949397"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="21d6adeaf0cf3a6397d3dd537ab7f59c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949397" class="timestamp">
+      <time datetime="2014-11-06T09:31:30Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109736993322173673388/">leila.me...@gmail.com</a> on November 30, 2010 00:04:18</em></p>
+
+<p>I copied the library Jars files to $../lib/defaul and it is always the same problem :</p>
+
+<p>leila@ubuntu:/home/.openstreetmap/osmosis-0.38$ bin/osmosis --read-xml file="map.osm" --mapfile-writer file="map-high.map" bbox=36.8859000,10.1395000,36.7974000,10.3445000 zoom-interval-conf=13,6,17<br>
+Nov 29, 2010 11:57:58 PM org.openstreetmap.osmosis.core.Osmosis run<br>
+INFO: Osmosis Version 0.38<br>
+Nov 29, 2010 11:57:58 PM org.java.plugin.registry.xml.ManifestParser <br>
+INFO: got SAX parser factory - org.apache.xerces.jaxp.SAXParserFactoryImpl@480457<br>
+Nov 29, 2010 11:57:58 PM org.java.plugin.registry.xml.PluginRegistryImpl configure<br>
+INFO: configured, stopOnError=false, isValidating=true<br>
+Nov 29, 2010 11:57:58 PM org.java.plugin.registry.xml.PluginRegistryImpl register<br>
+INFO: plug-in and fragment descriptors registered - 1<br>
+Nov 29, 2010 11:57:58 PM org.java.plugin.standard.StandardPluginManager activatePlugin<br>
+INFO: plug-in started - org.openstreetmap.osmosis.core.plugin.Core@0.38.0<br>
+Nov 29, 2010 11:57:58 PM org.openstreetmap.osmosis.core.Osmosis main<br>
+SEVERE: Execution aborted.<br>
+java.lang.NullPointerException<br>
+    at org.java.plugin.standard.StandardPluginManager.publishPlugins(StandardPluginManager.java:181)<br>
+    at org.openstreetmap.osmosis.core.TaskRegistrar.registerJpfPlugins(TaskRegistrar.java:239)<br>
+    at org.openstreetmap.osmosis.core.TaskRegistrar.loadJPFPlugins(TaskRegistrar.java:167)<br>
+    at org.openstreetmap.osmosis.core.TaskRegistrar.initialize(TaskRegistrar.java:88)<br>
+    at org.openstreetmap.osmosis.core.Osmosis.run(Osmosis.java:81)<br>
+    at org.openstreetmap.osmosis.core.Osmosis.main(Osmosis.java:37)<br>
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)<br>
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)<br>
+    at java.lang.reflect.Method.invoke(Method.java:597)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:329)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:239)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)<br>
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)<br>
+    at org.codehaus.classworlds.Launcher.main(Launcher.java:31)</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949399"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="409dd1a39201f150992244e926a7275c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949399" class="timestamp">
+      <time datetime="2014-11-06T09:31:31Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/jjbross@gmail.com/">jjbross@gmail.com</a> on November 30, 2010 00:57:21</em></p>
+
+<p>Hi,</p>
+
+<p>please make sure that the path you copied the libs is $OSMOSIS_HOME/lib/default (you wrote "lib/defaul"). What is the absolute path to "$../lib/defaul"? Please make sure that it is a sub-folder of $OSMOSIS_HOME, i.e. in your case "/home/.openstreetmap/osmosis-0.38".</p>
+
+<p>By the way: Why is your .openstreetmap directory located in /home and not in /home/leila that is in the home of the user you are logged in?</p>
+
+<p>Also make sure that you copied the jar files to the lib/default and NOT a zip file!</p>
+
+<p>Best regards</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949402"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="ec511edf735f21dffacee1f0acc9cb64">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949402" class="timestamp">
+      <time datetime="2014-11-06T09:31:32Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/jjbross@gmail.com/">jjbross@gmail.com</a> on November 30, 2010 01:14:23</em></p>
+
+<p>I just updated the Wiki article with a detailed example of how to setup the tool. Hopefully that clarifies some things.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949405"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="c0399a43c7dfa2f1923f54bd538c9e50">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949405" class="timestamp">
+      <time datetime="2014-11-06T09:31:32Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109736993322173673388/">leila.me...@gmail.com</a> on November 30, 2010 02:56:37</em></p>
+
+<p>Thanks a lot  Jjbross !!!</p>
+
+<p>I redo all the steps from detailed example and the problem was that I putted the plugins folder in $OSMOSIS_HOME not in a new directory "/home/leila/.openstreetmap/osmosis/plugins/". :/</p>
+
+<p>Thanks :)))))</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949408"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="062f41c3f250540d8030ffb80a8830e8">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949408" class="timestamp">
+      <time datetime="2014-11-06T09:31:33Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109067824594513388759/">thilo.mu...@gmail.com</a> on December 01, 2010 04:30:08</em></p>
+
+<p><strong>Status:</strong> Fixed  </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949412"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="a8ed45b7a39bf4f2a8c56319b1af8b8b">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949412" class="timestamp">
+      <time datetime="2014-11-06T09:31:33Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109865181815441425951/">tdh...@gmail.com</a> on February 11, 2011 04:23:25</em></p>
+
+<p>I followed the steps precisely, and still get this error (see below).</p>
+
+<p>Do I actually have to <em>set</em> $OSMOSIS_HOME? Because that's completely unclear from the wiki - it looks like you are just using it as a place-holder.</p>
+
+<p>thutt@panic:~/Local/osmosis-0.38$ pwd<br>
+/home/thutt/Local/osmosis-0.38<br>
+thutt@panic:~/Local/osmosis-0.38$ find -name "<em>trove</em>"<br>
+./lib/default/trove-3.0.0rc1.jar<br>
+thutt@panic:~/Local/osmosis-0.38$ ls ~/.openstreetmap/plugins/<br>
+mapsforge-mapfile-writer-0.2.1.jar<br>
+thutt@panic:~/Local/osmosis-0.38$ bin/osmosis --rb file=england.osm.pbf --mapfile-writer file=/tmp/england.map type=hd<br>
+11-Feb-2011 12:22:06 org.openstreetmap.osmosis.core.Osmosis run<br>
+INFO: Osmosis Version 0.38<br>
+11-Feb-2011 12:22:07 org.openstreetmap.osmosis.core.Osmosis run<br>
+INFO: Preparing pipeline.<br>
+11-Feb-2011 12:22:07 org.openstreetmap.osmosis.core.Osmosis main<br>
+SEVERE: Execution aborted.<br>
+org.openstreetmap.osmosis.core.OsmosisRuntimeException: Task type mapfile-writer doesn't exist.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mapsforge"><img alt="@mapsforge" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/430042?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-61949414"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="ceb3343d1bdb6526fc761e50d32cd614">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mapsforge" class="author">mapsforge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-61949414" class="timestamp">
+      <time datetime="2014-11-06T09:31:34Z" is="relative-time">Nov 6, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>From <a href="https://code.google.com/u/109865181815441425951/">tdh...@gmail.com</a> on February 11, 2011 04:26:58</em></p>
+
+<p>Actually never mind, I used ~/.openstreetmap/plugins/, not ~/.openstreetmap/osmosis/plugins/</p>
+
+<p>Works now! :-)</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-189196755">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@mapsforge" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/430042?v=3&amp;s=32" width="16" />
+      <a href="/mapsforge" class="author">mapsforge</a>
+      closed this   <a href="https://github.com/mapsforge/mapsforge/issues/53#event-189196755" class="timestamp"><time class="timestamp" datetime="2014-11-06T09:31:35Z" is="relative-time">Nov 6, 2014</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+
+
+
+<!-- Rendered timeline since 2014-11-06 01:31:35 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:issue:47940465"
+      data-url="/mapsforge/mapsforge/issues/53/show_partial?partial=issues%2Ftimeline_marker&amp;since=1415266295"
+      data-last-modified="Thu, 06 Nov 2014 09:31:35 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/notifications/mark?ids=48161062" class="hidden js-timeline-marker-form" data-form-nonce="a6cf1cf4e5142509efc24f233f78e588cfe95c55" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XoKTrCJuv4dNnOke9TrPWuKIYh9qhxE9gZKLsvCfgTIar0qOgbrCbeKR5e/SbiSezoFGQ4d4SmJrHilJh/VOYw==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fmapsforge%2Fmapsforge%2Fissues%2F53" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.15049s from github-fe127-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

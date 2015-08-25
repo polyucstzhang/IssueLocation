@@ -1,0 +1,2431 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Added basic support for using CaptureActivity from other activities via startActivityForResult by mechkg · Pull Request #149 · zxing/zxing · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Added basic support for using CaptureActivity from other activities via startActivityForResult by mechkg · Pull Request #149 · zxing/zxing" name="twitter:title" /><meta content="" name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/819194?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/819194?v=3&amp;s=400" property="og:image" /><meta content="Added basic support for using CaptureActivity from other activities via startActivityForResult by mechkg · Pull Request #149 · zxing/zxing" property="og:title" /><meta content="https://github.com/zxing/zxing/pull/149" property="og:url" /><meta content="" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:5D15:21801DA:55DB58E7" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="uZwXibiSbdZ2RaoOlTGEKemdqTR3q6OrnaAtdM6yJfWGKz1cIRte/Rqt8XQD8u6tKa3NaGrG9bjcAI7dcRR1Xw==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="22e6cb7d309429ee0eaff86792eaf1c3">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/zxing/zxing/pull/149.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/zxing/zxing/pull/149.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #fff !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #fff !important;}.label-select-menu .labelstyle-009800.selected {  background:rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #fff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #fff !important;}.label-select-menu .labelstyle-e11d21.selected {  background:rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #282d33 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #282d33 !important;}.label-select-menu .labelstyle-c7def8.selected {  background:rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/zxing/zxing/pull/149" data-pjax-transient>
+
+  <meta name="description" content="zxing - Official ZXing (&quot;Zebra Crossing&quot;) project home">
+  <meta name="go-import" content="github.com/zxing/zxing git https://github.com/zxing/zxing.git">
+
+  <meta content="1122572" name="octolytics-dimension-user_id" /><meta content="zxing" name="octolytics-dimension-user_login" /><meta content="2562751" name="octolytics-dimension-repository_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2562751" name="octolytics-dimension-repository_network_root_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/zxing/zxing/commits/cf35e85024c3ef97af5688bad78398d71e5586a3.atom" rel="alternate" title="Recent Commits to zxing:cf35e85024c3ef97af5688bad78398d71e5586a3" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fzxing%2Fzxing%2Fpull%2F149" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/zxing/zxing/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/zxing/zxing/watchers">
+    789
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/zxing/zxing/stargazers">
+      5,886
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/zxing/zxing/network" class="social-count">
+        3,739
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/zxing" class="url fn" itemprop="url" rel="author"><span itemprop="title">zxing</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/zxing/zxing" data-pjax="#js-repo-pjax-container">zxing</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/zxing/zxing/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/zxing/zxing" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /zxing/zxing">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/zxing/zxing/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /zxing/zxing/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/zxing/zxing/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /zxing/zxing/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/zxing/zxing/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /zxing/zxing/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/zxing/zxing/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /zxing/zxing/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/zxing/zxing/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /zxing/zxing/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="8129aed1bcf9c15fde33a436e3050c673924c182" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="dqIbaMuVsuK42/pkQ6l4ACI8lGcl5F26ngkF/SrP/dbMCwYxDU3GBBfhJ44lfVOv4p0JfdwHCFILlCW4oLIqYw==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="8129aed1bcf9c15fde33a436e3050c673924c182" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="TAt89cDMbKBBs6yoBAebPd6aOI9oQXgak8QcMmj9mS7hyyDqSiFSnNvVWsHN44vRqIcIaSEjou0Qa0li08IC2Q==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/zxing/zxing/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of zxing/zxing as a zip file"
+                 title="Download the contents of zxing/zxing as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;081378fe93d985ddeb4ad39ea207164f0181ba47&quot; -->
+<!-- head sha1: &quot;cf35e85024c3ef97af5688bad78398d71e5586a3&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="zxing/zxing:pull_request:16072545"
+    data-url="/zxing/zxing/pull/149/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Added basic support for using CaptureActivity from other activities via startActivityForResult</span>
+      <span class="gh-header-number">#149</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-merged">
+          <span class="octicon octicon-git-pull-request"></span>
+          Merged
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/srowen" class="author pull-header-username css-truncate css-truncate-target expandable">
+    srowen
+  </a>
+  merged 2 commits into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">zxing</span>:<span class="css-truncate-target">master</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">mechkg</span>:<span class="css-truncate-target">master</span></span>
+
+
+  <time datetime="2014-05-20T19:31:26Z" is="relative-time">May 20, 2014</time>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="zxing/zxing:branch:master"
+    data-url=/zxing/zxing/pull/149/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +33
+        </span>
+        <span class="text-diff-deleted">
+          −7
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="40 lines changed">
+          <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span>&#xf053;
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/zxing/zxing/pull/149" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        3
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/149/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        2
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/149/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          2
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:issue:33830541"
+     data-url="/zxing/zxing/issues/149/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/149?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="8129aed1bcf9c15fde33a436e3050c673924c182" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="Eu7P5kShYaACv256AFwJwjlgQocFT01wHWktXSciP2rKaDdA97KgQ5mqVhZx+BrWhuDeg6ciDA2my7Cj4aBlfA==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/149/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="8129aed1bcf9c15fde33a436e3050c673924c182" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="cwJLOVfnSHg6Uxi3bkophtsOI7Kok1UdyV5TEEeP62g9OvSkILvb14MtJ1hOmtXjxG+xyS+J7/YcnQkJSUeWZw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/149?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="8129aed1bcf9c15fde33a436e3050c673924c182" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="Co1BEAe4UMtmY3fPwvv+DKZMRPtobFs4R+dRp9vc8X5/x6H55/tFBnNihPIh23ZqWLqu/bBoPxCilLpP2fF0qQ==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:issue:33830541"
+      data-url="/zxing/zxing/issues/149/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="mechkg" href="/mechkg"><img alt="@mechkg" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/819194?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="srowen" href="/srowen"><img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="zxing/zxing:marked-as-read:16072545">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mechkg"><img alt="@mechkg" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/819194?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-33830541"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="d41d8cd98f00b204e9800998ecf8427e">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mechkg" class="author">mechkg</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-33830541" class="timestamp">
+      <time datetime="2014-05-19T19:48:02Z" is="relative-time">May 19, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p class="text-muted">
+            <em>No description provided.</em>
+          </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-55bbe9f">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:55bbe9f7fbaf5a5deb6de4dfee616b56a94c12b3"
+    data-url="/zxing/zxing/commit/55bbe9f7fbaf5a5deb6de4dfee616b56a94c12b3/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/mechkg"><img alt="@mechkg" class="avatar avatar-small" height="16" src="https://avatars2.githubusercontent.com/u/819194?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/mechkg" class="author" rel="contributor">mechkg</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mechkg/zxing/commit/55bbe9f7fbaf5a5deb6de4dfee616b56a94c12b3" class="message" data-pjax="true" title="Added basic support for using CaptureActivity from other activities">Added basic support for using CaptureActivity from other activities</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+    <div class="commit-build-statuses">
+        <a class="text-success tooltipped tooltipped-w"
+           aria-label="Success: The Travis CI build passed"
+           href="https://travis-ci.org/zxing/zxing/builds/25545234">
+          <span class="octicon octicon-check"></span>
+        </a>
+    </div>
+
+
+      <code><a href="/mechkg/zxing/commit/55bbe9f7fbaf5a5deb6de4dfee616b56a94c12b3" class="commit-id">55bbe9f</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-43594483"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="ae07df0677fa64ec8fe5c7a8c041abd9">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-43594483" class="timestamp">
+      <time datetime="2014-05-20T07:31:29Z" is="relative-time">May 20, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Interesting, have you tested it? for example I think <code>getIntent()</code> would have to be checked for <code>null</code>. But otherwise looking good if it works.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-cf35e85">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:cf35e85024c3ef97af5688bad78398d71e5586a3"
+    data-url="/zxing/zxing/commit/cf35e85024c3ef97af5688bad78398d71e5586a3/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/mechkg"><img alt="@mechkg" class="avatar avatar-small" height="16" src="https://avatars2.githubusercontent.com/u/819194?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/mechkg" class="author" rel="contributor">mechkg</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mechkg/zxing/commit/cf35e85024c3ef97af5688bad78398d71e5586a3" class="message" data-pjax="true" title="Added null checks for intent and action">Added null checks for intent and action</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+    <div class="commit-build-statuses">
+        <a class="text-success tooltipped tooltipped-w"
+           aria-label="Success: The Travis CI build passed"
+           href="https://travis-ci.org/zxing/zxing/builds/25631467">
+          <span class="octicon octicon-check"></span>
+        </a>
+    </div>
+
+
+      <code><a href="/mechkg/zxing/commit/cf35e85024c3ef97af5688bad78398d71e5586a3" class="commit-id">cf35e85</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mechkg"><img alt="@mechkg" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/819194?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-43671482"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="4e475b6ef1a755245cc894c64a6f71ae">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mechkg" class="author">mechkg</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-43671482" class="timestamp">
+      <time datetime="2014-05-20T19:24:42Z" is="relative-time">May 20, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Added the checks for null pointers. Yes, I have tested it and it works well for me (on Glass XE17.1). I have been using vanilla zxing before for QR recognition but obviously your Glass-specific activity is much nicer. I used the same action name as the regular zxing app for simplicity.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-merged js-details-container">
+  <div class="discussion-item-header" id="event-123060307">
+
+      <button type="button" class="btn btn-outline js-details-target">
+        <span class="discussion-item-toggler-opened">Hide details</span>
+        <span class="discussion-item-toggler-closed">View details</span>
+      </button>
+
+    <span class="octicon octicon-git-merge discussion-item-icon"></span>
+    <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+    <a href="/srowen" class="author">srowen</a>
+    merged commit <a href="/zxing/zxing/commit/aedd6262e6807a107cb4284f3c2668fb551d2691"><code class="discussion-item-entity">aedd626</code></a> into <span class="commit-ref js-selectable-text"><span class="css-truncate-target user">zxing</span>:<span class="css-truncate-target">master</span></span>  <a href="https://github.com/zxing/zxing/pull/149#event-123060307" class="timestamp"><time class="timestamp" datetime="2014-05-20T19:31:26Z" is="relative-time">May 20, 2014</time></a>
+
+      <div class="discussion-item-footer">
+        1 check passed
+      </div>
+  </div>
+
+
+    <div class="discussion-item-details">
+      <h4 class="discussion-item-details-header">
+        1 check passed
+      </h4>
+      <div class="build-statuses-list">
+          <div class="build-status-item">
+              <a href="https://travis-ci.org/zxing/zxing/builds/25631467" class="build-status-details right">Details</a>
+
+            <span class="build-status-icon octicon octicon-check text-success"></span>
+            <span class="text-muted css-truncate css-truncate-target">
+              <strong class="text-emphasized">
+                continuous-integration/travis-ci
+              </strong>
+              The Travis CI build passed
+            </span>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+  <div class="closed-banner"></div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-43672218"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="3398a59141867c1e644ca75251fd0ade">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-43672218" class="timestamp">
+      <time datetime="2014-05-20T19:31:28Z" is="relative-time">May 20, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sounds good, I will merge and touch this up a tiny git, including adding a line to AUTHORS.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+
+
+<!-- Rendered timeline since 2014-05-20 12:31:28 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:pull_request:16072545"
+      data-url="/zxing/zxing/pull/149/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1400614288"
+      data-last-modified="Tue, 20 May 2014 19:31:28 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/notifications/mark?ids=32579767" class="hidden js-timeline-marker-form" data-form-nonce="8129aed1bcf9c15fde33a436e3050c673924c182" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="34SXywBWGpnDwWmv8glc0eULKMordYsAYVZYJq5vws/KES3FMQQDx0mjlt0mRdRs1mnInxAlrIqUjuQBdxSmXA==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fzxing%2Fzxing%2Fpull%2F149" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:branch:master"
+     data-url="/zxing/zxing/pull/149/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on May 19, 2014
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:commit:55bbe9f7fbaf5a5deb6de4dfee616b56a94c12b3"
+      data-url="/zxing/zxing/commit/55bbe9f7fbaf5a5deb6de4dfee616b56a94c12b3/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/mechkg" data-skip-pjax="true" rel="contributor"><img alt="@mechkg" class="avatar" height="36" src="https://avatars2.githubusercontent.com/u/819194?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/mechkg/zxing/commit/55bbe9f7fbaf5a5deb6de4dfee616b56a94c12b3" class="message" data-pjax="true" title="Added basic support for using CaptureActivity from other activities">Added basic support for using CaptureActivity from other activities</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/mechkg" class="commit-author" rel="contributor">mechkg</a>
+ authored <time datetime="2014-05-19T19:40:21Z" is="relative-time">May 19, 2014</time>
+
+
+        <span class="commit-indicator">
+          
+    <div class="commit-build-statuses">
+        <a class="text-success tooltipped tooltipped-e"
+           aria-label="Success: The Travis CI build passed"
+           href="https://travis-ci.org/zxing/zxing/builds/25545234">
+          <span class="octicon octicon-check"></span>
+        </a>
+    </div>
+
+        </span>
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="55bbe9f7fbaf5a5deb6de4dfee616b56a94c12b3" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/mechkg/zxing/commit/55bbe9f7fbaf5a5deb6de4dfee616b56a94c12b3" class="sha btn btn-outline">
+        55bbe9f
+      </a>
+    </div>
+    <a href="/zxing/zxing/tree/55bbe9f7fbaf5a5deb6de4dfee616b56a94c12b3" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on May 20, 2014
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:commit:cf35e85024c3ef97af5688bad78398d71e5586a3"
+      data-url="/zxing/zxing/commit/cf35e85024c3ef97af5688bad78398d71e5586a3/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/mechkg" data-skip-pjax="true" rel="contributor"><img alt="@mechkg" class="avatar" height="36" src="https://avatars2.githubusercontent.com/u/819194?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/mechkg/zxing/commit/cf35e85024c3ef97af5688bad78398d71e5586a3" class="message" data-pjax="true" title="Added null checks for intent and action">Added null checks for intent and action</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/mechkg" class="commit-author" rel="contributor">mechkg</a>
+ authored <time datetime="2014-05-20T19:11:21Z" is="relative-time">May 20, 2014</time>
+
+
+        <span class="commit-indicator">
+          
+    <div class="commit-build-statuses">
+        <a class="text-success tooltipped tooltipped-e"
+           aria-label="Success: The Travis CI build passed"
+           href="https://travis-ci.org/zxing/zxing/builds/25631467">
+          <span class="octicon octicon-check"></span>
+        </a>
+    </div>
+
+        </span>
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="cf35e85024c3ef97af5688bad78398d71e5586a3" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/mechkg/zxing/commit/cf35e85024c3ef97af5688bad78398d71e5586a3" class="sha btn btn-outline">
+        cf35e85
+      </a>
+    </div>
+    <a href="/zxing/zxing/tree/cf35e85024c3ef97af5688bad78398d71e5586a3" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+    <div id="files_bucket" class="files-bucket tab-content pull-request-tab-content ">
+
+      <div class="flash flash-warn stale-files-tab js-pull-request-stale-files js-socket-channel"
+   data-channel="zxing/zxing:pull_request:16072545:diff"
+   data-url="https://github.com/zxing/zxing/pull/149/live_update">
+    This page is out of date. <a href="https://github.com/zxing/zxing/pull/149/files">Refresh</a> to see the latest.
+</div>
+
+
+      
+
+
+
+
+      <div id='diff' class="uncommentable">
+        <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/zxing/zxing/pull/149/files?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/zxing/zxing/pull/149/files?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <span class="octicon octicon-diff"></span>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      2 changed files
+    </button>
+    with
+    <strong>33 additions</strong>
+    and <strong>7 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +6
+          </span>
+          <span class="text-diff-deleted">
+            −1
+          </span>
+          <a href="#diff-c90d4c2d47cd854889c1efacba8c2696" class="tooltipped tooltipped-s" aria-label="7 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-c90d4c2d47cd854889c1efacba8c2696">glass/AndroidManifest.xml</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +27
+          </span>
+          <span class="text-diff-deleted">
+            −6
+          </span>
+          <a href="#diff-a1575c43704bb8b53baff23c33a7dece" class="tooltipped tooltipped-s" aria-label="33 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-a1575c43704bb8b53baff23c33a7dece">glass/src/com/google/zxing/client/glass/CaptureActivity.java</a>
+    </li>
+  </ol>
+</div>
+
+        <div id="files" class="diff-view ">
+    
+      <a name="diff-c90d4c2d47cd854889c1efacba8c2696"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="glass/AndroidManifest.xml">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/mechkg/zxing/blob/cf35e85024c3ef97af5688bad78398d71e5586a3/glass/AndroidManifest.xml" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version cf35e85 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="6 additions &amp; 1 deletion">7 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="glass/AndroidManifest.xml">
+              glass/AndroidManifest.xml
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-c90d4c2d47cd854889c1efacba8c2696"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/1700e1e19f761d012357303183265a6e63a5414d?diff=unified&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=35&amp;next_line_num_right=35&amp;path=glass%2FAndroidManifest.xml&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=12"
+            data-left-range="1-34" data-right-range="1-34">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -35,6 +35,12 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696L35" data-line-number="35"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R35" data-line-number="35"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       &lt;<span class="pl-ent">intent-filter</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696L36" data-line-number="36"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R36" data-line-number="36"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         &lt;<span class="pl-ent">action</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>com.google.android.glass.action.VOICE_TRIGGER<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696L37" data-line-number="37"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R37" data-line-number="37"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       &lt;/<span class="pl-ent">intent-filter</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R38" data-line-number="38"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R39" data-line-number="39"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      &lt;<span class="pl-ent">intent-filter</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R40" data-line-number="40"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        &lt;<span class="pl-ent">action</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>com.google.zxing.client.android.SCAN<span class="pl-pds">&quot;</span></span>/&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R41" data-line-number="41"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        &lt;<span class="pl-ent">category</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>android.intent.category.DEFAULT<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R42" data-line-number="42"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      &lt;/<span class="pl-ent">intent-filter</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R43" data-line-number="43"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696L38" data-line-number="38"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R44" data-line-number="44"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       &lt;<span class="pl-ent">meta-data</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>com.google.android.glass.VoiceTrigger<span class="pl-pds">&quot;</span></span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696L39" data-line-number="39"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R45" data-line-number="45"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">                  <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">resource</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>@xml/barcode_scanner_show<span class="pl-pds">&quot;</span></span> /&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696L40" data-line-number="40"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R46" data-line-number="46"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     &lt;/<span class="pl-ent">activity</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="13">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-c90d4c2d47cd854889c1efacba8c2696"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/1700e1e19f761d012357303183265a6e63a5414d?diff=unified&amp;left_hunk_size=4&amp;mode=100644&amp;next_line_num_left=42&amp;next_line_num_right=48&amp;path=glass%2FAndroidManifest.xml&amp;prev_line_num_left=40&amp;prev_line_num_right=46&amp;right_hunk_size=3"
+            data-left-range="41-41" data-right-range="47-47">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -42,4 +48,3 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696L42" data-line-number="42"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R48" data-line-number="48"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;/<span class="pl-ent">application</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696L43" data-line-number="43"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R49" data-line-number="49"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696L44" data-line-number="44"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696R50" data-line-number="50"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">manifest</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c90d4c2d47cd854889c1efacba8c2696L45" data-line-number="45"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-</span>
+
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-a1575c43704bb8b53baff23c33a7dece"></a>
+      <div id="diff-1"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="glass/src/com/google/zxing/client/glass/CaptureActivity.java">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/mechkg/zxing/blob/cf35e85024c3ef97af5688bad78398d71e5586a3/glass/src/com/google/zxing/client/glass/CaptureActivity.java" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version cf35e85 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="27 additions &amp; 6 deletions">33 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="glass/src/com/google/zxing/client/glass/CaptureActivity.java">
+              glass/src/com/google/zxing/client/glass/CaptureActivity.java
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a1575c43704bb8b53baff23c33a7dece"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/bdbbf1ede15a548d169f00fc21eefb2d7fece10a?diff=unified&amp;left_hunk_size=8&amp;mode=100644&amp;next_line_num_left=45&amp;next_line_num_right=45&amp;path=glass%2Fsrc%2Fcom%2Fgoogle%2Fzxing%2Fclient%2Fglass%2FCaptureActivity.java&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=10"
+            data-left-range="1-44" data-right-range="1-44">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -45,8 +45,10 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL45" data-line-number="45"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR45" data-line-number="45"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">public</span> <span class="pl-k">final</span> <span class="pl-k">class</span> <span class="pl-en">CaptureActivity</span> <span class="pl-k">extends</span> <span class="pl-e">Activity</span> <span class="pl-k">implements</span> <span class="pl-e">SurfaceHolder</span>.<span class="pl-e">Callback</span> {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL46" data-line-number="46"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR46" data-line-number="46"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL47" data-line-number="47"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR47" data-line-number="47"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">TAG</span> <span class="pl-k">=</span> <span class="pl-smi">CaptureActivity</span><span class="pl-k">.</span>class<span class="pl-k">.</span>getSimpleName();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR48" data-line-number="48"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">String</span> <span class="pl-c1">SCAN_ACTION</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>com.google.zxing.client.android.SCAN<span class="pl-pds">&quot;</span></span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL48" data-line-number="48"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR49" data-line-number="49"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL49" data-line-number="49"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR50" data-line-number="50"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">private</span> <span class="pl-k">boolean</span> hasSurface;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR51" data-line-number="51"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-k">private</span> <span class="pl-k">boolean</span> returnResult;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL50" data-line-number="50"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR52" data-line-number="52"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">private</span> <span class="pl-smi">SurfaceHolder</span> holderWithCallback;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL51" data-line-number="51"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR53" data-line-number="53"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">private</span> <span class="pl-smi">Camera</span> camera;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL52" data-line-number="52"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR54" data-line-number="54"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">private</span> <span class="pl-smi">DecodeRunnable</span> decodeRunnable;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="11">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a1575c43704bb8b53baff23c33a7dece"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/bdbbf1ede15a548d169f00fc21eefb2d7fece10a?diff=unified&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=55&amp;next_line_num_right=57&amp;path=glass%2Fsrc%2Fcom%2Fgoogle%2Fzxing%2Fclient%2Fglass%2FCaptureActivity.java&amp;prev_line_num_left=52&amp;prev_line_num_right=54&amp;right_hunk_size=18"
+            data-left-range="53-54" data-right-range="55-56">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -55,6 +57,18 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL55" data-line-number="55"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR57" data-line-number="57"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">@Override</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL56" data-line-number="56"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR58" data-line-number="58"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onCreate</span>(<span class="pl-smi">Bundle</span> <span class="pl-v">icicle</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL57" data-line-number="57"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR59" data-line-number="59"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-v">super</span><span class="pl-k">.</span>onCreate(icicle);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR60" data-line-number="60"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR61" data-line-number="61"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-c">// returnResult should be true if activity was started using </span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR62" data-line-number="62"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-c">// startActivityForResult() with SCAN_ACTION intent</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR63" data-line-number="63"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    returnResult <span class="pl-k">=</span> <span class="pl-c1">false</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR64" data-line-number="64"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR65" data-line-number="65"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-smi">Intent</span> intent <span class="pl-k">=</span> getIntent();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR66" data-line-number="66"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">if</span> (intent <span class="pl-k">!=</span> <span class="pl-c1">null</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR67" data-line-number="67"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    	<span class="pl-smi">String</span> action <span class="pl-k">=</span> intent<span class="pl-k">.</span>getAction();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR68" data-line-number="68"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    	<span class="pl-k">if</span> (action <span class="pl-k">!=</span> <span class="pl-c1">null</span>)</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR69" data-line-number="69"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    		returnResult <span class="pl-k">=</span> action<span class="pl-k">.</span>equals(<span class="pl-c1">SCAN_ACTION</span>);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR70" data-line-number="70"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR71" data-line-number="71"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL58" data-line-number="58"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR72" data-line-number="72"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-smi">Window</span> window <span class="pl-k">=</span> getWindow();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL59" data-line-number="59"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR73" data-line-number="73"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     window<span class="pl-k">.</span>addFlags(<span class="pl-smi">WindowManager</span><span class="pl-k">.</span><span class="pl-smi">LayoutParams</span><span class="pl-c1"><span class="pl-k">.</span>FLAG_KEEP_SCREEN_ON</span>);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL60" data-line-number="60"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR74" data-line-number="74"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     setContentView(<span class="pl-smi">R</span><span class="pl-k">.</span>layout<span class="pl-k">.</span>capture);</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="30">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a1575c43704bb8b53baff23c33a7dece"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/bdbbf1ede15a548d169f00fc21eefb2d7fece10a?diff=unified&amp;left_hunk_size=12&amp;mode=100644&amp;next_line_num_left=156&amp;next_line_num_right=170&amp;path=glass%2Fsrc%2Fcom%2Fgoogle%2Fzxing%2Fclient%2Fglass%2FCaptureActivity.java&amp;prev_line_num_left=60&amp;prev_line_num_right=74&amp;right_hunk_size=19"
+            data-left-range="61-155" data-right-range="75-169">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -156,12 +170,19 @@ private void initCamera(SurfaceHolder holder) {</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL156" data-line-number="156"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR170" data-line-number="170"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL157" data-line-number="157"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR171" data-line-number="171"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL158" data-line-number="158"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR172" data-line-number="172"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">void</span> <span class="pl-en">setResult</span>(<span class="pl-smi">Result</span> <span class="pl-v">result</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL159" data-line-number="159"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-smi">TextView</span> statusView <span class="pl-k">=</span> (<span class="pl-smi">TextView</span>) findViewById(<span class="pl-smi">R</span><span class="pl-k">.</span>id<span class="pl-k">.</span>status_view);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL160" data-line-number="160"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-smi">String</span> text <span class="pl-k">=</span> result<span class="pl-k">.</span>getText();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL161" data-line-number="161"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    statusView<span class="pl-k">.</span>setText(text);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL162" data-line-number="162"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    statusView<span class="pl-k">.</span>setTextSize(<span class="pl-smi">TypedValue</span><span class="pl-c1"><span class="pl-k">.</span>COMPLEX_UNIT_SP</span>, <span class="pl-smi">Math</span><span class="pl-k">.</span>max(<span class="pl-c1">14</span>, <span class="pl-c1">72</span> <span class="pl-k">-</span> text<span class="pl-k">.</span>length() <span class="pl-k">/</span> <span class="pl-c1">2</span>));</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL163" data-line-number="163"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    statusView<span class="pl-k">.</span>setVisibility(<span class="pl-smi">View</span><span class="pl-c1"><span class="pl-k">.</span>VISIBLE</span>);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL164" data-line-number="164"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-v">this</span><span class="pl-k">.</span>result <span class="pl-k">=</span> result;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR173" data-line-number="173"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">if</span> (returnResult) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR174" data-line-number="174"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-smi">Intent</span> scanResult <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Intent</span>();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR175" data-line-number="175"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      scanResult<span class="pl-k">.</span>putExtra(<span class="pl-s"><span class="pl-pds">&quot;</span>SCAN_RESULT<span class="pl-pds">&quot;</span></span>, result<span class="pl-k">.</span>getText());</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR176" data-line-number="176"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      setResult(<span class="pl-c1">RESULT_OK</span>, scanResult);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR177" data-line-number="177"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      finish();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR178" data-line-number="178"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    } <span class="pl-k">else</span> {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR179" data-line-number="179"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-smi">TextView</span> statusView <span class="pl-k">=</span> (<span class="pl-smi">TextView</span>) findViewById(<span class="pl-smi">R</span><span class="pl-k">.</span>id<span class="pl-k">.</span>status_view);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR180" data-line-number="180"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-smi">String</span> text <span class="pl-k">=</span> result<span class="pl-k">.</span>getText();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR181" data-line-number="181"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      statusView<span class="pl-k">.</span>setText(text);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR182" data-line-number="182"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      statusView<span class="pl-k">.</span>setTextSize(<span class="pl-smi">TypedValue</span><span class="pl-c1"><span class="pl-k">.</span>COMPLEX_UNIT_SP</span>, <span class="pl-smi">Math</span><span class="pl-k">.</span>max(<span class="pl-c1">14</span>, <span class="pl-c1">72</span> <span class="pl-k">-</span> text<span class="pl-k">.</span>length() <span class="pl-k">/</span> <span class="pl-c1">2</span>));</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR183" data-line-number="183"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      statusView<span class="pl-k">.</span>setVisibility(<span class="pl-smi">View</span><span class="pl-c1"><span class="pl-k">.</span>VISIBLE</span>);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR184" data-line-number="184"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-v">this</span><span class="pl-k">.</span>result <span class="pl-k">=</span> result;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR185" data-line-number="185"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL165" data-line-number="165"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR186" data-line-number="186"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL166" data-line-number="166"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR187" data-line-number="187"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceL167" data-line-number="167"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a1575c43704bb8b53baff23c33a7deceR188" data-line-number="188"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">private</span> <span class="pl-k">void</span> <span class="pl-en">handleResult</span>(<span class="pl-smi">Result</span> <span class="pl-v">result</span>) {</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-a1575c43704bb8b53baff23c33a7dece"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/zxing/zxing/blob_excerpt/bdbbf1ede15a548d169f00fc21eefb2d7fece10a?diff=unified&amp;mode=100644&amp;path=glass%2Fsrc%2Fcom%2Fgoogle%2Fzxing%2Fclient%2Fglass%2FCaptureActivity.java&amp;prev_line_num_left=167&amp;prev_line_num_right=188"
+          data-left-range="168-207"
+          data-right-range="189-207">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+      </div>
+
+      
+
+    <div class="clearfix"></div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.42137s from github-fe117-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2ba3b257a78c3bd28dab11d07ddc8e6b1cf5280066968cc8501b99bf58f64a63.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-dd3051b3b36fed71a99e2c164f3e1eb38a8beaf40dc272fd2807febc8bd46a7f.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

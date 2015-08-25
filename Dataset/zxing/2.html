@@ -1,0 +1,2532 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Fix OneDMode for iOS by hank-cp · Pull Request #2 · zxing/zxing · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Fix OneDMode for iOS by hank-cp · Pull Request #2 · zxing/zxing" name="twitter:title" /><meta content="as title" name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/808941?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/808941?v=3&amp;s=400" property="og:image" /><meta content="Fix OneDMode for iOS by hank-cp · Pull Request #2 · zxing/zxing" property="og:title" /><meta content="https://github.com/zxing/zxing/pull/2" property="og:url" /><meta content="as title" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:480B:27D8207:55DB57BC" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="g5mbjkJL+Yagdvb5qG2Sv9a+VXn5K5UERk4BQDmH5AZFtkI09knj3j/0DP+SmKtu5G46Ra8a8D2bV/IRSVYaMw==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="22e6cb7d309429ee0eaff86792eaf1c3">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/zxing/zxing/pull/2.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/zxing/zxing/pull/2.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #fff !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #fff !important;}.label-select-menu .labelstyle-009800.selected {  background:rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #fff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #fff !important;}.label-select-menu .labelstyle-e11d21.selected {  background:rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #282d33 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #282d33 !important;}.label-select-menu .labelstyle-c7def8.selected {  background:rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/zxing/zxing/pull/2" data-pjax-transient>
+
+  <meta name="description" content="zxing - Official ZXing (&quot;Zebra Crossing&quot;) project home">
+  <meta name="go-import" content="github.com/zxing/zxing git https://github.com/zxing/zxing.git">
+
+  <meta content="1122572" name="octolytics-dimension-user_id" /><meta content="zxing" name="octolytics-dimension-user_login" /><meta content="2562751" name="octolytics-dimension-repository_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2562751" name="octolytics-dimension-repository_network_root_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/zxing/zxing/commits/08407461d1ff5b19185707513825b742f43c44a0.atom" rel="alternate" title="Recent Commits to zxing:08407461d1ff5b19185707513825b742f43c44a0" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fzxing%2Fzxing%2Fpull%2F2" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/zxing/zxing/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/zxing/zxing/watchers">
+    789
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/zxing/zxing/stargazers">
+      5,886
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/zxing/zxing/network" class="social-count">
+        3,739
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/zxing" class="url fn" itemprop="url" rel="author"><span itemprop="title">zxing</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/zxing/zxing" data-pjax="#js-repo-pjax-container">zxing</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/zxing/zxing/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/zxing/zxing" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /zxing/zxing">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/zxing/zxing/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /zxing/zxing/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/zxing/zxing/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /zxing/zxing/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/zxing/zxing/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /zxing/zxing/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/zxing/zxing/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /zxing/zxing/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/zxing/zxing/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /zxing/zxing/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="7a7ab541d76656d87c59998c7830cff0e1beaa48" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="O41A+uTiBFeiGlpiYX9GUQWTkX9rG34fG+h3RKY1g3G3+J9CajzXBVc3V4oxDiBfIaRYJ+uNGhTUNwak085dqQ==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="7a7ab541d76656d87c59998c7830cff0e1beaa48" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="e8x8UHH6q3lVE7W5YV5l3zaphNFvUCt3R5v5H+PvWMeZla9/SmSct/NrSCMRXngDtiqsdb3x0qtqmJdtsn+aXQ==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/zxing/zxing/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of zxing/zxing as a zip file"
+                 title="Download the contents of zxing/zxing as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;db3a318e38b69df53d18671f39083043c2ec0c96&quot; -->
+<!-- head sha1: &quot;08407461d1ff5b19185707513825b742f43c44a0&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="zxing/zxing:pull_request:1974029"
+    data-url="/zxing/zxing/pull/2/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Fix OneDMode for iOS</span>
+      <span class="gh-header-number">#2</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-git-pull-request"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/hank-cp" class="author pull-header-username css-truncate css-truncate-target expandable">
+    hank-cp
+  </a>
+   wants to merge 3 commits into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">zxing</span>:<span class="css-truncate-target">master</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">hank-cp</span>:<span class="css-truncate-target">master</span></span>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="zxing/zxing:branch:master"
+    data-url=/zxing/zxing/pull/2/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +5
+        </span>
+        <span class="text-diff-deleted">
+          −27
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="32 lines changed">
+          <span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/zxing/zxing/pull/2" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/2/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        3
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/2/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          2
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:issue:6029498"
+     data-url="/zxing/zxing/issues/2/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/2?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="7a7ab541d76656d87c59998c7830cff0e1beaa48" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="xDAo40q4hHj3L2N7piUp1uUeoZUMX56adBiKhNt9X9WNyRqsh7nUhpeFTJFBT5WJMugBJ20LMLw05rC/trk4SQ==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/2/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="7a7ab541d76656d87c59998c7830cff0e1beaa48" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="cc5AN2Clo4mBE+kH2i6Uf5PogdgpfxzmmtJtodj4MXMcpljtmfP9bvWWn7OYAeimZFqcpksv1PMUZARYUBPCWg==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/2?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="7a7ab541d76656d87c59998c7830cff0e1beaa48" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="oAvYT31XyiFtgV6jPtDW3j9QAsrLfU5lNZFOKWdKeAq9LymSRTKsXXy83Yx4KNde4uh5b6U4RX+H9tnd+ZbWCw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:issue:6029498"
+      data-url="/zxing/zxing/issues/2/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="hank-cp" href="/hank-cp"><img alt="@hank-cp" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/808941?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="smparkes" href="/smparkes"><img alt="@smparkes" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/4292?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="zxing/zxing:marked-as-read:1974029">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/hank-cp"><img alt="@hank-cp" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/808941?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-6029498"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="ce6367fcb07da792267623448d3d3bbb">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/hank-cp" class="author">hank-cp</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-6029498" class="timestamp">
+      <time datetime="2012-08-04T11:08:00Z" is="relative-time">Aug 4, 2012</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>as title</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-ae059d7">
+    <div class="discussion-item-header">
+      <span class="octicon octicon-repo-push discussion-item-icon"></span>
+      <a href="/hank-cp" class="author" rel="contributor" truncate="true">hank-cp</a>
+      added
+        some commits
+      <a href="#commits-pushed-ae059d7" class="timestamp">
+        <time datetime="2012-08-04T10:44:00Z" is="relative-time">Aug 4, 2012</time>
+      </a>
+    </div>
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:ae059d7785ea079566ca7ec322a62fe1e45fb18e"
+    data-url="/zxing/zxing/commit/ae059d7785ea079566ca7ec322a62fe1e45fb18e/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/hank-cp"><img alt="@hank-cp" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/808941?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/hank-cp" class="author" rel="contributor">hank-cp</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/hank-cp/zxing/commit/ae059d7785ea079566ca7ec322a62fe1e45fb18e" class="message" data-pjax="true" title="Fix OneDMode for IOS">Fix OneDMode for IOS</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/hank-cp/zxing/commit/ae059d7785ea079566ca7ec322a62fe1e45fb18e" class="commit-id">ae059d7</a></code>
+  </td>
+</tr>
+
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:ad23d7d4cf18d184b311e85329d9105e7f830cff"
+    data-url="/zxing/zxing/commit/ad23d7d4cf18d184b311e85329d9105e7f830cff/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/hank-cp"><img alt="@hank-cp" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/808941?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/hank-cp" class="author" rel="contributor">hank-cp</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/hank-cp/zxing/commit/ad23d7d4cf18d184b311e85329d9105e7f830cff" class="message" data-pjax="true" title="Merge remote-tracking branch &#39;root/master&#39;">Merge remote-tracking branch 'root/master'</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/hank-cp/zxing/commit/ad23d7d4cf18d184b311e85329d9105e7f830cff" class="commit-id">ad23d7d</a></code>
+  </td>
+</tr>
+
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:08407461d1ff5b19185707513825b742f43c44a0"
+    data-url="/zxing/zxing/commit/08407461d1ff5b19185707513825b742f43c44a0/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/hank-cp"><img alt="@hank-cp" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/808941?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/hank-cp" class="author" rel="contributor">hank-cp</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/hank-cp/zxing/commit/08407461d1ff5b19185707513825b742f43c44a0" class="message" data-pjax="true" title="Update build config for iOS 6">Update build config for iOS 6</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/hank-cp/zxing/commit/08407461d1ff5b19185707513825b742f43c44a0" class="commit-id">0840746</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/smparkes"><img alt="@smparkes" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/4292?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-9880939"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="e36b85e576dc3c5e43b337ec001ea400">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/smparkes" class="author">smparkes</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-9880939" class="timestamp">
+      <time datetime="2012-10-29T18:56:44Z" is="relative-time">Oct 29, 2012</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is just a mirror of the google code repo so we can't accept pull requests.  Please use the google code for issues and the google group for discussions.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-28048902">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@smparkes" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/4292?v=3&amp;s=32" width="16" />
+      <a href="/smparkes" class="author">smparkes</a>
+      closed this   <a href="https://github.com/zxing/zxing/pull/2#event-28048902" class="timestamp"><time class="timestamp" datetime="2012-10-29T18:56:44Z" is="relative-time">Oct 29, 2012</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-4d8700b">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@smparkes" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/4292?v=3&amp;s=32" width="16" />
+      <a href="/smparkes" class="author" truncate="true">smparkes</a>
+
+      referenced
+      this pull request
+      from a commit
+      <a href="#ref-commit-4d8700b" class="timestamp">
+        <time datetime="2013-04-26T15:33:18Z" is="relative-time">Apr 26, 2013</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:4d8700bf079cf1b86a6f5f6c259d767c065e1dd0"
+    data-url="/zxing/zxing/commit/4d8700bf079cf1b86a6f5f6c259d767c065e1dd0/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <img alt="" class="avatar avatar-small" height="16" src="https://1.gravatar.com/avatar/36b7e5179fce5b69203c9bb10864482f?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" width="16" />
+    </td>
+
+    <td class="commit-author">
+      <strong><span class="author">srowen@gmail.com</span></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/zxing/zxing/commit/4d8700bf079cf1b86a6f5f6c259d767c065e1dd0" class="message" data-pjax="true" title="First take on Guenther&#39;s updates for PDF417. Still need to investigate test suite #2 failures
+
+git-svn-id: https://zxing.googlecode.com/svn/trunk@2693 59b500cc-1b3d-0410-9834-0bbf25fbcc57">First take on Guenther's updates for PDF417. Still need to investigat…</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>…e test suite <a href="https://github.com/zxing/zxing/pull/2" class="issue-link" title="Fix OneDMode for iOS">#2</a> failures
+
+git-svn-id: <a href="https://zxing.googlecode.com/svn/trunk@2693">https://zxing.googlecode.com/svn/trunk@2693</a> 59b500cc-1b3d-0410-9834-0bbf25fbcc57</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/zxing/zxing/commit/4d8700bf079cf1b86a6f5f6c259d767c065e1dd0" class="commit-id">4d8700b</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-9f52d0a">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@smparkes" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/4292?v=3&amp;s=32" width="16" />
+      <a href="/smparkes" class="author" truncate="true">smparkes</a>
+
+      referenced
+      this pull request
+      from a commit
+      <a href="#ref-commit-9f52d0a" class="timestamp">
+        <time datetime="2013-04-26T15:33:29Z" is="relative-time">Apr 26, 2013</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:9f52d0a2e1efd3e86564855338dc4c55e5061899"
+    data-url="/zxing/zxing/commit/9f52d0a2e1efd3e86564855338dc4c55e5061899/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <img alt="" class="avatar avatar-small" height="16" src="https://1.gravatar.com/avatar/36b7e5179fce5b69203c9bb10864482f?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" width="16" />
+    </td>
+
+    <td class="commit-author">
+      <strong><span class="author">srowen@gmail.com</span></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/zxing/zxing/commit/9f52d0a2e1efd3e86564855338dc4c55e5061899" class="message" data-pjax="true" title="First take on Guenther&#39;s updates for PDF417. Still need to investigate test suite #2 failures
+
+git-svn-id: http://zxing.googlecode.com/svn/trunk@2693 59b500cc-1b3d-0410-9834-0bbf25fbcc57">First take on Guenther's updates for PDF417. Still need to investigat…</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>…e test suite <a href="https://github.com/zxing/zxing/pull/2" class="issue-link" title="Fix OneDMode for iOS">#2</a> failures
+
+git-svn-id: <a href="http://zxing.googlecode.com/svn/trunk@2693">http://zxing.googlecode.com/svn/trunk@2693</a> 59b500cc-1b3d-0410-9834-0bbf25fbcc57</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/zxing/zxing/commit/9f52d0a2e1efd3e86564855338dc4c55e5061899" class="commit-id">9f52d0a</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-7343f45">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@michaelochs" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/1901926?v=3&amp;s=32" width="16" />
+      <a href="/michaelochs" class="author" truncate="true">michaelochs</a>
+
+      referenced
+      this pull request
+      from a commit
+        in rockabyte/zxing
+      <a href="#ref-commit-7343f45" class="timestamp">
+        <time datetime="2014-02-21T13:26:54Z" is="relative-time">Feb 21, 2014</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:7343f457a2680d1808336bf4b43c6294d13719eb"
+    data-url="/zxing/zxing/commit/7343f457a2680d1808336bf4b43c6294d13719eb/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <img alt="" class="avatar avatar-small" height="16" src="https://1.gravatar.com/avatar/36b7e5179fce5b69203c9bb10864482f?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" width="16" />
+    </td>
+
+    <td class="commit-author">
+      <strong><span class="author">srowen@gmail.com</span></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/rockabyte/zxing/commit/7343f457a2680d1808336bf4b43c6294d13719eb" class="message" data-pjax="true" title="First take on Guenther&#39;s updates for PDF417. Still need to investigate test suite #2 failures
+
+git-svn-id: https://zxing.googlecode.com/svn/trunk@2693 59b500cc-1b3d-0410-9834-0bbf25fbcc57">First take on Guenther's updates for PDF417. Still need to investigat…</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>…e test suite <a href="https://github.com/zxing/zxing/pull/2" class="issue-link" title="Fix OneDMode for iOS">#2</a> failures
+
+git-svn-id: <a href="https://zxing.googlecode.com/svn/trunk@2693">https://zxing.googlecode.com/svn/trunk@2693</a> 59b500cc-1b3d-0410-9834-0bbf25fbcc57</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/rockabyte/zxing/commit/7343f457a2680d1808336bf4b43c6294d13719eb" class="commit-id">7343f45</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+  
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+      This was referenced <time datetime="2014-04-21T12:54:32Z" is="relative-time">Apr 21, 2014</time>
+    </div>
+
+
+      <div class="discussion-item-rollup-ref">
+          <span class="state state-closed right">
+                <span class="octicon octicon-issue-closed"></span>
+            Closed
+          </span>
+
+
+
+        <div class="discussion-item-header" id="ref-issue-31894485">
+          <h3 class="discussion-item-ref-title">
+            <a href="/zxing/zxing/issues/118" class="title-link">
+              PDF417 format - Nullpointer exception while generating PDF417 barcode
+
+              <span class="issue-num">
+                #118
+              </span>
+</a>          </h3>
+        </div>
+      </div>
+
+      <div class="discussion-item-rollup-ref">
+          <span class="state state-closed right">
+                <span class="octicon octicon-issue-closed"></span>
+            Closed
+          </span>
+
+
+
+        <div class="discussion-item-header" id="ref-issue-53161828">
+          <h3 class="discussion-item-ref-title">
+            <a href="/zxing/zxing/issues/277" class="title-link">
+              zxing dead loop while detecting qrcode
+
+              <span class="issue-num">
+                #277
+              </span>
+</a>          </h3>
+        </div>
+      </div>
+
+      <div class="discussion-item-rollup-ref">
+          <span class="state state-closed right">
+                <span class="octicon octicon-issue-closed"></span>
+            Closed
+          </span>
+
+
+
+        <div class="discussion-item-header" id="ref-issue-76207360">
+          <h3 class="discussion-item-ref-title">
+            <a href="/zxing/zxing/issues/386" class="title-link">
+              Waiting because no window has focus but there is a focused application that may eventually add a window when it finishes starting up
+
+              <span class="issue-num">
+                #386
+              </span>
+</a>          </h3>
+        </div>
+      </div>
+
+      <div class="discussion-item-rollup-ref">
+          <span class="state state-closed right">
+                <span class="octicon octicon-issue-closed"></span>
+            Closed
+          </span>
+
+
+
+        <div class="discussion-item-header" id="ref-issue-76207810">
+          <h3 class="discussion-item-ref-title">
+            <a href="/zxing/zxing/issues/387" class="title-link">
+              Waiting to send key event because the focused window has not finished processing all of the input events that were previously delivered to it
+
+              <span class="issue-num">
+                #387
+              </span>
+</a>          </h3>
+        </div>
+      </div>
+
+  </div>
+
+
+
+
+<!-- Rendered timeline since 2015-05-13 19:58:08 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:pull_request:1974029"
+      data-url="/zxing/zxing/pull/2/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1431572288"
+      data-last-modified="Thu, 14 May 2015 02:58:08 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/notifications/mark?ids=1613256" class="hidden js-timeline-marker-form" data-form-nonce="7a7ab541d76656d87c59998c7830cff0e1beaa48" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="iOp2+0aZkfFNo7PlpjbgU3ne0gRQrx4YIJ7OelZ8+6zIPztIRupaaWGyEo9Cx2r2/CU4BS5eES1GZ802e5I6/A==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fzxing%2Fzxing%2Fpull%2F2" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:branch:master"
+     data-url="/zxing/zxing/pull/2/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Aug 4, 2012
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:commit:ae059d7785ea079566ca7ec322a62fe1e45fb18e"
+      data-url="/zxing/zxing/commit/ae059d7785ea079566ca7ec322a62fe1e45fb18e/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/hank-cp" data-skip-pjax="true" rel="contributor"><img alt="@hank-cp" class="avatar" height="36" src="https://avatars0.githubusercontent.com/u/808941?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/hank-cp/zxing/commit/ae059d7785ea079566ca7ec322a62fe1e45fb18e" class="message" data-pjax="true" title="Fix OneDMode for IOS">Fix OneDMode for IOS</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/hank-cp" class="commit-author" rel="contributor">hank-cp</a>
+ authored <time datetime="2012-08-04T10:44:00Z" is="relative-time">Aug 4, 2012</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="ae059d7785ea079566ca7ec322a62fe1e45fb18e" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/hank-cp/zxing/commit/ae059d7785ea079566ca7ec322a62fe1e45fb18e" class="sha btn btn-outline">
+        ae059d7
+      </a>
+    </div>
+    <a href="/zxing/zxing/tree/ae059d7785ea079566ca7ec322a62fe1e45fb18e" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Oct 6, 2012
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:commit:ad23d7d4cf18d184b311e85329d9105e7f830cff"
+      data-url="/zxing/zxing/commit/ad23d7d4cf18d184b311e85329d9105e7f830cff/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/hank-cp" data-skip-pjax="true" rel="contributor"><img alt="@hank-cp" class="avatar" height="36" src="https://avatars0.githubusercontent.com/u/808941?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/hank-cp/zxing/commit/ad23d7d4cf18d184b311e85329d9105e7f830cff" class="message" data-pjax="true" title="Merge remote-tracking branch &#39;root/master&#39;">Merge remote-tracking branch 'root/master'</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/hank-cp" class="commit-author" rel="contributor">hank-cp</a>
+ authored <time datetime="2012-10-06T10:22:46Z" is="relative-time">Oct 6, 2012</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="ad23d7d4cf18d184b311e85329d9105e7f830cff" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/hank-cp/zxing/commit/ad23d7d4cf18d184b311e85329d9105e7f830cff" class="sha btn btn-outline">
+        ad23d7d
+      </a>
+    </div>
+    <a href="/zxing/zxing/tree/ad23d7d4cf18d184b311e85329d9105e7f830cff" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:commit:08407461d1ff5b19185707513825b742f43c44a0"
+      data-url="/zxing/zxing/commit/08407461d1ff5b19185707513825b742f43c44a0/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/hank-cp" data-skip-pjax="true" rel="contributor"><img alt="@hank-cp" class="avatar" height="36" src="https://avatars0.githubusercontent.com/u/808941?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/hank-cp/zxing/commit/08407461d1ff5b19185707513825b742f43c44a0" class="message" data-pjax="true" title="Update build config for iOS 6">Update build config for iOS 6</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/hank-cp" class="commit-author" rel="contributor">hank-cp</a>
+ authored <time datetime="2012-10-06T16:48:27Z" is="relative-time">Oct 7, 2012</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="08407461d1ff5b19185707513825b742f43c44a0" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/hank-cp/zxing/commit/08407461d1ff5b19185707513825b742f43c44a0" class="sha btn btn-outline">
+        0840746
+      </a>
+    </div>
+    <a href="/zxing/zxing/tree/08407461d1ff5b19185707513825b742f43c44a0" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+    <div id="files_bucket" class="files-bucket tab-content pull-request-tab-content ">
+
+      <div class="flash flash-warn stale-files-tab js-pull-request-stale-files js-socket-channel"
+   data-channel="zxing/zxing:pull_request:1974029:diff"
+   data-url="https://github.com/zxing/zxing/pull/2/live_update">
+    This page is out of date. <a href="https://github.com/zxing/zxing/pull/2/files">Refresh</a> to see the latest.
+</div>
+
+
+      
+
+
+
+
+      <div id='diff' class="uncommentable">
+        <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/zxing/zxing/pull/2/files?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/zxing/zxing/pull/2/files?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <span class="octicon octicon-diff"></span>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      2 changed files
+    </button>
+    with
+    <strong>5 additions</strong>
+    and <strong>27 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +1
+          </span>
+          <span class="text-diff-deleted">
+            −15
+          </span>
+          <a href="#diff-aa7f5b74ec9f58909a51d2ab41389fe1" class="tooltipped tooltipped-s" aria-label="16 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-aa7f5b74ec9f58909a51d2ab41389fe1">iphone/ZXingWidget/Classes/ZXingWidgetController.m</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +4
+          </span>
+          <span class="text-diff-deleted">
+            −12
+          </span>
+          <a href="#diff-e82d7e87f6e135f0a5f8a90e41bc267a" class="tooltipped tooltipped-s" aria-label="16 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-e82d7e87f6e135f0a5f8a90e41bc267a">iphone/ZXingWidget/ZXingWidget.xcodeproj/project.pbxproj</a>
+    </li>
+  </ol>
+</div>
+
+        <div id="files" class="diff-view ">
+    
+      <a name="diff-aa7f5b74ec9f58909a51d2ab41389fe1"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="iphone/ZXingWidget/Classes/ZXingWidgetController.m">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/hank-cp/zxing/blob/08407461d1ff5b19185707513825b742f43c44a0/iphone/ZXingWidget/Classes/ZXingWidgetController.m" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 0840746 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="1 addition &amp; 15 deletions">16 <span class="diffstat-bar"><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="iphone/ZXingWidget/Classes/ZXingWidgetController.m">
+              iphone/ZXingWidget/Classes/ZXingWidgetController.m
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-aa7f5b74ec9f58909a51d2ab41389fe1"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/c170dc489add60fc4b33d1602eff8662891f922b?diff=unified&amp;left_hunk_size=21&amp;mode=100644&amp;next_line_num_left=448&amp;next_line_num_right=448&amp;path=iphone%2FZXingWidget%2FClasses%2FZXingWidgetController.m&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-447" data-right-range="1-447">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -448,21 +448,7 @@ - (void)captureOutput:(AVCaptureOutput *)captureOutput</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L448" data-line-number="448"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1R448" data-line-number="448"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L449" data-line-number="449"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1R449" data-line-number="449"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-c1">CGRect</span> cropRect = [overlayView <span class="pl-c1">cropRect</span>];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L450" data-line-number="450"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1R450" data-line-number="450"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">if</span> (oneDMode) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L451" data-line-number="451"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-c">// let&#39;s just give the decoder a vertical band right above the red line</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L452" data-line-number="452"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    cropRect.<span class="pl-smi">origin</span>.<span class="pl-smi">x</span> = cropRect.<span class="pl-smi">origin</span>.<span class="pl-smi">x</span> + (cropRect.<span class="pl-smi">size</span>.<span class="pl-smi">width</span> / <span class="pl-c1">2</span>) - (ONE_D_BAND_HEIGHT + <span class="pl-c1">1</span>);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L453" data-line-number="453"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    cropRect.<span class="pl-smi">size</span>.<span class="pl-smi">width</span> = ONE_D_BAND_HEIGHT;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L454" data-line-number="454"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-c">// do a rotate</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L455" data-line-number="455"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-c1">CGImageRef</span> croppedImg = <span class="pl-c1">CGImageCreateWithImageInRect</span>(capture, cropRect);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L456" data-line-number="456"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-c1">CGImageRelease</span>(capture);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L457" data-line-number="457"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    capture = [<span class="pl-v">self</span> <span class="pl-c1">CGImageRotated90:</span>croppedImg];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L458" data-line-number="458"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    capture = [<span class="pl-v">self</span> <span class="pl-c1">CGImageRotated180:</span>capture];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L459" data-line-number="459"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-c">//              UIImageWriteToSavedPhotosAlbum([UIImage imageWithCGImage:capture], nil, nil, nil);</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L460" data-line-number="460"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-c1">CGImageRelease</span>(croppedImg);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L461" data-line-number="461"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-c1">CGImageRetain</span>(capture);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L462" data-line-number="462"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    cropRect.<span class="pl-smi">origin</span>.<span class="pl-smi">x</span> = <span class="pl-c1">0.0</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L463" data-line-number="463"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    cropRect.<span class="pl-smi">origin</span>.<span class="pl-smi">y</span> = <span class="pl-c1">0.0</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L464" data-line-number="464"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    cropRect.<span class="pl-smi">size</span>.<span class="pl-smi">width</span> = <span class="pl-c1">CGImageGetWidth</span>(capture);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L465" data-line-number="465"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    cropRect.<span class="pl-smi">size</span>.<span class="pl-smi">height</span> = <span class="pl-c1">CGImageGetHeight</span>(capture);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1R451" data-line-number="451"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    cropRect.<span class="pl-smi">size</span>.<span class="pl-smi">height</span> = ONE_D_BAND_HEIGHT;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L466" data-line-number="466"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1R452" data-line-number="452"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L467" data-line-number="467"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1R453" data-line-number="453"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1L468" data-line-number="468"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-aa7f5b74ec9f58909a51d2ab41389fe1R454" data-line-number="454"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-c">// N.B.</span></span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-aa7f5b74ec9f58909a51d2ab41389fe1"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/zxing/zxing/blob_excerpt/c170dc489add60fc4b33d1602eff8662891f922b?diff=unified&amp;mode=100644&amp;path=iphone%2FZXingWidget%2FClasses%2FZXingWidgetController.m&amp;prev_line_num_left=468&amp;prev_line_num_right=454"
+          data-left-range="469-553"
+          data-right-range="455-553">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-e82d7e87f6e135f0a5f8a90e41bc267a"></a>
+      <div id="diff-1"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="iphone/ZXingWidget/ZXingWidget.xcodeproj/project.pbxproj">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/hank-cp/zxing/blob/08407461d1ff5b19185707513825b742f43c44a0/iphone/ZXingWidget/ZXingWidget.xcodeproj/project.pbxproj" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 0840746 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="4 additions &amp; 12 deletions">16 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="iphone/ZXingWidget/ZXingWidget.xcodeproj/project.pbxproj">
+              iphone/ZXingWidget/ZXingWidget.xcodeproj/project.pbxproj
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-e82d7e87f6e135f0a5f8a90e41bc267a"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/17bbe0bc1a3684a8459b5c60a63e79717cdec7ea?diff=unified&amp;left_hunk_size=11&amp;mode=100644&amp;next_line_num_left=1575&amp;next_line_num_right=1575&amp;path=iphone%2FZXingWidget%2FZXingWidget.xcodeproj%2Fproject.pbxproj&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-1574" data-right-range="1-1574">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1575,11 +1575,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1575" data-line-number="1575"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1575" data-line-number="1575"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 		1DEB922308733DC00010E9CD /* Debug */ = {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1576" data-line-number="1576"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1576" data-line-number="1576"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 			isa = XCBuildConfiguration;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1577" data-line-number="1577"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1577" data-line-number="1577"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 			buildSettings = {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1578" data-line-number="1578"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-				ARCHS = (</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1579" data-line-number="1579"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-					i386,</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1580" data-line-number="1580"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-					armv6,</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1581" data-line-number="1581"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-					armv7,</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1582" data-line-number="1582"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-				);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1578" data-line-number="1578"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+				ARCHS = &quot;$(ARCHS_STANDARD_32_BIT)&quot;;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1583" data-line-number="1583"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1579" data-line-number="1579"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				GCC_C_LANGUAGE_STANDARD = c99;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1584" data-line-number="1584"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1580" data-line-number="1580"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				GCC_OPTIMIZATION_LEVEL = 0;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1585" data-line-number="1585"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1581" data-line-number="1581"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				&quot;GCC_THUMB_SUPPORT[arch=armv6]&quot; = NO;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="13">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-e82d7e87f6e135f0a5f8a90e41bc267a"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/17bbe0bc1a3684a8459b5c60a63e79717cdec7ea?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=1591&amp;next_line_num_right=1587&amp;path=iphone%2FZXingWidget%2FZXingWidget.xcodeproj%2Fproject.pbxproj&amp;prev_line_num_left=1585&amp;prev_line_num_right=1581&amp;right_hunk_size=7"
+            data-left-range="1586-1590" data-right-range="1582-1586">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1591,7 +1587,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1591" data-line-number="1591"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1587" data-line-number="1587"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1592" data-line-number="1592"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1588" data-line-number="1588"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				OTHER_LDFLAGS = &quot;-ObjC&quot;;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1593" data-line-number="1593"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1589" data-line-number="1589"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				SDKROOT = iphoneos;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1594" data-line-number="1594"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-				VALID_ARCHS = &quot;<span class="x x-first x-last">armv7 armv6 i386</span>&quot;;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1590" data-line-number="1590"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+				VALID_ARCHS = &quot;<span class="x x-first x-last">armv7s armv7</span>&quot;;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1595" data-line-number="1595"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1591" data-line-number="1591"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				WARNING_CFLAGS = (</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1596" data-line-number="1596"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1592" data-line-number="1592"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 					&quot;-Wall&quot;,</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1597" data-line-number="1597"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1593" data-line-number="1593"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 					&quot;-Wextra&quot;,</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="22">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-e82d7e87f6e135f0a5f8a90e41bc267a"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/17bbe0bc1a3684a8459b5c60a63e79717cdec7ea?diff=unified&amp;left_hunk_size=11&amp;mode=100644&amp;next_line_num_left=1604&amp;next_line_num_right=1600&amp;path=iphone%2FZXingWidget%2FZXingWidget.xcodeproj%2Fproject.pbxproj&amp;prev_line_num_left=1597&amp;prev_line_num_right=1593&amp;right_hunk_size=7"
+            data-left-range="1598-1603" data-right-range="1594-1599">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1604,11 +1600,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1604" data-line-number="1604"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1600" data-line-number="1600"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 		1DEB922408733DC00010E9CD /* Release */ = {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1605" data-line-number="1605"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1601" data-line-number="1601"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 			isa = XCBuildConfiguration;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1606" data-line-number="1606"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1602" data-line-number="1602"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 			buildSettings = {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1607" data-line-number="1607"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-				ARCHS = (</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1608" data-line-number="1608"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-					i386,</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1609" data-line-number="1609"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-					armv6,</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1610" data-line-number="1610"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-					armv7,</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1611" data-line-number="1611"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-				);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1603" data-line-number="1603"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+				ARCHS = &quot;$(ARCHS_STANDARD_32_BIT)&quot;;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1612" data-line-number="1612"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1604" data-line-number="1604"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				GCC_C_LANGUAGE_STANDARD = c99;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1613" data-line-number="1613"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1605" data-line-number="1605"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				&quot;GCC_THUMB_SUPPORT[arch=armv6]&quot; = NO;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1614" data-line-number="1614"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1606" data-line-number="1606"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				GCC_VERSION = &quot;&quot;;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="35">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-e82d7e87f6e135f0a5f8a90e41bc267a"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/17bbe0bc1a3684a8459b5c60a63e79717cdec7ea?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=1618&amp;next_line_num_right=1610&amp;path=iphone%2FZXingWidget%2FZXingWidget.xcodeproj%2Fproject.pbxproj&amp;prev_line_num_left=1614&amp;prev_line_num_right=1606&amp;right_hunk_size=7"
+            data-left-range="1615-1617" data-right-range="1607-1609">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1618,7 +1610,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1618" data-line-number="1618"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1610" data-line-number="1610"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1619" data-line-number="1619"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1611" data-line-number="1611"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				OTHER_LDFLAGS = &quot;-ObjC&quot;;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1620" data-line-number="1620"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1612" data-line-number="1612"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				SDKROOT = iphoneos;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1621" data-line-number="1621"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-				VALID_ARCHS = &quot;<span class="x x-first x-last">armv7 armv6 i386</span>&quot;;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1613" data-line-number="1613"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+				VALID_ARCHS = &quot;<span class="x x-first x-last">armv7s armv7</span>&quot;;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1622" data-line-number="1622"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1614" data-line-number="1614"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 				WARNING_CFLAGS = (</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1623" data-line-number="1623"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1615" data-line-number="1615"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 					&quot;-Wall&quot;,</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aL1624" data-line-number="1624"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-e82d7e87f6e135f0a5f8a90e41bc267aR1616" data-line-number="1616"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 					&quot;-Wextra&quot;,</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-e82d7e87f6e135f0a5f8a90e41bc267a"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/zxing/zxing/blob_excerpt/17bbe0bc1a3684a8459b5c60a63e79717cdec7ea?diff=unified&amp;mode=100644&amp;path=iphone%2FZXingWidget%2FZXingWidget.xcodeproj%2Fproject.pbxproj&amp;prev_line_num_left=1624&amp;prev_line_num_right=1616"
+          data-left-range="1625-1656"
+          data-right-range="1617-1656">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+      </div>
+
+      
+
+    <div class="clearfix"></div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.28779s from github-fe118-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2ba3b257a78c3bd28dab11d07ddc8e6b1cf5280066968cc8501b99bf58f64a63.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-dd3051b3b36fed71a99e2c164f3e1eb38a8beaf40dc272fd2807febc8bd46a7f.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

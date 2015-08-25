@@ -1,0 +1,1257 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Sea sometimes bleeds through from under land masses · Issue #608 · mapsforge/mapsforge · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Sea sometimes bleeds through from under land masses · Issue #608 · mapsforge/mapsforge" name="twitter:title" /><meta content="Sometimes, vertical or horizontal strips of sea bleed through when creating a map by merging OSM data with land polygon and underlying sea rectangle. Here is a detail from us-pacific.map downloaded..." name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/1422186?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/1422186?v=3&amp;s=400" property="og:image" /><meta content="Sea sometimes bleeds through from under land masses · Issue #608 · mapsforge/mapsforge" property="og:title" /><meta content="https://github.com/mapsforge/mapsforge/issues/608" property="og:url" /><meta content="Sometimes, vertical or horizontal strips of sea bleed through when creating a map by merging OSM data with land polygon and underlying sea rectangle. Here is a detail from us-pacific.map downloaded..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:5D17:2812F1C:55DB65DE" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="ZhhmO+F1Rr5mrFyhLeeSC7x9/xLjQTQ+D5bPkUiMe/LN742Og8obc5k5910/5uBz+5RP2oGxqLCZKo9oejkUoA==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+      
+  <meta name="description" content="The new home of mapsforge.">
+  <meta name="go-import" content="github.com/mapsforge/mapsforge git https://github.com/mapsforge/mapsforge.git">
+
+  <meta content="430042" name="octolytics-dimension-user_id" /><meta content="mapsforge" name="octolytics-dimension-user_login" /><meta content="26262349" name="octolytics-dimension-repository_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="26262349" name="octolytics-dimension-repository_network_root_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/mapsforge/mapsforge/commits/master.atom" rel="alternate" title="Recent Commits to mapsforge:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fmapsforge%2Fmapsforge%2Fissues%2F608" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/mapsforge/mapsforge/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/mapsforge/mapsforge/watchers">
+    35
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/mapsforge/mapsforge/stargazers">
+      161
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/mapsforge/mapsforge/network" class="social-count">
+        82
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/mapsforge" class="url fn" itemprop="url" rel="author"><span itemprop="title">mapsforge</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/mapsforge/mapsforge" data-pjax="#js-repo-pjax-container">mapsforge</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/mapsforge/mapsforge/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/mapsforge/mapsforge" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /mapsforge/mapsforge">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/mapsforge/mapsforge/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /mapsforge/mapsforge/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/mapsforge/mapsforge/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /mapsforge/mapsforge/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/mapsforge/mapsforge/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /mapsforge/mapsforge/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/mapsforge/mapsforge/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /mapsforge/mapsforge/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/mapsforge/mapsforge/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /mapsforge/mapsforge/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="f83160f4bf7be4f3b090dcda1d9b7a6fe701af5c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="dLUrN8mXSN+2ybLx9o8O7B9EnOb2TBjaJkK12UvrVRnIb2O3csZ/vRjwqbNLHgPcBq1hjLpZoUrq1lDKcdINTw==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="f83160f4bf7be4f3b090dcda1d9b7a6fe701af5c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Zf2sdj7A64CjrQLeyH0KAexVsyu/SRppRe6jhqBUhnoNWufCYpeLDSxm82Nd+VxSHaeldZ8RY9S+kxXXHlQNTw==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/mapsforge/mapsforge/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of mapsforge/mapsforge as a zip file"
+                 title="Download the contents of mapsforge/mapsforge as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-FFFFFF, .linked-labelstyle-FFFFFF {  background-color: #FFFFFF !important;  color: #333333 !important;}.labelstyle-FFFFFF.selected {  background-color: #FFFFFF !important;  color: #333333 !important;}.label-select-menu .labelstyle-FFFFFF.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-84b6eb, .linked-labelstyle-84b6eb {  background-color: #84b6eb !important;  color: #1c2733 !important;}.labelstyle-84b6eb.selected {  background-color: #84b6eb !important;  color: #1c2733 !important;}.label-select-menu .labelstyle-84b6eb.selected {  background:rgba(132, 182, 235, 0.12) !important;  color: #557699 !important;}
+
+span.labelstyle-159818, .linked-labelstyle-159818 {  background-color: #159818 !important;  color: #fff !important;}.labelstyle-159818.selected {  background-color: #159818 !important;  color: #fff !important;}.label-select-menu .labelstyle-159818.selected {  background:rgba(21, 152, 24, 0.12) !important;  color: #159918 !important;}
+
+span.labelstyle-e6e6e6, .linked-labelstyle-e6e6e6 {  background-color: #e6e6e6 !important;  color: #333333 !important;}.labelstyle-e6e6e6.selected {  background-color: #e6e6e6 !important;  color: #333333 !important;}.label-select-menu .labelstyle-e6e6e6.selected {  background:rgba(230, 230, 230, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-cc317c, .linked-labelstyle-cc317c {  background-color: #cc317c !important;  color: #fff !important;}.labelstyle-cc317c.selected {  background-color: #cc317c !important;  color: #fff !important;}.label-select-menu .labelstyle-cc317c.selected {  background:rgba(204, 49, 124, 0.12) !important;  color: #99245c !important;}
+
+span.labelstyle-ffffff, .linked-labelstyle-ffffff {  background-color: #ffffff !important;  color: #333333 !important;}.labelstyle-ffffff.selected {  background-color: #ffffff !important;  color: #333333 !important;}.label-select-menu .labelstyle-ffffff.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="mapsforge/mapsforge:issue:76266354"
+    data-url="/mapsforge/mapsforge/issues/608/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/mapsforge/mapsforge/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Sea sometimes bleeds through from under land masses</span>
+      <span class="gh-header-number">#608</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-issue-closed"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/lincomatic" class="author">lincomatic</a> opened this <span class="noun">Issue</span> <time datetime="2015-05-14T07:21:58Z" is="relative-time">May 14, 2015</time>
+        &middot; 12 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:issue:76266354"
+     data-url="/mapsforge/mapsforge/issues/608/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/608?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="f83160f4bf7be4f3b090dcda1d9b7a6fe701af5c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="hgif3YVRPj3LNXx3U0RyLDxAlhNG7SbNnz3FG7F5O2ql/AjX94YkwH4Gj9KeHhj0Y6WirTiub1SCDDwI3/o7sA==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+      <a href="/mapsforge/mapsforge/labels/enhancement" class="label css-truncate-target linked-labelstyle-84b6eb" title="enhancement">enhancement</a>
+
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/608/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="f83160f4bf7be4f3b090dcda1d9b7a6fe701af5c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="gxBKZm01vuE5gwuutLH9pEg8Kaiyjl60bqD1TKP6CaDFrVQ4AP/4WzKHIub/FBBUfNrA9j4ysnwWcdwOtr/HRA==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      <span class="progress-bar"><span class="progress" style="width: 100.0%">&nbsp;</span></span>
+  <a title="0.5.2" href="/mapsforge/mapsforge/milestones/0.5.2" class="milestone-name css-truncate">
+    <span class="css-truncate-target">0.5.2</span>
+  </a>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/608?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="f83160f4bf7be4f3b090dcda1d9b7a6fe701af5c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="PL2k29SRY4CnRqSCoIE+Cw8InOd2073twbaa+Jb6qth+NEmujvM91YhYV6o3H3e3I5UROFa+3F4CNOSmWvtqkQ==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:issue:76266354"
+      data-url="/mapsforge/mapsforge/issues/608/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      3 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="lincomatic" href="/lincomatic"><img alt="@lincomatic" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/1422186?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="devemux86" href="/devemux86"><img alt="@devemux86" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="applantation" href="/applantation"><img alt="@applantation" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="mapsforge/mapsforge:marked-as-read:76266354">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/lincomatic"><img alt="@lincomatic" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/1422186?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-76266354"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="79ef112470f6d4b210d91854123af51e">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/lincomatic" class="author">lincomatic</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-76266354" class="timestamp">
+      <time datetime="2015-05-14T07:21:58Z" is="relative-time">May 14, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sometimes, vertical or horizontal strips of sea bleed through when creating a map by merging OSM data with land polygon and underlying sea rectangle. Here is a detail from us-pacific.map downloaded from mapsforge server:<br>
+<a href="https://cloud.githubusercontent.com/assets/1422186/7627726/2a9adcea-f9cf-11e4-9d5c-d3775b225a76.jpg" target="_blank"><img src="https://cloud.githubusercontent.com/assets/1422186/7627726/2a9adcea-f9cf-11e4-9d5c-d3775b225a76.jpg" alt="image1" style="max-width:100%;"></a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-101951466"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="0442043b1546389597af21e594661c88">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-101951466" class="timestamp">
+      <time datetime="2015-05-14T07:35:43Z" is="relative-time">May 14, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ok now that I see the screenshot, what land polygons are you using?</p>
+
+<p>I have seen such artifacts with split land polygons (e.g. from OpenStreetMap Data).</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-101953615"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="500ec043795218ae732e776f1a53a99b">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-101953615" class="timestamp">
+      <time datetime="2015-05-14T07:41:02Z" is="relative-time">May 14, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>BTW the land polygons used at mapsforge server are the split ones from there.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/lincomatic"><img alt="@lincomatic" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/1422186?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-101954864"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="f7a26ad850f0acd35c429c4c1eeed439">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/lincomatic" class="author">lincomatic</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-101954864" class="timestamp">
+      <time datetime="2015-05-14T07:45:05Z" is="relative-time">May 14, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yes, those are the exact set that I am using: land-polygons-split-4326. Is there a better set to use?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-101958322"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="c3a02c2e926446eb20d0b5ac785f7c69">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-101958322" class="timestamp">
+      <time datetime="2015-05-14T07:50:12Z" is="relative-time">May 14, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>You can try the non-split edition provided from the same source.<br>
+But the map build time will rise significantly for large complex lands.</p>
+
+<p>Alternatively you can change in render theme the land rendering, e.g. put larger stroke at split polygons in order to hide the seams.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/lincomatic"><img alt="@lincomatic" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/1422186?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-101964443"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="b78d870c0b1484cf7e2324a938799b0f">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/lincomatic" class="author">lincomatic</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-101964443" class="timestamp">
+      <time datetime="2015-05-14T08:09:15Z" is="relative-time">May 14, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>OK, I will try those ideas, thanks. I was avoiding the unsplit polygons because of the comment in the mapcreator's landextraction.py:</p>
+
+<p>"# self.landfiles = "land-polygons-complete-4326"  # there seems to be a bug in that data"</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-101966787"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="f1b42194683bbbe8ae30e35f81df1b03">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-101966787" class="timestamp">
+      <time datetime="2015-05-14T08:16:03Z" is="relative-time">May 14, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>That comment is from Ludwig, so he could answer better for that.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/lincomatic"><img alt="@lincomatic" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/1422186?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-102170863"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="92f4f523c43dde0932d68996b3940468">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/lincomatic" class="author">lincomatic</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-102170863" class="timestamp">
+      <time datetime="2015-05-14T21:13:13Z" is="relative-time">May 14, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>OK your stroke idea works great! For the benefit of anyone else trying to fix this problem, I empirically found 0.6 to work:<br>
+<code>&lt;rule e="way" k="natural" v="nosea"&gt;<br>
+        &lt;area fill="#F4F3F2" stroke="#F4F3F2" stroke-width="0.6"/&gt;<br>
+    &lt;/rule&gt;</code><br>
+Next I will try using the unsplit polygons to see how that affects map size &amp; rendering speed.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/lincomatic"><img alt="@lincomatic" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/1422186?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-102171499"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="159dc4c794d375be7ae98a32b0f4e378">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/lincomatic" class="author">lincomatic</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-102171499" class="timestamp">
+      <time datetime="2015-05-14T21:16:30Z" is="relative-time">May 14, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>What is the best way to bring the question about land-polygons-complete to Ludwig's attention? Should I post to the mailing list?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-102276967"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="afcbb483f7a43665fc09e61dfb287930">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-102276967" class="timestamp">
+      <time datetime="2015-05-15T06:18:35Z" is="relative-time">May 15, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>What is the best way to bring the question about land-polygons-complete to Ludwig's attention? Should I post to the mailing list?</p>
+</blockquote>
+
+<p>Ludwig is watching both issues and mailing list.<br>
+But I agree it's better any discussion to take place primarily in forum.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-102290250"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="37a3329b73695275abe34802db67c701">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-102290250" class="timestamp">
+      <time datetime="2015-05-15T06:56:24Z" is="relative-time">May 15, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>May be we should also add at <code>nosea</code> in default render themes (Osmarender / RenderThemeV4) a stroke directive for better handling the seams at split land polygons.</p>
+
+<p>A counter argument could be that the stroke will expand slightly the land.</p>
+
+<p>BTW I see the use of <code>stroke-width="1.0"</code> at <code>nosea</code> in OpenAndroMaps themes.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-labeled">
+    <div class="discussion-item-header" id="event-305573692">
+
+      <span class="octicon octicon-tag discussion-item-icon"></span>
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author">devemux86</a>
+      added the <span class="label-color" style="background-color: #84b6eb;"><a href="/mapsforge/mapsforge/labels/enhancement" style="color: #1c2733">enhancement</a></span> label <a href="https://github.com/mapsforge/mapsforge/issues/608#event-305573692" class="timestamp"><time class="timestamp" datetime="2015-05-15T06:56:33Z" is="relative-time">May 15, 2015</time></a>
+    </div>
+  </div>
+
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/applantation"><img alt="@applantation" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-102337037"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="aa6d8a2a49e432fdec802c093a72f318">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-102337037" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/applantation" class="author">applantation</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-102337037" class="timestamp">
+      <time datetime="2015-05-15T09:17:23Z" is="relative-time">May 15, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">Re this issue with the unsplit polygons, the problem was that some
+geometries were invalid, reason unclear, maybe lines crossing the dateline
+or unclosed polygons.
+This might be resolved in newer versions of the coastline files, it is
+worth a try.
+
+The coastlines do not change that much, but I advise to update to newer
+versions once in a while just to keep OSM data for beaches etc in line with
+the coastline.
+
+Ludwig</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 15 May 2015 at 03:56, Emux &lt;notifications@github.com&gt; wrote:
+ I'm wondering if we should add at nosea in default render themes
+ (Osmarender / RenderThemeV4) a stroke directive for better handling the
+ seams at split land polygons.
+
+ A counter argument could be that the stroke will expand slightly the land.
+
+ BTW I see the use of stroke-width="1.0" at nosea in OpenAndroMaps themes.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/608#issuecomment-102290250">https://github.com/mapsforge/mapsforge/issues/608#issuecomment-102290250</a>&gt;
+ .
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+  <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-commit-93df27f">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author" truncate="true">devemux86</a>
+
+      referenced
+      this issue
+      from a commit
+      <a href="#ref-commit-93df27f" class="timestamp">
+        <time datetime="2015-05-22T18:30:35Z" is="relative-time">May 22, 2015</time>
+      </a>
+    </div>
+
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:93df27f9b2e86c785e47c87b61de7a54c2f8cd6f"
+    data-url="/mapsforge/mapsforge/commit/93df27f9b2e86c785e47c87b61de7a54c2f8cd6f/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/devemux86"><img alt="@devemux86" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/devemux86" class="author" rel="contributor">devemux86</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mapsforge/mapsforge/commit/93df27f9b2e86c785e47c87b61de7a54c2f8cd6f" class="message" data-pjax="true" title="Render theme: fix for #608, split polygons artifacts">Render theme: fix for</a> <a href="https://github.com/mapsforge/mapsforge/issues/608" class="issue-link" title="Sea sometimes bleeds through from under land masses">#608</a><a href="/mapsforge/mapsforge/commit/93df27f9b2e86c785e47c87b61de7a54c2f8cd6f" class="message" data-pjax="true" title="Render theme: fix for #608, split polygons artifacts">, split polygons artifacts</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+
+      <code><a href="/mapsforge/mapsforge/commit/93df27f9b2e86c785e47c87b61de7a54c2f8cd6f" class="commit-id">93df27f</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-104739192"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="d163c759aa2a3b028974bb3960ae5d13">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-104739192" class="timestamp">
+      <time datetime="2015-05-22T18:34:21Z" is="relative-time">May 22, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>With <a href="https://github.com/mapsforge/mapsforge/commit/93df27f9b2e86c785e47c87b61de7a54c2f8cd6f" class="commit-link"><tt>93df27f</tt></a> I pushed on dev a fix adding <code>stroke-width="1.0"</code> at <code>natural=nosea</code> in Osmarender and RenderThemeV4 themes.</p>
+
+<p>More fine tuning can be done, based also on zoom levels.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-311958628">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author">devemux86</a>
+      closed this   <a href="https://github.com/mapsforge/mapsforge/issues/608#event-311958628" class="timestamp"><time class="timestamp" datetime="2015-05-22T18:34:21Z" is="relative-time">May 22, 2015</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-milestoned">
+    <div class="discussion-item-header" id="event-361047316">
+
+      <span class="octicon octicon-milestone discussion-item-icon"></span>
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author">devemux86</a>
+      added this to the <a href="/mapsforge/mapsforge/milestones/0.5.2" class="discussion-item-entity">0.5.2</a> milestone <a href="https://github.com/mapsforge/mapsforge/issues/608#event-361047316" class="timestamp"><time class="timestamp" datetime="2015-07-21T11:25:34Z" is="relative-time">Jul 21, 2015</time></a>
+    </div>
+  </div>
+
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-renamed">
+    <div class="discussion-item-header" id="event-381309258">
+
+      <span class="octicon octicon-pencil discussion-item-icon"></span>
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author">devemux86</a>
+      changed the title from  <span class="renamed-was">Map Writer: Sea sometimes bleeds though from under land masses</span> to <span class="renamed-is">Sea sometimes bleeds though from under land masses</span> <a href="https://github.com/mapsforge/mapsforge/issues/608#event-381309258" class="timestamp"><time class="timestamp" datetime="2015-08-13T11:06:42Z" is="relative-time">Aug 13, 2015</time></a>
+    </div>
+  </div>
+
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-renamed">
+    <div class="discussion-item-header" id="event-381355795">
+
+      <span class="octicon octicon-pencil discussion-item-icon"></span>
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author">devemux86</a>
+      changed the title from  <span class="renamed-was">Sea sometimes bleeds though from under land masses</span> to <span class="renamed-is">Sea sometimes bleeds through from under land masses</span> <a href="https://github.com/mapsforge/mapsforge/issues/608#event-381355795" class="timestamp"><time class="timestamp" datetime="2015-08-13T11:56:12Z" is="relative-time">Aug 13, 2015</time></a>
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- Rendered timeline since 2015-08-13 04:56:12 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:issue:76266354"
+      data-url="/mapsforge/mapsforge/issues/608/show_partial?partial=issues%2Ftimeline_marker&amp;since=1439466972"
+      data-last-modified="Thu, 13 Aug 2015 11:56:12 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/notifications/mark?ids=73963116" class="hidden js-timeline-marker-form" data-form-nonce="f83160f4bf7be4f3b090dcda1d9b7a6fe701af5c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="PAEG0G/uNO70tyJKgDM2Ffh6OZ//tITLMlP23/KXpinZptF9KSyrEd/k8n7/Zb0EugEvh4qyHMomrNOHZ1luHg==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fmapsforge%2Fmapsforge%2Fissues%2F608" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.13501s from github-fe129-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

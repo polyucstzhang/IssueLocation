@@ -1,0 +1,1272 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Update Rendertheme.md by bradh · Pull Request #610 · mapsforge/mapsforge · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Update Rendertheme.md by bradh · Pull Request #610 · mapsforge/mapsforge" name="twitter:title" /><meta content="Trivial typo fixes" name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/174642?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/174642?v=3&amp;s=400" property="og:image" /><meta content="Update Rendertheme.md by bradh · Pull Request #610 · mapsforge/mapsforge" property="og:title" /><meta content="https://github.com/mapsforge/mapsforge/pull/610" property="og:url" /><meta content="Trivial typo fixes" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:1688:2100A9B:55DB65E3" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="kLd0KOgrGH1kjU553Byqwtb54qhgyeb+POIOLc5QN3XJ7959Zx/5jFK2uNJWH6pZQW/cSC7W5AaTvp7sIyR+Fg==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/mapsforge/mapsforge/pull/610.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/mapsforge/mapsforge/pull/610.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-FFFFFF, .linked-labelstyle-FFFFFF {  background-color: #FFFFFF !important;  color: #333333 !important;}.labelstyle-FFFFFF.selected {  background-color: #FFFFFF !important;  color: #333333 !important;}.label-select-menu .labelstyle-FFFFFF.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-84b6eb, .linked-labelstyle-84b6eb {  background-color: #84b6eb !important;  color: #1c2733 !important;}.labelstyle-84b6eb.selected {  background-color: #84b6eb !important;  color: #1c2733 !important;}.label-select-menu .labelstyle-84b6eb.selected {  background:rgba(132, 182, 235, 0.12) !important;  color: #557699 !important;}
+
+span.labelstyle-159818, .linked-labelstyle-159818 {  background-color: #159818 !important;  color: #fff !important;}.labelstyle-159818.selected {  background-color: #159818 !important;  color: #fff !important;}.label-select-menu .labelstyle-159818.selected {  background:rgba(21, 152, 24, 0.12) !important;  color: #159918 !important;}
+
+span.labelstyle-e6e6e6, .linked-labelstyle-e6e6e6 {  background-color: #e6e6e6 !important;  color: #333333 !important;}.labelstyle-e6e6e6.selected {  background-color: #e6e6e6 !important;  color: #333333 !important;}.label-select-menu .labelstyle-e6e6e6.selected {  background:rgba(230, 230, 230, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-cc317c, .linked-labelstyle-cc317c {  background-color: #cc317c !important;  color: #fff !important;}.labelstyle-cc317c.selected {  background-color: #cc317c !important;  color: #fff !important;}.label-select-menu .labelstyle-cc317c.selected {  background:rgba(204, 49, 124, 0.12) !important;  color: #99245c !important;}
+
+span.labelstyle-ffffff, .linked-labelstyle-ffffff {  background-color: #ffffff !important;  color: #333333 !important;}.labelstyle-ffffff.selected {  background-color: #ffffff !important;  color: #333333 !important;}.label-select-menu .labelstyle-ffffff.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/mapsforge/mapsforge/pull/610" data-pjax-transient>
+
+  <meta name="description" content="The new home of mapsforge.">
+  <meta name="go-import" content="github.com/mapsforge/mapsforge git https://github.com/mapsforge/mapsforge.git">
+
+  <meta content="430042" name="octolytics-dimension-user_id" /><meta content="mapsforge" name="octolytics-dimension-user_login" /><meta content="26262349" name="octolytics-dimension-repository_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="26262349" name="octolytics-dimension-repository_network_root_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/mapsforge/mapsforge/commits/2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb.atom" rel="alternate" title="Recent Commits to mapsforge:2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fmapsforge%2Fmapsforge%2Fpull%2F610" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/mapsforge/mapsforge/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/mapsforge/mapsforge/watchers">
+    35
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/mapsforge/mapsforge/stargazers">
+      161
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/mapsforge/mapsforge/network" class="social-count">
+        82
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/mapsforge" class="url fn" itemprop="url" rel="author"><span itemprop="title">mapsforge</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/mapsforge/mapsforge" data-pjax="#js-repo-pjax-container">mapsforge</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/mapsforge/mapsforge/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/mapsforge/mapsforge" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /mapsforge/mapsforge">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/mapsforge/mapsforge/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /mapsforge/mapsforge/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/mapsforge/mapsforge/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /mapsforge/mapsforge/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/mapsforge/mapsforge/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /mapsforge/mapsforge/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/mapsforge/mapsforge/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /mapsforge/mapsforge/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/mapsforge/mapsforge/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /mapsforge/mapsforge/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="3daceaba1df1550dc257f6bdd6e0792013f0b046" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="42lkIn4j9w4VudYYKsD85YGujbQ2F9dFSQcxNwPpaBNp4/fxD0rmqLpZepXtub5Gn6MaNuQSGirE4Fb0EcLf0Q==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="3daceaba1df1550dc257f6bdd6e0792013f0b046" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XB9Jo+pODJlewoWkhcF4r9VY/usB4UoYUfeO9V59MhlC1rK+edycMqm4PnNG3xTZqYcK0mrfL/oXDxwIASWKTA==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/mapsforge/mapsforge/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of mapsforge/mapsforge as a zip file"
+                 title="Download the contents of mapsforge/mapsforge as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;c8c09dd8383955b5511fc2f28d10c2f88a591e17&quot; -->
+<!-- head sha1: &quot;2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="mapsforge/mapsforge:pull_request:35566909"
+    data-url="/mapsforge/mapsforge/pull/610/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Update Rendertheme.md</span>
+      <span class="gh-header-number">#610</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-git-pull-request"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/bradh" class="author pull-header-username css-truncate css-truncate-target expandable">
+    bradh
+  </a>
+   wants to merge 1 commit into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">mapsforge</span>:<span class="css-truncate-target">master</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">bradh</span>:<span class="css-truncate-target">patch-1</span></span>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="mapsforge/mapsforge:branch:patch-1"
+    data-url=/mapsforge/mapsforge/pull/610/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +2
+        </span>
+        <span class="text-diff-deleted">
+          −2
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="4 lines changed">
+          <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/mapsforge/mapsforge/pull/610" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/mapsforge/mapsforge/pull/610/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/mapsforge/mapsforge/pull/610/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          1
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:issue:76965998"
+     data-url="/mapsforge/mapsforge/issues/610/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/610?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="3daceaba1df1550dc257f6bdd6e0792013f0b046" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="b6LuEL2ASKgSFTdhm6f7WI05wSEK3y4lqNeaIj5KGR8bXRlxu91F9nCY+7bEJCkkWyxv7S+A4qf7/LU81+crJQ==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/610/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="3daceaba1df1550dc257f6bdd6e0792013f0b046" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="7wKps+gHg7s1Ku0+NLwiVu46uCbHxf5oMbHsxK5HcbRa/iT4vchihZlqiUsYmUfZOCsOze/3m1OAIXqOXphjCw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/610?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="3daceaba1df1550dc257f6bdd6e0792013f0b046" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="/g1myZ2p2Tlmp5H5ai9gNbnoy/JlCB3FNW6dkuSVfk+s7hlXoEDglyCCtasw00XPZsTFbBc+W7q15gNcfurf1A==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:issue:76965998"
+      data-url="/mapsforge/mapsforge/issues/610/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="bradh" href="/bradh"><img alt="@bradh" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/174642?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="devemux86" href="/devemux86"><img alt="@devemux86" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="mapsforge/mapsforge:marked-as-read:35566909">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/bradh"><img alt="@bradh" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/174642?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-76965998"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="923cb9220dc75a01925b76933c8ea1cc">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/bradh" class="author">bradh</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-76965998" class="timestamp">
+      <time datetime="2015-05-16T06:59:04Z" is="relative-time">May 16, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Trivial typo fixes</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-2a5356a">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb"
+    data-url="/mapsforge/mapsforge/commit/2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/bradh"><img alt="@bradh" class="avatar avatar-small" height="16" src="https://avatars2.githubusercontent.com/u/174642?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/bradh" class="author" rel="contributor">bradh</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/bradh/mapsforge/commit/2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb" class="message" data-pjax="true" title="Update Rendertheme.md
+
+Trivial typo fixes">Update Rendertheme.md</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>Trivial typo fixes</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/bradh/mapsforge/commit/2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb" class="commit-id">2a5356a</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-102589297"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="b21bc2f955320009fb0a51af1c5d84f8">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-102589297" class="timestamp">
+      <time datetime="2015-05-16T08:29:50Z" is="relative-time">May 16, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks for the PR.</p>
+
+<p>The pull requests should be based on dev branch, as this is where we develop.<br>
+(master is synchronized regularly based on dev)</p>
+
+<p>Can you repost it on dev?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-307180318">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@bradh" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/174642?v=3&amp;s=32" width="16" />
+      <a href="/bradh" class="author">bradh</a>
+      closed this   <a href="https://github.com/mapsforge/mapsforge/pull/610#event-307180318" class="timestamp"><time class="timestamp" datetime="2015-05-18T09:10:48Z" is="relative-time">May 18, 2015</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+
+
+
+<!-- Rendered timeline since 2015-05-18 02:10:48 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:pull_request:35566909"
+      data-url="/mapsforge/mapsforge/pull/610/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1431940248"
+      data-last-modified="Mon, 18 May 2015 09:10:48 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/notifications/mark?ids=74594796" class="hidden js-timeline-marker-form" data-form-nonce="3daceaba1df1550dc257f6bdd6e0792013f0b046" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XYUn8pk21E1B5pB7Y64kqtxnF5eSEdijGEREs0FoJhgJCG1xjja2Avblyn9M2KR4uG+alL8ktdwn6+M9pzgBzA==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fmapsforge%2Fmapsforge%2Fpull%2F610" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:branch:patch-1"
+     data-url="/mapsforge/mapsforge/pull/610/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on May 16, 2015
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:commit:2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb"
+      data-url="/mapsforge/mapsforge/commit/2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/bradh" data-skip-pjax="true" rel="contributor"><img alt="@bradh" class="avatar" height="36" src="https://avatars2.githubusercontent.com/u/174642?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/bradh/mapsforge/commit/2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb" class="message" data-pjax="true" title="Update Rendertheme.md
+
+Trivial typo fixes">Update Rendertheme.md</a>
+
+    <span class="hidden-text-expander inline"><a href="#" class="js-details-target">…</a></span>
+    </p>
+
+    <div class="commit-meta">
+        <a href="/bradh" class="commit-author" rel="contributor">bradh</a>
+ authored <time datetime="2015-05-16T06:58:55Z" is="relative-time">May 16, 2015</time>
+
+
+    </div>
+
+      <div class="commit-desc"><pre>Trivial typo fixes</pre></div>
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/bradh/mapsforge/commit/2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb" class="sha btn btn-outline">
+        2a5356a
+      </a>
+    </div>
+    <a href="/mapsforge/mapsforge/tree/2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+    <div id="files_bucket" class="files-bucket tab-content pull-request-tab-content ">
+
+      <div class="flash flash-warn stale-files-tab js-pull-request-stale-files js-socket-channel"
+   data-channel="mapsforge/mapsforge:pull_request:35566909:diff"
+   data-url="https://github.com/mapsforge/mapsforge/pull/610/live_update">
+    This page is out of date. <a href="https://github.com/mapsforge/mapsforge/pull/610/files">Refresh</a> to see the latest.
+</div>
+
+
+      
+
+
+
+
+      <div id='diff' class="uncommentable">
+        <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/mapsforge/mapsforge/pull/610/files?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/mapsforge/mapsforge/pull/610/files?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <span class="octicon octicon-diff"></span>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      1 changed file
+    </button>
+    with
+    <strong>2 additions</strong>
+    and <strong>2 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +2
+          </span>
+          <span class="text-diff-deleted">
+            −2
+          </span>
+          <a href="#diff-8bd4937c307758d7fd0da1d31f26a5c6" class="tooltipped tooltipped-s" aria-label="4 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-8bd4937c307758d7fd0da1d31f26a5c6">docs/Rendertheme.md</a>
+    </li>
+  </ol>
+</div>
+
+        <div id="files" class="diff-view ">
+    
+      <a name="diff-8bd4937c307758d7fd0da1d31f26a5c6"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                    soft-wrap
+                    file-type-prose
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="docs/Rendertheme.md">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+              <span class="btn-group">
+                <a class="btn btn-sm tooltipped tooltipped tooltipped-n source selected"
+                   href="#diff-8bd4937c307758d7fd0da1d31f26a5c6"
+                   aria-label="Display the source diff"><span class="octicon octicon-code"></span></a>
+                <a class="btn btn-sm tooltipped tooltipped-n rendered"
+                   href="https://github.com/mapsforge/mapsforge/pull/610/files?short_path=8bd4937#diff-8bd4937c307758d7fd0da1d31f26a5c6"
+                   aria-label="Display the rich diff"><span class="octicon octicon-file-text"></span></a>
+              </span>
+                <a href="/bradh/mapsforge/blob/2a5356a0b1282f6978bd3efaaf8d0d992a11e5cb/docs/Rendertheme.md" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 2a5356a ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="2 additions &amp; 2 deletions">4 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="docs/Rendertheme.md">
+              docs/Rendertheme.md
+            </span>
+            
+          </div>
+        </div>
+
+          
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                  <colgroup>
+                    <col width="44">
+                    <col width="44">
+                    <col>
+                  </colgroup>
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-8bd4937c307758d7fd0da1d31f26a5c6"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/mapsforge/mapsforge/blob_excerpt/14467295277004f201cfdd0bafadd236ff49209a?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=215&amp;next_line_num_right=215&amp;path=docs%2FRendertheme.md&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-214" data-right-range="1-214">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -215,7 +215,7 @@ The Samples app has a completely worked style menu.</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L215" data-line-number="215"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R215" data-line-number="215"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L216" data-line-number="216"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R216" data-line-number="216"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-mh"><span class="pl-mh">##</span><span class="pl-mh"> </span>Map Integration</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L217" data-line-number="217"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R217" data-line-number="217"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L218" data-line-number="218"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-When a V4 rendertheme is parsed, the style menu <span class="x x-first x-last">definitons</span> are parsed and a callback is made into the application giving it access to the stylemenu definitions. </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R218" data-line-number="218"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+When a V4 rendertheme is parsed, the style menu <span class="x x-first x-last">definitions</span> are parsed and a callback is made into the application giving it access to the stylemenu definitions. </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L219" data-line-number="219"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R219" data-line-number="219"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L220" data-line-number="220"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R220" data-line-number="220"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> On Android, the stylemenus can thus be converted into standard Android settings, providing a seamless integration of the rendertheme definitions that do not require changes every time the rendertheme changes. There is an example on how to do this in the Samples app, see the Settings.java file. </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L221" data-line-number="221"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R221" data-line-number="221"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="9">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-8bd4937c307758d7fd0da1d31f26a5c6"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/mapsforge/mapsforge/blob_excerpt/14467295277004f201cfdd0bafadd236ff49209a?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=260&amp;next_line_num_right=260&amp;path=docs%2FRendertheme.md&amp;prev_line_num_left=221&amp;prev_line_num_right=221&amp;right_hunk_size=7"
+            data-left-range="222-259" data-right-range="222-259">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -260,7 +260,7 @@ Labels and icons are now drawn in order of priority, higher priorities first. Th</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L260" data-line-number="260"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R260" data-line-number="260"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     		&lt;/rule&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L261" data-line-number="261"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R261" data-line-number="261"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L262" data-line-number="262"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R262" data-line-number="262"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-mh"><span class="pl-mh">##</span><span class="pl-mh"> </span>Display</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L263" data-line-number="263"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-The display directive has been added <span class="x x-first x-last">whereever</span> priorities can be used. The following values can be used:</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R263" data-line-number="263"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+The display directive has been added <span class="x x-first x-last">wherever</span> priorities can be used. The following values can be used:</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L264" data-line-number="264"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R264" data-line-number="264"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">  <span class="pl-v">-</span> always: an element will always be displayed regardless of space. </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L265" data-line-number="265"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R265" data-line-number="265"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">  <span class="pl-v">-</span> ifspace: an element will only be displayed if the layout algorithm determines there is space and no higher priority element will take it. </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6L266" data-line-number="266"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8bd4937c307758d7fd0da1d31f26a5c6R266" data-line-number="266"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">  <span class="pl-v">-</span> never: an element is not displayed. This is useful to blank out elements.</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-8bd4937c307758d7fd0da1d31f26a5c6"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/mapsforge/mapsforge/blob_excerpt/14467295277004f201cfdd0bafadd236ff49209a?diff=unified&amp;mode=100644&amp;path=docs%2FRendertheme.md&amp;prev_line_num_left=266&amp;prev_line_num_right=266"
+          data-left-range="267-307"
+          data-right-range="267-307">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+      </div>
+
+      
+
+    <div class="clearfix"></div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.26179s from github-fe131-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

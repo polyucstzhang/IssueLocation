@@ -1,0 +1,3544 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Thread-safe lazy initialization in GenericGF by jameswald · Pull Request #129 · zxing/zxing · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Thread-safe lazy initialization in GenericGF by jameswald · Pull Request #129 · zxing/zxing" name="twitter:title" /><meta content="This pull request is an attempt to fix the following exception which is reported multiple times per day from an Android app that I work on:
+
+Caused by: java.lang.IllegalArgumentException: Divide by..." name="twitter:description" /><meta content="https://avatars3.githubusercontent.com/u/875535?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars3.githubusercontent.com/u/875535?v=3&amp;s=400" property="og:image" /><meta content="Thread-safe lazy initialization in GenericGF by jameswald · Pull Request #129 · zxing/zxing" property="og:title" /><meta content="https://github.com/zxing/zxing/pull/129" property="og:url" /><meta content="This pull request is an attempt to fix the following exception which is reported multiple times per day from an Android app that I work on:
+
+Caused by: java.lang.IllegalArgumentException: Divide by..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:4808:1E7172B:55DB58C0" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="I3pTqeLU77joyqJu0EbJrWvORgg7iMxKPNr2PXTR5Kk56lji93RAreQY7T8TpcJwibseQH3VT3xWQ76lKA/bbg==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="22e6cb7d309429ee0eaff86792eaf1c3">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/zxing/zxing/pull/129.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/zxing/zxing/pull/129.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #fff !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #fff !important;}.label-select-menu .labelstyle-009800.selected {  background:rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #fff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #fff !important;}.label-select-menu .labelstyle-e11d21.selected {  background:rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #282d33 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #282d33 !important;}.label-select-menu .labelstyle-c7def8.selected {  background:rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/zxing/zxing/pull/129" data-pjax-transient>
+
+  <meta name="description" content="zxing - Official ZXing (&quot;Zebra Crossing&quot;) project home">
+  <meta name="go-import" content="github.com/zxing/zxing git https://github.com/zxing/zxing.git">
+
+  <meta content="1122572" name="octolytics-dimension-user_id" /><meta content="zxing" name="octolytics-dimension-user_login" /><meta content="2562751" name="octolytics-dimension-repository_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2562751" name="octolytics-dimension-repository_network_root_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/zxing/zxing/commits/461d7d789a41effcd496fbed6cf0f3ded5b28843.atom" rel="alternate" title="Recent Commits to zxing:461d7d789a41effcd496fbed6cf0f3ded5b28843" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fzxing%2Fzxing%2Fpull%2F129" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/zxing/zxing/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/zxing/zxing/watchers">
+    789
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/zxing/zxing/stargazers">
+      5,886
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/zxing/zxing/network" class="social-count">
+        3,739
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/zxing" class="url fn" itemprop="url" rel="author"><span itemprop="title">zxing</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/zxing/zxing" data-pjax="#js-repo-pjax-container">zxing</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/zxing/zxing/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/zxing/zxing" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /zxing/zxing">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/zxing/zxing/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /zxing/zxing/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/zxing/zxing/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /zxing/zxing/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/zxing/zxing/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /zxing/zxing/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/zxing/zxing/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /zxing/zxing/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/zxing/zxing/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /zxing/zxing/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="22865d3d24b97c02c0c772377f63df56c518677c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="5npVFMbsCpZpUyWGjpVuf0OuftFOkgztfzleNmXK+rIl6LdUko0VBNeT4Yx2fYRFzT7cvM0fF/156+vSxIzS6g==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="22865d3d24b97c02c0c772377f63df56c518677c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="MkOSJrlc+9qhsP5oZ8MNujCNZRlMxYsxgJcfVPq/BDs6inU09H5uGeOSJxylXVcimQ1NSv397XNrD7jSl8BovQ==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/zxing/zxing/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of zxing/zxing as a zip file"
+                 title="Download the contents of zxing/zxing as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;c2afa60303aeff87d98f3e62fea9a3407d537bff&quot; -->
+<!-- head sha1: &quot;461d7d789a41effcd496fbed6cf0f3ded5b28843&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="zxing/zxing:pull_request:15275602"
+    data-url="/zxing/zxing/pull/129/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Thread-safe lazy initialization in GenericGF</span>
+      <span class="gh-header-number">#129</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-git-pull-request"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/jameswald" class="author pull-header-username css-truncate css-truncate-target expandable">
+    jameswald
+  </a>
+   wants to merge 1 commit into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">zxing</span>:<span class="css-truncate-target">master</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="unknown-repo" title="unknown repository">unknown repository</span></span>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="zxing/zxing:branch:thread-safe-gf"
+    data-url=/zxing/zxing/pull/129/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +58
+        </span>
+        <span class="text-diff-deleted">
+          −29
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="87 lines changed">
+          <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/zxing/zxing/pull/129" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        2
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/129/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/129/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          1
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:issue:32423963"
+     data-url="/zxing/zxing/issues/129/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/129?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="22865d3d24b97c02c0c772377f63df56c518677c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="Ae1WE6S11cHrOc1e5Z2hd8klbWhZazPuDJ9Dqzji/2ZR96tfa72Qz1LVhPv1RXrFpskKDI6ngw7OUUa1R4zS8A==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/129/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="22865d3d24b97c02c0c772377f63df56c518677c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="2S1ejDvX3zpOfVWyTzBRcQvXT86KJfaGpUnVbAIiQBryCxr8sdKs+nSmIz0sIMKKZjkO4WRqkQtU+4fFbV42JA==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/129?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="22865d3d24b97c02c0c772377f63df56c518677c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="X9oqErjlHNSxNxrkbzgY6oStKlLnfuBg56v23w9Vxyl/gKlgowmzbja3Z6HCZFmfVwTGijpl6ZuxsvUtTW6WmA==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:issue:32423963"
+      data-url="/zxing/zxing/issues/129/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="jameswald" href="/jameswald"><img alt="@jameswald" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/875535?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="srowen" href="/srowen"><img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="zxing/zxing:marked-as-read:15275602">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jameswald"><img alt="@jameswald" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/875535?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-32423963"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="49cc979be9beec21f73af97d82ce02a1">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jameswald" class="author">jameswald</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-32423963" class="timestamp">
+      <time datetime="2014-04-29T07:29:39Z" is="relative-time">Apr 29, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This pull request is an attempt to fix the following exception which is reported multiple times per day from an Android app that I work on:</p>
+
+<pre><code>Caused by: java.lang.IllegalArgumentException: Divide by 0
+       at com.google.zxing.common.reedsolomon.GenericGFPoly.divide(SourceFile:205)
+       at com.google.zxing.common.reedsolomon.ReedSolomonEncoder.encode(SourceFile:65)
+       at com.google.zxing.qrcode.encoder.Encoder.generateECBytes(SourceFile:436)
+       at com.google.zxing.qrcode.encoder.Encoder.interleaveWithECBytes(SourceFile:391)
+       at com.google.zxing.qrcode.encoder.Encoder.encode(SourceFile:144)
+       at com.google.zxing.qrcode.encoder.Encoder.encode(SourceFile:76)
+...
+</code></pre>
+
+<p>The <code>initialized</code> field was not thread-safe which allowed multiple threads to call <code>initialize()</code>. This concurrent re-initialization would potentially allow mutations to be observed in <code>expTable</code> and <code>logTable</code> during encoding operations. Even if re-initialization did not occur, there is no guarantee that the initialization of these tables is visible on other threads because those initializing mutations occur outside of a synchronized context. Adding a double-checked lock and a nested holder class ensures that these shared resources are initialized once, visible to all threads, and never change.</p>
+
+<p>I spent a while reviewing the code and came to the conclusion that this is the only possible explanation for the exception above. I was also able to generate corrupt <code>QRCode</code>s quite frequently due to this issue. That problem should also be addressed by this fix.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-461d7d7">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:461d7d789a41effcd496fbed6cf0f3ded5b28843"
+    data-url="/zxing/zxing/commit/461d7d789a41effcd496fbed6cf0f3ded5b28843/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/jameswald"><img alt="@jameswald" class="avatar avatar-small" height="16" src="https://avatars2.githubusercontent.com/u/875535?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/jameswald" class="author" rel="contributor">jameswald</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/zxing/zxing/commit/461d7d789a41effcd496fbed6cf0f3ded5b28843" class="message" data-pjax="true" title="Thread-safe lazy initialization in GenericGF">Thread-safe lazy initialization in GenericGF</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+    <div class="commit-build-statuses">
+        <a class="text-success tooltipped tooltipped-w"
+           aria-label="Success: The Travis CI build passed"
+           href="https://travis-ci.org/zxing/zxing/builds/23994887">
+          <span class="octicon octicon-check"></span>
+        </a>
+    </div>
+
+
+      <code><a href="/zxing/zxing/commit/461d7d789a41effcd496fbed6cf0f3ded5b28843" class="commit-id">461d7d7</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/jameswald"><img alt="@jameswald" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/875535?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-41649946"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="f17f091bf25ab3fcdf28e36931d82844">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/jameswald" class="author">jameswald</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-41649946" class="timestamp">
+      <time datetime="2014-04-29T07:53:32Z" is="relative-time">Apr 29, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Well it's a bit too late, but I just realized that this was fixed a week ago (<a href="https://github.com/srowen" class="user-mention">@srowen</a>) by removing lazy initialization entirely in <a href="https://github.com/zxing/zxing/commit/391e85ea51c9e4073d6dc2ff41cfcc400cf3bfb0" class="commit-link"><tt>391e85e</tt></a>. I was working against v3.0.0 while developing this fix. Closing this PR, although the description might still be a helpful reference for anyone else who experienced exceptions or corruption.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-116028065">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@jameswald" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/875535?v=3&amp;s=32" width="16" />
+      <a href="/jameswald" class="author">jameswald</a>
+      closed this   <a href="https://github.com/zxing/zxing/pull/129#event-116028065" class="timestamp"><time class="timestamp" datetime="2014-04-29T07:53:32Z" is="relative-time">Apr 29, 2014</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-head_ref_deleted">
+    <div class="discussion-item-header" id="event-116034000">
+
+      <span class="octicon octicon-git-branch-delete discussion-item-icon"></span>
+      <img alt="@jameswald" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/875535?v=3&amp;s=32" width="16" />
+      <a href="/jameswald" class="author">jameswald</a>
+      deleted the  <span class="commit-ref js-selectable-text"><span class="unknown-repo" title="unknown repository">unknown repository</span></span> branch <a href="https://github.com/zxing/zxing/pull/129#event-116034000" class="timestamp"><time class="timestamp" datetime="2014-04-29T08:18:08Z" is="relative-time">Apr 29, 2014</time></a>
+    </div>
+  </div>
+
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-41661973"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="e991b767b43ff32bbe032a9b2f4f176a">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-41661973" class="timestamp">
+      <time datetime="2014-04-29T10:39:29Z" is="relative-time">Apr 29, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yeah the trick is not useful anymore and actually only happened to work although for a different reason. </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+    
+
+
+
+
+<!-- Rendered timeline since 2014-04-29 13:04:54 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:pull_request:15275602"
+      data-url="/zxing/zxing/pull/129/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1398801894"
+      data-last-modified="Tue, 29 Apr 2014 20:04:54 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/notifications/mark?ids=31016582" class="hidden js-timeline-marker-form" data-form-nonce="22865d3d24b97c02c0c772377f63df56c518677c" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jHCFUkiGqzq5t+3QPxpxUopJFFPJtC38z24sttL6fXBInTa4V0Ze6JKXYdgn1S0sNK3B21Vd8zNbyxAyEA37Yg==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fzxing%2Fzxing%2Fpull%2F129" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:branch:thread-safe-gf"
+     data-url="/zxing/zxing/pull/129/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Apr 29, 2014
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:commit:461d7d789a41effcd496fbed6cf0f3ded5b28843"
+      data-url="/zxing/zxing/commit/461d7d789a41effcd496fbed6cf0f3ded5b28843/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/jameswald" data-skip-pjax="true" rel="contributor"><img alt="@jameswald" class="avatar" height="36" src="https://avatars2.githubusercontent.com/u/875535?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/zxing/zxing/commit/461d7d789a41effcd496fbed6cf0f3ded5b28843" class="message" data-pjax="true" title="Thread-safe lazy initialization in GenericGF">Thread-safe lazy initialization in GenericGF</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/jameswald" class="commit-author" rel="contributor">jameswald</a>
+ authored <time datetime="2014-04-29T06:45:29Z" is="relative-time">Apr 28, 2014</time>
+
+
+        <span class="commit-indicator">
+          
+    <div class="commit-build-statuses">
+        <a class="text-success tooltipped tooltipped-e"
+           aria-label="Success: The Travis CI build passed"
+           href="https://travis-ci.org/zxing/zxing/builds/23994887">
+          <span class="octicon octicon-check"></span>
+        </a>
+    </div>
+
+        </span>
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="461d7d789a41effcd496fbed6cf0f3ded5b28843" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/zxing/zxing/commit/461d7d789a41effcd496fbed6cf0f3ded5b28843" class="sha btn btn-outline">
+        461d7d7
+      </a>
+    </div>
+    <a href="/zxing/zxing/tree/461d7d789a41effcd496fbed6cf0f3ded5b28843" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+    <div id="files_bucket" class="files-bucket tab-content pull-request-tab-content ">
+
+      <div class="flash flash-warn stale-files-tab js-pull-request-stale-files js-socket-channel"
+   data-channel="zxing/zxing:pull_request:15275602:diff"
+   data-url="https://github.com/zxing/zxing/pull/129/live_update">
+    This page is out of date. <a href="https://github.com/zxing/zxing/pull/129/files">Refresh</a> to see the latest.
+</div>
+
+
+      
+
+
+
+
+      <div id='diff' class="uncommentable">
+        <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/zxing/zxing/pull/129/files?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/zxing/zxing/pull/129/files?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <span class="octicon octicon-diff"></span>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      1 changed file
+    </button>
+    with
+    <strong>58 additions</strong>
+    and <strong>29 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +58
+          </span>
+          <span class="text-diff-deleted">
+            −29
+          </span>
+          <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa" class="tooltipped tooltipped-s" aria-label="87 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa">core/src/main/java/com/google/zxing/common/reedsolomon/GenericGF.java</a>
+    </li>
+  </ol>
+</div>
+
+        <div id="files" class="diff-view ">
+    
+      <a name="diff-3333114999e31adaf1677a5bfbb4e7fa"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="core/src/main/java/com/google/zxing/common/reedsolomon/GenericGF.java">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/zxing/zxing/blob/461d7d789a41effcd496fbed6cf0f3ded5b28843/core/src/main/java/com/google/zxing/common/reedsolomon/GenericGF.java" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 461d7d7 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="58 additions &amp; 29 deletions">87 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="core/src/main/java/com/google/zxing/common/reedsolomon/GenericGF.java">
+              core/src/main/java/com/google/zxing/common/reedsolomon/GenericGF.java
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/e33a656f1a2903f5552e306a5359b57277316309?diff=unified&amp;left_hunk_size=8&amp;mode=100644&amp;next_line_num_left=21&amp;next_line_num_right=21&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fcommon%2Freedsolomon%2FGenericGF.java&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-20" data-right-range="1-20">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -21,8 +21,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c"> * the Galois Fields. Operations use a given primitive polynomial in calculations.&lt;/p&gt;</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c"> *</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c"> * &lt;p&gt;Throughout this package, elements of the GF are represented as an {@code int}</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL24" data-line-number="24"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-c"> * for convenience and speed (but at the cost of memory).</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL25" data-line-number="25"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-c"> * &lt;/p&gt;</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR24" data-line-number="24"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-c"> * for convenience and speed (but at the cost of memory). This class is thread-safe.&lt;/p&gt;</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR25" data-line-number="25"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c"> *</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL27" data-line-number="27"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c"> * @author Sean Owen</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL28" data-line-number="28"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR27" data-line-number="27"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c"> * @author David Olivier</span></span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="10">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/e33a656f1a2903f5552e306a5359b57277316309?diff=unified&amp;left_hunk_size=14&amp;mode=100644&amp;next_line_num_left=38&amp;next_line_num_right=37&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fcommon%2Freedsolomon%2FGenericGF.java&amp;prev_line_num_left=28&amp;prev_line_num_right=27&amp;right_hunk_size=46"
+            data-left-range="29-37" data-right-range="28-36">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -38,14 +37,46 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL38" data-line-number="38"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR37" data-line-number="37"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">GenericGF</span> <span class="pl-c1">AZTEC_DATA_8</span> <span class="pl-k">=</span> <span class="pl-c1">DATA_MATRIX_FIELD_256</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL39" data-line-number="39"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR38" data-line-number="38"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">GenericGF</span> <span class="pl-c1">MAXICODE_FIELD_64</span> <span class="pl-k">=</span> <span class="pl-c1">AZTEC_DATA_6</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL40" data-line-number="40"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR39" data-line-number="39"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL41" data-line-number="41"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">int</span>[] expTable;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL42" data-line-number="42"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">int</span>[] logTable;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL43" data-line-number="43"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">GenericGFPoly</span> zero;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL44" data-line-number="44"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">GenericGFPoly</span> one;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL45" data-line-number="45"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR40" data-line-number="40"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">int</span> size;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL46" data-line-number="46"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR41" data-line-number="41"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">int</span> primitive;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL47" data-line-number="47"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR42" data-line-number="42"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">int</span> generatorBase;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL48" data-line-number="48"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR43" data-line-number="43"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR44" data-line-number="44"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">final</span> <span class="pl-smi">Object</span> <span class="pl-c1">LAZY_HOLDER_LOCK</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Object</span>();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR45" data-line-number="45"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-k">private</span> <span class="pl-k">volatile</span> <span class="pl-smi">LazyHolder</span> lazyHolder;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR46" data-line-number="46"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR47" data-line-number="47"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-c">/**</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR48" data-line-number="48"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-c">   * Holder for shared resources which are lazily initialized.</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR49" data-line-number="49"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-c">   */</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR50" data-line-number="50"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">class</span> <span class="pl-en">LazyHolder</span> {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR51" data-line-number="51"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">int</span>[] expTable;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR52" data-line-number="52"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-k">int</span>[] logTable;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR53" data-line-number="53"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">GenericGFPoly</span> zero;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR54" data-line-number="54"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">private</span> <span class="pl-k">final</span> <span class="pl-smi">GenericGFPoly</span> one;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR55" data-line-number="55"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR56" data-line-number="56"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">public</span> <span class="pl-en">LazyHolder</span>() {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR57" data-line-number="57"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-c">// Final field freeze guarantees that the array values will be visible when the constructor</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR58" data-line-number="58"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-c">// completes. (Java Concurrency in Practice section 16.3 and JSR-133 fig. 22-23)</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR59" data-line-number="59"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      expTable <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">int</span>[size];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR60" data-line-number="60"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      logTable <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">int</span>[size];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR61" data-line-number="61"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR62" data-line-number="62"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-k">for</span> (<span class="pl-k">int</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>, x <span class="pl-k">=</span> <span class="pl-c1">1</span>; i <span class="pl-k">&lt;</span> size; i<span class="pl-k">++</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR63" data-line-number="63"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        expTable[i] <span class="pl-k">=</span> x;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR64" data-line-number="64"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        x <span class="pl-k">&lt;&lt;</span><span class="pl-k">=</span> <span class="pl-c1">1</span>; <span class="pl-c">// x = x * 2; we&#39;re assuming the generator alpha is 2</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR65" data-line-number="65"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-k">if</span> (x <span class="pl-k">&gt;=</span> size) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR66" data-line-number="66"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+          x <span class="pl-k">^</span><span class="pl-k">=</span> primitive;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR67" data-line-number="67"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+          x <span class="pl-k">&amp;=</span> size <span class="pl-k">-</span> <span class="pl-c1">1</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR68" data-line-number="68"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR69" data-line-number="69"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR70" data-line-number="70"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-k">for</span> (<span class="pl-k">int</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>; i <span class="pl-k">&lt;</span> size <span class="pl-k">-</span> <span class="pl-c1">1</span>; i<span class="pl-k">++</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR71" data-line-number="71"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        logTable[expTable[i]] <span class="pl-k">=</span> i;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR72" data-line-number="72"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR73" data-line-number="73"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-c">// logTable[0] == 0 but this should never be used</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR74" data-line-number="74"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR75" data-line-number="75"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      zero <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">GenericGFPoly</span>(<span class="pl-smi">GenericGF</span><span class="pl-k">.</span><span class="pl-v">this</span>, <span class="pl-k">new</span> <span class="pl-smi">int</span>[] { <span class="pl-c1">0</span> });</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR76" data-line-number="76"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      one <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">GenericGFPoly</span>(<span class="pl-smi">GenericGF</span><span class="pl-k">.</span><span class="pl-v">this</span>, <span class="pl-k">new</span> <span class="pl-smi">int</span>[] { <span class="pl-c1">1</span> });</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR77" data-line-number="77"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR78" data-line-number="78"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR79" data-line-number="79"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL49" data-line-number="49"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR80" data-line-number="80"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-c">/**</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL50" data-line-number="50"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR81" data-line-number="81"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">   * Create a representation of GF(size) using the given primitive polynomial.</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL51" data-line-number="51"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR82" data-line-number="82"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">   *</span></span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="61">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/e33a656f1a2903f5552e306a5359b57277316309?diff=unified&amp;left_hunk_size=32&amp;mode=100644&amp;next_line_num_left=61&amp;next_line_num_right=92&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fcommon%2Freedsolomon%2FGenericGF.java&amp;prev_line_num_left=51&amp;prev_line_num_right=82&amp;right_hunk_size=28"
+            data-left-range="52-60" data-right-range="83-91">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -61,32 +92,28 @@ public GenericGF(int primitive, int size, int b) {</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL61" data-line-number="61"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR92" data-line-number="92"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-v">this</span><span class="pl-k">.</span>primitive <span class="pl-k">=</span> primitive;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL62" data-line-number="62"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR93" data-line-number="93"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-v">this</span><span class="pl-k">.</span>size <span class="pl-k">=</span> size;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL63" data-line-number="63"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR94" data-line-number="94"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-v">this</span><span class="pl-k">.</span>generatorBase <span class="pl-k">=</span> b;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR95" data-line-number="95"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL64" data-line-number="64"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR96" data-line-number="96"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL65" data-line-number="65"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  <span class="x x-first">  expTable </span><span class="pl-k x">=</span><span class="x"> </span><span class="pl-k x">new</span><span class="x"> </span><span class="pl-smi x">int</span><span class="x x-last">[size];</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL66" data-line-number="66"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="x x-first">logTable </span><span class="pl-k x">=</span><span class="x"> </span><span class="pl-k x">new</span><span class="x"> </span><span class="pl-smi x">int</span><span class="x x-last">[size];</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL67" data-line-number="67"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k x x-first">int</span><span class="x x-last"> x</span> <span class="pl-k">=</span> <span class="pl-c1 x x-first x-last">1</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL68" data-line-number="68"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k x x-first">for</span><span class="x"> (</span><span class="pl-k x">int</span><span class="x"> i </span><span class="pl-k x">=</span><span class="x"> </span><span class="pl-c1 x">0</span><span class="x">; i </span><span class="pl-k x">&lt;</span><span class="x"> size; i</span><span class="pl-k x x-last">++</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL69" data-line-number="69"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      <span class="x x-first">expTable[i] </span><span class="pl-k x">=</span><span class="x x-last"> x;</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL70" data-line-number="70"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      <span class="x x-first">x </span><span class="pl-k x">*=</span><span class="x"> </span><span class="pl-c1 x">2</span><span class="x">; </span><span class="pl-c x x-last">// we're assuming the generator alpha is 2</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL71" data-line-number="71"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      <span class="pl-k">if</span> (<span class="x x-first">x </span><span class="pl-k x">&gt;=</span><span class="x x-last"> size</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL72" data-line-number="72"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="x x-first">x </span><span class="pl-k x">^</span><span class="pl-k x">=</span><span class="x x-last"> primitive</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL73" data-line-number="73"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-        <span class="x x-first">x </span><span class="pl-k x">&amp;=</span><span class="x"> size</span><span class="pl-k x">-</span><span class="pl-c1 x">1</span><span class="x x-last">;</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR97" data-line-number="97"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-k x x-first">private</span><span class="x"> </span><span class="pl-smi x">LazyHolder</span><span class="x"> </span><span class="pl-en x">getLazyHolder</span><span class="x x-last">() {</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR98" data-line-number="98"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-c x x-first x-last">// Double-checked lock idiom, not broken since JDK 1.5.</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR99" data-line-number="99"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-smi x x-first">LazyHolder</span><span class="x x-last"> instance</span> <span class="pl-k">=</span> <span class="x x-first x-last">lazyHolder</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR100" data-line-number="100"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k x x-first">if</span><span class="x"> (instance </span><span class="pl-k x">==</span><span class="x"> </span><span class="pl-c1 x x-last">null</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR101" data-line-number="101"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-k x x-first">synchronized</span><span class="x"> (</span><span class="pl-c1 x">LAZY_HOLDER_LOCK</span><span class="x x-last">) {</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR102" data-line-number="102"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="x x-first">  instance </span><span class="pl-k x">=</span><span class="x x-last"> lazyHolder;</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR103" data-line-number="103"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="x x-first x-last">  </span><span class="pl-k">if</span> (<span class="x x-first">instance </span><span class="pl-k x">==</span><span class="x"> </span><span class="pl-c1 x x-last">null</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR104" data-line-number="104"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="x x-first">  lazyHolder </span><span class="pl-k x">=</span><span class="x"> instance </span><span class="pl-k x">=</span><span class="x"> </span><span class="pl-k x">new</span><span class="x"> </span><span class="pl-smi x">LazyHolder</span><span class="x x-last">()</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR105" data-line-number="105"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="x x-first x-last">}</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL74" data-line-number="74"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR106" data-line-number="106"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL75" data-line-number="75"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR107" data-line-number="107"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL76" data-line-number="76"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k">for</span> (<span class="pl-k">int</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>; i <span class="pl-k">&lt;</span> size<span class="pl-k">-</span><span class="pl-c1">1</span>; i<span class="pl-k">++</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL77" data-line-number="77"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      logTable[expTable[i]] <span class="pl-k">=</span> i;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL78" data-line-number="78"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL79" data-line-number="79"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-c">// logTable[0] == 0 but this should never be used</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL80" data-line-number="80"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    zero <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">GenericGFPoly</span>(<span class="pl-v">this</span>, <span class="pl-k">new</span> <span class="pl-smi">int</span>[]{<span class="pl-c1">0</span>});</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL81" data-line-number="81"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    one <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">GenericGFPoly</span>(<span class="pl-v">this</span>, <span class="pl-k">new</span> <span class="pl-smi">int</span>[]{<span class="pl-c1">1</span>});</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR108" data-line-number="108"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">return</span> instance;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL82" data-line-number="82"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR109" data-line-number="109"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL83" data-line-number="83"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR110" data-line-number="110"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first x-last">  </span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL84" data-line-number="84"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR111" data-line-number="111"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-smi">GenericGFPoly</span> <span class="pl-en">getZero</span>() {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL85" data-line-number="85"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k">return</span> zero;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR112" data-line-number="112"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">return</span> <span class="x x-first">getLazyHolder()</span><span class="pl-k x x-last">.</span>zero;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL86" data-line-number="86"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR113" data-line-number="113"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL87" data-line-number="87"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR114" data-line-number="114"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL88" data-line-number="88"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR115" data-line-number="115"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-smi">GenericGFPoly</span> <span class="pl-en">getOne</span>() {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL89" data-line-number="89"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k">return</span> one;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR116" data-line-number="116"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">return</span> <span class="x x-first">getLazyHolder()</span><span class="pl-k x x-last">.</span>one;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL90" data-line-number="90"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR117" data-line-number="117"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL91" data-line-number="91"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR118" data-line-number="118"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL92" data-line-number="92"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR119" data-line-number="119"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-c">/**</span></span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="108">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/e33a656f1a2903f5552e306a5359b57277316309?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=97&amp;next_line_num_right=124&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fcommon%2Freedsolomon%2FGenericGF.java&amp;prev_line_num_left=92&amp;prev_line_num_right=119&amp;right_hunk_size=7"
+            data-left-range="93-96" data-right-range="120-123">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -97,7 +124,7 @@ GenericGFPoly buildMonomial(int degree, int coefficient) {</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL97" data-line-number="97"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR124" data-line-number="124"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">IllegalArgumentException</span>();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL98" data-line-number="98"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR125" data-line-number="125"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL99" data-line-number="99"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR126" data-line-number="126"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (coefficient <span class="pl-k">==</span> <span class="pl-c1">0</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL100" data-line-number="100"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      <span class="pl-k">return</span> zero;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR127" data-line-number="127"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-k">return</span> <span class="x x-first">getLazyHolder()</span><span class="pl-k x x-last">.</span>zero;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL101" data-line-number="101"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR128" data-line-number="128"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL102" data-line-number="102"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR129" data-line-number="129"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">int</span>[] coefficients <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">int</span>[degree <span class="pl-k">+</span> <span class="pl-c1">1</span>];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL103" data-line-number="103"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR130" data-line-number="130"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     coefficients[<span class="pl-c1">0</span>] <span class="pl-k">=</span> coefficient;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="117">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/e33a656f1a2903f5552e306a5359b57277316309?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=117&amp;next_line_num_right=144&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fcommon%2Freedsolomon%2FGenericGF.java&amp;prev_line_num_left=103&amp;prev_line_num_right=130&amp;right_hunk_size=7"
+            data-left-range="104-116" data-right-range="131-143">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -117,7 +144,7 @@ static int addOrSubtract(int a, int b) {</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL117" data-line-number="117"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR144" data-line-number="144"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">   * @return 2 to the power of a in GF(size)</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL118" data-line-number="118"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR145" data-line-number="145"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">   */</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL119" data-line-number="119"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR146" data-line-number="146"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">int</span> <span class="pl-en">exp</span>(<span class="pl-k">int</span> <span class="pl-v">a</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL120" data-line-number="120"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k">return</span> expTable[a];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR147" data-line-number="147"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">return</span> <span class="x x-first">getLazyHolder()</span><span class="pl-k x x-last">.</span>expTable[a];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL121" data-line-number="121"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR148" data-line-number="148"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL122" data-line-number="122"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR149" data-line-number="149"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL123" data-line-number="123"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR150" data-line-number="150"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-c">/**</span></span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="126">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/e33a656f1a2903f5552e306a5359b57277316309?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=127&amp;next_line_num_right=154&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fcommon%2Freedsolomon%2FGenericGF.java&amp;prev_line_num_left=123&amp;prev_line_num_right=150&amp;right_hunk_size=7"
+            data-left-range="124-126" data-right-range="151-153">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -127,7 +154,7 @@ int log(int a) {</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL127" data-line-number="127"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR154" data-line-number="154"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (a <span class="pl-k">==</span> <span class="pl-c1">0</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL128" data-line-number="128"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR155" data-line-number="155"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">IllegalArgumentException</span>();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL129" data-line-number="129"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR156" data-line-number="156"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL130" data-line-number="130"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k">return</span> logTable[a];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR157" data-line-number="157"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">return</span> <span class="x x-first">getLazyHolder()</span><span class="pl-k x x-last">.</span>logTable[a];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL131" data-line-number="131"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR158" data-line-number="158"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL132" data-line-number="132"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR159" data-line-number="159"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL133" data-line-number="133"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR160" data-line-number="160"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-c">/**</span></span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="135">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/e33a656f1a2903f5552e306a5359b57277316309?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=137&amp;next_line_num_right=164&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fcommon%2Freedsolomon%2FGenericGF.java&amp;prev_line_num_left=133&amp;prev_line_num_right=160&amp;right_hunk_size=8"
+            data-left-range="134-136" data-right-range="161-163">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -137,7 +164,8 @@ int inverse(int a) {</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL137" data-line-number="137"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR164" data-line-number="164"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (a <span class="pl-k">==</span> <span class="pl-c1">0</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL138" data-line-number="138"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR165" data-line-number="165"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">ArithmeticException</span>();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL139" data-line-number="139"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR166" data-line-number="166"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL140" data-line-number="140"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k">return</span> expTable[size <span class="pl-k">-</span> logTable[a] <span class="pl-k">-</span> <span class="pl-c1">1</span>];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR167" data-line-number="167"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-smi">LazyHolder</span> lazyHolder <span class="pl-k">=</span> getLazyHolder();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR168" data-line-number="168"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">return</span> lazyHolder<span class="pl-k">.</span>expTable[size <span class="pl-k">-</span> lazyHolder<span class="pl-k">.</span>logTable[a] <span class="pl-k">-</span> <span class="pl-c1">1</span>];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL141" data-line-number="141"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR169" data-line-number="169"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL142" data-line-number="142"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR170" data-line-number="170"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL143" data-line-number="143"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR171" data-line-number="171"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-c">/**</span></span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="145">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/e33a656f1a2903f5552e306a5359b57277316309?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=147&amp;next_line_num_right=175&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fcommon%2Freedsolomon%2FGenericGF.java&amp;prev_line_num_left=143&amp;prev_line_num_right=171&amp;right_hunk_size=8"
+            data-left-range="144-146" data-right-range="172-174">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -147,7 +175,8 @@ int multiply(int a, int b) {</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL147" data-line-number="147"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR175" data-line-number="175"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (a <span class="pl-k">==</span> <span class="pl-c1">0</span> <span class="pl-k">||</span> b <span class="pl-k">==</span> <span class="pl-c1">0</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL148" data-line-number="148"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR176" data-line-number="176"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       <span class="pl-k">return</span> <span class="pl-c1">0</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL149" data-line-number="149"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR177" data-line-number="177"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL150" data-line-number="150"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k">return</span> expTable[(logTable[a] <span class="pl-k">+</span> logTable[b]) <span class="pl-k">%</span> (size <span class="pl-k">-</span> <span class="pl-c1">1</span>)];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR178" data-line-number="178"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-smi">LazyHolder</span> lazyHolder <span class="pl-k">=</span> getLazyHolder();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR179" data-line-number="179"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">return</span> lazyHolder<span class="pl-k">.</span>expTable[(lazyHolder<span class="pl-k">.</span>logTable[a] <span class="pl-k">+</span> lazyHolder<span class="pl-k">.</span>logTable[b]) <span class="pl-k">%</span> (size <span class="pl-k">-</span> <span class="pl-c1">1</span>)];</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL151" data-line-number="151"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR180" data-line-number="180"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL152" data-line-number="152"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR181" data-line-number="181"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faL153" data-line-number="153"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-3333114999e31adaf1677a5bfbb4e7faR182" data-line-number="182"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">public</span> <span class="pl-k">int</span> <span class="pl-en">getSize</span>() {</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-3333114999e31adaf1677a5bfbb4e7fa"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/zxing/zxing/blob_excerpt/e33a656f1a2903f5552e306a5359b57277316309?diff=unified&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fcommon%2Freedsolomon%2FGenericGF.java&amp;prev_line_num_left=153&amp;prev_line_num_right=182"
+          data-left-range="154-195"
+          data-right-range="183-195">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+      </div>
+
+      
+
+    <div class="clearfix"></div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.33154s from github-fe144-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2ba3b257a78c3bd28dab11d07ddc8e6b1cf5280066968cc8501b99bf58f64a63.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-dd3051b3b36fed71a99e2c164f3e1eb38a8beaf40dc272fd2807febc8bd46a7f.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

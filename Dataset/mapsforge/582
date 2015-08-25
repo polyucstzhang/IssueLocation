@@ -1,0 +1,1116 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Can not style power lines in rendertheme · Issue #582 · mapsforge/mapsforge · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Can not style power lines in rendertheme · Issue #582 · mapsforge/mapsforge" name="twitter:title" /><meta content="As I understand map data is not filtered when maps are generated, but I can not make rendertheme draw power lines. I&#39;ve tried:
+
+&lt;rule cat=&quot;roads&quot; e=&quot;way&quot; k=&quot;power&quot; v=&quot;*&quot;&gt;
+    &lt;rule e=&quot;way&quot; k=&quot;power..." name="twitter:description" /><meta content="https://avatars2.githubusercontent.com/u/2943625?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars2.githubusercontent.com/u/2943625?v=3&amp;s=400" property="og:image" /><meta content="Can not style power lines in rendertheme · Issue #582 · mapsforge/mapsforge" property="og:title" /><meta content="https://github.com/mapsforge/mapsforge/issues/582" property="og:url" /><meta content="As I understand map data is not filtered when maps are generated, but I can not make rendertheme draw power lines. I&#39;ve tried:
+
+&lt;rule cat=&quot;roads&quot; e=&quot;way&quot; k=&quot;power&quot; v=&quot;*&quot;&gt;
+    &lt;rule e=&quot;way&quot; k=&quot;power..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:5D15:22FEFA8:55DB65AA" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="CZRdu5kQDIwupRN7FXAHwFFvjyWy9bUefmqY2TbHkgzfveOh6gijahDFr5JaOKdxaUKueline4LiPMaIzpSldA==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+      
+  <meta name="description" content="The new home of mapsforge.">
+  <meta name="go-import" content="github.com/mapsforge/mapsforge git https://github.com/mapsforge/mapsforge.git">
+
+  <meta content="430042" name="octolytics-dimension-user_id" /><meta content="mapsforge" name="octolytics-dimension-user_login" /><meta content="26262349" name="octolytics-dimension-repository_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="26262349" name="octolytics-dimension-repository_network_root_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/mapsforge/mapsforge/commits/master.atom" rel="alternate" title="Recent Commits to mapsforge:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fmapsforge%2Fmapsforge%2Fissues%2F582" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/mapsforge/mapsforge/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/mapsforge/mapsforge/watchers">
+    35
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/mapsforge/mapsforge/stargazers">
+      161
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/mapsforge/mapsforge/network" class="social-count">
+        82
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/mapsforge" class="url fn" itemprop="url" rel="author"><span itemprop="title">mapsforge</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/mapsforge/mapsforge" data-pjax="#js-repo-pjax-container">mapsforge</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/mapsforge/mapsforge/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/mapsforge/mapsforge" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /mapsforge/mapsforge">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/mapsforge/mapsforge/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /mapsforge/mapsforge/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/mapsforge/mapsforge/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /mapsforge/mapsforge/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/mapsforge/mapsforge/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /mapsforge/mapsforge/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/mapsforge/mapsforge/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /mapsforge/mapsforge/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/mapsforge/mapsforge/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /mapsforge/mapsforge/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="2c7f37d963805e556966e7278b6532dca592c2f6" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="TNIMXmA0gMbKSh6uwgO9ZmJK7GHgo50XkdmrwegNXSVZ4wA0X9xQhpJHCmZPyAAmvWX7GjOemOKX4HA9QYO9Xg==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="2c7f37d963805e556966e7278b6532dca592c2f6" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="M8GaPPpCBiXHiSJLQreSK2UO33R3F2wRqOIdNGQ6s0ATb9KWyZMKJK8tDw4V4WDHGsHYjQ1Qnru3SxICfC69dQ==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/mapsforge/mapsforge/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of mapsforge/mapsforge as a zip file"
+                 title="Download the contents of mapsforge/mapsforge as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-FFFFFF, .linked-labelstyle-FFFFFF {  background-color: #FFFFFF !important;  color: #333333 !important;}.labelstyle-FFFFFF.selected {  background-color: #FFFFFF !important;  color: #333333 !important;}.label-select-menu .labelstyle-FFFFFF.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-84b6eb, .linked-labelstyle-84b6eb {  background-color: #84b6eb !important;  color: #1c2733 !important;}.labelstyle-84b6eb.selected {  background-color: #84b6eb !important;  color: #1c2733 !important;}.label-select-menu .labelstyle-84b6eb.selected {  background:rgba(132, 182, 235, 0.12) !important;  color: #557699 !important;}
+
+span.labelstyle-159818, .linked-labelstyle-159818 {  background-color: #159818 !important;  color: #fff !important;}.labelstyle-159818.selected {  background-color: #159818 !important;  color: #fff !important;}.label-select-menu .labelstyle-159818.selected {  background:rgba(21, 152, 24, 0.12) !important;  color: #159918 !important;}
+
+span.labelstyle-e6e6e6, .linked-labelstyle-e6e6e6 {  background-color: #e6e6e6 !important;  color: #333333 !important;}.labelstyle-e6e6e6.selected {  background-color: #e6e6e6 !important;  color: #333333 !important;}.label-select-menu .labelstyle-e6e6e6.selected {  background:rgba(230, 230, 230, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-cc317c, .linked-labelstyle-cc317c {  background-color: #cc317c !important;  color: #fff !important;}.labelstyle-cc317c.selected {  background-color: #cc317c !important;  color: #fff !important;}.label-select-menu .labelstyle-cc317c.selected {  background:rgba(204, 49, 124, 0.12) !important;  color: #99245c !important;}
+
+span.labelstyle-ffffff, .linked-labelstyle-ffffff {  background-color: #ffffff !important;  color: #333333 !important;}.labelstyle-ffffff.selected {  background-color: #ffffff !important;  color: #333333 !important;}.label-select-menu .labelstyle-ffffff.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="mapsforge/mapsforge:issue:58716914"
+    data-url="/mapsforge/mapsforge/issues/582/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/mapsforge/mapsforge/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Can not style power lines in rendertheme</span>
+      <span class="gh-header-number">#582</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-open">
+          <span class="octicon octicon-issue-opened"></span>
+          Open
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/andreynovikov" class="author">andreynovikov</a> opened this <span class="noun">Issue</span> <time datetime="2015-02-24T10:05:46Z" is="relative-time">Feb 24, 2015</time>
+        &middot; 11 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:issue:58716914"
+     data-url="/mapsforge/mapsforge/issues/582/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/582?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="2c7f37d963805e556966e7278b6532dca592c2f6" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="XYAi4TdzdkiPTW0aPsGDOfIoeFagWuUcpFK8WxtDiJWZghdVqJYFANe59eCmLDhiyRo8DSMxH/jsYc01qgGG0w==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/582/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="2c7f37d963805e556966e7278b6532dca592c2f6" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="hJQk7qf3zqXBtId97m6C7EyrIfqiRvrWaEaWa+o5EsGaPtd4gUSbh7ez0Nu1hLAmxJs55RktXH6uXaoO45B9EQ==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/582?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="2c7f37d963805e556966e7278b6532dca592c2f6" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="9+5WrCsIcUAtVav/eqSg5crIjEzKYPF6Bc5TpZVF/sGi14wp3+oHDY0/sloT9sXDMrq0VLZ7yWEM3nKRXsXAeg==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:issue:58716914"
+      data-url="/mapsforge/mapsforge/issues/582/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      3 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="andreynovikov" href="/andreynovikov"><img alt="@andreynovikov" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/2943625?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="devemux86" href="/devemux86"><img alt="@devemux86" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="ludwigb" href="/ludwigb"><img alt="@ludwigb" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="mapsforge/mapsforge:marked-as-read:58716914">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/andreynovikov"><img alt="@andreynovikov" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2943625?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-58716914"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="fbedf39d931750586a9e19e5d35053cb">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/andreynovikov" class="author">andreynovikov</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-58716914" class="timestamp">
+      <time datetime="2015-02-24T10:05:46Z" is="relative-time">Feb 24, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>As I understand map data is not filtered when maps are generated, but I can not make rendertheme draw power lines. I've tried:</p>
+
+<pre><code>&lt;rule cat="roads" e="way" k="power" v="*"&gt;
+    &lt;rule e="way" k="power" v="line" zoom-min="14"&gt;
+        &lt;line stroke="#888888" stroke-width="1.0" stroke-linecap="butt" /&gt;
+    &lt;/rule&gt;
+    &lt;rule e="way" k="power" v="minor_line" zoom-min="16"&gt;
+        &lt;line stroke="#888888" stroke-width="0.6" stroke-linecap="butt" /&gt;
+    &lt;/rule&gt;
+&lt;/rule&gt;
+</code></pre>
+
+<p>(I use roads category to be sure it will be drawn during testing.) Then I tried to simplify things:</p>
+
+<pre><code>&lt;rule cat="roads" e="way" k="power" v="*"&gt;
+   &lt;line stroke="#888888" stroke-width="2.0" stroke-linecap="butt" /&gt;
+&lt;/rule&gt;
+</code></pre>
+
+<p>But also with no success. I am sure that my amendments to rendertheme are applied because I've successfully changed visual styles for some roads and other ways.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-75732282"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="828364815d04bd2b45da750ce0d82859">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-75732282" class="timestamp">
+      <time datetime="2015-02-24T10:26:17Z" is="relative-time">Feb 24, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Actually tag-mapping.xml defines what's included in the map files.</p>
+
+<p>At the default one (see <a href="https://github.com/mapsforge/mapsforge/blob/master/mapsforge-map-writer/src/main/config/tag-mapping.xml#L131-L132">here</a>) I see only 2 POI rules related to power.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/andreynovikov"><img alt="@andreynovikov" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2943625?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-75761951"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="b1ba3c9a3613377452775ad37e526615">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/andreynovikov" class="author">andreynovikov</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-75761951" class="timestamp">
+      <time datetime="2015-02-24T14:10:07Z" is="relative-time">Feb 24, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>So it's actually filtered... Can it be changed? As I see forest cut lines are also filtered. But these objects are essential for orienting on topographical map (when hiking, etc).</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-75762659"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="863cd1af1ffb18cf073157f00421f15c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-75762659" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-75762659" class="timestamp">
+      <time datetime="2015-02-24T14:13:43Z" is="relative-time">Feb 24, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">Yes, all you have to change is the tag-mapping.xml file, you can supply a
+changed one with the elements you need on the command line, see
+<a href="https://github.com/mapsforge/mapsforge/blob/master/docs/Getting-Started-Map-Writer.md">https://github.com/mapsforge/mapsforge/blob/master/docs/Getting-Started-Map-Writer.md</a>
+</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 24 February 2015 at 11:10, Andrey Novikov &lt;notifications@github.com&gt; wrote:
+ So it's actually filtered... Can it be changed? As I see forest cut lines
+ are also filtered. But these objects are essential for orienting on
+ topographical map (when e.g. hiking).
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/582#issuecomment-75761951">https://github.com/mapsforge/mapsforge/issues/582#issuecomment-75761951</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/andreynovikov"><img alt="@andreynovikov" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2943625?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-75763726"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="3398ba6027091c61dfaee578d6e49205">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/andreynovikov" class="author">andreynovikov</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-75763726" class="timestamp">
+      <time datetime="2015-02-24T14:19:00Z" is="relative-time">Feb 24, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks, but I'm talking about default file, used to generate provided maps. Mapsforge rendertheme has topo style, but is not very different from city style. I wanted to correct this.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-75767247"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="2e367ddaa6805269dfa4878f7d414274">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-75767247" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-75767247" class="timestamp">
+      <time datetime="2015-02-24T14:37:05Z" is="relative-time">Feb 24, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">Well, the question really is if we want to include that data in the map
+files on our server. I am not as such totally against it, but it is a size
+question (which might not be much). Opinions of others are welcome.
+
+The way to get this changed is to change
+<a href="https://github.com/mapsforge/mapsforge/blob/dev/mapsforge-map-writer/src/main/config/tag-mapping.xml">https://github.com/mapsforge/mapsforge/blob/dev/mapsforge-map-writer/src/main/config/tag-mapping.xml</a>
+
+
+and create a pull request for it.</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 24 February 2015 at 11:19, Andrey Novikov &lt;notifications@github.com&gt; wrote:
+ Thanks, but I'm talking about default file, used to generate provided
+ maps. Mapsforge rendertheme has topo style, but is not very different from
+ city style. I wanted to correct this.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/582#issuecomment-75763726">https://github.com/mapsforge/mapsforge/issues/582#issuecomment-75763726</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/andreynovikov"><img alt="@andreynovikov" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2943625?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-75917610"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="6f47d03547ecdbc0eb9a759f3d263db9">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/andreynovikov" class="author">andreynovikov</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-75917610" class="timestamp">
+      <time datetime="2015-02-25T07:33:20Z" is="relative-time">Feb 25, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I can create a pull request but I need to know if it will be accepted.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-75919036"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="f32b61541f01fec918569095a514bb33">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-75919036" class="timestamp">
+      <time datetime="2015-02-25T07:49:56Z" is="relative-time">Feb 25, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm fine with it too.<br>
+The map size is an important factor of course and we need to have it always in mind.</p>
+
+<p>Another important thing is the type of the maps we're hosting.<br>
+We wouldn't want them to be of a specific type (e.g. only for outdoor activities), but as much as possible generic type maps.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-75976140"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="bca2f2b11e98cb1c71fd881a1cce09c0">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-75976140" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-75976140" class="timestamp">
+      <time datetime="2015-02-25T15:08:51Z" is="relative-time">Feb 25, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">Can I suggest that you first try to apply the changes locally to your build
+process to see if the maps will then actually come out as expected and no
+further features are missing.
+
+Then it should be easy to produce a pull request quite easily.
+
+As long as the changes do not introduce anything too special and do not
+increase the map size disproportionately, I am in favour of adding more
+features to the map files. Power-lines are perhaps useful (it is something
+we see and in remoter areas use for orientation), something like sewer
+systems probably not (just to give an idea what I would be willing to
+accept).
+
+Ludwig</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 25 February 2015 at 04:49, Emux &lt;notifications@github.com&gt; wrote:
+ I'm fine with it too.
+ The map size is a critical factor of course and we need to have it always
+ in mind.
+
+ Another important thing is the type of the maps we're hosting.
+ We wouldn't want it to be of a specific type (e.g. only for outdoor
+ activities), but as far as possible generic type maps.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/issues/582#issuecomment-75919036">https://github.com/mapsforge/mapsforge/issues/582#issuecomment-75919036</a>&gt;.
+</div>
+<div class="email-fragment"></div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/andreynovikov"><img alt="@andreynovikov" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2943625?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-76159238"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="32f5d0dda3e13328ac8fc2020ead21da">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/andreynovikov" class="author">andreynovikov</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-76159238" class="timestamp">
+      <time datetime="2015-02-26T10:59:17Z" is="relative-time">Feb 26, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Of course</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-104745759"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="a0ed7ec241aa24bcd673c651b4b66ec1">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-104745759" class="timestamp">
+      <time datetime="2015-05-22T19:11:02Z" is="relative-time">May 22, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Any news on this?</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/andreynovikov"><img alt="@andreynovikov" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2943625?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-131051171"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="0a3e68d0aaf6ba3337f81c8d2b68196a">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/andreynovikov" class="author">andreynovikov</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-131051171" class="timestamp">
+      <time datetime="2015-08-14T09:43:32Z" is="relative-time">Aug 14, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>A little bit busy at the moment, plan to return to this in September.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+
+
+<!-- Rendered timeline since 2015-08-14 02:43:32 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:issue:58716914"
+      data-url="/mapsforge/mapsforge/issues/582/show_partial?partial=issues%2Ftimeline_marker&amp;since=1439545412"
+      data-last-modified="Fri, 14 Aug 2015 09:43:32 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/notifications/mark?ids=59984065" class="hidden js-timeline-marker-form" data-form-nonce="2c7f37d963805e556966e7278b6532dca592c2f6" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="vbXcLpWJ43w1u/xgvlzYUL/iTUjdU5ZzDENNdL9MJzWtXLEmWwgidLChoccS7T8RBPQvGLYohyaAfmJMlWVmMQ==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fmapsforge%2Fmapsforge%2Fissues%2F582" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.29318s from github-fe135-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

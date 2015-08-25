@@ -1,0 +1,1184 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Cache persistence and expiration timestamp for cached tiles by mvglasow · Pull Request #553 · mapsforge/mapsforge · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Cache persistence and expiration timestamp for cached tiles by mvglasow · Pull Request #553 · mapsforge/mapsforge" name="twitter:title" /><meta content="Here&#39;s the squashed commit. All files contain logical changes; however, I&#39;ve been unable to undo pure formatting changes (as soon as I try to restore the old formatting and save, Eclipse reformats ..." name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/2377496?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/2377496?v=3&amp;s=400" property="og:image" /><meta content="Cache persistence and expiration timestamp for cached tiles by mvglasow · Pull Request #553 · mapsforge/mapsforge" property="og:title" /><meta content="https://github.com/mapsforge/mapsforge/pull/553" property="og:url" /><meta content="Here&#39;s the squashed commit. All files contain logical changes; however, I&#39;ve been unable to undo pure formatting changes (as soon as I try to restore the old formatting and save, Eclipse reformats ..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:1686:2875B43:55DB656C" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="cgXL86VUWUw/frTuHaS89/9VQ3mAb23OvYQ3G3naHLWX4rclEkLdygKyGU0m3212SazVyhi2TXUu9UNHXeOr3w==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/mapsforge/mapsforge/pull/553.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/mapsforge/mapsforge/pull/553.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-FFFFFF, .linked-labelstyle-FFFFFF {  background-color: #FFFFFF !important;  color: #333333 !important;}.labelstyle-FFFFFF.selected {  background-color: #FFFFFF !important;  color: #333333 !important;}.label-select-menu .labelstyle-FFFFFF.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-84b6eb, .linked-labelstyle-84b6eb {  background-color: #84b6eb !important;  color: #1c2733 !important;}.labelstyle-84b6eb.selected {  background-color: #84b6eb !important;  color: #1c2733 !important;}.label-select-menu .labelstyle-84b6eb.selected {  background:rgba(132, 182, 235, 0.12) !important;  color: #557699 !important;}
+
+span.labelstyle-159818, .linked-labelstyle-159818 {  background-color: #159818 !important;  color: #fff !important;}.labelstyle-159818.selected {  background-color: #159818 !important;  color: #fff !important;}.label-select-menu .labelstyle-159818.selected {  background:rgba(21, 152, 24, 0.12) !important;  color: #159918 !important;}
+
+span.labelstyle-e6e6e6, .linked-labelstyle-e6e6e6 {  background-color: #e6e6e6 !important;  color: #333333 !important;}.labelstyle-e6e6e6.selected {  background-color: #e6e6e6 !important;  color: #333333 !important;}.label-select-menu .labelstyle-e6e6e6.selected {  background:rgba(230, 230, 230, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-cc317c, .linked-labelstyle-cc317c {  background-color: #cc317c !important;  color: #fff !important;}.labelstyle-cc317c.selected {  background-color: #cc317c !important;  color: #fff !important;}.label-select-menu .labelstyle-cc317c.selected {  background:rgba(204, 49, 124, 0.12) !important;  color: #99245c !important;}
+
+span.labelstyle-ffffff, .linked-labelstyle-ffffff {  background-color: #ffffff !important;  color: #333333 !important;}.labelstyle-ffffff.selected {  background-color: #ffffff !important;  color: #333333 !important;}.label-select-menu .labelstyle-ffffff.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/mapsforge/mapsforge/pull/553" data-pjax-transient>
+
+  <meta name="description" content="The new home of mapsforge.">
+  <meta name="go-import" content="github.com/mapsforge/mapsforge git https://github.com/mapsforge/mapsforge.git">
+
+  <meta content="430042" name="octolytics-dimension-user_id" /><meta content="mapsforge" name="octolytics-dimension-user_login" /><meta content="26262349" name="octolytics-dimension-repository_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="26262349" name="octolytics-dimension-repository_network_root_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/mapsforge/mapsforge/commits/2797ead9679bda219ce2f43cf45f8b8643631b5b.atom" rel="alternate" title="Recent Commits to mapsforge:2797ead9679bda219ce2f43cf45f8b8643631b5b" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fmapsforge%2Fmapsforge%2Fpull%2F553" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/mapsforge/mapsforge/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/mapsforge/mapsforge/watchers">
+    35
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/mapsforge/mapsforge/stargazers">
+      161
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/mapsforge/mapsforge/network" class="social-count">
+        82
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/mapsforge" class="url fn" itemprop="url" rel="author"><span itemprop="title">mapsforge</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/mapsforge/mapsforge" data-pjax="#js-repo-pjax-container">mapsforge</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/mapsforge/mapsforge/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/mapsforge/mapsforge" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /mapsforge/mapsforge">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/mapsforge/mapsforge/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /mapsforge/mapsforge/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/mapsforge/mapsforge/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /mapsforge/mapsforge/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/mapsforge/mapsforge/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /mapsforge/mapsforge/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/mapsforge/mapsforge/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /mapsforge/mapsforge/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/mapsforge/mapsforge/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /mapsforge/mapsforge/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="e080c12eed715d909c3694c99ffbfc29aa7bbde4" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Z9h7UaSSQP1AGpGr6C0zWcp4VNDLdKSdTRkDsF1XN70RcpBnc4PJJ10i4ptLLUWe2NKvFWu2IT5KbID990bNNw==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="e080c12eed715d909c3694c99ffbfc29aa7bbde4" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6HHi4EUhjddI8i2Z9Nba8kiYvExwNk8r3knb6byUGFVqoiKVGGmXjT8lDiMRV9rcvryIiUpx6ibDIwyrZBWFVg==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/mapsforge/mapsforge/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of mapsforge/mapsforge as a zip file"
+                 title="Download the contents of mapsforge/mapsforge as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;e01fa37ae9a76da81c8edba4cb2fadd83655f49f&quot; -->
+<!-- head sha1: &quot;2797ead9679bda219ce2f43cf45f8b8643631b5b&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="mapsforge/mapsforge:pull_request:26039884"
+    data-url="/mapsforge/mapsforge/pull/553/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Cache persistence and expiration timestamp for cached tiles</span>
+      <span class="gh-header-number">#553</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-git-pull-request"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/mvglasow" class="author pull-header-username css-truncate css-truncate-target expandable">
+    mvglasow
+  </a>
+   wants to merge 1 commit into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">mapsforge</span>:<span class="css-truncate-target">dev</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">mvglasow</span>:<span class="css-truncate-target">persistent-cache-squashed</span></span>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="mapsforge/mapsforge:branch:persistent-cache-squashed"
+    data-url=/mapsforge/mapsforge/pull/553/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +854
+        </span>
+        <span class="text-diff-deleted">
+          −321
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="1,175 lines changed">
+          <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/mapsforge/mapsforge/pull/553" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        4
+      </span>
+    </a>
+    <a href="/mapsforge/mapsforge/pull/553/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/mapsforge/mapsforge/pull/553/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          25
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:issue:51933555"
+     data-url="/mapsforge/mapsforge/issues/553/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/553?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="e080c12eed715d909c3694c99ffbfc29aa7bbde4" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="qGfCXsep8/IKc9vuGipBGApU/ucDsGFfWRVMzDZve10L5lFxCB0zDZ35URovP7zm9fsnlzZX5hXVgZCmmscE6w==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+      <a href="/mapsforge/mapsforge/labels/enhancement" class="label css-truncate-target linked-labelstyle-84b6eb" title="enhancement">enhancement</a>
+
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/553/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="e080c12eed715d909c3694c99ffbfc29aa7bbde4" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="eHuGjI0aA8V5uylBHoUeUmRXI6dL7Hd9zeUraG94xqmkW9aKb7KotHLkbrIdi7rP5O14bUjXWvSrR8cluXcLsQ==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/553?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="e080c12eed715d909c3694c99ffbfc29aa7bbde4" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="NJrksBvsDC6MrJJf1gk69fUwoGAtaLRIio3nhFqryIiIE+jj5BED5aqEiOpXnNvb9Q6JP3e07CJ3rXFYwYtwnw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:issue:51933555"
+      data-url="/mapsforge/mapsforge/issues/553/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      4 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="mvglasow" href="/mvglasow"><img alt="@mvglasow" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/2377496?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="ludwigb" href="/ludwigb"><img alt="@ludwigb" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="devemux86" href="/devemux86"><img alt="@devemux86" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="applantation" href="/applantation"><img alt="@applantation" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="mapsforge/mapsforge:marked-as-read:26039884">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mvglasow"><img alt="@mvglasow" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/2377496?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-51933555"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="efe0c32ffe5415c17db7c8fdec2fbd8d">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mvglasow" class="author">mvglasow</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-51933555" class="timestamp">
+      <time datetime="2014-12-14T21:59:59Z" is="relative-time">Dec 14, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Here's the squashed commit. All files contain logical changes; however, I've been unable to undo pure formatting changes (as soon as I try to restore the old formatting and save, Eclipse reformats everyting).</p>
+
+<p>FileSystemTileCache can be created as a persistent cache, which will retain its contents across instances.<br>
+Lifetime of a tile in cache can now be limited; stale tiles will still be served from cache but a refresh will be attempted<br>
+Cache purge (delete contents) and destroy (prepare to exit) are now separate operations</p>
+
+<p>Signed-off-by: mvglasow </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-2797ead">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:2797ead9679bda219ce2f43cf45f8b8643631b5b"
+    data-url="/mapsforge/mapsforge/commit/2797ead9679bda219ce2f43cf45f8b8643631b5b/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <img alt="" class="avatar avatar-small" height="16" src="https://2.gravatar.com/avatar/9a9d13c2a8f8e3bd2cf8b75590c095cf?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" width="16" />
+    </td>
+
+    <td class="commit-author">
+      <strong><span class="author">mvglasow</span></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/mvglasow/mapsforge/commit/2797ead9679bda219ce2f43cf45f8b8643631b5b" class="message" data-pjax="true" title="Cache persistence and expiration timestamp for cached tiles
+
+FileSystemTileCache can be created as a persistent cache, which will retain its contents across instances.
+Lifetime of a tile in cache can now be limited; stale tiles will still be served from cache but a refresh will be attempted
+Cache purge (delete contents) and destroy (prepare to exit) are now separate operations
+
+Signed-off-by: mvglasow &lt;michael -at- vonglasow.com&gt;">Cache persistence and expiration timestamp for cached tiles</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>FileSystemTileCache can be created as a persistent cache, which will retain its contents across instances.
+Lifetime of a tile in cache can now be limited; stale tiles will still be served from cache but a refresh will be attempted
+Cache purge (delete contents) and destroy (prepare to exit) are now separate operations
+
+Signed-off-by: mvglasow &lt;michael -at- vonglasow.com&gt;</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/mvglasow/mapsforge/commit/2797ead9679bda219ce2f43cf45f8b8643631b5b" class="commit-id">2797ead</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  
+      <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-pullrequest-51930618">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@mvglasow" class="avatar" height="16" src="https://avatars3.githubusercontent.com/u/2377496?v=3&amp;s=32" width="16" />
+      <a href="/mvglasow" class="author" truncate="true">mvglasow</a>
+
+      referenced
+      this pull request
+      <a class="timestamp" href="#ref-pullrequest-51930618">
+        <time datetime="2014-12-14T22:00:34Z" is="relative-time">Dec 14, 2014</time>
+      </a>
+    </div>
+
+      <span class="state state-closed right">
+          <span class="octicon octicon-git-pull-request"></span>
+        Closed
+      </span>
+
+
+
+    <h3 class="discussion-item-ref-title">
+      <a href="/mapsforge/mapsforge/issues/552" class="title-link">
+        Persistent cache
+        <span class="issue-num">#552</span>
+</a>    </h3>
+    
+  </div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/ludwigb"><img alt="@ludwigb" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/9587769?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-66932145"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="cc59aa444a1724cfa6fe95f146a0def0">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-66932145" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/ludwigb" class="author">ludwigb</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-66932145" class="timestamp">
+      <time datetime="2014-12-14T22:05:54Z" is="relative-time">Dec 14, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">That looks already much easier, I will have a look tomorrow.
+
+To keep those files out that are only changed in formatting, you can remove
+them from staging before commit.
+
+Ludwig</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 14 December 2014 at 23:00, mvglasow &lt;notifications@github.com&gt; wrote:
+
+ Here's the squashed commit. All files contain logical changes; however,
+ I've been unable to undo pure formatting changes (as soon as I try to
+ restore the old formatting and save, Eclipse reformats everyting).
+
+ FileSystemTileCache can be created as a persistent cache, which will
+ retain its contents across instances.
+ Lifetime of a tile in cache can now be limited; stale tiles will still be
+ served from cache but a refresh will be attempted
+ Cache purge (delete contents) and destroy (prepare to exit) are now
+ separate operations
+
+ Signed-off-by: mvglasow
+ ------------------------------
+ You can merge this Pull Request by running
+
+   git pull <a href="https://github.com/mvglasow/mapsforge">https://github.com/mvglasow/mapsforge</a> persistent-cache-squashed
+
+ Or view, comment on, or merge it at:
+
+   <a href="https://github.com/mapsforge/mapsforge/pull/553">https://github.com/mapsforge/mapsforge/pull/553</a>
+ Commit Summary
+
+    - Cache persistence and expiration timestamp for cached tiles
+
+ File Changes
+
+    - *M*
+    Applications/Android/Samples/src/main/java/org/mapsforge/applications/android/samples/SamplesBaseActivity.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-0">https://github.com/mapsforge/mapsforge/pull/553/files#diff-0</a>&gt; (59)
+    - *M*
+    Applications/Android/Samples/src/main/java/org/mapsforge/applications/android/samples/SimplestMapViewer.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-1">https://github.com/mapsforge/mapsforge/pull/553/files#diff-1</a>&gt; (8)
+    - *M*
+    mapsforge-core/src/main/java/org/mapsforge/core/graphics/TileBitmap.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-2">https://github.com/mapsforge/mapsforge/pull/553/files#diff-2</a>&gt; (49)
+    - *M*
+    mapsforge-map-android/src/main/java/org/mapsforge/map/android/graphics/AndroidTileBitmap.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-3">https://github.com/mapsforge/mapsforge/pull/553/files#diff-3</a>&gt; (25)
+    - *M*
+    mapsforge-map-android/src/main/java/org/mapsforge/map/android/util/AndroidUtil.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-4">https://github.com/mapsforge/mapsforge/pull/553/files#diff-4</a>&gt; (264)
+    - *M*
+    mapsforge-map-awt/src/main/java/org/mapsforge/map/awt/AwtTileBitmap.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-5">https://github.com/mapsforge/mapsforge/pull/553/files#diff-5</a>&gt; (25)
+    - *M*
+    mapsforge-map-reader/src/main/java/org/mapsforge/map/reader/MapDataStore.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-6">https://github.com/mapsforge/mapsforge/pull/553/files#diff-6</a>&gt; (22)
+    - *M*
+    mapsforge-map-reader/src/main/java/org/mapsforge/map/reader/MapFile.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-7">https://github.com/mapsforge/mapsforge/pull/553/files#diff-7</a>&gt; (116)
+    - *M*
+    mapsforge-map-reader/src/main/java/org/mapsforge/map/reader/MultiMapDataStore.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-8">https://github.com/mapsforge/mapsforge/pull/553/files#diff-8</a>&gt; (58)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/TileLayer.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-9">https://github.com/mapsforge/mapsforge/pull/553/files#diff-9</a>&gt; (34)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/cache/FileSystemTileCache.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-10">https://github.com/mapsforge/mapsforge/pull/553/files#diff-10</a>&gt; (174)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/cache/InMemoryTileCache.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-11">https://github.com/mapsforge/mapsforge/pull/553/files#diff-11</a>&gt; (15)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/cache/TileCache.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-12">https://github.com/mapsforge/mapsforge/pull/553/files#diff-12</a>&gt; (28)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/cache/TileStore.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-13">https://github.com/mapsforge/mapsforge/pull/553/files#diff-13</a>&gt; (21)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/cache/TwoLevelTileCache.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-14">https://github.com/mapsforge/mapsforge/pull/553/files#diff-14</a>&gt; (13)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/download/TileDownloadLayer.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-15">https://github.com/mapsforge/mapsforge/pull/553/files#diff-15</a>&gt; (60)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/download/TileDownloader.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-16">https://github.com/mapsforge/mapsforge/pull/553/files#diff-16</a>&gt; (4)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/download/tilesource/AbstractTileSource.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-17">https://github.com/mapsforge/mapsforge/pull/553/files#diff-17</a>&gt; (25)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/download/tilesource/OpenStreetMapMapnik.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-18">https://github.com/mapsforge/mapsforge/pull/553/files#diff-18</a>&gt; (12)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/download/tilesource/TileSource.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-19">https://github.com/mapsforge/mapsforge/pull/553/files#diff-19</a>&gt; (5)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/renderer/DatabaseRenderer.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-20">https://github.com/mapsforge/mapsforge/pull/553/files#diff-20</a>&gt; (75)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/renderer/TileRendererLayer.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-21">https://github.com/mapsforge/mapsforge/pull/553/files#diff-21</a>&gt; (57)
+    - *M*
+    mapsforge-map/src/main/java/org/mapsforge/map/layer/tilestore/TileStoreLayer.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-22">https://github.com/mapsforge/mapsforge/pull/553/files#diff-22</a>&gt; (19)
+    - *M*
+    mapsforge-map/src/test/java/org/mapsforge/map/layer/cache/FileSystemTileCacheTest.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-23">https://github.com/mapsforge/mapsforge/pull/553/files#diff-23</a>&gt; (2)
+    - *M*
+    mapsforge-map/src/test/java/org/mapsforge/map/layer/download/InvalidTileSource.java
+    &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553/files#diff-24">https://github.com/mapsforge/mapsforge/pull/553/files#diff-24</a>&gt; (5)
+
+ Patch Links:
+
+    - <a href="https://github.com/mapsforge/mapsforge/pull/553.patch">https://github.com/mapsforge/mapsforge/pull/553.patch</a>
+    - <a href="https://github.com/mapsforge/mapsforge/pull/553.diff">https://github.com/mapsforge/mapsforge/pull/553.diff</a>
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553">https://github.com/mapsforge/mapsforge/pull/553</a>&gt;.
+</div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mvglasow"><img alt="@mvglasow" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/2377496?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-66932327"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="f9ce1843d352eacbdb63088014be9ea3">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-66932327" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/mvglasow" class="author">mvglasow</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-66932327" class="timestamp">
+      <time datetime="2014-12-14T22:10:18Z" is="relative-time">Dec 14, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">That's what I was going to do, but it turned out there were no files
+which had only formatting changed. Each file has at least one functional
+change, though in some cases that is limited to a line or two.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-66960260"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="90d080ee7a2ee3c51f057918cedc077c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-66960260" class="timestamp">
+      <time datetime="2014-12-15T08:02:06Z" is="relative-time">Dec 15, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yes that's better.</p>
+
+<p>It's always recommended for pull requests (or patches) to use the latest dev and place upon it the changes in a single flat commit, including only the necessary code changes and following the library's formatting guidelines.</p>
+
+<p>That makes the PR checking from us and the merging far easier.</p>
+
+<p>About Eclipse, for such purposes you could disable the auto-format on save option from the IDE preferences.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/applantation"><img alt="@applantation" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/2268671?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-66964630"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="68ccbbd702f51aaca040ea6dcb445258">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-66964630" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/applantation" class="author">applantation</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-66964630" class="timestamp">
+      <time datetime="2014-12-15T08:54:08Z" is="relative-time">Dec 15, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">I will have a look at this and remove the formatting changes, then probably
+make another pull request (so that Michael could then do it again with his
+name on it)
+
+Meanwhile we can also discuss the code.
+
+Ludwig</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 15 December 2014 at 09:02, Emux &lt;notifications@github.com&gt; wrote:
+
+ Yes that's better.
+
+ It's always recommended for pull requests (or patches) to use the latest
+ dev and place upon it the changes in a single flat commit, including only
+ the necessary code changes and following the library's formatting
+ guidelines.
+
+ That makes the PR checking from us and the merging far easier.
+
+ About Eclipse, for such purposes you could disable the auto-format on save
+ option from the IDE preferences.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/mapsforge/mapsforge/pull/553#issuecomment-66960260">https://github.com/mapsforge/mapsforge/pull/553#issuecomment-66960260</a>&gt;.
+</div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-212279854">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@ludwigb" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" />
+      <a href="/ludwigb" class="author">ludwigb</a>
+      closed this   <a href="https://github.com/mapsforge/mapsforge/pull/553#event-212279854" class="timestamp"><time class="timestamp" datetime="2014-12-28T14:01:24Z" is="relative-time">Dec 28, 2014</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-labeled">
+    <div class="discussion-item-header" id="event-361033168">
+
+      <span class="octicon octicon-tag discussion-item-icon"></span>
+      <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+      <a href="/devemux86" class="author">devemux86</a>
+      added the <span class="label-color" style="background-color: #84b6eb;"><a href="/mapsforge/mapsforge/labels/enhancement" style="color: #1c2733">enhancement</a></span> label <a href="https://github.com/mapsforge/mapsforge/pull/553#event-361033168" class="timestamp"><time class="timestamp" datetime="2015-07-21T11:10:38Z" is="relative-time">Jul 21, 2015</time></a>
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- Rendered timeline since 2015-07-21 04:10:38 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:pull_request:26039884"
+      data-url="/mapsforge/mapsforge/pull/553/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1437477038"
+      data-last-modified="Tue, 21 Jul 2015 11:10:38 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/notifications/mark?ids=52484626" class="hidden js-timeline-marker-form" data-form-nonce="e080c12eed715d909c3694c99ffbfc29aa7bbde4" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7fDsO1VlfIlM5UpiVldIvQ6Qjq5i/bo7476wpWCTU4K+RhKRQdjASuTr+f27zcvtgVrcUTY+9oPhac/Od1OFBQ==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fmapsforge%2Fmapsforge%2Fpull%2F553" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:branch:persistent-cache-squashed"
+     data-url="/mapsforge/mapsforge/pull/553/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Dec 14, 2014
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:commit:2797ead9679bda219ce2f43cf45f8b8643631b5b"
+      data-url="/mapsforge/mapsforge/commit/2797ead9679bda219ce2f43cf45f8b8643631b5b/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <img alt="" class="avatar" height="36" src="https://2.gravatar.com/avatar/9a9d13c2a8f8e3bd2cf8b75590c095cf?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" width="36" />
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/mvglasow/mapsforge/commit/2797ead9679bda219ce2f43cf45f8b8643631b5b" class="message" data-pjax="true" title="Cache persistence and expiration timestamp for cached tiles
+
+FileSystemTileCache can be created as a persistent cache, which will retain its contents across instances.
+Lifetime of a tile in cache can now be limited; stale tiles will still be served from cache but a refresh will be attempted
+Cache purge (delete contents) and destroy (prepare to exit) are now separate operations
+
+Signed-off-by: mvglasow &lt;michael -at- vonglasow.com&gt;">Cache persistence and expiration timestamp for cached tiles</a>
+
+    <span class="hidden-text-expander inline"><a href="#" class="js-details-target">…</a></span>
+    </p>
+
+    <div class="commit-meta">
+        <span class="commit-author">mvglasow</span>
+ authored <time datetime="2014-12-14T21:56:35Z" is="relative-time">Dec 14, 2014</time>
+
+
+    </div>
+
+      <div class="commit-desc"><pre>FileSystemTileCache can be created as a persistent cache, which will retain its contents across instances.
+Lifetime of a tile in cache can now be limited; stale tiles will still be served from cache but a refresh will be attempted
+Cache purge (delete contents) and destroy (prepare to exit) are now separate operations
+
+Signed-off-by: mvglasow &lt;michael -at- vonglasow.com&gt;</pre></div>
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="2797ead9679bda219ce2f43cf45f8b8643631b5b" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/mvglasow/mapsforge/commit/2797ead9679bda219ce2f43cf45f8b8643631b5b" class="sha btn btn-outline">
+        2797ead
+      </a>
+    </div>
+    <a href="/mapsforge/mapsforge/tree/2797ead9679bda219ce2f43cf45f8b8643631b5b" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.33416s from github-fe128-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

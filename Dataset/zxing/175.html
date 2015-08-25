@@ -1,0 +1,1327 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Enhancement - A HTTP service mode for zxing for better integration with websites. · Issue #175 · zxing/zxing · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Enhancement - A HTTP service mode for zxing for better integration with websites. · Issue #175 · zxing/zxing" name="twitter:title" /><meta content="I really like the your zxing app and wanted to suggest this. Happy to program the Android/Javascript part of it if people are interested.
+
+A HTTP service mode for zxing.
+For better integration with..." name="twitter:description" /><meta content="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=400" property="og:image" /><meta content="Enhancement - A HTTP service mode for zxing for better integration with websites. · Issue #175 · zxing/zxing" property="og:title" /><meta content="https://github.com/zxing/zxing/issues/175" property="og:url" /><meta content="I really like the your zxing app and wanted to suggest this. Happy to program the Android/Javascript part of it if people are interested.
+
+A HTTP service mode for zxing.
+For better integration with..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:349E:28D2216:55DB5918" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="zTCq0e0XWLKxn/+sdX+oweoSQ18FsW+mhe9JPPP3F/o3zu+u1dPxfqN/FYpKrDBLyvFgWPzM7C6QwtMm/kli8A==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="22e6cb7d309429ee0eaff86792eaf1c3">
+
+      
+  <meta name="description" content="zxing - Official ZXing (&quot;Zebra Crossing&quot;) project home">
+  <meta name="go-import" content="github.com/zxing/zxing git https://github.com/zxing/zxing.git">
+
+  <meta content="1122572" name="octolytics-dimension-user_id" /><meta content="zxing" name="octolytics-dimension-user_login" /><meta content="2562751" name="octolytics-dimension-repository_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2562751" name="octolytics-dimension-repository_network_root_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/zxing/zxing/commits/master.atom" rel="alternate" title="Recent Commits to zxing:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fzxing%2Fzxing%2Fissues%2F175" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/zxing/zxing/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/zxing/zxing/watchers">
+    789
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/zxing/zxing/stargazers">
+      5,886
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/zxing/zxing/network" class="social-count">
+        3,739
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/zxing" class="url fn" itemprop="url" rel="author"><span itemprop="title">zxing</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/zxing/zxing" data-pjax="#js-repo-pjax-container">zxing</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/zxing/zxing/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/zxing/zxing" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /zxing/zxing">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/zxing/zxing/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /zxing/zxing/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/zxing/zxing/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /zxing/zxing/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/zxing/zxing/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /zxing/zxing/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/zxing/zxing/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /zxing/zxing/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/zxing/zxing/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /zxing/zxing/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="0374fec128b0f4aec0d00f78d96ea09ccd9b7b1a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="otAmoG5B24os7IXtnWJYfPm41FWhAMFf9VMgIDfT3mUHEDf+6vb6W2zV7ZXAsM5jYHXB9QR+MD7tf5ScIsCJng==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="0374fec128b0f4aec0d00f78d96ea09ccd9b7b1a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nYeSybMz+x7YnVUCdT2pBjNjR9y3nCKd8r9c8uBaqJM7d3OtjALRQnBmPPGIfGCiF0HxLXLj4hD98zVJPoF0UA==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/zxing/zxing/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of zxing/zxing as a zip file"
+                 title="Download the contents of zxing/zxing as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #fff !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #fff !important;}.label-select-menu .labelstyle-009800.selected {  background:rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #fff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #fff !important;}.label-select-menu .labelstyle-e11d21.selected {  background:rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #282d33 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #282d33 !important;}.label-select-menu .labelstyle-c7def8.selected {  background:rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="zxing/zxing:issue:36218298"
+    data-url="/zxing/zxing/issues/175/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/zxing/zxing/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Enhancement - A HTTP service mode for zxing for better integration with websites.</span>
+      <span class="gh-header-number">#175</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-issue-closed"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/micwallace" class="author">micwallace</a> opened this <span class="noun">Issue</span> <time datetime="2014-06-21T06:57:21Z" is="relative-time">Jun 21, 2014</time>
+        &middot; 13 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:issue:36218298"
+     data-url="/zxing/zxing/issues/175/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/175?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="0374fec128b0f4aec0d00f78d96ea09ccd9b7b1a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="zly0Dbk3CAR5xsH2lhDpIftMMCNJ2eS4Nyr6jgtCS6YcG/1T+g+Q7iBXyImPYrXEN6wZhrqWTa5CFS2DEVzVvQ==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/175/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="0374fec128b0f4aec0d00f78d96ea09ccd9b7b1a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="e07fCKarv2+B1MKL37apzsEnTycIJp9pdLBWKaGX07ECfB7Rh9ByrZDRT7vjyXXVQI1jTdq5tkwjVhe21U36/g==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/175?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="0374fec128b0f4aec0d00f78d96ea09ccd9b7b1a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="xg2Dzvgot+S3xpAjWuxZ9SROtfAoC6MIs+OQTB2f3K9HR0KPoKBKR4qZ59nOMAA0ruUWptcp4EJuw8Y9gZ2QNw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:issue:36218298"
+      data-url="/zxing/zxing/issues/175/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="micwallace" href="/micwallace"><img alt="@micwallace" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="srowen" href="/srowen"><img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="zxing/zxing:marked-as-read:36218298">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/micwallace"><img alt="@micwallace" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-36218298"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="5df0832d2c939df67e6b3d87a528680e">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/micwallace" class="author">micwallace</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-36218298" class="timestamp">
+      <time datetime="2014-06-21T06:57:21Z" is="relative-time">Jun 21, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I really like the your zxing app and wanted to suggest this. Happy to program the Android/Javascript part of it if people are interested.</p>
+
+<p>A HTTP service mode for zxing.<br>
+For better integration with websites.</p>
+
+<p>Process:<br>
+1. User visits webapp/webpage.<br>
+2. App checks for xzing http sever.<br>
+3. Is the server running? If not, prompt to install, or open using intent URL that triggers the service to start.<br>
+4. zxing http server now running.<br>
+5. User clicks on "scan barcode" button.<br>
+6. Http requests are made every second to the zxing server url (ie http://localhost:8080).<br>
+7. The server returns two things:<br>
+    a. base64 encoded image of what the camera is seeing at that point<br>
+    b. the captured barcode data (returned once for every barcode recognition).<br>
+8. The javascript app show a small dialog to display the base64 image data and has a button to stop the barcode recognition.<br>
+9. A callback is issued every time a barcode is received.</p>
+
+<p>This would produce seamless integration for web-apps :-D</p>
+
+<p>Please let me know what you think.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-renamed">
+    <div class="discussion-item-header" id="event-133770767">
+
+      <span class="octicon octicon-pencil discussion-item-icon"></span>
+      <img alt="@micwallace" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/3140819?v=3&amp;s=32" width="16" />
+      <a href="/micwallace" class="author">micwallace</a>
+      changed the title from  <span class="renamed-was">A HTTP service mode for zxing for better integration with websites.</span> to <span class="renamed-is">Enhancement - A HTTP service mode for zxing for better integration with websites.</span> <a href="https://github.com/zxing/zxing/issues/175#event-133770767" class="timestamp"><time class="timestamp" datetime="2014-06-21T06:58:03Z" is="relative-time">Jun 21, 2014</time></a>
+    </div>
+  </div>
+
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46746558"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="821c44237986f1d67f4a1c590f6ae6a1">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46746558" class="timestamp">
+      <time datetime="2014-06-21T07:01:00Z" is="relative-time">Jun 21, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm not sure what this is describing. There is already a web based decoder. Sending a stream of images to it to decode is thousands of times slower than scanning on a device which also already works.   </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/micwallace"><img alt="@micwallace" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46748304"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="1248fbaba3475cf6c3153c880d8642d9">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/micwallace" class="author">micwallace</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46748304" class="timestamp">
+      <time datetime="2014-06-21T08:50:37Z" is="relative-time">Jun 21, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Basically,</p>
+
+<p>It would basically allow for ajax-based barcode reading for web-apps (when zxing android is installed).</p>
+
+<p>The images streamed from zxing are just for asthetics (to show the user what is currently being scanned), the barcodes are still parsed by zxing.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46751463"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="9602a82428f4abb722003555dfef9699">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46751463" class="timestamp">
+      <time datetime="2014-06-21T11:30:54Z" is="relative-time">Jun 21, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I don't see how you get the frames from the camera to send? I don't think the Android browser can. It will be far too slow anyway to send to a server.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-133784745">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+      closed this   <a href="https://github.com/zxing/zxing/issues/175#event-133784745" class="timestamp"><time class="timestamp" datetime="2014-06-21T11:30:54Z" is="relative-time">Jun 21, 2014</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/micwallace"><img alt="@micwallace" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46751565"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="dc1ff42d01d84887f152f1e36b6751c0">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/micwallace" class="author">micwallace</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46751565" class="timestamp">
+      <time datetime="2014-06-21T11:36:45Z" is="relative-time">Jun 21, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I don't think you understand my concept at all, the android runs the http server (which is part of zxing) using nannohttpd. Any web browser can then access to get barcodes and a visual of what is being scanned. I'll go ahead and implement it so you can see :-)</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46751755"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="8338c9b455f6e5e989a364058b4d1bd0">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-46751755" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46751755" class="timestamp">
+      <time datetime="2014-06-21T11:47:40Z" is="relative-time">Jun 21, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">You can't run an http server in the background like that. The app can't be
+invoked asynchronously. Well feel free to try to get it working.</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On Jun 21, 2014 12:36 PM, "micwallace" &lt;notifications@github.com&gt; wrote:
+ I don't think you understand my concept at all, the android runs the http
+ server (which is part of zxing) using nannohttpd. Any web browser can then
+ access to get barcodes and a visual of what is being scanned. I'll go ahead
+ and implement it so you can see :-)
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46751565">https://github.com/zxing/zxing/issues/175#issuecomment-46751565</a>&gt;.
+</div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/micwallace"><img alt="@micwallace" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46774506"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="08e3b4c44440daddb58cbc0900f9ab2f">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/micwallace" class="author">micwallace</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46774506" class="timestamp">
+      <time datetime="2014-06-22T07:26:34Z" is="relative-time">Jun 22, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hey I made a proof of concept over here:<br>
+<a href="https://github.com/micwallace/zxing">https://github.com/micwallace/zxing</a></p>
+
+<p>It adds a few files to the project,<br>
+1. com.google.zxing.client.android.HttpServer (serves the barcode text and bitmaps in base 64)<br>
+2. com.google.zxing.client.android.HttpServerUI (activity to start server, better integration needed)<br>
+3. layout files &amp; a few values<br>
+4. A html example app with javascript (no hosting needed, just open it up).</p>
+
+<p>I also migrated the android parts of the project into their own project and added gradle build environment.</p>
+
+<p>It works pretty well with a nice stream of images in the browser, some optimization is needed though, for instance, I am using separate http calls for each frame! A better solution would be to use a single stream. Also there's none of your awesome barcode detection overlays.</p>
+
+<p>The problem is it's not detecting barcodes, it would be awesome if you could please take a look at com.google.zxing.client.android.HttpServer (from line 151) and see if I'm calling the decode library in the right way?</p>
+
+<p>Once it's optimised and reading barcodes it'll be the perfect framework for a nice looking jquery widget.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/micwallace"><img alt="@micwallace" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46786130"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="d3cb3e93790e75020e37817ad769cb0e">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/micwallace" class="author">micwallace</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46786130" class="timestamp">
+      <time datetime="2014-06-22T16:51:34Z" is="relative-time">Jun 22, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I got it working, auto-focus was the culprit. Also put together a nice little widget :)</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46786175"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="9ad3ce13efd585d62d4ffb63aaa3be7f">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-46786175" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46786175" class="timestamp">
+      <time datetime="2014-06-22T16:53:21Z" is="relative-time">Jun 22, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">OK. what's the advantage over launching the app, if you are calling to
+something to retrieve frames and then sending them back for decoding?</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On Sun, Jun 22, 2014 at 5:51 PM, micwallace &lt;notifications@github.com&gt; wrote:
+ I got it working, auto-focus was the culprit. Also put together a nice
+ little widget :)
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46786130">https://github.com/zxing/zxing/issues/175#issuecomment-46786130</a>&gt;.
+</div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/micwallace"><img alt="@micwallace" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46786913"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="d12b3c0c623979aa69f535c72e1051f6">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-46786913" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/micwallace" class="author">micwallace</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46786913" class="timestamp">
+      <time datetime="2014-06-22T17:21:27Z" is="relative-time">Jun 22, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">Hi Sean,
+
+When using an web app it's not ideal to go back and forth between the
+app and the webpage, especially when scanning multiple barcodes.
+This basically provides access to the camera preview plus any decoded
+barcode text all from the web browser.
+
+Plus it wraps all the web functionality in a jquery widget, you can
+invoke the widget and issue js callbacks to fire when a barcode is
+found. I think you would be the first app to provide such a feature :-)
+
+Zxing is still doing all the handling of decoding and such.
+
+Give it a go and let me know what you think.
+
+Kind regards,
+Michael</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 23/06/14 02:53, Sean Owen wrote: &gt; OK. what's the advantage over launching the app, if you are calling to &gt; something to retrieve frames and then sending them back for decoding? &gt; &gt; &gt; On Sun, Jun 22, 2014 at 5:51 PM, micwallace &lt;notifications@github.com&gt; &gt; wrote:
+
+ &gt; I got it working, auto-focus was the culprit. Also put together a nice
+ &gt; little widget :)
+ &gt;
+ &gt; —
+ &gt; Reply to this email directly or view it on GitHub
+ &gt; &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46786130">https://github.com/zxing/zxing/issues/175#issuecomment-46786130</a>&gt;.
+ &gt;
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46786175">https://github.com/zxing/zxing/issues/175#issuecomment-46786175</a>&gt;.
+</div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46810049"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="e4d7538dc8fc76c31875fa2b847741bf">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-46810049" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46810049" class="timestamp">
+      <time datetime="2014-06-23T06:29:28Z" is="relative-time">Jun 23, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">OK. Does it not leave up a long-running HTTP server this way? and I am not
+sure how it can use the camera in the background. I'm vaguely worried this
+is a security/privacy hole. I didn't think this was possible for security
+reasons. I think this is an interesting modification although I think the
+changes are too substantial to push into the main project for everyone.</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On Sun, Jun 22, 2014 at 6:21 PM, micwallace &lt;notifications@github.com&gt; wrote:  &gt; Hi Sean, &gt; &gt; When using an web app it's not ideal to go back and forth between the &gt; app and the webpage, especially when scanning multiple barcodes. &gt; This basically provides access to the camera preview plus any decoded &gt; barcode text all from the web browser. &gt; &gt; Plus it wraps all the web functionality in a jquery widget, you can &gt; invoke the widget and issue js callbacks to fire when a barcode is &gt; found. I think you would be the first app to provide such a feature :-) &gt; &gt; Zxing is still doing all the handling of decoding and such. &gt; &gt; Give it a go and let me know what you think. &gt; &gt; Kind regards, &gt; Michael &gt; &gt; &gt; &gt; On 23/06/14 02:53, Sean Owen wrote: &gt; &gt; OK. what's the advantage over launching the app, if you are calling to &gt; &gt; something to retrieve frames and then sending them back for decoding? &gt; &gt; &gt; &gt; &gt; &gt; On Sun, Jun 22, 2014 at 5:51 PM, micwallace &lt;notifications@github.com&gt; &gt; &gt; wrote:
+ &gt;
+ &gt; &gt; I got it working, auto-focus was the culprit. Also put together a nice
+ &gt; &gt; little widget :)
+ &gt; &gt;
+ &gt; &gt; —
+ &gt; &gt; Reply to this email directly or view it on GitHub
+ &gt; &gt; &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46786130">https://github.com/zxing/zxing/issues/175#issuecomment-46786130</a>&gt;.
+
+ &gt; &gt;
+ &gt;
+ &gt; —
+ &gt; Reply to this email directly or view it on GitHub
+ &gt; &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46786175">https://github.com/zxing/zxing/issues/175#issuecomment-46786175</a>&gt;.
+
+ &gt;
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46786913">https://github.com/zxing/zxing/issues/175#issuecomment-46786913</a>&gt;.
+</div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/micwallace"><img alt="@micwallace" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46822551"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="0534186f833d00c91112066c96c2d701">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-46822551" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/micwallace" class="author">micwallace</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46822551" class="timestamp">
+      <time datetime="2014-06-23T09:23:38Z" is="relative-time">Jun 23, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">Hi I've added functionality so it shuts down the http server when the
+user navigates away from the http page. Also the server listens on
+127.0.0.1 so only the device it's self can communicate with the server
+plus the user needs to manually invoke the service each time it's used
+(although the js automatically opens the android app for doing so). The
+Camera can be accessed most places I think, I was quite surprised about
+this as well.
+
+That's all good, it's not a feature most would use.
+
+Do you mind if I use your core decoding &amp; camera control classes/libs to
+create a separate app to publish to the play store? It will just have
+the HTTP Service feature included and probably be called something like
+"Web Scanner" or, if you would like "Zxing Web Scanner".
+
+Kind regards,
+Michael</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 23/06/14 16:29, Sean Owen wrote: &gt; OK. Does it not leave up a long-running HTTP server this way? and I am  &gt; not &gt; sure how it can use the camera in the background. I'm vaguely worried  &gt; this &gt; is a security/privacy hole. I didn't think this was possible for security &gt; reasons. I think this is an interesting modification although I think the &gt; changes are too substantial to push into the main project for everyone. &gt; &gt; &gt; On Sun, Jun 22, 2014 at 6:21 PM, micwallace &lt;notifications@github.com&gt; &gt; wrote: &gt; &gt; &gt; Hi Sean, &gt; &gt; &gt; &gt; When using an web app it's not ideal to go back and forth between the &gt; &gt; app and the webpage, especially when scanning multiple barcodes. &gt; &gt; This basically provides access to the camera preview plus any decoded &gt; &gt; barcode text all from the web browser. &gt; &gt; &gt; &gt; Plus it wraps all the web functionality in a jquery widget, you can &gt; &gt; invoke the widget and issue js callbacks to fire when a barcode is &gt; &gt; found. I think you would be the first app to provide such a feature :-) &gt; &gt; &gt; &gt; Zxing is still doing all the handling of decoding and such. &gt; &gt; &gt; &gt; Give it a go and let me know what you think. &gt; &gt; &gt; &gt; Kind regards, &gt; &gt; Michael &gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt; On 23/06/14 02:53, Sean Owen wrote: &gt; &gt; &gt; OK. what's the advantage over launching the app, if you are  &gt; calling to &gt; &gt; &gt; something to retrieve frames and then sending them back for decoding? &gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt; On Sun, Jun 22, 2014 at 5:51 PM, micwallace  &gt; &lt;notifications@github.com&gt; &gt; &gt; &gt; wrote:
+ &gt; &gt;
+ &gt; &gt; &gt; I got it working, auto-focus was the culprit. Also put together
+ a nice
+ &gt; &gt; &gt; little widget :)
+ &gt; &gt; &gt;
+ &gt; &gt; &gt; —
+ &gt; &gt; &gt; Reply to this email directly or view it on GitHub
+ &gt; &gt; &gt; &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46786130">https://github.com/zxing/zxing/issues/175#issuecomment-46786130</a>&gt;.
+ &gt;
+ &gt; &gt; &gt;
+ &gt; &gt;
+ &gt; &gt; —
+ &gt; &gt; Reply to this email directly or view it on GitHub
+ &gt; &gt; &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46786175">https://github.com/zxing/zxing/issues/175#issuecomment-46786175</a>&gt;.
+ &gt;
+ &gt; &gt;
+ &gt;
+ &gt; —
+ &gt; Reply to this email directly or view it on GitHub
+ &gt; &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46786913">https://github.com/zxing/zxing/issues/175#issuecomment-46786913</a>&gt;.
+ &gt;
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46810049">https://github.com/zxing/zxing/issues/175#issuecomment-46810049</a>&gt;.
+</div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46831181"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="62e4dc5cc3d758e30f482560c341dbf4">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46831181" class="timestamp">
+      <time datetime="2014-06-23T11:13:00Z" is="relative-time">Jun 23, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hm, but can't any app on the device access it? without camera permission? and it seems like a webpage can then grab frames and do anything with them too.</p>
+
+<p>You can use the source code and libraries, sure. See <a href="https://github.com/zxing/zxing/wiki/License-Questions">https://github.com/zxing/zxing/wiki/License-Questions</a> for notes but it's just AL2 licensed. Here there is no issue of cloning the UI. I would not use the project name or icon if you please, just to make it clear it is a third-party project.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/micwallace"><img alt="@micwallace" class="timeline-comment-avatar" height="48" src="https://avatars2.githubusercontent.com/u/3140819?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-46832230"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="89693ae2365d18e35d05abb5370bb697">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+      <a href="#issuecomment-46832230" class="comment-type-icon octicon octicon-mail-read" title="This comment left via email reply."></a>
+
+    <strong>
+      <a href="/micwallace" class="author">micwallace</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-46832230" class="timestamp">
+      <time datetime="2014-06-23T11:27:28Z" is="relative-time">Jun 23, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body email-format js-comment-body">
+          <div class="email-fragment">Sure thing &amp; thanks.
+
+Yes true but only if the server is left running, I made it so it shuts
+down when the webpage using the plug-in closes and the user then has to
+re initiate every visit. I'll probably add something similar to android
+side, like a timer task that shuts down the server on inactivity.
+
+Kind regards,
+Michael</div>
+<span class="email-hidden-toggle"><a href="#">…</a></span><div class="email-hidden-reply" style="display:none">
+<div class="email-quoted-reply">On 23/06/14 21:13, Sean Owen wrote:
+
+ Hm, but can't any app on the device access it? without camera
+ permission? and it seems like a webpage can then grab frames and do
+ anything with them too.
+
+ You can use the source code and libraries, sure. See
+ <a href="https://github.com/zxing/zxing/wiki/License-Questions">https://github.com/zxing/zxing/wiki/License-Questions</a> for notes but
+ it's just AL2 licensed. Here there is no issue of cloning the UI. I
+ would not use the project name or icon if you please, just to make it
+ clear it is a third-party project.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;<a href="https://github.com/zxing/zxing/issues/175#issuecomment-46831181">https://github.com/zxing/zxing/issues/175#issuecomment-46831181</a>&gt;.
+</div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+
+
+<!-- Rendered timeline since 2014-06-23 04:27:28 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:issue:36218298"
+      data-url="/zxing/zxing/issues/175/show_partial?partial=issues%2Ftimeline_marker&amp;since=1403522848"
+      data-last-modified="Mon, 23 Jun 2014 11:27:28 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/notifications/mark?ids=35211616" class="hidden js-timeline-marker-form" data-form-nonce="0374fec128b0f4aec0d00f78d96ea09ccd9b7b1a" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="McAKi71km3EVOXI++LJF74qGN0FxX89bZKt0BYpvarle2kWF42qtnaG2MWH8q76QSBuiq8POVG5vITPhlOULKw==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fzxing%2Fzxing%2Fissues%2F175" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.14908s from github-fe136-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2ba3b257a78c3bd28dab11d07ddc8e6b1cf5280066968cc8501b99bf58f64a63.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-dd3051b3b36fed71a99e2c164f3e1eb38a8beaf40dc272fd2807febc8bd46a7f.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

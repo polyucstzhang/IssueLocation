@@ -1,0 +1,2018 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Update Specification-Binary-Map-File.md by kcwu · Pull Request #563 · mapsforge/mapsforge · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Update Specification-Binary-Map-File.md by kcwu · Pull Request #563 · mapsforge/mapsforge" name="twitter:title" /><meta content="Fix formating and bugs in doc.
+
+Note that the sign bit of VBE-S is in last byte, not first byte." name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/175566?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/175566?v=3&amp;s=400" property="og:image" /><meta content="Update Specification-Binary-Map-File.md by kcwu · Pull Request #563 · mapsforge/mapsforge" property="og:title" /><meta content="https://github.com/mapsforge/mapsforge/pull/563" property="og:url" /><meta content="Fix formating and bugs in doc.
+
+Note that the sign bit of VBE-S is in last byte, not first byte." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:480A:27C128E:55DB6584" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="FTvDSU1iYlOVJQb05aktOFxVOlTpxbeKa+OlfDo4F5amL5qyCpTymhR+8A4Ao+apJ59HvXwSnMqRiOYGsMng3A==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="239d32d0023038613a9092dfdd8544d0">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/mapsforge/mapsforge/pull/563.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/mapsforge/mapsforge/pull/563.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-FFFFFF, .linked-labelstyle-FFFFFF {  background-color: #FFFFFF !important;  color: #333333 !important;}.labelstyle-FFFFFF.selected {  background-color: #FFFFFF !important;  color: #333333 !important;}.label-select-menu .labelstyle-FFFFFF.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-fc2929, .linked-labelstyle-fc2929 {  background-color: #fc2929 !important;  color: #fff !important;}.labelstyle-fc2929.selected {  background-color: #fc2929 !important;  color: #fff !important;}.label-select-menu .labelstyle-fc2929.selected {  background:rgba(252, 41, 41, 0.12) !important;  color: #991818 !important;}
+
+span.labelstyle-cccccc, .linked-labelstyle-cccccc {  background-color: #cccccc !important;  color: #333333 !important;}.labelstyle-cccccc.selected {  background-color: #cccccc !important;  color: #333333 !important;}.label-select-menu .labelstyle-cccccc.selected {  background:rgba(204, 204, 204, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-84b6eb, .linked-labelstyle-84b6eb {  background-color: #84b6eb !important;  color: #1c2733 !important;}.labelstyle-84b6eb.selected {  background-color: #84b6eb !important;  color: #1c2733 !important;}.label-select-menu .labelstyle-84b6eb.selected {  background:rgba(132, 182, 235, 0.12) !important;  color: #557699 !important;}
+
+span.labelstyle-159818, .linked-labelstyle-159818 {  background-color: #159818 !important;  color: #fff !important;}.labelstyle-159818.selected {  background-color: #159818 !important;  color: #fff !important;}.label-select-menu .labelstyle-159818.selected {  background:rgba(21, 152, 24, 0.12) !important;  color: #159918 !important;}
+
+span.labelstyle-e6e6e6, .linked-labelstyle-e6e6e6 {  background-color: #e6e6e6 !important;  color: #333333 !important;}.labelstyle-e6e6e6.selected {  background-color: #e6e6e6 !important;  color: #333333 !important;}.label-select-menu .labelstyle-e6e6e6.selected {  background:rgba(230, 230, 230, 0.12) !important;  color: #999999 !important;}
+
+span.labelstyle-cc317c, .linked-labelstyle-cc317c {  background-color: #cc317c !important;  color: #fff !important;}.labelstyle-cc317c.selected {  background-color: #cc317c !important;  color: #fff !important;}.label-select-menu .labelstyle-cc317c.selected {  background:rgba(204, 49, 124, 0.12) !important;  color: #99245c !important;}
+
+span.labelstyle-ffffff, .linked-labelstyle-ffffff {  background-color: #ffffff !important;  color: #333333 !important;}.labelstyle-ffffff.selected {  background-color: #ffffff !important;  color: #333333 !important;}.label-select-menu .labelstyle-ffffff.selected {  background:rgba(255, 255, 255, 0.12) !important;  color: #999999 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/mapsforge/mapsforge/pull/563" data-pjax-transient>
+
+  <meta name="description" content="The new home of mapsforge.">
+  <meta name="go-import" content="github.com/mapsforge/mapsforge git https://github.com/mapsforge/mapsforge.git">
+
+  <meta content="430042" name="octolytics-dimension-user_id" /><meta content="mapsforge" name="octolytics-dimension-user_login" /><meta content="26262349" name="octolytics-dimension-repository_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="26262349" name="octolytics-dimension-repository_network_root_id" /><meta content="mapsforge/mapsforge" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/mapsforge/mapsforge/commits/185a0f82035aad84b57b81dd23a09060f3704fea.atom" rel="alternate" title="Recent Commits to mapsforge:185a0f82035aad84b57b81dd23a09060f3704fea" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fmapsforge%2Fmapsforge%2Fpull%2F563" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/mapsforge/mapsforge/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/mapsforge/mapsforge/watchers">
+    35
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/mapsforge/mapsforge/stargazers">
+      161
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fmapsforge%2Fmapsforge"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/mapsforge/mapsforge/network" class="social-count">
+        82
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/mapsforge" class="url fn" itemprop="url" rel="author"><span itemprop="title">mapsforge</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/mapsforge/mapsforge" data-pjax="#js-repo-pjax-container">mapsforge</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/mapsforge/mapsforge/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/mapsforge/mapsforge" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /mapsforge/mapsforge">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/mapsforge/mapsforge/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /mapsforge/mapsforge/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/mapsforge/mapsforge/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /mapsforge/mapsforge/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/mapsforge/mapsforge/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /mapsforge/mapsforge/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/mapsforge/mapsforge/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /mapsforge/mapsforge/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/mapsforge/mapsforge/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /mapsforge/mapsforge/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/mapsforge/mapsforge" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="2c27a5669304b259ad48c930e1900386f9bcfefa" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="R4VhL9mGlUWXeEzSpsor68N8xQEWOU1YQaWXHrXQ96jLXVqrXHd7KVsI0g7PNMpRm0D07u/vZ6b6CKafFlsadw==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="2c27a5669304b259ad48c930e1900386f9bcfefa" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="MZcJCpKS9a3ksj0WcsAlgEyrB3Aej6LXKqo5O/EzeepiO8vYltLeqxLRTGafaksdA17QXKJyVItAWq1lWcN/9A==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/mapsforge/mapsforge/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of mapsforge/mapsforge as a zip file"
+                 title="Download the contents of mapsforge/mapsforge as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;73fd3f605de8af8da11b898e7b84f757721ae7f3&quot; -->
+<!-- head sha1: &quot;185a0f82035aad84b57b81dd23a09060f3704fea&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="mapsforge/mapsforge:pull_request:26897962"
+    data-url="/mapsforge/mapsforge/pull/563/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Update Specification-Binary-Map-File.md</span>
+      <span class="gh-header-number">#563</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-merged">
+          <span class="octicon octicon-git-pull-request"></span>
+          Merged
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/devemux86" class="author pull-header-username css-truncate css-truncate-target expandable">
+    devemux86
+  </a>
+  merged 1 commit into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">mapsforge</span>:<span class="css-truncate-target">dev</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">kcwu</span>:<span class="css-truncate-target">patch-2</span></span>
+
+
+  <time datetime="2015-01-06T16:27:03Z" is="relative-time">Jan 6, 2015</time>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="mapsforge/mapsforge:branch:patch-2"
+    data-url=/mapsforge/mapsforge/pull/563/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +16
+        </span>
+        <span class="text-diff-deleted">
+          −16
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="32 lines changed">
+          <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/mapsforge/mapsforge/pull/563" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/mapsforge/mapsforge/pull/563/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/mapsforge/mapsforge/pull/563/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          1
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:issue:53530067"
+     data-url="/mapsforge/mapsforge/issues/563/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/563?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="2c27a5669304b259ad48c930e1900386f9bcfefa" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="QKcQiU96Pv9Xf3HrdyS+qIJDdI5WmL8O1ng3iOZIahf48n3xt3pB37yUhYapXVU2wWilzdsr7BJJQjnyp9/vGA==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/563/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="2c27a5669304b259ad48c930e1900386f9bcfefa" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="PZ3gP828eXVAwCDWhPbYfZeABVLtIywPOVr7fW0kD8i+BvHdnRBqXASXVviSOuqcxeqOm76zrp9wvAEqFbn1VA==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/issues/563?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="2c27a5669304b259ad48c930e1900386f9bcfefa" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="O3gDVQrrSawYLE3Von5iHmPadJUW8H1q2pTmzEzsNtzSJc1Hugf/JKnnVSzgR3qc41sPth3oszTSo6z09JKcJQ==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:issue:53530067"
+      data-url="/mapsforge/mapsforge/issues/563/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="kcwu" href="/kcwu"><img alt="@kcwu" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/175566?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="devemux86" href="/devemux86"><img alt="@devemux86" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="mapsforge/mapsforge:marked-as-read:26897962">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/kcwu"><img alt="@kcwu" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/175566?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-53530067"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="7125959a95d14c0cc34b704b7c4afb67">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/kcwu" class="author">kcwu</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-53530067" class="timestamp">
+      <time datetime="2015-01-06T16:07:26Z" is="relative-time">Jan 6, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Fix formating and bugs in doc.</p>
+
+<p>Note that the sign bit of VBE-S is in last byte, not first byte.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-185a0f8">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="mapsforge/mapsforge:commit:185a0f82035aad84b57b81dd23a09060f3704fea"
+    data-url="/mapsforge/mapsforge/commit/185a0f82035aad84b57b81dd23a09060f3704fea/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/kcwu"><img alt="@kcwu" class="avatar avatar-small" height="16" src="https://avatars0.githubusercontent.com/u/175566?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/kcwu" class="author" rel="contributor">kcwu</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/kcwu/mapsforge/commit/185a0f82035aad84b57b81dd23a09060f3704fea" class="message" data-pjax="true" title="Update Specification-Binary-Map-File.md
+
+Fix formating and bugs in doc.
+
+Note that the sign bit of VBE-S is in last byte, not first byte.">Update Specification-Binary-Map-File.md</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>Fix formating and bugs in doc.
+
+Note that the sign bit of VBE-S is in last byte, not first byte.</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/kcwu/mapsforge/commit/185a0f82035aad84b57b81dd23a09060f3704fea" class="commit-id">185a0f8</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  
+
+
+      
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-merged js-details-container">
+  <div class="discussion-item-header" id="event-214763061">
+
+
+    <span class="octicon octicon-git-merge discussion-item-icon"></span>
+    <img alt="@devemux86" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/3484020?v=3&amp;s=32" width="16" />
+    <a href="/devemux86" class="author">devemux86</a>
+    merged commit <a href="/mapsforge/mapsforge/commit/9bc922ec5ab0fa847523af490222376378c2df46"><code class="discussion-item-entity">9bc922e</code></a> into <span class="commit-ref js-selectable-text"><span class="css-truncate-target user">mapsforge</span>:<span class="css-truncate-target">dev</span></span>  <a href="https://github.com/mapsforge/mapsforge/pull/563#event-214763061" class="timestamp"><time class="timestamp" datetime="2015-01-06T16:27:03Z" is="relative-time">Jan 6, 2015</time></a>
+
+  </div>
+
+
+</div>
+
+
+  <div class="closed-banner"></div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/devemux86"><img alt="@devemux86" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/3484020?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-68888842"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container collaborator-comment"
+     data-body-version="58567d09ab8cdaf7699be4574c0e83e0">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Collaborator</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/devemux86" class="author">devemux86</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-68888842" class="timestamp">
+      <time datetime="2015-01-06T16:27:06Z" is="relative-time">Jan 6, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks <a href="https://github.com/kcwu" class="user-mention">@kcwu</a> </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-head_ref_deleted">
+    <div class="discussion-item-header" id="event-214765007">
+
+      <span class="octicon octicon-git-branch-delete discussion-item-icon"></span>
+      <img alt="@kcwu" class="avatar" height="16" src="https://avatars0.githubusercontent.com/u/175566?v=3&amp;s=32" width="16" />
+      <a href="/kcwu" class="author">kcwu</a>
+      deleted the  <span class="commit-ref js-selectable-text"><span class="css-truncate-target user">kcwu</span>:<span class="css-truncate-target">patch-2</span></span> branch <a href="https://github.com/mapsforge/mapsforge/pull/563#event-214765007" class="timestamp"><time class="timestamp" datetime="2015-01-06T16:30:07Z" is="relative-time">Jan 6, 2015</time></a>
+    </div>
+  </div>
+
+
+
+
+
+      
+
+
+  
+      <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-pullrequest-86710080">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@ludwigb" class="avatar" height="16" src="https://avatars1.githubusercontent.com/u/9587769?v=3&amp;s=32" width="16" />
+      <a href="/ludwigb" class="author" truncate="true">ludwigb</a>
+
+      referenced
+      this pull request
+      <a class="timestamp" href="#ref-pullrequest-86710080">
+        <time datetime="2015-06-10T04:39:32Z" is="relative-time">Jun 10, 2015</time>
+      </a>
+    </div>
+
+      <span class="state state-open right">
+          <span class="octicon octicon-git-pull-request"></span>
+        Open
+      </span>
+
+
+
+    <h3 class="discussion-item-ref-title">
+      <a href="/mapsforge/mapsforge/issues/625" class="title-link">
+        Cluster-Marker Example 
+        <span class="issue-num">#625</span>
+</a>    </h3>
+    
+  </div>
+
+
+
+
+
+<!-- Rendered timeline since 2015-06-09 21:39:32 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:pull_request:26897962"
+      data-url="/mapsforge/mapsforge/pull/563/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1433911172"
+      data-last-modified="Wed, 10 Jun 2015 04:39:32 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/mapsforge/mapsforge/notifications/mark?ids=54245720" class="hidden js-timeline-marker-form" data-form-nonce="2c27a5669304b259ad48c930e1900386f9bcfefa" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="albT/EFmWr63ZvLqc6niq5QWCUmn38LNH0zf6Ejt0sUREg+fJj51BNG/tugems9ErtdCzS2J49zJW3Z8M847Cw==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fmapsforge%2Fmapsforge%2Fpull%2F563" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="mapsforge/mapsforge:branch:patch-2"
+     data-url="/mapsforge/mapsforge/pull/563/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Jan 6, 2015
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="mapsforge/mapsforge:commit:185a0f82035aad84b57b81dd23a09060f3704fea"
+      data-url="/mapsforge/mapsforge/commit/185a0f82035aad84b57b81dd23a09060f3704fea/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/kcwu" data-skip-pjax="true" rel="contributor"><img alt="@kcwu" class="avatar" height="36" src="https://avatars0.githubusercontent.com/u/175566?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/kcwu/mapsforge/commit/185a0f82035aad84b57b81dd23a09060f3704fea" class="message" data-pjax="true" title="Update Specification-Binary-Map-File.md
+
+Fix formating and bugs in doc.
+
+Note that the sign bit of VBE-S is in last byte, not first byte.">Update Specification-Binary-Map-File.md</a>
+
+    <span class="hidden-text-expander inline"><a href="#" class="js-details-target">…</a></span>
+    </p>
+
+    <div class="commit-meta">
+        <a href="/kcwu" class="commit-author" rel="contributor">kcwu</a>
+ authored <time datetime="2015-01-06T16:07:10Z" is="relative-time">Jan 7, 2015</time>
+
+
+    </div>
+
+      <div class="commit-desc"><pre>Fix formating and bugs in doc.
+
+Note that the sign bit of VBE-S is in last byte, not first byte.</pre></div>
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="185a0f82035aad84b57b81dd23a09060f3704fea" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/kcwu/mapsforge/commit/185a0f82035aad84b57b81dd23a09060f3704fea" class="sha btn btn-outline">
+        185a0f8
+      </a>
+    </div>
+    <a href="/mapsforge/mapsforge/tree/185a0f82035aad84b57b81dd23a09060f3704fea" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+    <div id="files_bucket" class="files-bucket tab-content pull-request-tab-content ">
+
+      <div class="flash flash-warn stale-files-tab js-pull-request-stale-files js-socket-channel"
+   data-channel="mapsforge/mapsforge:pull_request:26897962:diff"
+   data-url="https://github.com/mapsforge/mapsforge/pull/563/live_update">
+    This page is out of date. <a href="https://github.com/mapsforge/mapsforge/pull/563/files">Refresh</a> to see the latest.
+</div>
+
+
+      
+
+
+
+
+      <div id='diff' class="uncommentable">
+        <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/mapsforge/mapsforge/pull/563/files?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/mapsforge/mapsforge/pull/563/files?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <span class="octicon octicon-diff"></span>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      1 changed file
+    </button>
+    with
+    <strong>16 additions</strong>
+    and <strong>16 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +16
+          </span>
+          <span class="text-diff-deleted">
+            −16
+          </span>
+          <a href="#diff-5bb0618d3cbeab669c5609c59229944c" class="tooltipped tooltipped-s" aria-label="32 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-5bb0618d3cbeab669c5609c59229944c">docs/Specification-Binary-Map-File.md</a>
+    </li>
+  </ol>
+</div>
+
+        <div id="files" class="diff-view ">
+    
+      <a name="diff-5bb0618d3cbeab669c5609c59229944c"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                    soft-wrap
+                    file-type-prose
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="docs/Specification-Binary-Map-File.md">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+              <span class="btn-group">
+                <a class="btn btn-sm tooltipped tooltipped tooltipped-n source selected"
+                   href="#diff-5bb0618d3cbeab669c5609c59229944c"
+                   aria-label="Display the source diff"><span class="octicon octicon-code"></span></a>
+                <a class="btn btn-sm tooltipped tooltipped-n rendered"
+                   href="https://github.com/mapsforge/mapsforge/pull/563/files?short_path=5bb0618#diff-5bb0618d3cbeab669c5609c59229944c"
+                   aria-label="Display the rich diff"><span class="octicon octicon-file-text"></span></a>
+              </span>
+                <a href="/kcwu/mapsforge/blob/185a0f82035aad84b57b81dd23a09060f3704fea/docs/Specification-Binary-Map-File.md" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 185a0f8 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="16 additions &amp; 16 deletions">32 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="docs/Specification-Binary-Map-File.md">
+              docs/Specification-Binary-Map-File.md
+            </span>
+            
+          </div>
+        </div>
+
+          
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                  <colgroup>
+                    <col width="44">
+                    <col width="44">
+                    <col>
+                  </colgroup>
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-5bb0618d3cbeab669c5609c59229944c"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/mapsforge/mapsforge/blob_excerpt/bd408d31aae0b2279fc6b55a1d006fb53dbaa7c9?diff=unified&amp;left_hunk_size=20&amp;mode=100644&amp;next_line_num_left=14&amp;next_line_num_right=14&amp;path=docs%2FSpecification-Binary-Map-File.md&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=20"
+            data-left-range="1-13" data-right-range="1-13">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -14,20 +14,20 @@ The map file consists of several sub-files, each storing the map objects for a d</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL14" data-line-number="14"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR14" data-line-number="14"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-mh"><span class="pl-mh">##</span><span class="pl-mh"> </span>General remarks</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL16" data-line-number="16"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR16" data-line-number="16"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL17" data-line-number="17"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-v">-</span> All latitude and longitude coordinates are stored in microdegrees (degrees × 10<span class="x x-first x-last">^6^</span>).</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR17" data-line-number="17"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-v">-</span> All latitude and longitude coordinates are stored in microdegrees (degrees × 10<span class="x x-first x-last">&lt;sup&gt;6&lt;/sup&gt;</span>).</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL18" data-line-number="18"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR18" data-line-number="18"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-v">-</span> Numeric fields with a fixed byte size are stored with <span class="pl-mi">*Big Endian*</span> byte order.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-v">-</span> Unsigned numeric fields with a variable byte encoding are marked with <span class="pl-mi">*`VBE-U` INT*</span> and stored as follows:</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL20" data-line-number="20"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-v">-</span> the first bit of each byte is used for continuation info, the other seven bits for data.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL21" data-line-number="21"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-v">-</span> the value of the first bit is 1 if the following byte belongs to the field, 0 otherwise.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL22" data-line-number="22"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-v">-</span> each byte holds seven bits of the numeric value, starting with the least significant ones.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR20" data-line-number="20"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first x-last">  </span><span class="pl-v">-</span> the first bit of each byte is used for continuation info, the other seven bits for data.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR21" data-line-number="21"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first x-last">  </span><span class="pl-v">-</span> the value of the first bit is 1 if the following byte belongs to the field, 0 otherwise.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR22" data-line-number="22"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first x-last">  </span><span class="pl-v">-</span> each byte holds seven bits of the numeric value, starting with the least significant ones.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-v">-</span> Signed numeric fields with a variable byte encoding are marked with <span class="pl-mi">*`VBE-S` INT*</span> and stored as follows:</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL24" data-line-number="24"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-v">-</span> the first bit of each byte is used for continuation info, the other six (<span class="x x-first x-last">first</span> byte) or seven (all other bytes) bits for data.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL25" data-line-number="25"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-v">-</span> the value of the first bit is 1 if the following byte belongs to the field, 0 otherwise.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL26" data-line-number="26"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-v">-</span> each byte holds six (<span class="x x-first x-last">first</span> byte) or seven (all other bytes) bits of the numeric value, starting with the least significant ones.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL27" data-line-number="27"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-v">-</span> the second bit in the <span class="x x-first x-last">first</span> byte indicates the sign of the number. A value of 0 means positive, 1 negative.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR24" data-line-number="24"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first x-last">  </span><span class="pl-v">-</span> the first bit of each byte is used for continuation info, the other six (<span class="x x-first x-last">last</span> byte) or seven (all other bytes) bits for data.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR25" data-line-number="25"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first x-last">  </span><span class="pl-v">-</span> the value of the first bit is 1 if the following byte belongs to the field, 0 otherwise.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR26" data-line-number="26"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first x-last">  </span><span class="pl-v">-</span> each byte holds six (<span class="x x-first x-last">last</span> byte) or seven (all other bytes) bits of the numeric value, starting with the least significant ones.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR27" data-line-number="27"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first x-last">  </span><span class="pl-v">-</span> the second bit in the <span class="x x-first x-last">last</span> byte indicates the sign of the number. A value of 0 means positive, 1 negative.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL28" data-line-number="28"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR28" data-line-number="28"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-v">-</span> All strings are stored in UTF-8 as follows:</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL29" data-line-number="29"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-v">-</span> the length <span class="pl-mi">*L*</span> of the UTF-8 encoded string in bytes as <span class="pl-mi">*`VBE-U` INT*</span>.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL30" data-line-number="30"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-v">-</span> <span class="pl-mi">*L*</span> bytes for the UTF-8 encoding of the string.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR29" data-line-number="29"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first x-last">  </span><span class="pl-v">-</span> the length <span class="pl-mi">*L*</span> of the UTF-8 encoded string in bytes as <span class="pl-mi">*`VBE-U` INT*</span>.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR30" data-line-number="30"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="x x-first x-last">  </span><span class="pl-v">-</span> <span class="pl-mi">*L*</span> bytes for the UTF-8 encoding of the string.</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL31" data-line-number="31"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR31" data-line-number="31"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL32" data-line-number="32"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR32" data-line-number="32"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL33" data-line-number="33"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR33" data-line-number="33"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-mh"><span class="pl-mh">##</span><span class="pl-mh"> </span>File structure</span></span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="31">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-5bb0618d3cbeab669c5609c59229944c"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/mapsforge/mapsforge/blob_excerpt/bd408d31aae0b2279fc6b55a1d006fb53dbaa7c9?diff=unified&amp;left_hunk_size=13&amp;mode=100644&amp;next_line_num_left=65&amp;next_line_num_right=65&amp;path=docs%2FSpecification-Binary-Map-File.md&amp;prev_line_num_left=33&amp;prev_line_num_right=33&amp;right_hunk_size=13"
+            data-left-range="34-64" data-right-range="34-64">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -65,13 +65,13 @@ To read the data of a specific tile in the sub-file, the position of the fixed-s</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL65" data-line-number="65"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR65" data-line-number="65"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |4||file version|version number of the currently used binary file format as 4-byte *INT*|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL66" data-line-number="66"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR66" data-line-number="66"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |8||file size|The total size of the map file in bytes|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL67" data-line-number="67"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR67" data-line-number="67"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |8||date of creation|date in milliseconds since 01.01.1970 as 8-byte *LONG*|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL68" data-line-number="68"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-|16||bounding box|geo coordinates of the bounding box in microdegrees as 4*4-byte *INT*, in the order minLat, minLon, maxLat, maxLon|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR68" data-line-number="68"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+|16||bounding box|geo coordinates of the bounding box in microdegrees as 4<span class="x x-first x-last">\</span>*4-byte *INT*, in the order minLat, minLon, maxLat, maxLon|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL69" data-line-number="69"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR69" data-line-number="69"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |2||tile size|the tile size in pixels (e.g. 256)|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL70" data-line-number="70"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR70" data-line-number="70"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |variable||projection|defines the projection used to create this file as a string|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL71" data-line-number="71"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR71" data-line-number="71"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |1||flags|&lt;ul&gt;&lt;li&gt;1. bit: flag for existence of debug information&lt;/li&gt;&lt;li&gt;2. bit: flag for existence of the *map start position* field&lt;/li&gt;&lt;li&gt;3. bit: flag for existence of the *start zoom level* field&lt;/li&gt;&lt;li&gt;4. bit: flag for existence of the *language preference* field&lt;/li&gt;&lt;li&gt;5. bit: flag for existence of the *comment* field&lt;/li&gt;&lt;li&gt;6. bit: flag for existence of the *created by* field&lt;/li&gt;&lt;li&gt;7.-8. bit: reserved for future use&lt;/li&gt;&lt;/ul&gt;|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL72" data-line-number="72"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-|8|yes|map start position|geo coordinate in microdegrees as 2*4-byte *INT*, in the order lat, lon|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR72" data-line-number="72"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+|8|yes|map start position|geo coordinate in microdegrees as 2<span class="x x-first x-last">\</span>*4-byte *INT*, in the order lat, lon|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL73" data-line-number="73"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR73" data-line-number="73"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |1|yes|start zoom level|zoom level of the map at first load|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL74" data-line-number="74"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-|variable|yes|language preference|The preferred language for names as defined in [ &lt;ul&gt;&lt;li&gt;for each zoom interval:&lt;ul&gt;&lt;li&gt;base zoom level as *BYTE*&lt;/li&gt;&lt;li&gt;minimal zoom level as *BYTE*&lt;/li&gt;&lt;li&gt;maximal zoom level as *BYTE*&lt;/li&gt;&lt;li&gt;absolute start position of the sub file as 8-byte *LONG*&lt;/li&gt;&lt;li&gt;size of the sub-file as 8-byte *LONG*&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;|](|variable||zoom interval configuration|&lt;ul&gt;&lt;li&gt;for each zoom interval:&lt;ul&gt;&lt;li&gt;base zoom level as *BYTE*&lt;/li&gt;&lt;li&gt;minimal zoom level as *BYTE*&lt;/li&gt;&lt;li&gt;maximal zoom level as *BYTE*&lt;/li&gt;&lt;li&gt;absolute start position of the sub file as 8-byte *LONG*&lt;/li&gt;&lt;li&gt;size of the sub-file as 8-byte *LONG*&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;|) as string|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR74" data-line-number="74"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+|variable|yes|language preference|The preferred language for names as defined in ISO 639-1 or ISO 639-2|](|variable||zoom interval configuration|&lt;ul&gt;&lt;li&gt;for each zoom interval:&lt;ul&gt;&lt;li&gt;base zoom level as *BYTE*&lt;/li&gt;&lt;li&gt;minimal zoom level as *BYTE*&lt;/li&gt;&lt;li&gt;maximal zoom level as *BYTE*&lt;/li&gt;&lt;li&gt;absolute start position of the sub file as 8-byte *LONG*&lt;/li&gt;&lt;li&gt;size of the sub-file as 8-byte *LONG*&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;|) as string|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL75" data-line-number="75"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR75" data-line-number="75"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |variable|yes|comment|comment as a string|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL76" data-line-number="76"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR76" data-line-number="76"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |variable|yes|created by|The name of the application which created the file as a string|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL77" data-line-number="77"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR77" data-line-number="77"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |variable||POI tags|&lt;ul&gt;&lt;li&gt;amount of tags as 2-byte *SHORT*&lt;/li&gt;&lt;li&gt;tag names as a strings&lt;/li&gt;&lt;li&gt;tag IDs are implicitly derived from the order of tag names, starting with 0&lt;/li&gt;&lt;/ul&gt;|</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="48">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-5bb0618d3cbeab669c5609c59229944c"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/mapsforge/mapsforge/blob_excerpt/bd408d31aae0b2279fc6b55a1d006fb53dbaa7c9?diff=unified&amp;left_hunk_size=8&amp;mode=100644&amp;next_line_num_left=152&amp;next_line_num_right=152&amp;path=docs%2FSpecification-Binary-Map-File.md&amp;prev_line_num_left=77&amp;prev_line_num_right=77&amp;right_hunk_size=8"
+            data-left-range="78-151" data-right-range="78-151">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -152,8 +152,8 @@ To read the data of a specific tile in the sub-file, the position of the fixed-s</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL152" data-line-number="152"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR152" data-line-number="152"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-mh"><span class="pl-mh">##</span><span class="pl-mh"> </span>Version history</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL153" data-line-number="153"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR153" data-line-number="153"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL154" data-line-number="154"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR154" data-line-number="154"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL155" data-line-number="155"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-|**<span class="x x-first x-last"> </span>Version**|**Date**|**Changes**|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL156" data-line-number="156"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-|-----------<span class="x x-first x-last">-</span>|--------|-----------|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR155" data-line-number="155"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+|**Version**|**Date**|**Changes**|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR156" data-line-number="156"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+|-----------|--------|-----------|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL157" data-line-number="157"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR157" data-line-number="157"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |1|2010-11-21|Initial release of the specification|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL158" data-line-number="158"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR158" data-line-number="158"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> |2|2011-01-26|&lt;ul&gt;&lt;li&gt;Introduced variable byte encoding for some numeric fields to reduce the file size&lt;/li&gt;&lt;li&gt;Modified some field names and descriptions for clarification&lt;/li&gt;&lt;li&gt;Offset encoding is now used on all coordinates&lt;/li&gt;&lt;/ul&gt;|</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cL159" data-line-number="159"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-|3|2012-03-18|&lt;ul&gt;&lt;li&gt;Ways are stored as multiple segments&lt;/li&gt;&lt;li&gt;Ways can also have a house number&lt;/li&gt;&lt;li&gt;Removed obsolete data&lt;/li&gt;&lt;li&gt;Added *language preference* field to the header&lt;/li&gt;&lt;li&gt;Added *file size* field to the header&lt;/li&gt;&lt;li&gt;Added *start zoom level* field to the header&lt;/li&gt;&lt;li&gt;Added *created by* field to the header&lt;/li&gt;&lt;li&gt;Added a flag for single and double delta encoding&lt;/li&gt;&lt;li&gt;Reordered some fields&lt;/li&gt;&lt;li&gt;Removed some data type related limitations&lt;/li&gt;&lt;/ul&gt;|</span>
+
+      <span class="no-nl-marker tooltipped tooltipped-n" aria-label="No newline at end of file">
+        <span class="octicon octicon-no-newline"></span>
+      </span>
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5bb0618d3cbeab669c5609c59229944cR159" data-line-number="159"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+|3|2012-03-18|&lt;ul&gt;&lt;li&gt;Ways are stored as multiple segments&lt;/li&gt;&lt;li&gt;Ways can also have a house number&lt;/li&gt;&lt;li&gt;Removed obsolete data&lt;/li&gt;&lt;li&gt;Added *language preference* field to the header&lt;/li&gt;&lt;li&gt;Added *file size* field to the header&lt;/li&gt;&lt;li&gt;Added *start zoom level* field to the header&lt;/li&gt;&lt;li&gt;Added *created by* field to the header&lt;/li&gt;&lt;li&gt;Added a flag for single and double delta encoding&lt;/li&gt;&lt;li&gt;Reordered some fields&lt;/li&gt;&lt;li&gt;Removed some data type related limitations&lt;/li&gt;&lt;/ul&gt;|</span>
+
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+      </div>
+
+      
+
+    <div class="clearfix"></div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.23823s from github-fe119-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-df03cb524192fbb325ef264ca1bdee425481db0aadf702dd6d209d1fa0ccf572.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-e321a5911341a3613eea06a9cc3f6ea636b3cdc377824313d67ad604a5e8d9e1.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,4243 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>zh-TW translation updates and fixes. by medicalwei · Pull Request #51 · zxing/zxing · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="zh-TW translation updates and fixes. by medicalwei · Pull Request #51 · zxing/zxing" name="twitter:title" /><meta content="Sorry that there is a bug in HTML, and I didn&#39;t find it, until I build and install this onto my phone.
+Also there are tiny translation fixes for some strings." name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/74481?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/74481?v=3&amp;s=400" property="og:image" /><meta content="zh-TW translation updates and fixes. by medicalwei · Pull Request #51 · zxing/zxing" property="og:title" /><meta content="https://github.com/zxing/zxing/pull/51" property="og:url" /><meta content="Sorry that there is a bug in HTML, and I didn&#39;t find it, until I build and install this onto my phone.
+Also there are tiny translation fixes for some strings." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:3499:193FEC3:55DB5831" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="NSl03Z2PqyZWwtHYSI/btYfwSAIJiGRH9ao61QIlQKvcH4o5kCGPQ8RBKNC0sDbuFvpbRSlyMf8tdMKf1wGhLQ==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="22e6cb7d309429ee0eaff86792eaf1c3">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/zxing/zxing/pull/51.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/zxing/zxing/pull/51.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #fff !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #fff !important;}.label-select-menu .labelstyle-009800.selected {  background:rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #fff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #fff !important;}.label-select-menu .labelstyle-e11d21.selected {  background:rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #282d33 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #282d33 !important;}.label-select-menu .labelstyle-c7def8.selected {  background:rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/zxing/zxing/pull/51" data-pjax-transient>
+
+  <meta name="description" content="zxing - Official ZXing (&quot;Zebra Crossing&quot;) project home">
+  <meta name="go-import" content="github.com/zxing/zxing git https://github.com/zxing/zxing.git">
+
+  <meta content="1122572" name="octolytics-dimension-user_id" /><meta content="zxing" name="octolytics-dimension-user_login" /><meta content="2562751" name="octolytics-dimension-repository_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2562751" name="octolytics-dimension-repository_network_root_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/zxing/zxing/commits/78a6dcc336fe1bbe02babe391d018e301bec7bee.atom" rel="alternate" title="Recent Commits to zxing:78a6dcc336fe1bbe02babe391d018e301bec7bee" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fzxing%2Fzxing%2Fpull%2F51" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/zxing/zxing/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/zxing/zxing/watchers">
+    789
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/zxing/zxing/stargazers">
+      5,886
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/zxing/zxing/network" class="social-count">
+        3,739
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/zxing" class="url fn" itemprop="url" rel="author"><span itemprop="title">zxing</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/zxing/zxing" data-pjax="#js-repo-pjax-container">zxing</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/zxing/zxing/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/zxing/zxing" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /zxing/zxing">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/zxing/zxing/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /zxing/zxing/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/zxing/zxing/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /zxing/zxing/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/zxing/zxing/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /zxing/zxing/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/zxing/zxing/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /zxing/zxing/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/zxing/zxing/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /zxing/zxing/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="d3e2132fb1f6e23110695ace72979495fe0d2be2" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="dLtqZF+ER+05FAF+OGANWSg7b/PKpJH+wSmdqnTyCaHhzbtNUiwWhAc1kD0CcXM0ETYYnhr2IByhFLAjWBnEzQ==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="d3e2132fb1f6e23110695ace72979495fe0d2be2" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="aUeaKXQwOFu2Nu0SyRSkFg67hGbg3whNL7+Gz1O0ZNoO8KLLGfjsSu8XqBvKwiCj6e/kQTGQJoraQn/0CbSBQw==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/zxing/zxing/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of zxing/zxing as a zip file"
+                 title="Download the contents of zxing/zxing as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;09eaf4e1436b69e8530b25b35b25d9d24216affa&quot; -->
+<!-- head sha1: &quot;78a6dcc336fe1bbe02babe391d018e301bec7bee&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="zxing/zxing:pull_request:12449404"
+    data-url="/zxing/zxing/pull/51/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">zh-TW translation updates and fixes.</span>
+      <span class="gh-header-number">#51</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-merged">
+          <span class="octicon octicon-git-pull-request"></span>
+          Merged
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/srowen" class="author pull-header-username css-truncate css-truncate-target expandable">
+    srowen
+  </a>
+  merged 1 commit into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">zxing</span>:<span class="css-truncate-target">master</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">medicalwei</span>:<span class="css-truncate-target">master</span></span>
+
+
+  <time datetime="2014-02-12T08:53:06Z" is="relative-time">Feb 12, 2014</time>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="zxing/zxing:branch:master"
+    data-url=/zxing/zxing/pull/51/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +28
+        </span>
+        <span class="text-diff-deleted">
+          −29
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="57 lines changed">
+          <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/zxing/zxing/pull/51" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/51/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/51/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          7
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:issue:27410669"
+     data-url="/zxing/zxing/issues/51/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/51?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="d3e2132fb1f6e23110695ace72979495fe0d2be2" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="lpnEGUSAiPOfzav2o+dxCjxG62cbtldvnOCjWYhMuQ2gTG9krEqmv0S64YM/CUyqQdWv1LBVdJdfafzkVMqzuw==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+    None yet
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/51/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="d3e2132fb1f6e23110695ace72979495fe0d2be2" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="1AlUG6grLoyB24IkUnQIwrXW6ejhPDnQ9+J9VUXmshYUeQmRwCozLPurhOG3xin/RlVguedUhk/EZUFWFJA/Fw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      <span class="progress-bar"><span class="progress" style="width: 100.0%">&nbsp;</span></span>
+  <a title="3.0.0" href="/zxing/zxing/milestones/3.0.0" class="milestone-name css-truncate">
+    <span class="css-truncate-target">3.0.0</span>
+  </a>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/51?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="d3e2132fb1f6e23110695ace72979495fe0d2be2" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="MG3DVPqAYSP8Lu71tg4URtFk0K9CV903q/DJARUDSlXtbkqDIwcR2iJHxIZP87a34BfrLBcQ10CJnupcSXNNSw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+    <img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" />
+    <a href="/zxing/zxing/pulls/assigned/srowen" class="assignee css-truncate-target">srowen</a>
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:issue:27410669"
+      data-url="/zxing/zxing/issues/51/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="medicalwei" href="/medicalwei"><img alt="@medicalwei" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/74481?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="srowen" href="/srowen"><img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="zxing/zxing:marked-as-read:12449404">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/medicalwei"><img alt="@medicalwei" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/74481?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-27410669"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="3b4e173ae67cad0227fb5ef962808c37">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/medicalwei" class="author">medicalwei</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-27410669" class="timestamp">
+      <time datetime="2014-02-12T05:18:01Z" is="relative-time">Feb 12, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sorry that there is a bug in HTML, and I didn't find it, until I build and install this onto my phone.<br>
+Also there are tiny translation fixes for some strings.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-78a6dcc">
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:78a6dcc336fe1bbe02babe391d018e301bec7bee"
+    data-url="/zxing/zxing/commit/78a6dcc336fe1bbe02babe391d018e301bec7bee/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/medicalwei"><img alt="@medicalwei" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/74481?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/medicalwei" class="author" rel="contributor">medicalwei</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/medicalwei/zxing/commit/78a6dcc336fe1bbe02babe391d018e301bec7bee" class="message" data-pjax="true" title="fix zh_TW translation strings">fix zh_TW translation strings</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+    <div class="commit-build-statuses">
+        <a class="text-success tooltipped tooltipped-w"
+           aria-label="Success: The Travis CI build passed"
+           href="https://travis-ci.org/zxing/zxing/builds/18708819">
+          <span class="octicon octicon-check"></span>
+        </a>
+    </div>
+
+
+      <code><a href="/medicalwei/zxing/commit/78a6dcc336fe1bbe02babe391d018e301bec7bee" class="commit-id">78a6dcc</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  
+
+
+      
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-merged js-details-container">
+  <div class="discussion-item-header" id="event-92862458">
+
+      <button type="button" class="btn btn-outline js-details-target">
+        <span class="discussion-item-toggler-opened">Hide details</span>
+        <span class="discussion-item-toggler-closed">View details</span>
+      </button>
+
+    <span class="octicon octicon-git-merge discussion-item-icon"></span>
+    <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+    <a href="/srowen" class="author">srowen</a>
+    merged commit <a href="/zxing/zxing/commit/fcad828184aca4dac03e2f898bdef7d41c262515"><code class="discussion-item-entity">fcad828</code></a> into <span class="commit-ref js-selectable-text"><span class="css-truncate-target user">zxing</span>:<span class="css-truncate-target">master</span></span>  <a href="https://github.com/zxing/zxing/pull/51#event-92862458" class="timestamp"><time class="timestamp" datetime="2014-02-12T08:53:06Z" is="relative-time">Feb 12, 2014</time></a>
+
+      <div class="discussion-item-footer">
+        1 check passed
+      </div>
+  </div>
+
+
+    <div class="discussion-item-details">
+      <h4 class="discussion-item-details-header">
+        1 check passed
+      </h4>
+      <div class="build-statuses-list">
+          <div class="build-status-item">
+              <a href="https://travis-ci.org/zxing/zxing/builds/18708819" class="build-status-details right">Details</a>
+
+            <span class="build-status-icon octicon octicon-check text-success"></span>
+            <span class="text-muted css-truncate css-truncate-target">
+              <strong class="text-emphasized">
+                default
+              </strong>
+              The Travis CI build passed
+            </span>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+  <div class="closed-banner"></div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-34849604"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="c3ec70eeb2e76d92699bca9037b113d6">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-34849604" class="timestamp">
+      <time datetime="2014-02-12T08:53:10Z" is="relative-time">Feb 12, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>That's fine, thank you.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-milestoned">
+    <div class="discussion-item-header" id="event-97015433">
+
+      <span class="octicon octicon-milestone discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+      added this to the <a href="/zxing/zxing/milestones/3.0.0" class="discussion-item-entity">3.0.0</a> milestone <a href="https://github.com/zxing/zxing/pull/51#event-97015433" class="timestamp"><time class="timestamp" datetime="2014-02-26T14:24:32Z" is="relative-time">Feb 26, 2014</time></a>
+    </div>
+  </div>
+
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-assigned">
+    <div class="discussion-item-header" id="event-97015441">
+
+      <span class="octicon octicon-person discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+      self-assigned this   <a href="https://github.com/zxing/zxing/pull/51#event-97015441" class="timestamp"><time class="timestamp" datetime="2014-02-26T14:24:34Z" is="relative-time">Feb 26, 2014</time></a>
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- Rendered timeline since 2014-02-26 06:24:34 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:pull_request:12449404"
+      data-url="/zxing/zxing/pull/51/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1393424674"
+      data-last-modified="Wed, 26 Feb 2014 14:24:34 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/notifications/mark?ids=25482424" class="hidden js-timeline-marker-form" data-form-nonce="d3e2132fb1f6e23110695ace72979495fe0d2be2" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Nf2rmwIjSmaOH9fEmVdLHm7xbVm24CWKRWD9omeo5ndUbBBqCOPbohmTm5ybNCG0u3TnKZXpf3soQjThdF7RIA==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fzxing%2Fzxing%2Fpull%2F51" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:branch:master"
+     data-url="/zxing/zxing/pull/51/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on Feb 12, 2014
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:commit:78a6dcc336fe1bbe02babe391d018e301bec7bee"
+      data-url="/zxing/zxing/commit/78a6dcc336fe1bbe02babe391d018e301bec7bee/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/medicalwei" data-skip-pjax="true" rel="contributor"><img alt="@medicalwei" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/74481?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/medicalwei/zxing/commit/78a6dcc336fe1bbe02babe391d018e301bec7bee" class="message" data-pjax="true" title="fix zh_TW translation strings">fix zh_TW translation strings</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/medicalwei" class="commit-author" rel="contributor">medicalwei</a>
+ authored <time datetime="2014-02-12T05:01:45Z" is="relative-time">Feb 12, 2014</time>
+
+
+        <span class="commit-indicator">
+          
+    <div class="commit-build-statuses">
+        <a class="text-success tooltipped tooltipped-e"
+           aria-label="Success: The Travis CI build passed"
+           href="https://travis-ci.org/zxing/zxing/builds/18708819">
+          <span class="octicon octicon-check"></span>
+        </a>
+    </div>
+
+        </span>
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="78a6dcc336fe1bbe02babe391d018e301bec7bee" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/medicalwei/zxing/commit/78a6dcc336fe1bbe02babe391d018e301bec7bee" class="sha btn btn-outline">
+        78a6dcc
+      </a>
+    </div>
+    <a href="/zxing/zxing/tree/78a6dcc336fe1bbe02babe391d018e301bec7bee" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+    <div id="files_bucket" class="files-bucket tab-content pull-request-tab-content ">
+
+      <div class="flash flash-warn stale-files-tab js-pull-request-stale-files js-socket-channel"
+   data-channel="zxing/zxing:pull_request:12449404:diff"
+   data-url="https://github.com/zxing/zxing/pull/51/live_update">
+    This page is out of date. <a href="https://github.com/zxing/zxing/pull/51/files">Refresh</a> to see the latest.
+</div>
+
+
+      
+
+
+
+
+      <div id='diff' class="uncommentable">
+        <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/zxing/zxing/pull/51/files?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/zxing/zxing/pull/51/files?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <span class="octicon octicon-diff"></span>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      7 changed files
+    </button>
+    with
+    <strong>28 additions</strong>
+    and <strong>29 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +2
+          </span>
+          <span class="text-diff-deleted">
+            −2
+          </span>
+          <a href="#diff-91aa5b730490487a5fe4f20513741bef" class="tooltipped tooltipped-s" aria-label="4 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-91aa5b730490487a5fe4f20513741bef">android/assets/html-zh-rTW/about1d.html</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +3
+          </span>
+          <span class="text-diff-deleted">
+            −3
+          </span>
+          <a href="#diff-b114cab53978cf7cd5902673381ffcc4" class="tooltipped tooltipped-s" aria-label="6 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-b114cab53978cf7cd5902673381ffcc4">android/assets/html-zh-rTW/about2d.html</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +2
+          </span>
+          <span class="text-diff-deleted">
+            −2
+          </span>
+          <a href="#diff-a5b704c4bee349c85729242000a4ff50" class="tooltipped tooltipped-s" aria-label="4 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-a5b704c4bee349c85729242000a4ff50">android/assets/html-zh-rTW/index.html</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +5
+          </span>
+          <span class="text-diff-deleted">
+            −4
+          </span>
+          <a href="#diff-5f169692bd5d78a43d69db5699ca9dbb" class="tooltipped tooltipped-s" aria-label="9 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-5f169692bd5d78a43d69db5699ca9dbb">android/assets/html-zh-rTW/license.html</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +1
+          </span>
+          <span class="text-diff-deleted">
+            −1
+          </span>
+          <a href="#diff-ec019d66b212d2d4685d1a5089d14899" class="tooltipped tooltipped-s" aria-label="2 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;&#xf053;&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-ec019d66b212d2d4685d1a5089d14899">android/assets/html-zh-rTW/sharing.html</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +5
+          </span>
+          <span class="text-diff-deleted">
+            −7
+          </span>
+          <a href="#diff-b12de1ab5134173d419518bb5821e447" class="tooltipped tooltipped-s" aria-label="12 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-b12de1ab5134173d419518bb5821e447">android/assets/html-zh-rTW/whatsnew.html</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +10
+          </span>
+          <span class="text-diff-deleted">
+            −10
+          </span>
+          <a href="#diff-8928bfd88fa6014eafc6787efe85c0c9" class="tooltipped tooltipped-s" aria-label="20 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-8928bfd88fa6014eafc6787efe85c0c9">android/res/values-zh-rTW/strings.xml</a>
+    </li>
+  </ol>
+</div>
+
+        <div id="files" class="diff-view ">
+    
+      <a name="diff-91aa5b730490487a5fe4f20513741bef"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="android/assets/html-zh-rTW/about1d.html">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/medicalwei/zxing/blob/78a6dcc336fe1bbe02babe391d018e301bec7bee/android/assets/html-zh-rTW/about1d.html" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 78a6dcc ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="2 additions &amp; 2 deletions">4 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="android/assets/html-zh-rTW/about1d.html">
+              android/assets/html-zh-rTW/about1d.html
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-91aa5b730490487a5fe4f20513741bef"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/bf09db062301b6b017c2a5e239074ddefd6bcd27?diff=unified&amp;left_hunk_size=8&amp;mode=100644&amp;next_line_num_left=8&amp;next_line_num_right=8&amp;path=android%2Fassets%2Fhtml-zh-rTW%2Fabout1d.html&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=8"
+            data-left-range="1-7" data-right-range="1-7">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -8,8 +8,8 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-91aa5b730490487a5fe4f20513741befL8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-91aa5b730490487a5fe4f20513741befR8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">body</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-91aa5b730490487a5fe4f20513741befL9" data-line-number="9"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-91aa5b730490487a5fe4f20513741befR9" data-line-number="9"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span>&gt;傳統條碼，如產品包裝上出現的條碼，常被稱為一維條碼。一維條碼中，常見的格式包含 UPC 和 EAN，而大多數看起來像這樣：&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-91aa5b730490487a5fe4f20513741befL10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-91aa5b730490487a5fe4f20513741befR10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>imgcenter<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>../images/big-1d.png<span class="pl-pds">&quot;</span></span>/&gt;&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-91aa5b730490487a5fe4f20513741befL11" data-line-number="11"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent">p</span>&gt;這些一維條碼包含一個獨特的編碼，它通常代表一種產品，如一張 CD 或一本書。你可以在網路上搜尋這串數字，<span class="x x-first x-last">在網路上找到價格、評論等</span>。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-91aa5b730490487a5fe4f20513741befL12" data-line-number="12"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent">p</span>&gt;<span class="x x-first x-last">如果掃描一本書，您也可以搜尋一本書內的字句，找出文字所在的所有頁面</span>：&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-91aa5b730490487a5fe4f20513741befR11" data-line-number="11"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;<span class="pl-ent">p</span>&gt;這些一維條碼包含一個獨特的編碼，它通常代表一種產品，如一張 CD 或一本書。你可以在網路上搜尋這串數字，<span class="x x-first x-last">在網路上找到價格與評論</span>。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-91aa5b730490487a5fe4f20513741befR12" data-line-number="12"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;<span class="pl-ent">p</span>&gt;<span class="x x-first x-last">如果掃描的是一本書，您也可以對書本的內容進行搜尋</span>：&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-91aa5b730490487a5fe4f20513741befL13" data-line-number="13"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-91aa5b730490487a5fe4f20513741befR13" data-line-number="13"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>imgcenter<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>../images/search-book-contents.jpg<span class="pl-pds">&quot;</span></span>/&gt;&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-91aa5b730490487a5fe4f20513741befL14" data-line-number="14"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-91aa5b730490487a5fe4f20513741befR14" data-line-number="14"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">body</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-91aa5b730490487a5fe4f20513741befL15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-91aa5b730490487a5fe4f20513741befR15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">html</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-b114cab53978cf7cd5902673381ffcc4"></a>
+      <div id="diff-1"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="android/assets/html-zh-rTW/about2d.html">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/medicalwei/zxing/blob/78a6dcc336fe1bbe02babe391d018e301bec7bee/android/assets/html-zh-rTW/about2d.html" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 78a6dcc ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="3 additions &amp; 3 deletions">6 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="android/assets/html-zh-rTW/about2d.html">
+              android/assets/html-zh-rTW/about2d.html
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-b114cab53978cf7cd5902673381ffcc4"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/daeec4f30a6b4507acce44f97f10efb2658c972d?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=6&amp;next_line_num_right=6&amp;path=android%2Fassets%2Fhtml-zh-rTW%2Fabout2d.html&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-5" data-right-range="1-5">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -6,7 +6,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>../style.css<span class="pl-pds">&quot;</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>stylesheet<span class="pl-pds">&quot;</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>text/css<span class="pl-pds">&quot;</span></span>/&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">head</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">body</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L9" data-line-number="9"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent">p</span>&gt;&lt;<span class="pl-ent">strong</span>&gt;條碼掃描器&lt;/<span class="pl-ent">strong</span>&gt;<span class="x x-first x-last">也知道如何讀取二維條碼</span>，例如 QR Code 和 Data Matrix 條碼。例如，下面的條碼包含 ZXing 計畫的首頁連結：&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R9" data-line-number="9"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;<span class="pl-ent">p</span>&gt;&lt;<span class="pl-ent">strong</span>&gt;條碼掃描器&lt;/<span class="pl-ent">strong</span>&gt;<span class="x x-first x-last">也可以讀取二維條碼</span>，例如 QR Code 和 Data Matrix 條碼。例如，下面的條碼包含 ZXing 計畫的首頁連結：&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>imgcenter<span class="pl-pds">&quot;</span></span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L11" data-line-number="11"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R11" data-line-number="11"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>../images/big-qr.png<span class="pl-pds">&quot;</span></span>/&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>../images/big-datamatrix.png<span class="pl-pds">&quot;</span></span>/&gt;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="9">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-b114cab53978cf7cd5902673381ffcc4"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/daeec4f30a6b4507acce44f97f10efb2658c972d?diff=unified&amp;left_hunk_size=10&amp;mode=100644&amp;next_line_num_left=19&amp;next_line_num_right=19&amp;path=android%2Fassets%2Fhtml-zh-rTW%2Fabout2d.html&amp;prev_line_num_left=12&amp;prev_line_num_right=12&amp;right_hunk_size=10"
+            data-left-range="13-18" data-right-range="13-18">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -19,10 +19,10 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">ul</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L20" data-line-number="20"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R20" data-line-number="20"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">li</span>&gt;行事曆事件，可以新增到您的行事曆&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">li</span>&gt;電話號碼，可以撥打電話&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L22" data-line-number="22"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">li</span>&gt;簡訊號碼，可以發送簡訊&lt;<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R22" data-line-number="22"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">li</span>&gt;簡訊號碼，可以發送簡訊&lt;<span class="x x-first x-last">/</span><span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">li</span>&gt;電子郵件地址，可以寄信&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L24" data-line-number="24"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R24" data-line-number="24"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">li</span>&gt;地理坐標，可以呈現在地圖上&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L25" data-line-number="25"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">li</span>&gt;文字訊息，可以閱讀，<span class="x x-first x-last">並與朋友分享</span>&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R25" data-line-number="25"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">li</span>&gt;文字訊息，可以閱讀，<span class="x x-first x-last">並與他人分享</span>&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">ul</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L27" data-line-number="27"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R27" data-line-number="27"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">body</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4L28" data-line-number="28"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b114cab53978cf7cd5902673381ffcc4R28" data-line-number="28"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">html</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-a5b704c4bee349c85729242000a4ff50"></a>
+      <div id="diff-2"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="android/assets/html-zh-rTW/index.html">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/medicalwei/zxing/blob/78a6dcc336fe1bbe02babe391d018e301bec7bee/android/assets/html-zh-rTW/index.html" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 78a6dcc ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="2 additions &amp; 2 deletions">4 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="android/assets/html-zh-rTW/index.html">
+              android/assets/html-zh-rTW/index.html
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a5b704c4bee349c85729242000a4ff50"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/054a083e1f69c4b1a84e447f9b41b79bda4f2ac4?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=6&amp;next_line_num_right=6&amp;path=android%2Fassets%2Fhtml-zh-rTW%2Findex.html&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-5" data-right-range="1-5">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -6,7 +6,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>../style.css<span class="pl-pds">&quot;</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>stylesheet<span class="pl-pds">&quot;</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>text/css<span class="pl-pds">&quot;</span></span>/&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">head</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">body</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L9" data-line-number="9"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent">p</span>&gt;<span class="x x-first x-last">開放原始碼的條碼掃描函式庫</span> ZXing 的官方 Android app：&lt;<span class="pl-ent">br</span>/&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R9" data-line-number="9"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;<span class="pl-ent">p</span>&gt;<span class="x x-first x-last">開放原始碼條碼掃描函式庫</span> ZXing 的官方 Android app：&lt;<span class="pl-ent">br</span>/&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>http://github.com/zxing/zxing<span class="pl-pds">&quot;</span></span>&gt; http://github.com/zxing/zxing &lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L11" data-line-number="11"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R11" data-line-number="11"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span>&gt;條碼掃描器使用您的 Android 手機鏡頭掃描條碼，並查詢產品的價格和評論等相關訊息。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>imgcenter<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>../images/scan-example.png<span class="pl-pds">&quot;</span></span>/&gt;&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="9">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-a5b704c4bee349c85729242000a4ff50"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/054a083e1f69c4b1a84e447f9b41b79bda4f2ac4?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=17&amp;next_line_num_right=17&amp;path=android%2Fassets%2Fhtml-zh-rTW%2Findex.html&amp;prev_line_num_left=12&amp;prev_line_num_right=12&amp;right_hunk_size=7"
+            data-left-range="13-16" data-right-range="13-16">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -17,7 +17,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L17" data-line-number="17"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R17" data-line-number="17"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>about1d.html<span class="pl-pds">&quot;</span></span>&gt;關於一維條碼&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L18" data-line-number="18"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R18" data-line-number="18"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>about2d.html<span class="pl-pds">&quot;</span></span>&gt;關於二維條碼&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>sharing.html<span class="pl-pds">&quot;</span></span>&gt;如何建立 QR Code&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L20" data-line-number="20"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>license.html<span class="pl-pds">"</span></span>&gt;隱私政策、法律和授權條款&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;<span class="x x-first x-last">    </span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R20" data-line-number="20"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">li</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>license.html<span class="pl-pds">"</span></span>&gt;隱私政策、法律和授權條款&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R21" data-line-number="21"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">ul</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">body</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-a5b704c4bee349c85729242000a4ff50L23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-a5b704c4bee349c85729242000a4ff50R23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">html</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-5f169692bd5d78a43d69db5699ca9dbb"></a>
+      <div id="diff-3"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="android/assets/html-zh-rTW/license.html">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/medicalwei/zxing/blob/78a6dcc336fe1bbe02babe391d018e301bec7bee/android/assets/html-zh-rTW/license.html" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 78a6dcc ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="5 additions &amp; 4 deletions">9 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="android/assets/html-zh-rTW/license.html">
+              android/assets/html-zh-rTW/license.html
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-5f169692bd5d78a43d69db5699ca9dbb"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/4a831491b9e8547856f640ad52071741354699ef?diff=unified&amp;left_hunk_size=16&amp;mode=100644&amp;next_line_num_left=11&amp;next_line_num_right=11&amp;path=android%2Fassets%2Fhtml-zh-rTW%2Flicense.html&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=17"
+            data-left-range="1-10" data-right-range="1-10">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -11,16 +11,17 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL11" data-line-number="11"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR11" data-line-number="11"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span>&gt;&lt;<span class="pl-ent">strong</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>notranslate<span class="pl-pds">&quot;</span></span>&gt;Barcode Scanner&lt;/<span class="pl-ent">strong</span>&gt; 不收集，儲存或傳送使用者訊息或應用程式的使用情形。本應用程式會存取如聯絡人、書籤等個人資料，僅為提供應用程式功能，例如透過 QR code 分享聯絡人資訊以及書籤。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL13" data-line-number="13"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR13" data-line-number="13"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL14" data-line-number="14"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent">p</span>&gt;請注意，本應用程式在掃描後為取得額外的資訊，會存取第三方服務，例如 Google Books、Google Product Search 以及 Amazon。這些第三方服務會接收，並有可能儲存這些請求。此外，為了轉換成第三方服務可以使用的請求，例如簽署請求，<span class="x x-first x-last">本應用程式將會傳送請求到為本應用程式運作的伺服器</span>。除了查詢字外，沒有額外的資訊會加進請求中。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR14" data-line-number="14"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;<span class="pl-ent">p</span>&gt;請注意，本應用程式在掃描後為取得額外的資訊，會存取第三方服務，例如 Google Books、Google Product Search 以及 Amazon。這些第三方服務會接收，並有可能儲存這些請求。此外，為了轉換成第三方服務可以使用的請求，例如簽署請求，<span class="x x-first x-last">本應用程式可能需要傳送請求到為本應用程式運作的伺服器</span>。除了查詢字外，沒有額外的資訊會加進請求中。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR15" data-line-number="15"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL16" data-line-number="16"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent">p</span>&gt;並請注意，本應用程式會連結到第三方的網站以及應用程式。再次聲明，本應用程式除了查詢字外不會新增額外資訊到連結上。這些網站與應用程式與本程式獨立且無關，<span class="x x-first x-last">不包含在本隱私政策的範圍</span>。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR16" data-line-number="16"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;<span class="pl-ent">p</span>&gt;並請注意，本應用程式會連結到第三方的網站以及應用程式。再次聲明，本應用程式除了查詢字外不會新增額外資訊到連結上。這些網站與應用程式與本程式獨立且無關，<span class="x x-first x-last">不包含在本隱私政策的適用範圍</span>。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL17" data-line-number="17"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR17" data-line-number="17"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL18" data-line-number="18"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR18" data-line-number="18"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">h3</span>&gt;商標&lt;/<span class="pl-ent">h3</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL20" data-line-number="20"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR20" data-line-number="20"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>notranslate<span class="pl-pds">&quot;</span></span>&gt;Google, Google Books, Google Product Search,</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL21" data-line-number="21"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-Barcode Scanner, ZXing, QR Code, Data Matrix, Aztec&lt;/<span class="pl-ent">span</span>&gt; 均為各自擁有者的註冊商標。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR21" data-line-number="21"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+Barcode Scanner, ZXing, QR Code, Data Matrix, Aztec&lt;/<span class="pl-ent">span</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR22" data-line-number="22"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+均為各自擁有者的商標。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR23" data-line-number="23"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL23" data-line-number="23"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent">h3</span>&gt;<span class="x x-first x-last">許可和版權</span>&lt;/<span class="pl-ent">h3</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR24" data-line-number="24"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;<span class="pl-ent">h3</span>&gt;<span class="x x-first x-last">授權條款與版權聲明</span>&lt;/<span class="pl-ent">h3</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL24" data-line-number="24"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR25" data-line-number="25"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL25" data-line-number="25"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span>&gt;本計畫是基於 &lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>notranslate<span class="pl-pds">&quot;</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>http://github.com/zxing/zxing<span class="pl-pds">&quot;</span></span>&gt;ZXing&lt;/<span class="pl-ent">a</span>&gt; 開放原始碼條碼掃描函式庫，並以 &lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>notranslate<span class="pl-pds">&quot;</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>http://www.apache.org/licenses/LICENSE-2.0.html<span class="pl-pds">&quot;</span></span>&gt;Apache License 2.0&lt;/<span class="pl-ent">a</span>&gt; 授權條款提供：&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbL26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-5f169692bd5d78a43d69db5699ca9dbbR27" data-line-number="27"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-5f169692bd5d78a43d69db5699ca9dbb"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/zxing/zxing/blob_excerpt/4a831491b9e8547856f640ad52071741354699ef?diff=unified&amp;mode=100644&amp;path=android%2Fassets%2Fhtml-zh-rTW%2Flicense.html&amp;prev_line_num_left=26&amp;prev_line_num_right=27"
+          data-left-range="27-31"
+          data-right-range="28-31">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-ec019d66b212d2d4685d1a5089d14899"></a>
+      <div id="diff-4"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="android/assets/html-zh-rTW/sharing.html">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/medicalwei/zxing/blob/78a6dcc336fe1bbe02babe391d018e301bec7bee/android/assets/html-zh-rTW/sharing.html" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 78a6dcc ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="1 addition &amp; 1 deletion">2 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;&#xf053;&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="android/assets/html-zh-rTW/sharing.html">
+              android/assets/html-zh-rTW/sharing.html
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-ec019d66b212d2d4685d1a5089d14899"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/4a07317b2e7846bb2b2ca01af069453fe0a4b61d?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=6&amp;next_line_num_right=6&amp;path=android%2Fassets%2Fhtml-zh-rTW%2Fsharing.html&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-5" data-right-range="1-5">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -6,7 +6,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899L6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899R6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>../style.css<span class="pl-pds">&quot;</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>stylesheet<span class="pl-pds">&quot;</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>text/css<span class="pl-pds">&quot;</span></span>/&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899L7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899R7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">head</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899L8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899R8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">body</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899L9" data-line-number="9"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent">p</span>&gt;除了掃描二維條碼，條碼掃描器還可以產生 QR <span class="x x-first x-last">code</span> 並顯示在螢幕上，<span class="x x-first x-last">讓朋友使用他們的手機掃描您手機螢幕上的條碼</span>：&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899R9" data-line-number="9"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;<span class="pl-ent">p</span>&gt;除了掃描二維條碼，條碼掃描器還可以產生 QR <span class="x x-first x-last">Code</span> 並顯示在螢幕上，<span class="x x-first x-last">並讓別人掃描您手機螢幕上的條碼</span>：&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899L10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899R10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>imgcenter<span class="pl-pds">&quot;</span></span>&gt;&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>../images/scan-from-phone.png<span class="pl-pds">&quot;</span></span>/&gt;&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899L11" data-line-number="11"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899R11" data-line-number="11"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span>&gt;要使用此功能，請在掃描畫面按下選單按鈕，並點選「分享」，然後選擇分享聯絡人、書籤、應用程式或剪貼簿的內容，QR Code 將會自動產生。完成後，請按返回或首頁按鈕。&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899L12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ec019d66b212d2d4685d1a5089d14899R12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">p</span>&gt;要從您的電腦產生 QR Code，請試用 ZXing QR Code 產生器（英文）：&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>http://zxing.appspot.com/generator/<span class="pl-pds">&quot;</span></span>&gt; http://zxing.appspot.com/generator/ &lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-ec019d66b212d2d4685d1a5089d14899"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/zxing/zxing/blob_excerpt/4a07317b2e7846bb2b2ca01af069453fe0a4b61d?diff=unified&amp;mode=100644&amp;path=android%2Fassets%2Fhtml-zh-rTW%2Fsharing.html&amp;prev_line_num_left=12&amp;prev_line_num_right=12"
+          data-left-range="13-14"
+          data-right-range="13-14">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-b12de1ab5134173d419518bb5821e447"></a>
+      <div id="diff-5"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="android/assets/html-zh-rTW/whatsnew.html">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/medicalwei/zxing/blob/78a6dcc336fe1bbe02babe391d018e301bec7bee/android/assets/html-zh-rTW/whatsnew.html" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 78a6dcc ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="5 additions &amp; 7 deletions">12 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="android/assets/html-zh-rTW/whatsnew.html">
+              android/assets/html-zh-rTW/whatsnew.html
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-b12de1ab5134173d419518bb5821e447"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/7751f7d1d83ad8f3794a01e26cf99e3ec1892531?diff=unified&amp;left_hunk_size=15&amp;mode=100644&amp;next_line_num_left=2&amp;next_line_num_right=2&amp;path=android%2Fassets%2Fhtml-zh-rTW%2Fwhatsnew.html&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=13"
+            data-left-range="1-1" data-right-range="1-1">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -2,15 +2,13 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L2" data-line-number="2"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R2" data-line-number="2"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">html</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L3" data-line-number="3"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R3" data-line-number="3"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">head</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L4" data-line-number="4"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R4" data-line-number="4"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">meta</span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>UTF-8<span class="pl-pds">&quot;</span></span>/&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L5" data-line-number="5"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent">title</span>&gt;<span class="x x-first x-last"> 有什麼新的條碼掃描器 </span>&lt;/<span class="pl-ent">title</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R5" data-line-number="5"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;<span class="pl-ent">title</span>&gt;<span class="x x-first x-last">條碼掃描器更新資訊</span>&lt;/<span class="pl-ent">title</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R6" data-line-number="6"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>../style.css<span class="pl-pds">&quot;</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>stylesheet<span class="pl-pds">&quot;</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>text/css<span class="pl-pds">&quot;</span></span>/&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R7" data-line-number="7"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">head</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R8" data-line-number="8"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">body</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L9" data-line-number="9"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent">p</span>&gt;<span class="x x-first x-last"> 新的4</span>.6.<span class="x x-first x-last">0版本： </span>&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R9" data-line-number="9"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;<span class="pl-ent">p</span>&gt;<span class="x x-first x-last">版本 4</span>.6.<span class="x x-first x-last">2：</span>&lt;/<span class="pl-ent">p</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R10" data-line-number="10"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;<span class="pl-ent">ul</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L11" data-line-number="11"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">li</span>&gt; 可選地控制相機的曝光，場景模式和測光設置。 &lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L12" data-line-number="12"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">li</span>&gt; 可選掃描阿茲特克和PDF417條碼。 &lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L13" data-line-number="13"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">li</span>&gt; 小的修正和改進。 &lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R11" data-line-number="11"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">li</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L14" data-line-number="14"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R12" data-line-number="12"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">ul</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L15" data-line-number="15"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;<span class="pl-ent x x-first">p</span><span class="x">&gt;由谷歌自動翻譯系統。&lt;/</span><span class="pl-ent x">p</span><span class="x x-last">&gt;&lt;</span>/<span class="pl-ent">body</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-b12de1ab5134173d419518bb5821e447L16" data-line-number="16"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-&lt;/<span class="pl-ent">html</span>&gt;</span>
+
+      <span class="no-nl-marker tooltipped tooltipped-n" aria-label="No newline at end of file">
+        <span class="octicon octicon-no-newline"></span>
+      </span>
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R13" data-line-number="13"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;/<span class="pl-ent">body</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-b12de1ab5134173d419518bb5821e447R14" data-line-number="14"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+&lt;/<span class="pl-ent">html</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-8928bfd88fa6014eafc6787efe85c0c9"></a>
+      <div id="diff-6"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="android/res/values-zh-rTW/strings.xml">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/medicalwei/zxing/blob/78a6dcc336fe1bbe02babe391d018e301bec7bee/android/res/values-zh-rTW/strings.xml" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 78a6dcc ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="10 additions &amp; 10 deletions">20 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="android/res/values-zh-rTW/strings.xml">
+              android/res/values-zh-rTW/strings.xml
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-8928bfd88fa6014eafc6787efe85c0c9"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/25c339a48cbf824791b88eba106330708a0d7e1e?diff=unified&amp;left_hunk_size=18&amp;mode=100644&amp;next_line_num_left=18&amp;next_line_num_right=18&amp;path=android%2Fres%2Fvalues-zh-rTW%2Fstrings.xml&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=18"
+            data-left-range="1-17" data-right-range="1-17">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -18,18 +18,18 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L18" data-line-number="18"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R18" data-line-number="18"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>app_name<span class="pl-pds">&quot;</span></span>&gt;條碼掃描器&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R19" data-line-number="19"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>app_picker_name<span class="pl-pds">&quot;</span></span>&gt;應用程式&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L20" data-line-number="20"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R20" data-line-number="20"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>bookmark_picker_name<span class="pl-pds">&quot;</span></span>&gt;書籤&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L21" data-line-number="21"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>button_add_calendar<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">加入事件至行事曆</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R21" data-line-number="21"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>button_add_calendar<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">加入至行事曆</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R22" data-line-number="22"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_add_contact<span class="pl-pds">&quot;</span></span>&gt;加入聯絡人&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L23" data-line-number="23"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>button_book_search<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">開啟圖書搜尋</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R23" data-line-number="23"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>button_book_search<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">圖書搜尋</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L24" data-line-number="24"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R24" data-line-number="24"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_cancel<span class="pl-pds">&quot;</span></span>&gt;取消&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L25" data-line-number="25"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R25" data-line-number="25"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_custom_product_search<span class="pl-pds">&quot;</span></span>&gt;自定義搜尋&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_dial<span class="pl-pds">&quot;</span></span>&gt;撥號&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L27" data-line-number="27"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R27" data-line-number="27"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_email<span class="pl-pds">&quot;</span></span>&gt;發送電子郵件&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L28" data-line-number="28"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>button_get_directions<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">路線規劃</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R28" data-line-number="28"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>button_get_directions<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">規劃路線</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L29" data-line-number="29"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R29" data-line-number="29"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_mms<span class="pl-pds">&quot;</span></span>&gt;發送 MMS&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L30" data-line-number="30"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R30" data-line-number="30"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_ok<span class="pl-pds">&quot;</span></span>&gt;確定&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L31" data-line-number="31"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R31" data-line-number="31"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_open_browser<span class="pl-pds">&quot;</span></span>&gt;開啟瀏覽器&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L32" data-line-number="32"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>button_product_search<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">開啟產品搜尋</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R32" data-line-number="32"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>button_product_search<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">產品搜尋</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L33" data-line-number="33"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R33" data-line-number="33"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_search_book_contents<span class="pl-pds">&quot;</span></span>&gt;搜尋圖書內容&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L34" data-line-number="34"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R34" data-line-number="34"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_share_app<span class="pl-pds">&quot;</span></span>&gt;應用程式&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L35" data-line-number="35"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R35" data-line-number="35"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_share_bookmark<span class="pl-pds">&quot;</span></span>&gt;書籤&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="23">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-8928bfd88fa6014eafc6787efe85c0c9"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/25c339a48cbf824791b88eba106330708a0d7e1e?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=40&amp;next_line_num_right=40&amp;path=android%2Fres%2Fvalues-zh-rTW%2Fstrings.xml&amp;prev_line_num_left=35&amp;prev_line_num_right=35&amp;right_hunk_size=7"
+            data-left-range="36-39" data-right-range="36-39">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -40,7 +40,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L40" data-line-number="40"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R40" data-line-number="40"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_show_map<span class="pl-pds">&quot;</span></span>&gt;顯示地圖&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L41" data-line-number="41"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R41" data-line-number="41"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_sms<span class="pl-pds">&quot;</span></span>&gt;發送簡訊&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L42" data-line-number="42"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R42" data-line-number="42"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>button_web_search<span class="pl-pds">&quot;</span></span>&gt;網頁搜尋&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L43" data-line-number="43"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>button_wifi<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">連接到網路</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R43" data-line-number="43"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>button_wifi<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">連接網路</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L44" data-line-number="44"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R44" data-line-number="44"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>contents_contact<span class="pl-pds">&quot;</span></span>&gt;聯絡人資訊&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L45" data-line-number="45"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R45" data-line-number="45"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>contents_email<span class="pl-pds">&quot;</span></span>&gt;電子郵件地址&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L46" data-line-number="46"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R46" data-line-number="46"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>contents_location<span class="pl-pds">&quot;</span></span>&gt;地理座標&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="32">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-8928bfd88fa6014eafc6787efe85c0c9"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/25c339a48cbf824791b88eba106330708a0d7e1e?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=50&amp;next_line_num_right=50&amp;path=android%2Fres%2Fvalues-zh-rTW%2Fstrings.xml&amp;prev_line_num_left=46&amp;prev_line_num_right=46&amp;right_hunk_size=7"
+            data-left-range="47-49" data-right-range="47-49">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -50,7 +50,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L50" data-line-number="50"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R50" data-line-number="50"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>history_clear_one_history_text<span class="pl-pds">&quot;</span></span>&gt;清除記錄&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L51" data-line-number="51"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R51" data-line-number="51"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>history_clear_text<span class="pl-pds">&quot;</span></span>&gt;清除&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L52" data-line-number="52"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R52" data-line-number="52"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>history_email_title<span class="pl-pds">&quot;</span></span>&gt;條碼掃描器記錄&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L53" data-line-number="53"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>history_empty<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">空的</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R53" data-line-number="53"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>history_empty<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">沒有記錄</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L54" data-line-number="54"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R54" data-line-number="54"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>history_empty_detail<span class="pl-pds">&quot;</span></span>&gt;沒有條碼掃描記錄&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L55" data-line-number="55"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R55" data-line-number="55"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>history_send<span class="pl-pds">&quot;</span></span>&gt;發送記錄&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L56" data-line-number="56"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R56" data-line-number="56"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>history_title<span class="pl-pds">&quot;</span></span>&gt;記錄&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="41">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-8928bfd88fa6014eafc6787efe85c0c9"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/25c339a48cbf824791b88eba106330708a0d7e1e?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=95&amp;next_line_num_right=95&amp;path=android%2Fres%2Fvalues-zh-rTW%2Fstrings.xml&amp;prev_line_num_left=56&amp;prev_line_num_right=56&amp;right_hunk_size=7"
+            data-left-range="57-94" data-right-range="57-94">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -95,7 +95,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L95" data-line-number="95"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R95" data-line-number="95"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_decode_1D_product_title<span class="pl-pds">&quot;</span></span>&gt;一維產品條碼&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L96" data-line-number="96"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R96" data-line-number="96"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_decode_Aztec_title<span class="pl-pds">&quot;</span></span>&gt;Aztec 條碼&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L97" data-line-number="97"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R97" data-line-number="97"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_decode_Data_Matrix_title<span class="pl-pds">&quot;</span></span>&gt;Data Matrix 條碼&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L98" data-line-number="98"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>preferences_decode_PDF417_title<span class="pl-pds">"</span></span>&gt;PDF417 條碼&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R98" data-line-number="98"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>preferences_decode_PDF417_title<span class="pl-pds">"</span></span>&gt;PDF417 條碼<span class="x x-first x-last">（β）</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L99" data-line-number="99"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R99" data-line-number="99"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_decode_QR_title<span class="pl-pds">&quot;</span></span>&gt;QR Code&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L100" data-line-number="100"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R100" data-line-number="100"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_device_bug_workarounds_title<span class="pl-pds">&quot;</span></span>&gt;迴避設備問題&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L101" data-line-number="101"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R101" data-line-number="101"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_disable_barcode_scene_mode_title<span class="pl-pds">&quot;</span></span>&gt;取消條碼場景模式&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="50">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-8928bfd88fa6014eafc6787efe85c0c9"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/25c339a48cbf824791b88eba106330708a0d7e1e?diff=unified&amp;left_hunk_size=10&amp;mode=100644&amp;next_line_num_left=109&amp;next_line_num_right=109&amp;path=android%2Fres%2Fvalues-zh-rTW%2Fstrings.xml&amp;prev_line_num_left=101&amp;prev_line_num_right=101&amp;right_hunk_size=10"
+            data-left-range="102-108" data-right-range="102-108">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -109,10 +109,10 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L109" data-line-number="109"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R109" data-line-number="109"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_front_light_summary<span class="pl-pds">&quot;</span></span>&gt;改善在低光源的環境下掃描的成功率，但有可能造成過度曝光的現象&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L110" data-line-number="110"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R110" data-line-number="110"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_front_light_title<span class="pl-pds">&quot;</span></span>&gt;使用前光源&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L111" data-line-number="111"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R111" data-line-number="111"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_general_title<span class="pl-pds">&quot;</span></span>&gt;一般設定&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L112" data-line-number="112"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>preferences_invert_scan_summary<span class="pl-pds">"</span></span>&gt;掃描黑底白字的條碼<span class="x x-first x-last">，</span>某些設備上無法使用<span class="x x-first x-last">。</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R112" data-line-number="112"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>preferences_invert_scan_summary<span class="pl-pds">"</span></span>&gt;掃描黑底白字的條碼<span class="x x-first x-last">（</span>某些設備上無法使用<span class="x x-first x-last">）</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L113" data-line-number="113"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R113" data-line-number="113"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_invert_scan_title<span class="pl-pds">&quot;</span></span>&gt;黑底白字掃描&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L114" data-line-number="114"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R114" data-line-number="114"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_name<span class="pl-pds">&quot;</span></span>&gt;設定&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L115" data-line-number="115"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>preferences_play_beep_title<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">提示音</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R115" data-line-number="115"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>preferences_play_beep_title<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">嗶一聲</span>&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L116" data-line-number="116"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R116" data-line-number="116"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_remember_duplicates_summary<span class="pl-pds">&quot;</span></span>&gt;在記錄中重複儲存相同的條碼&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L117" data-line-number="117"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R117" data-line-number="117"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_remember_duplicates_title<span class="pl-pds">&quot;</span></span>&gt;記錄重複的條碼&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L118" data-line-number="118"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R118" data-line-number="118"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>preferences_result_title<span class="pl-pds">&quot;</span></span>&gt;結果設定&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="63">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-8928bfd88fa6014eafc6787efe85c0c9"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/25c339a48cbf824791b88eba106330708a0d7e1e?diff=unified&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=133&amp;next_line_num_right=133&amp;path=android%2Fres%2Fvalues-zh-rTW%2Fstrings.xml&amp;prev_line_num_left=118&amp;prev_line_num_right=118&amp;right_hunk_size=7"
+            data-left-range="119-132" data-right-range="119-132">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -133,7 +133,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L133" data-line-number="133"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R133" data-line-number="133"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>result_uri<span class="pl-pds">&quot;</span></span>&gt;找到 URL&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L134" data-line-number="134"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R134" data-line-number="134"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>result_wifi<span class="pl-pds">&quot;</span></span>&gt;找到無線區網設定&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L135" data-line-number="135"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R135" data-line-number="135"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>sbc_name<span class="pl-pds">&quot;</span></span>&gt;Google 圖書搜尋&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L136" data-line-number="136"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>wifi_changing_network<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">網絡連接請求中</span>\u2026&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R136" data-line-number="136"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>wifi_changing_network<span class="pl-pds">"</span></span>&gt;<span class="x x-first x-last">網路連接中</span>\u2026&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L137" data-line-number="137"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R137" data-line-number="137"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>wifi_ssid_label<span class="pl-pds">&quot;</span></span>&gt;網路名稱&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L138" data-line-number="138"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R138" data-line-number="138"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   &lt;<span class="pl-ent">string</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>wifi_type_label<span class="pl-pds">&quot;</span></span>&gt;類型&lt;/<span class="pl-ent">string</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9L139" data-line-number="139"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-8928bfd88fa6014eafc6787efe85c0c9R139" data-line-number="139"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> &lt;/<span class="pl-ent">resources</span>&gt;</span>
+
+  </td>
+</tr>
+
+
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+      </div>
+
+      
+
+    <div class="clearfix"></div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.30914s from github-fe128-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2ba3b257a78c3bd28dab11d07ddc8e6b1cf5280066968cc8501b99bf58f64a63.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-dd3051b3b36fed71a99e2c164f3e1eb38a8beaf40dc272fd2807febc8bd46a7f.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

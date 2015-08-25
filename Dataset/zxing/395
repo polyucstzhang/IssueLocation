@@ -1,0 +1,2629 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>Multibyte fix by strguntbr · Pull Request #395 · zxing/zxing · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Multibyte fix by strguntbr · Pull Request #395 · zxing/zxing" name="twitter:title" /><meta content="Unittest and possible fix for #394" name="twitter:description" /><meta content="https://avatars2.githubusercontent.com/u/4062126?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars2.githubusercontent.com/u/4062126?v=3&amp;s=400" property="og:image" /><meta content="Multibyte fix by strguntbr · Pull Request #395 · zxing/zxing" property="og:title" /><meta content="https://github.com/zxing/zxing/pull/395" property="og:url" /><meta content="Unittest and possible fix for #394" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_pulls" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:5D16:24F5C33:55DB5AAE" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, pull_requests#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="cMnrbQP7+8vshMBHPnmQO9Gjb1QUeMQ0XQ/yRqXTIQ6NiVEp+nr+V1XrkeuHIGYDGO2SSXAHO5xGvcIl9ftfLw==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="22e6cb7d309429ee0eaff86792eaf1c3">
+
+        <link data-pjax-transient rel='alternate' type='text/x-diff' href='/zxing/zxing/pull/395.diff'>
+  <link data-pjax-transient rel='alternate' type='text/x-patch' href='/zxing/zxing/pull/395.patch'>
+  <style type="text/css" media="screen">
+    span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #fff !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #fff !important;}.label-select-menu .labelstyle-009800.selected {  background:rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #fff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #fff !important;}.label-select-menu .labelstyle-e11d21.selected {  background:rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #282d33 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #282d33 !important;}.label-select-menu .labelstyle-c7def8.selected {  background:rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+  </style>
+
+  <meta name="diff-view" content="unified" data-pjax-transient>
+
+  <meta name="session-resume-id" content="/zxing/zxing/pull/395" data-pjax-transient>
+
+  <meta name="description" content="zxing - Official ZXing (&quot;Zebra Crossing&quot;) project home">
+  <meta name="go-import" content="github.com/zxing/zxing git https://github.com/zxing/zxing.git">
+
+  <meta content="1122572" name="octolytics-dimension-user_id" /><meta content="zxing" name="octolytics-dimension-user_login" /><meta content="2562751" name="octolytics-dimension-repository_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2562751" name="octolytics-dimension-repository_network_root_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/zxing/zxing/commits/849f81354c5f73abfde98a12804bdb909f6a9ba8.atom" rel="alternate" title="Recent Commits to zxing:849f81354c5f73abfde98a12804bdb909f6a9ba8" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fzxing%2Fzxing%2Fpull%2F395" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/zxing/zxing/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/zxing/zxing/watchers">
+    789
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/zxing/zxing/stargazers">
+      5,886
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/zxing/zxing/network" class="social-count">
+        3,739
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/zxing" class="url fn" itemprop="url" rel="author"><span itemprop="title">zxing</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/zxing/zxing" data-pjax="#js-repo-pjax-container">zxing</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/zxing/zxing/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/zxing/zxing" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /zxing/zxing">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/zxing/zxing/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /zxing/zxing/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/zxing/zxing/pulls" aria-label="Pull requests" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /zxing/zxing/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/zxing/zxing/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /zxing/zxing/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/zxing/zxing/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /zxing/zxing/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/zxing/zxing/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /zxing/zxing/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="aab55b47b30db62b8fef5c05c154b7037f799f76" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4tEf88KsXw11eEweo6AC2/3CNZocbhyIVVd6GJ/uxbucibBezz/7+vPxFzpv18GzcRUUVSD2YI/Vx1mWUgDG/A==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="aab55b47b30db62b8fef5c05c154b7037f799f76" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ZndN5LOpRmggdB2Fwl6roV/xxGMk5iD8Co2+LVOFEqWYGGZ+ShzO1R7wvrReaVOvISZAv2Xqll19U6xcGwTjOw==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/zxing/zxing/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of zxing/zxing as a zip file"
+                 title="Download the contents of zxing/zxing as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+
+<!-- base sha1: &quot;8bae23a923ece5e8cd63cca19a59c19a314a1209&quot; -->
+<!-- head sha1: &quot;849f81354c5f73abfde98a12804bdb909f6a9ba8&quot; -->
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+  <div class='view-pull-request clearfix js-issues-results'>
+
+  
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+    data-channel="zxing/zxing:pull_request:35836704"
+    data-url="/zxing/zxing/pull/395/show_partial?partial=pull_requests%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title">Multibyte fix</span>
+      <span class="gh-header-number">#395</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-merged">
+          <span class="octicon octicon-git-pull-request"></span>
+          Merged
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+          <a href="/srowen" class="author pull-header-username css-truncate css-truncate-target expandable">
+    srowen
+  </a>
+  merged 2 commits into
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">zxing</span>:<span class="css-truncate-target">master</span></span>
+
+from
+
+<span class="commit-ref current-branch css-truncate js-selectable-text expandable"><span class="css-truncate-target user">strguntbr</span>:<span class="css-truncate-target">multibyteFix</span></span>
+
+
+  <time datetime="2015-05-20T17:25:28Z" is="relative-time">May 20, 2015</time>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="tabnav tabnav-pr js-socket-channel js-pull-request-tabs"
+    data-channel="zxing/zxing:branch:multibyteFix"
+    data-url=/zxing/zxing/pull/395/show_partial?partial=pull_requests%2Ftabs>
+    <div class="tabnav-extra right">
+      <span class="diffstat" id="diffstat">
+        <span class="text-diff-added">
+          +18
+        </span>
+        <span class="text-diff-deleted">
+          −15
+        </span>
+        <span class="diffstat-bar tooltipped tooltipped-s" aria-label="33 lines changed">
+          <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+        </span>
+      </span>
+    </div>
+  <nav class="tabnav-tabs">
+    <a href="/zxing/zxing/pull/395" data-container-id="discussion_bucket" class="tabnav-tab selected js-pull-request-tab">
+      <span class="octicon octicon-comment-discussion"></span>
+      Conversation
+
+      <span id="conversation_tab_counter" class="counter">
+        1
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/395/commits" data-container-id="commits_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-git-commit"></span>
+      Commits
+
+      <span id="commits_tab_counter" class="counter">
+        2
+      </span>
+    </a>
+    <a href="/zxing/zxing/pull/395/files" data-container-id="files_bucket" class="tabnav-tab  js-pull-request-tab">
+      <span class="octicon octicon-diff"></span>
+      Files changed
+
+      <span id="files_tab_counter" class="counter">
+          2
+      </span>
+
+    </a>
+  </nav>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix pull-request-tab-content is-visible">
+      <div class="discussion-sidebar ">
+  <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:issue:78545210"
+     data-url="/zxing/zxing/issues/395/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/395?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="aab55b47b30db62b8fef5c05c154b7037f799f76" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="JFZdcWwOg6jr4V6VTIiSftNf0WX5IE1peobqIbliQozgWB3mPONbJQ/Iny3PLfkCPrhom98Usz7MgvyYU1TXIA==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+      <a href="/zxing/zxing/labels/bug" class="label css-truncate-target linked-labelstyle-e11d21" title="bug">bug</a>
+
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/395/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="aab55b47b30db62b8fef5c05c154b7037f799f76" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="npNafkpbr+hQiqMEOaXd5lYHiZEOAYDxXpjHbrNOXqLYAM3bOHLQwkX9XmvCAq3vOtZp3OnBdAF3QvLFHfCeOw==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      <span class="progress-bar"><span class="progress" style="width: 100.0%">&nbsp;</span></span>
+  <a title="3.2.1" href="/zxing/zxing/milestones/3.2.1" class="milestone-name css-truncate">
+    <span class="css-truncate-target">3.2.1</span>
+  </a>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/395?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="aab55b47b30db62b8fef5c05c154b7037f799f76" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="TLpUwTtKgnSyQDTronQy+F58+HAwc1G3R7+5jWLKmfSqG28ApnntgNyIm67jYZUiAnQAKnTol4PQvCs7SceF+A==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:issue:78545210"
+      data-url="/zxing/zxing/issues/395/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      2 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="strguntbr" href="/strguntbr"><img alt="@strguntbr" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/4062126?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="srowen" href="/srowen"><img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div class="discussion-timeline pull-discussion-timeline js-quote-selection-container">
+
+  <div class="js-discussion js-socket-channel" data-channel="zxing/zxing:marked-as-read:35836704">
+    
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/strguntbr"><img alt="@strguntbr" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/4062126?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-78545210"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="4a6d9526a13f429a72e1449cd9dbf126">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/strguntbr" class="author">strguntbr</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-78545210" class="timestamp">
+      <time datetime="2015-05-20T14:21:40Z" is="relative-time">May 20, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Unittest and possible fix for <a href="https://github.com/zxing/zxing/issues/394" class="issue-link" title="Multibyte characters are not handled properly in PDF417 encoder ">#394</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+<div class="discussion-item discussion-commits" id="commits-pushed-0600102">
+    <div class="discussion-item-header">
+      <span class="octicon octicon-repo-push discussion-item-icon"></span>
+      <a href="/strguntbr" class="author" rel="contributor" truncate="true">strguntbr</a>
+      added
+        some commits
+      <a href="#commits-pushed-0600102" class="timestamp">
+        <time datetime="2015-05-20T10:47:59Z" is="relative-time">May 20, 2015</time>
+      </a>
+    </div>
+  <div class="discussion-item-body">
+    <table class="timeline-commits">
+      
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:060010253c46d8c9d8c54a0aff854e11cdf59f1b"
+    data-url="/zxing/zxing/commit/060010253c46d8c9d8c54a0aff854e11cdf59f1b/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/strguntbr"><img alt="@strguntbr" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/4062126?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/strguntbr" class="author" rel="contributor">strguntbr</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/strguntbr/zxing/commit/060010253c46d8c9d8c54a0aff854e11cdf59f1b" class="message" data-pjax="true" title="Added unit test for multibyte problem">Added unit test for multibyte problem</a></code>
+
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/strguntbr/zxing/commit/060010253c46d8c9d8c54a0aff854e11cdf59f1b" class="commit-id">0600102</a></code>
+  </td>
+</tr>
+
+
+<tr class="commit js-details-container js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:commit:849f81354c5f73abfde98a12804bdb909f6a9ba8"
+    data-url="/zxing/zxing/commit/849f81354c5f73abfde98a12804bdb909f6a9ba8/show_partial?partial=commit%2Fcondensed"
+  >
+
+  <td class="commit-icon">
+      <span class="octicon octicon-git-commit"></span>
+  </td>
+
+    <td class="commit-gravatar">
+      <a href="/strguntbr"><img alt="@strguntbr" class="avatar avatar-small" height="16" src="https://avatars3.githubusercontent.com/u/4062126?v=3&amp;s=32" width="16" /></a>
+    </td>
+
+    <td class="commit-author">
+      <strong><a href="/strguntbr" class="author" rel="contributor">strguntbr</a></strong>
+    </td>
+
+  <td class="commit-message">
+      <code><a href="/strguntbr/zxing/commit/849f81354c5f73abfde98a12804bdb909f6a9ba8" class="message" data-pjax="true" title="Fixed multibyte charset problem when encoding PDF417 with Compaction AUTO">Fixed multibyte charset problem when encoding PDF417 with Compaction …</a></code>
+
+        <span class="hidden-text-expander inline">
+          <a href="#" class="js-details-target">&hellip;</a>
+        </span>
+        <div class="commit-desc"><pre>…AUTO</pre></div>
+
+  </td>
+
+  <td class="commit-meta">
+
+        
+
+
+      <code><a href="/strguntbr/zxing/commit/849f81354c5f73abfde98a12804bdb909f6a9ba8" class="commit-id">849f813</a></code>
+  </td>
+</tr>
+
+    </table>
+  </div>
+</div>
+
+  
+
+
+      
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-merged js-details-container">
+  <div class="discussion-item-header" id="event-309773140">
+
+
+    <span class="octicon octicon-git-merge discussion-item-icon"></span>
+    <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+    <a href="/srowen" class="author">srowen</a>
+    merged commit <a href="/zxing/zxing/commit/faee6728895669e64a9ef7b6b7b014d59f37429b"><code class="discussion-item-entity">faee672</code></a> into <span class="commit-ref js-selectable-text"><span class="css-truncate-target user">zxing</span>:<span class="css-truncate-target">master</span></span>  <a href="https://github.com/zxing/zxing/pull/395#event-309773140" class="timestamp"><time class="timestamp" datetime="2015-05-20T17:25:28Z" is="relative-time">May 20, 2015</time></a>
+
+  </div>
+
+
+</div>
+
+
+  <div class="closed-banner"></div>
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-milestoned">
+    <div class="discussion-item-header" id="event-309773558">
+
+      <span class="octicon octicon-milestone discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+      added this to the <a href="/zxing/zxing/milestones/3.3.0" class="discussion-item-entity">3.3.0</a> milestone <a href="https://github.com/zxing/zxing/pull/395#event-309773558" class="timestamp"><time class="timestamp" datetime="2015-05-20T17:26:00Z" is="relative-time">May 20, 2015</time></a>
+    </div>
+  </div>
+
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-labeled">
+    <div class="discussion-item-header" id="event-309773619">
+
+      <span class="octicon octicon-tag discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+      added the <span class="label-color" style="background-color: #e11d21;"><a href="/zxing/zxing/labels/bug" style="color: #fff">bug</a></span> label <a href="https://github.com/zxing/zxing/pull/395#event-309773619" class="timestamp"><time class="timestamp" datetime="2015-05-20T17:26:02Z" is="relative-time">May 20, 2015</time></a>
+    </div>
+  </div>
+
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/strguntbr"><img alt="@strguntbr" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/4062126?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-118053349"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="ce8783620a7761fac2c02fea002a4d04">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/strguntbr" class="author">strguntbr</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-118053349" class="timestamp">
+      <time datetime="2015-07-02T14:39:00Z" is="relative-time">Jul 2, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Unfortunately i seemed to introduce a new bug in this fix. I called String.substring(start, length) instead of String.substring(start, end). I'll fix it in the next days and create another pull request that hopefully does not contain any more bugs :)</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+      <div class="discussion-item discussion-item-ref">
+    <div class="discussion-item-header" id="ref-pullrequest-92664140">
+      <span class="octicon octicon-bookmark discussion-item-icon"></span>
+
+      <img alt="@strguntbr" class="avatar" height="16" src="https://avatars3.githubusercontent.com/u/4062126?v=3&amp;s=32" width="16" />
+      <a href="/strguntbr" class="author" truncate="true">strguntbr</a>
+
+      referenced
+      this pull request
+      <a class="timestamp" href="#ref-pullrequest-92664140">
+        <time datetime="2015-07-02T15:23:40Z" is="relative-time">Jul 2, 2015</time>
+      </a>
+    </div>
+
+      <span class="state state-merged right">
+          <span class="octicon octicon-git-pull-request"></span>
+        Merged
+      </span>
+
+
+
+    <h3 class="discussion-item-ref-title">
+      <a href="/zxing/zxing/issues/412" class="title-link">
+        Fixed substring call
+        <span class="issue-num">#412</span>
+</a>    </h3>
+    
+  </div>
+
+
+
+
+
+<!-- Rendered timeline since 2015-07-02 08:23:40 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:pull_request:35836704"
+      data-url="/zxing/zxing/pull/395/show_partial?partial=pull_requests%2Ftimeline_marker&amp;since=1435850620"
+      data-last-modified="Thu, 02 Jul 2015 15:23:40 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/notifications/mark?ids=75994425" class="hidden js-timeline-marker-form" data-form-nonce="aab55b47b30db62b8fef5c05c154b7037f799f76" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="dUXJjNpNdcm3oQZh+T0QwlAIuOKJiOT3FOpUfYDv0eiXv+C1+LnjS1wdcdSJ7e2hQKTJwySg5dXnEYKpeunofA==" /></div>
+</form></div>
+
+
+  </div>
+
+    <div class="discussion-timeline-actions">
+          <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fzxing%2Fzxing%2Fpull%2F395" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
+  
+
+
+    <div id="commits_bucket" class="tab-content pull-request-tab-content ">
+      
+        <div
+     class="js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:branch:multibyteFix"
+     data-url="/zxing/zxing/pull/395/show_partial?partial=pull_requests%2Fcommits"
+  >
+
+  
+
+
+
+
+    <div class="commits-listing commits-listing-padded js-navigation-container js-active-navigation-container" data-navigation-scroll="page">
+      
+<div class="commit-group-title">
+  <span class="octicon octicon-git-commit"></span>Commits on May 20, 2015
+</div>
+
+<ol class="commit-group table-list table-list-bordered">
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:commit:060010253c46d8c9d8c54a0aff854e11cdf59f1b"
+      data-url="/zxing/zxing/commit/060010253c46d8c9d8c54a0aff854e11cdf59f1b/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/strguntbr" data-skip-pjax="true" rel="contributor"><img alt="@strguntbr" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/4062126?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/strguntbr/zxing/commit/060010253c46d8c9d8c54a0aff854e11cdf59f1b" class="message" data-pjax="true" title="Added unit test for multibyte problem">Added unit test for multibyte problem</a>
+
+    
+    </p>
+
+    <div class="commit-meta">
+        <a href="/strguntbr" class="commit-author" rel="contributor">strguntbr</a>
+ authored <time datetime="2015-05-20T10:47:59Z" is="relative-time">May 20, 2015</time>
+
+
+    </div>
+
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="060010253c46d8c9d8c54a0aff854e11cdf59f1b" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/strguntbr/zxing/commit/060010253c46d8c9d8c54a0aff854e11cdf59f1b" class="sha btn btn-outline">
+        0600102
+      </a>
+    </div>
+    <a href="/zxing/zxing/tree/060010253c46d8c9d8c54a0aff854e11cdf59f1b" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+    
+<li class="commit commits-list-item table-list-item js-navigation-item js-details-container js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:commit:849f81354c5f73abfde98a12804bdb909f6a9ba8"
+      data-url="/zxing/zxing/commit/849f81354c5f73abfde98a12804bdb909f6a9ba8/show_partial?partial=commits%2Fcommits_list_item"
+    >
+
+  <div class="table-list-cell commit-avatar-cell">
+    <div class="avatar-parent-child">
+    <a href="/strguntbr" data-skip-pjax="true" rel="contributor"><img alt="@strguntbr" class="avatar" height="36" src="https://avatars3.githubusercontent.com/u/4062126?v=3&amp;s=72" width="36" /></a>
+    </div>
+  </div>
+  <div class="table-list-cell">
+    <p class="commit-title ">
+        <a href="/strguntbr/zxing/commit/849f81354c5f73abfde98a12804bdb909f6a9ba8" class="message" data-pjax="true" title="Fixed multibyte charset problem when encoding PDF417 with Compaction AUTO">Fixed multibyte charset problem when encoding PDF417 with Compaction …</a>
+
+    <span class="hidden-text-expander inline"><a href="#" class="js-details-target">…</a></span>
+    </p>
+
+    <div class="commit-meta">
+        <a href="/strguntbr" class="commit-author" rel="contributor">strguntbr</a>
+ authored <time datetime="2015-05-19T21:45:50Z" is="relative-time">May 19, 2015</time>
+
+        <span class="committer">
+          <span class="octicon octicon-arrow-right"></span> <a href="/strguntbr" class="commit-author" rel="contributor">strguntbr</a>
+          committed <time datetime="2015-05-20T11:01:26Z" is="relative-time">May 20, 2015</time>
+        </span>
+
+    </div>
+
+      <div class="commit-desc"><pre>…AUTO</pre></div>
+  </div>
+  <div class="commit-links-cell table-list-cell">
+    <div class="commit-links-group btn-group">
+      <button aria-label="Copy the full SHA" class="js-zeroclipboard btn btn-outline zeroclipboard-button tooltipped tooltipped-s" data-clipboard-text="849f81354c5f73abfde98a12804bdb909f6a9ba8" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+      <a href="/strguntbr/zxing/commit/849f81354c5f73abfde98a12804bdb909f6a9ba8" class="sha btn btn-outline">
+        849f813
+      </a>
+    </div>
+    <a href="/zxing/zxing/tree/849f81354c5f73abfde98a12804bdb909f6a9ba8" aria-label="Browse the repository at this point in the history" class="btn btn-outline tooltipped tooltipped-s" rel="nofollow"><span class="octicon octicon-code"></span></a>
+  </div>
+
+</li>
+
+</ol>
+
+    </div>
+</div>
+
+    </div>
+
+
+  
+
+
+    <div id="files_bucket" class="files-bucket tab-content pull-request-tab-content ">
+
+      <div class="flash flash-warn stale-files-tab js-pull-request-stale-files js-socket-channel"
+   data-channel="zxing/zxing:pull_request:35836704:diff"
+   data-url="https://github.com/zxing/zxing/pull/395/live_update">
+    This page is out of date. <a href="https://github.com/zxing/zxing/pull/395/files">Refresh</a> to see the latest.
+</div>
+
+
+      
+
+
+
+
+      <div id='diff' class="uncommentable">
+        <div id="toc" class="details-collapse table-of-contents js-details-container">
+  <div class="btn-group right" data-ga-load="Diff, view, Viewed Unified Diff">
+  <a class="btn btn-sm selected" href="https://github.com/zxing/zxing/pull/395/files?diff=unified">
+    Unified
+  </a>
+  <a class="btn btn-sm" href="https://github.com/zxing/zxing/pull/395/files?diff=split">
+    Split
+  </a>
+</div>
+
+
+  <div class="toc-diff-stats">
+    <span class="octicon octicon-diff"></span>
+    Showing
+    <button type="button" class="btn-link js-details-target">
+      2 changed files
+    </button>
+    with
+    <strong>18 additions</strong>
+    and <strong>15 deletions</strong>.
+  </div>
+
+  <ol class="content collapse js-transitionable">
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +11
+          </span>
+          <span class="text-diff-deleted">
+            −15
+          </span>
+          <a href="#diff-1452460d872ef6f13e0bc1946da37f8a" class="tooltipped tooltipped-s" aria-label="26 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-1452460d872ef6f13e0bc1946da37f8a">core/src/main/java/com/google/zxing/pdf417/encoder/PDF417HighLevelEncoder.java</a>
+    </li>
+    <li>
+      <span class="diffstat right">
+          <span class="text-diff-added">
+            +7
+          </span>
+          <span class="text-diff-deleted">
+            −0
+          </span>
+          <a href="#diff-c394c4332f3e7763f2cddd4e48c4d058" class="tooltipped tooltipped-s" aria-label="7 lines changed">
+            <span class="diffstat-bar">
+              <span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span>
+            </span>
+          </a>
+      </span>
+      <span class="octicon octicon-diff-modified" title="modified"></span>
+      <a href="#diff-c394c4332f3e7763f2cddd4e48c4d058">core/src/test/java/com/google/zxing/pdf417/encoder/PDF417EncoderTestCase.java</a>
+    </li>
+  </ol>
+</div>
+
+        <div id="files" class="diff-view ">
+    
+      <a name="diff-1452460d872ef6f13e0bc1946da37f8a"></a>
+      <div id="diff-0"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="core/src/main/java/com/google/zxing/pdf417/encoder/PDF417HighLevelEncoder.java">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/strguntbr/zxing/blob/849f81354c5f73abfde98a12804bdb909f6a9ba8/core/src/main/java/com/google/zxing/pdf417/encoder/PDF417HighLevelEncoder.java" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 849f813 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="11 additions &amp; 15 deletions">26 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span><span class="text-diff-deleted">&#xf053;</span>&#xf053;</span></span>
+
+            <span class="js-selectable-text" title="core/src/main/java/com/google/zxing/pdf417/encoder/PDF417HighLevelEncoder.java">
+              core/src/main/java/com/google/zxing/pdf417/encoder/PDF417HighLevelEncoder.java
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-1452460d872ef6f13e0bc1946da37f8a"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/f0c8b8910d5caca87b92d1835cf7f12fb5f4b772?diff=unified&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=25&amp;next_line_num_right=25&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fpdf417%2Fencoder%2FPDF417HighLevelEncoder.java&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7"
+            data-left-range="1-24" data-right-range="1-24">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -25,6 +25,7 @@</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL25" data-line-number="25"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR25" data-line-number="25"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR26" data-line-number="26"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">import</span> <span class="pl-smi">java.math.BigInteger</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL27" data-line-number="27"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR27" data-line-number="27"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">import</span> <span class="pl-smi">java.nio.charset.Charset</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR28" data-line-number="28"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-k">import</span> <span class="pl-smi">java.nio.charset.CharsetEncoder</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL28" data-line-number="28"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR29" data-line-number="29"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-k">import</span> <span class="pl-smi">java.util.Arrays</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL29" data-line-number="29"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR30" data-line-number="30"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL30" data-line-number="30"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR31" data-line-number="31"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">/**</span></span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="8">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-1452460d872ef6f13e0bc1946da37f8a"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/f0c8b8910d5caca87b92d1835cf7f12fb5f4b772?diff=unified&amp;left_hunk_size=12&amp;mode=100644&amp;next_line_num_left=178&amp;next_line_num_right=179&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fpdf417%2Fencoder%2FPDF417HighLevelEncoder.java&amp;prev_line_num_left=30&amp;prev_line_num_right=31&amp;right_hunk_size=11"
+            data-left-range="31-177" data-right-range="32-178">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -178,12 +179,11 @@ static String encodeHighLevel(String msg, Compaction compaction, Charset encodin</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL178" data-line-number="178"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR179" data-line-number="179"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">int</span> textSubMode <span class="pl-k">=</span> <span class="pl-c1">SUBMODE_ALPHA</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL179" data-line-number="179"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR180" data-line-number="180"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL180" data-line-number="180"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR181" data-line-number="181"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-c">// User selected encoding mode</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL181" data-line-number="181"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-    <span class="pl-k">byte</span>[] bytes <span class="pl-k">=</span> <span class="pl-c1">null</span>; <span class="pl-c">//Fill later and only if needed</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL182" data-line-number="182"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR182" data-line-number="182"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">if</span> (compaction <span class="pl-k">==</span> <span class="pl-smi">Compaction</span><span class="pl-c1"><span class="pl-k">.</span>TEXT</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL183" data-line-number="183"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR183" data-line-number="183"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       encodeText(msg, p, len, sb, textSubMode);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL184" data-line-number="184"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR184" data-line-number="184"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL185" data-line-number="185"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR185" data-line-number="185"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     } <span class="pl-k">else</span> <span class="pl-k">if</span> (compaction <span class="pl-k">==</span> <span class="pl-smi">Compaction</span><span class="pl-c1"><span class="pl-k">.</span>BYTE</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL186" data-line-number="186"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      bytes <span class="pl-k">=</span> msg<span class="pl-k">.</span>getBytes(encoding);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR186" data-line-number="186"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-k x x-first">byte</span><span class="x x-last">[] </span>bytes <span class="pl-k">=</span> msg<span class="pl-k">.</span>getBytes(encoding);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL187" data-line-number="187"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR187" data-line-number="187"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       encodeBinary(bytes, p, bytes<span class="pl-k">.</span>length, <span class="pl-c1">BYTE_COMPACTION</span>, sb);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL188" data-line-number="188"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR188" data-line-number="188"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL189" data-line-number="189"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR189" data-line-number="189"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     } <span class="pl-k">else</span> <span class="pl-k">if</span> (compaction <span class="pl-k">==</span> <span class="pl-smi">Compaction</span><span class="pl-c1"><span class="pl-k">.</span>NUMERIC</span>) {</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="22">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-1452460d872ef6f13e0bc1946da37f8a"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/f0c8b8910d5caca87b92d1835cf7f12fb5f4b772?diff=unified&amp;left_hunk_size=19&amp;mode=100644&amp;next_line_num_left=211&amp;next_line_num_right=211&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fpdf417%2Fencoder%2FPDF417HighLevelEncoder.java&amp;prev_line_num_left=189&amp;prev_line_num_right=189&amp;right_hunk_size=17"
+            data-left-range="190-210" data-right-range="190-210">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -211,19 +211,17 @@ static String encodeHighLevel(String msg, Compaction compaction, Charset encodin</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL211" data-line-number="211"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR211" data-line-number="211"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">             textSubMode <span class="pl-k">=</span> encodeText(msg, p, t, sb, textSubMode);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL212" data-line-number="212"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR212" data-line-number="212"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">             p <span class="pl-k">+=</span> t;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL213" data-line-number="213"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR213" data-line-number="213"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">           } <span class="pl-k">else</span> {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL214" data-line-number="214"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-            <span class="pl-k">if</span> (bytes <span class="pl-k">==</span> <span class="pl-c1">null</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL215" data-line-number="215"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-              bytes <span class="pl-k">=</span> msg<span class="pl-k">.</span>getBytes(encoding);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL216" data-line-number="216"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-            }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL217" data-line-number="217"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-            <span class="pl-k">int</span> b <span class="pl-k">=</span> determineConsecutiveBinaryCount(msg, bytes, p);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR214" data-line-number="214"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+            <span class="pl-k">int</span> b <span class="pl-k">=</span> determineConsecutiveBinaryCount(msg, p, encoding);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL218" data-line-number="218"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR215" data-line-number="215"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">             <span class="pl-k">if</span> (b <span class="pl-k">==</span> <span class="pl-c1">0</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL219" data-line-number="219"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR216" data-line-number="216"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">               b <span class="pl-k">=</span> <span class="pl-c1">1</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL220" data-line-number="220"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR217" data-line-number="217"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">             }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL221" data-line-number="221"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-            <span class="pl-k">if</span> (b <span class="pl-k">==</span> <span class="pl-c1">1</span> <span class="pl-k">&amp;&amp;</span> encodingMode <span class="pl-k">==</span> <span class="pl-c1">TEXT_COMPACTION</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR218" data-line-number="218"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+            <span class="pl-k">byte</span>[] bytes <span class="pl-k">=</span> msg<span class="pl-k">.</span>substring(p, b)<span class="pl-k">.</span>getBytes(encoding);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR219" data-line-number="219"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+            <span class="pl-k">if</span> (bytes<span class="pl-k">.</span>length <span class="pl-k">==</span> <span class="pl-c1">1</span> <span class="pl-k">&amp;&amp;</span> encodingMode <span class="pl-k">==</span> <span class="pl-c1">TEXT_COMPACTION</span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL222" data-line-number="222"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR220" data-line-number="220"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">               <span class="pl-c">//Switch for one byte (instead of latch)</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL223" data-line-number="223"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-              encodeBinary(bytes, <span class="x x-first x-last">p</span>, <span class="pl-c1">1</span>, <span class="pl-c1">TEXT_COMPACTION</span>, sb);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR221" data-line-number="221"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+              encodeBinary(bytes, <span class="pl-c1 x x-first x-last">0</span>, <span class="pl-c1">1</span>, <span class="pl-c1">TEXT_COMPACTION</span>, sb);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL224" data-line-number="224"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR222" data-line-number="222"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">             } <span class="pl-k">else</span> {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL225" data-line-number="225"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR223" data-line-number="223"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">               <span class="pl-c">//Mode latch performed by encodeBinary()</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL226" data-line-number="226"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-              encodeBinary(bytes, <span class="x x-first x-last">p, b</span>, encodingMode, sb);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR224" data-line-number="224"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+              encodeBinary(bytes, <span class="pl-c1 x x-first">0</span><span class="x">, bytes</span><span class="pl-k x">.</span><span class="x x-last">length</span>, encodingMode, sb);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL227" data-line-number="227"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR225" data-line-number="225"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">               encodingMode <span class="pl-k">=</span> <span class="pl-c1">BYTE_COMPACTION</span>;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL228" data-line-number="228"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR226" data-line-number="226"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">               textSubMode <span class="pl-k">=</span> <span class="pl-c1">SUBMODE_ALPHA</span>; <span class="pl-c">//Reset after latch</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL229" data-line-number="229"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR227" data-line-number="227"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">             }</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="47">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-1452460d872ef6f13e0bc1946da37f8a"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/f0c8b8910d5caca87b92d1835cf7f12fb5f4b772?diff=unified&amp;left_hunk_size=12&amp;mode=100644&amp;next_line_num_left=530&amp;next_line_num_right=528&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fpdf417%2Fencoder%2FPDF417HighLevelEncoder.java&amp;prev_line_num_left=229&amp;prev_line_num_right=227&amp;right_hunk_size=13"
+            data-left-range="230-529" data-right-range="228-527">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -530,12 +528,13 @@ private static int determineConsecutiveTextCount(CharSequence msg, int startpos)</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL530" data-line-number="530"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR528" data-line-number="528"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">   * Determines the number of consecutive characters that are encodable using binary compaction.</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL531" data-line-number="531"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR529" data-line-number="529"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">   *</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL532" data-line-number="532"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR530" data-line-number="530"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">   * @param msg      the message</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL533" data-line-number="533"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-c">   * @param bytes    the message converted to a byte array</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL534" data-line-number="534"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR531" data-line-number="531"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">   * @param startpos the start position within the message</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR532" data-line-number="532"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-c">   * @param encoding the charset used to convert the message to a byte array</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL535" data-line-number="535"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR533" data-line-number="533"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">   * @return the requested character count</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL536" data-line-number="536"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR534" data-line-number="534"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">   */</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL537" data-line-number="537"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-  <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">int</span> <span class="pl-en">determineConsecutiveBinaryCount</span>(<span class="pl-smi x x-first x-last">CharSequence</span> <span class="pl-v">msg</span>, <span class="pl-k x x-first">byte</span><span class="x">[] </span><span class="pl-v x">bytes</span><span class="x">, </span><span class="pl-k x">int</span><span class="x"> </span><span class="pl-v x x-last">startpos</span>)</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR535" data-line-number="535"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-k">private</span> <span class="pl-k">static</span> <span class="pl-k">int</span> <span class="pl-en">determineConsecutiveBinaryCount</span>(<span class="pl-smi x x-first x-last">String</span> <span class="pl-v">msg</span>, <span class="pl-k x x-first">int</span><span class="x"> </span><span class="pl-v x">startpos</span><span class="x">, </span><span class="pl-smi x">Charset</span><span class="x"> </span><span class="pl-v x x-last">encoding</span>)</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL538" data-line-number="538"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR536" data-line-number="536"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       <span class="pl-k">throws</span> <span class="pl-smi">WriterException</span> {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR537" data-line-number="537"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-k">final</span> <span class="pl-smi">CharsetEncoder</span> encoder <span class="pl-k">=</span> encoding<span class="pl-k">.</span>newEncoder();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL539" data-line-number="539"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR538" data-line-number="538"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">int</span> len <span class="pl-k">=</span> msg<span class="pl-k">.</span>length();</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL540" data-line-number="540"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR539" data-line-number="539"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">int</span> idx <span class="pl-k">=</span> startpos;</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL541" data-line-number="541"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR540" data-line-number="540"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-k">while</span> (idx <span class="pl-k">&lt;</span> len) {</span>
+
+  </td>
+</tr>
+
+
+      <tr class="js-expandable-line" data-position="63">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-1452460d872ef6f13e0bc1946da37f8a"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/f0c8b8910d5caca87b92d1835cf7f12fb5f4b772?diff=unified&amp;left_hunk_size=10&amp;mode=100644&amp;next_line_num_left=556&amp;next_line_num_right=555&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fpdf417%2Fencoder%2FPDF417HighLevelEncoder.java&amp;prev_line_num_left=541&amp;prev_line_num_right=540&amp;right_hunk_size=7"
+            data-left-range="542-555" data-right-range="541-554">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -556,10 +555,7 @@ private static int determineConsecutiveBinaryCount(CharSequence msg, byte[] byte</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL556" data-line-number="556"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR555" data-line-number="555"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL557" data-line-number="557"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR556" data-line-number="556"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       ch <span class="pl-k">=</span> msg<span class="pl-k">.</span>charAt(idx);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL558" data-line-number="558"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR557" data-line-number="557"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL559" data-line-number="559"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      <span class="pl-c">//Check if character is encodable</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL560" data-line-number="560"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      <span class="pl-c">//Sun returns a ASCII 63 (?) for a character that cannot be mapped. Let&#39;s hope all</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL561" data-line-number="561"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      <span class="pl-c">//other VMs do the same</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL562" data-line-number="562"
+        class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-      <span class="pl-k">if</span> (bytes[idx] <span class="pl-k">==</span> <span class="pl-c1">63</span> <span class="pl-k">&amp;&amp;</span> ch <span class="pl-k">!=</span> <span class="pl-s"><span class="pl-pds">&#39;</span>?<span class="pl-pds">&#39;</span></span>) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR558" data-line-number="558"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+      <span class="pl-k">if</span> (<span class="pl-k">!</span>encoder<span class="pl-k">.</span>canEncode(ch)) {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL563" data-line-number="563"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR559" data-line-number="559"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">WriterException</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>Non-encodable character detected: <span class="pl-pds">&quot;</span></span> <span class="pl-k">+</span> ch <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span> (Unicode: <span class="pl-pds">&quot;</span></span> <span class="pl-k">+</span> (<span class="pl-k">int</span>) ch <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&#39;</span>)<span class="pl-pds">&#39;</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL564" data-line-number="564"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR560" data-line-number="560"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aL565" data-line-number="565"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-1452460d872ef6f13e0bc1946da37f8aR561" data-line-number="561"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">       idx<span class="pl-k">++</span>;</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-1452460d872ef6f13e0bc1946da37f8a"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/zxing/zxing/blob_excerpt/f0c8b8910d5caca87b92d1835cf7f12fb5f4b772?diff=unified&amp;mode=100644&amp;path=core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fpdf417%2Fencoder%2FPDF417HighLevelEncoder.java&amp;prev_line_num_left=565&amp;prev_line_num_right=561"
+          data-left-range="566-582"
+          data-right-range="562-582">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+
+      <a name="diff-c394c4332f3e7763f2cddd4e48c4d058"></a>
+      <div id="diff-1"
+           class="file js-details-container
+                   
+                   
+                   
+                   
+                   show-inline-notes
+                 ">
+        <div class="file-header" data-path="core/src/test/java/com/google/zxing/pdf417/encoder/PDF417EncoderTestCase.java">
+          <div class="file-actions">
+              <span class="show-file-notes">
+                <label>
+                  <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+                  Show notes
+                </label>
+              </span>
+
+                <a href="/strguntbr/zxing/blob/849f81354c5f73abfde98a12804bdb909f6a9ba8/core/src/test/java/com/google/zxing/pdf417/encoder/PDF417EncoderTestCase.java" class="btn btn-sm tooltipped tooltipped-n" rel="nofollow" aria-label="View the whole file at version 849f813 ">View</a>
+
+
+          </div>
+          <div class="file-info">
+              <span class="diffstat tooltipped tooltipped-e" aria-label="7 additions &amp; 0 deletions">7 <span class="diffstat-bar"><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span><span class="text-diff-added">&#xf053;</span></span></span>
+
+            <span class="js-selectable-text" title="core/src/test/java/com/google/zxing/pdf417/encoder/PDF417EncoderTestCase.java">
+              core/src/test/java/com/google/zxing/pdf417/encoder/PDF417EncoderTestCase.java
+            </span>
+            
+          </div>
+        </div>
+
+            <div class="data highlight blob-wrapper">
+              <table class="diff-table tab-size  " data-tab-size="8">
+                
+      <tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-c394c4332f3e7763f2cddd4e48c4d058"
+            class="diff-expander js-expand" title="Expand" aria-label="Expand"
+            data-url="/zxing/zxing/blob_excerpt/9948ae6113c9572422737495660c01a9e2754f35?diff=unified&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=31&amp;next_line_num_right=31&amp;path=core%2Fsrc%2Ftest%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fpdf417%2Fencoder%2FPDF417EncoderTestCase.java&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=13"
+            data-left-range="1-30" data-right-range="1-30">
+        <span class="octicon octicon-unfold"></span>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -31,6 +31,13 @@ public void testEncodeAuto() throws Exception {</td>
+  </tr>
+
+    
+
+<tr>
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058L31" data-line-number="31"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R31" data-line-number="31"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058L32" data-line-number="32"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R32" data-line-number="32"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058L33" data-line-number="33"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R33" data-line-number="33"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">@Test</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R34" data-line-number="34"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">testEncodeAutoWithSpecialChars</span>() <span class="pl-k">throws</span> <span class="pl-smi">Exception</span> {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R35" data-line-number="35"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+	<span class="pl-c">//Just check if this does not throw an exception</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R36" data-line-number="36"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+    <span class="pl-smi">PDF417HighLevelEncoder</span><span class="pl-k">.</span>encodeHighLevel(</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R37" data-line-number="37"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+        <span class="pl-s"><span class="pl-pds">&quot;</span>1%§s ?aG$<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">Compaction</span><span class="pl-c1"><span class="pl-k">.</span>AUTO</span>, <span class="pl-smi">StandardCharsets</span><span class="pl-c1"><span class="pl-k">.</span>UTF_8</span>);</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R38" data-line-number="38"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  }</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R39" data-line-number="39"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R40" data-line-number="40"
+        class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  <span class="pl-k">@Test</span></span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058L34" data-line-number="34"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R41" data-line-number="41"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">   <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">testEncodeText</span>() <span class="pl-k">throws</span> <span class="pl-smi">Exception</span> {</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058L35" data-line-number="35"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R42" data-line-number="42"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">     <span class="pl-smi">String</span> encoded <span class="pl-k">=</span> <span class="pl-smi">PDF417HighLevelEncoder</span><span class="pl-k">.</span>encodeHighLevel(</span>
+
+  </td>
+</tr>
+
+
+    
+
+<tr>
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058L36" data-line-number="36"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-c394c4332f3e7763f2cddd4e48c4d058R43" data-line-number="43"
+        class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner">         <span class="pl-s"><span class="pl-pds">&quot;</span>ABCD<span class="pl-pds">&quot;</span></span>, <span class="pl-smi">Compaction</span><span class="pl-c1"><span class="pl-k">.</span>TEXT</span>, <span class="pl-smi">StandardCharsets</span><span class="pl-c1"><span class="pl-k">.</span>UTF_8</span>);</span>
+
+  </td>
+</tr>
+
+
+  <tr class="js-expandable-line">
+   <td class="blob-num blob-num-expandable" colspan="2">
+     <a href="#diff-c394c4332f3e7763f2cddd4e48c4d058"
+          class="diff-expander js-expand" title="Expand" aria-label="Expand"
+          data-url="/zxing/zxing/blob_excerpt/9948ae6113c9572422737495660c01a9e2754f35?diff=unified&amp;mode=100644&amp;path=core%2Fsrc%2Ftest%2Fjava%2Fcom%2Fgoogle%2Fzxing%2Fpdf417%2Fencoder%2FPDF417EncoderTestCase.java&amp;prev_line_num_left=36&amp;prev_line_num_right=43"
+          data-left-range="37-61"
+          data-right-range="44-61">
+       <span class="octicon octicon-unfold"></span>
+     </a>
+   </td>
+   <td class="blob-code blob-code-expandable"></td>
+  </tr>
+
+              </table>
+            </div>
+      </div>
+</div>
+
+<button class="js-toggle-all-file-notes" data-hotkey="i" style="display:none">Toggle all file notes</button>
+
+      </div>
+
+      
+
+    <div class="clearfix"></div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.19693s from github-fe140-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2ba3b257a78c3bd28dab11d07ddc8e6b1cf5280066968cc8501b99bf58f64a63.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-dd3051b3b36fed71a99e2c164f3e1eb38a8beaf40dc272fd2807febc8bd46a7f.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+

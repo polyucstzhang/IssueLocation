@@ -1,0 +1,932 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title> &quot;Structured Append&quot; in QR · Issue #233 · zxing/zxing · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content=" &quot;Structured Append&quot; in QR · Issue #233 · zxing/zxing" name="twitter:title" /><meta content="Just noticed that QR has support for splitting a text (and hopefully binary file as well) into multiple QR codes that can be scanned sequentially to reconstruct the file.
+
+This might be useful. How..." name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/827793?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/827793?v=3&amp;s=400" property="og:image" /><meta content=" &quot;Structured Append&quot; in QR · Issue #233 · zxing/zxing" property="og:title" /><meta content="https://github.com/zxing/zxing/issues/233" property="og:url" /><meta content="Just noticed that QR has support for splitting a text (and hopefully binary file as well) into multiple QR codes that can be scanned sequentially to reconstruct the file.
+
+This might be useful. How..." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_issues" data-pjax-transient>
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="9E84FF69:1688:1F93596:55DB597F" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, issues#show" data-pjax-transient="true" name="analytics-event" />
+    <meta class="js-ga-set" name="dimension1" content="Logged Out">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param" />
+<meta content="Pwov/655AbEMbT6NCfXDNPDfB5cjvY9SmWAtCh2nKNeAf4k1qBh6OziMPYjuA8RfhFf/T8pnYMLXv89n54wQsQ==" name="csrf-token" />
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-17ad0ea72cb80a46ba6d1bd6e3c69789acb0e1c0cae43beb90477759cce1bdfd.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-9f11074052a3551cd7bae2fba8b949844d2d7329927a7f1cb5a2c2a821f016e0.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="22e6cb7d309429ee0eaff86792eaf1c3">
+
+      
+  <meta name="description" content="zxing - Official ZXing (&quot;Zebra Crossing&quot;) project home">
+  <meta name="go-import" content="github.com/zxing/zxing git https://github.com/zxing/zxing.git">
+
+  <meta content="1122572" name="octolytics-dimension-user_id" /><meta content="zxing" name="octolytics-dimension-user_login" /><meta content="2562751" name="octolytics-dimension-repository_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2562751" name="octolytics-dimension-repository_network_root_id" /><meta content="zxing/zxing" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/zxing/zxing/commits/master.atom" rel="alternate" title="Recent Commits to zxing:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        
+        <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fzxing%2Fzxing%2Fissues%2F233" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/zxing/zxing/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/zxing/zxing/watchers">
+    789
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/zxing/zxing/stargazers">
+      5,886
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fzxing%2Fzxing"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>
+        Fork
+      </a>
+      <a href="/zxing/zxing/network" class="social-count">
+        3,739
+      </a>
+    </li>
+</ul>
+
+          <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="mega-octicon octicon-repo"></span>
+  <span class="author"><a href="/zxing" class="url fn" itemprop="url" rel="author"><span itemprop="title">zxing</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/zxing/zxing" data-pjax="#js-repo-pjax-container">zxing</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline ">
+        <div class="repository-sidebar clearfix">
+          
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container"
+     data-issue-count-url="/zxing/zxing/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="/zxing/zxing" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /zxing/zxing">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="/zxing/zxing/issues" aria-label="Issues" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /zxing/zxing/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="/zxing/zxing/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /zxing/zxing/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="/zxing/zxing/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /zxing/zxing/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="/zxing/zxing/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /zxing/zxing/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="/zxing/zxing/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /zxing/zxing/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+            <div class="only-with-full-nav">
+                
+<div class="js-clone-url clone-url open"
+  data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url "
+  data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target"
+           value="https://github.com/zxing/zxing" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="1428c193e08348e92b61f22373f31695bc4c710d" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QfMjb2Y6zPVd3Zbm5N12M9lxJQJ9qVMCImqTjEv7OH9l9A+LO4EqgwbdBkDhg9Lv4jauusFOeEGSDK4viMc27g==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-form-nonce="1428c193e08348e92b61f22373f31695bc4c710d" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="VQflNOJbJBZbX1fPUIqhabf1SQYGn/5qmhx1QHJxIK8rYmtKCOYXPOLz3Up3NRsJ7e+7i9FR4l7hKYweuc80qg==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+
+              <a href="/zxing/zxing/archive/master.zip"
+                 class="btn btn-sm sidebar-button"
+                 aria-label="Download the contents of zxing/zxing as a zip file"
+                 title="Download the contents of zxing/zxing as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div>
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+
+          
+<style type="text/css" media="screen">
+  span.labelstyle-009800, .linked-labelstyle-009800 {  background-color: #009800 !important;  color: #fff !important;}.labelstyle-009800.selected {  background-color: #009800 !important;  color: #fff !important;}.label-select-menu .labelstyle-009800.selected {  background:rgba(0, 152, 0, 0.12) !important;  color: #009900 !important;}
+
+span.labelstyle-e11d21, .linked-labelstyle-e11d21 {  background-color: #e11d21 !important;  color: #fff !important;}.labelstyle-e11d21.selected {  background-color: #e11d21 !important;  color: #fff !important;}.label-select-menu .labelstyle-e11d21.selected {  background:rgba(225, 29, 33, 0.12) !important;  color: #991316 !important;}
+
+span.labelstyle-c7def8, .linked-labelstyle-c7def8 {  background-color: #c7def8 !important;  color: #282d33 !important;}.labelstyle-c7def8.selected {  background-color: #c7def8 !important;  color: #282d33 !important;}.label-select-menu .labelstyle-c7def8.selected {  background:rgba(199, 222, 248, 0.12) !important;  color: #7a8898 !important;}
+</style>
+
+<div class="issues-listing" data-pjax>
+  <div class="context-loader large-format-loader">
+  <p><img alt="" height="64" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" /></p>
+  <p>Loading…</p>
+</div>
+
+    <div id="show_issue" class="js-issues-results">
+
+    
+  <div
+    id="partial-discussion-header"
+    class="gh-header js-details-container js-socket-channel js-updatable-content issue"
+    data-channel="zxing/zxing:issue:44768165"
+    data-url="/zxing/zxing/issues/233/show_partial?partial=issues%2Ftitle">
+
+  <div class="gh-header-show ">
+      <div class="gh-header-actions">
+          <a href="/zxing/zxing/issues/new" class="btn btn-sm btn-primary right" data-hotkey="c">
+            New issue
+          </a>
+      </div>
+
+    <h1 class="gh-header-title">
+      <span class="js-issue-title"> &quot;Structured Append&quot; in QR</span>
+      <span class="gh-header-number">#233</span>
+    </h1>
+  </div>
+
+
+  <div class="flex-table gh-header-meta">
+    <div class="flex-table-item">
+        <div class="state state-closed">
+          <span class="octicon octicon-issue-closed"></span>
+          Closed
+        </div>
+    </div>
+    <div class="flex-table-item flex-table-item-primary">
+        <a href="/mofosyne" class="author">mofosyne</a> opened this <span class="noun">Issue</span> <time datetime="2014-10-03T05:15:07Z" is="relative-time">Oct 3, 2014</time>
+        &middot; 4 comments
+    </div>
+  </div>
+</div>
+
+
+    <div id="discussion_bucket" class="tab-content clearfix">
+      <div class="discussion-sidebar ">
+        <div id="partial-discussion-stats"
+     class="discussion-stats js-socket-channel js-updatable-content"
+     data-channel="zxing/zxing:issue:44768165"
+     data-url="/zxing/zxing/issues/233/show_partial?partial=issues%2Fdiscussion_stats">
+</div>
+
+<div class="discussion-sidebar-item sidebar-labels js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/233?partial=issues%2Fsidebar%2Fshow%2Flabels" class="js-issue-sidebar-form" data-form-nonce="1428c193e08348e92b61f22373f31695bc4c710d" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="KPw0bPWJcOn9kJyPCReJfTVxTFacCos+cvnj4GhbWqn/XDqEc6xx0cIUZ7ph9RVqFge/Mjsjx8Xuw6ZggBOypQ==" /></div>
+      
+  <h3 class="discussion-sidebar-heading">
+    Labels
+  </h3>
+
+
+    <div class="labels css-truncate">
+      <a href="/zxing/zxing/labels/enhancement" class="label css-truncate-target linked-labelstyle-009800" title="enhancement">enhancement</a>
+
+</div>
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-milestone js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/233/set_milestone?partial=issues%2Fsidebar%2Fshow%2Fmilestone" class="js-issue-sidebar-form" data-form-nonce="1428c193e08348e92b61f22373f31695bc4c710d" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="5ho5NF6aB1tvwx6DXjYXQOJ6FzuLhmRvW3d2WGJUCLuMbjrPUrRVk8N4gwGaGwS8//JiFL9Lb0VzAwB3nqZ5sQ==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Milestone
+  </h3>
+
+
+      No milestone
+
+</form></div>
+
+<div class="discussion-sidebar-item sidebar-assignee js-discussion-sidebar-item">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/issues/233?partial=issues%2Fsidebar%2Fshow%2Fassignee" class="js-issue-sidebar-form" data-form-nonce="1428c193e08348e92b61f22373f31695bc4c710d" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="9gT4zCY42u9br2PiVkweNt1CXvc5ksx1a7wZBYVvdg375oEr6RlY40+xNctLEFEM2Q7tyPcMdArq5CiOW4uitA==" /></div>
+    
+  <h3 class="discussion-sidebar-heading">
+    Assignee
+  </h3>
+
+
+    <span class="css-truncate">
+      No one assigned
+</span>
+
+</form></div>
+
+
+<div id="partial-users-participants" class="discussion-sidebar-item js-socket-channel js-updatable-content"
+    data-channel="zxing/zxing:issue:44768165"
+      data-url="/zxing/zxing/issues/233/show_partial?partial=issues%2Fparticipants"
+  >
+  <div class="participation">
+
+    <h3 class="discussion-sidebar-heading">
+      3 participants
+    </h3>
+    <div class="participation-avatars">
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="mofosyne" href="/mofosyne"><img alt="@mofosyne" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/827793?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="srowen" href="/srowen"><img alt="@srowen" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=40" width="20" /> </a>
+        <a class="participant-avatar tooltipped tooltipped-s" aria-label="chrisbainbridge" href="/chrisbainbridge"><img alt="@chrisbainbridge" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/2807306?v=3&amp;s=40" width="20" /> </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+
+      <div class="discussion-timeline js-quote-selection-container">
+
+        <div class="js-discussion js-socket-channel" data-channel="zxing/zxing:marked-as-read:44768165">
+          
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mofosyne"><img alt="@mofosyne" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/827793?v=3&amp;s=96" width="48" /></a>
+    <div id="issue-44768165"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="bde6147440336d5767beb61570b874f7">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mofosyne" class="author">mofosyne</a>
+    </strong>
+
+    commented
+
+    <a href="#issue-44768165" class="timestamp">
+      <time datetime="2014-10-03T05:15:07Z" is="relative-time">Oct 3, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Just noticed that QR has support for splitting a text (and hopefully binary file as well) into multiple QR codes that can be scanned sequentially to reconstruct the file.</p>
+
+<p>This might be useful. How hard would it be to support this?</p>
+
+<hr>
+
+<p>src: <a href="http://stackoverflow.com/questions/12905485/storing-a-bmp-image-in-a-qr-code">http://stackoverflow.com/questions/12905485/storing-a-bmp-image-in-a-qr-code</a></p>
+
+<blockquote>
+<p>The best source of information you can use is the norm about QR Codes (ISO 18004:2006); it's possible (but not necessarily easy) to find it for free on the web.</p>
+
+<p>The relevant part (section 9) of this norm says:</p>
+
+<blockquote>
+<p>"Up to 16 QR Code symbols may be appended in a structured format. If a symbol is part of a Structured Append message, it is indicated by a header block in the first three symbol character positions. The Structured Append Mode Indicator 0011 is placed in the four most significant bit positions in the first symbol character. This is immediately followed by two Structured Append codewords, spread over the four least significant bits of the first symbol character, the second symbol character and the four most significant bits of the third symbol character. The first codeword is the symbol sequence indicator. The second codeword is the parity data and is identical in all symbols in the message, enabling it to be verified that all symbols read form part of the same Structured Append message. This header is immediately followed by the data codewords for the symbol commencing with the first Mode Indicator."</p>
+</blockquote>
+</blockquote>
+
+<hr>
+
+<p><a href="http://www.onbarcode.com/qr_code/structured_append/">http://www.onbarcode.com/qr_code/structured_append/</a></p>
+
+<blockquote>
+<p>Structured AppendBasic principles </p>
+
+<p>Structured append cannot be used in Micro QR Code. </p>
+
+<p>One QR Code 2005 symbol can be divided into up to 16 symbols. On the contrary, it can be appended into a structured format. If a symbol is a part of the structured append message, it can be represented by a header block in the first two and a half character positions The four most significant bit positions of the first symbol character set the Structured Append mode indicator 0011. </p>
+
+<p>In Structured Append mode, two Structured Append codewords follows indicators, which are placed in the four least significant bits position of the first symbol character, the eight bit position of the second symbol character and the four most significant bit position of the third symbol character respectively. The first codeword is symbol sequence indicator, the second one is parity data, which is identical in all append message to enable all readable symbols are part of the same Structured Append message. This header is followed by the data symbols commencing with the indicator of the first mode. If adopted other ECI mode rather than ECI default mode, each header block consisting of ECI indicator and ECI designator should follow Structured Append header.</p>
+</blockquote>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/srowen"><img alt="@srowen" class="timeline-comment-avatar" height="48" src="https://avatars1.githubusercontent.com/u/822522?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-57791523"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment"
+     data-body-version="f6154c6683886e6664eea8580361eb0c">
+
+  <div class="timeline-comment-header ">
+
+
+    <span class="timeline-comment-label">Owner</span>
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/srowen" class="author">srowen</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-57791523" class="timestamp">
+      <time datetime="2014-10-03T12:41:00Z" is="relative-time">Oct 3, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Again, if you want to supply a patch, I'd look at it. I am not doing any more development work myself. This is a bit tricky to support since it means putting together many scans and the app has no good way to manage that. I think it would be a big change and so am skeptical that there is an easy/clean change that meaningfully supports this fairly niche use case. But it would not be so hard to return additional metadata about the structured append even if it's not acted on. I'll leave this open for a short while.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mofosyne"><img alt="@mofosyne" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/827793?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-60027186"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="759eafe55b6cef7ddf481bea9e526efe">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mofosyne" class="author">mofosyne</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-60027186" class="timestamp">
+      <time datetime="2014-10-22T02:09:32Z" is="relative-time">Oct 22, 2014</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yes 'Beeple' (Edit: he deleted his message) . Basically it allows for embedding small sequences of a larger file into multiple smaller barcodes.</p>
+
+<p>This is useful in the case of sending public keys like this example:</p>
+
+<pre><code>-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: BCPG C# v1.6.1.0
+
+mQENBFRHEQMBCACoNoOrSkcCw8ft0FgQmh/A9MjLSaYO8WEwgO1KMPaixSQCrbv+
+JiAPLyFk87voFx286zBEvdwUITKVSmmDlmBh6/hrJN5uxhoxF5kbLdu1Sj/o/qqZ
+gM6oIolD73pbBsxymWAMO+85j5VQVFluBFvaNRDWd7FcDEeetDSutCwgkDawMYxC
+wrT5z1g84BGpf5XpaZTVCyJSstVBuM2QzJgmAndZxn4sGj3rIIiotumtwFoN2Z1g
+ShrR+semL31G/uAbRDvN/Y8Vki+8rBHdMoGZfPHGDF8HG2o9a9LH3BN6OP6Pg3mW
+QMZkJ5JeamkkNoFUYYSyjCut4PFJ0LyaxI5jABEBAAG0AIkBHAQQAQIABgUCVEcR
+AwAKCRDc/FOMCAfGW2miB/0YnVTjmKG1VND4awMZefXIp44rauJa96JpWNftJtp+
+IlekwXkU5KGWHNtLpargzNcfMFDRKuCj/5ikJwcyY7ciuBkygY7dahEPNauVMbEM
+u7hmlZ1AqpLdzwOBLbXV0hsXK8VPL4NoRFTx4Kb5C5mSlz9XivSvt+45GkaNnoNz
+cbClTil9Nx8r1NcM3XqiY44jPu2BC3E2GFSBnNDTtWgqBWDfAh/2dYsy9//gyfwq
+NiceLgMpepbd+G0xIjNkzR62qVAfsxFbxmsT38sHH+H0T2cquxRT/1wYDqzOKQ9J
+ETn7V37ct264znQf+Uxx8PcK9PfUB/TU+Gp+FNoA8nlI
+=bpG0
+-----END PGP PUBLIC KEY BLOCK-----
+
+</code></pre>
+
+<p>The issue with the usual method of cramming it in a single barcode is that the resulting barcode is too dense. So by keeping it as a smaller sequence of QR codes, you can more easily print it. (Btw it doesn't have to be public keys, it could be a html page, or a private key, or a small vector image of a map)</p>
+
+<hr>
+
+<p>Exposing additional metadata about structural append would be nice.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+      
+
+
+  <div class="discussion-item discussion-item-labeled">
+    <div class="discussion-item-header" id="event-186920744">
+
+      <span class="octicon octicon-tag discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+      added the <span class="label-color" style="background-color: #009800;"><a href="/zxing/zxing/labels/enhancement" style="color: #fff">enhancement</a></span> label <a href="https://github.com/zxing/zxing/issues/233#event-186920744" class="timestamp"><time class="timestamp" datetime="2014-11-01T09:53:24Z" is="relative-time">Nov 1, 2014</time></a>
+    </div>
+  </div>
+
+
+
+
+
+      
+
+
+  <div class="discussion-item discussion-item-closed">
+    <div class="discussion-item-header" id="event-186920748">
+
+      <span class="octicon octicon-circle-slash discussion-item-icon"></span>
+      <img alt="@srowen" class="avatar" height="16" src="https://avatars2.githubusercontent.com/u/822522?v=3&amp;s=32" width="16" />
+      <a href="/srowen" class="author">srowen</a>
+      closed this   <a href="https://github.com/zxing/zxing/issues/233#event-186920748" class="timestamp"><time class="timestamp" datetime="2014-11-01T09:53:27Z" is="relative-time">Nov 1, 2014</time></a>
+    </div>
+  </div>
+
+  <div class="closed-banner"></div>
+
+
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/mofosyne"><img alt="@mofosyne" class="timeline-comment-avatar" height="48" src="https://avatars3.githubusercontent.com/u/827793?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-98322808"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="94ea232c1db455a22d56614699118685">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/mofosyne" class="author">mofosyne</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-98322808" class="timestamp">
+      <time datetime="2015-05-02T06:59:05Z" is="relative-time">May 2, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>If anyone is looking for this information:</p>
+
+<p>Metadata for structured append is exposed already in result.java from resultsmetadatatype.java in zxing-core</p>
+
+<div class="highlight highlight-C"><pre>      <span class="pl-c">/**</span>
+<span class="pl-c">       * If the code format supports structured append and the current scanned code is part of one then the</span>
+<span class="pl-c">       * sequence number is given with it.</span>
+<span class="pl-c">       */</span>
+      STRUCTURED_APPEND_SEQUENCE,
+
+      <span class="pl-c">/**</span>
+<span class="pl-c">       * If the code format supports structured append and the current scanned code is part of one then the</span>
+<span class="pl-c">       * parity is given with it.</span>
+<span class="pl-c">       */</span>
+      STRUCTURED_APPEND_PARITY,</pre></div>
+
+<p>It was added by micjahn <a href="https://zxingnet.codeplex.com/discussions/364835">https://zxingnet.codeplex.com/discussions/364835</a> </p>
+
+<hr>
+
+<p>Recall that only 16 QR can be chained together. So a value of STRUCTURED_APPEND_SEQUENCE=17 may indicate end of a sequence (still need to understand it a bit more)</p>
+
+<p>Edit: actually on reading the spec, this is how you read it: Here is a small excerpt:<br>
+Edit2: correction. After the first "MODE" nibble, it is followed <em>immediately</em> by the sequence, total and parity. So thats about 2.5 bytes in total. Thanks chrisbainbridge</p>
+
+<blockquote>
+<p>The Structured Append mode indicator 0011 is placed in the four most significant bit positions in the first symbol character.This is immediately followed by two Structured Append codewords, spread over the four least significant bits of the first symbol character, the second symbol character and the four most significant bits of the third symbol character. The first codeword is the symbol sequence indicator (see 7.2). The second codeword is the parity data (see 7.3) and is identical in all symbols in the message, enabling it to be verified that all symbols read form part of the same Structured Append message. This header is immediately followed by the data codewords for the symbol commencing with the first mode indicator. If one or more ECIs other than the default ECI is in force, an ECI header for each ECI, consisting of the ECI mode indicator and ECI Designator, shall follow the Structured Append header</p>
+</blockquote>
+
+<pre><code>[ 8bit     ]|[    8bit     ]|[    8bit     ]
+MODE | Seq  | total|     PARITY    | 
+0011 | AAAA | BBBB |  CCCC  | CCCC | XXXX
+
+
+AAAA = Seq ID ( 0000=1st, 0001=2nd )
+BBBB = Total Amount ( 0000=1, 0001=2 )
+
+Not sure what XXXX is...
+</code></pre>
+
+<p>So say we have two QR structured append:</p>
+
+<pre><code>QR-1:
+STRUCTURED_APPEND_SEQUENCE=1
+
+QR-1:
+STRUCTURED_APPEND_SEQUENCE=17
+</code></pre>
+
+<p>In binary that means </p>
+
+<pre><code>QR-1:
+STRUCTURED_APPEND_SEQUENCE = 0000 0001b
+    [Means: 1 of 2]
+
+QR-1:
+STRUCTURED_APPEND_SEQUENCE = 0001 0001b
+    [Means: 2 of 2]
+</code></pre>
+
+<hr>
+
+<p>How to deal with the parity field? The specs also highlights this. You essentially just "XORing byte by byte the byte values of all the original input data before division into symbol<br>
+blocks. Mode Indicators, Character Count Identifiers, padding bits, Terminator and Pad Characters shall be excluded from the calculation.". For Kanji you XOR by 2-bytes, and for anything else, by 8bit shift. Here is a python example code to illustrate the point</p>
+
+<div class="highlight highlight-python"><pre>    string <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>The quick brown fox jumps over the lazy dog<span class="pl-pds">'</span></span>
+    xorTotal <span class="pl-k">=</span> <span class="pl-c1">ord</span>(string[<span class="pl-c1">0</span>]) 
+    <span class="pl-k">print</span>( <span class="pl-s"><span class="pl-pds">"</span>first--&gt; <span class="pl-pds">"</span></span><span class="pl-k">+</span>string[<span class="pl-c1">0</span>] <span class="pl-k">+</span><span class="pl-s"><span class="pl-pds">"</span> : <span class="pl-pds">"</span></span><span class="pl-k">+</span><span class="pl-c1">str</span>(xorTotal))
+    <span class="pl-k">for</span> i <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">1</span>,<span class="pl-c1">len</span>(string)):
+        xorTotal <span class="pl-k">=</span> xorTotal<span class="pl-k">^</span><span class="pl-c1">ord</span>(string[i])
+        <span class="pl-k">print</span>( <span class="pl-s"><span class="pl-pds">"</span>ANS XOR <span class="pl-pds">"</span></span><span class="pl-k">+</span>string[i] <span class="pl-k">+</span><span class="pl-s"><span class="pl-pds">"</span> : <span class="pl-pds">"</span></span><span class="pl-k">+</span><span class="pl-c1">str</span>(xorTotal))
+
+    <span class="pl-k">print</span>( <span class="pl-s"><span class="pl-pds">"</span>PARITY for '<span class="pl-pds">"</span></span><span class="pl-k">+</span>string <span class="pl-k">+</span><span class="pl-s"><span class="pl-pds">"</span>' is : (int) <span class="pl-pds">"</span></span><span class="pl-k">+</span><span class="pl-c1">str</span>(xorTotal))
+    <span class="pl-c">#PARITY for 'The quick brown fox jumps over the lazy dog' is : (int) 79</span></pre></div>
+
+<hr>
+
+<p>To make it clear to you, here is a modified version of what "kenji_uno" saw in <a href="https://zxingnet.codeplex.com/discussions/364835">https://zxingnet.codeplex.com/discussions/364835</a>. Stripped away all the fluff, so you can see how it looks within the program. Just remember that STRUCTURED_APPEND_SEQUENCE &amp; STRUCTURED_APPEND_PARITY are actually in binary (First is split in 2 4bit nibbles, and second is an 8bit xored parity byte.). </p>
+
+<pre><code>--- 1st QR
+BarcodeFormat=QR_CODE
+ResultMetadata=
+  STRUCTURED_APPEND_SEQUENCE=17
+  STRUCTURED_APPEND_PARITY=79
+Text= the lazy dog
+
+--- 2nd QR
+BarcodeFormat=QR_CODE
+ResultMetadata=
+  STRUCTURED_APPEND_SEQUENCE=1
+  STRUCTURED_APPEND_PARITY=79
+Text=The quick brown fox jumps over
+
+--- TOTAL
+BarcodeFormat=QR_CODE
+Text=The quick brown fox jumps over the lazy dog
+</code></pre>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="timeline-comment-wrapper js-comment-container">
+    <a href="/chrisbainbridge"><img alt="@chrisbainbridge" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/2807306?v=3&amp;s=96" width="48" /></a>
+    <div id="issuecomment-98374557"
+     class="comment previewable-edit timeline-comment js-comment js-task-list-container "
+     data-body-version="b0081c279ef2358e7b25f0192b5ff773">
+
+  <div class="timeline-comment-header ">
+
+
+
+
+  <div class="timeline-comment-header-text">
+
+    <strong>
+      <a href="/chrisbainbridge" class="author">chrisbainbridge</a>
+    </strong>
+
+    commented
+
+    <a href="#issuecomment-98374557" class="timestamp">
+      <time datetime="2015-05-02T16:18:50Z" is="relative-time">May 2, 2015</time>
+    </a>
+  </div>
+</div>
+
+
+  <div class="comment-content">
+
+    <div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>There is code to do this at <a href="http://programresource.net/en/2013/05/04/2202.html">http://programresource.net/en/2013/05/04/2202.html</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+
+
+<!-- Rendered timeline since 2015-05-02 09:18:50 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-socket-channel js-updatable-content"
+      data-channel="zxing/zxing:issue:44768165"
+      data-url="/zxing/zxing/issues/233/show_partial?partial=issues%2Ftimeline_marker&amp;since=1430583530"
+      data-last-modified="Sat, 02 May 2015 16:18:50 GMT">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/zxing/zxing/notifications/mark?ids=44652316" class="hidden js-timeline-marker-form" data-form-nonce="1428c193e08348e92b61f22373f31695bc4c710d" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="EqtqWJirLHGcjQ/rAb27XG3eJp/IXKMWG0Ap6it/LeSKyMR1oz5qtNKcUmzSWcVYd2jEf4ZSI7uU6yiLun8QiA==" /></div>
+</form></div>
+
+
+        </div>
+
+          <div class="discussion-timeline-actions">
+                <div class="signed-out-comment">
+	<a href="/join" class="btn btn-primary" rel="nofollow">Sign up for free</a>
+	<strong>to join this conversation on GitHub</strong>.
+	Already have an account?
+	<a href="/login?return_to=https%3A%2F%2Fgithub.com%2Fzxing%2Fzxing%2Fissues%2F233" rel="nofollow">Sign in to comment</a>
+</div>
+
+
+          </div>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+
+</div>
+
+
+        </div>
+      </div>
+      <div class="modal-backdrop"></div>
+    </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.11186s from github-fe138-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-2ba3b257a78c3bd28dab11d07ddc8e6b1cf5280066968cc8501b99bf58f64a63.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-dd3051b3b36fed71a99e2c164f3e1eb38a8beaf40dc272fd2807febc8bd46a7f.js"></script>
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+
