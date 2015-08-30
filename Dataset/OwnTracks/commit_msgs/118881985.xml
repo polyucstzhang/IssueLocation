@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881985</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/75d10e26a595c00edd72a25739f9bd9a7d2f4bd4]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/75d10e26a595c00edd72a25739f9bd9a7d2f4bd4]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:31:49</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/75d10e26a595c00edd72a25739f9bd9a7d2f4bd4]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      closes </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item></source_file></item></commit></extraction>

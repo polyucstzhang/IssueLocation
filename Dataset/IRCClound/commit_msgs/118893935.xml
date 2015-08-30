@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893935</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/69a95ddfff4f45fca1c8d641cb95157ccf7b5765]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/69a95ddfff4f45fca1c8d641cb95157ccf7b5765]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:57:7</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/69a95ddfff4f45fca1c8d641cb95157ccf7b5765]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Show the drag handle image in the reorder hint to make it a bit more …
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/fragment/ServerReorderFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831542</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/158]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/158]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:53:19</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/158]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#158</id><title>Map of Netherlands on ftp.mapsforge.org/maps/europe/ is defective</title><description>
+
+    
+      
+          From thijsrec...@gmail.com on July 18, 2011 00:01:08
+
+What steps will reproduce the problem? 1. Go to ftp://ftp.mapsforge.org/maps/europe/ 2. The file "netherlands-0.2.4.map" has size 3.9kB
+3. If downloaded, it does not work with mapsforge if loaded What is the expected output? What do you see instead? The expected output is a displayed map of the Netherlands on the screen of the mobile device. The application "AdvancedMapViewer" crashes when this mapfile is loaded. What version of the product are you using? On what operating system? Version 0.2.4 of mapsforge. On android 2.3.3. Please provide any additional information below.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=158
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thijsrec...@gmail.com on August 16, 2011 09:40:53
+
+Hi,
+
+Thanks for the quick response! I have tried generating the mapfile of the Netherlands myself (downloaded both netherlands.osm.pbf and netherlands.osm.bz2 from http://download.geofabrik.de/osm/europe/ and used osmosis to generate .map file). This did not work, giving the same overflow error.
+
+I have an old .map file of the netherlands which was generated on 8 juli 2011. At that point there was already a problem with the map file, but it was working ok for higher zoomlevels (so zoomed in) -&gt; when zooming out (trying to obtain an overview of the Netherlands) advancedmapviewer crashes. The old .map file can be downloaded from http://server.resea.nl/netherlands_08072011.map . Maybe you can use it for finding the problem.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From paragon2...@gmail.com on October 03, 2011 23:33:45
+
+How can i create the map? Can you create for me the map in Ho Chi Minh City in Vietnam?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thijsrec...@gmail.com on December 06, 2011 14:38:50
+
+Hello, just being curious: What is the current state of progress on this issue?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thijsrec...@gmail.com on January 05, 2012 02:46:45
+
+Thank you very very much!! Downloading it right now :)!
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on March 09, 2012 09:43:21
+
+Finally we had the necessary time to investigate the root cause of this problem. It boiled down to several limitations in the binary map file format (version 2) which in addition were not correctly handled by the map-writer and map-reader.
+
+For the upcoming 0.3.0 version we have made several changes to overcome all these limitations. In our tests the Netherlands are now rendered correctly.
+
+Status: Started
+  Owner: jjbross@gmail.com
+  Cc: thilo.mu...@gmail.com  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From valentijnscholten on September 15, 2012 01:18:50
+
+Note: see #304 for the reason the file is missing.
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:40 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:40 PM GMT+8</closetime></item></BR></extraction>

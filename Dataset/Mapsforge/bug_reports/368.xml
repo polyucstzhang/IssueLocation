@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829588</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/368]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/368]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:47:29</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/368]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#368</id><title>MyLocationOverlay enableBestAvailableProvider</title><description>
+
+    
+      
+          From devemu...@gmail.com on October 30, 2012 14:14:14
+
+Hi,
+
+I see at MyLocationOverlay.enableBestAvailableProvider() that it finds best provider based on Criteria.ACCURACY_FINE and it returns only one provider as result.
+So the selected provider is the LocationManager.GPS_PROVIDER
+and there is no way to get also the LocationManager.NETWORK_PROVIDER
+But could we have something like the following, so both can be enabled?
+
+for (final String provider : this.locationManager.getProviders(true)) {
+    if (LocationManager.GPS_PROVIDER.equals(provider)
+            || LocationManager.NETWORK_PROVIDER.equals(provider)) {
+        this.locationManager.requestLocationUpdates(provider, UPDATE_INTERVAL, UPDATE_DISTANCE, this);
+    }
+}
+
+Another suggestion is if we could have UPDATE_DISTANCE and UPDATE_INTERVAL not as constants, but as variables so we can change them.
+
+Thanks.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=368
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on November 24, 2012 12:20:33
+
+Sorry for the late response.
+With the current implementation the problem is at: "the LM will probably return the GPS provider if it is enabled". If the device has enabled both providers (GPS, WiFi) the LM selects always the GPS as it is more accurate. So inside buildings with GPS not working (but still enabled) I cannot use it without disabling the GPS provider first at the device in order for the WiFi one to be selected.
+At the proposed for-loop (which is actually the osmdroid implementation), it picks all the available receivers that are enabled - not the 1st one.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on March 24, 2014 14:50:48
+
+Fixed in rescue-exp.
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:57 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:57 PM GMT+8</closetime></item></BR></extraction>

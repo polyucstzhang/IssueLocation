@@ -1,0 +1,7 @@
+<extraction><id>#54</id><title>Multiple waypoints don't fire on ENTER</title><description> I have a (rather convoluted) use-case for setting up two waypoints with different descriptions for the same lat/lon and radius, both to fire on leave and on enter.When leaving the geo-fence, I see a distinct PUB for each of the two waypoints, but on entering the fence, I get one PUB at best. (Sometimes neither fires.)Is that a bug?</description><comments>Mh, the same code that handles the leave event is handling enter events, so
+I cannot do much here. I presume that this is a bug in the Play Services
+but I'll see if I can reproduce this. Just checked again: the two waypoints are *not* exactly the same (slightly different lat/lon pairs). My code identifies all by timestamp (meaning that two will be registered
+unless you manage to be blazingly fast) and registers them with the Play
+Services. I don't know what they do internally. By what I've seen so far it
+wouldn't surprise me if they rounded the lat/lon to the nearest n digits
+and identified the fences by these numbers. Thanks, Alexander. Don't spend half a sleepless second over this; I can easily enough work around the issue with a republish (which is probably the better way anyhow).</comments></extraction>

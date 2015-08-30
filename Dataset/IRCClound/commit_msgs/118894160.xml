@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894160</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b5e485dc6b363d3df899e919963c7242872e9635]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b5e485dc6b363d3df899e919963c7242872e9635]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:5:29</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b5e485dc6b363d3df899e919963c7242872e9635]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Speed up refreshing the buffer table, update the lock icon in the act…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/ChannelsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

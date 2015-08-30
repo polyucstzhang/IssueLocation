@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893287</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/012bd016a153bb0b4d88ea6265cb685c0ba80ce1]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/012bd016a153bb0b4d88ea6265cb685c0ba80ce1]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:36:11</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/012bd016a153bb0b4d88ea6265cb685c0ba80ce1]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Upgrade LeakCanary, blacklist webkit leaks, log leaks to Crashlytics …
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              build.gradle
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/CrashlyticsLeakService.java
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplication.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

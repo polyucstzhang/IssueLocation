@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881627</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/8c304e87d1dfa6ab649ef3459882110d1e5d1a57]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/8c304e87d1dfa6ab649ef3459882110d1e5d1a57]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:17:48</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/8c304e87d1dfa6ab649ef3459882110d1e5d1a57]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      improved preferences and added message notifications
+    </title><numberfile>
+      24 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              CHANGELOG.md
+            </name></item><item><name>
+              DaoGenerator/src/main/java/org/owntracks/android/DaoGenerator.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/App.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityMessages.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityPreferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityPreferencesConnection.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/db/DaoMaster.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/db/Message.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/db/MessageDao.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/MsgMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceProxy.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/layout/preferences_host.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_identification.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_identification_hosted.xml
+            </name></item><item><name>
+              src/main/res/values/defaults.xml
+            </name></item><item><name>
+              src/main/res/values/keys.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences_hosted.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences_private.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences_public.xml
+            </name></item></source_file></item></commit></extraction>

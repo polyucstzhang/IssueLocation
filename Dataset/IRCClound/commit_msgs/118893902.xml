@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893902</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/63f5648ccd132a651421aa7bbfeb24c6c79a2496]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/63f5648ccd132a651421aa7bbfeb24c6c79a2496]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:56:2</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/63f5648ccd132a651421aa7bbfeb24c6c79a2496]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Support for servers that use +y instead of +q for owner usermode, clo…
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/ServersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BanListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/UsersListFragment.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

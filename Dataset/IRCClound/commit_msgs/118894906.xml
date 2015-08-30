@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894906</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/1091d37e92d98b3b5edf234ef6785b965d624478]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/1091d37e92d98b3b5edf234ef6785b965d624478]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:28:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/1091d37e92d98b3b5edf234ef6785b965d624478]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      PRAGMA synchronous = off, output some benchmarking data
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/DBHelper.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,2 @@
+<extraction><id>#126</id><title>ServiceBeacon.java line 267</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/550942235141dcfd8f281c7c</description><comments>@GeorgeHahn also, looking at the AltBeacon library code, your code never calls the library bind methods (hence the error that I mentioned in #70). </comments></extraction>

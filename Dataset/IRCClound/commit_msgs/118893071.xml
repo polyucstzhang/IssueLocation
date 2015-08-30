@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893071</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c2728730f449800ba0ca6ca8ded4c62d1f545a79]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c2728730f449800ba0ca6ca8ded4c62d1f545a79]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:32:18</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c2728730f449800ba0ca6ca8ded4c62d1f545a79]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Theme the text selection color
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              build.gradle
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/values-v11/styles.xml
+            </name></item><item><name>
+              res/values-v19/styles.xml
+            </name></item><item><name>
+              res/values-v21/styles.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881617</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/12157a4bd8d1d7b1740d5ecc2d7613bbdfb5f02c]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/12157a4bd8d1d7b1740d5ecc2d7613bbdfb5f02c]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:17:23</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/12157a4bd8d1d7b1740d5ecc2d7613bbdfb5f02c]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed </title><numberfile>
+      8 changed files
+    </numberfile><source_file><item><name>
+              apk/owntracks.apk
+            </name></item><item><name>
+              fabric.properties
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/SocketFactory.java
+            </name></item><item><name>
+              src/main/res/layout/activity_export.xml
+            </name></item><item><name>
+              src/main/res/layout/activity_statistics.xml
+            </name></item><item><name>
+              src/main/res/layout/toolbar.xml
+            </name></item></source_file></item></commit></extraction>

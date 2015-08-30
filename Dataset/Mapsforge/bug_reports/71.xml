@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832246</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/71]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/71]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:56:12</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/71]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#71</id><title>Add MyLocationOverlay</title><description>
+
+    
+      
+          From ugn...@gmail.com on January 20, 2011 17:48:10
+
+Subj
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=71
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on January 24, 2011 12:40:08
+
+Thank you for your effort. I will take a closer look at this issue soon, but the changes will most likely not make it into our next release in February 2011. We already have a "CircleOverlay" class that comes with most of the required code, so probably this existing class should be transformed into an "MyLocationOverlay" class similar to your working stub. As this would increase our compatibility to the Google APIs Add-On, i welcome the idea in general. :-)
+
+Status: Accepted
+  Owner: muehlb...@inf.fu-berlin.de
+  Labels: -Priority-Medium Priority-Low  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on June 03, 2012 07:30:18
+
+This issue has been fixed in the latest SVN revision, the new MyLocationOverlay class will thus be part of the next release. The latest version of the AdvancedMapViewer application makes already use of it. Please do not hesitate to report any bugs or feature requests.
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:33 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:33 PM GMT+8</closetime></item></BR></extraction>

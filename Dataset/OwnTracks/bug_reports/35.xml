@@ -1,0 +1,3 @@
+<extraction><id>#35</id><title>What is $SYS/keeplive for?</title><description> First notice of this as I'm still having big trouble with #33.I note the code containsWhat's that for?</description><comments>The Paho Java client does not provide a public interface to send Ping
+messages to keep the connection alive. Thus I had to add a workaround by
+manually publishing a PUB message to an arbitray topic. This should be documented somehow; people actually looking at broker logs (hah! who does that?!) may be worried (as I was). :-) Documented in https://github.com/owntracks/owntracks/wiki/Android</comments></extraction>

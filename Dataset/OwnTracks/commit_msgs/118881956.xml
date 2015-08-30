@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881956</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/0b1fc9548ab220cdc97e11972d8d8fe4133a4801]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/0b1fc9548ab220cdc97e11972d8d8fe4133a4801]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:44</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/0b1fc9548ab220cdc97e11972d8d8fe4133a4801]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      started implementing details-fragment
+    </title><numberfile>
+      12 changed files
+    </numberfile><source_file><item><name>
+              res/drawable/card.xml
+            </name></item><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/layout/fragment_details.xml
+            </name></item><item><name>
+              res/layout/fragment_friends.xml
+            </name></item><item><name>
+              res/layout/friend_list_item.xml
+            </name></item><item><name>
+              res/values-v16/styles.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityLauncher.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Contact.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item></source_file></item></commit></extraction>

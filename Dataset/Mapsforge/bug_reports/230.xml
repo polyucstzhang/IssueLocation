@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830815</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/230]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/230]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:51:18</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/230]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#230</id><title>startZoomLevel ignored</title><description>
+
+    
+      
+          From LudwigBr...@gmail.com on January 15, 2012 14:55:36
+
+There seems to be no way of getting the default zoom level encoded in the map. 
+
+The DatabaseRenderer should return the startZoomLevel encoded in the map, if present, rather than always returning the hard-coded default zoom level, e.g.
+
+@Override
+public byte getZoomLevelDefault() {
+    if (this.mapDatabase.hasOpenFile()) {
+        MapFileInfo mapFileInfo = this.mapDatabase.getMapFileInfo();
+        if (mapFileInfo.startZoomLevel != null) {
+                return mapFileInfo.startZoomLevel;
+        }
+    }
+    return ZOOM_DEFAULT;
+}
+
+
+However, even if this is added, the AdvancedMapViewer always starts out with zoom level 0. 
+This has something to do with how the MapActivity.  restoreMapView(MapView mapView);
+works, as it does not do anything unless MapActivity.containsMapViewPosition(SharedPreferences sharedPreferences) returns true, which is only the case after the activity has been paused before.
+
+The effect of this is that, when starting the AdvancedMapViewer for the first time after installation, it starts with zoomlevel 0, which for many maps does not contain any visible data, so the screen is just white.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=230
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on January 18, 2012 01:12:42
+
+Thanks for the quick changes, but as you say there remains room for improvement.
+
+I think at the moment the behaviour of the MapActivity:restoreMapView() method is not ideal. 
+
+First of all I think the method should be at least protected, so that library clients can modify the behaviour, but probably the functionality of saving the mapView state should be broken out. At the moment the library only supports a single state setting of MapView (see MapActivity():onPause()): mapViews beyond the first one are not saved at all and the state of all mapviews is restored from a single setting.
+
+Maybe it would be better to have some sort of persistence functionality on each MapView for save and restore that provides a sensible default implementation plus the ability to override. 
+I think the functionality at the moment in restoreMapView() should be complemented by loading going to the default Zoom Level and starting point when nothing is set in the preferences.
+The AdvancedMapViewer could then call this modified restoreMapView() after loading a new MapFile and the view would zoom/center to the default.
+
+The MapView:setCenterAndZoom should be public, same as MapView:zoom()  and MapView:setCenter()
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on February 12, 2012 23:14:35
+
+The problem with View.getId() is that a view may as well have no ID at all, for example when it is created programmatically at runtime rather than via an XML layout at compile time. So we cannot rely on that mechanism to identify MapView instances, unfortunately.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:46 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:46 PM GMT+8</closetime></item></BR></extraction>

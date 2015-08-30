@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894131</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/1f4ae013084309f00cfc1b372509396b6c1b0d3c]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/1f4ae013084309f00cfc1b372509396b6c1b0d3c]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:4:24</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/1f4ae013084309f00cfc1b372509396b6c1b0d3c]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix an issue where the websocket wouldn't automatically reconnect whe…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

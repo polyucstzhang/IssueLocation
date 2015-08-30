@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828047</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/521]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/521]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:42:41</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/521]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#521</id><title>java.lang.NoClassDefFoundError: org.mapsforge.map.android.graphics.AndroidGraphicFactory</title><description>
+
+    
+      
+          From microam...@gmail.com on September 09, 2014 14:21:20
+
+What steps will reproduce the problem? 1. download master version snapshot 5 from the Browse section
+2. run "mvn clean install" on the root directory with build success.
+3. run "mvn eclipse:eclipse" on the root directory again with build success.
+4. import the root directory as an existing android code into the eclipse which automatically picks samples and mapsforge-map-android folders to import. What is the expected output? What do you see instead? 1. when I import, first I am faced with an error saying: build path contains duplicate entry: 'gen' for project Samples.
+(which magically disappears and I am just ok to run the project).
+2. the above although is a problem but doesnt stop me from running. the real problem is when i run on my device i get NoClassDefFoundError.
+3. ALL I NEED IS: to be able to MAKE MAPSFORGE LIBRARIES USABLE IN ECLIPSE FOR ANDROID. and I dont see how I should do it.
+p.s. i have maven plugin in my eclipse and I can import as an existing maven project (although I dont see why should i, when i just installed them with mvn install from command prompt but anyway!) BUT then the error is about: configuration:com.jayway.maven.plugins.android.generation2:android-maven-plugin:3.8.2:consume-aar What version of the product are you using? On what operating system? windows 7
+maven 3.2.3
+java 1.7 (upgrade in java wont solve anything I have tried everything)
+Eclipse ADT with all SDKs installed and updated. Please provide any additional information below. Please, I cannot think of any other way.
+And I dont understand why simply adding JARs wont work.
+I have chosen the solution above but any other would be highly appreciable.
+
+TO PUT IT IN A NUTSHELL:
+I have eclipse IDE with ADT. Want to use mapsforge latest API to develop android applications. And I have not yet been able to set up my coding framework. Please help.
+thanks in advance.
+
+Attachment: error1.jpg error2.jpg
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=521
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From microam...@gmail.com on September 09, 2014 06:19:04
+
+thanks for your reply,
+I am getting the following error when installing the new Maven from the repository site you recommended (having removed all the previous ones)
+shall I just bypass that package or is it a necessary component?
+
+Attachment: error3.jpg
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From microam...@gmail.com on September 10, 2014 00:42:44
+
+I am getting the same issue of failure for my eclipse from the update site of the new link you gave me.
+does this mean SDK deployer must finish all the components such as googles api (which i dont seem to use) in order for eclipse to be able to install the plugin?
+
+Cannot complete the install because one or more required items could not be found.
+  Software being installed: Aether Transport HTTP 1.0.0.v20140518 (org.eclipse.aether.transport.http.feature.feature.group 1.0.0.v20140518)
+  Missing requirement: Aether Transport HTTP 1.0.0.v20140518 (org.eclipse.aether.transport.http 1.0.0.v20140518) requires 'package org.apache.http [4.2.1,4.3.0)' but it could not
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Bouchta...@gmail.com on September 16, 2014 02:42:54
+
+Hello, I have the exact same problem:
+java.lang.NoClassDefFoundError: org.mapsforge.map.android.graphics.AndroidGraphicFactory
+
+I've used mapsforge 0.3.0 before, which was working fine, without any issues about using the library in my project WITHOUT MAVEN! Until it crashes on devices with higher screen resolutions. That's the reason I want to upgrade mapsforge to 0.4+, but found out its api is not compatible with 0.3 version. Ok, I can live with that.
+
+Now I want to try out your sample code in: https://code.google.com/p/mapsforge/wiki/GettingStartedAndroidApp After finding out I need 5 libraries, instead of 1, I finally run into this notorious exception: java.lang.NoClassDefFoundError: org.mapsforge.map.android.graphics.AndroidGraphicFactory
+
+My Eclipse is updated to Juno, also did a reinstall of all the Android SDK, I included the libraries through: Java Build Path -&gt; Libraries -&gt; Add External JARs and reordered the build with all the mapsforge libraries on top.
+
+So, do I still need Maven????? Does this mean that I can't run the project with mapsforge without Maven?????
+I have more than 50 android projects working and never used Maven, so am I forced to use Maven to get mapsforge working in my app? Is that the only solution?
+
+Thank you.
+
+By the way, I still haven't solve this class exception :(
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 6:08 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:08 PM GMT+8</closetime></item></BR></extraction>

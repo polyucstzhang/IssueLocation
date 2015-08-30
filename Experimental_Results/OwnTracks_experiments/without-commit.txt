@@ -1,0 +1,32 @@
+bug 151, Rank 2 hit
+bug 217, Rank 1 hit
+bug 215, Rank 7 hit
+bug 212, Rank 1 hit
+bug 198, Rank 1 hit
+bug 218, Rank 1 hit
+bug 192, Rank 1 hit
+bug 133, Rank 1 hit
+bug 91, Rank 1 hit
+bug 89, Rank 1 hit
+bug 112, Rank 1 hit
+bug 172, Rank 1 hit
+bug 232, Rank 1 hit
+bug 94, Rank 1 hit
+bug 1, Rank 1 hit
+bug 183, Rank 1 hit
+bug 171, Rank 1 hit
+bug 189, Rank 1 hit
+bug 147, Rank 1 hit
+bug 140, Rank 1 hit
+bug 206, Rank 1 hit
+bug 99, Rank 1 hit
+bug 103, Rank 2 hit
+bug 225, Rank 1 hit
+bug 219, Rank 1 hit
+bug 233, Rank 1 hit
+bug 111, Rank 1 hit
+bug 178, Rank 1 hit
+bug 164, Rank 2 hit
+MRR 0.918719211823
+MAP 0.899905082674
+MAX_mrr 0.918719211823

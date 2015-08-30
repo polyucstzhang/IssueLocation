@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893677</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d88ecfcd277c5e783962f99b9c95c34ecd7a913a]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d88ecfcd277c5e783962f99b9c95c34ecd7a913a]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:47:31</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d88ecfcd277c5e783962f99b9c95c34ecd7a913a]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Try the last_selected_bid before falling back to firstBid when the co…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/ServersDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

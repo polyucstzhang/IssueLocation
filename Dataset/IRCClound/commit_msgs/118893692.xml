@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893692</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/92a16bbb7f4d2e48894b80302cf91e67474842e4]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/92a16bbb7f4d2e48894b80302cf91e67474842e4]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:48:6</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/92a16bbb7f4d2e48894b80302cf91e67474842e4]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix the vertical padding values on the 9-patch images, adjust some di…
+    </title><numbercommit>
+      13 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-mdpi/login_button.9.png
+            </name></item><item><name>
+              res/drawable-mdpi/login_mid_input.9.png
+            </name></item><item><name>
+              res/drawable-mdpi/login_only_input.9.png
+            </name></item><item><name>
+              res/drawable-mdpi/login_top_input.9.png
+            </name></item><item><name>
+              res/drawable-mdpi/signup_button.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_bottom_input.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_button.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_mid_input.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_only_input.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_top_input.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/signup_button.9.png
+            </name></item><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

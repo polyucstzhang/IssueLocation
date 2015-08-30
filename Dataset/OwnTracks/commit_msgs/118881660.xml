@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881660</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/a9754ed5a1669fb4a5a668730c821db7c35e3b1d]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/a9754ed5a1669fb4a5a668730c821db7c35e3b1d]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:19:19</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/a9754ed5a1669fb4a5a668730c821db7c35e3b1d]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      closes </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/support/ReverseGeocodingTask.java
+            </name></item></source_file></item></commit></extraction>

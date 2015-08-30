@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882041</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/8174d891b71e82eebf3bef6cbbffbc6b3dad98dc]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/8174d891b71e82eebf3bef6cbbffbc6b3dad98dc]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:34:25</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/8174d891b71e82eebf3bef6cbbffbc6b3dad98dc]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added icon assets, Using icons for Android App
+    </title><numberfile>
+      6 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/drawable-hdpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_icon.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_launcher.png
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

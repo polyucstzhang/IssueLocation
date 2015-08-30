@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894809</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f8e2e7b496a11eff00274b24419be750aca7e68f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f8e2e7b496a11eff00274b24419be750aca7e68f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:24:58</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f8e2e7b496a11eff00274b24419be750aca7e68f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Scroll back to the previous position after fetching more backlog
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

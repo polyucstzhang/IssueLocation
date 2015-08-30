@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892982</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/e45fa9d0f70f5d4d4f25844fc5f34aa70858ab01]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/e45fa9d0f70f5d4d4f25844fc5f34aa70858ab01]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:29:54</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/e45fa9d0f70f5d4d4f25844fc5f34aa70858ab01]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      performance improvements, fix backlog gaps and avoid loading incomple…
+    </title><numbercommit>
+      13 changed files
+    </numbercommit><source_file><item><name>
+              res/values/arrays.xml
+            </name></item><item><name>
+              res/xml-sw600dp/preferences_device.xml
+            </name></item><item><name>
+              res/xml/preferences_device.xml
+            </name></item><item><name>
+              src/com/irccloud/android/GCMService.java
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplicationBase.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/EventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/UsersList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/model/Buffer.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/model/Notification_LastSeenEID.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/model/Notification_Network.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/model/Server.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

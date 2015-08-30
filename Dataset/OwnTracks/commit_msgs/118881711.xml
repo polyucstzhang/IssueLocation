@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881711</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/c4e98a24e058a47f82fe99a379e7af36d47dbc01]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/c4e98a24e058a47f82fe99a379e7af36d47dbc01]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:21:35</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/c4e98a24e058a47f82fe99a379e7af36d47dbc01]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Smoother import experience and fixes for </title><numberfile>
+      7 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/preferences/ActivityExport.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/preferences/ActivityImport.java
+            </name></item><item><name>
+              src/main/res/layout/activity_import.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_import.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

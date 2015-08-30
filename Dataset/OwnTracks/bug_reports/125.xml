@@ -1,0 +1,10 @@
+<extraction><id>#125</id><title>0.5.08 crashes</title><description> as soon as it connects.</description><comments>What connect settings have you set? Well, same as for .06; imported from backup. Hostname, port, TLS, etc. all look sane. Picked up phone. Opened app. I see locations.... Weird. Can you send me your config (minus username and pw) please? I'd like
+to reproduce it here. The crash report isn't helpful in this case.
+
+On 18 Mar 2015, at 06:50, JP Mens &lt;notifications@github.com&gt; wrote:
+
+Picked up phone. Opened app. I see locations....
+
+ 
+Reply to this email directly or view it on GitHub
+&lt;https://github.com/owntracks/android/issues/125#issuecomment-82755457&gt;.</comments></extraction>

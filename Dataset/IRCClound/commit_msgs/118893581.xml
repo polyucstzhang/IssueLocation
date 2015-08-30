@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893581</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ed081fca6aab33233d8cc4aa0b1e01e02a40d91c]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ed081fca6aab33233d8cc4aa0b1e01e02a40d91c]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:43:52</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ed081fca6aab33233d8cc4aa0b1e01e02a40d91c]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Version 1.12
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              build.gradle
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

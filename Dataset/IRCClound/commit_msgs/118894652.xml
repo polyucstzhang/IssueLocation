@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894652</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/370d7d309f053fbdf98ca0ea43c96b939d9bc8ed]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/370d7d309f053fbdf98ca0ea43c96b939d9bc8ed]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:21:29</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/370d7d309f053fbdf98ca0ea43c96b939d9bc8ed]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Dont show the unread indicator bar if tracking is disabled
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

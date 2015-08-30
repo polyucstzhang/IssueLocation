@@ -1,0 +1,29 @@
+<extraction><id>#68</id><title>Add tid</title><description> As proposed/requested on the mailing list, add support for tid which is now documented.</description><comments>@massimilianozilio This is probably a nice one for you ;-)It needs a UI element (max two alphanumeric characters) which defaults to the last two characters of configured topic if not set.Then we need the "tid" : "xx" element published with the JSON payload of a location update and that of a  waypoint update (when waypoints are added/edited).The tid is a tracker-id -- a short code to identify the device. Happy to give it a try.  I'll have a look at the code and let you know if I have any question. A couple of questions: I'd stick it to Preferences/Reporting for for now. 
+Wondering about the length myself.  Two characters maximum is correct. (I'll open a ticket for iOS so that we try to limit that.) Assuming the tid has been set,  are there cases in which we might want to not include it in a _type location or waypoint message?   I am trying to understand if it should be included by default or not in those messages. I can't think of any. iOS includes this in all location and waypoint updates. The JSON wiki page does not show a tid on waypoint messages. Is it just
+missing in the docs? I think so. Cant test here (lacking equipment) but rather sure...
+
+I'll make a note to fix docs upon return unless @ckrey beats me to it. Alex,
+
+I can think of 3 ways to include the tid in every waypoint message:
+1 implement a setTrackerId method in the WaypointMessage class and call it
+in every place where a WaypointMessage is created
+2 implement a new WaypointMessage class constructor which accept the
+trackerID as parameter
+3 get the trackerId from Preferecens.getTrackerID() directly inside the
+WaypointMessage class   (don't like this option but it is the one the
+requires less changes)
+
+do you have any preference/recommendation?
+
+For the location message I have implemented option n.2.
+
+Max Hi,
+
+I already added setTid and getTid to Waypoint message some commits ago I
+think.
+I'd use 1 or 2 because Waypoint messages might be constructed from incoming
+ones in the future.
+The locations where you'd have to call setTid is also quite minimal. I have created a pull request for the trackId changes, let me know if you have any comments or further changes are needed. Implemented. Thanks @massimilianozilio  Thanks gentlemen. Any chance of one of you dropping a current .apk into apk/ for me? Disclaimer: Contains untested code and rough edges. Besides that, there you go 3ee5b3c Thanks. I've spent 15m trying to configure TLS. All I get is "Error
+java.security.cert.CertPathValidatorException: Trust anchor for
+certification path not found". both when using TLS (with a previously
+imported CA certificate) and when using explicit path. Tracked under #77 Confirm TID works nicely, thanks guys. I have to rephrase that: I confirm TID in publishes works well.Any chance of getting the TID shown in the face on the map?</comments></extraction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881819</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/ac17694601f29569f04f34c92c3c61782b8713ab]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/ac17694601f29569f04f34c92c3c61782b8713ab]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:26:43</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/ac17694601f29569f04f34c92c3c61782b8713ab]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Refreshing geocoder for tracked contact
+    </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893731</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d84c67b967db45649d8220e5b490c8b7b3c5dddb]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d84c67b967db45649d8220e5b490c8b7b3c5dddb]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:49:35</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d84c67b967db45649d8220e5b490c8b7b3c5dddb]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Merge branch 'master' into L
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_share_chooser.xml
+            </name></item><item><name>
+              res/values-v11/styles.xml
+            </name></item><item><name>
+              res/values/dimens.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ShareChooserActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

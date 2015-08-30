@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893715</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3dd4d80e634d76aaca20fbead02cd561f23eb3fb]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3dd4d80e634d76aaca20fbead02cd561f23eb3fb]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:49:2</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3dd4d80e634d76aaca20fbead02cd561f23eb3fb]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Enable ProGuard optimization
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              proguard-project.txt
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

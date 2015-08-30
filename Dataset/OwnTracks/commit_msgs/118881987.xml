@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881987</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/335a726afef89a82286f234f99eb8df097ecfd86]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/335a726afef89a82286f234f99eb8df097ecfd86]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:31:53</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/335a726afef89a82286f234f99eb8df097ecfd86]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added user marker image background
+    </title><numberfile>
+      8 changed files
+    </numberfile><source_file><item><name>
+              res/drawable/markerbg.png.9
+            </name></item><item><name>
+              res/drawable/white_border_top.xml
+            </name></item><item><name>
+              res/layout/fragment_map.xml
+            </name></item><item><name>
+              res/layout/friend_list_item.xml
+            </name></item><item><name>
+              res/values/dimens.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Contact.java
+            </name></item></source_file></item></commit></extraction>

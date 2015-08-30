@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881712</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/59f84739b5bc177266f92a0b02260430a71d03ae]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/59f84739b5bc177266f92a0b02260430a71d03ae]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:21:37</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/59f84739b5bc177266f92a0b02260430a71d03ae]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      closes </title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/preferences/ActivityExport.java
+            </name></item><item><name>
+              src/main/res/layout/activity_export.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_export.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893080</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9215a7e43c4033046dda52fb0325f36023977dcf]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9215a7e43c4033046dda52fb0325f36023977dcf]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:32:57</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9215a7e43c4033046dda52fb0325f36023977dcf]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Don't enable the uploads button until the config has been loaded at l…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/UploadsActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

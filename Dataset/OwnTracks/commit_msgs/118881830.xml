@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881830</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/8f8264b699f051cfa495df8578ebe2ccd8dec6f3]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/8f8264b699f051cfa495df8578ebe2ccd8dec6f3]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:27:8</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/8f8264b699f051cfa495df8578ebe2ccd8dec6f3]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Android-v.0.4.18 APK
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              apk/mqttitude.apk
+            </name></item></source_file></item></commit></extraction>

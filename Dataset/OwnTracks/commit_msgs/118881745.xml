@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881745</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/8fdc936c55b0c68a95d3119f20edae609f7bfc5b]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/8fdc936c55b0c68a95d3119f20edae609f7bfc5b]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:2</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/8fdc936c55b0c68a95d3119f20edae609f7bfc5b]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Add prefernces to control beacon scanning intervals, completes </title><numberfile>
+      6 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/values/integers.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

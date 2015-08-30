@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893083</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/11361af4524e4f3a8d1426c635adbb7b5da2efc6]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/11361af4524e4f3a8d1426c635adbb7b5da2efc6]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:33:12</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/11361af4524e4f3a8d1426c635adbb7b5da2efc6]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Update to Android Studio 1.3 and Gradle Wrapper 2.4 + small optimizat…
+    </title><numbercommit>
+      15 changed files
+    </numbercommit><source_file><item><name>
+              .idea/misc.xml
+            </name></item><item><name>
+              .idea/runConfigurations.xml
+            </name></item><item><name>
+              gradle/wrapper/gradle-wrapper.properties
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplicationBase.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/ChannelsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/ServersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/UsersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

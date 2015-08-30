@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894651</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/0905d243055094d8b3cc8352db33aa3f269dee9d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/0905d243055094d8b3cc8352db33aa3f269dee9d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:21:27</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/0905d243055094d8b3cc8352db33aa3f269dee9d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Merge branch 'gson' to 'master'
+    </title><numbercommit>
+      33 changed files
+    </numbercommit><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/layout-sw600dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout-sw800dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout-sw800dp/activity_message.xml
+            </name></item><item><name>
+              res/layout/activity_ignore_list.xml
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              res/layout/activity_user_list.xml
+            </name></item><item><name>
+              res/menu/activity_message_channel.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              ...oud/androidnative/AddChannelFragment.java → .../irccloud/android/AddChannelFragment.java
+            </name></item><item><name>
+              ...m/irccloud/androidnative/AsyncTaskEx.java → src/com/irccloud/android/AsyncTaskEx.java
+            </name></item><item><name>
+              .../irccloud/androidnative/BaseActivity.java → src/com/irccloud/android/BaseActivity.java
+            </name></item><item><name>
+              ...loud/androidnative/BuffersDataSource.java → ...m/irccloud/android/BuffersDataSource.java
+            </name></item><item><name>
+              ...ud/androidnative/BuffersListFragment.java → ...irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              ...androidnative/ChannelOptionsFragment.java → ...cloud/android/ChannelOptionsFragment.java
+            </name></item><item><name>
+              ...oud/androidnative/ChannelsDataSource.java → .../irccloud/android/ChannelsDataSource.java
+            </name></item><item><name>
+              ...ud/androidnative/CollapsedEventsList.java → ...irccloud/android/CollapsedEventsList.java
+            </name></item><item><name>
+              ...androidnative/EditConnectionFragment.java → ...cloud/android/EditConnectionFragment.java
+            </name></item><item><name>
+              ...cloud/androidnative/EventsDataSource.java → ...om/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              ...ud/androidnative/IRCCloudApplication.java → ...irccloud/android/IRCCloudApplication.java
+            </name></item><item><name>
+              ...oud/androidnative/IRCCloudJSONObject.java → .../irccloud/android/IRCCloudJSONObject.java
+            </name></item><item><name>
+              ...oud/androidnative/IgnoreListActivity.java → .../irccloud/android/IgnoreListActivity.java
+            </name></item><item><name>
+              ...oud/androidnative/IgnoreListFragment.java → .../irccloud/android/IgnoreListFragment.java
+            </name></item><item><name>
+              ...irccloud/androidnative/LoginActivity.java → src/com/irccloud/android/LoginActivity.java
+            </name></item><item><name>
+              .../irccloud/androidnative/MainActivity.java → src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              ...ccloud/androidnative/MessageActivity.java → ...com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              ...d/androidnative/MessageActivityPager.java → ...rccloud/android/MessageActivityPager.java
+            </name></item><item><name>
+              ...ud/androidnative/MessageViewFragment.java → ...irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              ...loud/androidnative/NetworkConnection.java → ...m/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              ...loud/androidnative/ServersDataSource.java → ...m/irccloud/android/ServersDataSource.java
+            </name></item><item><name>
+              ...ccloud/androidnative/UsersDataSource.java → ...com/irccloud/android/UsersDataSource.java
+            </name></item><item><name>
+              ...loud/androidnative/UsersListFragment.java → ...m/irccloud/android/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

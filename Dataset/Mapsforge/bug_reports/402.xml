@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829334</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/402]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/402]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:46:23</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/402]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#402</id><title>not all buildings shown in downloaded map (Finland)</title><description>
+
+    
+      
+          From jelmerel...@gmail.com on February 08, 2013 21:20:38
+
+Hi,
+I downloaded the mapsforge map of Finland yesterday (7-Feb-2013) and noticed that mnay buildings (e.g. in Palokka, http://www.openstreetmap.org/?lat=62.29008&amp;lon=25.74699&amp;zoom=16 )are not shown. Seems that all buildings that are tagged as building=terrace or building=house (implemented through potlatch), are not shown. (some others like 'museum' were wrongly tagged at this place and I corrected those already in OSMpotlatch).
+Could buildings with these kind of tags be included in the maps that can be downloaded from mapsforge?
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=402
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on March 01, 2013 05:48:05
+
+If I find some time, I might add more tags to the tag-mapping file, but you can quite easily add these things yourself. The file in question is the tag-mapping.xml somewhere under the writer directory.
+
+Status: Accepted  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From chris...@rothen.com on March 16, 2013 06:23:56
+
+Thanks for the adoption. I was looking at the file and I think that the following building tags are now duplicated.
+
+
+
+
+Beside I found yesterday some railroad tags which are missing.
+
+
+
+
+
+
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 6:00 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:00 PM GMT+8</closetime></item></BR></extraction>

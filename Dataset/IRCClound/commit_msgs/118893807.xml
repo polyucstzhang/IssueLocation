@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893807</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/e692d8266ecdc040533b77d3a96c594c0a37a0cf]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/e692d8266ecdc040533b77d3a96c594c0a37a0cf]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:52:22</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/e692d8266ecdc040533b77d3a96c594c0a37a0cf]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      imgur upload
+    </title><numbercommit>
+      11 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-hdpi/ic_action_photo.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_action_photo.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_action_photo.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/ic_action_photo.png
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              res/menu/activity_message_channel.xml
+            </name></item><item><name>
+              res/menu/activity_message_conversation.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894551</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b906c208c49d6c09f6c87a0d81762973947ac0e5]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b906c208c49d6c09f6c87a0d81762973947ac0e5]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:19:0</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b906c208c49d6c09f6c87a0d81762973947ac0e5]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      client-side notifications
+    </title><numbercommit>
+      11 changed files
+    </numbercommit><source_file><item><name>
+              libs/NotificationCompat2-1.1.2.jar
+            </name></item><item><name>
+              res/raw/digit.mp3
+            </name></item><item><name>
+              res/xml/preferences_notifications.xml
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              src/com/irccloud/android/PreferencesActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

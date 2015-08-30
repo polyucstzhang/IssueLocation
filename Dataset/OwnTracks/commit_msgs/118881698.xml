@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881698</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/36383840fb9264b1095a6e55b95408f87362f39e]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/36383840fb9264b1095a6e55b95408f87362f39e]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:20:49</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/36383840fb9264b1095a6e55b95408f87362f39e]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      changed notification report icon, changed styling of export
+    </title><numberfile>
+      9 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityExport.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_report_notification.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_report_notification.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_report_notification.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_report_notification.png
+            </name></item><item><name>
+              src/main/res/layout/activity_export.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

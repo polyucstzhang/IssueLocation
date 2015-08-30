@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881735</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/8600ad872ed1934dfaa592135061316e5c9b5d87]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/8600ad872ed1934dfaa592135061316e5c9b5d87]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:38</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/8600ad872ed1934dfaa592135061316e5c9b5d87]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed highlight colors for </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/res/values/styles.xml
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,2 @@
+<extraction><id>#110</id><title>SubscriberMethodFinder.java line 75</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/54f0e2b47d7854d7c993f80d</description><comments>Under certain conditions Android is unable to find Contacts class in package. Fixed by reinstalling. Needs investigation unable to reproduce with latest master. Reopen if it occurs again. </comments></extraction>

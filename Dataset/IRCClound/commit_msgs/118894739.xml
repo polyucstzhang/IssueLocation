@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894739</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c7b4366f678b3a832c28803f049ae1907fd8e93f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c7b4366f678b3a832c28803f049ae1907fd8e93f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:22:43</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c7b4366f678b3a832c28803f049ae1907fd8e93f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Slidey, snappy portrait layout
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/drawer_bufferslist.xml
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/SlideMenu.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

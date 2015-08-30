@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831547</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/152]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/152]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:53:29</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/152]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#152</id><title>Invalid polygons in mapfile</title><description>
+
+    
+      
+          From SakirS...@gmail.com on July 14, 2011 18:24:13
+
+I found invalid polygons in the mapfile. It is possible that those invalid polygons are directly imported form OpenStreetMap.
+
+But i think we should not take them in to the map file.
+
+Or some polygons got invalid during the preprocessing.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=152
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From SakirS...@gmail.com on July 18, 2011 06:50:19
+
+Here you can see a list of invalid polygons. http://wiki.openstreetmap.org/wiki/Fixing_OSMI_self_intersection The two main types are selfintersecting polygons and polygons with a area value of 0.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on December 10, 2011 07:15:41
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:39 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:39 PM GMT+8</closetime></item></BR></extraction>

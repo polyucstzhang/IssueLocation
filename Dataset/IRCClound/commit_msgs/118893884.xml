@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893884</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/2e35ff989a69bc211e2b17ec1e07125515061682]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/2e35ff989a69bc211e2b17ec1e07125515061682]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:55:15</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/2e35ff989a69bc211e2b17ec1e07125515061682]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix an issue where collapsing mode + quit could show the wrong hostname
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/CollapsedEventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplication.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              tests/res/values/strings.xml
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894952</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/215ba94c209a30c8115bb331d15d1a29e15a8be6]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/215ba94c209a30c8115bb331d15d1a29e15a8be6]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:55</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/215ba94c209a30c8115bb331d15d1a29e15a8be6]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Bold text for unread and highlights, sort the buffers by type, and st…
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/row_buffer.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/ServersDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

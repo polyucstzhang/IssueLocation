@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881764</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/251fd2855c0b059082bca09514f59f4491b2fbda]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/251fd2855c0b059082bca09514f59f4491b2fbda]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:51</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/251fd2855c0b059082bca09514f59f4491b2fbda]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      added button behaviour to current location button
+    </title><numberfile>
+      13 changed files
+    </numberfile><source_file><item><name>
+              .idea/libraries/android_beacon_library_2_0_beta7.xml
+            </name></item><item><name>
+              .idea/libraries/appcompat_v7_19_1_0.xml
+            </name></item><item><name>
+              .idea/libraries/bugsnag_1_2_6.xml
+            </name></item><item><name>
+              .idea/libraries/bugsnag_android_2_1_1.xml
+            </name></item><item><name>
+              .idea/libraries/eventbus_2_2_0.xml
+            </name></item><item><name>
+              .idea/libraries/greendao_1_3_7.xml
+            </name></item><item><name>
+              .idea/libraries/org_eclipse_paho_client_mqttv3_1_0_1_SNAPSHOT.xml
+            </name></item><item><name>
+              .idea/libraries/play_services_4_4_52.xml
+            </name></item><item><name>
+              .idea/libraries/support_v4_19_1_0.xml
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/main/res/drawable/mylocation_pressed.xml
+            </name></item><item><name>
+              src/main/res/drawable/mylocationbutton.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_contacts.xml
+            </name></item></source_file></item></commit></extraction>

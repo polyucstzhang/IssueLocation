@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894284</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/e5259f75e0eeb05d2c65bcca32f4a0f327cd36a4]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/e5259f75e0eeb05d2c65bcca32f4a0f327cd36a4]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:10:1</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/e5259f75e0eeb05d2c65bcca32f4a0f327cd36a4]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Reset the notification timer when recieving a heartbeat so it doesn't…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

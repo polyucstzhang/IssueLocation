@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881822</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/0820f50d7e481bed27c5c9d674fd63d7533f5436]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/0820f50d7e481bed27c5c9d674fd63d7533f5436]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:26:50</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/0820f50d7e481bed27c5c9d674fd63d7533f5436]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added additional saveguards to ensure that a service connection is es…
+    </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityWaypoints.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceProxy.java
+            </name></item></source_file></item></commit></extraction>

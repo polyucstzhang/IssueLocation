@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832019</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/89]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/89]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:55:39</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/89]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#89</id><title>Trouble creating .map file with mapfile-writer</title><description>
+
+    
+      
+          From ianhal...@gmail.com on March 01, 2011 22:24:34
+
+What steps will reproduce the problem? 1. C:\Android\development\osm\osmosis\osmosis-0.38\bin&gt;osmosis --rx file=district_of_columbia.osm --mapfile-writer file=dc.map box=88.8900,-77.0437,88.9099,-76.9721 type=hd What is the expected output? What do you see instead? 4Kb dc.map created and it's not a valid map, takes about 75-90 seconds before it errors.  I'm not sure if the unable to delete files in the tmp directory could be part of the problem? What version of the product are you using? On what operating system? osmosis-0.38
+trove-3.0.0rc1.jar
+mapsforge-mapfile-writer-0.2.1.jar in my C:\Documents and Settings\ian.hall5\Application Data\Openstreetmap\Osmosis\Plugins
+windows xp 32bit Please provide any additional information below. I've attached the output after i run the comment, I'm doing a small subset of the DC area per the coordinates I've listed there, the .map file that is created is about 4KB.
+the last lines are as follows:
+waterway=dam....waterway=stream and then  4 lines of symbols.
+Based off of the bremin-0.2.1.map file that i downloaded in the app, after those 4 lines of symbols is where the actual data should be but mine ends before that.  I'm probably doing something very dumb but i can't figure out for the life of me what I'm doing wrong.
+
+Attachment: log.txt
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=89
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From ianhal...@gmail.com on March 01, 2011 14:31:33
+
+Lastly, i tried with us_pacific, roughly a 20 MB file, and i received this error in attached log file
+
+Attachment: log3.txt
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on May 09, 2011 10:00:02
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:34 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:34 PM GMT+8</closetime></item></BR></extraction>

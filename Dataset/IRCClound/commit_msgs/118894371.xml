@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894371</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/cb17c1161be6409225c64fbd227f142b51f2d692]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/cb17c1161be6409225c64fbd227f142b51f2d692]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:12:56</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/cb17c1161be6409225c64fbd227f142b51f2d692]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      HTML encode the notification text again, as removing the formatting a…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

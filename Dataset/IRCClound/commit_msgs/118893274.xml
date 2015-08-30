@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893274</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/164d031176505c079e7693395cf3120745ba6901]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/164d031176505c079e7693395cf3120745ba6901]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:35:43</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/164d031176505c079e7693395cf3120745ba6901]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Edit pastebin contents before sending, add pastebin to camera menu an…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PastebinViewerActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

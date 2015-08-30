@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894818</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/5eba6db5af3818381f11990459550a53e3965d29]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/5eba6db5af3818381f11990459550a53e3965d29]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:25:16</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/5eba6db5af3818381f11990459550a53e3965d29]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Animated user list sidebar
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/UserListActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

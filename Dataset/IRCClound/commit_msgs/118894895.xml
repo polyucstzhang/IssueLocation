@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894895</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/0c7a4b4063b1ffd9bc4b97e33b641925b48e6c0b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/0c7a4b4063b1ffd9bc4b97e33b641925b48e6c0b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:27:52</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/0c7a4b4063b1ffd9bc4b97e33b641925b48e6c0b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Keep the events as a SortedMap when returning them to the UI
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881781</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/3cafeec12faafa22555578740f727051e78f11da]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/3cafeec12faafa22555578740f727051e78f11da]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:24:30</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/3cafeec12faafa22555578740f727051e78f11da]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Cleaning up - added proper ServiceBeacon state and messages, added er…
+    </title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/st/alr/mqttitude/messages/BeaconMessage.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Events.java
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

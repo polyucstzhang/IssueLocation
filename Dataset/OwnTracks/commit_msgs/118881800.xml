@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881800</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/9fba5420437bb6eb9c535289cd27c56eaa7406ca]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/9fba5420437bb6eb9c535289cd27c56eaa7406ca]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:25:25</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/9fba5420437bb6eb9c535289cd27c56eaa7406ca]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed ListIntegerPreference default values
+    </title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/ListIntegerPreference.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/StringifiedJSONObject.java
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

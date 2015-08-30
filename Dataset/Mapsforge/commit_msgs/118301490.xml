@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118301490</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/30edc8494aa0ce15b562b0a34e31f98612124c62]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/30edc8494aa0ce15b562b0a34e31f98612124c62]]></realpath><theme>mapsforge_09n</theme><middle>default</middle><createdate>2015-8-21 20:37:28</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/30edc8494aa0ce15b562b0a34e31f98612124c62]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      - added a TileDownloadingLayer plus a few related classes
+    </title><number>
+      21 changed files
+    </number></item></BR></extraction>

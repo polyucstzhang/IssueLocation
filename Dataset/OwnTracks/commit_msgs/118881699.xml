@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881699</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/356d4e47081a4f82b5269a092b32f9044f92552f]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/356d4e47081a4f82b5269a092b32f9044f92552f]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:20:51</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/356d4e47081a4f82b5269a092b32f9044f92552f]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Android-v.0.5.07 APK
+    </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              apk/owntracks.apk
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item></source_file></item></commit></extraction>

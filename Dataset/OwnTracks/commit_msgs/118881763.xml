@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881763</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/7bcc955e39a4d9f0b2fe0b497a79c7a3fa31330d]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/7bcc955e39a4d9f0b2fe0b497a79c7a3fa31330d]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:49</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/7bcc955e39a4d9f0b2fe0b497a79c7a3fa31330d]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      added top border to contact details on map
+    </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/main/res/drawable/map_contact_details_background.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_map.xml
+            </name></item></source_file></item></commit></extraction>

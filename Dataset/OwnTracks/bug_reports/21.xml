@@ -1,0 +1,2 @@
+<extraction><id>#21</id><title>Crash with database corruption</title><description> Issue by jpmens from Friday Jan 10, 2014 at 18:36 GMT
+Originally opened as binarybucks/mqttitude#259version 5.4 running on iOS 7 on an iPhone 4After restart of app, settings are gone:Exiting the app displays a new popup I hadn't seen before: :-)</description><comments>Comment by jpmens from Saturday Jan 11, 2014 at 14:59 GMTThis device now updated to 5.5</comments></extraction>

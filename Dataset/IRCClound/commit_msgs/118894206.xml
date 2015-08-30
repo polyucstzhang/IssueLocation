@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894206</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/43a6d24ac391fa72a253225d04b06c12b4634e05]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/43a6d24ac391fa72a253225d04b06c12b4634e05]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:7:11</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/43a6d24ac391fa72a253225d04b06c12b4634e05]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Indicate SSL connections in the buffer list and the actionbar title, …
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-xhdpi/world_shield.png
+            </name></item><item><name>
+              res/layout/row_buffer.xml
+            </name></item><item><name>
+              res/layout/row_buffergroup.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

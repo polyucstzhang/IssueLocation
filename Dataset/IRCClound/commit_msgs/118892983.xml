@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892983</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/4086f1a27e4bf978bc8039f86ac14f9bad96308f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/4086f1a27e4bf978bc8039f86ac14f9bad96308f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:29:57</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/4086f1a27e4bf978bc8039f86ac14f9bad96308f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Don't leak database Cursors
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/collection/ChannelsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/EventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/ServersList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/UsersList.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

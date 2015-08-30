@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894601</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a40d0a3dcb147886105c7ff3102e0aa78e7f4e15]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a40d0a3dcb147886105c7ff3102e0aa78e7f4e15]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:20:43</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a40d0a3dcb147886105c7ff3102e0aa78e7f4e15]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      GCM registration / deregistration
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              libs/gcm.jar
+            </name></item><item><name>
+              src/com/irccloud/android/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

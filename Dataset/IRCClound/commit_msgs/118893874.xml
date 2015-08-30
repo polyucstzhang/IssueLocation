@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893874</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/5e0c0603339117d8b7b10eade8856ab512aa6cd0]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/5e0c0603339117d8b7b10eade8856ab512aa6cd0]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:54:46</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/5e0c0603339117d8b7b10eade8856ab512aa6cd0]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a few threading bugs
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/fragment/BanListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/ChannelListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/IgnoreListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/NamesListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/WhoListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

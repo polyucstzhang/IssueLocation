@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893518</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/88c7a77dd4a91146ad16be45716fa374fc090a04]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/88c7a77dd4a91146ad16be45716fa374fc090a04]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:41:37</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/88c7a77dd4a91146ad16be45716fa374fc090a04]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Prevent proguard from stripping classes needed by the JUnit tests
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              proguard-project.txt
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

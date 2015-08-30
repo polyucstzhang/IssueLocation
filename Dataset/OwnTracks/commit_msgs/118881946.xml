@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881946</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/0753f25bd54bfc2cba730eaf7cf59cdf3f335d8c]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/0753f25bd54bfc2cba730eaf7cf59cdf3f335d8c]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:17</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/0753f25bd54bfc2cba730eaf7cf59cdf3f335d8c]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Merged ServiceLocator and ServiceLocatorFused
+    </title><numberfile>
+      24 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              ic_mylocation.png
+            </name></item><item><name>
+              proguard-project.txt
+            </name></item><item><name>
+              project.properties
+            </name></item><item><name>
+              res/drawable/ab_solid.9.png
+            </name></item><item><name>
+              res/drawable/grey_border_bottom.xml
+            </name></item><item><name>
+              res/layout/fragment_details.xml
+            </name></item><item><name>
+              res/layout/fragment_friends.xml
+            </name></item><item><name>
+              res/menu/activity_main.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityWizzard.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Contact.java → src/st/alr/mqttitude/model/Contact.java
+            </name></item><item><name>
+              ...mqttitude/support/GeocodableLocation.java → ...r/mqttitude/model/GeocodableLocation.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/model/LocationReport.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocatorFused.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceProxy.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/BackgroundPublishReceiver.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/ContactAdapter.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Events.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/ReverseGeocodingTask.java
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893265</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3f942a70a24a745d77d8fca341cb56f25452dd6d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3f942a70a24a745d77d8fca341cb56f25452dd6d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:35:23</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3f942a70a24a745d77d8fca341cb56f25452dd6d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Switch to RFC6570 URI template for modifier image urls
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              proguard-project.txt
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PreferencesActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/UploadsActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

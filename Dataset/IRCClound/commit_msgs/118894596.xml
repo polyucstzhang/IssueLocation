@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894596</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/385288b3898c0e20341e2bd48a41546059199571]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/385288b3898c0e20341e2bd48a41546059199571]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:20:33</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/385288b3898c0e20341e2bd48a41546059199571]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Use less RAM by only storing the formatted message objects instead of…
+    </title><numbercommit>
+      10 changed files
+    </numbercommit><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/layout/messageview.xml
+            </name></item><item><name>
+              src/com/irccloud/android/CollapsedEventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudJSONObject.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

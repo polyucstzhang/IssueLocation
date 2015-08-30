@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893914</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9e2f5cf04e32751d7de4d62dd2d27a3d3723a7c3]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9e2f5cf04e32751d7de4d62dd2d27a3d3723a7c3]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:56:25</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9e2f5cf04e32751d7de4d62dd2d27a3d3723a7c3]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix the nick suggestions focus stealing issue using One Weird Trick t…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/GridViewHax.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

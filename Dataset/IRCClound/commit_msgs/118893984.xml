@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893984</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f5d048629dc69f543c08aff733b20334023feeea]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f5d048629dc69f543c08aff733b20334023feeea]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:59:1</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f5d048629dc69f543c08aff733b20334023feeea]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Add more fields to the whois dialog
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/fragment/WhoisFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

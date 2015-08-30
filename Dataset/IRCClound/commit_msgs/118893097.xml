@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893097</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f64cde0d742012f4348f94de3795d22524ae6cc9]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f64cde0d742012f4348f94de3795d22524ae6cc9]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:33:45</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f64cde0d742012f4348f94de3795d22524ae6cc9]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Undo deleting files
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/UploadsActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

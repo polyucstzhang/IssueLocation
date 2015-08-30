@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894568</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/871a0a1d2d4ef47e7913b7ccaf5c50d7429c0f61]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/871a0a1d2d4ef47e7913b7ccaf5c50d7429c0f61]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:19:36</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/871a0a1d2d4ef47e7913b7ccaf5c50d7429c0f61]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Settings activity
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              res/xml/preferences_about.xml
+            </name></item><item><name>
+              res/xml/preferences_account.xml
+            </name></item><item><name>
+              res/xml/preferences_display.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/PreferencesActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

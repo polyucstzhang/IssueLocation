@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831549</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/150]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/150]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:53:33</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/150]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#150</id><title>Library for using 2 vector maps in border areas</title><description>
+
+    
+      
+          From Matthias...@gmail.com on July 12, 2011 06:30:40
+
+Hi there, 
+
+I am an advanced user of the Android mapping application "Locus". Some days ago the developer of this application started working in using your libraries (afaik with your knowledge and cooperation) to get vector maps into the application. The Betas are looking very promising. 
+But there is some problem with users living in border areas. It seems that it is not possible to show two vector maps next to each other (for example 'France &lt;-&gt; Germany'). These users would have to switch these maps very often. 
+On request of this feature, the developer redirected me to the providers of the library. So I came here to post this issue after I did a fine research if it hadn't been posted before. 
+
+To come to an end... ;)
+I would be very happy, if you could make it possible, that developers, which are using your libraries, can implement the feature to show two or even more vector maps next to each other without switching them manually. 
+
+Cheers, berkley
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=150
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on July 13, 2011 14:13:10
+
+Hi there, thanks for reporting this issue.
+
+The requested functionality targets a map management component. Such a component needs to be aware of all installed maps and their associated meta data. If the component detects that the map view is leaving the bounding area of one vector map, it needs to load the appropriate new one, if existent. Choosing the correct map file is easy due to existent meta data. However, the major problem is that currently only a single map file can be opened by the renderer at one point in time. One could augment the MapDatabase class to cope with multiple files.
+
+We are also currently working on a solution that stores vector map tiles in an sqlite database. Such a "vector tile data base" is much more flexible. Individual tiles can be updated and inserted (and of course queried). It will allow loading necessary vector tiles on the fly. But until it will be usable and released, that will take some months.
+
+Best regards
+
+Status: Accepted  
+      
+    
+
+  </contents></item><item><commenter>ludwigb</commenter><contents>
+
+    
+      
+          This will come early in 0.6.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:39 PM GMT+8</createtime><closetime>Dec 8, 2014, 6:05 AM GMT+8</closetime></item></BR></extraction>

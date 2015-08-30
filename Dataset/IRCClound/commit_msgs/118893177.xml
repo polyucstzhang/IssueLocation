@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893177</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9fc79a91dd9c404723cb83017be9adc9ca6fb0ce]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9fc79a91dd9c404723cb83017be9adc9ca6fb0ce]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:34:29</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9fc79a91dd9c404723cb83017be9adc9ca6fb0ce]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Improve /paste command
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/PastebinViewerActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/PastebinEditorFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

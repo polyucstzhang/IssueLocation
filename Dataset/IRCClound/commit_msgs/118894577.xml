@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894577</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/4c2da0e28eec6d9e6c45fb2c38074b18167edda2]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/4c2da0e28eec6d9e6c45fb2c38074b18167edda2]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:19:54</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/4c2da0e28eec6d9e6c45fb2c38074b18167edda2]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Improve the selection indicator for a disconnected buffer group heading
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

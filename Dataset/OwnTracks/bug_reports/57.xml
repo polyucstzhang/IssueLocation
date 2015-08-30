@@ -1,0 +1,3 @@
+<extraction><id>#57</id><title>No way to manually enter coordinates like -34.925666,138.603387</title><description> Galaxy S3Expected:
+It's a numeric control, but you can access the negative (-) keyActual:
+Samsung's number input doesn't appear to allow this.</description><comments>Thanks for the report. Reproduced and issue found.  Ah</comments></extraction>

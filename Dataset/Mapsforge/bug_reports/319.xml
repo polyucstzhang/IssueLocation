@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830065</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/319]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/319]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:48:53</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/319]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#319</id><title>Provide a low detail world map</title><description>
+
+    
+      
+          From h...@flashlight.de on May 27, 2012 22:20:10
+
+How about providing a low detail world map with small size?
+
+It should contain all country borders plus their major cities.
+
+If you do not want to provide that kind of map could you 
+give some hint how to produce something like this in a
+efficient way?
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=319
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From unreger....@gmail.com on May 31, 2012 00:57:44
+
+What about [0-2]-zoom only world map?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From gautier....@gmail.com on November 29, 2012 09:21:43
+
+new one, more details, major highway, borders (all based on natural earth and not on openstreetmap).
+enough for me so I won't do more (I made lot of manual edits of osm file since there is no easy an reliale way to convert shp to osm).
+
+Attachment: world.map
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From per.dahl...@gmail.com on July 26, 2013 17:29:52
+
+Gautier would you mind writing a description (in the forum I guess is the best) about how you made that world map? Knowing what tools you used for the different steps and in what steps you had to do manual work would be very nice!
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents/></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          The process for creating a low detail world map is explained here:
+https://groups.google.com/forum/#!topic/mapsforge-dev/1PzOYvFs8sE
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:53 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:53 PM GMT+8</closetime></item></BR></extraction>

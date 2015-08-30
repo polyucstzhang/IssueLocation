@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893852</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/067175d648d6f5c9e5ebf77e5bb30b11c30a1962]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/067175d648d6f5c9e5ebf77e5bb30b11c30a1962]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:54:0</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/067175d648d6f5c9e5ebf77e5bb30b11c30a1962]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a crash
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893502</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f22ca8b69879e3e377d8ff58815c97f10a481684]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f22ca8b69879e3e377d8ff58815c97f10a481684]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:41:0</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f22ca8b69879e3e377d8ff58815c97f10a481684]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Unload old backlog when doing a full OOB download to prevent gaps
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              build.gradle
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              proguard-project.txt
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

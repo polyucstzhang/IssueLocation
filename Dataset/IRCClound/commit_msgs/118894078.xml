@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894078</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/4d0d5efa6a376cf22e89d6ad2f5f8919cbc99484]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/4d0d5efa6a376cf22e89d6ad2f5f8919cbc99484]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:2:34</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/4d0d5efa6a376cf22e89d6ad2f5f8919cbc99484]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      sasl_fail, sasl_too_long, sasl_aborted, sasl_already, you_are_operator
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894763</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/97e1576ad5d15b53df18a43b8f158b830ebf4131]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/97e1576ad5d15b53df18a43b8f158b830ebf4131]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:23:31</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/97e1576ad5d15b53df18a43b8f158b830ebf4131]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Only show the loading indicator in the action bar if the big one isn'…
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894456</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/681b2cb3b140337e55b687a28abdf39504eb586e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/681b2cb3b140337e55b687a28abdf39504eb586e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:15:47</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/681b2cb3b140337e55b687a28abdf39504eb586e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Subclass EditText to prevent it from overriding the send button with …
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/layout-sw800dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout-sw800dp/activity_message.xml
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              src/com/irccloud/android/ActionEditText.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

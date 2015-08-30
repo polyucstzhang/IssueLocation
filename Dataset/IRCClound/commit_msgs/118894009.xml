@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894009</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a26dbc4a994681f1ca0fd0ac360427cb59a82010]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a26dbc4a994681f1ca0fd0ac360427cb59a82010]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:59:55</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a26dbc4a994681f1ca0fd0ac360427cb59a82010]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Save/Restore the scroll position when switching buffers, closes </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

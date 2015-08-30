@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881876</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/11b0de6db8f0a827a4c60c863c1d5ce44713b1e2]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/11b0de6db8f0a827a4c60c863c1d5ce44713b1e2]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:28:40</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/11b0de6db8f0a827a4c60c863c1d5ce44713b1e2]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed dialog title
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

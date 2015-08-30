@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826831</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/586]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/586]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:41:15</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/586]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#586</id><title>National parks rendered incorrectly</title><description>
+
+    
+      
+          I suspect that this bug is in the map writer, but it could also be caused by the rendering code. Large polygons, such as national parks are rendered as large transparent areas with some green on the edges. Sometimes, the polygon fragments are inverted - they are filled in when they should be cut out instead. 
+
+See the attached JPG. The left pane is rendered with mapsforge, and the right pane is a screen grab from openstreetmaps.org.
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I have not checked the osm data.
+But playing around I see that actually the whole map has these issues.
+
+@lincomatic 
+Have you seen the same issues with OpenAndroMaps map?
+      
+    
+
+  </contents></item><item><commenter>lincomatic</commenter><contents>
+
+    
+      
+          OK, I was right.. the problem is the map file. I tried the map from download.mapsforge.org on OruxMaps and it also shows the bug. And attached below is the OpenAndroMaps map displayed with SwingMapViewer, and it looks good. What tool does OpenAndroMaps use to create the maps? Don't they use osmosis and the mapsforge writer plugin?
+
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          Christian (OpenAndroMaps) can answer better for his work (you could ask in its forum too).
+
+But tag-mapping can play significant role, e.g. maybe force-polygon-line is used here for different results.
+      
+    
+
+  </contents></item><item><commenter>lincomatic</commenter><contents>
+
+    
+      
+          Some more data... OpenAndroMaps has force-polygon-line turned off in their default mapping file. I opened up a bunch of their maps around the world and they look OK. But I don't know if they use that setting in all of their maps or not. I did find a few more maps with errors, and they looked better in OpenAndroMaps. But I understand your reluctance to change it w/o more testing.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          With 13bb0d7 I pushed a fix on dev, removing the force-polygon-line when boundary is national_park.
+
+Ludwig can integrate it later in our build server.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents/></item><item><commenter>devemux86</commenter><contents/></item></comments><createtime>Mar 5, 2015, 12:53 AM GMT+8</createtime><closetime>Mar 5, 2015, 11:40 AM GMT+8</closetime></item></BR></extraction>

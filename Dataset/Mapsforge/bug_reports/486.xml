@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828342</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/486]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/486]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:43:48</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/486]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#486</id><title>onTouchEvent method in the ItemizedOverlay class.</title><description>
+
+    
+      
+          From hardikte...@gmail.com on February 18, 2014 15:27:59
+
+Hi,
+
+I am using mapsforge library. I want to implement feature to move Overlay with finger. To implement this feature it is required to have { public boolean onTouchEvent(MotionEvent event, MapView mapView)} method in the ItemizedOverlay class. But I am not able to get this method when overriding in Eclipse. 
+
+Has anybody faced this problem? ...please help me
+
+I tried another approach, I downloaded the source code using git bash. But surprisingly I could not find ItemizedOverlay class. Is this source not updated in downloads section?
+
+Thanks in advance.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=486
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From hardikte...@gmail.com on February 19, 2014 03:24:32
+
+Thanks for the prompt reply. Can you please provide java source code for mapsforge-map-0.3.0-jar-with-dependencies.jar ?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on May 25, 2014 21:27:13
+
+There is support for the required method in 0.4.x. 
+0.3 is not supported anymore, so I am closing this issue.
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 6:05 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:05 PM GMT+8</closetime></item></BR></extraction>

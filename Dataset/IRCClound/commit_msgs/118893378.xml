@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893378</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/fd20c1e2fe3a0163dd12bae8416eae1c8df10fbb]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/fd20c1e2fe3a0163dd12bae8416eae1c8df10fbb]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:37:13</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/fd20c1e2fe3a0163dd12bae8416eae1c8df10fbb]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a few crashes
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/Ignore.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ShareChooserActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BufferOptionsFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

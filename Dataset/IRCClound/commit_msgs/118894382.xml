@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894382</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/95c930227f85b4696f05aaf0d2974dc527f59663]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/95c930227f85b4696f05aaf0d2974dc527f59663]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:13:18</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/95c930227f85b4696f05aaf0d2974dc527f59663]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Landscape login/splash screen
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

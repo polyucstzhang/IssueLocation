@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881752</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/5c394da9b665802bf1c6cd9c2710b5a983fc2934]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/5c394da9b665802bf1c6cd9c2710b5a983fc2934]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:21</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/5c394da9b665802bf1c6cd9c2710b5a983fc2934]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      reverted to old waypoint behaviour as the new design wasn't feasible
+    </title><numberfile>
+      15 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              DaoGenerator/src/main/java/org/owntracks/android/DaoGenerator.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/db/Waypoint.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/db/WaypointDao.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/messages/LocationMessage.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/layout/fragment_waypoint.xml
+            </name></item><item><name>
+              src/main/res/values/bools.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

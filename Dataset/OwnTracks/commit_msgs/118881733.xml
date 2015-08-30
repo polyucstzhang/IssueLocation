@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881733</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/f91b34c9cfef61f466e9be7b93c9042c2fffb712]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/f91b34c9cfef61f466e9be7b93c9042c2fffb712]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:34</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/f91b34c9cfef61f466e9be7b93c9042c2fffb712]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixed multiple things, adding drawer
+    </title><numberfile>
+      25 changed files
+    </numberfile><source_file><item><name>
+              .idea/libraries/appcompat_v7_21_0_2.xml → .idea/libraries/appcompat_v7_21_0_3.xml
+            </name></item><item><name>
+              .idea/libraries/fab_0_0_8.xml
+            </name></item><item><name>
+              .idea/libraries/recyclerview_v7_21_0_3.xml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/preferences/ToolbarPreference.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/res/drawable/inset.xml
+            </name></item><item><name>
+              src/main/res/layout/activity_main.xml
+            </name></item><item><name>
+              src/main/res/layout/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_contacts.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_details.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_map.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_waypoint.xml
+            </name></item><item><name>
+              src/main/res/layout/row_contact.xml
+            </name></item><item><name>
+              src/main/res/layout/settings_toolbar.xml
+            </name></item><item><name>
+              src/main/res/layout/toolbar.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/menu/fragment_contacts.xml
+            </name></item><item><name>
+              src/main/res/menu/fragment_details.xml
+            </name></item><item><name>
+              src/main/res/menu/fragment_map.xml
+            </name></item><item><name>
+              src/main/res/values/styles.xml
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893074</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/cb242204b9c2b5a18e21ff8fde96a11f9ed82a99]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/cb242204b9c2b5a18e21ff8fde96a11f9ed82a99]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:32:26</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/cb242204b9c2b5a18e21ff8fde96a11f9ed82a99]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      More refactoring and tidying up of unused / redundant variables
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/collection/ServersList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/model/Server.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

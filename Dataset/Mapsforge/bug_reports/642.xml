@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826501</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/642]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/642]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:40:1</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/642]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#642</id><title>LabelLayer: redraw</title><description>
+
+    
+      
+          Using LabelLayer with a map filled with grid based symbols, if we zoom in / out then only some map tiles are filled again with the symbols.
+
+Often after pan / zoom we have empty areas and we need to move slightly the map in order to trigger a redraw.
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          And it occurs on Android, LabelLayer seems working fine on Java.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I see we scan map view's all visible tiles but many come up empty in TileBasedLabelStore.getVisibleItems (though they shouldn't), probably in a racing condition as this is totally random.
+
+I associate it with MapWorkerPool job, where only the TileRendererLayer is triggered to redraw and not the LabelLayer.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item><item><commenter>devemux86</commenter><contents/></item></comments><createtime>Jul 5, 2015, 1:57 AM GMT+8</createtime><closetime>Jul 5, 2015, 9:32 PM GMT+8</closetime></item></BR></extraction>

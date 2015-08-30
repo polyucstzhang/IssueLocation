@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893466</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f2668d46d66f2f2b75b63d5bef9ce84824cf2532]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f2668d46d66f2f2b75b63d5bef9ce84824cf2532]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:39:39</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f2668d46d66f2f2b75b63d5bef9ce84824cf2532]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      HTML escape the topic, emojify away messages
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/WhoisFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

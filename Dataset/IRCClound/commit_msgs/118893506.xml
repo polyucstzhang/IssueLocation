@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893506</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b67bbd5dd2a9e332bc9ec5bb99c44438e6c0dfbd]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b67bbd5dd2a9e332bc9ec5bb99c44438e6c0dfbd]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:41:10</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b67bbd5dd2a9e332bc9ec5bb99c44438e6c0dfbd]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Update the save and cancel icons
+    </title><numbercommit>
+      16 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-hdpi/ic_action_save.png
+            </name></item><item><name>
+              res/drawable-ldpi/ic_action_cancel.png
+            </name></item><item><name>
+              res/drawable-ldpi/ic_action_save.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_action_cancel.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_action_save.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_action_cancel.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_action_save.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/ic_action_cancel.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/ic_action_save.png
+            </name></item><item><name>
+              res/drawable-xxxhdpi/ic_action_cancel.png
+            </name></item><item><name>
+              res/drawable-xxxhdpi/ic_action_photo.png
+            </name></item><item><name>
+              res/drawable-xxxhdpi/ic_action_save.png
+            </name></item><item><name>
+              res/drawable-xxxhdpi/ic_action_send.png
+            </name></item><item><name>
+              res/drawable/ic_action_cancel.png
+            </name></item><item><name>
+              res/drawable/ic_action_save.png
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

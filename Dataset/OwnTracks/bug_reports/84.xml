@@ -1,0 +1,4 @@
+<extraction><id>#84</id><title>does not work on devices without google play services</title><description> google play services is not present on all android devices
+also, it is proprietary.  It would be awesome if this app could be included in f-droid repository. They do not allow proprietary software dependancy.maybe https://github.com/mapzen/LOST would help</description><comments>The Play Services are an integral part of the app as they're used for location services.
+
+As such, there will probably never be a version without them, sorry.</comments></extraction>

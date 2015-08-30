@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881896</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/8d6cab20e2e0d55b3aca14d1d1669164dc0c74da]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/8d6cab20e2e0d55b3aca14d1d1669164dc0c74da]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:29:22</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/8d6cab20e2e0d55b3aca14d1d1669164dc0c74da]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed crash when a GeocodableLocation without tag was received
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item></source_file></item></commit></extraction>

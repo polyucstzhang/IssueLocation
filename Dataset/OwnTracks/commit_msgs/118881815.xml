@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881815</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/f104f81c0e63c9e66559bcc33e2786af7ee490c8]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/f104f81c0e63c9e66559bcc33e2786af7ee490c8]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:26:21</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/f104f81c0e63c9e66559bcc33e2786af7ee490c8]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Merge branch 'master' of github.com:owntracks/android
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              README.md
+            </name></item></source_file></item></commit></extraction>

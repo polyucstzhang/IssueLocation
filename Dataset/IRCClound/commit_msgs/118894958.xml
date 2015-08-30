@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894958</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9736b6bd7705dc8db5c49bc0c699db94fbd9f9e3]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9736b6bd7705dc8db5c49bc0c699db94fbd9f9e3]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:30:9</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9736b6bd7705dc8db5c49bc0c699db94fbd9f9e3]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Login activity
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_login.xml
+            </name></item><item><name>
+              res/menu/activity_login.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

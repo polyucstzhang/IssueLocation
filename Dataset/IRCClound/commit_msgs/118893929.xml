@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893929</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d74026ca9979d4ed70c935956b240c325ae4b6de]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d74026ca9979d4ed70c935956b240c325ae4b6de]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:56:54</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d74026ca9979d4ed70c935956b240c325ae4b6de]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Improve handling of link_channel
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/EventsDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893279</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/1f1dfed58bd502d194df25d27e887c14bc705b2b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/1f1dfed58bd502d194df25d27e887c14bc705b2b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:35:55</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/1f1dfed58bd502d194df25d27e887c14bc705b2b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      pastebin viewer
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              build.gradle
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/layout/activity_imageviewer.xml
+            </name></item><item><name>
+              res/menu/activity_pastebin.xml
+            </name></item><item><name>
+              src/com/irccloud/android/ColorFormatter.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PastebinViewerActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

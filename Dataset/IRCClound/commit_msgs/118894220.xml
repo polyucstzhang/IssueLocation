@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894220</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/1a105c4bd2b3d73935e32f4de9193afedda3b60f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/1a105c4bd2b3d73935e32f4de9193afedda3b60f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:7:40</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/1a105c4bd2b3d73935e32f4de9193afedda3b60f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Sony LiveWare extension improvements: better icons, clear notificatio…
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-nodpi/ic_sony_extension.png
+            </name></item><item><name>
+              res/drawable-nodpi/ic_sony_msg.png
+            </name></item><item><name>
+              res/drawable-nodpi/ic_sony_msg_2.png
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              src/com/irccloud/android/PreferencesActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/SonyExtensionService.java
+            </name></item><item><name>
+              src/com/irccloud/android/SonyRegistrationInformation.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

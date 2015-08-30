@@ -1,0 +1,2 @@
+<extraction><id>#116</id><title>ViewGroup.java line 3103</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/550026577d7854d7c9b1661a</description><comments>This is a bug in the Android support library.</comments></extraction>

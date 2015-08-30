@@ -1,0 +1,2 @@
+<extraction><id>#150</id><title>TextView.java line 6536</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/551534125141dcfd8f40dcf9</description><comments>should be fixed in next build</comments></extraction>

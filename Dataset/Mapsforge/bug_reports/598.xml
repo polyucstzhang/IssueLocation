@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118636779</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/598]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/598]]></realpath><theme>issue_598</theme><middle>default</middle><createdate>2015-8-22 22:49:23</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/598]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#598</id><title>Zoom controls enhancements</title><comments>
+          
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 8
+    
+  
+
+
+
+  
+
+    
+      
+          
+
+ Make auto hide optional
+
+ Add position offsets
+
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      added the enhancement label on Apr 8
+    
+  
+
+
+
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on May 28
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      Zoom controls: make auto hide optional, #598
+
+
+  
+
+  
+
+
+      bb219af
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on May 28
+    
+  
+
+
+
+  
+
+    
+      
+          With bb219af I pushed on dev the feature for zoom controls to have auto hide optional.
+
+An example of that is currently Diagnostics map viewer in Samples.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on May 28
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      Zoom controls: add position offset, #598
+
+
+  
+
+  
+
+
+      2f93ca3
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on May 28
+    
+  
+
+
+
+  
+
+    
+      
+          With 2f93ca3 I pushed on dev customizable horizontal and vertical offsets for zoom controls.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      closed this   on May 28
+    
+  
+
+  
+
+
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on May 28
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      Zoom controls: improve layout management, #598
+
+
+  
+
+  
+
+
+      beded48
+  
+
+
+    
+  
+
+
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      added this to the 0.5.2 milestone on Jul 21
+    
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+        </comments></item></BR></extraction>

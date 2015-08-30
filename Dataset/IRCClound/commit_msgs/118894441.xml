@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894441</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3f8f54645bbab3d96d302bd897e73d71db13cedf]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3f8f54645bbab3d96d302bd897e73d71db13cedf]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:15:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3f8f54645bbab3d96d302bd897e73d71db13cedf]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Make channels clickable in the topic popup dialog
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/actionbar_edit_connection.xml
+            </name></item><item><name>
+              src/com/irccloud/android/ColorFormatter.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

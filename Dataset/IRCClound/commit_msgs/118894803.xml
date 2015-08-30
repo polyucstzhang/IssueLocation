@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894803</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/010e77d3e0037f9aa8579acc135ea2015f5f1815]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/010e77d3e0037f9aa8579acc135ea2015f5f1815]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:24:47</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/010e77d3e0037f9aa8579acc135ea2015f5f1815]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Merge branch 'master' of github.com:irccloud/android into nativerende…
+    </title><numbercommit>
+      21 changed files
+    </numbercommit><source_file><item><name>
+              .project
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              assets/messageview.html
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              res/layout/bufferslist.xml
+            </name></item><item><name>
+              res/layout/row_buffergroup.xml
+            </name></item><item><name>
+              res/menu/activity_main.xml
+            </name></item><item><name>
+              res/values-sw600dp-land/hideUserListFragment.xml
+            </name></item><item><name>
+              res/values-sw800dp/hideUserListFragment.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name>
+              res/values/hideUserListFragment.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/androidnative/AddChannelFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/UserListActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881941</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/2cd3d22820ea638cca72652dd4dabf6ff26a8071]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/2cd3d22820ea638cca72652dd4dabf6ff26a8071]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:4</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/2cd3d22820ea638cca72652dd4dabf6ff26a8071]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixes #256
+    </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item></source_file></item></commit></extraction>

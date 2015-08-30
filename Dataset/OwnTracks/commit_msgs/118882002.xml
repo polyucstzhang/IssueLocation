@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882002</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/82afeefaa20317207b28fcf893c5ca3b0c055875]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/82afeefaa20317207b28fcf893c5ca3b0c055875]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:32:46</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/82afeefaa20317207b28fcf893c5ca3b0c055875]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      restored most of 0.3.10 features and migrated to tab navigation
+    </title><numberfile>
+      10 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              bin/AndroidManifest.xml
+            </name></item><item><name>
+              bin/classes.dex
+            </name></item><item><name>
+              bin/mqttitude.apk
+            </name></item><item><name>
+              bin/resources.ap_
+            </name></item><item><name>
+              gen/st/alr/mqttitude/R.java
+            </name></item><item><name>
+              res/menu/activity_main.xml
+            </name></item><item><name>
+              res/menu/activity_preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item></source_file></item></commit></extraction>

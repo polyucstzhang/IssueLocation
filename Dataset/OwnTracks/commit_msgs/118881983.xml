@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881983</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/eca8017535756419cb1e48931893371c76b4ec97]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/eca8017535756419cb1e48931893371c76b4ec97]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:31:44</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/eca8017535756419cb1e48931893371c76b4ec97]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Closes </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,2 @@
+<extraction><id>#8</id><title>Waypoint notifications</title><description> Copy of binarybucks/mqttitude#275</description><comments>Added support for ticker on location messages that contain an "event". 
+Stacking notifications for contacts could be implemented later. </comments></extraction>

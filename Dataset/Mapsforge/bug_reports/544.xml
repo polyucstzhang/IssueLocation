@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118827796</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/544]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/544]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:41:59</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/544]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#544</id><title>map file create - mapfilewriter</title><description>
+
+    
+      
+          From marcin.p...@rst.com.pl on November 14, 2014 07:52:50
+
+What steps will reproduce the problem? 1. osmosis --rx file=input.osm --mw zoom-interval-conf=4,0,7 file=europe.map tag-conf-file=tag-mapping.xml What is the expected output? What do you see instead? Nov 12, 2014 2:10:10 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Osmosis Version 0.43.1
+Nov 12, 2014 2:10:11 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Preparing pipeline.
+Nov 12, 2014 2:10:11 PM org.mapsforge.map.writer.OSMTagMapping 
+WARNING: duplicate osm-tag found in tag-mapping configuration (ignoring): OSMTag [id=95, key=sport, value=shooting, zoomAppear=12, renderable=true]
+Nov 12, 2014 2:10:11 PM org.mapsforge.map.writer.osmosis.MapFileWriterTask 
+INFO: mapfile-writer version: mapsforge-map-writer-0.5.0-rc1
+Nov 12, 2014 2:10:11 PM org.mapsforge.map.writer.osmosis.MapFileWriterTask 
+INFO: mapfile format specification version: 3
+Nov 12, 2014 2:10:11 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Launching pipeline execution.
+Nov 12, 2014 2:10:11 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Pipeline executing, waiting for completion.
+Nov 12, 2014 2:10:11 PM org.mapsforge.map.writer.osmosis.MapFileWriterTask process
+INFO: start reading data...
+Nov 12, 2014 2:37:06 PM org.mapsforge.map.writer.osmosis.MapFileWriterTask complete
+INFO: completing read...
+Nov 12, 2014 2:39:20 PM org.mapsforge.map.writer.osmosis.MapFileWriterTask complete
+INFO: start writing file...
+Nov 12, 2014 2:39:20 PM org.mapsforge.map.writer.osmosis.MapFileWriterTask complete
+INFO: overwriting file /home/users/mpastuszka/mapy/europe-ways.map
+Nov 12, 2014 2:39:21 PM org.mapsforge.map.writer.MapFileWriter writeSubfile
+INFO: written 10.0% of sub file for zoom interval index 0
+Nov 12, 2014 2:39:21 PM org.mapsforge.map.writer.MapFileWriter writeSubfile
+INFO: written 20.0% of sub file for zoom interval index 0
+Nov 12, 2014 2:39:21 PM org.mapsforge.map.writer.MapFileWriter writeSubfile
+INFO: written 30.0% of sub file for zoom interval index 0
+Nov 12, 2014 2:39:21 PM org.mapsforge.map.writer.MapFileWriter writeSubfile
+INFO: written 40.0% of sub file for zoom interval index 0
+Nov 12, 2014 2:39:22 PM org.mapsforge.map.writer.MapFileWriter writeSubfile
+INFO: written 50.0% of sub file for zoom interval index 0
+Nov 12, 2014 2:40:34 PM org.mapsforge.map.writer.MapFileWriter writeSubfile
+INFO: written 60.0% of sub file for zoom interval index 0
+Nov 12, 2014 2:41:02 PM org.mapsforge.map.writer.MapFileWriter writeSubfile
+INFO: written 70.0% of sub file for zoom interval index 0
+Nov 12, 2014 2:53:15 PM org.openstreetmap.osmosis.core.pipeline.common.ActiveTaskManager waitForCompletion
+SEVERE: Thread for task 1-rx failed
+java.nio.BufferOverflowException
+    at java.nio.HeapByteBuffer.put(HeapByteBuffer.java:183)
+    at org.mapsforge.map.writer.MapFileWriter.processTile(MapFileWriter.java:817)
+    at org.mapsforge.map.writer.MapFileWriter.writeSubfile(MapFileWriter.java:891)
+    at org.mapsforge.map.writer.MapFileWriter.writeFile(MapFileWriter.java:355)
+    at org.mapsforge.map.writer.osmosis.MapFileWriterTask.complete(MapFileWriterTask.java:99)
+    at org.openstreetmap.osmosis.xml.v0_6.XmlReader.run(XmlReader.java:113)
+    at java.lang.Thread.run(Thread.java:744)
+
+Nov 12, 2014 2:53:15 PM org.openstreetmap.osmosis.core.Osmosis main
+SEVERE: Execution aborted.
+org.openstreetmap.osmosis.core.OsmosisRuntimeException: One or more tasks failed.
+    at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.waitForCompletion(Pipeline.java:146)
+    at org.openstreetmap.osmosis.core.Osmosis.run(Osmosis.java:92)
+    at org.openstreetmap.osmosis.core.Osmosis.main(Osmosis.java:37)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:606)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:329)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:239)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+    at org.codehaus.classworlds.Launcher.main(Launcher.java:47) What version of the product are you using? On what operating system? map-writer version:
+mapsforge-map-writer-0.5.0-rc1.jar Please provide any additional information below. Hardeware:
+CPU - 8x Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
+MEMORY - 32GB
+STORAGE - 500GB
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=544
+      
+    
+
+  </description><comments><item><commenter>marcin-develop</commenter><contents>
+
+    
+      
+          Yes I trying to build whole Europe map to zoom level 7. I tried with type=hd parameter and result was the same. I tried to create functionality something like maps.me and osmand have. 
+I'm sorry for my english.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          A suggestion would be to play with the simplification-factor parameter of the map writer, or better have simplified vector data as input a priori.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          That also depends on the tag-mapping if you use a custom one.
+Most data are getting in the map file in large zoom levels.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          About some instructions for building a low detail world map, see the mailing list:
+https://groups.google.com/forum/#!topic/mapsforge-dev/1PzOYvFs8sE
+      
+    
+
+  </contents></item></comments><createtime>Nov 14, 2014, 3:54 PM GMT+8</createtime><closetime>Mar 15, 2015, 9:23 PM GMT+8</closetime></item></BR></extraction>

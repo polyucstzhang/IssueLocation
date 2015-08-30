@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893099</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d8c15a8929f728e4638b50a99e78bf8241f0084e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d8c15a8929f728e4638b50a99e78bf8241f0084e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:33:49</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d8c15a8929f728e4638b50a99e78bf8241f0084e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      switch to the Google Design Library tabs widget
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/layout/activity_pastebineditor.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PastebinEditorActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894163</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9ba67d7c06a1968ba9396a8c188ea1ac20777395]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9ba67d7c06a1968ba9396a8c188ea1ac20777395]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:5:36</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9ba67d7c06a1968ba9396a8c188ea1ac20777395]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a bug where the app wouldn't scroll down when resuming
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

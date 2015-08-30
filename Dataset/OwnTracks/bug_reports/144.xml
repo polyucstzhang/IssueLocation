@@ -1,0 +1,2 @@
+<extraction><id>#144</id><title>GLES20Canvas.java line 871</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/55131fe15141dcfd8f3c6f45</description><comments>should be fixed in next build</comments></extraction>

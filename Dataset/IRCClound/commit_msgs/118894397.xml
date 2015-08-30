@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894397</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/97b17c7e6cae0133911462573b1be9947965bee2]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/97b17c7e6cae0133911462573b1be9947965bee2]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:13:48</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/97b17c7e6cae0133911462573b1be9947965bee2]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a crash, fix the next/prev focus actions on the login screen
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

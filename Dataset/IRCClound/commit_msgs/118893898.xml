@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893898</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/8a5a012225c9f05b713e0fd2db94f74defb21878]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/8a5a012225c9f05b713e0fd2db94f74defb21878]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:55:53</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/8a5a012225c9f05b713e0fd2db94f74defb21878]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Add a setting to toggle auto capitalization
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/xml/preferences_device.xml
+            </name></item><item><name>
+              src/com/irccloud/android/ActionEditText.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

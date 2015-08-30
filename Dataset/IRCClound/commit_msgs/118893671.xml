@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893671</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/fe51cc0860274b6840e19778995b5aeea4c3f881]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/fe51cc0860274b6840e19778995b5aeea4c3f881]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:47:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/fe51cc0860274b6840e19778995b5aeea4c3f881]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Better detection of +t when showing/hiding the edit topic button
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/ChannelsDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

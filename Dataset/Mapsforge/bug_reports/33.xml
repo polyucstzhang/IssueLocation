@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832655</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/33]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/33]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:57:23</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/33]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#33</id><title>Document the highway hierarchies mobile routing</title><description>
+
+    
+      
+          From Frank.Vi...@googlemail.com on September 28, 2010 14:45:55
+
+
+create a getting started article for library users.
+1a. how to create a highway hierarchies binary file
+1b. how to use the HHRouter -&gt; 2
+create a sample application with minimal lines of code.
+summarize the approach (short version)
+document the routing binary file
+
+
+to be done in the end of november
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=33
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on February 17, 2011 05:44:14
+
+Labels: -Priority-Medium Priority-High  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on September 29, 2011 10:09:23
+
+Status: WontFix  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:29 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:29 PM GMT+8</closetime></item></BR></extraction>

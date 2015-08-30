@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892993</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a11eb0e904ab38f92e03a546514d4c791c672f25]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a11eb0e904ab38f92e03a546514d4c791c672f25]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:30:19</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a11eb0e904ab38f92e03a546514d4c791c672f25]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix missing data after rotating
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/BuffersList.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

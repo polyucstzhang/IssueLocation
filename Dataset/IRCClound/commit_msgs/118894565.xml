@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894565</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b9ef6a6681aeaf0e8cb4bfcab6a04b35b2e677ec]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b9ef6a6681aeaf0e8cb4bfcab6a04b35b2e677ec]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:19:30</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b9ef6a6681aeaf0e8cb4bfcab6a04b35b2e677ec]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Remove the disconnected yellow colored action bar / backgrounds
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

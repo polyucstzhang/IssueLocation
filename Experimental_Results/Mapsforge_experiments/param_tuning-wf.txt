@@ -1,0 +1,1134 @@
+class: 0.100000, method: 0.100000, variable: 0.100000, comment:0.700000 
+bug 470, Rank 8 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 1 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.642987 
+MAP: 0.603304 
+Max_mrr: 0.642987 
+class: 0.100000, method: 0.100000, variable: 0.200000, comment:0.600000 
+bug 470, Rank 8 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.645367 
+MAP: 0.623542 
+Max_mrr: 0.645367 
+class: 0.100000, method: 0.100000, variable: 0.300000, comment:0.500000 
+bug 470, Rank 8 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.609653 
+MAP: 0.587828 
+Max_mrr: 0.645367 
+class: 0.100000, method: 0.100000, variable: 0.400000, comment:0.400000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.624534 
+MAP: 0.594772 
+Max_mrr: 0.645367 
+class: 0.100000, method: 0.100000, variable: 0.500000, comment:0.300000 
+bug 470, Rank 4 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.642391 
+MAP: 0.612629 
+Max_mrr: 0.645367 
+class: 0.100000, method: 0.100000, variable: 0.600000, comment:0.200000 
+bug 470, Rank 3 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.672153 
+MAP: 0.642788 
+Max_mrr: 0.672153 
+class: 0.100000, method: 0.200000, variable: 0.100000, comment:0.600000 
+bug 470, Rank 8 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.609653 
+MAP: 0.590209 
+Max_mrr: 0.672153 
+class: 0.100000, method: 0.200000, variable: 0.200000, comment:0.500000 
+bug 470, Rank 8 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.645367 
+MAP: 0.623542 
+Max_mrr: 0.672153 
+class: 0.100000, method: 0.200000, variable: 0.300000, comment:0.400000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.636439 
+MAP: 0.606677 
+Max_mrr: 0.672153 
+class: 0.100000, method: 0.200000, variable: 0.400000, comment:0.300000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.636439 
+MAP: 0.606677 
+Max_mrr: 0.672153 
+class: 0.100000, method: 0.200000, variable: 0.500000, comment:0.200000 
+bug 470, Rank 3 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.672153 
+MAP: 0.638820 
+Max_mrr: 0.672153 
+class: 0.100000, method: 0.200000, variable: 0.600000, comment:0.100000 
+bug 470, Rank 2 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 2 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 4 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 22 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.642532 
+MAP: 0.612175 
+Max_mrr: 0.672153 
+class: 0.100000, method: 0.300000, variable: 0.100000, comment:0.500000 
+bug 470, Rank 9 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.656280 
+MAP: 0.636836 
+Max_mrr: 0.672153 
+class: 0.100000, method: 0.300000, variable: 0.200000, comment:0.400000 
+bug 470, Rank 8 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.692987 
+MAP: 0.673542 
+Max_mrr: 0.692987 
+class: 0.100000, method: 0.300000, variable: 0.300000, comment:0.300000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.672153 
+MAP: 0.644772 
+Max_mrr: 0.692987 
+class: 0.100000, method: 0.300000, variable: 0.400000, comment:0.200000 
+bug 470, Rank 3 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.707867 
+MAP: 0.674534 
+Max_mrr: 0.707867 
+class: 0.100000, method: 0.400000, variable: 0.100000, comment:0.400000 
+bug 470, Rank 10 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.688820 
+MAP: 0.669375 
+Max_mrr: 0.707867 
+class: 0.100000, method: 0.400000, variable: 0.200000, comment:0.300000 
+bug 470, Rank 7 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.706167 
+MAP: 0.678786 
+Max_mrr: 0.707867 
+class: 0.100000, method: 0.400000, variable: 0.300000, comment:0.200000 
+bug 470, Rank 5 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.698344 
+MAP: 0.668979 
+Max_mrr: 0.707867 
+class: 0.100000, method: 0.500000, variable: 0.100000, comment:0.300000 
+bug 470, Rank 10 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.688820 
+MAP: 0.666994 
+Max_mrr: 0.707867 
+class: 0.100000, method: 0.500000, variable: 0.200000, comment:0.200000 
+bug 470, Rank 7 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.694262 
+MAP: 0.686326 
+Max_mrr: 0.707867 
+class: 0.100000, method: 0.600000, variable: 0.100000, comment:0.200000 
+bug 470, Rank 11 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.700075 
+MAP: 0.686186 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.100000, variable: 0.100000, comment:0.600000 
+bug 470, Rank 8 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.607272 
+MAP: 0.585447 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.100000, variable: 0.200000, comment:0.500000 
+bug 470, Rank 8 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.642987 
+MAP: 0.621161 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.100000, variable: 0.300000, comment:0.400000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.624534 
+MAP: 0.594772 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.100000, variable: 0.400000, comment:0.300000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.636439 
+MAP: 0.604296 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.100000, variable: 0.500000, comment:0.200000 
+bug 470, Rank 3 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.672153 
+MAP: 0.638820 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.100000, variable: 0.600000, comment:0.100000 
+bug 470, Rank 2 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 2 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 4 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 22 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.640152 
+MAP: 0.617334 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.200000, variable: 0.100000, comment:0.500000 
+bug 470, Rank 9 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.606280 
+MAP: 0.586836 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.200000, variable: 0.200000, comment:0.400000 
+bug 470, Rank 8 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.654891 
+MAP: 0.635447 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.200000, variable: 0.300000, comment:0.300000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.636439 
+MAP: 0.604296 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.200000, variable: 0.400000, comment:0.200000 
+bug 470, Rank 3 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 5 hit
+MRR: 0.672153 
+MAP: 0.638820 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.200000, variable: 0.500000, comment:0.100000 
+bug 470, Rank 2 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 2 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 4 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 21 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.638605 
+MAP: 0.612217 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.300000, variable: 0.100000, comment:0.400000 
+bug 470, Rank 10 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.688820 
+MAP: 0.669375 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.300000, variable: 0.200000, comment:0.300000 
+bug 470, Rank 7 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.703786 
+MAP: 0.674024 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.300000, variable: 0.300000, comment:0.200000 
+bug 470, Rank 5 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.695963 
+MAP: 0.666598 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.400000, variable: 0.100000, comment:0.300000 
+bug 470, Rank 10 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.700725 
+MAP: 0.670963 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.400000, variable: 0.200000, comment:0.200000 
+bug 470, Rank 7 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.691881 
+MAP: 0.686326 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.500000, variable: 0.100000, comment:0.200000 
+bug 470, Rank 10 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.700725 
+MAP: 0.686836 
+Max_mrr: 0.707867 
+class: 0.200000, method: 0.500000, variable: 0.200000, comment:0.100000 
+bug 470, Rank 5 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 4 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 21 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.724320 
+MAP: 0.697931 
+Max_mrr: 0.724320 
+class: 0.200000, method: 0.600000, variable: 0.100000, comment:0.100000 
+bug 470, Rank 7 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 4 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 21 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.721939 
+MAP: 0.695550 
+Max_mrr: 0.724320 
+class: 0.300000, method: 0.100000, variable: 0.100000, comment:0.500000 
+bug 470, Rank 9 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.606280 
+MAP: 0.586836 
+Max_mrr: 0.724320 
+class: 0.300000, method: 0.100000, variable: 0.200000, comment:0.400000 
+bug 470, Rank 8 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.642987 
+MAP: 0.618780 
+Max_mrr: 0.724320 
+class: 0.300000, method: 0.100000, variable: 0.300000, comment:0.300000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.632357 
+MAP: 0.600214 
+Max_mrr: 0.724320 
+class: 0.300000, method: 0.100000, variable: 0.400000, comment:0.200000 
+bug 470, Rank 3 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.668072 
+MAP: 0.634738 
+Max_mrr: 0.724320 
+class: 0.300000, method: 0.200000, variable: 0.100000, comment:0.400000 
+bug 470, Rank 9 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.653899 
+MAP: 0.632074 
+Max_mrr: 0.724320 
+class: 0.300000, method: 0.200000, variable: 0.200000, comment:0.300000 
+bug 470, Rank 7 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.666371 
+MAP: 0.636609 
+Max_mrr: 0.724320 
+class: 0.300000, method: 0.200000, variable: 0.300000, comment:0.200000 
+bug 470, Rank 5 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.658548 
+MAP: 0.629183 
+Max_mrr: 0.724320 
+class: 0.300000, method: 0.300000, variable: 0.100000, comment:0.300000 
+bug 470, Rank 10 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.700725 
+MAP: 0.670963 
+Max_mrr: 0.724320 
+class: 0.300000, method: 0.300000, variable: 0.200000, comment:0.200000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.727595 
+MAP: 0.698230 
+Max_mrr: 0.727595 
+class: 0.300000, method: 0.400000, variable: 0.100000, comment:0.200000 
+bug 470, Rank 10 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.699024 
+MAP: 0.685135 
+Max_mrr: 0.727595 
+class: 0.400000, method: 0.100000, variable: 0.100000, comment:0.400000 
+bug 470, Rank 9 hit
+bug 623, Rank 2 hit
+bug 616, Rank 3 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 3 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.606280 
+MAP: 0.584455 
+Max_mrr: 0.727595 
+class: 0.400000, method: 0.100000, variable: 0.200000, comment:0.300000 
+bug 470, Rank 7 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.666371 
+MAP: 0.636609 
+Max_mrr: 0.727595 
+class: 0.400000, method: 0.100000, variable: 0.300000, comment:0.200000 
+bug 470, Rank 5 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.658548 
+MAP: 0.629183 
+Max_mrr: 0.727595 
+class: 0.400000, method: 0.200000, variable: 0.100000, comment:0.300000 
+bug 470, Rank 9 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.699818 
+MAP: 0.670056 
+Max_mrr: 0.727595 
+class: 0.400000, method: 0.200000, variable: 0.200000, comment:0.200000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.691881 
+MAP: 0.662516 
+Max_mrr: 0.727595 
+class: 0.400000, method: 0.300000, variable: 0.100000, comment:0.200000 
+bug 470, Rank 10 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.699024 
+MAP: 0.685135 
+Max_mrr: 0.727595 
+class: 0.500000, method: 0.100000, variable: 0.100000, comment:0.300000 
+bug 470, Rank 9 hit
+bug 623, Rank 2 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.628389 
+MAP: 0.598627 
+Max_mrr: 0.727595 
+class: 0.500000, method: 0.100000, variable: 0.200000, comment:0.200000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 3 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.691881 
+MAP: 0.662516 
+Max_mrr: 0.727595 
+class: 0.500000, method: 0.200000, variable: 0.100000, comment:0.200000 
+bug 470, Rank 9 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.735532 
+MAP: 0.700214 
+Max_mrr: 0.735532 
+class: 0.600000, method: 0.100000, variable: 0.100000, comment:0.200000 
+bug 470, Rank 9 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 2 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 23 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.699818 
+MAP: 0.664500 
+Max_mrr: 0.735532 
+class: 0.600000, method: 0.100000, variable: 0.200000, comment:0.100000 
+bug 470, Rank 4 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 4 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 22 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.692022 
+MAP: 0.673570 
+Max_mrr: 0.735532 
+class: 0.600000, method: 0.200000, variable: 0.100000, comment:0.100000 
+bug 470, Rank 6 hit
+bug 623, Rank 2 hit
+bug 616, Rank 1 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 1 hit
+bug 626, Rank 1 hit
+bug 585, Rank 4 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 22 hit
+bug 425, Rank 1 hit
+bug 598, Rank 1 hit
+bug 512, Rank 7 hit
+MRR: 0.721784 
+MAP: 0.703332 
+Max_mrr: 0.735532 

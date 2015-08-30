@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881736</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/49283ce3a96b47d11f6b5691b2c1a97fd362e784]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/49283ce3a96b47d11f6b5691b2c1a97fd362e784]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:40</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/49283ce3a96b47d11f6b5691b2c1a97fd362e784]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed overflow menu theme, Fixed overflow menu icon for </title><numberfile>
+      7 changed files
+    </numberfile><source_file><item><name>
+              src/main/res/drawable-hdpi/ic_action_overflow.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_more_vert_white_24dp.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_action_overflow.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_action_overflow.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_action_overflow.png
+            </name></item><item><name>
+              src/main/res/layout/toolbar.xml
+            </name></item><item><name>
+              src/main/res/values/styles.xml
+            </name></item></source_file></item></commit></extraction>

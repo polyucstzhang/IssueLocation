@@ -1,0 +1,2 @@
+<extraction><id>#85</id><title>Editing a network's settings can silently fail.</title><description> When editing a network, if the Username or Nick fields contain invalid data, pressing Save dismisses the edit dialogue but all values are reverted to their original state (no changes are saved).App version: 1.11
+Android version: 4.4.4</description><comments> </comments></extraction>

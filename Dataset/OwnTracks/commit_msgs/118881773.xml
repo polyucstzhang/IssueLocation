@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881773</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/cc3f28599120c6ed73ccbab3ffd501202200b236]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/cc3f28599120c6ed73ccbab3ffd501202200b236]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:24:13</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/cc3f28599120c6ed73ccbab3ffd501202200b236]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      updated project settings, moved cleanSession flag to advanced connect…
+    </title><numberfile>
+      8 changed files
+    </numberfile><source_file><item><name>
+              .idea/libraries/appcompat_v7_19_1_0.xml
+            </name></item><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              gradle/wrapper/gradle-wrapper.properties
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/main/res/layout/preferences_broker.xml
+            </name></item></source_file></item></commit></extraction>

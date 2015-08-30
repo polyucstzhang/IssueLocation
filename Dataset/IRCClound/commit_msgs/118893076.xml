@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893076</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b4e3ac489b79ea624382862d0ddc50bab9a14154]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b4e3ac489b79ea624382862d0ddc50bab9a14154]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:32:33</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b4e3ac489b79ea624382862d0ddc50bab9a14154]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix some Gingerbread rendering issues, improve performance of togglin…
+    </title><numbercommit>
+      12 changed files
+    </numbercommit><source_file><item><name>
+              res/color-v21/row_label.xml
+            </name></item><item><name>
+              res/color/row_label.xml
+            </name></item><item><name>
+              res/layout/bufferslist.xml
+            </name></item><item><name>
+              res/layout/row_buffer.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name>
+              res/values/dimens.xml
+            </name></item><item><name>
+              src/com/irccloud/android/data/BackgroundBindingAdapter.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/HeightBindingAdapter.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/TextColorBindingAdapter.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/model/Buffer.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

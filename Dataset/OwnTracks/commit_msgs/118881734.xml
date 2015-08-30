@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881734</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/c1fe0f2d6c6a37b2bcdb81fd701b58cef48ced80]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/c1fe0f2d6c6a37b2bcdb81fd701b58cef48ced80]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:36</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/c1fe0f2d6c6a37b2bcdb81fd701b58cef48ced80]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed crash in ActivityWaypoints
+    </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/st/alr/mqttitude/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/res/layout/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

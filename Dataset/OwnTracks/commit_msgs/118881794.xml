@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881794</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/7ecd4821dd36f2369da1ba2fb435c58696afae53]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/7ecd4821dd36f2369da1ba2fb435c58696afae53]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:25:4</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/7ecd4821dd36f2369da1ba2fb435c58696afae53]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed </title><numberfile>
+      7 changed files
+    </numberfile><source_file><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/adapter/ContactAdapter.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/adapter/MultitypeAdapter.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831285</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/185]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/185]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:52:31</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/185]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#185</id><title>Integrate the coastline algorithm into the mapfile-writer</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on October 14, 2011 18:53:28
+
+We decided to move the generation of closed (water and land) polygons from the map library to the mapfile-writer. We should be able to use our existing Java implementation for that, which is currently located in the android.maps package.
+
+As the coastline algorithm is no longer executed by the map renderer, many water areas and islands will be missing until we have fixed this.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=185
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on May 11, 2012 11:23:09
+
+Status: Started
+  Owner: ookami...@gmail.com  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From ookami...@gmail.com on January 14, 2013 18:05:33
+
+The mentioned message with explanations on the coastline-aware version on the mapsforge-dev mailinglist can be found here: https://groups.google.com/d/topic/mapsforge-dev/t-_zxJ0if-s/discussion
+      
+    
+
+  </contents></item><item><commenter>ludwigb</commenter><contents>
+
+    
+      
+          There is now a companion project to mapsforge at https://github.com/mapsforge/mapsforge-mapcreator that includes the water areas correctly by implementing an approach that has been discussed on our mailing list. https://groups.google.com/forum/#!searchin/mapsforge-dev/Missing$20water$3A$20a$20work-around$20solution/mapsforge-dev/x54kHlyKiBM/jUK4oRHvHUEJ.
+
+Using an external coast line set is preferable to duplicating this effort in mapsforge, so I am closing this issue.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:42 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:42 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881653</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/bf0e9758ff8fee9296fba495fd7a2cf0573f96bf]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/bf0e9758ff8fee9296fba495fd7a2cf0573f96bf]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:19:1</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/bf0e9758ff8fee9296fba495fd7a2cf0573f96bf]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixed disconnect button, fixed geofence setup for modes
+    </title><numberfile>
+      15 changed files
+    </numberfile><source_file><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              CHANGELOG.md
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityPreferencesConnection.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceLocator.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Events.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/menu/preferences_connection.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences_hosted_connection.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences_private_connection.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences_public.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences_public_connection.xml
+            </name></item></source_file></item></commit></extraction>

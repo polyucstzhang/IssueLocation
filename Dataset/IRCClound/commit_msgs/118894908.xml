@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894908</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/537f2f110de07e3a92297cabf4443cd8c2c74829]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/537f2f110de07e3a92297cabf4443cd8c2c74829]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:28:21</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/537f2f110de07e3a92297cabf4443cd8c2c74829]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Show a progress indicator for connections that are connecting, and in…
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/row_buffergroup.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

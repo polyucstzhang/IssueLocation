@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828575</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/483]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/483]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:43:54</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/483]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#483</id><title>Nullpointer exception</title><description>
+
+    
+      
+          From syt...@gmail.com on February 10, 2014 10:50:40
+
+What version of the product are you using? On what operating system? 0.3.1 (master branch) Please provide any additional information below. java.lang.NullPointerException
+        at android.graphics.Canvas.throwIfRecycled(Canvas.java:1043)
+        at android.graphics.Canvas.drawBitmap(Canvas.java:1083)
+        at org.mapsforge.android.maps.FrameBuffer.drawBitmap(FrameBuffer.java:101)
+        at org.mapsforge.android.maps.MapView.redraw(MapView.java:362)
+        at org.mapsforge.android.maps.MapViewPosition.moveCenter(MapViewPosition.java:106)
+        at org.mapsforge.android.maps.inputhandling.TouchEventHandler.onActionMove(TouchEventHandler.java:138)
+        at org.mapsforge.android.maps.inputhandling.TouchEventHandler.onTouchEvent(TouchEventHandler.java:89)
+        at org.mapsforge.android.maps.MapView.onTouchEvent(MapView.java:324)
+        at android.view.View.dispatchTouchEvent(View.java:7160)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2170)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1905)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2176)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1919)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2176)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1919)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2176)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1919)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2176)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1919)
+        at com.android.internal.policy.impl.PhoneWindow$DecorView.superDispatchTouchEvent(PhoneWindow.java:1934)
+        at com.android.internal.policy.impl.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:1388)
+        at android.app.Activity.dispatchTouchEvent(Activity.java:2396)
+        at com.android.internal.policy.impl.PhoneWindow$DecorView.dispatchTouchEvent(PhoneWindow.java:1882)
+        at android.view.View.dispatchPointerEvent(View.java:7340)
+        at android.view.ViewRootImpl.deliverPointerEvent(ViewRootImpl.java:3316)
+        at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:3261)
+        at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:4297)
+        at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:4276)
+        at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:4368)
+        at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:171)
+        at android.view.InputEventReceiver.nativeConsumeBatchedInputEvents(Native Method)
+        at android.view.InputEventReceiver.consumeBatchedInputEvents(InputEventReceiver.java:163)
+        at android.view.ViewRootImpl.doConsumeBatchedInput(ViewRootImpl.java:4347)
+        at android.view.ViewRootImpl$ConsumeBatchedInputRunnable.run(ViewRootImpl.java:4387)
+        at android.view.Choreographer$CallbackRecord.run(Choreographer.java:725)
+        at android.view.Choreographer.doCallbacks(Choreographer.java:555)
+        at android.view.Choreographer.doFrame(Choreographer.java:523)
+        at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:711)
+        at android.os.Handler.handleCallback(Handler.java:615)
+        at android.os.Handler.dispatchMessage(Handler.java:92)
+        at android.os.Looper.loop(Looper.java:137)
+        at android.app.ActivityThread.main(ActivityThread.java:4747)
+        at java.lang.reflect.Method.invokeNative(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:511)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+        at dalvik.system.NativeStart.main(Native Method)
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=483
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From syt...@gmail.com on February 10, 2014 02:19:45
+
+and this too:
+
+java.lang.NullPointerException
+        at org.mapsforge.map.reader.MapReadResultBuilder.add(MapReadResultBuilder.java:31)
+        at org.mapsforge.map.reader.MapDatabase.processBlocks(MapDatabase.java:548)
+        at org.mapsforge.map.reader.MapDatabase.readMapData(MapDatabase.java:326)
+        at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.executeJob(DatabaseRenderer.java:174)
+        at org.mapsforge.android.maps.mapgenerator.MapWorker.doWork(MapWorker.java:74)
+        at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:141)
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on March 28, 2014 05:55:56
+
+These issues are fixed in rescue.
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 6:05 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:05 PM GMT+8</closetime></item></BR></extraction>

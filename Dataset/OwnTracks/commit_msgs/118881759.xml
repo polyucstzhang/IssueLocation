@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881759</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/d16e8817a53aff1ab1b8a01aa825b7ea01c7adda]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/d16e8817a53aff1ab1b8a01aa825b7ea01c7adda]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:39</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/d16e8817a53aff1ab1b8a01aa825b7ea01c7adda]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Respond to beacon ranging preference, fix some bugs around BT being d…
+    </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

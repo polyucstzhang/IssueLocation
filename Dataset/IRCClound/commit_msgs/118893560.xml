@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893560</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/1d2be7c2b73e331fd142c782d7da3f7ae20b5dee]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/1d2be7c2b73e331fd142c782d7da3f7ae20b5dee]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:43:6</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/1d2be7c2b73e331fd142c782d7da3f7ae20b5dee]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Set the bar color for the Lollipop task switcher
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PreferencesActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ServerReorderActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ShareChooserActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

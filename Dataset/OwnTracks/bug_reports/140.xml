@@ -1,0 +1,2 @@
+<extraction><id>#140</id><title>ServiceBroker.java line 728</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/551162c65141dcfd8f38881c</description><comments>More details please? Found out, that one can at least share the deatails. See http://crashes.to/s/b55a781db4c i'm taking this one. The changes require quite some logical changes in queueing behaviour. </comments></extraction>

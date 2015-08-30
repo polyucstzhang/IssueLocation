@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894453</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/87b4706568e19688aca9376f157cf492f5a87043]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/87b4706568e19688aca9376f157cf492f5a87043]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:15:41</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/87b4706568e19688aca9376f157cf492f5a87043]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Cancel the existing notification when clearing the invalid bid from t…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

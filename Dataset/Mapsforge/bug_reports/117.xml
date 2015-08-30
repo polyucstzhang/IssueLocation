@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831811</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/117]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/117]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:54:41</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/117]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#117</id><title>Reopening #52 (Coastline problems)</title><description>
+
+    
+      
+          From LudwigBr...@gmail.com on May 10, 2011 05:08:27
+
+Unfortunately, the fixes for #52 have caused some regressions with some coastlines that were previously ok now being displayed incorrectly.
+
+I have tried various ways to try to extract a mapfile that will display correctly, including cutting out the area from the full planet, using the whole europe extract from geofabrik etc, but nothing seems to make a difference.
+
+export OSMOSIS_HOME=/software/osmosis-0.39
+export LAT=38.115
+export LON=13.36
+export LEFT=12.3
+export RIGHT=15.6
+export TOP=38.3
+export BOTTOM=36.6
+
+$OSMOSIS_HOME/bin/osmosis --rb file=europe.pbf --mapfile-writer file=${EXTRACT}.map  map-start-position=$LAT,$LON bbox=$BOTTOM,$LEFT,$TOP,$RIGHT 
+
+The problem generally appears when zoomed out, with coastlines often correct when zoomed onto details.
+
+Similar problems to this with Sardinia, Gran Canaria, while other like Tenerife can be displayed correctly. Gran Canaria and Sicily (as in the cutout above) were ok previously.
+
+The mapfile here is fairly large, so I do not want to attach it. I can supply more info if needed.
+
+Attachment: device.png
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=117
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on May 11, 2011 07:50:34
+
+The problem I see are false negatives only, I have not noticed any false positives. I have just tried another example running both the mapfile writer and the phone client with r1027 which exhibits the same problem when cutting out Sardinia. I have the feeling that somehow this problem relates specifically to islands, with the app not 'knowing' that island is surrounded by water. The data should be there, as you can see on the first screenshot that the international boundary line is included  in the mapfile. Generally the problem only appears when zoomed out, when zooming in the water begins to appear (pic 2)
+
+The following screenshot was done from the europe.osm.pbf file from geofabrik with the following boundaries:
+
+export LAT=39.21
+export LON=9.12
+export LEFT=8
+export RIGHT=10
+export TOP=41.4
+export BOTTOM=38.8
+
+$OSMOSIS_HOME/bin/osmosis --rb file=extract.pbf --mapfile-writer file=sardinia.map  map-start-position=$LAT,$LON bbox=$BOTTOM,$LEFT,$TOP,$RIGHT 
+
+I put the mapfile at http://www.yunnanexplorer.com/static/download/sardinia.map Ludwig
+
+Attachment: device.png device2.png
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on October 24, 2011 22:14:14
+
+This issue is blocked by issue #185 .
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:36 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:36 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832233</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/85]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/85]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:55:48</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/85]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#85</id><title>Support piste maps features</title><description>
+
+    
+      
+          From alexandr...@gmail.com on February 24, 2011 02:03:37
+
+Here is a patch to add piste maps features ( http://wiki.openstreetmap.org/wiki/Proposed_features/Piste_Maps ):
+
+
+for now, support accepted aerialways: http://wiki.openstreetmap.org/wiki/Key:aerialway (ie drag_lift is not split) as it seems to be the common usage
+for now, support only piste:type=downhill
+support piste:difficulty
+
+
+TODO:
+
+
+support other piste:type
+maybe write names a bit bigger
+enhance ski lift looks
+
+
+I'm attaching a screenshot of a rendering of La Bresse.
+
+Alexandre Belloni
+
+Attachment: ski_slopes.patch LaBresse.png
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=85
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on February 24, 2011 06:21:45
+
+Based on your patch i have added the requested features in revision r854 , together with some other improvements and changes. The default rendering parameters are more or less copied from Osmarender, although the lift symbol and the orthogonal bars are still missing (see the attached screenshot).
+
+Attachment: device.png
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on February 25, 2011 13:23:00
+
+And what about Osmarender? How are pistes without a difficulty tag handled there? I'm just asking becaue we rather try to copy the Osmarender map for our "default theme" in the map library. As soon we have the XML theme API implementation finished ( issue 31 ) we will add a "Mapnik like" theme as well of course (and maybe many others).
+
+Can you provide a link to a point of the map with a "type=nordic" piste?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on March 14, 2011 09:50:41
+
+Status: Verified  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:34 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:34 PM GMT+8</closetime></item></BR></extraction>

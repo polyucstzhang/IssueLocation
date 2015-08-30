@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829591</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/365]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/365]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:47:34</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/365]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#365</id><title>MapView resize gray tiles</title><description>
+
+    
+      
+          From devemu...@gmail.com on October 24, 2012 14:48:39
+
+What steps will reproduce the problem? 1. I have a map view with a map file loaded.
+2. I resize programmatically the map view window. What is the expected output? What do you see instead? I expect to see instantly map tiles at the expanded area. But the tiles seem to appear or refresh with pan only at the old map view window limits. At the expanded window area I see gray color.
+When I pan the map towards the expanded area, the already visible tiles move to the expanded area and stay visible, but if I reverse the pan direction away from the expanded area, the new tiles appear only when they enter the old map view window limits. What version of the product are you using? On what operating system? I use trunk version of mapsforge at Android 4. Please provide any additional information below. If I put debug prints at FrameBuffer.drawBitmap I see that the numbers of tiles at the gray areas are been parsed for drawing, but there are not been visualized on the map view.
+I attached a photo to explain the issue.
+
+Attachment: resize.png
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=365
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on November 25, 2012 03:17:02
+
+I think a better way would be not to create a new Canvas at each size change, but reset it. The question is why we have to reset it in order for the resized mapview to show properly all the tiles...
+So instead of:
+this.mapViewCanvas = new Canvas();
+its better to reset its matrix with:
+this.mapViewCanvas.setMatrix(null);
+
+Although the memory issues in large resolution screens still remain...
+I think it has to do with the mapViewBitmap1, mapViewBitmap2 recycle and recreate at size change.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on May 19, 2013 04:38:33
+
+Hi Thilo,
+
+Unfortunately it is still an issue in the rewrite branch.
+As I mention at https://groups.google.com/forum/?fromgroups#!topic/mapsforge-dev/r1SABvlHlck - at large screen resolutions (where the vm heap size is exhausted quickly)
+
+
+or when we resize the map view (by code or by changing device orientation)
+it is often throws out of memory errors.
+May be the Ludwig's implementation (mentioned at above topic) in its clone can help also at the rewrite branch, as it was mostly helpful at main branch.
+
+
+Regards.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:57 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:57 PM GMT+8</closetime></item></BR></extraction>

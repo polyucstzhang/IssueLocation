@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830069</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/314]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/314]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:49:0</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/314]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#314</id><title>Street labels are displayed in a weird way at tile boundaries</title><description>
+
+    
+      
+          From uzemelt...@gmail.com on May 17, 2012 22:13:52
+
+*What steps will reproduce the problem?
+
+I use a modified osmarender.xml, besides that I did not alter the rendering code.
+
+*What is the expected output? What do you see instead?
+
+Some street names get fragmented or overlap. (See attachment.)
+E.g.: _2208.png should display "Raoul Wallenberg utca"
+Looks like clipped labels behave in a strange way at tile boundaries.
+
+*What version of the product are you using? On what operating system?
+
+0.3.0, Android 2.2
+
+Attachment: screenshot_2012-05-17_2207.png screenshot_2012-05-17_2207_1.png screenshot_2012-05-17_2208.png osmarender.xml
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=314
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From uzemelt...@gmail.com on May 18, 2012 13:29:46
+
+Well, to be honest I don't exactly know what "cache persistence" means... anyway, I guess it means that the .tile files don't get deleted when I exit the app.
+
+If that's the case, then it's definitely not activated, as I checked that all .tile files vanish on exit.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on May 19, 2013 03:57:37
+
+Status: Duplicate
+  Mergedinto: 43  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:53 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:53 PM GMT+8</closetime></item></BR></extraction>

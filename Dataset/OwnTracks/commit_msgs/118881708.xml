@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881708</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/bec25a2b5a9ce0defb00a7c57ef112fcc11108d4]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/bec25a2b5a9ce0defb00a7c57ef112fcc11108d4]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:21:29</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/bec25a2b5a9ce0defb00a7c57ef112fcc11108d4]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added DebugLogger for </title><numberfile>
+      14 changed files
+    </numberfile><source_file><item><name>
+              .idea/gradle.xml
+            </name></item><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              DaoGenerator/DaoGenerator.iml
+            </name></item><item><name>
+              android-debug.apk
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/ActivityWaypoint.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/App.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceLocator.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/DebugLogger.java
+            </name></item></source_file></item></commit></extraction>

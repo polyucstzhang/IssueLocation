@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830575</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/267]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/267]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:50:24</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/267]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#267</id><title>Subview in MapView with google MapView Like LayoutParams</title><description>
+
+    
+      
+          From andrei.a...@gmail.com on March 08, 2012 13:09:48
+
+There is also another issue marked as invalid treating this issue: #70
+
+GoogleMaps view allows you to add subviews to the map. You would need such subviews in order to add a popup on a map when a map overlay is clicked.
+The google MapView also offers some layout params MapView.LayoutParams in order to connect the subview to a geo point ( https://code.google.com/android/add-ons/google-apis/reference/com/google/android/maps/MapView.LayoutParams.html )
+
+e.g
+GeoPoint point = new GeoPoint(19240000, -99120000);
+ImageView iv = new ImageView(this);
+iv.setImageResource(R.drawable.icon);
+LayoutParams lp = new LayoutParams(iv.getWidth(), iv.getHeight(), point, LayoutParams.BOTTOM);
+
+mapView.addView(iv, lp);
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=267
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From andrei.a...@gmail.com on March 14, 2012 06:15:34
+
+It is the way Google Maps and other mapping libraries do it.
+Currently you cannot do it because the MapView does not draw subviews added to it.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Kruk.Ale...@gmail.com on May 12, 2012 01:25:34
+
+This solution crashes app when markers on the map 100+ and zoom in out with two fingers or double touch several times. In another way, with button zoom works fine. Any ideas?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on January 16, 2013 13:46:30
+
+In the latest 2.0 version of the Google Maps Android API ( https://developers.google.com/maps/documentation/android/reference/com/google/android/gms/maps/MapView ) it is no longer allowed to attach child views to the MapView although it is a ViewGroup. Quote: "Do not add children to this view otherwise an UnsupportedOperationException will be thrown." I am pretty sure the Google developers had a good reason for their decision as their new API in general looks well designed to me.
+
+Now i wonder if it actually makes sense that the MapView extends ViewGroup rather than just extending View. Position sub-views to lat/lon coordinates doesn't really make sense to me. If you have spatial data, use overlays / layers to display them together with the map. For normal UI stuff FrameLayout, RelativeLayout etc should be used instead. So whats the point of MapView extending ViewGroup and offering LayoutParams?
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:49 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:49 PM GMT+8</closetime></item></BR></extraction>

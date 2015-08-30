@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829849</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/346]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/346]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:48:6</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/346]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#346</id><title>OverlayController.redraw NullPointerException</title><description>
+
+    
+      
+          From eugene.b...@simbirsoft.com on August 10, 2012 11:34:30
+
+In version 0.3.1 OverlayController occasionally crashes when the screen orientation changes.
+
+08-10 13:27:29.190: E/AndroidRuntime(28900): FATAL EXCEPTION: OverlayController
+08-10 13:27:29.190: E/AndroidRuntime(28900): java.lang.NullPointerException
+08-10 13:27:29.190: E/AndroidRuntime(28900):    at org.mapsforge.android.maps.overlay.OverlayController.redraw(OverlayController.java:186)
+08-10 13:27:29.190: E/AndroidRuntime(28900):    at org.mapsforge.android.maps.overlay.OverlayController.checkRedraw(OverlayController.java:169)
+08-10 13:27:29.190: E/AndroidRuntime(28900):    at org.mapsforge.android.maps.overlay.OverlayController.doWork(OverlayController.java:227)
+08-10 13:27:29.190: E/AndroidRuntime(28900):    at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:133)
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=346
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From eugene.b...@simbirsoft.com on August 14, 2012 02:02:30
+
+I've realized that the error always occur when I call OverlayController.redrawOverlays() during Activity's resume. Tested on various devices: it's independent of the device and android version. I've reproduced the crash behaviour in the minimalistic example project.
+
+Attachment: npe_example.zip
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on September 02, 2012 04:45:46
+
+In the current development branch the version number in the render theme XML files has changed from 1 to 2. Please open a new issue or use the mapsforge-dev mailing list to discuss any problems regarding this component.
+
+I consider the original issue as fixed and will close the bug now.
+
+Status: Verified  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:55 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:55 PM GMT+8</closetime></item></BR></extraction>

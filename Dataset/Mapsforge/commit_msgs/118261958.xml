@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118261958</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/c4c40d7bb27844aaa0e044158935e37151ee2a6a]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/c4c40d7bb27844aaa0e044158935e37151ee2a6a]]></realpath><theme>mapsforge_03n</theme><middle>default</middle><createdate>2015-8-21 16:24:40</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/c4c40d7bb27844aaa0e044158935e37151ee2a6a]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      - improved color handling in the graphic API
+    </title><number>
+      43 changed files
+    </number></item></BR></extraction>

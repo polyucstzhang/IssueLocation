@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893822</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/bb6e2d1bfd730499f84962a6aac190740e11793e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/bb6e2d1bfd730499f84962a6aac190740e11793e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:52:53</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/bb6e2d1bfd730499f84962a6aac190740e11793e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Update junit tests
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              tests/src/com/irccloud/android/test/IgnoreTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

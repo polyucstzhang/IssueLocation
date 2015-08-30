@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830076</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/307]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/307]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:49:13</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/307]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#307</id><title>osmosis plugin doesn't work with openjdk</title><description>
+
+    
+      
+          From Jonathan...@gmail.com on April 25, 2012 23:18:35
+
+What is the expected output? What do you see instead? Using osmosis with the map writer plugin fails on my system, apparently because I'm using openjdk and not the Sun jdk. What steps will reproduce the problem? $ osmosis --rb NE.bin --mw file=NE.map
+Apr 25, 2012 5:14:55 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Osmosis Version 0.40.1
+Apr 25, 2012 5:14:57 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Preparing pipeline.
+Apr 25, 2012 5:14:57 PM org.openstreetmap.osmosis.core.Osmosis main
+SEVERE: Execution aborted.
+java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: No XPathFctory implementation found for the object model: http://java.sun.com/jaxp/xpath/dom at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:72)
+    at org.mapsforge.map.writer.OSMTagMapping.(OSMTagMapping.java:124)
+    at org.mapsforge.map.writer.OSMTagMapping.getInstance(OSMTagMapping.java:111)
+    at org.mapsforge.map.writer.OSMTagMapping.getInstance(OSMTagMapping.java:95)
+    at org.mapsforge.map.writer.model.MapWriterConfiguration.loadTagMappingFile(MapWriterConfiguration.java:394)
+    at org.mapsforge.map.writer.osmosis.MapFileWriterFactory.createTaskManagerImpl(MapFileWriterFactory.java:54)
+    at org.openstreetmap.osmosis.core.pipeline.common.TaskManagerFactory.createTaskManager(TaskManagerFactory.java:60)
+    at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.buildTasks(Pipeline.java:50)
+    at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.prepare(Pipeline.java:112)
+    at org.openstreetmap.osmosis.core.Osmosis.run(Osmosis.java:86)
+    at org.openstreetmap.osmosis.core.Osmosis.main(Osmosis.java:37)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:616)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:328)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:238)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:408)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:351)
+    at org.codehaus.classworlds.Launcher.main(Launcher.java:31) What version of the product are you using? On what operating system? I'm using version 0.3.0 of map writer, available from the downloads section.  I'm running it on Debian testing, with the following java version:
+java version "1.6.0_24"
+OpenJDK Runtime Environment (IcedTea6 1.11pre) (6b24~pre2-1)
+OpenJDK 64-Bit Server VM (build 20.0-b12, mixed mode)
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=307
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Jonathan...@gmail.com on April 27, 2012 17:58:55
+
+Yep, that seems to've solved it.  Thanks!
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on June 30, 2012 10:26:09
+
+Did anyone verify the supposed cause of the problem?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:52 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:52 PM GMT+8</closetime></item></BR></extraction>

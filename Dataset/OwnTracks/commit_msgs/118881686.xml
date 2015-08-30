@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881686</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/56a015fc8e5a186910422edbbe9b1dff041c005d]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/56a015fc8e5a186910422edbbe9b1dff041c005d]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:20:24</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/56a015fc8e5a186910422edbbe9b1dff041c005d]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixes toolbar heigt in landscape orientation
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/res/layout/toolbar.xml
+            </name></item></source_file></item></commit></extraction>

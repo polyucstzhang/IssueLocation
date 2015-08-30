@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893504</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/43bee4e1b073403ed37d3a4c5091faa286339e00]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/43bee4e1b073403ed37d3a4c5091faa286339e00]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:41:7</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/43bee4e1b073403ed37d3a4c5091faa286339e00]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Refresh the buffers list immeditely when marking all as read instead …
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

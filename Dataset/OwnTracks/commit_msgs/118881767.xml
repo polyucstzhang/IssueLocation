@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881767</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/46321f00a5ce922336a01901567c8c4cde4e97d6]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/46321f00a5ce922336a01901567c8c4cde4e97d6]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:59</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/46321f00a5ce922336a01901567c8c4cde4e97d6]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      SYNC MY FORK BY Merging </title><numberfile>
+      30 changed files
+    </numberfile><source_file><item><name>
+              .gitignore
+            </name></item><item><name>
+              .idea/libraries/android_beacon_library_2_0_beta7.xml
+            </name></item><item><name>
+              .idea/libraries/appcompat_v7_19_1_0.xml
+            </name></item><item><name>
+              .idea/libraries/bugsnag_1_2_4.xml → .idea/libraries/bugsnag_1_2_6.xml
+            </name></item><item><name>
+              .idea/libraries/play_services_4_3_23.xml
+            </name></item><item><name>
+              .idea/libraries/play_services_4_4_52.xml
+            </name></item><item><name>
+              .idea/misc.xml
+            </name></item><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              gradle/wrapper/gradle-wrapper.properties
+            </name></item><item><name>
+              libs/android-beacon-library-2.0-beta7.aar
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/messages/BeaconMessage.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/model/Contact.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceProxy.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Events.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/layout/preferences_broker.xml
+            </name></item><item><name>
+              src/main/res/values/bools.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

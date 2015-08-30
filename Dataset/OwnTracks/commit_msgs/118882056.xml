@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882056</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/be05ec0748c8f29d2da79b62cfd4f29897c90d28]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/be05ec0748c8f29d2da79b62cfd4f29897c90d28]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:34:57</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/be05ec0748c8f29d2da79b62cfd4f29897c90d28]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixes issue </title><numberfile>
+      8 changed files
+    </numberfile><source_file><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/FusedLocationLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Locator.java
+            </name></item></source_file></item></commit></extraction>

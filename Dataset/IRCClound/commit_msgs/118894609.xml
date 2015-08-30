@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894609</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/0c68290460544ae3f96746e10f3b2639ad477995]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/0c68290460544ae3f96746e10f3b2639ad477995]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:21:2</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/0c68290460544ae3f96746e10f3b2639ad477995]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Collapse op, de-op, voice, and de-voice events
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830291</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/303]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/303]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:49:20</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/303]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#303</id><title>map-writer: failed to create an XPathFactory for the default object model</title><description>
+
+    
+      
+          From didi...@gmail.com on April 23, 2012 18:39:59
+
+I'm trying to create a map file with the osmosis plugin, but the result is:
+
+$ osmosis --rx file=cities/it-bozen/it-bozen.xml --mapfile-writer file=forge-it-bozen.map
+Apr 23, 2012 6:25:24 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Osmosis Version 0.40.1
+Apr 23, 2012 6:25:24 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Preparing pipeline.
+Apr 23, 2012 6:25:24 PM org.openstreetmap.osmosis.core.Osmosis main
+SEVERE: Execution aborted.
+java.lang.RuntimeException: XPathFactory#newInstance() failed to create an XPathFactory for the default object model: http://java.sun.com/jaxp/xpath/dom with the XPathFactoryConfigurationException: javax.xml.xpath.XPathFactoryConfigurationException: No XPathFctory implementation found for the object model: http://java.sun.com/jaxp/xpath/dom at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:72)
+        at org.mapsforge.map.writer.OSMTagMapping.(OSMTagMapping.java:124)
+        at org.mapsforge.map.writer.OSMTagMapping.getInstance(OSMTagMapping.java:111)
+        at org.mapsforge.map.writer.OSMTagMapping.getInstance(OSMTagMapping.java:95)
+        at org.mapsforge.map.writer.model.MapWriterConfiguration.loadTagMappingFile(MapWriterConfiguration.java:394)
+        at org.mapsforge.map.writer.osmosis.MapFileWriterFactory.createTaskManagerImpl(MapFileWriterFactory.java:54)
+        at org.openstreetmap.osmosis.core.pipeline.common.TaskManagerFactory.createTaskManager(TaskManagerFactory.java:60)
+        at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.buildTasks(Pipeline.java:50)
+        at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.prepare(Pipeline.java:112)
+        at org.openstreetmap.osmosis.core.Osmosis.run(Osmosis.java:86)
+        at org.openstreetmap.osmosis.core.Osmosis.main(Osmosis.java:37)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:601)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:328)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:238)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:408)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:351)
+        at org.codehaus.classworlds.Launcher.main(Launcher.java:31) What version of the product are you using? On what operating system? OS: Ubuntu 12.04
+
+$ java -version
+java version "1.7.0_03"
+OpenJDK Runtime Environment (IcedTea7 2.1.1pre) (7~u3-2.1.1~pre1-1ubuntu2)
+OpenJDK 64-Bit Server VM (build 22.0-b10, mixed mode)
+
+osmosis 0.40.1+ds1-3 (Ubuntu package)
+
+plugin: mapsforge-map-writer-0.3.0-jar-with-dependencies.jar
+
+I use java 7 because of another osmosis-plugin requiring it.
+Any idea how I can get it working?
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=303
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From didi...@gmail.com on April 23, 2012 10:32:32
+
+solved. Installing the Ubuntu version of osmosis was not a good idea, although it's the same version. Somehow it's dependencies caused this problem. After removing it and it's dependencies and using a "manually installed" osmosis instead, it works.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From roelfrenkema on July 08, 2012 09:48:03
+
+comment 4 Works on Ubuntu 12.04 too. Thanks seems to be the easiest especially as xalan is installed. Just editing the config file did the trick.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:52 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:52 PM GMT+8</closetime></item></BR></extraction>

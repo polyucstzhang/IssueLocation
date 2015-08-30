@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881677</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/e12a4616c94269389238b5cd4deee5f0683eee0b]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/e12a4616c94269389238b5cd4deee5f0683eee0b]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:20:6</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/e12a4616c94269389238b5cd4deee5f0683eee0b]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Merge pull request </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBeacon.java
+            </name></item></source_file></item></commit></extraction>

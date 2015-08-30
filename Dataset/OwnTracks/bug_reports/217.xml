@@ -1,0 +1,2 @@
+<extraction><id>#217</id><title>PKCS#12 container requires passphrase for unlocking it in UI</title><description> It's very unsafe to transmit PKCS#12 containers without passwords.
+We need to provide a passphrase for the container in the UI.</description><comments>Fixed.  There is no UI field for PKCS#12 field in Security  Closing this as you've found it ;)</comments></extraction>

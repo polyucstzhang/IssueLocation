@@ -1,0 +1,12 @@
+<extraction><id>#95</id><title>Receiving subscribtions</title><description> Subscribed topics would only send to the last device, which was logged in with one account.
+Example:Is it an owntracks "problem" or mgtt?</description><comments>Probably a bit of both. Are you using the same client id on both devices? Different device ids Strange. Can you try to subscribe with two instances of mosquitto_sub and check if you can reproduce it there?  Seems to work without any problems. Also subscribes on my Moto G are shown :)Client mosqsub/18691-bka.li sending CONNECT
+Client mosqsub/18691-bka.li received CONNACK
+Client mosqsub/18691-bka.li sending SUBSCRIBE (Mid: 1, Topic: owntracks/+/+, QoS: 0)
+Client mosqsub/18691-bka.li received SUBACK
+Subscribed (mid: 1): 0
+Client mosqsub/18691-bka.li received PUBLISH (d0, q0, r1, m0, 'owntracks/kromonos/motog', ... (121 bytes))
+{"_type":"location","lat":"22.2222222","lon":"1.1111111","tst":"1424123424","acc":"23.38","batt":"87","t":"u","tid":"og"}
+Client mosqsub/18691-bka.li received PUBLISH (d0, q0, r1, m0, 'owntracks/kromonos/nexus7', ... (101 bytes))
+{"_type":"location","lat":"22.2222222","lon":"1.1111111","tst":"1424109023","acc":"21.21","tid":"s7"} Next "problem" with subscriptions:
+After reboot with autostart, subscriptions where not shown. 
+ This is not related, you're just seeing #110  I think we can close this: not reproducible with 0.5.15</comments></extraction>

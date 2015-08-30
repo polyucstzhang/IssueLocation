@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893538</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a9c415c6533372fde28a34713d1197a82b2fd6b7]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a9c415c6533372fde28a34713d1197a82b2fd6b7]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:42:20</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a9c415c6533372fde28a34713d1197a82b2fd6b7]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      ban exception list, quiet list, invite list
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/EventsDataSource.java
+            </name></item><item><name>
+              ...oud/android/fragment/BanListFragment.java → ...oid/fragment/ChannelModeListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

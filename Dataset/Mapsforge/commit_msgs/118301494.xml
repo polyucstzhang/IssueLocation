@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118301494</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/387b944c0a43a099f39bddb47dcb354db1e090dd]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/387b944c0a43a099f39bddb47dcb354db1e090dd]]></realpath><theme>mapsforge_09n</theme><middle>default</middle><createdate>2015-8-21 20:37:42</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/387b944c0a43a099f39bddb47dcb354db1e090dd]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      - the Android MapView constructors now support XML layout inflation
+    </title><number>
+      7 changed files
+    </number></item></BR></extraction>

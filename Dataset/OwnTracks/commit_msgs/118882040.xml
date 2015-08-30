@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882040</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/02ec75455b5abbda06bb6a8228951dac6ccedaab]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/02ec75455b5abbda06bb6a8228951dac6ccedaab]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:34:23</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/02ec75455b5abbda06bb6a8228951dac6ccedaab]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added correctly sized launcher icons, changed actionbar icon to glyph
+    </title><numberfile>
+      13 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/drawable-hdpi/ic_icon.png
+            </name></item><item><name>
+              res/drawable-hdpi/ic_notification.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_icon.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_notification.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_icon.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_notification.png
+            </name></item><item><name>
+              res/layout/activity_activity_launcher.xml
+            </name></item><item><name>
+              res/menu/activity_launcher.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityLauncher.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Locator.java
+            </name></item></source_file></item></commit></extraction>

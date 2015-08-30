@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893281</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/e362a102710b87f28caf336c905188f6a0188582]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/e362a102710b87f28caf336c905188f6a0188582]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:36:0</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/e362a102710b87f28caf336c905188f6a0188582]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a few leaks, blacklist a few Android and Samsung leaks, add a pre…
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              res/xml/preferences_debug.xml
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplication.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PreferencesActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/EditConnectionFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

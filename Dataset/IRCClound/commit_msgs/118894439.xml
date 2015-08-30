@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894439</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a405c1cd2a284b63c3cdc1218f878e23aef6d222]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a405c1cd2a284b63c3cdc1218f878e23aef6d222]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:15:12</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a405c1cd2a284b63c3cdc1218f878e23aef6d222]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Launcher icons
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-ldpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_launcher.png
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

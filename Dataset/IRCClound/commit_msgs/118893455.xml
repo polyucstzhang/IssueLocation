@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893455</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/afac5cb19f54ab6b555bf43f08ae57e6d3ccf149]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/afac5cb19f54ab6b555bf43f08ae57e6d3ccf149]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:39:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/afac5cb19f54ab6b555bf43f08ae57e6d3ccf149]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Prevent the text field from growing too tall
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/values-land/dimens.xml
+            </name></item><item><name>
+              res/values-sw600dp-land/dimens.xml
+            </name></item><item><name>
+              res/values-sw800dp/dimens.xml
+            </name></item><item><name>
+              res/values/dimens.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

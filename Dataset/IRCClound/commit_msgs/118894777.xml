@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894777</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/0f0d785ff37bc8873a32ee93c06fda7dbc03f460]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/0f0d785ff37bc8873a32ee93c06fda7dbc03f460]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:23:57</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/0f0d785ff37bc8873a32ee93c06fda7dbc03f460]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Move the away message into the subtitle
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828830</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/457]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/457]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:44:40</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/457]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#457</id><title>mapwriter doesn't continue with writing aft he read the pbf-file</title><description>
+
+    
+      
+          From ChrisM...@googlemail.com on October 08, 2013 23:31:59
+
+What steps will reproduce the problem? 1.I've downloaded the germany-map (pbf) from geofabrik, which is ca 1,8 GB
+2.I started osmosis with the mapwriter-plugin (0.3.0)... Commandline: osmosis --rb file=../data/germany.osm.pbf --mapfile-writer file=../tmp/germany.map type=hd tag-conf-file=../config/tag-mapping.xml
+3.the mapwriter read all the data into the Temp-folder (users-&gt;AppData-&gt;local-&gt;Temp) and after readin there is is written "complete reading.." but nothing happens after this.
+If I try smaller files it works fine for me. What version of the product are you using? On what operating system? osmosis 0.40.1 / mapwriter plugin 0.3.0 / java jre 7 (64bit) / windows 7 home premium (64bit / on harddisk C where osmis is located, about 20 GB free diskspace
+
+Hope anyone can help me.
+
+Greetings Chris
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=457
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on October 09, 2013 00:14:32
+
+Hi,
+
+With osmosis 0.40.1 you can use a command like the following:
+osmosis --rx file=country.osm --s --mw file=country.map type=hd bbox=minLat,minLon,maxLat,maxLon tag-conf-file=tag-mapping.xml
+This uses the osmosis sort option and declares also a bounding box.
+
+Also copying a relative Thilo's comment:
+By the way: unless you are reporting a real bug or feature request, you should rather consider contacting our public mapsforge-map mailing list ( https://groups.google.com/group/mapsforge-dev ) for help. It is a better place to discuss technical problems and get help from other developers.
+
+Regards.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From coin1...@gmail.com on January 22, 2014 09:50:26
+
+I also have the same problem. It is not a problem with the command. It seems to be a defect of mapfile-writer. Smaller sets work fine and the writer starts instandtly after "Completing read". I have it now running for 4 hours and nothing happened. Referred to htop both CPU cores are just twiddling thumbs. But some I/O seems to be done because the HDD LED won't go off. Could someone please verify the problem with the newest osm.pbf file from Geofabrik. I tried it with differen versions of Osmosis and the v3.0 of mapsforge. Right now I compiled Osmosis and the mapsforge plugin from source code (taken from git):
+
+Osmosis: 0.43.1-11-gfa8ff0e-SNAPSHOT
+Mpasforge: 0.3.1-SNAPSHOT-with-dependencies
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 6:04 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:04 PM GMT+8</closetime></item></BR></extraction>

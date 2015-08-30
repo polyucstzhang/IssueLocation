@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881827</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/402dc35f0640c6a84ff9bfdde539e2f847bbe1ca]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/402dc35f0640c6a84ff9bfdde539e2f847bbe1ca]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:27:2</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/402dc35f0640c6a84ff9bfdde539e2f847bbe1ca]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Android-v.0.4.19 APK
+    </title><numberfile>
+      4 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              apk/mqttitude.apk
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceProxy.java
+            </name></item></source_file></item></commit></extraction>

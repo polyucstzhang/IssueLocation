@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894137</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/064bd96157aaaab096fbd97939a738999db4ec62]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/064bd96157aaaab096fbd97939a738999db4ec62]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:4:38</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/064bd96157aaaab096fbd97939a738999db4ec62]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Show the channel names for join/part events in PM buffers
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/CollapsedEventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/ColorFormatter.java
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

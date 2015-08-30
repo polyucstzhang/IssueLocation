@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894483</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/36ecc64da8298a44085ad2fc419995bfc20c9cbc]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/36ecc64da8298a44085ad2fc419995bfc20c9cbc]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:16:42</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/36ecc64da8298a44085ad2fc419995bfc20c9cbc]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix another deadlock
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

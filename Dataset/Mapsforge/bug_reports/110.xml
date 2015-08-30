@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831998</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/110]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/110]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:54:56</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/110]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#110</id><title>Exception with germany-0.2.2.map</title><description>
+
+    
+      
+          From dl1...@gmail.com on March 28, 2011 17:23:49
+
+What steps will reproduce the problem? 1. Start the MapActivity that uses mapsforge
+2. Zoom out a few times by tapping on the (-) icon. 3. What is the expected output? What do you see instead? I would expect to see the map of the whole of Germany.
+Instead, the activity stops with an exception What version of the product are you using? On what operating system? mapsforge 0.2.2 on a htc Desire with Android 2.2. Please provide any additional information below. I am using
+  mapView.setMapFile("/sdcard/mapsforge/germany-0.2.2.map");
+in the onCreate().
+
+--- logcat output ----------------
+W/dalvikvm( 3358): threadid=8: thread exiting with uncaught exception (group=0x400259f8)
+E/AndroidRuntime( 3358): FATAL EXCEPTION: CanvasRenderer
+E/AndroidRuntime( 3358): java.lang.ArrayIndexOutOfBoundsException
+E/AndroidRuntime( 3358):    at org.mapsforge.android.maps.MapDatabase.readVariableByteEncodedUnsignedInt(MapDatabase.java:1216)
+E/AndroidRuntime( 3358):    at org.mapsforge.android.maps.MapDatabase.processBlock(MapDatabase.java:555)
+E/AndroidRuntime( 3358):    at org.mapsforge.android.maps.MapDatabase.executeQuery(MapDatabase.java:1500)
+E/AndroidRuntime( 3358):    at org.mapsforge.android.maps.DatabaseMapGenerator.executeJob(DatabaseMapGenerator.java:1622)
+
+E/AndroidRuntime( 3358):    at org.mapsforge.android.maps.MapGenerator.run(MapGenerator.java:94)
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=110
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From dl1...@gmail.com on March 29, 2011 04:39:33
+
+Yes, the map file is from the mapsforge server.
+
+I now tried it also with the AdvancedMapViewer-0.2.2 application.
+At first, everything was fine. Then i manually centered the map onto Regensburg and played with it. And it did throw the same exception.
+Now it is enough to just launch the app again and after a few seconds - while it renders the tiles onto the screen - it throws the exception. I do not need to zoom or anything.
+
+I do not know which zoom level this is now - the scale at the bottom left of the screen shows "10km".
+
+--- logcat output ---------------------
+D/dalvikvm(10507): GC_FOR_MALLOC freed 1543 objects / 165208 bytes in 66ms
+D/SurfaceFlinger(  106): Layer::setBuffers(this=0xb20598), pid=10507, w=1, h=1
+D/SurfaceFlinger(  106): Layer::setBuffers(this=0xb20598), pid=10507, w=1, h=1
+D/dalvikvm(10507): GC_EXTERNAL_ALLOC freed 742 objects / 56312 bytes in 39ms
+D/SurfaceFlinger(  106): Layer::requestBuffer(this=0xb20598), index=0, pid=10507, w=480, h=800 success
+I/ActivityManager(  106): Displayed activity org.mapsforge.applications.android.advancedmapviewer/.AdvancedMapViewer: 715 ms (total 715 ms)
+D/dalvikvm(10507): GC_EXTERNAL_ALLOC freed 1985 objects / 552544 bytes in 40ms
+I//system/bin/btld(  327): ##### USerial_Ioctl: BT_Sleep, 0x8004 ####
+D/dalvikvm(10507): GC_FOR_MALLOC freed 4353 objects / 1416312 bytes in 35ms
+I/dalvikvm-heap(10507): Grow heap (frag case) to 7.801MB for 609584-byte allocation
+D/dalvikvm(10507): GC_FOR_MALLOC freed 526 objects / 35544 bytes in 45ms
+D/SurfaceFlinger(  106): Layer::requestBuffer(this=0xb20598), index=1, pid=10507, w=480, h=800 success
+I//system/bin/wpa_supplicant(  268): ioctl[SIOCGIWSCAN]: Try again
+D/SurfaceFlinger(  106): Layer::requestBuffer(this=0xb20598), index=0, pid=10507, w=480, h=800 success
+D/dalvikvm(10507): GC_FOR_MALLOC freed 22118 objects / 836120 bytes in 41ms
+I/dalvikvm-heap(10507): Grow heap (frag case) to 8.801MB for 891063-byte allocation
+D/dalvikvm(10507): GC_FOR_MALLOC freed 844 objects / 662424 bytes in 48ms
+D/SurfaceFlinger(  106): Layer::requestBuffer(this=0xb20598), index=1, pid=10507, w=480, h=800 success
+W/dalvikvm(10507): threadid=7: thread exiting with uncaught exception (group=0x400259f8)
+E/AndroidRuntime(10507): FATAL EXCEPTION: CanvasRenderer
+E/AndroidRuntime(10507): java.lang.ArrayIndexOutOfBoundsException
+E/AndroidRuntime(10507):    at org.mapsforge.android.maps.MapDatabase.readVariableByteEncodedUnsignedInt(MapDatabase.java:1216)
+E/AndroidRuntime(10507):    at org.mapsforge.android.maps.MapDatabase.processBlock(MapDatabase.java:555)
+E/AndroidRuntime(10507):    at org.mapsforge.android.maps.MapDatabase.executeQuery(MapDatabase.java:1500)
+E/AndroidRuntime(10507):    at org.mapsforge.android.maps.DatabaseMapGenerator.executeJob(DatabaseMapGenerator.java:1622)
+E/AndroidRuntime(10507):    at org.mapsforge.android.maps.MapGenerator.run(MapGenerator.java:94)
+W/ActivityManager(  106):   Force finishing activity org.mapsforge.applications.android.advancedmapviewer/.AdvancedMapViewer
+D/SurfaceFlinger(  106): Layer::setBuffers(this=0xb2a768), pid=106, w=1, h=1
+D/SurfaceFlinger(  106): Layer::setBuffers(this=0xb2a768), pid=106, w=1, h=1
+D/SurfaceFlinger(  106): Layer::requestBuffer(this=0xb2a768), index=0, pid=106, w=480, h=449 success
+W/ActivityManager(  106): Activity pause timeout for HistoryRecord{468f1cf8 org.mapsforge.applications.android.advancedmapviewer/.AdvancedMapViewer}
+D/Sensors (  106): close_akm, fd=190
+D/SurfaceFlinger(  106): Layer::setBuffers(this=0xee5d38), pid=222, w=480, h=800
+D/SurfaceFlinger(  106): Layer::setBuffers(this=0xee5d38), pid=222, w=480, h=800
+D/SurfaceFlinger(  106): Layer::requestBuffer(this=0xee5d38), index=0, pid=222, w=480, h=800 success
+I//system/bin/wpa_supplicant(  268): ioctl[SIOCGIWSCAN]: Try again
+D/SurfaceFlinger(  106): Layer::requestBuffer(this=0xb2a768), index=1, pid=106, w=480, h=449 success
+D/SurfaceFlinger(  106): Layer::requestBuffer(this=0xee5d38), index=1, pid=222, w=480, h=800 success
+D/AK8973  (   72): Compass CLOSE 
+D/SurfaceFlinger(  106): Layer::requestBuffer(this=0xb2a768), index=0, pid=106, w=480, h=449 success
+D/SurfaceFlinger(  106): Layer::requestBuffer(this=0xb2a768), index=1, pid=106, w=480, h=449 success
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on March 31, 2011 10:39:35
+
+Can you please test with the new bayern.map that is now available on ftp.mapsforge.org.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:35 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:36 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881772</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/5c5e05f25273508830fbeea3a78de925a16183af]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/5c5e05f25273508830fbeea3a78de925a16183af]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:24:11</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/5c5e05f25273508830fbeea3a78de925a16183af]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      tracked libraries
+    </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              .idea/libraries/bugsnag_1_2_6.xml
+            </name></item><item><name>
+              .idea/libraries/play_services_4_4_52.xml
+            </name></item></source_file></item></commit></extraction>

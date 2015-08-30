@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894046</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/7cee3c3ae481b51d28c86bb798fcb85906815682]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/7cee3c3ae481b51d28c86bb798fcb85906815682]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:1:25</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/7cee3c3ae481b51d28c86bb798fcb85906815682]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Wrap the Display Options dialog in a ScrollView, closes </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/dialog_channel_options.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

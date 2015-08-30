@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118827785</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/568]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/568]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:41:38</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/568]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#568</id><title>IllegalArgumentException for rectangle</title><description>
+
+    
+      
+          I have updated the Mapsforge API to current release version 0.5.0.  I received the following error report:
+
+java.lang.IllegalArgumentException: top: 2.147483647E9, bottom: -2.147483409E9
+at org.mapsforge.core.model.Rectangle.(Rectangle.java:34)
+at org.mapsforge.map.layer.overlay.Marker.draw(Marker.java:80)
+at org.mapsforge.map.layer.LayerManager.doWork(LayerManager.java:90)
+at org.mapsforge.map.util.PausableThread.run(PausableThread.java:140)
+
+Unfortunately, I have no information about the circumstances that triggered the error.  That's all I have.  Any ideas?
+      
+    
+
+  </description><comments><item><commenter>ludwigb</commenter><contents/></item><item><commenter>jordantrain</commenter><contents>
+
+    
+      
+          Yes.  I believe it is coming from one of the markers. It looks more like an integer type number wrap-around than a pole wrap-around.  The values are at or very close to the Integer.max and Integer.min values.
+      
+    
+
+  </contents></item><item><commenter>jordantrain</commenter><contents>
+
+    
+      
+          The documentation states that the viewPosition Point variable in the onTap function is the xy position of the layer if available.  Is this the upper left coordinate or some other point within the layer?
+      
+    
+
+  </contents></item><item><commenter>ludwigb</commenter><contents>
+
+    
+      
+          There is a 
+LATITUDE_MAX = 85.05112877980659
+defined in MercatorProjection, there is some mathematical reason for this, after that values get funny. 
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I read now the whole conversation.
+It's an unfortunate situation for an app and I'm glad a solution appears for that.
+
+For the record here is MercatorProjection bounds.
+      
+    
+
+  </contents></item><item><commenter>ludwigb</commenter><contents/></item></comments><createtime>Jan 14, 2015, 3:54 PM GMT+8</createtime><closetime>Jan 15, 2015, 5:56 AM GMT+8</closetime></item></BR></extraction>

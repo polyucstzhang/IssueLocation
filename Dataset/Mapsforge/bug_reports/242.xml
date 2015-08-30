@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830805</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/242]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/242]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:51:0</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/242]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#242</id><title>Npe on destroy map tile stored </title><description>
+
+    
+      
+          From smaucourt on February 01, 2012 08:32:03
+
+What steps will reproduce the problem? 1. Go to plane mode or without data connection 
+2. Play with mapsforge 
+3. Click to home What is the expected output? What do you see instead? An Npe throws What version of the product are you using? On what operating system? 0.3. 0 snapshot over ics Please provide any additional information below.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=242
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on February 08, 2012 04:15:28
+
+I have tried to reproduce it on both a tablet and a phone running 4.0.3 without success. 
+
+From the stack-trace it looks like a race condition at the termination of a MapActivity and is unlikely to have anything to do (apart from maybe influencing the timing in a subtle way) with ICS as such or even airplane mode.
+
+As it is difficult to fix bugs unless they can be reproduced (because then it is difficult to test that a solution will indeed fix the problem), I would suggest the following:
+
+
+upgrade to the latest svn (your stack-trace suggests the FileSystemTileCache is at r1741 , there has been a probably irrelevant change to the file in r1784 ). 
+provide a bit more info on how you create the error: is this with the AMV or your own app, on emulator or device, etc. 
+
+
+I am willing to investigate this further, but first need to be able to reproduce it.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From smaucourt on February 08, 2012 05:04:23
+
+no luck :(
+
+java.lang.RuntimeException: Unable to destroy activity {xxxx}: java.lang.NullPointerException
+at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3112)
+at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3130)
+at android.app.ActivityThread.access$1200(ActivityThread.java:123)
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1180)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:137)
+at android.app.ActivityThread.main(ActivityThread.java:4424)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+at org.mapsforge.android.maps.mapgenerator.FileSystemTileCache.destroy(FileSystemTileCache.java:239)
+at org.mapsforge.android.maps.MapView.destroy(MapView.java:721)
+at org.mapsforge.android.maps.MapActivity.destroyMapViews(MapActivity.java:63)
+at org.mapsforge.android.maps.MapActivity.onDestroy(MapActivity.java:90)
+at android.app.Activity.performDestroy(Activity.java:4629)
+at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1079)
+at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3099)
+... 11 more
+java.lang.NullPointerException
+at org.mapsforge.android.maps.mapgenerator.FileSystemTileCache.destroy(FileSystemTileCache.java:239)
+at org.mapsforge.android.maps.MapView.destroy(MapView.java:721)
+at org.mapsforge.android.maps.MapActivity.destroyMapViews(MapActivity.java:63)
+at org.mapsforge.android.maps.MapActivity.onDestroy(MapActivity.java:90)
+at android.app.Activity.performDestroy(Activity.java:4629)
+at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1079)
+at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3099)
+at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3130)
+at android.app.ActivityThread.access$1200(ActivityThread.java:123)
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1180)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:137)
+at android.app.ActivityThread.main(ActivityThread.java:4424)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:511)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+at dalvik.system.NativeStart.main(Native Method)
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From smaucourt on February 18, 2012 03:07:16
+
+you can see the crash reports of my application here: https://docs.google.com/spreadsheet/ccc?key=0AmWJ90QJfme5dEV1a01qdGo5dXZKd181bklZa0NNUFE
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on March 09, 2012 09:28:48
+
+And? What is the result of your test?
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:47 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:47 PM GMT+8</closetime></item></BR></extraction>

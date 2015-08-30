@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118301498</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/1ca2ba5b6f98f504bd576871dd33f1ae3b891698]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/1ca2ba5b6f98f504bd576871dd33f1ae3b891698]]></realpath><theme>mapsforge_09n</theme><middle>default</middle><createdate>2015-8-21 20:38:26</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/1ca2ba5b6f98f504bd576871dd33f1ae3b891698]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      Added some projection operations to MapView and MercatorProjection
+    </title><number>
+      4 changed files
+    </number></item></BR></extraction>

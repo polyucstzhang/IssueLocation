@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831028</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/205]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/205]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:51:59</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/205]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#205</id><title>Limit of the map</title><description>
+
+    
+      
+          From carlito...@gmail.com on November 10, 2011 02:39:20
+
+Hi Mapsforge team!
+
+I'm very to use this mapping tool in my project, is working properply, and is very simple to use it. But I've a question about the loaded maps. I'm working in an offline project, and I'm using obviously a map file to do it. I would like that the users can't navigate more far than the limits of this map. Is it possible? It will be so nice to me.
+
+Thanks for all!
+Carlos
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=205
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From elpablos...@gmail.com on December 22, 2011 03:07:50
+
+Implement it please, it is a must ! Set maximum and minimum coordinates to the map movement. Now, if the user moves the map, he can go out of barcelona city, but i dont want that, because i only am displaying the Barcelona city area, and the
+rest of the world is WHITE.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on January 16, 2013 13:52:02
+
+The whole mapsforge-map library is currently being rewritten from scratch. There is a Git branch called "rewrite" for that. One of the main ideas of the new implementation was to have only a single place in the code where the map position is stored and also chanced - the MapViewPosition class. This makes it easy to limit the zoom level range and also the navigable map position. You can set a bounding box as the map limit which will cannot be left.
+
+I will keep this issue in state "Started" until we have released version 0.4.0 (which will probably take some more weeks).
+
+Status: Started
+  Owner: thilo.mu...@gmail.com  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:44 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:44 PM GMT+8</closetime></item></BR></extraction>

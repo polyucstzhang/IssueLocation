@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881972</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/e93b067977167db0e94009b8ae4f9c7d35dd2ace]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/e93b067977167db0e94009b8ae4f9c7d35dd2ace]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:31:18</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/e93b067977167db0e94009b8ae4f9c7d35dd2ace]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed null, Country geocoder
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/support/ReverseGeocodingTask.java
+            </name></item></source_file></item></commit></extraction>

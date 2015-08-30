@@ -1,0 +1,1 @@
+<extraction><id>#39</id><title>Fix collapsing of multiple mode changes</title><description> Currently just shows the last operation instead of all the new modes</description><comments> </comments></extraction>

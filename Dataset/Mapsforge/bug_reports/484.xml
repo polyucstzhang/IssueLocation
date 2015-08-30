@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828574</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/484]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/484]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:43:52</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/484]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#484</id><title>v.0.4.0  API 8 support?</title><description>
+
+    
+      
+          From syt...@gmail.com on February 13, 2014 13:20:55
+
+What version of the product are you using? On what operating system? 0.4.0 (rescue) Please provide any additional information below. Can you replace API level 9: if(str.isEmpty())
+
+with: if(TextUtils.isEmpty(str)) -this has been available since API level 1. 
+Or str.equals("");
+
+I have try to run mapsforge 0.4.0 (rescue) to API level 8.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=484
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From syt...@gmail.com on February 14, 2014 04:17:27
+
+It`s have only two places that is needs to be changed and mapsforge works on API level 8. I have test it.
+
+mapsforge-map -&gt; class AbstractTileSource
+line:34  if (hostname.equals(""))
+
+mapsforge-map class XmlUtils
+line:91 if (colorString.equals("") || colorString.charAt(0) != '#')
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From syt...@gmail.com on February 25, 2014 02:11:04
+
+For the Froyo.
+
+Attachment: AbstractTileSource.patch XmlUtils.patch AndroidPreferencesAPI8.java
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 6:05 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:05 PM GMT+8</closetime></item></BR></extraction>

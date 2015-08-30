@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893712</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/113bfa3bf2df381cc42040e456a0ac44534dad28]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/113bfa3bf2df381cc42040e456a0ac44534dad28]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:48:56</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/113bfa3bf2df381cc42040e456a0ac44534dad28]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Some improvements to the share dialog
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/ShareChooserActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882010</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/3ddba7fe70f4176e37e657bd58b8ff8aa9d21227]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/3ddba7fe70f4176e37e657bd58b8ff8aa9d21227]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:33:15</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/3ddba7fe70f4176e37e657bd58b8ff8aa9d21227]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Registering notification publish receiver in manifest
+    </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/BackgroundPublishReceiver.java
+            </name></item></source_file></item></commit></extraction>

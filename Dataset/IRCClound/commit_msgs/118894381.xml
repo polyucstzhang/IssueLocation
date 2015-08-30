@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894381</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/0003b150cc1ca6cf65cb295ae6d4c72ae056d12e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/0003b150cc1ca6cf65cb295ae6d4c72ae056d12e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:13:16</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/0003b150cc1ca6cf65cb295ae6d4c72ae056d12e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Animate the transition between login and loading
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

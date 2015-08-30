@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881620</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/c2370dace89219426942795ef8877f6ce16768c7]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/c2370dace89219426942795ef8877f6ce16768c7]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:17:29</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/c2370dace89219426942795ef8877f6ce16768c7]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      workspace modifications
+    </title><numberfile>
+      7 changed files
+    </numberfile><source_file><item><name>
+              .idea/gradle.xml
+            </name></item><item><name>
+              .idea/misc.xml
+            </name></item><item><name>
+              .idea/modules.xml
+            </name></item><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              DaoGenerator/DaoGenerator.iml
+            </name></item><item><name>
+              android.iml → owntracks-android.iml
+            </name></item><item><name>
+              settings.gradle
+            </name></item></source_file></item></commit></extraction>

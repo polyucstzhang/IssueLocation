@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118286077</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/ed285525e7fb34902ecf157e35c5bd859dda7aaa]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/ed285525e7fb34902ecf157e35c5bd859dda7aaa]]></realpath><theme>mapsforge_07n</theme><middle>default</middle><createdate>2015-8-21 19:29:12</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/ed285525e7fb34902ecf157e35c5bd859dda7aaa]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      AndroidUtils: fix NPE when external cache is full
+    </title><number>
+      1 changed file
+    </number></item></BR></extraction>

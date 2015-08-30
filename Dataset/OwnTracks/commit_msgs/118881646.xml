@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881646</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/883504f9c3f3840e75a9c2c919a91010e77bad01]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/883504f9c3f3840e75a9c2c919a91010e77bad01]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:18:44</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/883504f9c3f3840e75a9c2c919a91010e77bad01]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixed mode id was not set from configuration, closes </title><numberfile>
+      4 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/messages/LocationMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/TransitionMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceLocator.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894376</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/896a39250c39632b2d4af922156c901e39cdd2d7]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/896a39250c39632b2d4af922156c901e39cdd2d7]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:13:6</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/896a39250c39632b2d4af922156c901e39cdd2d7]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Launch the splash activity again when resuming the app after being te…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893479</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/dea4ff419e76ca483dfb5edc3c56e610ae4fecba]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/dea4ff419e76ca483dfb5edc3c56e610ae4fecba]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:40:7</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/dea4ff419e76ca483dfb5edc3c56e610ae4fecba]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix reconnecting after network state changes
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/EventsDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

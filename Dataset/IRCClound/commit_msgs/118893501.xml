@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893501</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/079310073706f0282904a13d6b649753790e3388]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/079310073706f0282904a13d6b649753790e3388]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:40:58</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/079310073706f0282904a13d6b649753790e3388]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Improve the notification ticker text for /me messages
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

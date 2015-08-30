@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894115</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/388a993bcf2049016bcd1e31b1ae648ee9b0e4dc]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/388a993bcf2049016bcd1e31b1ae648ee9b0e4dc]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:3:51</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/388a993bcf2049016bcd1e31b1ae648ee9b0e4dc]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Start using Google's navigation drawers instead of our custom impleme…
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              res/layout/bufferslist.xml
+            </name></item><item><name>
+              src/com/irccloud/android/ActionEditText.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivityPager.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

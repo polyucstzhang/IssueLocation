@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894329</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d2569738c3a0156f4232467da5c1a7ee6bdc545d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d2569738c3a0156f4232467da5c1a7ee6bdc545d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:11:30</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d2569738c3a0156f4232467da5c1a7ee6bdc545d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Hide the subscriptions and changelog links in the settings activity u…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/xml/preferences_about.xml
+            </name></item><item><name>
+              src/com/irccloud/android/PreferencesActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

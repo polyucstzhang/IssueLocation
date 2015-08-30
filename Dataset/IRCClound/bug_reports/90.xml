@@ -1,0 +1,1 @@
+<extraction><id>#90</id><title>Don't send heartbeats while drawer is open</title><description> Make sure to send them again when the drawer closes</description><comments> </comments></extraction>

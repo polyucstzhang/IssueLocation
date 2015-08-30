@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894961</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f00be4d128da0ff93f41a8ea3c025b8b50482ebc]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f00be4d128da0ff93f41a8ea3c025b8b50482ebc]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:30:16</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f00be4d128da0ff93f41a8ea3c025b8b50482ebc]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Basic Android application project with ActionBarSherlock, android-web…
+    </title><numbercommit>
+      20 changed files
+    </numbercommit><source_file><item><name>
+              .project
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              proguard-project.txt
+            </name></item><item><name>
+              project.properties
+            </name></item><item><name>
+              res/drawable-hdpi/ic_action_search.png
+            </name></item><item><name>
+              res/drawable-hdpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_action_search.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_action_search.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_launcher.png
+            </name></item><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/menu/activity_main.xml
+            </name></item><item><name>
+              res/values-large/dimens.xml
+            </name></item><item><name>
+              res/values/arrays.xml
+            </name></item><item><name>
+              res/values/dimens.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

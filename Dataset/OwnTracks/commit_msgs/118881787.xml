@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881787</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/6a8487de067000441bf85da439100d65531e1cbb]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/6a8487de067000441bf85da439100d65531e1cbb]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:24:44</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/6a8487de067000441bf85da439100d65531e1cbb]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added BT permissions
+    </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item></source_file></item></commit></extraction>

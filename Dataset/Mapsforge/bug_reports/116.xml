@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831812</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/116]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/116]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:54:43</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/116]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#116</id><title>Synchronization Issue in Overlay.java when toggling full screen mode</title><description>
+
+    
+      
+          From LudwigBr...@gmail.com on April 23, 2011 12:27:42
+
+I have stumbled over a slightly tricky issue that only manifest itself when toggling full screen mode on or off. Essentially, when returning to the map screen the app would crash with a SIGSEGV in libskia with the following helpful error log in logcat.
+
+04-23 13:38:45.692: DEBUG/dalvikvm(465): GC_EXTERNAL_ALLOC freed 24110 objects / 1630712 bytes in 191ms
+04-23 13:38:46.352: INFO/DEBUG(31): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+04-23 13:38:46.352: INFO/DEBUG(31): Build fingerprint: 'generic/sdk/generic/:2.2/FRF91/43546:eng/test-keys'
+04-23 13:38:46.362: INFO/DEBUG(31): signal 11 (SIGSEGV), fault addr 00000000
+04-23 13:38:46.362: INFO/DEBUG(31): r0 00000000 r1 00000000 r2 478cecf4 r3 002cde98
+04-23 13:38:46.362: INFO/DEBUG(31): r4 00000008 r5 00000000 r6 42bd6c67 r7 43102fa0
+04-23 13:38:46.362: INFO/DEBUG(31): r8 478ced10 r9 43102f98  10 002557a0  fp 43102f94
+04-23 13:38:46.372: INFO/DEBUG(31):  ip ad36ee38  sp 478cecf8  lr ad34b461  pc ab16ad0c  cpsr 60000010
+04-23 13:38:48.403: INFO/DEBUG(31):          #00  pc 0006ad0c  /system/lib/libskia.so
+04-23 13:38:48.453: INFO/DEBUG(31):          #1  pc 0004b45e  /system/lib/libandroid_runtime.so
+04-23 13:38:48.453: INFO/DEBUG(31):          #2  pc 00013974  /system/lib/libdvm.so
+04-23 13:38:48.473: INFO/DEBUG(31):          #3  pc 0003ddf0  /system/lib/libdvm.so
+04-23 13:38:48.473: INFO/DEBUG(31):          #4  pc 000371b6  /system/lib/libdvm.so
+04-23 13:38:48.493: INFO/DEBUG(31):          #5  pc 00024dcc  /system/lib/libdvm.so
+04-23 13:38:48.493: INFO/DEBUG(31):          #6  pc 0001d7cc  /system/lib/libdvm.so
+04-23 13:38:48.523: INFO/DEBUG(31):          #7  pc 00053eec  /system/lib/libdvm.so
+04-23 13:38:48.523: INFO/DEBUG(31):          #8  pc 00054102  /system/lib/libdvm.so
+04-23 13:38:48.523: INFO/DEBUG(31):          #9  pc 0004825a  /system/lib/libdvm.so
+04-23 13:38:48.532: INFO/DEBUG(31):          #10  pc 0001103c  /system/lib/libc.so
+04-23 13:38:48.543: INFO/DEBUG(31):          #11  pc 00010b20  /system/lib/libc.so
+04-23 13:38:48.543: INFO/DEBUG(31): code around pc:
+04-23 13:38:48.543: INFO/DEBUG(31): ab16acec e20330ff e58dc000 ebff88cf e28dd00c 
+04-23 13:38:48.583: INFO/DEBUG(31): ab16acfc e8bd8000 e92d4070 e2804008 e1a05001 
+04-23 13:38:48.583: INFO/DEBUG(31): ab16ad0c e5903000 e1a01004 e1a0e00f e593f044 
+04-23 13:38:48.583: INFO/DEBUG(31): ab16ad1c e3550000 0a000001 e1a00004 ebff86b0 
+04-23 13:38:48.583: INFO/DEBUG(31): ab16ad2c e1a00004 e8bd8070 e92d41f0 e1a00002 
+04-23 13:38:48.593: INFO/DEBUG(31): code around lr:
+04-23 13:38:48.593: INFO/DEBUG(31): ad34b440 bd106a00 2900b510 f000d103 2000fc1d 
+04-23 13:38:48.593: INFO/DEBUG(31): ad34b450 f000e007 f7d1febf 2100e97e ecc2f7d1 
+04-23 13:38:48.603: INFO/DEBUG(31): ad34b460 bd1069c0 2900b510 f000d103 2000fc0d 
+04-23 13:38:48.603: INFO/DEBUG(31): ad34b470 f000e013 1c04feaf 21006800 1c206882 
+04-23 13:38:48.603: INFO/DEBUG(31): ad34b480 1c034790 2b002001 1c20d107 e962f7d1 
+04-23 13:38:48.613: INFO/DEBUG(31): stack:
+04-23 13:38:48.613: INFO/DEBUG(31):     478cecb8  45081d00  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+04-23 13:38:48.613: INFO/DEBUG(31):     478cecbc  8083d9b9  /system/lib/libdvm.so
+04-23 13:38:48.613: INFO/DEBUG(31):     478cecc0  8083d99d  /system/lib/libdvm.so
+04-23 13:38:48.613: INFO/DEBUG(31):     478cecc4  002563c8  [heap]
+04-23 13:38:48.613: INFO/DEBUG(31):     478cecc8  45081d00  /dev/ashmem/mspace/dalvik-heap/2 (deleted)
+04-23 13:38:48.613: INFO/DEBUG(31):     478ceccc  8082e5b3  /system/lib/libdvm.so
+04-23 13:38:48.613: INFO/DEBUG(31):     478cecd0  00310460  [heap]
+04-23 13:38:48.623: INFO/DEBUG(31):     478cecd4  478ced40
+04-23 13:38:48.623: INFO/DEBUG(31):     478cecd8  00000000
+04-23 13:38:48.623: INFO/DEBUG(31):     478cecdc  afd103f0  /system/lib/libc.so
+04-23 13:38:48.633: INFO/DEBUG(31):     478cece0  478ced40
+04-23 13:38:48.633: INFO/DEBUG(31):     478cece4  80886910  /system/lib/libdvm.so
+04-23 13:38:48.633: INFO/DEBUG(31):     478cece8  00000004
+04-23 13:38:48.643: INFO/DEBUG(31):     478cecec  42bd6c67  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+04-23 13:38:48.643: INFO/DEBUG(31):     478cecf0  df002777
+04-23 13:38:48.643: INFO/DEBUG(31):     478cecf4  e3a070ad
+04-23 13:38:48.643: INFO/DEBUG(31): #00 478cecf8  478ced30
+04-23 13:38:48.643: INFO/DEBUG(31):     478cecfc  00000004
+04-23 13:38:48.643: INFO/DEBUG(31):     478ced00  42bd6c67  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+04-23 13:38:48.643: INFO/DEBUG(31):     478ced04  ad34b461  /system/lib/libandroid_runtime.so
+04-23 13:38:48.653: INFO/DEBUG(31): #1 478ced08  478ced30
+04-23 13:38:48.653: INFO/DEBUG(31):     478ced0c  80813978  /system/lib/libdvm.so
+
+I am including this output only for those who stumble over the same problem as it does actually give very little clue as to the bug that is causing the problem.
+
+What actually causes the problem is a race condition in Overlay.java when resizing the canvas. 
+
+When resizing the screen setupOverlay is being called which creates a new bitmaps and a new canvas. Since this method is not synchronized, it can happen (and somehow very regularly happened in my case) that redraw() is already being called right between the points where the bitmap as been set and the size of the bitmap is inquired. So, setupOverlay() creates a new canvas with no bitmap, so the call 
+this.overlayCanvas.getWidth() fails with a null pointer, resulting in the obscure error from logcat.
+
+When I started writing this, I thought I already had a working solution, but I have now found that it would cause its own synchronization problems. As I am right now running out of time today, I am just pushing this issue out, maybe someone else has an easy fix for this.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=116
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on April 24, 2011 05:59:00
+
+I have just commited a new version, which should fix the broken synchronization (see revision r1019 ). In my tests resizing the MapView together with its overlay does now work as it should.
+
+Please check out the new version from SVN and confirm that it fixes your issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on May 04, 2011 06:55:12
+
+Just to let you know that since r1020 I have not managed to crash it, thanks for the quick fixes.
+Ludwig
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:36 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:36 PM GMT+8</closetime></item></BR></extraction>

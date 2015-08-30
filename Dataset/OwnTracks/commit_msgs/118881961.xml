@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881961</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/aa887831080492a78f0dadd376b7bbd428ba9315]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/aa887831080492a78f0dadd376b7bbd428ba9315]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:55</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/aa887831080492a78f0dadd376b7bbd428ba9315]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Removed some possible causes for </title><numberfile>
+      9 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Contact.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item></source_file></item></commit></extraction>

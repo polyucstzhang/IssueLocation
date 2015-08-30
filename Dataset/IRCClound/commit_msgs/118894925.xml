@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894925</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/316107168dab0c3d7cb58d3199b3f60662809045]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/316107168dab0c3d7cb58d3199b3f60662809045]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:28:59</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/316107168dab0c3d7cb58d3199b3f60662809045]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      motd and a few other server event types
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

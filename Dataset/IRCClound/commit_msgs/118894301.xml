@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894301</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a001ddaed42b0ac97599967635a491f0d4b699b0]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a001ddaed42b0ac97599967635a491f0d4b699b0]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:10:34</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a001ddaed42b0ac97599967635a491f0d4b699b0]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Toast when recieving a new message in a buffer and when tapping the u…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832656</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/32]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/32]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:57:25</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/32]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#32</id><title>EHighwayLevel </title><description>
+
+    
+      
+          From Frank.Vi...@googlemail.com on August 02, 2010 11:50:30
+
+Thought a bit about pro's and cons of using Enum for the highway level tag.
+
+In my opinion we should use a whitelist of strings instead of
+the enum for importing the routing graph. 
+The advantage of not using enums is that we don't need any changes inside the code for configuring the import. The highway level whitlist could be specified in a config file and no according enum must be created (saves work and removes redundancy). The same argument holds for EHighwayLevel2Speed. Here we could map strings to average speed instead of
+mapping enums to average speed.
+
+What do you think about this?
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=32
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From marco.ku...@googlemail.com on August 03, 2010 04:01:34
+
+I totaly agree, too. Now we must think about, how to design this whitelist. Should we use only the value of the highwaylevel or is it necessary to use both(key+value)?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Frank.Vi...@googlemail.com on February 25, 2011 16:31:27
+
+think we can close this
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:29 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:29 PM GMT+8</closetime></item></BR></extraction>

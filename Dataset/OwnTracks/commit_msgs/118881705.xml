@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881705</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/12a0771a1fbf6bff6c68117fba0ea81c972094b5]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/12a0771a1fbf6bff6c68117fba0ea81c972094b5]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:21:13</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/12a0771a1fbf6bff6c68117fba0ea81c972094b5]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Removed support.Default class, removed broker publishing state
+    </title><numberfile>
+      12 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/App.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/DumpMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceLocator.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceProxy.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Defaults.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Events.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item></source_file></item></commit></extraction>

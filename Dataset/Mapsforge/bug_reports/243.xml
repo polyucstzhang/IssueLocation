@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830804</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/243]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/243]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:50:58</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/243]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#243</id><title>Problem painting several drawables(ArrayItemizedOverlay)</title><description>
+
+    
+      
+          From carlito...@gmail.com on February 01, 2012 16:57:40
+
+Hi to everybody!
+
+I'm having a problem with the class ArrayItemizedOverlay/Drawables and the MapView. I want to draw on the map a few different icons, around 10, but i always get an error(ERROR/AndroidRuntime(296): java.lang.OutOfMemoryError: bitmap size exceeds VM budget). But if I decrease the amount of ArrayItemizedOverlay/Drawables, it's fine.
+
+So...could somebody say to me what I'm doing wrong? Maybe it's not possible to do it :S I've around 15 items at the 'itemList' that owns each ArrayItemizedOverlay.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=243
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From dassrock...@gmail.com on February 04, 2012 09:39:04
+
+This happens because you probably create an Overlay for every item.
+Try creating only one overlay 
+
+new ArrayItemizedOverlay(null, getBaseContext());
+
+with null als defaultMarker and afterwards different MarkerItems with different Drawables
+new OverlayItem(point, title, snippet, marker)
+which you add to the overlay
+
+the error occurs because you ran out of memory
+regards 
+Robert
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From carlito...@gmail.com on May 17, 2013 07:28:29
+
+Sorry, it seems that I forgot to answer back this. My problem happened because I was using more than one Overlay, as @dassrock said. It worked like a charm. So @edwinbol, just use new OverlayItem(point, title, snippet, DRAWABLE); It works.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:47 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:47 PM GMT+8</closetime></item></BR></extraction>

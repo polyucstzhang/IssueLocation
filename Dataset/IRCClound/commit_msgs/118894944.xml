@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894944</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3ee054f89a4d0b2af1bde69bd68651ac56ef2b49]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3ee054f89a4d0b2af1bde69bd68651ac56ef2b49]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:39</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3ee054f89a4d0b2af1bde69bd68651ac56ef2b49]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Send heartbeat events when new messages are seen
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

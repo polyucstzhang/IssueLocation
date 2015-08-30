@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881751</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/eb3aa0e8d0bb42c5ae6e2b17abe07b0b40da3c1c]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/eb3aa0e8d0bb42c5ae6e2b17abe07b0b40da3c1c]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:18</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/eb3aa0e8d0bb42c5ae6e2b17abe07b0b40da3c1c]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      cleaned merge conflicts
+    </title><numberfile>
+      18 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              DaoGenerator/src/main/java/org/owntracks/android/DaoGenerator.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/db/Waypoint.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/db/WaypointDao.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/messages/LocationMessage.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/layout/fragment_waypoint.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_waypoint_monitor.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_waypoint_actionmode.xml
+            </name></item><item><name>
+              src/main/res/values/bools.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

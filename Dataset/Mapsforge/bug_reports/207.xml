@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831026</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/207]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/207]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:51:55</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/207]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#207</id><title>interpret of Tracktype and Surface</title><description>
+
+    
+      
+          From cadfael1974 on November 21, 2011 09:50:04
+
+I wish an enhancement to view Tracktypes like in OSMand.
+Need it for my system and to update OSM - Data's!
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=207
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From cadfael1974 on November 21, 2011 10:36:27
+
+mmm,for example, look at: http://www.openstreetmap.org/?lat=52.426&amp;lon=9.67739&amp;zoom=17&amp;layers=M It's Mecklenheide Forst (Forest)
+
+There are some Way's with the Key's:
+
+
+highway: track
+tracktype: Grade 2
+
+
+if tracktype in the key's so there must interpreted from grade 1 - 5 http://wiki.openstreetmap.org/wiki/Key:tracktype if the way's drawn like Mapnick - it's perfect ;-) 
+
+PS: Sorry for my bad english  :-(
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 04, 2011 06:19:29
+
+I have added the tags to the default mapping XML file with revision r1551 , now we only need to add rules to our default render theme.
+
+Status: Started  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on January 07, 2012 07:39:44
+
+I have added the necessary rules to the (default) osmarender theme with revision r1693 , so these way types should be rendered correctly now.
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:44 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:44 PM GMT+8</closetime></item></BR></extraction>

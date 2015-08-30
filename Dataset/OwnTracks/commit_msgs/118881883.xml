@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881883</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/ec6a8f424255d5b917bccb9d2bd9d968ed994875]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/ec6a8f424255d5b917bccb9d2bd9d968ed994875]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:28:54</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/ec6a8f424255d5b917bccb9d2bd9d968ed994875]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed location weirdness for #286
+    </title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/model/GeocodableLocation.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/model/LocationMessage.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/model/WaypointMessage.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830299</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/295]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/295]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:49:35</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/295]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#295</id><title>Ways are not included in .map if they dont fit completly in bbox</title><description>
+
+    
+      
+          From Christia...@gmail.com on April 14, 2012 14:43:44
+
+I found that ways are only included in the .map - file if they completely fit within the boundarys of the mapile (bbox).
+
+The "Niederösterreichischer Alpinweg (26654579)" is shown on the standard Mapsforge Austrian Map, generating a map with bbox=47.77,14.95,47.9,15.15 a short part of this way lies within the bbox and should be rendererd, but it doesnt. 
+I checked the osm-file and the way is included. Its a simple , not a relation.
+
+I attched a zip containing the mapfile and 2 screenshots.
+
+Attachment: issue.zip
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=295
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Christia...@gmail.com on April 15, 2012 07:04:29
+
+The way I made this map:
+
+I cut out the aera from austria.osm using Osmosis
+Merged it with srtm_data with osmosis.
+
+Made the map with the mapsforge osmosis-plugin.
+
+The "Alpinweg Niederösterreich" is included in the resulting osm-file, but not rendered in the .map.
+
+Here are the commands used to make this map:
+
+#Contours with PHYGHTMAP (output is in version 0.6)
+C:\Python27\Scripts\phyghtmap -a 14.95:47.77:15.15:47.9 -o D:\maps\Mapsforge\at_dstein\srtm6 --source=view3,srtm3 -s 25 -c 500,100 --start-node-id=2000000000 --start-way-id=1000000000 --write-timestamp --max-nodes-per-tile=0
+
+#cut out osm-data from austria.osm
+osmosis --rx D:\maps\OSM_Data\austria.osm --tee 1 --bounding-box top="47.90" bottom="47.77" left="14.95" right="15.15" --wx D:\maps\Mapsforge\at_dstein\at_dstein.osm
+
+#merge srtm + osm
+osmosis --rx D:\maps\Mapsforge\at_dstein\at_dstein.osm --sort-0.6 --rx D:\maps\Mapsforge\at_dstein\srtm6.osm --sort-0.6 --merge --wx D:\maps\Mapsforge\at_dstein\at_dstein_srtm.osm
+
+#mapsforge output
+osmosis --rx file=D:\maps\Mapsforge\at_dstein\at_dstein_srtm.osm --mw file=D:\maps\Mapsforge\at_dstein\at_dstein_srtm.map bbox=47.77,14.95,47.9,15.15 type=hd tag-conf-file=D:\maps\Mapsforge\tag-mapping-srtm.xml
+
+Regards Christian
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Christia...@gmail.com on April 16, 2012 09:57:03
+
+Hi Thilo,
+
+Setting completeWays=yes while cutting out the area in Osmosis basicly solves the problem.
+
+But now the way exeeds the bbox in the .map file.
+
+regards
+Christian
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:51 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:51 PM GMT+8</closetime></item></BR></extraction>

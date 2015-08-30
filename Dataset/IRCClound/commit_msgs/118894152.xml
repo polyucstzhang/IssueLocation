@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894152</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/48b74713579bce2e83201ecc6d7b2b9561a41f9b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/48b74713579bce2e83201ecc6d7b2b9561a41f9b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:5:10</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/48b74713579bce2e83201ecc6d7b2b9561a41f9b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Update the progress bar more frequently while parsing backlog, don't …
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              res/layout-land/activity_main.xml
+            </name></item><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/layout/messageview.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

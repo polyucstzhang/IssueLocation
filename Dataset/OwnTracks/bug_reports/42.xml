@@ -1,0 +1,5 @@
+<extraction><id>#42</id><title>What is 'Ticker on waypoint' supposed to provoke?</title><description> I'm asking, obviously, because I can't get it to ticker anything ... </description><comments>The ticker is the thing that shows up in the bar where the clock resides.
+When a waypoint is triggered, a short message like "Entering work"
+is/should_be shown. I know what the ticker is. Point is: nothing shows up. Neither my events nor other peoples' e.g. I was expecting to see your events.  @jpmens To pick this up again, are you seeing a ticker when one of your device's waypoints is triggered (e.g. you save your home waypoint if you're at home)? It should spawn a ticker saying "Entering $WaypointDesc").  I see a ticker as you describe on MY Android device when I save.
+
+I was expecting to see Friends' enter/leave events.</comments></extraction>

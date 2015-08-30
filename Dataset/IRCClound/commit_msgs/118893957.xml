@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893957</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/70c70b546c20b1b3c24e05b35b330210291df9e0]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/70c70b546c20b1b3c24e05b35b330210291df9e0]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:58:0</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/70c70b546c20b1b3c24e05b35b330210291df9e0]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Use the usermode symbols from isupport PREFIX when available, closes </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/ColorFormatter.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/ServersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/IgnoreTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

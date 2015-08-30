@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893017</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/79c488416749c1038f1b1c958a6de213ebe104a3]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/79c488416749c1038f1b1c958a6de213ebe104a3]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:31:18</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/79c488416749c1038f1b1c958a6de213ebe104a3]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Speed up backlog loading
+    </title><numbercommit>
+      10 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/BuffersList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/ChannelsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/EventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/NotificationsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/ServersList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/UsersList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/model/Buffer.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

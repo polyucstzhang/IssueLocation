@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894954</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c218ca5569d64212019112b0402a3e13ec26f35c]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c218ca5569d64212019112b0402a3e13ec26f35c]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:30:0</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c218ca5569d64212019112b0402a3e13ec26f35c]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Message activity, handle buffer_msg events, and perform backlog datab…
+    </title><numbercommit>
+      15 changed files
+    </numbercommit><source_file><item><name>
+              assets/messageview.html
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              res/layout/messageview.xml
+            </name></item><item><name>
+              res/menu/activity_message.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/DBHelper.java
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/ServersDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

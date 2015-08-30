@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826512</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/626]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/626]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:40:21</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/626]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#626</id><title>Scale gesture focal point</title><description>
+
+    
+      
+          We could implement the scaling transformation to take place through gesture's focal point.
+
+Right now it works with the center of the map view.
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          With 6c65c73 I pushed on dev the scale gesture implementation through focal point.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          With 3e53ecf I pushed improvements regarding conditions at map limits.
+      
+    
+
+  </contents></item></comments><createtime>Jun 11, 2015, 7:02 PM GMT+8</createtime><closetime>Jun 14, 2015, 12:37 AM GMT+8</closetime></item></BR></extraction>

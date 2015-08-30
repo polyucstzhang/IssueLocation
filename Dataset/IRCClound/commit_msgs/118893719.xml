@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893719</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/6c4713dbdbaa3078d0c1c718fa75c2ba4f88c91b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/6c4713dbdbaa3078d0c1c718fa75c2ba4f88c91b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:49:10</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/6c4713dbdbaa3078d0c1c718fa75c2ba4f88c91b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Email verification message
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/fragment/EditConnectionFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881878</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/2f5af41720c57640bbcad5d809be3e80db88dab3]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/2f5af41720c57640bbcad5d809be3e80db88dab3]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:28:44</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/2f5af41720c57640bbcad5d809be3e80db88dab3]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed #299
+    </title><numberfile>
+      4 changed files
+    </numberfile><source_file><item><name>
+              res/layout/fragment_waypoint.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item></source_file></item></commit></extraction>

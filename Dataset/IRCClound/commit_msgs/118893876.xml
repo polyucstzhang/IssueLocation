@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893876</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/17c3fdb731a8ff9b11bf7efdad1380dc3eb93cca]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/17c3fdb731a8ff9b11bf7efdad1380dc3eb93cca]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:54:50</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/17c3fdb731a8ff9b11bf7efdad1380dc3eb93cca]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Invalidate the session when logging out, if we recieve a GCM message …
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

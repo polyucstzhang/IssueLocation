@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831996</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/112]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/112]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:54:52</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/112]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#112</id><title>OutOfMemoryError: bitmap size exceeds VM budget</title><description>
+
+    
+      
+          From hansgeor...@gmail.com on March 29, 2011 14:25:49
+
+What steps will reproduce the problem? 1.I extented OverlayMapViewer to show polygons ( see attached files)
+2.looks like that more the 6 polygons on the map cause the exception 3. What is the expected output? What do you see instead? 03-29 14:14:52.906: ERROR/dalvikvm-heap(16049): 1390080-byte external allocation too large for this process.
+03-29 14:14:52.929: ERROR/GraphicsJNI(16049): VM won't let us allocate 1390080 bytes
+03-29 14:14:52.933: DEBUG/dalvikvm(16049): GC_FOR_MALLOC freed 0K, 46% free 4484K/8263K, external 23529K/25577K, paused 16ms
+03-29 14:14:52.933: DEBUG/AndroidRuntime(16049): Shutting down VM
+03-29 14:14:52.933: WARN/dalvikvm(16049): threadid=1: thread exiting with uncaught exception (group=0x40015560)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049): FATAL EXCEPTION: main
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049): java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.graphics.Bitmap.nativeCreate(Native Method)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.graphics.Bitmap.createBitmap(Bitmap.java:477)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at org.mapsforge.android.maps.Overlay.setupOverlay(Overlay.java:362)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at org.mapsforge.android.maps.MapView.onSizeChanged(MapView.java:1813)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.view.View.setFrame(View.java:7242)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.view.View.layout(View.java:7169)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.widget.FrameLayout.onLayout(FrameLayout.java:338)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.view.View.layout(View.java:7175)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1254)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1130)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.widget.LinearLayout.onLayout(LinearLayout.java:1047)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.view.View.layout(View.java:7175)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.widget.FrameLayout.onLayout(FrameLayout.java:338)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.view.View.layout(View.java:7175)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.view.ViewRoot.performTraversals(ViewRoot.java:1140)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.view.ViewRoot.handleMessage(ViewRoot.java:1859)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.os.Handler.dispatchMessage(Handler.java:99)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.os.Looper.loop(Looper.java:123)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at android.app.ActivityThread.main(ActivityThread.java:3647)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at java.lang.reflect.Method.invokeNative(Native Method)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at java.lang.reflect.Method.invoke(Method.java:507)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+03-29 14:14:52.937: ERROR/AndroidRuntime(16049):     at dalvik.system.NativeStart.main(Native Method)
+03-29 14:14:52.937: WARN/ActivityManager(109):   Force finishing activity org.mapsforge.applications.android.samples/.OverlayMapViewer
+03-29 14:14:53.437: WARN/ActivityManager(109): Activity pause timeout for HistoryRecord{406f03a0 org.mapsforge.applications.android.samples/.OverlayMapViewer}
+03-29 14:14:53.453: VERBOSE/RenderScript_jni(197): surfaceCreated What version of the product are you using? On what operating system? Latest version of mapsforge code and map version 0.2.1, Nexus S Please provide any additional information below. I tried also map version 0.2.2 but  even less polygons led to the exception
+
+Attachment: OverlayMapViewer.java bw01.dat bw02.dat bw03.dat bw04.dat
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=112
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From hansgeor...@gmail.com on March 29, 2011 08:46:36
+
+Ok, i switched back to 0.2.2 (line code #79 and moved line code 270 &amp; 271 after 259. also moved line code 274 after 277.
+The good message I could see the polygons w/o a problem till I zoomed and moved the map. Then I got this:
+
+03-29 17:24:27.984: DEBUG/dalvikvm(28247): GC_CONCURRENT freed 1052K, 45% free 5556K/9927K, external 6369K/7890K, paused 2ms+4ms
+03-29 17:24:28.011: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 9120
+03-29 17:24:28.011: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 1600
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 9935
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 1396453
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 944
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 4082
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 480
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 1013
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 8497
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 619743
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 922
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 9081
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 3840
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 1470990
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 760689
+03-29 17:24:28.015: DEBUG/osm(28247): CanvasRenderer: invalid number of way nodes: 8748
+03-29 17:24:29.476: DEBUG/dalvikvm(28247): GC_CONCURRENT freed 1609K, 42% free 6018K/10247K, external 6369K/7890K, paused 2ms+4ms
+03-29 17:24:31.425: DEBUG/dalvikvm(28247): GC_CONCURRENT freed 2739K, 50% free 5372K/10695K, external 6369K/7890K, paused 1ms+4ms
+03-29 17:24:33.386: DEBUG/dalvikvm(28247): GC_CONCURRENT freed 1948K, 50% free 5396K/10695K, external 6369K/7890K, paused 2ms+4ms
+03-29 17:24:34.968: DEBUG/dalvikvm(28247): GC_CONCURRENT freed 2148K, 50% free 5351K/10695K, external 6369K/7890K, paused 1ms+4ms
+03-29 17:24:36.144: DEBUG/dalvikvm(5766): GC_EXPLICIT freed 127K, 57% free 2936K/6727K, external 1625K/2137K, paused 496ms
+03-29 17:24:36.851: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 9120
+03-29 17:24:36.851: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 1600
+03-29 17:24:37.351: DEBUG/dalvikvm(28247): GC_CONCURRENT freed 2576K, 55% free 4828K/10695K, external 6369K/7890K, paused 2ms+4ms
+03-29 17:24:37.414: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 9120
+03-29 17:24:37.414: DEBUG/osm(28247): CanvasRenderer: invalid way tag ID: 1600
+03-29 17:24:38.871: DEBUG/dalvikvm(28247): GC_CONCURRENT freed 1778K, 53% free 5109K/10695K, external 6404K/7890K, paused 1ms+3ms
+03-29 17:24:40.714: DEBUG/dalvikvm(5934): GC_EXPLICIT freed 6K, 53% free 2576K/5379K, external 1625K/2137K, paused 60ms
+03-29 17:24:48.562: DEBUG/dalvikvm(5944): GC_EXPLICIT freed 10K, 54% free 2522K/5379K, external 1625K/2137K, paused 79ms
+03-29 17:24:53.664: WARN/KeyCharacterMap(28247): No keyboard for id 0
+03-29 17:24:53.664: WARN/KeyCharacterMap(28247): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+03-29 17:24:53.691: DEBUG/dalvikvm(5951): GC_EXPLICIT freed 6K, 51% free 2646K/5379K, external 1625K/2137K, paused 166ms
+03-29 17:24:54.171: WARN/ActivityManager(109): Activity pause timeout for HistoryRecord{406dae08 org.mapsforge.applications.android.samples/.OoverlayMapViewer}
+03-29 17:24:54.234: VERBOSE/RenderScript_jni(197): surfaceCreated
+03-29 17:24:54.234: VERBOSE/RenderScript_jni(197): surfaceChanged
+03-29 17:24:55.554: DEBUG/AndroidRuntime(28247): Shutting down VM
+03-29 17:24:55.554: WARN/dalvikvm(28247): threadid=1: thread exiting with uncaught exception (group=0x40015560)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247): FATAL EXCEPTION: main
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247): java.lang.NullPointerException
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at org.mapsforge.android.maps.MapView.zoom(MapView.java:2428)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at org.mapsforge.android.maps.MapView$ScaleListener.onScaleEnd(MapView.java:319)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.ScaleGestureDetector.onTouchEvent(ScaleGestureDetector.java:285)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at org.mapsforge.android.maps.MapView$MultiTouchHandler.handleTouchEvent(MapView.java:128)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at org.mapsforge.android.maps.MapView.onTouchEvent(MapView.java:1014)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.View.dispatchTouchEvent(View.java:3885)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:903)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:942)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:942)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:1154)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.ViewRoot.dispatchDetachedFromWindow(ViewRoot.java:1746)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.ViewRoot.doDie(ViewRoot.java:2757)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.ViewRoot.die(ViewRoot.java:2727)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:218)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.view.Window$LocalWindowManager.removeViewImmediate(Window.java:436)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:2665)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.app.ActivityThread.access$2100(ActivityThread.java:117)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:961)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.os.Handler.dispatchMessage(Handler.java:99)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.os.Looper.loop(Looper.java:123)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at android.app.ActivityThread.main(ActivityThread.java:3647)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at java.lang.reflect.Method.invokeNative(Native Method)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at java.lang.reflect.Method.invoke(Method.java:507)
+03-29 17:24:55.566: ERROR/AndroidRuntime(28247):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+03-29 17:24:55.566: ERROR/AndroidRun...
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From tdh...@gmail.com on April 30, 2011 11:31:18
+
+I also have this problem. It comes when I exit my app, and then run it again. I only have 2 layers.
+
+04-30 19:26:22.974: ERROR/dalvikvm-heap(8505): 131072-byte external allocation too large for this process.
+04-30 19:26:23.004: ERROR/GraphicsJNI(8505): VM won't let us allocate 131072 bytes
+04-30 19:26:23.014: ERROR/AndroidRuntime(8505): FATAL EXCEPTION: main
+        java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+        at android.graphics.Bitmap.nativeCreate(Native Method)
+        at android.graphics.Bitmap.createBitmap(Bitmap.java:477)
+        at org.mapsforge.android.maps.TileRAMCache.(TileRAMCache.java:62)
+        at org.mapsforge.android.maps.MapView.setupMapView(MapView.java:1576)
+        at org.mapsforge.android.maps.MapView.(MapView.java:821)
+        at org.mapsforge.android.maps.MapView.(MapView.java:766)
+        at com.concentriclivers.cyclehire.CycleMapActivity.onCreate(CycleMapActivity.java:56)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1611)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1663)
+        at android.app.ActivityThread.access$1500(ActivityThread.java:117)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:931)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+        at android.os.Looper.loop(Looper.java:123)
+        at android.app.ActivityThread.main(ActivityThread.java:3683)
+        at java.lang.reflect.Method.invokeNative(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:507)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+        at dalvik.system.NativeStart.main(Native Method)
+
+Maybe a memory leak or something?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on May 15, 2011 03:36:50
+
+If it is neither a bug in the AdvancedMapViewer nor the map library, we can close this issue.
+
+However, i cannot reproduce the Android behavior you are describing. I have created a simple test application (see attachment) and tried the following:
+1) install it on the device via Eclipse run
+2) push the home button
+3) click the run button in Eclipse again
+
+Result: the application is not reinstalled (as the APK has not been changed). A new activity is not created, instead it just resumes the existing one and i see the following message in the Eclipse console:
+"ActivityManager: Warning: Activity not started, its current task has been brought to the front"
+
+If i run the application in step 3) via the Android launcher menu in my phone, the result is the same except that no warning message is printed in the Eclipse console.
+
+I even tried it with compiling the application against different versions of the Android API (3, 4 and 10), but the result was always the same. So as far as i can see, Android behaves correctly. I assume that there is a bug in your application that causes the problem.
+
+Status: Fixed  
+
+Attachment: Foo.java
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:36 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:36 PM GMT+8</closetime></item></BR></extraction>

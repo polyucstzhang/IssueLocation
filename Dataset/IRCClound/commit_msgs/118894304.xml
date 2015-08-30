@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894304</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a1b8c6705f147bf8ca0d88fe42ac029acc2bba62]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a1b8c6705f147bf8ca0d88fe42ac029acc2bba62]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:10:40</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a1b8c6705f147bf8ca0d88fe42ac029acc2bba62]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Add a link to the Android feedback channel to the about section of th…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/xml/preferences_about.xml
+            </name></item><item><name>
+              src/com/irccloud/android/PreferencesActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

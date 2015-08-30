@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894384</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9a9eec6e921d7daf20dece451c089aeb61926369]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9a9eec6e921d7daf20dece451c089aeb61926369]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:13:23</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9a9eec6e921d7daf20dece451c089aeb61926369]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      New combined splash / login launch activity
+    </title><numbercommit>
+      15 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-xhdpi/splashlogo.png
+            </name></item><item><name>
+              res/layout-sw600dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout-sw800dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout-sw800dp/activity_message.xml
+            </name></item><item><name>
+              res/layout/activity_login.xml
+            </name></item><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/PreferencesActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,1 @@
+<extraction><id>#97</id><title>Image viewer toolbar is down a bit too low on Android 5</title><description> Should be offset for the status bar height as it's not immersive</description><comments> </comments></extraction>

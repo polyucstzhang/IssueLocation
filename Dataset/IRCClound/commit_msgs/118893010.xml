@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893010</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/2f4c869c185e2ae9b2499c9a64c3303e424224ba]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/2f4c869c185e2ae9b2499c9a64c3303e424224ba]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:31:1</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/2f4c869c185e2ae9b2499c9a64c3303e424224ba]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Improve offline backlog browsing
+    </title><numbercommit>
+      9 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/EventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/UsersList.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

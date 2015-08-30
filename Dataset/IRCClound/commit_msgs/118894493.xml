@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894493</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/daa993658d07e45878b443bfdfc26db15757aaac]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/daa993658d07e45878b443bfdfc26db15757aaac]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:17:2</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/daa993658d07e45878b443bfdfc26db15757aaac]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Some JUnit tests for the Notifications class
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/NotificationsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

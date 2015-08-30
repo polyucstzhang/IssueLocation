@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826818</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/602]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/602]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:40:50</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/602]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#602</id><title>Relations with type=boundary not included</title><description>
+
+    
+      
+          In recent OpenAndroMaps Nationalpark Berchtesgaden, http://www.openstreetmap.org/relation/4292200, is not shown. It should, because boundary=national_park and protect_class=2 are included in tag-mapping. The only difference I found to other national parks on relations is that here type=boundary is used instead of type=multipolygon (which is not so rare).
+So I asked Christian if could do a tagtransform to test it, which he did:
+
+        &lt;name&gt;national parks to multipolygons&lt;/name&gt;
+        &lt;description&gt;national parks to multipolygons&lt;/description&gt;
+        &lt;match mode="or"&gt;
+            &lt;match mode="and" type="relation"&gt;
+                &lt;tag k="boundary" v="national_park"/&gt;
+                &lt;tag k="type"  v="boundary"/&gt;
+            &lt;/match&gt;
+            &lt;match mode="and" type="relation"&gt;
+                &lt;tag k="boundary" v="protected_area"/&gt;
+                &lt;tag k="type"  v="boundary"/&gt;
+            &lt;/match&gt;
+        &lt;/match&gt;
+        &lt;output&gt;
+            &lt;copy-all/&gt;
+            &lt;tag k="type" v="multipolygon"/&gt;
+        &lt;/output&gt;
+    &lt;/translation&gt;
+
+
+Now all protected_area and national_park relations with type=boundary are shown. Seems like relations with type=boundary aren't included.
+      
+    
+
+  </description><comments><item><commenter>eartrumpet</commenter><contents>
+
+    
+      
+          Just found the problem we had with inheritance of protect_class, so tag-transform works as expected now (and removed the part about it in the starting post). But the problem with type=boundary without tag-transform to type=multipolygon remains.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I'm closing this as duplicate of #245.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Apr 18, 2015, 11:49 PM GMT+8</createtime><closetime>May 13, 2015, 3:42 PM GMT+8</closetime></item></BR></extraction>

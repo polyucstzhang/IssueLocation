@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893622</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/eba67ed06e043d397f38d224c9c302f8cc1debcc]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/eba67ed06e043d397f38d224c9c302f8cc1debcc]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:45:28</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/eba67ed06e043d397f38d224c9c302f8cc1debcc]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Use the correct theme for the share dialog on 4.x and 5.x
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/values-v11/styles.xml
+            </name></item><item><name>
+              res/values-v21/styles.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

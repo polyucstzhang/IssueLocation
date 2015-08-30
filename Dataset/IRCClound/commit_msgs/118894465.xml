@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894465</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/6df0f78a419e251f9196412cc3ff3fbece0e0440]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/6df0f78a419e251f9196412cc3ff3fbece0e0440]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:16:6</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/6df0f78a419e251f9196412cc3ff3fbece0e0440]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Custom expanded notification layout that can wrap long lines
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              project.properties
+            </name></item><item><name>
+              res/layout-v11/notification.xml
+            </name></item><item><name>
+              res/values-v9/styles.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

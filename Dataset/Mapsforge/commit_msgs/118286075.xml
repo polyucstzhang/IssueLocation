@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118286075</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/fbe6716d306cbff699cde7e2ebfa9ed70f00d1ac]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/fbe6716d306cbff699cde7e2ebfa9ed70f00d1ac]]></realpath><theme>mapsforge_07n</theme><middle>default</middle><createdate>2015-8-21 19:29:8</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/fbe6716d306cbff699cde7e2ebfa9ed70f00d1ac]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      Move to Gradle 1.9 and android plugin 0.7+ and fixed flagged lint err…
+    </title><number>
+      11 changed files
+    </number></item></BR></extraction>

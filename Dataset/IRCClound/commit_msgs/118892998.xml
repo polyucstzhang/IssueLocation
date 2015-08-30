@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892998</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c0ad410156e246bc543f3cd98172d398e35b3691]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c0ad410156e246bc543f3cd98172d398e35b3691]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:30:29</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c0ad410156e246bc543f3cd98172d398e35b3691]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Skip the splash transition when entering from the login screen
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

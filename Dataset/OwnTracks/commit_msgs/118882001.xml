@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882001</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/e71417496e49622c301c95fc74a39d60487b4d0b]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/e71417496e49622c301c95fc74a39d60487b4d0b]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:32:44</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/e71417496e49622c301c95fc74a39d60487b4d0b]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Testing SUB to friend topics
+    </title><numberfile>
+      10 changed files
+    </numberfile><source_file><item><name>
+              bin/classes.dex
+            </name></item><item><name>
+              bin/mqttitude.apk
+            </name></item><item><name>
+              bin/resources.ap_
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Events.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Friend.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/GeocodableLocation.java
+            </name></item></source_file></item></commit></extraction>

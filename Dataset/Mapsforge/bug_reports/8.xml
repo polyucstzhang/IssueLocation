@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832940</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/8]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/8]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:58:7</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/8]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#8</id><title>Conversion scripts for generating compatible maps</title><description>
+
+    
+      
+          From dirk.jae...@gmail.com on May 28, 2010 10:35:22
+
+Please provide the scripts to convert OSM maps to your map format.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=8
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on May 31, 2010 03:15:08
+
+Maybe we should integrate the converter into osmosis as a plugin. That would allow to
+to integrate the processes of cutting out the region of interest from a larger OSM
+raw data file and generating a map file.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From sinikka....@gmail.com on October 04, 2010 02:02:14
+
+A detailed tutorial with comments on all settings will be published as soon as possible. Before that some evaluation has to be done and some little issues have to be fixed. 
+You will be immediately informed when our converting tools are in a stable version.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:27 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:27 PM GMT+8</closetime></item></BR></extraction>

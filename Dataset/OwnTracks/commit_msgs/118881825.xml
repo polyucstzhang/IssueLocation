@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881825</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/112c9ed2ccfb4a81791871ec7fc5ec8956ad00c2]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/112c9ed2ccfb4a81791871ec7fc5ec8956ad00c2]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:26:57</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/112c9ed2ccfb4a81791871ec7fc5ec8956ad00c2]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed </title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/layout/row_contact.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityWaypoints.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/adapter/WaypointAdapter.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item></source_file></item></commit></extraction>

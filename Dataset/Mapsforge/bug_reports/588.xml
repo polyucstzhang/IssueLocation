@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826829</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/588]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/588]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:41:11</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/588]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#588</id><title>Pausing MapWorker can freeze calling thread</title><description>
+
+    
+      
+          I am pausing MapWorker with the following code:
+
+mapWorker.pause();
+mapWorker.awaitPausing();
+
+
+But if MapWorker is doing nothing it's put in WAITING state by JobQueue and awaitPausing() never returns because run loop is not executing and pausing flag is not set. I've made a workaround for that case: 
+
+mapWorker.pause();
+if (mapWorker.getState() != Thread.State.WAITING)
+    mapWorker.awaitPausing();
+
+
+But I think the source of the problem should be fixed in some way.
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I mean we have not seen any issues inside the library where just the pause() is used.
+Have you tried only that?
+      
+    
+
+  </contents></item><item><commenter>andreynovikov</commenter><contents>
+
+    
+      
+          I've just went another way. You can close it if you wish.
+      
+    
+
+  </contents></item></comments><createtime>Mar 7, 2015, 2:21 AM GMT+8</createtime><closetime>Aug 14, 2015, 5:45 PM GMT+8</closetime></item></BR></extraction>

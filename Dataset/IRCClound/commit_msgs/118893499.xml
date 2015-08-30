@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893499</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/dad1253ef767bfdebd89b151709956297707e111]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/dad1253ef767bfdebd89b151709956297707e111]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:40:53</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/dad1253ef767bfdebd89b151709956297707e111]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix an issue where the app wouldn't reconnect after the network conne…
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              Grab_Android_v3.0.4.jar
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

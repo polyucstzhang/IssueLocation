@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881798</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/4cc3237c381f31d14223cae540610c2cd270f68e]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/4cc3237c381f31d14223cae540610c2cd270f68e]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:25:17</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/4cc3237c381f31d14223cae540610c2cd270f68e]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added remote command configuration to config json
+    </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Preferences.java
+            </name></item></source_file></item></commit></extraction>

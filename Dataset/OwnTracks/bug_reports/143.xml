@@ -1,0 +1,2 @@
+<extraction><id>#143</id><title>"t" parameter missing when using report-button in notification area</title><description> Just a minor issue I found: When pressing the report-button in the notification area, no "t" parameter is submitted to the MQTT broker. When pressing the report button inside the app itself, it is correctly set.Tested using v.0.5.11 on 4.4.4.</description><comments>Oh, good catch!
+Will be fixed in 0.5.12 due later this week. </comments></extraction>

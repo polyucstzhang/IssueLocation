@@ -1,0 +1,2 @@
+<extraction><id>#152</id><title>ActivityMain.java line 301</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/551693435141dcfd8f43f52b</description><comments>Apparently fixed in Lollipop </comments></extraction>

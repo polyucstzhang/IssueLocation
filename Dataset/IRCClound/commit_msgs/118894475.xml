@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894475</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/292e2687e7234c3d2da239617452b538200601d7]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/292e2687e7234c3d2da239617452b538200601d7]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:16:25</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/292e2687e7234c3d2da239617452b538200601d7]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Add a pending property to Events
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893066</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/1481524fde8aa67195030772f4c91ee36f3795c9]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/1481524fde8aa67195030772f4c91ee36f3795c9]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:32:8</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/1481524fde8aa67195030772f4c91ee36f3795c9]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Play uploaded mp4 / m4v / 3gp / webm files
+    </title><numbercommit>
+      12 changed files
+    </numbercommit><source_file><item><name>
+              build.gradle
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/layout/activity_imageviewer.xml
+            </name></item><item><name>
+              res/layout/activity_video_player.xml
+            </name></item><item><name>
+              res/menu/activity_imageviewer.xml
+            </name></item><item><name>
+              res/menu/activity_videoplayer.xml
+            </name></item><item><name>
+              res/values-v21/styles.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/ColorFormatter.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ImageViewerActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/VideoPlayerActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881700</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/bcbbbb26e9fa9193878a1658703e10170326d707]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/bcbbbb26e9fa9193878a1658703e10170326d707]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:20:59</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/bcbbbb26e9fa9193878a1658703e10170326d707]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      revamped preferences, refactored publish queing
+    </title><numberfile>
+      52 changed files
+    </numberfile><source_file><item><name>
+              .idea/codeStyleSettings.xml
+            </name></item><item><name>
+              .idea/gradle.xml
+            </name></item><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              DaoGenerator/DaoGenerator.iml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              apk/manifest-merger-release-report.txt
+            </name></item><item><name>
+              apk/owntracks.apk
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              project.properties
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/ActivityPreferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/App.java
+            </name></item><item><name>
+              ...s/android/preferences/ActivityExport.java → ...ks/android/activities/ActivityExport.java
+            </name></item><item><name>
+              ...s/android/preferences/ActivityImport.java → ...ks/android/activities/ActivityImport.java
+            </name></item><item><name>
+              ...g/owntracks/android/ActivityLauncher.java → .../android/activities/ActivityLauncher.java
+            </name></item><item><name>
+              ...a/org/owntracks/android/ActivityMain.java → ...acks/android/activities/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityPreferences.java
+            </name></item><item><name>
+              ...g/owntracks/android/ActivityWaypoint.java → .../android/activities/ActivityWaypoint.java
+            </name></item><item><name>
+              .../owntracks/android/ActivityWaypoints.java → ...android/activities/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/ConfigurationMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/model/Contact.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceLocator.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceProxy.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/ConnectionToolbarPreference.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/DebugLogger.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/EditIntegerPreference.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/EditTextPreference.java
+            </name></item><item><name>
+              ...ferences/ImplementedDialogPreference.java → .../support/ImplementedDialogPreference.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/ListIntegerPreference.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              ...ndroid/preferences/ToolbarPreference.java → ...ks/android/support/ToolbarPreference.java
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_close.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_close.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_close.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_close.png
+            </name></item><item><name>
+              src/main/res/layout/activity_preferences_broker.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_broker.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_host.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_identification.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_options.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_security.xml
+            </name></item><item><name>
+              src/main/res/menu/preferences_connection.xml
+            </name></item><item><name>
+              src/main/res/values-21/strings.xml
+            </name></item><item><name>
+              src/main/res/values-v21/strings.xml
+            </name></item><item><name>
+              src/main/res/values/bools.xml
+            </name></item><item><name>
+              src/main/res/values/integers.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/values/styles.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

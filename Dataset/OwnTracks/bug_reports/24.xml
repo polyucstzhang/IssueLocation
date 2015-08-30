@@ -1,0 +1,2 @@
+<extraction><id>#24</id><title>[CLOSED] Waypoint is published every time entering/leaving a region</title><description> Issue by ckrey from Wednesday Jan 15, 2014 at 10:47 GMT
+Originally opened as binarybucks/mqttitude#268This causes unnecessary network usage.Waypoints will be published when created or updated only.Waypoints will always be published without the retain-flag set so they don't overwrite retained locations</description><comments /></extraction>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832470</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/47]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/47]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:56:59</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/47]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#47</id><title>Accents don't display correctly</title><description>
+
+    
+      
+          From jan.ber...@gmail.com on November 23, 2010 15:12:33
+
+What steps will reproduce the problem? 1. converted http://download.geofabrik.de/osm/europe/france/ile-de-france.osm.pbf to .map using osmosis mapwriter plugin
+2. loaded map into AdvancedMapViewer 0.2.0 What is the expected output? What do you see instead? French accents (é, è, ...) don't display correctly (cf screenshort)
+However, I'm not sure if this is a problem with the dataset, conversion, or display. What version of the product are you using? On what operating system? 0.2 / Nexus 1
+
+Attachment: idf.png
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=47
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on November 25, 2010 04:23:52
+
+I'm not able to reproduce the problem (see attached png).
+Did the same on the same data as described in "What steps will reproduce the problem?".
+
+My setup:
+
+
+mapsforge-0.2.0
+N1 with Android 2.2, Kernel 2.6.32.9.27227-g3c98b0d
+Spracheinstellung auf N1: Deutsch
+Host for converting file: Ubuntu 10.04
+Java VM, 1.6.0_22
+
+
+What was your exact setup, including the host on which the file has been converted?
+
+Maybe we should try the following to track down the problem:
+A: download brunoy.map (see attached files) which I converted on my machine. If it works the problem must be in the converter step. If the same problem occurs the problem must be in the MapViewer.
+
+Attachment: ile-n1.png brunoy.map
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on November 25, 2010 13:11:22
+
+I cannot reproduce the problem. I just created a map file from the given pbf file (link in the initial comment) and the patched mapfile-writer (link in comment #4). The file is displayed without a problem and all accents look nice.
+
+Test was done with an LG P500 with german language settings. Map file was created on an Ubuntu 10.04 (64 bit) system with OpenJDK 1.6.0_18 and Osmosis 0.37.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:30 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:30 PM GMT+8</closetime></item></BR></extraction>

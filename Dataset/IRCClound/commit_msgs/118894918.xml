@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894918</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/6b03cca8d94f2363785de5cc3629eb1b911e8653]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/6b03cca8d94f2363785de5cc3629eb1b911e8653]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:28:44</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/6b03cca8d94f2363785de5cc3629eb1b911e8653]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Logout
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/menu/activity_login.xml
+            </name></item><item><name>
+              res/menu/activity_user_list.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/DBHelper.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118286082</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/13d3682060031f1dbf9fcf7142ef8d39ae94ca55]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/13d3682060031f1dbf9fcf7142ef8d39ae94ca55]]></realpath><theme>mapsforge_07n</theme><middle>default</middle><createdate>2015-8-21 19:29:26</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/13d3682060031f1dbf9fcf7142ef8d39ae94ca55]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      FileSystemTileCache: remove threading (not needed anymore, see:wqq </title><number>
+      10 changed files
+    </number></item></BR></extraction>

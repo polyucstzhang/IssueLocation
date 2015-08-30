@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893880</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/5b96512084f77465b091d33b6cae38c8786076ce]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/5b96512084f77465b091d33b6cae38c8786076ce]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:55:4</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/5b96512084f77465b091d33b6cae38c8786076ce]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Rewrite the way messages are dispatched throughout the app so the UI …
+    </title><numbercommit>
+      17 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/EditConnectionActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PreferencesActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BanListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/ChannelListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/EditConnectionFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/IgnoreListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/NamesListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/ServerReorderFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/UsersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/WhoListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,168 @@
+gama: 0.100000, delta: 0.100000 
+
+bug 13, Rank 1 hit
+bug 20, Rank 1 hit
+bug 18, Rank 6 hit
+bug 44, Rank 2 hit
+bug 45, Rank 1 hit
+bug 29, Rank 1 hit
+bug 60, Rank 2 hit
+bug 98, Rank 5 hit
+bug 75, Rank 7 hit
+bug 110, Rank 4 hit
+bug 6, Rank 2 hit
+bug 90, Rank 2 hit
+bug 86, Rank 3 hit
+bug 105, Rank 1 hit
+bug 74, Rank 2 hit
+MRR 0.572857142857
+MAP 0.545638993456
+Max_mrr 0.572857142857
+
+gama: 0.100000, delta: 0.200000 
+
+bug 13, Rank 1 hit
+bug 20, Rank 1 hit
+bug 18, Rank 5 hit
+bug 44, Rank 2 hit
+bug 45, Rank 1 hit
+bug 29, Rank 1 hit
+bug 60, Rank 2 hit
+bug 98, Rank 4 hit
+bug 75, Rank 8 hit
+bug 110, Rank 3 hit
+bug 6, Rank 1 hit
+bug 90, Rank 1 hit
+bug 86, Rank 3 hit
+bug 105, Rank 1 hit
+bug 74, Rank 2 hit
+MRR 0.649444444444
+MAP 0.623668209481
+Max_mrr 0.649444444444
+
+gama: 0.100000, delta: 0.300000 
+
+bug 13, Rank 1 hit
+bug 20, Rank 1 hit
+bug 18, Rank 5 hit
+bug 44, Rank 1 hit
+bug 45, Rank 1 hit
+bug 29, Rank 1 hit
+bug 60, Rank 2 hit
+bug 98, Rank 4 hit
+bug 75, Rank 8 hit
+bug 110, Rank 2 hit
+bug 6, Rank 1 hit
+bug 90, Rank 1 hit
+bug 86, Rank 2 hit
+bug 105, Rank 1 hit
+bug 74, Rank 2 hit
+MRR 0.705
+MAP 0.670432188016
+Max_mrr 0.705
+
+gama: 0.100000, delta: 0.400000 
+
+bug 13, Rank 1 hit
+bug 20, Rank 1 hit
+bug 18, Rank 5 hit
+bug 44, Rank 1 hit
+bug 45, Rank 1 hit
+bug 29, Rank 1 hit
+bug 60, Rank 2 hit
+bug 98, Rank 3 hit
+bug 75, Rank 8 hit
+bug 110, Rank 2 hit
+bug 6, Rank 1 hit
+bug 90, Rank 1 hit
+bug 86, Rank 2 hit
+bug 105, Rank 1 hit
+bug 74, Rank 2 hit
+MRR 0.710555555556
+MAP 0.670466721426
+Max_mrr 0.710555555556
+
+gama: 0.100000, delta: 0.500000 
+
+bug 13, Rank 1 hit
+bug 20, Rank 1 hit
+bug 18, Rank 5 hit
+bug 44, Rank 1 hit
+bug 45, Rank 1 hit
+bug 29, Rank 1 hit
+bug 60, Rank 2 hit
+bug 98, Rank 3 hit
+bug 75, Rank 8 hit
+bug 110, Rank 2 hit
+bug 6, Rank 1 hit
+bug 90, Rank 1 hit
+bug 86, Rank 2 hit
+bug 105, Rank 1 hit
+bug 74, Rank 2 hit
+MRR 0.710555555556
+MAP 0.671203938642
+Max_mrr 0.710555555556
+
+gama: 0.100000, delta: 0.600000 
+
+bug 13, Rank 1 hit
+bug 20, Rank 1 hit
+bug 18, Rank 5 hit
+bug 44, Rank 1 hit
+bug 45, Rank 1 hit
+bug 29, Rank 1 hit
+bug 60, Rank 2 hit
+bug 98, Rank 3 hit
+bug 75, Rank 8 hit
+bug 110, Rank 2 hit
+bug 6, Rank 1 hit
+bug 90, Rank 1 hit
+bug 86, Rank 2 hit
+bug 105, Rank 1 hit
+bug 74, Rank 2 hit
+MRR 0.710555555556
+MAP 0.671719781844
+Max_mrr 0.710555555556
+
+gama: 0.100000, delta: 0.700000 
+
+bug 13, Rank 1 hit
+bug 20, Rank 1 hit
+bug 18, Rank 5 hit
+bug 44, Rank 1 hit
+bug 45, Rank 1 hit
+bug 29, Rank 1 hit
+bug 60, Rank 2 hit
+bug 98, Rank 3 hit
+bug 75, Rank 7 hit
+bug 110, Rank 2 hit
+bug 6, Rank 1 hit
+bug 90, Rank 1 hit
+bug 86, Rank 2 hit
+bug 105, Rank 1 hit
+bug 74, Rank 2 hit
+MRR 0.711746031746
+MAP 0.667850002593
+Max_mrr 0.713333333333
+
+
+gama: 0.100000, delta: 0.800000 
+
+bug 13, Rank 1 hit
+bug 20, Rank 1 hit
+bug 18, Rank 5 hit
+bug 44, Rank 1 hit
+bug 45, Rank 1 hit
+bug 29, Rank 1 hit
+bug 60, Rank 2 hit
+bug 98, Rank 3 hit
+bug 75, Rank 6 hit
+bug 110, Rank 2 hit
+bug 6, Rank 1 hit
+bug 90, Rank 1 hit
+bug 86, Rank 2 hit
+bug 105, Rank 1 hit
+bug 74, Rank 2 hit
+MRR 0.713333333333
+MAP 0.66947204676
+Max_mrr 0.713333333333

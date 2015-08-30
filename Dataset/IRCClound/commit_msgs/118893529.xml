@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893529</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/fa1592b6362801d8b156884c9ae060cd24348c83]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/fa1592b6362801d8b156884c9ae060cd24348c83]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:42:2</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/fa1592b6362801d8b156884c9ae060cd24348c83]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Share irc:// URL for the current channel via Android Beam
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

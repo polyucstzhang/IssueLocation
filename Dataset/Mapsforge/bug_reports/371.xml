@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829585</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/371]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/371]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:47:23</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/371]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#371</id><title>Upgrading 0.3.0 to 0.3.1 will crash existing apps</title><description>
+
+    
+      
+          From LudwigBr...@gmail.com on November 14, 2012 08:35:54
+
+Upgrading an existing mapsforge-based app from 0.30 to 0.31 (current SVN head) will crash the app because of the way the current map view is saved on a device.
+
+This is the stack-trace:
+E/AndroidRuntime( 2333): Caused by: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Float
+E/AndroidRuntime( 2333):    at android.app.SharedPreferencesImpl.getFloat(SharedPreferencesImpl.java:235)
+E/AndroidRuntime( 2333):    at org.mapsforge.android.maps.MapActivity.restoreMapView(MapActivity.java:76)
+E/AndroidRuntime( 2333):    at org.mapsforge.android.maps.MapActivity.registerMapView(MapActivity.java:147)
+E/AndroidRuntime( 2333):    at org.mapsforge.android.maps.MapView.(MapView.java:170)
+
+The problem is that in 0.30 the map view saves its lat/lon coordinates as E6 integers, while the new version has moved over to floats.
+
+Old:
+            // get and set the map position and zoom level
+            int latitudeE6 = sharedPreferences.getInt(KEY_LATITUDE, 0);
+            int longitudeE6 = sharedPreferences.getInt(KEY_LONGITUDE, 0);
+            int zoomLevel = sharedPreferences.getInt(KEY_ZOOM_LEVEL, -1);
+
+New:
+
+        // get and set the map position and zoom level
+        float latitude = sharedPreferences.getFloat(KEY_LATITUDE, 0);
+        float longitude = sharedPreferences.getFloat(KEY_LONGITUDE, 0);
+
+
+There are of course a few ways of fixing this, including catching the exception etc but this is error prone and bloats code.
+
+I think the easiest way would simply be to change the key that these values are saved with. That would mean that after an upgrade the app would look for the keys, not find them and go to a default state.  I think it is an acceptable behaviour of an app to go back to a default state after an upgrade. Apps that never used the previous version would not be affected.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=371
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on November 25, 2012 07:13:49
+
+I agree that we should fix this problem for our existing users. But using magic prefixes or suffixes for our preferences looks not very future-proof. Although it would fix the crash for now it would decrease the readability of the code and add confusion for other developers who take a look at it.
+
+I suggest that we rather add a new integer preferences value called "version" which is a magic number that we increment each time we make non-backwards compatible changes. When the preferences are read, the value of the "version" field is compared with the hard-coded one. If the number is missing or unequal, all preferences are erased and we simply continue with the default settings.
+
+Takes a little bit more time to implement but the code should be easy to understand. What do you think?
+
+Status: Started
+  Owner: LudwigBr...@gmail.com
+  Cc: thilo.mu...@gmail.com  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 27, 2012 04:56:24
+
+That is a valid point, i agree with you. The question is which problem we are actually trying to solve. My idea targets the AMV application only, other applications which just use the library could indeed still crash.
+
+What if i modify my fix so that the version number check is moved from the AMV class to the MapActivity class? This would solve it on the "library" level for all applications which extend the MapActivity class (the only official way how applications currently can use our map library). In fact, the MapActivity is also the class where the breaking change (int to float) was introduced a while ago, so fixing it here makes sense.
+
+As the MapActivity uses its own shared preferences with a private name string, the preferences of the enclosing application should not be affected even if the MapActivity erases all stored values. So the only drawback is that all values are deleted even if only one parameter has changed. But in this case it means only the position (lat, long, zoom) and the current map file.
+
+Smarter code could be written to delete only incompatible fields. But does it make sense to keep the zoom level and the map file but not the position? Even smarter code would convert incompatible fields if possible (int to float coordinates would be possible), but do we really want to bloat our code base with that?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on December 27, 2012 07:06:23
+
+I think that change would be ok.
+
+I would suggest however to 'flatten' the change into one commit, rather than committing the first proposal in one commit and backing out of it in the second (rollback any changes on the AMV, leaving just the change to MapActivity. It is just a bit cleaner.)
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:58 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:58 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118847935</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/183]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/183]]></realpath><theme>i183</theme><middle>default</middle><createdate>2015-8-23 22:53:47</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/183]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#183</id><title>Minor zoom/pan bugs - pan threshold; zoom centering; multi-touch panning.</title><description>
+
+    
+      
+          From tdh...@gmail.com on October 11, 2011 16:35:34
+
+Hi, you're doing a great job with mapsforge. I just thought I would document a few of the interface bugs related to zooming and panning I've noticed. They're relatively minor but some are a bit subtle.
+
+
+You have a threshold for panning the map. This is usually considered a bad idea (e.g. Google Maps doesn't do it). I guess the reason is so you can detect taps, but a better way would be to start panning anyway, even if the touch turns out to be a tap.
+The threshold isn't really a problem, however a big problem is that when you reach the threshold, the map suddenly jumps several mm. I.e. it goes "ah you are panning, and you have moved 5 mm; I will now instantly pan 5 mm". This looks horrible; instead it should ignore the first 5 mm of movement (or whatever it is) and just start panning from the point at which the move threshold was reached.
+When doing pinch-to-zoom you can't also pan. Lots of implementations of pinch-to-zoom seem to behave like this (e.g. I think even the stock android browser), but it doesn't really feel right, especially on tablets. The Google Maps app behaves correctly in this regard.
+When you double tap to zoom, it instantly re-centres the map on your tap location and then zooms at the centre, rather than zooming with the tap point as the centre of the zoom... I didn't explain that very well. Do a double tap on the corner of the screen and you will see what I mean.
+
+
+Anyway, as I said, relatively minor bugs. Keep up the good work!
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=183
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on October 14, 2011 10:26:53
+
+Thank you very much for your feedback. As you are requesting several different improvements, maybe separate issues would be better to discuss them separately and track the progress of each of them.
+
+1) The panning threshold was added not so long ago and i am still convinced that it is a very good idea to have it in general. Before we added it, the map was always shivering as soon you touched the screen - you don't want that, believe me. Google Maps has also a threshold when moving the map, at least on my Android device. It feels like they have a smaller threshold than we currently use in mapsforge. So maybe we should lower our threshold value as well, but we should not switch it off completely.
+
+2) That would be easy to change, but i am not sure if we should do it. But if a take a closer look at my Google Maps, it looks like they do it as you suggest. So if nobody else disagrees, i will change it.
+
+3) Yes, that would be nice to have. Another improvement of our pinch-to-zoom implementation would be to not only scale the current bitmap but to add missing tiles while zooming out. Currently only the gray map background is drawn.
+
+4) I understand your idea and yes, you are right again. Should also be changed but is not a trivial task unfortunately.
+
+Status: Accepted
+  Labels: -Type-Defect Type-Enhancement  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on October 23, 2011 01:41:41
+
+I have changed the behavior of 2) with revision r1466 .
+
+Status: Started  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on May 19, 2013 03:47:27
+
+Issue 373 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on January 18, 2014 04:27:33
+
+#4 has been fixed in Rescue: tapping now zooms around the tap point (which remains fixed).
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          The only remaining issue here is (3) "avoid panning during pinch zoom".
+I will look it as part of #616.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents/></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          Closed via 82a101c.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents/></item><item><commenter/><contents/></item><item><commenter>devemux86</commenter><contents/></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:42 PM GMT+8</createtime><closetime>Jun 10, 2015, 8:55 PM GMT+8</closetime></item></BR></extraction>

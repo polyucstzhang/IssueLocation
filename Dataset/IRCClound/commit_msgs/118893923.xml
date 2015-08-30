@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893923</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9025859e67818f2f219f2525f28fb36238e529f2]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9025859e67818f2f219f2525f28fb36238e529f2]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:56:43</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9025859e67818f2f219f2525f28fb36238e529f2]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Dynamic server name
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/layout-land/activity_main.xml
+            </name></item><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplication.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

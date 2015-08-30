@@ -1,0 +1,1 @@
+<extraction><id>#127</id><title>Crash when entering broken host URI</title><description> entering e.g. http://host.fo as URL the connect uri results in tcp://http:// url and crashes when connecting. </description><comments /></extraction>

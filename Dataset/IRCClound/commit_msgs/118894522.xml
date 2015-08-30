@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894522</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/2cc4f934d9db3a11598c253e1e47ea18da549113]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/2cc4f934d9db3a11598c253e1e47ea18da549113]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:18:2</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/2cc4f934d9db3a11598c253e1e47ea18da549113]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      New connecting/loading UI, fix index out of bounds error when tapping…
+    </title><numbercommit>
+      11 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/messageview.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/LaunchBidBroadcastReceiver.java
+            </name></item><item><name>
+              src/com/irccloud/android/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivityPager.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

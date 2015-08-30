@@ -1,0 +1,1 @@
+<extraction><id>#82</id><title>Reduce mark all as read JSON</title><description> Sending all the channels can disconnect the websocket, just send the unread ones</description><comments> </comments></extraction>

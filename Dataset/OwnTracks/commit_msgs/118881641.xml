@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881641</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/6c73ed724e1be737ce7bf4eb8d2fa0cc63334fda]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/6c73ed724e1be737ce7bf4eb8d2fa0cc63334fda]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:18:24</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/6c73ed724e1be737ce7bf4eb8d2fa0cc63334fda]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      implemented cursor loader for messages, implemented relative time for…
+    </title><numberfile>
+      16 changed files
+    </numberfile><source_file><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityMessages.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/adapter/LoaderSectionCursorAdapter.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/adapter/MessageAdapter.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/adapter/SimpleAdapter.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/adapter/SimpleSectionedRecyclerViewAdapter.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/SimpleCursorLoader.java
+            </name></item><item><name>
+              src/main/res/layout/activity_pager.xml
+            </name></item><item><name>
+              src/main/res/layout/row_pager.xml → src/main/res/layout/row_message.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_messages.xml
+            </name></item><item><name>
+              src/main/res/values/defaults.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

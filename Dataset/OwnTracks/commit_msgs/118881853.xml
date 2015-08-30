@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881853</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/6f15129a88368eb971d99893149049263b3faf60]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/6f15129a88368eb971d99893149049263b3faf60]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:27:59</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/6f15129a88368eb971d99893149049263b3faf60]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      more simple concurrency
+    </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item></source_file></item></commit></extraction>

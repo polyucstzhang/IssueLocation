@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118307156</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/f730b264e9760d420042c00c319cc218ca911ebc]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/f730b264e9760d420042c00c319cc218ca911ebc]]></realpath><theme>mapsforge_10n</theme><middle>default</middle><createdate>2015-8-21 21:0:35</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/f730b264e9760d420042c00c319cc218ca911ebc]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      MapReader: introduction of MapDataStore interface and MultiMapDataSto…
+    </title><number>
+      46 changed files
+    </number></item></BR></extraction>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894570</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a4cf3cd2e9c6afb9651410ec1dd22f3a7f5a864d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a4cf3cd2e9c6afb9651410ec1dd22f3a7f5a864d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:19:40</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a4cf3cd2e9c6afb9651410ec1dd22f3a7f5a864d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a bug where the subtitle and users list might be empty when resum…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

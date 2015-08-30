@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893814</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/944da2121ea408c1f9f5ebe3726299eeffdc5f2f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/944da2121ea408c1f9f5ebe3726299eeffdc5f2f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:52:37</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/944da2121ea408c1f9f5ebe3726299eeffdc5f2f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Move :emocode: processing, improve channel hyperlinking, fix a bug wh…
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/ChannelsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

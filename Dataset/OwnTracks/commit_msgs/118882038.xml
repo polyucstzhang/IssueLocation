@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882038</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/2a194ea8ac98614306720fc372687cfe122f58e7]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/2a194ea8ac98614306720fc372687cfe122f58e7]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:34:18</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/2a194ea8ac98614306720fc372687cfe122f58e7]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added Android API 8 compatibility (issue </title><numberfile>
+      8 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Locator.java
+            </name></item></source_file></item></commit></extraction>

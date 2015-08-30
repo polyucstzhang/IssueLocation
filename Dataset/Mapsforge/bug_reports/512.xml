@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118845991</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/512]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/512]]></realpath><theme>i512</theme><middle>default</middle><createdate>2015-8-23 22:10:15</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/512]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#512</id><title>issue with rendering transparent tiles on Android</title><description>
+
+    
+      
+          From Daniel.T...@gmail.com on August 14, 2014 02:46:14
+
+What steps will reproduce the problem? 1. create a MapView with one transparent TileRenderer map layer on Android, like this (the best is to use some not-very-dense layer, e.g. just with few roads):
+
+this.tileCache = AndroidUtil.createTileCache(this, "mapcache", mapView.getModel().displayModel.getTileSize(), 1f, this.mapView.getModel().frameBufferModel.getOverdrawFactor());
+this.transparentMapLayer = new TileRendererLayer(tileCache2, this.mapView.getModel().mapViewPosition, true, AndroidGraphicFactory.INSTANCE);
+this.pipesMapLayer.setMapFile(new File(Environment.getExternalStorageDirectory(), "pipes.map"));
+this.pipesMapLayer.setXmlRenderTheme(new ExternalRenderTheme(new File(Environment.getExternalStorageDirectory(), "pipes.xml")));
+this.mapView.getLayerManager().getLayers().add(this.pipesMapLayer);
+
+
+scroll the map up and down What is the expected output? What do you see instead? when scrolling the map, tiles are rendered incorrectly - some tiles are like duplicated, others seems to be rendered on top of previously rendered tiles, see screenshots. What version of the product are you using? On what operating system? v. 0.4.0 on Android 4.4.2
+
+
+Please provide any additional information below:
+The issue seems to be in the mechanism of reusing old tile's bitmap for rendering a new one. If I force the function getTileBitmapFromReusableSet(int tileSize, boolean isTransparent) in class AndroidTileBitmap (which seems to be take care for this) to always return null, the tiles get rendered properly. My guess is that in case of non-transparent tiles all the pixels of old bitmap get overridden, but in case of transparent the new bitmap is just rendered "on top" of the old one.
+
+the discussion regarding this bug is located here&gt; https://groups.google.com/forum/#!topic/mapsforge-dev/pcVky9NUehs currently I don't know how to fix this issue. Thanks for having a look on this!
+
+Attachment: Screenshot_2014-08-14-02-38-27.png Screenshot_2014-08-14-02-38-41.png Screenshot_2014-08-14-02-38-52.png
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=512
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Daniel.T...@gmail.com on August 13, 2014 17:57:51
+
+sorry, there seems to be few typos in the code provided, fixed one here:
+
+this.tileCache = AndroidUtil.createTileCache(this, "mapcache", mapView.getModel().displayModel.getTileSize(), 1f, this.mapView.getModel().frameBufferModel.getOverdrawFactor());
+this.pipesMapLayer = new TileRendererLayer(this.tileCache, this.mapView.getModel().mapViewPosition, true, AndroidGraphicFactory.INSTANCE);
+this.pipesMapLayer.setMapFile(new File(Environment.getExternalStorageDirectory(), "pipes.map"));
+this.pipesMapLayer.setXmlRenderTheme(new ExternalRenderTheme(new File(Environment.getExternalStorageDirectory(), "pipes.xml")));
+this.mapView.getLayerManager().getLayers().add(this.pipesMapLayer);
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Daniel.T...@gmail.com on August 14, 2014 08:48:04
+
+Mr. Ludwig seems to find a solution for this issue and is going to push it to dev later on, see his post&gt; https://groups.google.com/d/msg/mapsforge-dev/pcVky9NUehs/yb-yA3lU5dcJ
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on August 14, 2014 09:04:36
+
+fixed in dev with bd9f9b5
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item><item><commenter/><contents/></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 6:07 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:07 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,18 @@
+gama: 0.800000, delta: 0.100000 
+bug 470, Rank 7 hit
+bug 623, Rank 1 hit
+bug 616, Rank 2 hit
+bug 617, Rank 1 hit
+bug 641, Rank 1 hit
+bug 527, Rank 2 hit
+bug 626, Rank 15 hit
+bug 585, Rank 1 hit
+bug 620, Rank 1 hit
+bug 599, Rank 1 hit
+bug 486, Rank 22 hit
+bug 425, Rank 2 hit
+bug 598, Rank 1 hit
+bug 512, Rank 6 hit
+MRR: 0.637260 
+MAP: 0.568049 
+Max_mrr: 0.637260 

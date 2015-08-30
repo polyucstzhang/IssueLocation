@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893358</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/4b0fb52084dad10c161fa03e53ae31979691a3d4]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/4b0fb52084dad10c161fa03e53ae31979691a3d4]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:36:33</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/4b0fb52084dad10c161fa03e53ae31979691a3d4]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a few leaks, clearing pending messages as sent now works when the…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/EventsDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

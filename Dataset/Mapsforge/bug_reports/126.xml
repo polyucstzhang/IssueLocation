@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831802</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/126]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/126]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:54:25</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/126]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#126</id><title>Evaluate whether double delta encoding can make map files even smaller</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on June 08, 2011 23:13:02
+
+Currently we store the latitude and longitude offsets between subsequent way nodes in the map file (see: https://code.google.com/p/mapsforge/wiki/SpecificationBinaryMapFile ). Maybe this could be improved even more by storing only the offset from the previous offset - so called double delta encoding. I expect no significant change in the encoding and decoding speed.
+
+If it turns out that double delta encoding results in even smaller map files, we should adopt that feature and increase the binary map format version number by one.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=126
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on June 16, 2011 13:53:33
+
+I am not aware of such a study, that is why i would like this issue to be investigated. It may be that for some geometries (ways) the current encoding scheme is more efficient and vise versa. In this case we can encode each way using the most efficient scheme and set a flag to denote the used encoding scheme.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From karsten.groll on November 09, 2011 11:44:57
+
+I have implemented a function that chooses the optimal representation and writes it to the file. Unfortunately there is no huge difference in file sizes. You can save ~1% in file size using this method. 
+
+If you think it is worth it, I will finish my work on it. I still have to add a flag that indicates the method used. 
+
+The current implementation can be found here: https://github.com/moep/mapsforge/tree/ddEncoding
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:37 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:37 PM GMT+8</closetime></item></BR></extraction>

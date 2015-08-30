@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881662</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/cde586619ff389192fe42e65895e41769faf1cb8]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/cde586619ff389192fe42e65895e41769faf1cb8]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:19:23</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/cde586619ff389192fe42e65895e41769faf1cb8]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      cleanup
+    </title><numberfile>
+      8 changed files
+    </numberfile><source_file><item><name>
+              .idea/misc.xml
+            </name></item><item><name>
+              .idea/runConfigurations.xml
+            </name></item><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              DaoGenerator/DaoGenerator.iml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityPreferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item></source_file></item></commit></extraction>

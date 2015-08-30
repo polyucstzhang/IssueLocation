@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893684</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/979dba87993d76df4e5987f6069fbaa331a8847a]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/979dba87993d76df4e5987f6069fbaa331a8847a]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:47:47</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/979dba87993d76df4e5987f6069fbaa331a8847a]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Send access link intents to the correct activity, update dialog text
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/LoginActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

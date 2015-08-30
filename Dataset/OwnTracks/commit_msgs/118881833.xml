@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881833</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/bbd3bd34ad69a46c1da288ecf5900683ee27c1e1]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/bbd3bd34ad69a46c1da288ecf5900683ee27c1e1]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:27:15</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/bbd3bd34ad69a46c1da288ecf5900683ee27c1e1]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Refactored preferences, Fixed publish ticker being shown after disabl…
+    </title><numberfile>
+      12 changed files
+    </numberfile><source_file><item><name>
+              res/values/bools.xml
+            </name></item><item><name>
+              res/values/integers.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Preferences.java
+            </name></item></source_file></item></commit></extraction>

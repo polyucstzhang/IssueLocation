@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894288</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a735b0078d3ea5a3dbee5e64dca90d3b583cbbf6]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a735b0078d3ea5a3dbee5e64dca90d3b583cbbf6]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:10:8</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a735b0078d3ea5a3dbee5e64dca90d3b583cbbf6]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      accept_list
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/row_banlist.xml
+            </name></item><item><name>
+              src/com/irccloud/android/AcceptListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

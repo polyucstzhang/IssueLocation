@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892986</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/97bddb39a2bd0acb04496b1cfd1ad6f439ad0012]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/97bddb39a2bd0acb04496b1cfd1ad6f439ad0012]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:30:4</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/97bddb39a2bd0acb04496b1cfd1ad6f439ad0012]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Resolve package names
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/VideoPlayerActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

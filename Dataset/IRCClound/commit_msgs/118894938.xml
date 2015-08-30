@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894938</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/5f7948fd7f6eed9921caa588d58cf812f78fd112]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/5f7948fd7f6eed9921caa588d58cf812f78fd112]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:27</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/5f7948fd7f6eed9921caa588d58cf812f78fd112]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Use semaphores to control read and write access to the db
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/DBHelper.java
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/ServersDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

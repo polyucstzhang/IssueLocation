@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894232</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/305e570608986daf860fd33d664b93b6209ef85e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/305e570608986daf860fd33d664b93b6209ef85e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:8:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/305e570608986daf860fd33d664b93b6209ef85e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Pebble notifications
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

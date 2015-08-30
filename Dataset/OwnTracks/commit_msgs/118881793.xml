@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881793</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/7454a2770eb76c82214edee6d613f75219033155]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/7454a2770eb76c82214edee6d613f75219033155]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:24:59</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/7454a2770eb76c82214edee6d613f75219033155]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Removed some verbose output, added developer options menu for quick t…
+    </title><numberfile>
+      10 changed files
+    </numberfile><source_file><item><name>
+              .idea/inspectionProfiles/Project_Default.xml
+            </name></item><item><name>
+              .idea/inspectionProfiles/profiles_settings.xml
+            </name></item><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityLauncher.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/model/Contact.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/main/res/menu/activity_main.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

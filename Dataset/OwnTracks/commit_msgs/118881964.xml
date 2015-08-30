@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881964</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/ae008ede463440f3ca393a7efd9c457708f369f9]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/ae008ede463440f3ca393a7efd9c457708f369f9]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:31:1</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/ae008ede463440f3ca393a7efd9c457708f369f9]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Updating contact information immeadiately without killing app for </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item></source_file></item></commit></extraction>

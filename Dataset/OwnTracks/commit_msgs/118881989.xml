@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881989</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/3d089f7f151de445595e62e0915ee8d3a7d0c7cf]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/3d089f7f151de445595e62e0915ee8d3a7d0c7cf]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:31:57</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/3d089f7f151de445595e62e0915ee8d3a7d0c7cf]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added image placeholder, fixed crash when rotating
+    </title><numberfile>
+      13 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/drawable-xhdpi/noimage.png
+            </name></item><item><name>
+              res/drawable/card.xml
+            </name></item><item><name>
+              res/layout/fragment_friends.xml
+            </name></item><item><name>
+              res/layout/fragment_map.xml
+            </name></item><item><name>
+              res/layout/friend_list_item.xml
+            </name></item><item><name>
+              res/values/dimens.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Contact.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/GeocodableLocation.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/ReverseGeocodingTask.java
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,1 @@
+<extraction><id>#58</id><title>Fix some view caching bugs in the buffers table</title><description> Sometimes the loading spinner appears on the archives row, etc.</description><comments> </comments></extraction>

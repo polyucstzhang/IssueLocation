@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894922</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/0192321672107313a9df1ddb94d4f470b6c95c17]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/0192321672107313a9df1ddb94d4f470b6c95c17]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:28:53</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/0192321672107313a9df1ddb94d4f470b6c95c17]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      buffer_archived / buffer_unarchived
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894735</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/70713ddccd7b5a24d8699fbf221d882e0cb6c5e3]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/70713ddccd7b5a24d8699fbf221d882e0cb6c5e3]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:22:35</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/70713ddccd7b5a24d8699fbf221d882e0cb6c5e3]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Improved snapping and dragging
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivityPager.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

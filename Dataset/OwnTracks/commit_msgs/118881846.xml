@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881846</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/0ef8cb9d7f5104efaecda17dc16ae1c4c4786878]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/0ef8cb9d7f5104efaecda17dc16ae1c4c4786878]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:27:45</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/0ef8cb9d7f5104efaecda17dc16ae1c4c4786878]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Delete ic_launcher-web.png
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              ic_launcher-web.png
+            </name></item></source_file></item></commit></extraction>

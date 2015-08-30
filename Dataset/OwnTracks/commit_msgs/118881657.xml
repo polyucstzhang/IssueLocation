@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881657</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/fc26ab8b00aaca669df6b686e33756947775554f]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/fc26ab8b00aaca669df6b686e33756947775554f]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:19:13</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/fc26ab8b00aaca669df6b686e33756947775554f]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      closes </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/model/GeocodableLocation.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceLocator.java
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,16 @@
+<extraction><id>#225</id><title>waypoint description does not get imported</title><description> I just updated from 0.5.11 (Google Play beta) to 0.5.19.
+I exported and imported the config between the de/installation.Waypoints get imported.
+But there is no lable/description.The export file looks fine to me.</description><comments>Could you paste one of the JSON waypoints (after shrouding your data) from the list of waypoints [ ] please? Is a description shown when you edit and save a waypoint?
+
+Mit freundlichen Gr  en / With kind regards
+Alexander Rust
+
+On 03 Aug 2015, at 13:46, JP Mens &lt;notifications@github.com&gt; wrote:
+
+Could you paste one of the JSON waypoints (after shrouding your data) from
+the list of waypoints [ ] please?
+
+ 
+Reply to this email directly or view it on GitHub
+&lt;https://github.com/owntracks/android/issues/225#issuecomment-127205800&gt;. This is my export from 0.5.11
+(I censored some data)</comments></extraction>

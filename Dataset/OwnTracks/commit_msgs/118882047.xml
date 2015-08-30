@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882047</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/3e8e5a0395a2f9c613b562f6b278570664abdd8a]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/3e8e5a0395a2f9c613b562f6b278570664abdd8a]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:34:37</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/3e8e5a0395a2f9c613b562f6b278570664abdd8a]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Broker =&gt; Server (issue </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              res/values-de/strings.xml
+            </name></item></source_file></item></commit></extraction>

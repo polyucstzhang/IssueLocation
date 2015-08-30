@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881739</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/c6f0b51509d34c0e3006418d28e36bc49ca043cc]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/c6f0b51509d34c0e3006418d28e36bc49ca043cc]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:49</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/c6f0b51509d34c0e3006418d28e36bc49ca043cc]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Migrated ServiceLocator to new API (</title><numberfile>
+      22 changed files
+    </numberfile><source_file><item><name>
+              .idea/gradle.xml
+            </name></item><item><name>
+              .idea/libraries/DaoGenerator_1_3_0.xml
+            </name></item><item><name>
+              .idea/libraries/android_beacon_library_2_1_2.xml
+            </name></item><item><name>
+              .idea/libraries/appcompat_v7_21_0_2.xml
+            </name></item><item><name>
+              .idea/libraries/bugsnag_1_2_8.xml
+            </name></item><item><name>
+              .idea/libraries/bugsnag_android_2_1_1.xml
+            </name></item><item><name>
+              .idea/libraries/eventbus_2_2_0.xml
+            </name></item><item><name>
+              .idea/libraries/freemarker_2_3_19.xml
+            </name></item><item><name>
+              .idea/libraries/greendao_1_3_7.xml
+            </name></item><item><name>
+              .idea/libraries/org_eclipse_paho_client_mqttv3_1_0_1.xml
+            </name></item><item><name>
+              .idea/libraries/play_services_base_6_5_87.xml
+            </name></item><item><name>
+              .idea/libraries/play_services_location_6_5_87.xml
+            </name></item><item><name>
+              .idea/libraries/play_services_maps_6_5_87.xml
+            </name></item><item><name>
+              .idea/libraries/recyclerview_v7_21_0_3.xml
+            </name></item><item><name>
+              .idea/libraries/support_annotations_21_0_3.xml
+            </name></item><item><name>
+              .idea/libraries/support_v4_21_0_3.xml
+            </name></item><item><name>
+              .idea/misc.xml
+            </name></item><item><name>
+              .idea/modules.xml
+            </name></item><item><name>
+              DaoGenerator/DaoGenerator.iml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item></source_file></item></commit></extraction>

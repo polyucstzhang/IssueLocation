@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882022</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/cbc2666641e67e59fc5380294bc85935310b8729]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/cbc2666641e67e59fc5380294bc85935310b8729]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:33:43</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/cbc2666641e67e59fc5380294bc85935310b8729]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      unified state management
+    </title><numberfile>
+      10 changed files
+    </numberfile><source_file><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/BootCompleteReceiver.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Events.java
+            </name></item></source_file></item></commit></extraction>

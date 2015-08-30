@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894673</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d7f513cee66cc5f64b55e02853fd76f6b56e6623]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d7f513cee66cc5f64b55e02853fd76f6b56e6623]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:22:11</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d7f513cee66cc5f64b55e02853fd76f6b56e6623]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      10" tablet layout improvements
+    </title><numbercommit>
+      9 changed files
+    </numbercommit><source_file><item><name>
+              res/layout-sw800dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout-sw800dp/activity_message.xml
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              res/values-sw600dp/dimens.xml
+            </name></item><item><name>
+              res/values-sw800dp/dimens.xml
+            </name></item><item><name>
+              res/values/dimens.xml
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivityPager.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

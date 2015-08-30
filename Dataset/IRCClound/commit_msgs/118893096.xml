@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893096</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f674adfbcaa5ff016e90872fba9b0eb9c589d3b3]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f674adfbcaa5ff016e90872fba9b0eb9c589d3b3]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:33:43</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f674adfbcaa5ff016e90872fba9b0eb9c589d3b3]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      adjust the margins on some of the dialogs to better match the materia…
+    </title><numbercommit>
+      10 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/dialog_channel_options.xml
+            </name></item><item><name>
+              res/layout/row_banlist.xml
+            </name></item><item><name>
+              res/layout/row_channel.xml
+            </name></item><item><name>
+              res/layout/row_file.xml
+            </name></item><item><name>
+              res/layout/row_hostmask.xml
+            </name></item><item><name>
+              res/layout/row_who.xml
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/AcceptListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/ChannelModeListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/IgnoreListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

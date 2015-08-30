@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894928</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/26200cf6cb8ec98a530b6858dc9cf17c33c0fc35]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/26200cf6cb8ec98a530b6858dc9cf17c33c0fc35]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:5</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/26200cf6cb8ec98a530b6858dc9cf17c33c0fc35]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Style the user list
+    </title><numbercommit>
+      14 changed files
+    </numbercommit><source_file><item><name>
+              res/color/heading_members.xml
+            </name></item><item><name>
+              res/color/heading_operators.xml
+            </name></item><item><name>
+              res/color/heading_voiced.xml
+            </name></item><item><name>
+              res/color/row_user.xml
+            </name></item><item><name>
+              res/color/row_user_away.xml
+            </name></item><item><name>
+              res/drawable/row_operator_bg.xml
+            </name></item><item><name>
+              res/drawable/row_voiced_bg.xml
+            </name></item><item><name>
+              res/layout/row_buffer.xml
+            </name></item><item><name>
+              res/layout/row_buffergroup.xml
+            </name></item><item><name>
+              res/layout/userslist.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name>
+              src/com/irccloud/android/UserListActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

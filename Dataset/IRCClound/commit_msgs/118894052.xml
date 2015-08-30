@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894052</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/4a41e2cf244b3dde50336b7f12857aecbb7f65ca]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/4a41e2cf244b3dde50336b7f12857aecbb7f65ca]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:1:39</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/4a41e2cf244b3dde50336b7f12857aecbb7f65ca]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Improve colorization of mode changes
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

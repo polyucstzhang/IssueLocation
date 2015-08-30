@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881624</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/a6dcf4cd49b20ac66dcba27e79bb25cf37b154ce]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/a6dcf4cd49b20ac66dcba27e79bb25cf37b154ce]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:17:40</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/a6dcf4cd49b20ac66dcba27e79bb25cf37b154ce]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Closes </title><numberfile>
+      23 changed files
+    </numberfile><source_file><item><name>
+              .idea/encodings.xml
+            </name></item><item><name>
+              .idea/gradle.xml
+            </name></item><item><name>
+              .idea/misc.xml
+            </name></item><item><name>
+              .idea/runConfigurations.xml
+            </name></item><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              CHANGELOG.md
+            </name></item><item><name>
+              DaoGenerator/DaoGenerator.iml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityLauncher.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityPreferencesConnection.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/ConfigurationMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/ContentPathHelper.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/SocketFactory.java
+            </name></item><item><name>
+              src/main/res/layout/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_host.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_security.xml
+            </name></item><item><name>
+              src/main/res/menu/picker.xml
+            </name></item><item><name>
+              src/main/res/values/keys.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

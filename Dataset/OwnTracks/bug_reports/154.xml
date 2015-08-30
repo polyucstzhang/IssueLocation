@@ -1,0 +1,2 @@
+<extraction><id>#154</id><title>ActivityMain.java line 788</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/551973f35141dcfd8f49e5f6</description><comments>already fixed in latest master. MapView is now initialized globally on application start. </comments></extraction>

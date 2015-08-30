@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881832</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/a8daee7be7d193b26065d4abab0b25232f1f5a70]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/a8daee7be7d193b26065d4abab0b25232f1f5a70]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:27:12</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/a8daee7be7d193b26065d4abab0b25232f1f5a70]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Removed double notification action after disabling/enabling notification
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item></source_file></item></commit></extraction>

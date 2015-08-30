@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881842</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/d7dfe05931bb39d555bd59c20cf260ca9666a306]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/d7dfe05931bb39d555bd59c20cf260ca9666a306]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:27:37</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/d7dfe05931bb39d555bd59c20cf260ca9666a306]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixed build errors, renamed project
+    </title><numberfile>
+      17 changed files
+    </numberfile><source_file><item><name>
+              .classpath
+            </name></item><item><name>
+              .project
+            </name></item><item><name>
+              .settings/org.eclipse.ltk.core.refactoring.prefs
+            </name></item><item><name>
+              bin/AndroidManifest.xml
+            </name></item><item><name>
+              bin/R.txt
+            </name></item><item><name>
+              ...oogle-play-services_lib/bin/jarlist.cache → bin/jarlist.cache
+            </name></item><item><name>
+              gen/com/google/android/gms/R.java
+            </name></item><item><name>
+              gen/st/alr/mqttitude/BuildConfig.java
+            </name></item><item><name>
+              gen/st/alr/mqttitude/Manifest.java
+            </name></item><item><name>
+              gen/st/alr/mqttitude/R.java
+            </name></item><item><name>
+              lint.xml
+            </name></item><item><name>
+              res/values/preferences.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/BootCompleteReceiver.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Preferences.java
+            </name></item></source_file></item></commit></extraction>

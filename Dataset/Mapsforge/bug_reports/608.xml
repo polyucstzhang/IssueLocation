@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826815</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/608]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/608]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:40:44</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/608]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#608</id><title>Sea sometimes bleeds through from under land masses</title><description>
+
+    
+      
+          Sometimes, vertical or horizontal strips of sea bleed through when creating a map by merging OSM data with land polygon and underlying sea rectangle. Here is a detail from us-pacific.map downloaded from mapsforge server:
+
+      
+    
+
+  </description><comments><item><commenter>lincomatic</commenter><contents>
+
+    
+      
+          Yes, those are the exact set that I am using: land-polygons-split-4326. Is there a better set to use?
+      
+    
+
+  </contents></item><item><commenter>lincomatic</commenter><contents>
+
+    
+      
+          OK your stroke idea works great! For the benefit of anyone else trying to fix this problem, I empirically found 0.6 to work:
+&lt;rule e="way" k="natural" v="nosea"&gt;
+        &lt;area fill="#F4F3F2" stroke="#F4F3F2" stroke-width="0.6"/&gt;
+    &lt;/rule&gt;
+Next I will try using the unsplit polygons to see how that affects map size &amp; rendering speed.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents/></item><item><commenter>devemux86</commenter><contents/></item><item><commenter>devemux86</commenter><contents/></item></comments><createtime>May 14, 2015, 3:21 PM GMT+8</createtime><closetime>May 15, 2015, 5:13 AM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830060</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/324]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/324]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:48:44</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/324]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#324</id><title>Incomplete/wrong rendering</title><description>
+
+    
+      
+          From rdzid...@gmail.com on June 11, 2012 00:23:26
+
+The wall of the "Altenburg castle" of Bamberg is not rendered, the towers are. Tested with OruxMaps and AdvancedMapViewer, exactly the same problem. http://en.wikipedia.org/wiki/Altenburg_&amp;#37;28Bamberg&amp;#37;29 49.88061937°N, 10.8617996°E http://www.openstreetmap.org/?lat=49.880557&amp;lon=10.869097&amp;zoom=18&amp;layers=M Might be related to #195 although I can't tell for sure.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=324
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From rdzid...@gmail.com on June 12, 2012 07:30:58
+
+fixing wrong link to map...
+
+map http://download.mapsforge.org/maps/europe/germany/bayern.map 08-Jun-2012 00:50  146M
+
+Screenshot is a bit more difficult - nonrooted android device and thus took a picture with a digicam.. hope that is good enough.
+
+Attachment: rerr.jpg
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on June 13, 2012 05:31:39
+
+Sorry, forgot link for tag counts: http://tagwatch.stoecker.eu/Europe/En/ignored_building.html
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on August 09, 2012 10:43:44
+
+General remark: this issue has been closed weeks ago, please always open a new one to request a feature or report a bug.
+
+Nevertheless i have just committed the requested change in revision r2094 , thanks for reporting.
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:54 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:54 PM GMT+8</closetime></item></BR></extraction>

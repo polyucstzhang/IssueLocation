@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882034</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/e7418c9d2970342f52bf35d8d43f41b1ba94cd7f]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/e7418c9d2970342f52bf35d8d43f41b1ba94cd7f]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:34:9</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/e7418c9d2970342f52bf35d8d43f41b1ba94cd7f]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixed </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Locator.java
+            </name></item></source_file></item></commit></extraction>

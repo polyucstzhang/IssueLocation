@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881954</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/197b7e0db283703bb7d52bf5cbc21657fa8060ae]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/197b7e0db283703bb7d52bf5cbc21657fa8060ae]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:37</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/197b7e0db283703bb7d52bf5cbc21657fa8060ae]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixed intent proxying
+    </title><numberfile>
+      8 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceBindable.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocatorFused.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceProxy.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item></source_file></item></commit></extraction>

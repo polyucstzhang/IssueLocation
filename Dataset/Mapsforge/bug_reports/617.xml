@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826518</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/617]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/617]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:40:33</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/617]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#617</id><title>Square frame buffer</title><description>
+
+    
+      
+          Right now we are not using actually a square frame buffer, even if it is defined in the library for better handling device orientation changes.
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          Fixed with 8293cf5.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          Ludwig what's your opinion here?
+
+In AndroidUtil we calculate the memory cache size based on screen size, but in FrameBufferController we set the frame buffer as square.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I see the same two options too.
+
+BTW the device orientation change is something happening very often in app life cycle, we should somehow cover it.
+
+But I'm thinking also that eventually all increments we do at frame buffer (e.g. overdrawFactor) could be integrated into just using a square frame buffer with side the Math.hypot of the screen sides.
+
+That way we have it all in one (actually benefits also future map rotation - but that's another story).
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          
+do not use a square frame buffer unless set (for people who do their own rotation). This would bring it in some ways back to the previous situation, but with reallocation of the frame buffer when changing orientation. Could require too much memory on some devices.
+
+
+So far we hadn't a square frame buffer, so at each device orientation change, a reallocation indeed happened.
+At least users now can select if they want square or not.
+
+
+change cache calculation: could technically also require too much memory on some devices.
+
+
+I changed cache calculation and with square frame buffer by default, we have a larger cache now, regarding memory and tiles production.
+
+I'm still thinking which is the preferred way..
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents/></item></comments><createtime>May 26, 2015, 5:25 PM GMT+8</createtime><closetime>Jun 15, 2015, 6:52 PM GMT+8</closetime></item></BR></extraction>

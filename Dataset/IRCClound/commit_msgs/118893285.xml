@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893285</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c1b492b579e11f31d6737d75d8c8558c50bce97c]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c1b492b579e11f31d6737d75d8c8558c50bce97c]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:36:8</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c1b492b579e11f31d6737d75d8c8558c50bce97c]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix inconsistent line spacing on Lollipop phones
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/row_message.xml
+            </name></item><item><name>
+              res/values-sw600dp-land/dimens.xml
+            </name></item><item><name>
+              res/values-sw600dp/dimens.xml
+            </name></item><item><name>
+              res/values-sw800dp/dimens.xml
+            </name></item><item><name>
+              res/values-v21/dimens.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

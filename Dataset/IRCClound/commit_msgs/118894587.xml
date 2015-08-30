@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894587</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/e08f945702548a701b49b2ebed7044566197978b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/e08f945702548a701b49b2ebed7044566197978b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:20:14</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/e08f945702548a701b49b2ebed7044566197978b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Use a gradient for the dateline bg, color the server_ messages backgr…
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/row_timestamp.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

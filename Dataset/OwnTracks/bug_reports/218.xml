@@ -1,0 +1,1 @@
+<extraction><id>#218</id><title>PKCS#12 file picker?</title><description> Can we add a file picker to the PKCS#12 UI field? It's a bit awkward to have to guess which path the file was downloaded to, in particular since I understand path names are non-standard accross Android versions.</description><comments>Fixed. </comments></extraction>

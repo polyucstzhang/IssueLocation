@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894733</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/83b602d64fd2631b31b2ae1eb7ac58c0be0d83fc]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/83b602d64fd2631b31b2ae1eb7ac58c0be0d83fc]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:22:31</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/83b602d64fd2631b31b2ae1eb7ac58c0be0d83fc]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a bug where the buffer list and message list wouldnt refresh prop…
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/AsyncTaskEx.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivityPager.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881999</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/078271fb8abb712069e1cd84f82c8cde0cacba15]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/078271fb8abb712069e1cd84f82c8cde0cacba15]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:32:40</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/078271fb8abb712069e1cd84f82c8cde0cacba15]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      refactored location subclass, implemented rudimentary display of frie…
+    </title><numberfile>
+      24 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              bin/AndroidManifest.xml
+            </name></item><item><name>
+              bin/classes.dex
+            </name></item><item><name>
+              bin/mqttitude.apk
+            </name></item><item><name>
+              bin/res/drawable-xhdpi/ic_icon.png → bin/res/crunch/drawable-xhdpi/ic_icon.png
+            </name></item><item><name>
+              bin/res/drawable-xhdpi/ic_launcher.png → ...res/crunch/drawable-xhdpi/ic_launcher.png
+            </name></item><item><name>
+              bin/res/drawable-xhdpi/ic_notification.png → ...crunch/drawable-xhdpi/ic_notification.png
+            </name></item><item><name>
+              bin/res/drawable-xhdpi/ic_overflow.png → ...res/crunch/drawable-xhdpi/ic_overflow.png
+            </name></item><item><name>
+              bin/res/drawable-xhdpi/ic_share.png → bin/res/crunch/drawable-xhdpi/ic_share.png
+            </name></item><item><name>
+              bin/res/drawable-xhdpi/ic_upload.png → bin/res/crunch/drawable-xhdpi/ic_upload.png
+            </name></item><item><name>
+              bin/res/drawable/ab_bottom_solid.9.png → ...res/crunch/drawable/ab_bottom_solid.9.png
+            </name></item><item><name>
+              bin/resources.ap_
+            </name></item><item><name>
+              gen/st/alr/mqttitude/R.java
+            </name></item><item><name>
+              res/layout/fragment_friends.xml
+            </name></item><item><name>
+              res/layout/two_line_row_layout.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocatorFused.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Friend.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/FriendMapAdapter.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/GeocodableLocation.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/MapAdapter.java
+            </name></item></source_file></item></commit></extraction>

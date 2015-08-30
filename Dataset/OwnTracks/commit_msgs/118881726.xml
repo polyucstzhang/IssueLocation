@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881726</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/5ab802eaa2dacee80bc88f782dc9f3ce5ad2f41c]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/5ab802eaa2dacee80bc88f782dc9f3ce5ad2f41c]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:10</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/5ab802eaa2dacee80bc88f782dc9f3ce5ad2f41c]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      geocoder resolving for waypoints, implemented waypoint editing
+    </title><numberfile>
+      14 changed files
+    </numberfile><source_file><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/ActivityWaypoint.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/DrawerFactory.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Events.java
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_locations.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_waypoints.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_locations.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_waypoints.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_locations.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_waypoints.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_locations.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_waypoints.png
+            </name></item></source_file></item></commit></extraction>

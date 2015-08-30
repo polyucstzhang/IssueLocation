@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894849</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ae22d37aab41080b5e8d705dcec437dba553b9e3]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ae22d37aab41080b5e8d705dcec437dba553b9e3]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:26:20</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ae22d37aab41080b5e8d705dcec437dba553b9e3]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Display a full message for temp_unavailable error, change the backgro…
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/bufferslist.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,9 @@
+<extraction><id>#39</id><title>Crash on Info panel</title><description> in 0.4.18 when click on "Donate Bitcoins". (!?!)</description><comments>Confirmed. Ad a test i've installed a bitcoin wallet app and with that installed no crash and the bitcoin app is launched. A test if there's any app capable of opening bitcoin "urls" may solve the problem. (I didn't look at the code tho) Ah yes. I thought Android would handle that for me. Naive me.
+
+It's easy to catch but what shall we do if no app is installed? I'd just
+copy the address into the clipboard and show a notification popup (toast).
+
+Mit freundlichen Gr  en / With kind regards
+Alexander Rust
+--Sent from mobile
+Am 08.02.2014 16:42 schrieb "juzam" &lt;notifications@github.com&gt;:</comments></extraction>

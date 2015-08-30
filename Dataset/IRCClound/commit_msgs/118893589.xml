@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893589</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/43ab4d4d820dc014bfd5f14dc836e458f50ddd8d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/43ab4d4d820dc014bfd5f14dc836e458f50ddd8d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:44:9</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/43ab4d4d820dc014bfd5f14dc836e458f50ddd8d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix the imgur auth theme
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ImgurAuthActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

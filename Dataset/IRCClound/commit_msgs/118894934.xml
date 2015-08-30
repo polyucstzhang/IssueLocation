@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894934</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/98f45200754f647eb065b30c0bd6963d9501f7ed]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/98f45200754f647eb065b30c0bd6963d9501f7ed]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:18</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/98f45200754f647eb065b30c0bd6963d9501f7ed]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Parse channel_init and channel_topic events, display topic changes in…
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              res/layout/messageview.xml
+            </name></item><item><name>
+              src/com/irccloud/android/DBHelper.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

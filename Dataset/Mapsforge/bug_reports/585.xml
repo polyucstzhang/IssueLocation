@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118648927</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/585]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/585]]></realpath><theme>issue_585</theme><middle>default</middle><createdate>2015-8-22 23:39:48</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/585]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#585</id><title>Samples: changing tile size example is broken</title><comments>
+
+        
+          
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Mar 3
+    
+  
+
+
+
+  
+
+    
+      
+          At least on dev the changing tile size sample is broken. It seems that the persistent tile cache is getting in the way of properly drawing the screen with the right tiles. 
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Mar 3
+    
+  
+
+
+
+  
+
+    
+      
+          Just playing with it and turning the persistent cache off in the settings for samples makes the issue go away.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 3
+    
+  
+
+
+
+  
+
+    
+      
+          So a clear cache has to take place (as with any other map model changes) ?
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      added the bug label on Apr 19
+    
+  
+
+
+
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on May 23
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      MapViewerTemplate: add purgeTileCaches, fix #585
+
+
+  
+
+  
+
+
+      7c67dcf
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on May 23
+    
+  
+
+
+
+  
+
+    
+      
+          With 7c67dcf I pushed a fix on dev adding a MapViewerTemplate.purgeTileCaches method for better handling persistent tile cache.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      closed this   on May 23
+    
+  
+
+  
+
+
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      added this to the 0.5.2 milestone on Jul 21
+    
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+        
+
+          
+                
+	Sign up for free
+	to join this conversation on GitHub.
+	Already have an account?
+	Sign in to comment
+
+
+
+          
+      </comments></item></BR></extraction>

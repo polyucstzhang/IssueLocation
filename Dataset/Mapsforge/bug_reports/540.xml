@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118827800</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/540]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/540]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:42:7</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/540]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#540</id><title>maven build with java 8</title><description>
+
+    
+      
+          From syt...@gmail.com on November 04, 2014 18:44:41
+
+Its need to add -Xdoclint:none in maven-javadoc-plugin to build maven project with java 8. http://stackoverflow.com/questions/15886209/maven-is-not-working-in-java-8-when-javadoc-tags-are-incomplete 
+                org.apache.maven.plugins
+                maven-javadoc-plugin
+                
+                    
+                        attach-javadoc
+                        package
+                        
+                            jar
+                        
+                        
+                            -Xdoclint:none
+                        
+                    
+                
+            
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=540
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From syt...@gmail.com on November 05, 2014 00:07:06
+
+this is the maven log without -Xdoclint:none The main problem from javadoc plugin is: warning: no description for @param
+
+/usr/lib/jvm/java-8-oracle/bin/java -Dmaven.home=/opt/apache-maven-3.2.1 -Dclassworlds.conf=/opt/apache-maven-3.2.1/bin/m2.conf -Didea.launcher.port=7533 -Didea.launcher.bin.path=/opt/idea-IU-135.1229/bin -Dfile.encoding=UTF-8 -classpath /opt/apache-maven-3.2.1/boot/plexus-classworlds-2.5.1.jar:/opt/idea-IU-135.1229/lib/idea_rt.jar com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=13.1.5 install
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] mapsforge
+[INFO] mapsforge-core
+[INFO] mapsforge-map-reader
+[INFO] mapsforge-map-awt
+[INFO] mapsforge-map
+[INFO] mapsforge-map-android
+[INFO] mapsforge-map-writer
+[INFO] Samples
+[INFO] SwingMapViewer
+[INFO] 
+[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building mapsforge 0.5.0-rc2
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ mapsforge ---
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.9.1:jar (attach-javadoc) @ mapsforge ---
+[INFO] Not executing Javadoc as the project is not a Java classpath-capable package
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ mapsforge ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.1:install (default-install) @ mapsforge ---
+[INFO] Installing /home/stanimir/AndroidProjects/mapsforge5/pom.xml to /home/stanimir/.m2/repository/org/mapsforge/mapsforge/0.5.0-rc2/mapsforge-0.5.0-rc2.pom
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building mapsforge-core 0.5.0-rc2
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ mapsforge-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ mapsforge-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ mapsforge-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ mapsforge-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/stanimir/AndroidProjects/mapsforge5/mapsforge-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ mapsforge-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ mapsforge-core ---
+[INFO] Surefire report directory: /home/stanimir/AndroidProjects/mapsforge5/mapsforge-core/target/surefire-reports
+
+
+
+ T E S T S
+
+Running org.mapsforge.core.model.RectangleTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 sec - in org.mapsforge.core.model.RectangleTest
+Running org.mapsforge.core.model.BoundingBoxTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.mapsforge.core.model.BoundingBoxTest
+Running org.mapsforge.core.model.TileTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.mapsforge.core.model.TileTest
+Running org.mapsforge.core.model.LatLongTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.mapsforge.core.model.LatLongTest
+Running org.mapsforge.core.model.PointTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.mapsforge.core.model.PointTest
+Running org.mapsforge.core.model.TagTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.mapsforge.core.model.TagTest
+Running org.mapsforge.core.model.DimensionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.mapsforge.core.model.DimensionTest
+Running org.mapsforge.core.model.LineSegmentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.mapsforge.core.model.LineSegmentTest
+Running org.mapsforge.core.model.MapPositionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.mapsforge.core.model.MapPositionTest
+Running org.mapsforge.core.util.LatLongUtilsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.mapsforge.core.util.LatLongUtilsTest
+Running org.mapsforge.core.util.MercatorProjectionTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.mapsforge.core.util.MercatorProjectionTest
+Running org.mapsforge.core.util.LRUCacheTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.mapsforge.core.util.LRUCacheTest
+Running org.mapsforge.core.util.IOUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.mapsforge.core.util.IOUtilsTest
+
+Results :
+
+Tests run: 89, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ mapsforge-core ---
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.9.1:jar (attach-javadoc) @ mapsforge-core ---
+[INFO] 
+7 errors
+55 warnings
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] mapsforge ......................................... SUCCESS [  1.766 s]
+[INFO] mapsforge-core .................................... FAILURE [  5.226 s]
+[INFO] mapsforge-map-reader .............................. SKIPPED
+[INFO] mapsforge-map-awt ................................. SKIPPED
+[INFO] mapsforge-map ..................................... SKIPPED
+[INFO] mapsforge-map-android ............................. SKIPPED
+[INFO] mapsforge-map-writer .............................. SKIPPED
+[INFO] Samples ........................................... SKIPPED
+[INFO] SwingMapViewer .................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.570 s
+[INFO] Finished at: 2014-11-05T10:01:18+02:00
+[INFO] Final Memory: 20M/307M
+[INFO] ---------------------------------...
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From syt...@gmail.com on November 05, 2014 00:10:08
+
+Who wants to write a description for the parameters ? :)
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on November 07, 2014 07:26:18
+
+Just a quick test with Java 8 gives an error when trying to build the Samples app, which has something to do with the bytecode generation. 
+
+This feels to me like something I can waste a lot of time on without any benefit right now. 
+
+If someone has a fix for this I am happy to integrate it, otherwise you can either use maven or Java 7.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I'm closing this as the recommended Java version for building Mapsforge is Java 7, because of Android max Java 7 compliance level.
+
+When we move at Java 8 we'll see how it goes.
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 6:10 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:10 PM GMT+8</closetime></item></BR></extraction>

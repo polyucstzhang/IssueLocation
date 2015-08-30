@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832018</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/90]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/90]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:55:37</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/90]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#90</id><title>Support for multiple languages</title><description>
+
+    
+      
+          From LudwigBr...@gmail.com on March 06, 2011 15:51:19
+
+One of the most annoying things I find about OSM maps is their poor support for localisation, which make the main OSM map pretty much unusable for regions where non-Latin scripts are used (at least for those who do not read Chinese, Thai, Greek etc script). 
+
+This is not because POI and way names are not available in Latin script. Quite often they are. Or, where not, it is actually not so difficult to write converters, eg. from Greek script to Latin. 
+
+(The same also of course applies to users who use non-Latin scripts, but data support in western centric OSM is probably poor for, let's say, Chinese names for European places. From a technical point of view the problem is the same though)
+
+I suggest a enhancement where multi-language support is enabled for mapsforge maps. 
+
+I would see changes required in three areas:
+
+a) the map file format
+b) the osmosis generator
+c) the map rendering
+
+a) Changes in the map file format:
+
+Currently there is no support for multiple names for nodes and ways. The default name is copied into the mapfile and the mapfile can only have one name for a node/way feature. I suggest a scheme where multiple languages are simply keyed by an index number, not a string, for brevity. The using application would somewhere have a mapping from language name to index number. 
+
+Having perused the documentation for the mapfile, I suggest the following changes to the file structure. They should be backwards compatible, ie. where only one language is used the file structure remains essentially the same.
+
+-- somewhere in the header a field for number of langugages supported is required. If you were to limit the possible number of languages to a small number, you could simply use some of the empty bits in the header flags field. Otherwise, use one of the flag bits to indicate multi-language support and an optional field to indicate number of languages. 
+
+-- for each POI/way with name instead of the string field a small table is inserted with a fixed length sequence of indices, followed by a list of strings of variable length.
+
+#language 0 offset // not needed because easily computable: (num_lan -1) * 2 bytes 
+language 1 offset 2 bytes
+.....
+
+language 0 data var length
+language 1 data var length
+....
+
+I suggest using fixed 2 bytes for the offset length as that would give a maximum of 65K length of the whole string data (which should be enough) plus easy compuatability for the index position itself, which a variable byte encoding would not give.
+
+In the case of only one language supported this would fall back to the current format: that the offset part is not required and the first and only data field would be at the same position as currently. The total overhead could in this case be 0 and the file format remains the same.
+
+In the case of multiple languages, every language would, in addition to the actual tag/way name payload, just require 2 bytes for the index to compute the position where the string is stored.
+
+b) changes in the osmosis generator
+
+I do not suggest simply copying the various name:xx fields into the mapfile. Rather I propose some plug-in mechanism where some additional 'massaging' of the name fields can happen.
+
+The use case for this is that e.g. for Greece OSM data is quite mixed: some names have Greek characters, some names Latin characters. So for me the optimal way of displaying this data would be in three 'languages':
+-- Greek only (using name tag)
+-- Latin script (using name:en | name:int | name:de ... with some short-circuit mechanism which will pick the first available.) If none of these would be available I might even write a converter from Greek to Latin script, which will do in the remaining cases. As the right order for all this, plus the optional converter, are heavily dependent on the quality of the OSM data for a specific region, this requires some plug-in architecture for the selection. The mapfile writer would call a function passing in all the node/way data and the plug-in function would return a list of names equal in length to the language number supported. The mapfilewriter would then write this data into the file as per specification above.
+-- A third language would be Greek--Latin mixed, maybe in the form of Hellas (Greece). 
+
+c) changes in the renderer
+
+Obviously the renderer needs to provide an api to select the language. It would simply be something like 
+
+void selectLanguage(byte languageNumber)
+
+By default language 0 would be chosen, so the api will not break for existing apps. 
+The renderer would be changed to extract the right name field from the map data.
+
+I would not see changes in the language used being very frequent in the app, so whenever the language changes, the maptile cache could simply be invalidated, thus no changes in the tile cache format are required. 
+
+As otherwise nothing changes no further changes should be required.
+
+I have not written an implementation of this yet as the work is not insignificant and I would like to have your input first.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=90
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on March 12, 2011 06:37:56
+
+Hello Luddwig,
+
+i want to add my thoughts about this topic as well.
+
+Having the possibility to display OSM maps in differnt languages would be a nice feature, i agree. Your ideas how it could be implemented show one possible solution, but require a lot of work and changes in many different software parts. The question is therefore if that amount of flexibility is really needed at the moment or if not an easier solution would be sufficient.
+
+One important aspect is the growth of the map files if we store multiple names for each node and each way. In order to make a good decision we need to investigate that: how much does the size of a typical map file (say for example: germany.map) increase when we store 2 or 3 names for each object? Like Frank I am also afraid that it will be quite a lot.
+
+If you propose an automatic transcription mechanism to convert names from one language into another, we could implement that into the renderer as well. Then we can calculate all transcripted names at runtime, based on the language that the user selects via a graphical menu in the map application.
+
+The easiest way towards a solution would probably be to add a parameter to the mapfile-writer to specify the language which should be written to the map file in case more than one language is available. Neither changes to the map file format nor the renderer would be neccessary for that.
+
+Changing the format of the binary map files is bad, but we have already done it a couple of times in the past. If there is a good reason to do it, we should not hesitate to do it again.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on July 10, 2011 06:53:37
+
+Issue 147 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From mirarki...@gmail.com on May 26, 2012 04:05:58
+
+Am I using this wrong?
+% osmosis/bin/osmosis --rb file=china.osm.pbf --mapfile-writer file=china.osm.map language-preference=en &amp;&amp; cp china.osm.map ~/www
+May 26, 2012 1:04:24 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Osmosis Version 0.40.1
+May 26, 2012 1:04:24 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Preparing pipeline.
+May 26, 2012 1:04:24 PM org.mapsforge.map.writer.osmosis.MapFileWriterTask 
+INFO: mapfile-writer version: mapsforge-map-writer-0.3.0
+May 26, 2012 1:04:24 PM org.mapsforge.map.writer.osmosis.MapFileWriterTask 
+INFO: mapfile format specification version: 3
+May 26, 2012 1:04:24 PM org.openstreetmap.osmosis.core.Osmosis main
+SEVERE: Execution aborted.
+org.openstreetmap.osmosis.core.OsmosisRuntimeException: Argument language-preference for task 2-mapfile-writer was not recognised.
+        at org.openstreetmap.osmosis.core.pipeline.common.TaskManagerFactory.createTaskManager(TaskManagerFactory.java:64)
+        at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.buildTasks(Pipeline.java:50)
+        at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.prepare(Pipeline.java:112)
+...
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:34 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:34 PM GMT+8</closetime></item></BR></extraction>

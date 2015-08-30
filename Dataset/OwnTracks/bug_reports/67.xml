@@ -1,0 +1,10 @@
+<extraction><id>#67</id><title>keepalive</title><description> In an effort to get my android phone working correctly I setup keepaive To check that it is working correctly I have been subscribed to the topic on the server for over a week  mosquitto_sub -t '$SYS/keepalive' but I haven't seen any messages.I know the device has write ACL rights to this topic as I can publish from the device a message and see it on the server.My question is, when I am subscribed to this topic on the server should I be seeing a message? </description><comments>Hi there,
+
+currently the sending of the ping message is (re)scheduled after a) a ping
+message is send or b) after a message is received.
+So if you're not seeing a ping message it could be because you've been
+sending a message before.
+
+That being said, the whole ping system and BrokerService in general is
+quite fragile. I'm waiting for the next paho release before I refactor it
+with more appropriate code that also can send pings natively. Thx Alex for the clarification.</comments></extraction>

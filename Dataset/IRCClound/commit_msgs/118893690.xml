@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893690</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/e1e8162772d63340f0393ca7beec54d85b2e7e82]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/e1e8162772d63340f0393ca7beec54d85b2e7e82]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:48:2</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/e1e8162772d63340f0393ca7beec54d85b2e7e82]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      request password reset
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881871</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/0e7d1a9535792d4b4b2115aab3d25628ab4084ec]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/0e7d1a9535792d4b4b2115aab3d25628ab4084ec]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:28:26</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/0e7d1a9535792d4b4b2115aab3d25628ab4084ec]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      code cleanup
+    </title><numberfile>
+      17 changed files
+    </numberfile><source_file><item><name>
+              .settings/org.eclipse.jdt.ui.prefs
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityLauncher.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityWaypoints.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/adapter/MapAdapter.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/adapter/WaypointAdapter.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/model/Contact.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/model/GeocodableLocation.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/model/LocationMessage.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/model/WaypointMessage.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceBindable.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceProxy.java
+            </name></item></source_file></item></commit></extraction>

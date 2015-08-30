@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829587</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/369]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/369]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:47:27</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/369]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#369</id><title>ANR (Application Not responding) when moving map very intensively</title><description>
+
+    
+      
+          From fabien.s...@gmail.com on November 05, 2012 15:45:15
+
+What steps will reproduce the problem? 1. Use the simplest map configuration (see implementation at the end of this description)
+2. Start the application: the map is displayed on the screen
+3. Move the map very intensively, very quickly, several times (like a stress test). I can reproduce this bug 100 % but you really need to stress the map viewer. What is the expected output? What do you see instead? Everything should work fine but at some point the application is freezing: ANR behaviour. What version of the product are you using? On what operating system? mapsforge-map-0.3.1-SNAPSHOT-jar-with-dependencies.jar
+Using my Galaxy S2, Android 4.0.4 Please provide any additional information below. My code (onCreate):
+
+MapView mapView = new MapView(this);
+mapView.setClickable(true);
+mapView.setBuiltInZoomControls(true);
+mapView.setMapFile(new File(Environment.getExternalStorageDirectory(), "mymap.map"));
+setContentView(mapView);
+
+Investigation:
+
+When interrupting debugger while ANR occurs, I see in eclipse suspended thread within FrameBuffer class (matrixPostTranslate and drawBitmap) and I see these APIs are "synchronized" which may lead a blocking situation when stressing the lib.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=369
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Sasha....@gmail.com on November 08, 2012 10:35:55
+
+I'm experiencing the same issue with the same trace as you and Issue_358, seems the deadlock is a problem
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on December 16, 2012 21:34:53
+
+This is indeed a duplicate of 358.
+
+Status: Duplicate
+  Mergedinto: 358  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:57 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:57 PM GMT+8</closetime></item></BR></extraction>

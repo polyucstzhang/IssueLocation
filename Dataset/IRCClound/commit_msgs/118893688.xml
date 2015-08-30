@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893688</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/14f3afa0f1ff57ba1be8897d07effec12436ef71]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/14f3afa0f1ff57ba1be8897d07effec12436ef71]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:47:57</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/14f3afa0f1ff57ba1be8897d07effec12436ef71]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Handle forgot password access links
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

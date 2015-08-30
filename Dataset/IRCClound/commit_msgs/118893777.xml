@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893777</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/eca7a3fcae8a9af424cd4ecac7289cf74a8b719c]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/eca7a3fcae8a9af424cd4ecac7289cf74a8b719c]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:51:15</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/eca7a3fcae8a9af424cd4ecac7289cf74a8b719c]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      imgur-apiv3.p.mashape.com
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ImageViewerActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

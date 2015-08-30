@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881707</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/2b1f2de1359afb9589ab374c46e0d2c779bfb357]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/2b1f2de1359afb9589ab374c46e0d2c779bfb357]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:21:27</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/2b1f2de1359afb9589ab374c46e0d2c779bfb357]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Android-v.0.5.06 APK
+    </title><numberfile>
+      12 changed files
+    </numberfile><source_file><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              DaoGenerator/DaoGenerator.iml
+            </name></item><item><name>
+              android-debug.apk
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              apk/owntracks.apk
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/App.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/DumpMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceLocator.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/DebugLogger.java
+            </name></item></source_file></item></commit></extraction>

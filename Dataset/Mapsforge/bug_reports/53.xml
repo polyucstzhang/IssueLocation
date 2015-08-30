@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832464</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/53]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/53]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:56:47</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/53]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#53</id><title>Problem of generating a map file with Mapfile-Writer Osmosis-Plugin</title><description>
+
+    
+      
+          From leila.me...@gmail.com on November 29, 2010 16:47:56
+
+Hi!
+I want to create a map file from a file "osm" exported from the Official Site OpenStreeetMaps ( http://www.openstreetmap.org/ ) by following the steps in the documentation for the map file writer plugin Osmosis ( https://code.google.com/p/mapsforge/wiki/MapFileWriterOsmosis )
+
+steps
+1. I downloaded the latest version of osmosis 0.38 from this link (Downloading http://wiki.openstreetmap.org/wiki/Osmosis #)
+
+
+I downloaded mapfile-writer plugin From The download section and I added it to the plugins folder (home/.openstreetmap/osmosis/plugins)
+I downloaded and added the files .jar (1.11.jar jts and trove 3.x.jar) in the plugins folder
+I installed java6 Environment (Sun JRE / JDK 6) --&gt;
+leila @ ubuntu: / $ java-version home/.openstreetmap/osmosis-0.38
+java version "1.6.0_21"
+Java (TM) SE Runtime Environment (build 1.6.0_21-b06)
+Java HotSpot (TM) Client VM (build 17.0-b16, mixed mode, sharing)
+I use the Operating system Ubuntu 10.10
+
+
+When execution the command osmosis, i still have this problem : SEVERE: Execution aborted.
+
+You find the trace of the execution as an attachment.
+
+Thanks for your help !!!
+
+Attachment: resultat.txt
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=53
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From aymentou...@gmail.com on November 29, 2010 13:45:41
+
+Hi,
+
+I'm working with Leila on this project.
+Used release : Osmosis 0.34
+I tried the solution posted above and this is the trace of my execution :
+aymen@aymen-LapTop:/home/.openstreetmap/osmosis/bin$ osmosis --rx file=/home/aymen/TestAL/map.osm --mapfile-writer file=/home/aymen/TestAL/Tunis.map bbox=36.9390000,9.9830000,36.6200000,10.4170000 zoom-interval-conf=13,6,17
+29 nov. 2010 22:40:58 org.openstreetmap.osmosis.core.Osmosis run
+INFO: Osmosis Version 0.34
+log4j:WARN No appenders could be found for logger (org.java.plugin.ObjectFactory).
+log4j:WARN Please initialize the log4j system properly.
+29 nov. 2010 22:40:58 org.openstreetmap.osmosis.core.Osmosis run
+INFO: Preparing pipeline.
+29 nov. 2010 22:40:58 org.openstreetmap.osmosis.core.Osmosis main
+GRAVE: Execution aborted.
+org.openstreetmap.osmosis.core.OsmosisRuntimeException: Task type mapfile-writer doesn't exist.
+    at org.openstreetmap.osmosis.core.pipeline.common.TaskManagerFactoryRegister.getInstance(TaskManagerFactoryRegister.java:60)
+    at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.buildTasks(Pipeline.java:50)
+    at org.openstreetmap.osmosis.core.pipeline.common.Pipeline.prepare(Pipeline.java:112)
+    at org.openstreetmap.osmosis.core.Osmosis.run(Osmosis.java:79)
+    at org.openstreetmap.osmosis.core.Osmosis.main(Osmosis.java:30)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:616)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:328)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:238)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:408)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:351)
+    at org.codehaus.classworlds.Launcher.main(Launcher.java:31)
+
+Thanks a lot
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From leila.me...@gmail.com on November 30, 2010 00:04:18
+
+I copied the library Jars files to $../lib/defaul and it is always the same problem :
+
+leila@ubuntu:/home/.openstreetmap/osmosis-0.38$ bin/osmosis --read-xml file="map.osm" --mapfile-writer file="map-high.map" bbox=36.8859000,10.1395000,36.7974000,10.3445000 zoom-interval-conf=13,6,17
+Nov 29, 2010 11:57:58 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Osmosis Version 0.38
+Nov 29, 2010 11:57:58 PM org.java.plugin.registry.xml.ManifestParser 
+INFO: got SAX parser factory - org.apache.xerces.jaxp.SAXParserFactoryImpl@480457
+Nov 29, 2010 11:57:58 PM org.java.plugin.registry.xml.PluginRegistryImpl configure
+INFO: configured, stopOnError=false, isValidating=true
+Nov 29, 2010 11:57:58 PM org.java.plugin.registry.xml.PluginRegistryImpl register
+INFO: plug-in and fragment descriptors registered - 1
+Nov 29, 2010 11:57:58 PM org.java.plugin.standard.StandardPluginManager activatePlugin
+INFO: plug-in started - org.openstreetmap.osmosis.core.plugin.Core@0.38.0
+Nov 29, 2010 11:57:58 PM org.openstreetmap.osmosis.core.Osmosis main
+SEVERE: Execution aborted.
+java.lang.NullPointerException
+    at org.java.plugin.standard.StandardPluginManager.publishPlugins(StandardPluginManager.java:181)
+    at org.openstreetmap.osmosis.core.TaskRegistrar.registerJpfPlugins(TaskRegistrar.java:239)
+    at org.openstreetmap.osmosis.core.TaskRegistrar.loadJPFPlugins(TaskRegistrar.java:167)
+    at org.openstreetmap.osmosis.core.TaskRegistrar.initialize(TaskRegistrar.java:88)
+    at org.openstreetmap.osmosis.core.Osmosis.run(Osmosis.java:81)
+    at org.openstreetmap.osmosis.core.Osmosis.main(Osmosis.java:37)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+    at java.lang.reflect.Method.invoke(Method.java:597)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:329)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:239)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+    at org.codehaus.classworlds.Launcher.main(Launcher.java:31)
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 01, 2010 04:30:08
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:31 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:31 PM GMT+8</closetime></item></BR></extraction>

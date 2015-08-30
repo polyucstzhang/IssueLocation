@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893736</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/fe99dda3a68bcdd17d05a4a44f24887a7fe33c88]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/fe99dda3a68bcdd17d05a4a44f24887a7fe33c88]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:49:45</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/fe99dda3a68bcdd17d05a4a44f24887a7fe33c88]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Material-style hamburger icon
+    </title><numbercommit>
+      12 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-hdpi-v21/ic_navigation_drawer_highlight.png
+            </name></item><item><name>
+              res/drawable-hdpi-v21/ic_navigation_drawer_unread.png
+            </name></item><item><name>
+              res/drawable-mdpi-v21/ic_navigation_drawer.png
+            </name></item><item><name>
+              res/drawable-mdpi-v21/ic_navigation_drawer_highlight.png
+            </name></item><item><name>
+              res/drawable-mdpi-v21/ic_navigation_drawer_unread.png
+            </name></item><item><name>
+              res/drawable-xhdpi-v21/ic_navigation_drawer.png
+            </name></item><item><name>
+              res/drawable-xhdpi-v21/ic_navigation_drawer_highlight.png
+            </name></item><item><name>
+              res/drawable-xhdpi-v21/ic_navigation_drawer_unread.png
+            </name></item><item><name>
+              res/drawable-xxhdpi-v21/ic_navigation_drawer.png
+            </name></item><item><name>
+              res/drawable-xxhdpi-v21/ic_navigation_drawer_highlight.png
+            </name></item><item><name>
+              res/drawable-xxhdpi-v21/ic_navigation_drawer_unread.png
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

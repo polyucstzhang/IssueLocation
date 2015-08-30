@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894533</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ebdcc25d01a6cafc89103643afb2a858a042e5f2]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ebdcc25d01a6cafc89103643afb2a858a042e5f2]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:18:23</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ebdcc25d01a6cafc89103643afb2a858a042e5f2]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Retry the GCM registration POST if it fails, fix a nullpointerexcepti…
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

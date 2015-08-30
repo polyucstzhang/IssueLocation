@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882059</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/48117c937fa576381d61b013d935be5ccf763b7a]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/48117c937fa576381d61b013d935be5ccf763b7a]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:35:10</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/48117c937fa576381d61b013d935be5ccf763b7a]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed issue </title><numberfile>
+      30 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/drawable-hdpi/ic_location.png
+            </name></item><item><name>
+              res/drawable-hdpi/ic_server.png
+            </name></item><item><name>
+              res/drawable-hdpi/ic_share.png
+            </name></item><item><name>
+              res/drawable-hdpi/ic_time.png
+            </name></item><item><name>
+              res/drawable-hdpi/ic_update.png
+            </name></item><item><name>
+              res/drawable-hdpi/upload.png → res/drawable-hdpi/ic_upload.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_location.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_server.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_share.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_time.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_update.png
+            </name></item><item><name>
+              res/drawable-mdpi/upload.png → res/drawable-mdpi/ic_upload.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_location.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_server.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_share.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_time.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_update.png
+            </name></item><item><name>
+              res/drawable-xhdpi/upload.png → res/drawable-xhdpi/ic_upload.png
+            </name></item><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/menu/activity_main.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Events.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/MqttPublish.java
+            </name></item></source_file></item></commit></extraction>

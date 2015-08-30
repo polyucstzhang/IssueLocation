@@ -1,0 +1,3 @@
+<extraction><id>#180</id><title>App crashes if the received lat value is &gt;90 or lon &gt;180 </title><description> 
+No description provided.
+</description><comments>Nice one, I'll see if I can reproduce this. Should be fairly easy to fix.</comments></extraction>

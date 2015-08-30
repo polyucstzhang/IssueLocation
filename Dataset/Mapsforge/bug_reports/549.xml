@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118827791</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/549]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/549]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:41:49</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/549]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#549</id><title>Lower priority always display pathText may overwrite higher priority caption/symbol</title><description>
+
+    
+      
+          A pathText with display=always and priority=-1 may sometimes display on the top of a normal caption/symbol without priority and display set.
+
+Version: master 74ea5c2
+
+I found that this problem can be solved by changing the following line in CanvasRasterer.java:
+Collections.sort(elementsAsList, Collections.reverseOrder());
+to:
+Collections.sort(elementsAsList);
+      
+    
+
+  </description><comments><item><commenter>ludwigb</commenter><contents>
+
+    
+      
+          I have pushed 410d87b to dev, which should fix the issue in the way suggested.
+An update to the rendertheme-v4.xml in Samples draws waterway names at the bottom, same for one-way symbols.
+      
+    
+
+  </contents></item><item><commenter>applantation</commenter><contents>
+
+    
+      
+          Thanks for feedback, the fixed version is definitely an improvement here.
+
+Ludwig
+…
+On 3 December 2014 at 15:29, ystsoi &lt;notifications@github.com&gt; wrote:
+ Thanks. FYI, you can see the issue clearly around the Hennessy Road.
+ Before fix:
+ [image: Before fix]
+ &lt;https://cloud.githubusercontent.com/assets/8875155/5281742/56d8fe80-7b3b-11e4-84fd-597ee34ea631.png&gt;
+ After fix:
+ [image: After fix]
+ &lt;https://cloud.githubusercontent.com/assets/8875155/5281746/5eb2418e-7b3b-11e4-9c83-1ca828b95bed.png&gt;
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/549#issuecomment-65415168&gt;.
+
+
+      
+    
+
+  </contents></item></comments><createtime>Dec 3, 2014, 8:10 PM GMT+8</createtime><closetime>Dec 3, 2014, 10:42 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118261956</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/916f57f5d0d623abd4f795c7bce816e97555799c]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/916f57f5d0d623abd4f795c7bce816e97555799c]]></realpath><theme>mapsforge_03n</theme><middle>default</middle><createdate>2015-8-21 16:24:34</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/916f57f5d0d623abd4f795c7bce816e97555799c]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      - added a public static AndroidGraphicFactory.getCanvas() method
+    </title><number>
+      1 changed file
+    </number></item></BR></extraction>

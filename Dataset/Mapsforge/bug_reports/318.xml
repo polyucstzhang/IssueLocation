@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830066</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/318]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/318]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:48:55</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/318]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#318</id><title>Maps on ftp.mapsforge.org outdated?</title><description>
+
+    
+      
+          From mbi...@gmail.com on May 23, 2012 14:34:55
+
+What steps will reproduce the problem? 1. Download a precompiled map from ftp.mapsforge.org
+2. Open it in e.g. OruxMaps for Android
+3. Check an area which has been edited on OSM recently What is the expected output? What do you see instead? I'd expect to see the changes made to OSM more than 2 weeks ago. Instead I see "old" data.
+
+Example:
+The following changeset has been uploaded on May 8th: http://www.openstreetmap.org/browse/changeset/11544367 The berlin.map (or brandenburg.map) as of today (May 23rd) still don't contain these changes.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=318
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jos...@gmail.com on May 24, 2012 01:33:13
+
+Maybe data used are downloaded from http://planet.openstreetmap.org/daily/ , it hasn't been updated for a while due to licencing changes.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From mbi...@gmail.com on June 05, 2012 01:59:37
+
+Just wanted to let you know: The latest OsmAnd offline map (as of May 20th) now shows my changes, the mapsforge map (May 29th) doesn't.
+
+Maybe you could ask one of them ( https://code.google.com/p/osmand/ ) how they update their offline maps…
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on July 04, 2012 01:38:05
+
+Please have a look again if your changes are now included. The planet was updated yesterday and a new berlin.map was just created.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:53 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:53 PM GMT+8</closetime></item></BR></extraction>

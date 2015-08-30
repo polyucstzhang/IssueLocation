@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893696</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/74c59ee96b96b477a9c87dfb0b25b14ea88f95d1]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/74c59ee96b96b477a9c87dfb0b25b14ea88f95d1]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:48:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/74c59ee96b96b477a9c87dfb0b25b14ea88f95d1]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      login/splash improvements
+    </title><numbercommit>
+      20 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/drawable-mdpi/login_bottom_input.9.png
+            </name></item><item><name>
+              res/drawable-mdpi/login_button.9.png
+            </name></item><item><name>
+              res/drawable-mdpi/login_mid_input.9.png
+            </name></item><item><name>
+              res/drawable-mdpi/login_only_input.9.png
+            </name></item><item><name>
+              res/drawable-mdpi/login_top_input.9.png
+            </name></item><item><name>
+              res/drawable-mdpi/signup_button.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_bottom_input.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_button.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_mid_input.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_only_input.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_top_input.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/signup_button.9.png
+            </name></item><item><name>
+              res/layout-land/activity_main.xml
+            </name></item><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/layout/activity_share_chooser.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ShareChooserActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

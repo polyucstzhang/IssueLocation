@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893784</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/23673c1a72b212a92fea88a345359fb4b12fe5ef]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/23673c1a72b212a92fea88a345359fb4b12fe5ef]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:51:31</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/23673c1a72b212a92fea88a345359fb4b12fe5ef]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Re-sort the buffers list when joining/parting channels
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

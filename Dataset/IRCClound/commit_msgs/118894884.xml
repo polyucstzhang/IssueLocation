@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894884</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c40a49c70bbee0df1204651d33e7cc7d5714fe86]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c40a49c70bbee0df1204651d33e7cc7d5714fe86]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:27:28</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c40a49c70bbee0df1204651d33e7cc7d5714fe86]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      myinfo, connecting_failed, socket_closed, error, nickname_in_use, ser…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

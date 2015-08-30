@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894043</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/afcfc52eecda4e730261b2b14a3783d50d583a14]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/afcfc52eecda4e730261b2b14a3783d50d583a14]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:1:19</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/afcfc52eecda4e730261b2b14a3783d50d583a14]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a bug where nick change -&gt; part/quit would incorrectly display as…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

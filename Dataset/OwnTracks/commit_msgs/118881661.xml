@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881661</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/200c0255bf7dc71c1505853204498558c78cb83a]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/200c0255bf7dc71c1505853204498558c78cb83a]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:19:21</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/200c0255bf7dc71c1505853204498558c78cb83a]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      removed references to BLE beacons until functionality is fixed, closes </title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/res/xml/privatepreferences.xml
+            </name></item><item><name>
+              src/main/res/xml/publicpreferences.xml
+            </name></item></source_file></item></commit></extraction>

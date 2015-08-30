@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893766</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a6ae3c74cc8513569f8b1828dd64f9bf90de973e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a6ae3c74cc8513569f8b1828dd64f9bf90de973e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:50:51</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a6ae3c74cc8513569f8b1828dd64f9bf90de973e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Update to build with Android Studio Beta, enable Android Wear notific…
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              gradle/wrapper/gradle-wrapper.properties
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              tests/AndroidManifest.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

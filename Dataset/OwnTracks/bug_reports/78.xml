@@ -1,0 +1,17 @@
+<extraction><id>#78</id><title>TID missing in config.otrc export file</title><description> TID as per #68 is missing in settings export.</description><comments>although it is contained in the exported Waypoints In order to include the trackerId in config.otrc export file I have had to:The checkboxes are visible so I don't know why they don't get activated by default.  Are they intended to be activated by the user?I have tested the changes and they work fine.  The preferences are intended to be checked by the user. Please do not enable them by default (some users might not want to export their passwords and other credentials).
+
+Adding the tid to the config message is correct. However it also needs to be removed if the credentials export is not checked. Hi,
+
+"Checked" and "Activated"  are two different states.  I am not suggesting
+to check the checkboxes by default, I am suggesting to activate them by
+default or remove the isActivated()  check from the "if" statements.  There
+is no way for the user to activate them and I couldn't find any place in
+the code where those checkboxes get activated.  Please tell me if I am
+missing something.
+
+Max You can check them if broker connection is checked. If the broker connection is checked, the other ones (should) get activated.
+
+
+If you do not include the connection, there is no real sense to include the broker username/password or device id in my oppinion.-
+Reply to this email directly or view it on GitHub&lt;https://github.com/owntracks/android/issues/78#issuecomment-60524388&gt;. Hi, 
+I have made the changes and created a pull request, let me know if you have any questions. IMO there was a little bit of confusion between Checked/Enabled/Activated and considering that the Activated state wasn't used in any other part of the code, I have replaced the 3 isActicated() with isEnabled() which I think makes more sense.  Anyway, I could be wrong so please let me know if you have any comment. should be fixed now thanks to @massimilianozilio </comments></extraction>

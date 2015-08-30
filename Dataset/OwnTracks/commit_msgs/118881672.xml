@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881672</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/66e48e0013daad5baa2e6d55445e7cce40d7bf18]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/66e48e0013daad5baa2e6d55445e7cce40d7bf18]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:19:55</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/66e48e0013daad5baa2e6d55445e7cce40d7bf18]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      added request reportLocation
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/messages/CommandMessage.java
+            </name></item></source_file></item></commit></extraction>

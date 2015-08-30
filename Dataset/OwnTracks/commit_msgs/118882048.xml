@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882048</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/7543192a22ecb66a9bdab05cb1cafac90007d0af]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/7543192a22ecb66a9bdab05cb1cafac90007d0af]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:34:40</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/7543192a22ecb66a9bdab05cb1cafac90007d0af]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Cleanup, </title><numberfile>
+      11 changed files
+    </numberfile><source_file><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/menu/activity_main.xml
+            </name></item><item><name>
+              res/values-de/strings.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/FusedLocationLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Locator.java
+            </name></item></source_file></item></commit></extraction>

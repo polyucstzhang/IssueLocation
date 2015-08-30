@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829842</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/354]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/354]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:47:55</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/354]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#354</id><title>create file.map from file.osm.pbf</title><description>
+
+    
+      
+          From phol2...@gmail.com on September 25, 2012 19:11:55
+
+What steps will reproduce the problem? 1.create map file
+2.severe Thread for task 1-rb failed 3. What is the expected output? What do you see instead? file.map What version of the product are you using? On what operating system? osmosis 0.41 windows7 Please provide any additional information below.
+
+Attachment: 9-26-2012 12-07-21 AM.jpg
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=354
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on September 25, 2012 13:40:53
+
+Issue 352 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on October 11, 2012 10:57:20
+
+I consider this issue as fixed with r2100 .
+
+@phol2011: please checkout the latest revision of the trunk from our SVN and build the mapfile-writer using maven, see GettingStartedDevelopers article in the Wiki
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 25, 2012 06:56:07
+
+Issue 393 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:56 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:56 PM GMT+8</closetime></item></BR></extraction>

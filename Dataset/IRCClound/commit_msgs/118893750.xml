@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893750</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/93d1b1ced25d4af330b2b8d177ca1d07a64e0fe3]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/93d1b1ced25d4af330b2b8d177ca1d07a64e0fe3]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:50:18</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/93d1b1ced25d4af330b2b8d177ca1d07a64e0fe3]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Resize images to fit within 2048x2048 before uploading to imgur
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/xml/preferences_device.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

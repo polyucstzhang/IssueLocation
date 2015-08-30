@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894147</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3812fef10c0cfa1b12ab85911305f1cc368abefe]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3812fef10c0cfa1b12ab85911305f1cc368abefe]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:4:58</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3812fef10c0cfa1b12ab85911305f1cc368abefe]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Some optimizations for makeserver/makebuffer/channel_init
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/AddChannelFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/ChannelsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/ServersDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

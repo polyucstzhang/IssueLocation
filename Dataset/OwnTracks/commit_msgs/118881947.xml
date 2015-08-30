@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881947</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/481a22dc6283097a033c2c6e89d902a196cfa0b8]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/481a22dc6283097a033c2c6e89d902a196cfa0b8]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:19</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/481a22dc6283097a033c2c6e89d902a196cfa0b8]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added back-stack functionality to FragmentManager
+    </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              res/layout/fragment_details.xml
+            </name></item><item><name>
+              res/layout/fragment_friends.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item></source_file></item></commit></extraction>

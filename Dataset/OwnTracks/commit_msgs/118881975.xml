@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881975</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/cfc6b010f72d308bb64bf747cfc7ca01f7064f24]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/cfc6b010f72d308bb64bf747cfc7ca01f7064f24]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:31:24</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/cfc6b010f72d308bb64bf747cfc7ca01f7064f24]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Made sub topic configurable (</title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item></source_file></item></commit></extraction>

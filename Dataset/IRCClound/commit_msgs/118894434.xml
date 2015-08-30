@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894434</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3f8eccf608dba7ab295bff305afdc89104af7ced]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3f8eccf608dba7ab295bff305afdc89104af7ced]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:15:2</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3f8eccf608dba7ab295bff305afdc89104af7ced]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Android 3.0 notification icons
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-ldpi-v11/ic_stat_notify.png
+            </name></item><item><name>
+              res/drawable-mdpi-v11/ic_stat_notify.png
+            </name></item><item><name>
+              res/drawable-xhdpi-v11/ic_stat_notify.png
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

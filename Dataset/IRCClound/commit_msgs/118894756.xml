@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894756</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/88dc169474539727a539ff3d568a017351e99bb4]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/88dc169474539727a539ff3d568a017351e99bb4]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:23:18</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/88dc169474539727a539ff3d568a017351e99bb4]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Switch to using google-gson to parse the backlog and websocket stream
+    </title><numbercommit>
+      13 changed files
+    </numbercommit><source_file><item><name>
+              libs/gson-2.2.2.jar
+            </name></item><item><name>
+              src/com/irccloud/androidnative/AddChannelFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/ChannelOptionsFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/IRCCloudJSONObject.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/IgnoreListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/ServersDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

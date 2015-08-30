@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881867</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/ea2832a8758b74c14171aa0cef558305251c5c3f]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/ea2832a8758b74c14171aa0cef558305251c5c3f]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:28:9</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/ea2832a8758b74c14171aa0cef558305251c5c3f]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Refactored preferences, Updated info preferences, Added 0.4.14 APK
+    </title><numberfile>
+      13 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              apk/mqttitude.apk
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/BootCompleteReceiver.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Preferences.java
+            </name></item></source_file></item></commit></extraction>

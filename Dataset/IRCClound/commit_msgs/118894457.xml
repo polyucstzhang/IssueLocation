@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894457</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/01696eae7157b583578d9aa0b184bdc6d34e67da]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/01696eae7157b583578d9aa0b184bdc6d34e67da]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:15:49</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/01696eae7157b583578d9aa0b184bdc6d34e67da]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Put the on-screen keyboard into SMS mode so the send action appears
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/layout-sw800dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout-sw800dp/activity_message.xml
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

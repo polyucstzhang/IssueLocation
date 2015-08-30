@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881732</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/4b198eb5db94a2dd3b279e40b3258adbe9991983]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/4b198eb5db94a2dd3b279e40b3258adbe9991983]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:30</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/4b198eb5db94a2dd3b279e40b3258adbe9991983]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      tracked libs
+    </title><numberfile>
+      6 changed files
+    </numberfile><source_file><item><name>
+              .idea/gradle.xml
+            </name></item><item><name>
+              ...ibraries/android_beacon_library_2_1_2.xml → ...ibraries/android_beacon_library_2_1_3.xml
+            </name></item><item><name>
+              .idea/libraries/cardview_v7_21_0_3.xml
+            </name></item><item><name>
+              .idea/libraries/support_annotations_21_0_3.xml
+            </name></item><item><name>
+              .idea/libraries/support_v4_21_0_3.xml
+            </name></item><item><name>
+              .idea/vcs.xml
+            </name></item></source_file></item></commit></extraction>

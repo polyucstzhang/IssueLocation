@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118827783</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/575]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/575]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:41:34</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/575]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#575</id><title>Java SVG support</title><description>
+
+    
+      
+          Add support in Java for SVG resources.
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I pushed on dev 509fce7 an implementation for Java SVG support via SVG Salamander (LGPL and BSD).
+
+It's small and seems to handle the SVG spec well.
+      
+    
+
+  </contents></item><item><commenter>applantation</commenter><contents>
+
+    
+      
+          No way to clear the cache?
+…
+On 23 February 2015 at 13:11, Emux &lt;notifications@github.com&gt; wrote:
+ SVG Salamander keeps the rendered SVG documents loaded in memory, so we
+ have a memory cache of them for the lifetime of the application.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/575#issuecomment-75573143&gt;.
+
+
+
+      
+    
+
+  </contents></item><item><commenter>ludwigb</commenter><contents>
+
+    
+      
+          I would be in favour of that, if only to make Android and Java development
+as much the same as possible. But if you feel the calls are essentially
+different, leave it, I am equally not in favour of forcing things if it
+does not feel natural.
+
+Ludwig
+…
+On 23 February 2015 at 13:28, Emux &lt;notifications@github.com&gt; wrote:
+ In Android we have a file cache too, so it's somewhat different:
+ AndroidSvgBitmapStore.clear()
+ &lt;https://github.com/mapsforge/mapsforge/blob/master/mapsforge-map-android/src/main/java/org/mapsforge/map/android/graphics/AndroidSvgBitmapStore.java#L75&gt;
+ But I could tie them together if it would be useful.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/575#issuecomment-75576559&gt;.
+
+
+
+      
+    
+
+  </contents></item><item><commenter>ludwigb</commenter><contents/></item></comments><createtime>Jan 23, 2015, 3:29 PM GMT+8</createtime><closetime>Feb 24, 2015, 12:17 AM GMT+8</closetime></item></BR></extraction>

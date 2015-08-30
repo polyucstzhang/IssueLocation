@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894228</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/af7bc8889397ad5481948a54cc29d8bb54061daa]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/af7bc8889397ad5481948a54cc29d8bb54061daa]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:8:7</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/af7bc8889397ad5481948a54cc29d8bb54061daa]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Exclude user IntelliJ workspace file from git
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              res/xml/preferences_pebble.xml
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

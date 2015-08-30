@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894030</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/1473616bab5c56829687a237e544fda8e65c9fb8]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/1473616bab5c56829687a237e544fda8e65c9fb8]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:0:44</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/1473616bab5c56829687a237e544fda8e65c9fb8]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Add some transition animations between activities
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              res/anim/fade_out.xml
+            </name></item><item><name>
+              res/anim/slide_in_right.xml
+            </name></item><item><name>
+              res/anim/slide_out_right.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ImageViewerActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PreferencesActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

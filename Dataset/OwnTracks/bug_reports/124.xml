@@ -1,0 +1,2 @@
+<extraction><id>#124</id><title>MqttConnectOptions.java line 458</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/5508ca095141dcfd8f2743fd</description><comments>Tracked as #127</comments></extraction>

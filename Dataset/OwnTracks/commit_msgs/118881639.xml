@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881639</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/63dd19b7ce24ca06f8b2d218764e348acff90998]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/63dd19b7ce24ca06f8b2d218764e348acff90998]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:18:18</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/63dd19b7ce24ca06f8b2d218764e348acff90998]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Android-v.0.5.16 APK
+    </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              CHANGELOG.md
+            </name></item></source_file></item></commit></extraction>

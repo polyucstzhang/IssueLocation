@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892989</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/4a9cd8c5aec06c08ebe7e32effb7d89c13a216b8]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/4a9cd8c5aec06c08ebe7e32effb7d89c13a216b8]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:30:11</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/4a9cd8c5aec06c08ebe7e32effb7d89c13a216b8]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      job schedueler doesn't require RECIEVE_BOOT_COMPLETED permission
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/BackgroundTaskService.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

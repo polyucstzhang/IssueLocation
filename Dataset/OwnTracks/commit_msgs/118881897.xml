@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881897</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/683b4be12814bc78fee495ca2dfff786e26ec1c3]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/683b4be12814bc78fee495ca2dfff786e26ec1c3]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:29:24</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/683b4be12814bc78fee495ca2dfff786e26ec1c3]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed for Geofence leave events were not published
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/model/Report.java
+            </name></item></source_file></item></commit></extraction>

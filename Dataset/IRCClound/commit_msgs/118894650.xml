@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894650</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/823e9fb021a48fabfdedb78801f34a55f0eff30c]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/823e9fb021a48fabfdedb78801f34a55f0eff30c]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:21:24</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/823e9fb021a48fabfdedb78801f34a55f0eff30c]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      too_fast, your_unique_id, unhandled_line, unparsed_line, wait, no_bot…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894135</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/86a71b0f6fe538335def253817aa984c5f913fdb]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/86a71b0f6fe538335def253817aa984c5f913fdb]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:4:33</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/86a71b0f6fe538335def253817aa984c5f913fdb]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix various crashes reported through TestFlight
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

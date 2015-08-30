@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892985</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c8906ab16592e12955cd3fa463108617ea2dfebd]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c8906ab16592e12955cd3fa463108617ea2dfebd]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:30:1</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c8906ab16592e12955cd3fa463108617ea2dfebd]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix the jump to next unread buffer indicators
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/BuffersList.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

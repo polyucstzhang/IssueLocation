@@ -1,0 +1,2 @@
+<extraction><id>#118</id><title>ActivityMain.java line 299</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/55013f5e7d7854d7c9b3990a</description><comments>This is a bug in the Android support library.</comments></extraction>

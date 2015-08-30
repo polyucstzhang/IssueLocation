@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893778</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/32f4c935acdf38fbb59a058840396439580ccbc1]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/32f4c935acdf38fbb59a058840396439580ccbc1]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:51:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/32f4c935acdf38fbb59a058840396439580ccbc1]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      api.irccloud.com
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/IRCCloudApplication.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

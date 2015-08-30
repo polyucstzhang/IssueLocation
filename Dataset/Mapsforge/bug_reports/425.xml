@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118634743</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/425]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/425]]></realpath><theme>issue_425</theme><middle>default</middle><createdate>2015-8-22 22:40:49</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/425]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#425</id><title>Rewrite: Map scale bar draw issues</title><comments>
+          
+
+  
+    
+    
+
+  
+
+
+    Owner
+
+
+  
+
+    
+      mapsforge
+    
+
+    commented
+
+    
+      on Nov 6, 2014
+    
+  
+
+
+
+  
+
+    
+      
+          From devemu...@gmail.com on April 25, 2013 11:36:36
+
+Hi,
+
+
+The map scale bar seems to draw out of screen, a part of it. This happens at Honeycomb devices, at JB devices is almost completely out.
+Also at each redraw of scale bar, its canvas does not erases but remain traces of the old scale text and lines.
+I think that at line 126 of MapScaleBar class the statement
+this.mapScaleCanvas.fillColor(Color.TRANSPARENT);
+does not work as it is intended. At main branch the eraseColor method is used and clears the canvas at each redraw.
+
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=425
+      
+    
+
+  
+
+
+  
+  
+      
+
+
+  
+    
+
+      
+      
+      mapsforge
+        added bug imported Priority-Medium labels on Nov 6, 2014
+    
+  
+
+
+
+  
+    
+    
+
+  
+
+
+    Owner
+
+
+  
+
+    
+      mapsforge
+    
+
+    commented
+
+    
+      on Nov 6, 2014
+    
+  
+
+
+
+  
+
+    
+      
+          From thilo.mu...@gmail.com on May 05, 2013 03:05:08
+
+Status: Started
+  Owner: thilo.mu...@gmail.com  
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Owner
+
+
+  
+
+    
+      mapsforge
+    
+
+    commented
+
+    
+      on Nov 6, 2014
+    
+  
+
+
+
+  
+
+    
+      
+          From thilo.mu...@gmail.com on May 05, 2013 03:17:16
+
+This issue was closed by revision 28c7510 .
+
+Status: Fixed  
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Owner
+
+
+  
+
+    
+      mapsforge
+    
+
+    commented
+
+    
+      on Nov 6, 2014
+    
+  
+
+
+
+  
+
+    
+      
+          From thilo.mu...@gmail.com on May 05, 2013 03:17:39
+
+Thanks for reporting this bug, I just pushed a fix for it to the rewrite branch.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Owner
+
+
+  
+
+    
+      mapsforge
+    
+
+    commented
+
+    
+      on Nov 6, 2014
+    
+  
+
+
+
+  
+
+    
+      
+          From devemu...@gmail.com on June 27, 2013 01:59:47
+
+Hi,
+
+Another thing that may be needed is to add
+this.redrawNeeded = true;
+at the end of scale bar's setAdapter method (as it was at main branch).
+Now if we change adapter, the change takes effect during the next zoom only and not immediately.
+
+Regards.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Owner
+
+
+  
+
+    
+      mapsforge
+    
+
+    commented
+
+    
+      on Nov 6, 2014
+    
+  
+
+
+
+  
+
+    
+      
+          From thilo.mu...@gmail.com on September 15, 2013 05:53:45
+
+You are right, I just added that missing line. Thanks for reporting!
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      mapsforge
+      closed this   on Nov 6, 2014
+    
+  
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+        </comments></item></BR></extraction>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893844</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/26d62d5a10630a5905e5d0ac9dce8054480fa946]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/26d62d5a10630a5905e5d0ac9dce8054480fa946]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:53:41</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/26d62d5a10630a5905e5d0ac9dce8054480fa946]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Various crash fixes
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/ImageViewerActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/WhoisFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

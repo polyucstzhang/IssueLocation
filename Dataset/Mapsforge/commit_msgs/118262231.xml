@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118262231</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/9e2e688b806da12837df4cdabef449c8fe81f128]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/9e2e688b806da12837df4cdabef449c8fe81f128]]></realpath><theme>mapsforge_04n</theme><middle>default</middle><createdate>2015-8-21 16:40:57</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/9e2e688b806da12837df4cdabef449c8fe81f128]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      fix for bitmap shader not being painted when color is transparent
+    </title><number>
+      1 changed file
+    </number></item></BR></extraction>

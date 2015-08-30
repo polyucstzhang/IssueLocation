@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832232</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/86]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/86]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:55:45</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/86]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#86</id><title>Improve the rendering of oneway streets</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on February 25, 2011 09:06:06
+
+The map library should highlight streets which have a "oneway=yes" tag ( http://wiki.openstreetmap.org/wiki/Key:oneway ) with little arrow symbols, so that the restriction is clearly visible. Mapnik and Osmarender do that already for a long time.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=86
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Andrzej....@gmail.com on April 18, 2011 05:29:40
+
+I created patch for oneway rendering.
+Patch marks ways with the oneway flag in map file. Currently supports oneway tag with following values: yes, 1, true.
+Additional tags can be added in TileData file.
+
+In addition I added rendering for oneway tag and ref tag (road number).
+
+Attachment: issue86.patch
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Andrzej....@gmail.com on April 18, 2011 10:05:15
+
+Fixed.
+direction.png goes to:
+src\org\mapsforge\android\maps\symbols\direction.png
+
+Attachment: issue86_2.patch direction.png
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Andrzej....@gmail.com on April 22, 2011 01:46:46
+
+Final version in attachments.
+oneway.png goes to:
+src\org\mapsforge\android\maps\symbols\oneway.png
+
+Attachment: oneway.png issue86_3.patch
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on April 23, 2011 12:32:00
+
+We now support rewriting of tags ( r1018 ). It has been exemplarily added to the tag-mapping.xml for the oneway tag.
+
+We should apply the third patch of Andrzej and adjust the parts where the oneway information is read from the database. I guess the semantic of oneway=-1 is not yet recognized in the implemention, correct me. The parts of the patch regarding the mapfile-writer can now completely be disregarded.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on May 07, 2011 04:49:10
+
+Since revision r1024 it is now possible to align symbols along ways centered and top-left. This new feature is already in use to draw symbols at ways with an aerialway=chair_lift tag correctly.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:34 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:34 PM GMT+8</closetime></item></BR></extraction>

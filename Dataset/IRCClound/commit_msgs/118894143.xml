@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894143</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/337a62f6d4eacb68d5c36c8a723da0a7f4f442c4]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/337a62f6d4eacb68d5c36c8a723da0a7f4f442c4]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:4:50</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/337a62f6d4eacb68d5c36c8a723da0a7f4f442c4]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Offset the backlog failed indicator if the top chatter bar is visible
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

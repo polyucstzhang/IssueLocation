@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893438</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ebb248a9fa468da1c5043383125c913d8642414e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ebb248a9fa468da1c5043383125c913d8642414e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:38:42</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ebb248a9fa468da1c5043383125c913d8642414e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      upgrade Jackson and Google Play Services libraries
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

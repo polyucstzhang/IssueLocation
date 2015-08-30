@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829859</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/336]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/336]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:48:24</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/336]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#336</id><title>Re-implement handling of touch events</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on July 21, 2012 15:25:34
+
+With the new overlay implementation ( issue #286 ) the existing API has changed. The current code base does not yet offer a way to react on touch events and interact with overlay items. This needs to be added again as many applications require such a feature.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=336
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From warwo...@gmail.com on September 20, 2012 05:38:48
+
+I'm keen to see some way to detect various events.
+
+1) Detecting when the map center or zoom level has changed is one feature i need.
+
+2) Obviously, like a lot of other mapsforge users, i require some touch events for OverlayItems.
+
+Thanks.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From christia...@gmail.com on December 19, 2012 10:32:50
+
+Hi, this feature is important for the completion of one of my projects. 
+
+has anyone got a workaround for it or the code for the above workaround?
+
+Any news on when this issue will be tackled?
+
+Could I help in any way? Testing?
+
+Thanks ,
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From schmalsp...@gmail.com on June 03, 2013 10:41:46
+
+Hello, since I tought that more people would like to have the touch in the rewrite branch, here is a litte patch for simple tap.
+
+It is all based on j...@lapoutre.com's Patch but compatible with the latest rewrite. 
+Please remember, it's quick'n'dirty but at least works for a while...
+
+Cheers, Stephan
+
+Attachment: touch.patch
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From gabberr...@gmail.com on January 13, 2014 01:04:52
+
+Hi!
+I tried unsuccessfully to use the patch. Can anybody give me jar file with this patch?
+Thanks!
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:55 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:55 PM GMT+8</closetime></item></BR></extraction>

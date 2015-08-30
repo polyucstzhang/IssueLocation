@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832937</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/11]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/11]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:58:1</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/11]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#11</id><title>Extend AdvancedMapViewer to Use Routing WebService</title><description>
+
+    
+      
+          From jjbross@gmail.com on May 28, 2010 13:52:36
+
+The HH routing algorithm will be exported as a web service in the near
+future. We will also have an overlay API that allows to display routes on
+an Android device. We need to integrate this functionality. The
+AdvancedMapViewer should allow to calculate and display a route between two
+(or more) selected points using the web service.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=11
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on November 25, 2010 12:53:04
+
+Labels: -Milestone-ServerBasedRouting  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on September 23, 2011 13:26:13
+
+I think it would be better to support different web services, not only the one at tom.mapsforge.org. But if you have no time to work on it, we should be honest and close it now to avoid disappointing somebody who waits for it.
+
+Status: WontFix  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:28 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:28 PM GMT+8</closetime></item></BR></extraction>

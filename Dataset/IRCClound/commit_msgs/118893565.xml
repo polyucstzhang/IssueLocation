@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893565</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/4e771ee7ee9e28a9cb27dee2f115c5488349b2d8]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/4e771ee7ee9e28a9cb27dee2f115c5488349b2d8]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:43:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/4e771ee7ee9e28a9cb27dee2f115c5488349b2d8]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      New icon
+    </title><numbercommit>
+      10 changed files
+    </numbercommit><source_file><item><name>
+              enterprise-res/drawable-mdpi/ic_launcher.png
+            </name></item><item><name>
+              enterprise-res/drawable-xhdpi/ic_launcher.png
+            </name></item><item><name>
+              enterprise-res/drawable-xxhdpi/ic_launcher.png
+            </name></item><item><name>
+              enterprise-res/drawable-xxxhdpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-hdpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/ic_launcher.png
+            </name></item><item><name>
+              res/drawable-xxxhdpi/ic_launcher.png
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

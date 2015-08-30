@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881940</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/2bfbf178d1314e3e9ba9a02424a1d6fb44c952a7]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/2bfbf178d1314e3e9ba9a02424a1d6fb44c952a7]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:2</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/2bfbf178d1314e3e9ba9a02424a1d6fb44c952a7]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Initial support for #254, Fix for #260
+    </title><numberfile>
+      26 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_action_add.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_action_discard.png
+            </name></item><item><name>
+              res/layout/activity_waypoint.xml
+            </name></item><item><name>
+              res/layout/fragment_map.xml
+            </name></item><item><name>
+              res/layout/fragment_waypoint.xml
+            </name></item><item><name>
+              res/layout/friend_list_item.xml → res/layout/row_contact.xml
+            </name></item><item><name>
+              res/layout/row_waypoint.xml
+            </name></item><item><name>
+              res/menu/activity_main.xml
+            </name></item><item><name>
+              res/menu/activity_waypoint.xml
+            </name></item><item><name>
+              res/menu/activity_waypoint_actionmode.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityWaypoints.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/adapter/WaypointAdapter.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/db/DaoMaster.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/db/DaoSession.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/db/Notification.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/db/NotificationDao.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/db/Waypoint.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/db/WaypointDao.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Events.java
+            </name></item></source_file></item></commit></extraction>

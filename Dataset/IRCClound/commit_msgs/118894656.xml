@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894656</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c895abc1528e984566ae109195dd1179c07a4b2f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c895abc1528e984566ae109195dd1179c07a4b2f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:21:37</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c895abc1528e984566ae109195dd1179c07a4b2f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Make the UserLiseFragment RefreshTask cancellable
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

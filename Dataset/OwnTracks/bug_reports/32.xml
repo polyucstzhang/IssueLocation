@@ -1,0 +1,10 @@
+<extraction><id>#32</id><title>Support for TLS v1.2 in Android</title><description> Test wether Android will connect to a TLS v1.2 broker.</description><comments>I just tested communication with the Android and iOS app to my mosquitto-server (v1.2.3).Under iOS, owntracks is able to connect to TLS v1, v1.1 and v1.2.
+Under Android, owntracks can only connect to TLS v1. Trying to connect when using v1.1 oder v1.2 results in the following error: Thank you @hoalex for doing this!I hope @binarybucks finds a solution. Theoretically Android 4.4.2 supports TLSv1.2 but the Paho client doesn't
+seem to
+
+```
+com.ibm.ssl.protocolOne of: SSL, SSLv3, TLS, TLSv1, SSL_TLS.
+```
+
+I can work around this by using my own SSL socket factory like I do when
+using custom TLS certs. I'll have to look into this. Ticket renamed Seems to be working.</comments></extraction>

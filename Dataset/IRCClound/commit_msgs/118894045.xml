@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894045</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/fcb0668b265fdc6043ee6c6b6d916af4f97f9686]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/fcb0668b265fdc6043ee6c6b6d916af4f97f9686]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:1:23</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/fcb0668b265fdc6043ee6c6b6d916af4f97f9686]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      'Add Network' button at bottom of buffers table, closes </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-xhdpi/world_add.png
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894947</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a600794e671eda17cd36b70ebfb6ad83ea17319d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a600794e671eda17cd36b70ebfb6ad83ea17319d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:45</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a600794e671eda17cd36b70ebfb6ad83ea17319d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      More alpha fixes + message view scrolling + color self messages
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/messageview.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/DBHelper.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

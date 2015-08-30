@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881743</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/a7ef06591e347cedb9ef97dede4201d38277666f]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/a7ef06591e347cedb9ef97dede4201d38277666f]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:58</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/a7ef06591e347cedb9ef97dede4201d38277666f]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Merge pull request </title><numberfile>
+      15 changed files
+    </numberfile><source_file><item><name>
+              .idea/libraries/DaoGenerator_1_3_0.xml
+            </name></item><item><name>
+              .idea/libraries/android_beacon_library_2_0_beta7.xml
+            </name></item><item><name>
+              .idea/libraries/appcompat_v7_19_1_0.xml
+            </name></item><item><name>
+              .idea/libraries/bugsnag_1_2_6.xml
+            </name></item><item><name>
+              .idea/libraries/bugsnag_android_2_1_1.xml
+            </name></item><item><name>
+              .idea/libraries/eventbus_2_2_0.xml
+            </name></item><item><name>
+              .idea/libraries/freemarker_2_3_19.xml
+            </name></item><item><name>
+              .idea/libraries/greendao_1_3_7.xml
+            </name></item><item><name>
+              .idea/libraries/org_eclipse_paho_client_mqttv3_1_0_1_SNAPSHOT.xml
+            </name></item><item><name>
+              .idea/libraries/play_services_4_4_52.xml
+            </name></item><item><name>
+              .idea/libraries/support_v4_19_1_0.xml
+            </name></item><item><name>
+              DaoGenerator/DaoGenerator.iml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/preferences/ActivityExport.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Preferences.java
+            </name></item></source_file></item></commit></extraction>

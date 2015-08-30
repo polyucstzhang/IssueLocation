@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830307</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/287]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/287]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:49:48</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/287]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#287</id><title>NullPointerException in MapDatabase.readMapData</title><description>
+
+    
+      
+          From skyliver...@gmail.com on April 03, 2012 12:11:25
+
+What steps will reproduce the problem? I dont khow how to reproduce the problem. I receive it from user's reports What version of the product are you using? On what operating system? Last SVN version. Please provide any additional information below. Call stack:
+
+java.lang.NullPointerException
+ at org.mapsforge.map.reader.MapDatabase.readMapData(MapDatabase.java:313)
+ at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.executeJob(DatabaseRenderer.java:160)
+ at org.mapsforge.android.maps.mapgenerator.MapWorker.doWork(MapWorker.java:73)
+ at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:94)
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=287
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From skyliver...@gmail.com on April 05, 2012 07:15:18
+
+I am using ' r1992 ' version from SVN. I have only compile it and reference to the project.
+No I do not interfere with JobQueue in my application.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From skyliver...@gmail.com on May 11, 2012 08:32:47
+
+I detect this issue. She appear when I am using DatabaseRENDERER Map generator:
+
+mapView.setMapGenerator(MapGeneratorFactory.createMapGenerator(MapGeneratorInternal.DATABASE_RENDERER));
+
+OSMARENDER and OPENCYCLEMAP is ok.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jessical...@gmail.com on November 04, 2014 00:00:06
+
+I realise that after checking the file.exist(). if it doesn't exist, mapView.setVisibility(View.GONE); solve the force close problem.
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:50 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:50 PM GMT+8</closetime></item></BR></extraction>

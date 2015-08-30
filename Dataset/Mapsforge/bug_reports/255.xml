@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830583</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/255]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/255]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:50:39</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/255]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#255</id><title>method this.mapView.setMapFile("/sdcard/berlin.map") always return false </title><description>
+
+    
+      
+          From dientran...@gmail.com on February 20, 2012 13:04:45
+
+I run AVM r1826 project. 
+After select file , I receive message: unsupport file version: 2
+So that, I try to use method this.mapView.setMapFile("/sdcard/berlin.map") and return value is always false. (of course File path is correct and i created mapsforge-map-0.3.0-SNAPSHOT-jar-with-dependencies.jar)
+I have attached screenshots.
+Why that?
+Thanks so much !!
+
+Attachment: Unsupport File version 2.png
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=255
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From dientran...@gmail.com on February 20, 2012 20:21:22
+
+thanks so much ! AVM r1826 project was run!
+Now I try creat a .map file by : 
+follow the instructions https://code.google.com/p/mapsforge/wiki/MapFileWriterOsmosis (created .map file version 2 successful).
+I replaced mapsforge-mapfile-writer-x.x.x.jar by mapsforge-map-writer-0.3.0-SNAPSHOT.jar in  directory "/home/prometheus/.openstreetmap/osmosis/plugins/" to create .map file version 3 but error.
+I have attached screenshots.
+Why that?
+Thanks so much !!
+
+Attachment: screen1.png screen2.png
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From dientran...@gmail.com on February 22, 2012 09:42:18
+
+I build the map-file-writer.jar on win7. After, i copy .jar file to ubuntu 10.04.
+Is that cause?
+You say  "The maven build also produces a jar file that includes all dependencies, so no need to install trove." but when I copy trove file to osmosis is still error but error is difference with no copy trove file?
+Above is my two questions. 
+And now, I am try build the map-file-writer.jar on ubuntu 10.04.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From dientran...@gmail.com on February 24, 2012 18:51:56
+
+I build the map-file-writer.jar successfully on ubuntu 10.04. :)
+But when i did it, had some proplems that was not clearly GettingStartedDevelopers wiki page.
+I want to contribute for other members can build the map-file-writer.jar easier :)
+How do i ?
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:48 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:48 PM GMT+8</closetime></item></BR></extraction>

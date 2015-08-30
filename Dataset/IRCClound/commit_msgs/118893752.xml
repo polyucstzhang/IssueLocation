@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893752</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/2f896646fe69d062ef5a2ae2144349ce281a38d6]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/2f896646fe69d062ef5a2ae2144349ce281a38d6]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:50:22</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/2f896646fe69d062ef5a2ae2144349ce281a38d6]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Provide feedback if a voice reply was unable to be sent, closes </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              src/com/irccloud/android/RemoteInputService.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

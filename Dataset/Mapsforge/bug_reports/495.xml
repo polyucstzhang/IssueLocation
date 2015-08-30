@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828333</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/495]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/495]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:43:31</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/495]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#495</id><title>MapsForge Git clone issue</title><description>
+
+    
+      
+          From kyle.pa...@gmail.com on May 06, 2014 17:39:57
+
+What steps will reproduce the problem? 1. Using Git on Windows 8, when I enter the 'clone' command into command prompt I receive the following:
+
+C:\Users\Kyle Pallo\git&gt;git clone https://code.google.com/p/mapsforge/ Cloning into 'mapsforge'...
+remote: Counting objects: 11082, done.
+Receiving objects: 100% (11082/11082), 5.83 MiB | 899.00 KiB/s, done.
+Resolving deltas:  74% (2891/3902)
+This application has requested the Runtime to terminate it in an unusual way.
+Please contact the application's support team for more information.
+Assertion failed: child-&gt;real_type == OBJ_REF_DELTA, file builtin/index-pack.c, line 906 
+fatal: index-pack failed What is the expected output? What do you see instead? It used to clone the repository with no errors, prior to the updates made  to the repository the weekend of May 3rd. What version of the product are you using? On what operating system? I am using 'Git 1.9.2' (the most recent version) on Windows 8.1. Please provide any additional information below. I was previously cloning the mapsforge repository with no problems previously on 2 different computers (both running windows 8) and now neither are able to clone the mapsforge repo properly.
+
+I can clone other repositories from other companies so I believe the issue lies with the mapsforge repository.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=495
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From kyle.pa...@gmail.com on May 07, 2014 06:45:53
+
+I think so but I noticed he had this warning below "Cloning into mapsforge...":
+WARNING: gnome-keyring:: couldn't connect to: /tmp/keyring-RHNeMo/pkcs11: No such file or directory
+
+could be unrelated, I just noticed that I didn't receive that warning.
+      
+    
+
+  </contents></item><item><commenter>ludwigb</commenter><contents>
+
+    
+      
+          The new home of mapsforge is now on github https://github.com/mapsforge/mapsforge so the issue with google code should be 'resolved'. Please note that we will, for a transition period, update the old google code site with the latest repository changes, but you should really change your remotes to this site.
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 6:06 PM GMT+8</createtime><closetime>Nov 14, 2014, 4:07 PM GMT+8</closetime></item></BR></extraction>

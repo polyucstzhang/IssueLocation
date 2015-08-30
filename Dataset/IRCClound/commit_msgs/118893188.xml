@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893188</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b8eddb57468125854ababac393d0331085376067]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b8eddb57468125854ababac393d0331085376067]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:34:53</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b8eddb57468125854ababac393d0331085376067]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      channel mode +Y
+    </title><numbercommit>
+      10 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-v21/row_opers_bg.xml
+            </name></item><item><name>
+              res/drawable/row_opers_bg.xml
+            </name></item><item><name>
+              res/layout/dialog_whois.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/CollapsedEventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/ServersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/UsersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/WhoisFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

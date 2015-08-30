@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894761</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/cdbf2687744821923e91a3d5a9e43ce12e9c7487]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/cdbf2687744821923e91a3d5a9e43ce12e9c7487]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:23:28</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/cdbf2687744821923e91a3d5a9e43ce12e9c7487]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Buffer list in the message view on landscape tablet screens
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              res/layout-sw800dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout-sw800dp/activity_message.xml
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              src/com/irccloud/androidnative/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893574</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9f309fc8e2a0b3ad2741337e984f080927278b67]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9f309fc8e2a0b3ad2741337e984f080927278b67]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:43:37</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9f309fc8e2a0b3ad2741337e984f080927278b67]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      dark blue scrollbars
+    </title><numbercommit>
+      18 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-hdpi/main_fastscroll_thumb_pressed_holo.png
+            </name></item><item><name>
+              res/drawable-mdpi/main_fastscroll_thumb_default_holo.png
+            </name></item><item><name>
+              res/drawable-mdpi/main_fastscroll_thumb_pressed_holo.png
+            </name></item><item><name>
+              res/drawable-xhdpi/actionbar.9.png
+            </name></item><item><name>
+              res/drawable-xhdpi/main_fastscroll_thumb_default_holo.png
+            </name></item><item><name>
+              res/drawable-xhdpi/main_fastscroll_thumb_pressed_holo.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/main_fastscroll_thumb_default_holo.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/main_fastscroll_thumb_pressed_holo.png
+            </name></item><item><name>
+              res/drawable/main_fastscroll_thumb_holo.xml
+            </name></item><item><name>
+              res/drawable/scrollbar.xml
+            </name></item><item><name>
+              res/layout/bufferslist.xml
+            </name></item><item><name>
+              res/layout/messageview.xml
+            </name></item><item><name>
+              res/layout/userslist.xml
+            </name></item><item><name>
+              res/values-v11/dimens.xml
+            </name></item><item><name>
+              res/values-v11/styles.xml
+            </name></item><item><name>
+              res/values-v21/styles.xml
+            </name></item><item><name>
+              res/values/dimens.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

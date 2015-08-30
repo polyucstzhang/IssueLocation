@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893008</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/e2b684f8ec4546bbe66b5b816aa03120e9efbc1c]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/e2b684f8ec4546bbe66b5b816aa03120e9efbc1c]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:30:56</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/e2b684f8ec4546bbe66b5b816aa03120e9efbc1c]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Speed up multiple backlog loads and logging out, bring back automatic…
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/EventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/ServersList.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

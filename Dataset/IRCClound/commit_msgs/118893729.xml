@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893729</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f990d53edb0402848e506d8767476c497bb47f6f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f990d53edb0402848e506d8767476c497bb47f6f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:49:30</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f990d53edb0402848e506d8767476c497bb47f6f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Improve the appearance of the Dismiss button on L
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/values-v11/colors.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

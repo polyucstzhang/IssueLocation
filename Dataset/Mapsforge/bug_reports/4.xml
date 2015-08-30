@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832943</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/4]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/4]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:58:13</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/4]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#4</id><title>Agree on a single GeoCoordinate class</title><description>
+
+    
+      
+          From jjbross@gmail.com on May 27, 2010 19:09:10
+
+We need to agree on a single GeoCoordinate class. It seems that everyone is
+defining its own class. Several GeoCoordinate classes are scattered across
+the packages.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=4
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Frank.Vi...@googlemail.com on May 30, 2010 10:52:50
+
+Can't  shouldn't we use this class from within the packages 'server' and
+'preprocessing'? If not, we could copy and paste ^^
+static int &lt;--&gt; double conversions and a spherical distance function would be fine.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on August 11, 2010 00:45:22
+
+Status: Started  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on February 25, 2011 14:41:29
+
+Ok, I am closing this issue then.
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:27 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:27 PM GMT+8</closetime></item></BR></extraction>

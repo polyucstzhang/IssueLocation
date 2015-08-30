@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893907</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d1b0f3327f4e8b5ed19046dea0f0be0257d5e8c4]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d1b0f3327f4e8b5ed19046dea0f0be0257d5e8c4]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:56:12</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d1b0f3327f4e8b5ed19046dea0f0be0257d5e8c4]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Speed up rotation
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

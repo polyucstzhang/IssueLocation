@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881960</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/8b477a9d635cef3c4d412119b13c938314cd0a62]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/8b477a9d635cef3c4d412119b13c938314cd0a62]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:53</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/8b477a9d635cef3c4d412119b13c938314cd0a62]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      catched possible IndexOutOfBoundsException
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893507</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/dea354ce4941413269f833848f0e7cef9cc31481]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/dea354ce4941413269f833848f0e7cef9cc31481]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:41:13</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/dea354ce4941413269f833848f0e7cef9cc31481]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Update the send and camera buttons
+    </title><numbercommit>
+      12 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-hdpi/ic_action_send.png
+            </name></item><item><name>
+              res/drawable-ldpi/ic_action_send.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_action_photo.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_action_send.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_action_photo.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_action_send.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/ic_action_photo.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/ic_action_send.png
+            </name></item><item><name>
+              res/drawable/ic_action_send.png
+            </name></item><item><name>
+              res/layout-sw600dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

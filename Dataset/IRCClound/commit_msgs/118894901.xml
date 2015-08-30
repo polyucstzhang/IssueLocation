@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894901</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d06fc42129734e9580491f0219a123271849a496]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d06fc42129734e9580491f0219a123271849a496]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:28:6</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d06fc42129734e9580491f0219a123271849a496]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Use ArrayLists instead of sqlite
+    </title><numbercommit>
+      13 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/ChannelsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/DBHelper.java
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/ServersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/UserListActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/UsersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

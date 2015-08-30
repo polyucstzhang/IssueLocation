@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829598</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/358]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/358]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:47:47</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/358]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#358</id><title>Deadlock with map move</title><description>
+
+    
+      
+          From gautier....@gmail.com on October 09, 2012 15:54:34
+
+What steps will reproduce the problem? 1.Start basic sample map (berlin.osm.map)
+2. zoom in enough to be able to slide for a long time staying on the map
+3. slide as quickly as possible from one border to another border of the map
+
+On my Sony Xperia Acro S with android 4.0.3 Application crash... Logcat show a  keydispatchingtimedout error, which is probably linked with CPU usage. What version of the product are you using? On what operating system? r2102 , on android 4.0.3. I was not able to reproduce the issue on an AVD.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=358
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From gautier....@gmail.com on October 15, 2012 01:15:53
+
+I don't know why (I'm a beginner in android development), but my logcat do not show the keydispatchingtimeout error anymore (I only rebooted the phone but it's not the first time I try this so I'm quite surprised)... 
+
+Anyway, there is still approximately the same issue, but now the application do no crash but only freeze indefinitely... (Sample application do not respond, would you like to close it?)
+
+On logcat, I've threadid=3: reacting to signal 3
+Wrote stack traces to '/data/anr/traces.txt'
+
+Corresponding file is attached.
+
+I'll try on another phone ASAP.
+
+Regards
+
+Attachment: traces.txt
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From richj...@gmail.com on November 04, 2012 07:58:47
+
+I also have this problem.
+I used the latest version ( r2016 ).
+the app freezes when I slide quickly. 
+Logcat show a  keydispatchingtimedout error.
+I tested on three smart phones:
+nexus s android 4.0.4
+samsung SII android 4.0.4 
+htc rhyme S510b android 2.3.5
+they all have this problem.
+I don't have this problem when I use 0.3.0.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on December 16, 2012 21:34:54
+
+Issue 369 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From richj...@gmail.com on December 17, 2012 04:19:00
+
+the new patch works well on my phone.
+no freeze problem anymore.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on December 18, 2012 06:10:36
+
+Thanks for the feedback, unless someone objects I will push this patch into master tomorrow.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:56 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:56 PM GMT+8</closetime></item></BR></extraction>

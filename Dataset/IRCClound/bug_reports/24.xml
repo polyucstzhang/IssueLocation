@@ -1,0 +1,1 @@
+<extraction><id>#24</id><title>Per-buffer input area</title><description> Changing to another buffer should clear the text area, and switching back again should restore the previous in-progress message</description><comments> </comments></extraction>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893276</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/78a37358bd29b09dca02e5d4c14897aaf29ab2f8]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/78a37358bd29b09dca02e5d4c14897aaf29ab2f8]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:35:47</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/78a37358bd29b09dca02e5d4c14897aaf29ab2f8]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Gingerbread improvements
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_pastebin.xml
+            </name></item><item><name>
+              res/menu/activity_pastebin.xml
+            </name></item><item><name>
+              res/values-v11/styles.xml
+            </name></item><item><name>
+              res/values-v21/styles.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PastebinViewerActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

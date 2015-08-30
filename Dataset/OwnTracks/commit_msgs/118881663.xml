@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881663</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/696082ece4c34246a105f1132a6e7d2bf044eb39]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/696082ece4c34246a105f1132a6e7d2bf044eb39]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:19:26</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/696082ece4c34246a105f1132a6e7d2bf044eb39]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixed getInt preferences for public, fixed card support
+    </title><numberfile>
+      16 changed files
+    </numberfile><source_file><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityPreferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/DrawerFactory.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/layout/activity_preferences_broker.xml
+            </name></item><item><name>
+              src/main/res/layout/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_host.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_identification.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_options.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_security.xml
+            </name></item><item><name>
+              src/main/res/layout/toolbar.xml
+            </name></item></source_file></item></commit></extraction>

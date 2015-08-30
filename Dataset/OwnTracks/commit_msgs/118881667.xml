@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881667</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/4f57ece229f38603c715096a1fdc0c6c911ce614]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/4f57ece229f38603c715096a1fdc0c6c911ce614]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:19:42</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/4f57ece229f38603c715096a1fdc0c6c911ce614]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      smoother drawer layout
+    </title><numberfile>
+      4 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityPreferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/DrawerFactory.java
+            </name></item></source_file></item></commit></extraction>

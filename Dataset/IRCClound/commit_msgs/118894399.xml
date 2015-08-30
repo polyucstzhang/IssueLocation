@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894399</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3fdc89b075b20da2eed40748e5e48dc08ff48650]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3fdc89b075b20da2eed40748e5e48dc08ff48650]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:13:52</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3fdc89b075b20da2eed40748e5e48dc08ff48650]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Custom 2-line notification layout
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-ldpi/ic_stat_notify.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_stat_notify.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_stat_notify.png
+            </name></item><item><name>
+              res/layout-v11/notification.xml
+            </name></item><item><name>
+              res/layout-v11/notification_expanded.xml
+            </name></item><item><name>
+              res/layout/notification.xml
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

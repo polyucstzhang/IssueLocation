@@ -1,0 +1,3 @@
+<extraction><id>#135</id><title>TextView.java line 6668</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/550f75085141dcfd8f34c8e9</description><comments>Can you give me more information about this, may be stack trace? This is one of several, caused by a Stack Overflow in the navigation drawer. If you can solve those, you're my hero. Not sure if it's the library, my usage of the library or a plain Android bug.  should be fixed in next build Has any one know that why this issue is occured? yes, it's caused by allocating the sidebar drawer more than once. This is
+fixed in the next build.</comments></extraction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893921</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/eca43bd0398c71ce646dc0268416094d60d2f772]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/eca43bd0398c71ce646dc0268416094d60d2f772]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:56:39</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/eca43bd0398c71ce646dc0268416094d60d2f772]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix launching from notification
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832668</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/20]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/20]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:57:46</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/20]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#20</id><title>Keep cached map images when the device orientation changes</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on May 30, 2010 00:50:01
+
+When the orientation of the device changes, the map application is
+restarted via the Android framework. Restarting the application involves a
+shutdown of the existing MapView. When the existing MapView is detached
+from the window, RAM and SD card cache get erased. Even if a new MapView is
+created immediately afterwards, both caches are empty and all map tiles
+have to be regenerated.
+
+To fix this, the MapView needs to be improved so that it is possible to
+keep the SD card cache contents when the application gets destroyed.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=20
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on March 13, 2011 01:45:31
+
+In revision r920 this feature has been implemented in the map library. It may be configured via MapView.setMemoryCardCachePersistence(boolean). An entry has been added to the AMV preferences menu to activate it.
+
+If the MapView operates in rendering mode, some POI labels might be truncated after resuming the application. To fix this issue the DependencyCache must be serialized as well, which is not yet implemented.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 29, 2011 07:13:50
+
+The coordinates of a tile are fixed, no matter if the map is displayed vertically or horizontally. If you look at the current trunk, you can see that many core data model classes like "Tile" and "GeoPoint" already implement the "Serializable" interface. So if your code makes use of these classes, it should be easy to make all necessary classes serializable.
+
+Persistency of the memory card cache can already be activated via the API, there is also an option to set this in the preferences of the AMV. So implementing this correctly in the map labeling code is really the last thing missing in order to activate this nice feature by default.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:28 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:28 PM GMT+8</closetime></item></BR></extraction>

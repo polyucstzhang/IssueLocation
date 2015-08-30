@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894416</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/64bad06851043b10e643eb5723a9ffaa6f56b844]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/64bad06851043b10e643eb5723a9ffaa6f56b844]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:14:26</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/64bad06851043b10e643eb5723a9ffaa6f56b844]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a bug where the saved instance state's cid would be used instead …
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

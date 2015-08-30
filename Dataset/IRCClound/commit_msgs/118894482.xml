@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894482</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/781034571c6af2bb2eb2aafac1816ac3fffda92e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/781034571c6af2bb2eb2aafac1816ac3fffda92e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:16:40</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/781034571c6af2bb2eb2aafac1816ac3fffda92e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Grouped notifications for each bid
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NotificationDismissBroadcastReceiver.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

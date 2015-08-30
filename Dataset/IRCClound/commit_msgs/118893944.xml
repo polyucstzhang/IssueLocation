@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893944</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/63b8792e265e0ee0ebbda61b2a57292c6379b05b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/63b8792e265e0ee0ebbda61b2a57292c6379b05b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:57:29</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/63b8792e265e0ee0ebbda61b2a57292c6379b05b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Don't lock the UI thread while building the messaage table
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

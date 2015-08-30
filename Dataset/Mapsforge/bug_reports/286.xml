@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830308</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/286]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/286]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:49:50</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/286]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#286</id><title>Make the overlay architecture more flexible</title><description>
+
+    
+      
+          From andrea.a...@gmail.com on March 31, 2012 09:14:32
+
+In order to be able to create third party overlays extending the Overlay class, there is the need to make two methods of the Overlay class public (they are package visible now)
+
+    final void changeSize()
+    boolean sizeHasChanged()
+
+
+Also, to be able to reference existing library overlays (ex. OverlayWay and OverlayItem) from outside the lib, some of their methods also would need to be public.
+
+I attach a simple patch to better describe the action.
+
+Attachment: third_party_overlays.diff
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=286
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From andrea.a...@gmail.com on April 02, 2012 05:20:23
+
+I decided to bundle each overlay I have into one single custom overlay (due to memory issues, on a tab, already 2 overlays are too much :( ). But I have to say that even if the overlay "multiplication" isn't well design, the overlay rendering is amazing and I can live with that until you make it better :)
+
+At the moment I am more or less done with prototyping and will be testing this in geopaparazzi in the field. The only thing that forces me to keep a fork of mapsforge right now is the package visibility of the Overlay methods. Would you consider to "free" those?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From andrea.a...@gmail.com on May 03, 2012 00:34:05
+
+Is it somehow possible to follow the evolution of this? 
+Is there the possibility to enable a commits mailinglist?
+I checked the svn logs, but it seems this development is taking place somewhere else?
+
+I am obviously not stressing or bothering, but if it is possible, I would love to see what is going on under the hood, since it will heavily influence decisions I will make about geopaparazzi.
+
+Thanks for the good work man.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on May 19, 2012 06:45:16
+
+Thanks for the information, i have just fixed that in revision r2019 .
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From IJTurton on June 14, 2012 08:47:19
+
+juat to add my vote to re-adding onTouch or onTap events
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on May 19, 2013 03:43:27
+
+This is fixed in the upcoming 0.4.0 version. There will not be any changes or fixes for this issue in the 0.3 branch.
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:50 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:50 PM GMT+8</closetime></item></BR></extraction>

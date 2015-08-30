@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881679</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/aaab8823debe304bc5ae3d4489989b810238ee1b]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/aaab8823debe304bc5ae3d4489989b810238ee1b]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:20:10</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/aaab8823debe304bc5ae3d4489989b810238ee1b]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed removal of item from Unmodifiable collection
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBeacon.java
+            </name></item></source_file></item></commit></extraction>

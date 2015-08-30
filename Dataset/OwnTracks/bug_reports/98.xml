@@ -1,0 +1,18 @@
+<extraction><id>#98</id><title>Opening Exports</title><description> Opening backup file comes with every file extension. As of backups will be saved as .otrc file, I think, it would be better, that .otrc is kombined with opening with "export", see: http://bka.li/Screenshot_2015-02-23-16-36-41.pngAlso a rename from "Export" to something like "Import to owntracks" would be nice</description><comments>Noticed those points too. 
+I've not contributed the export code and file extensions in Android are generally a bit weird. Will see what I can do.  About file extension association, please read my comment dated Nov-9 on
+https://github.com/owntracks/android/issues/7
+
+Let me know if you have any suggestion other than what I have already
+suggested in the comment.
+
+Max I think I found a mix of intent filters that are working quite good now. At least imports from the Gmail app, Google Drive and Dropbox are working now.
+
+I also split up the import and export into two activities and added a preview screen to review the configuration before importing it.
+
+I'll submit a Play Store beta this week I think. There will be a lot of things that need testing. Hi
+I also played with filters a lot but I found that different apps set different mine type so what a filter that works for gmail might not work for another email client at all.
+
+The more restrictive the filter is the higher is the risk that association won't work with some app.  Which is why I went for a loose filter which basically accept ALL.
+
+Max Have a look at my changes: https://github.com/owntracks/android/blob/master/AndroidManifest.xml#L53
+I also moved the filters into the activity element. Before they were in the application element and Android Lint was complaining about misplaced elements. I cannot say if your or this new solution is better or why this works differently but as long as the results are ok I'm fine with that :D This also works when opening an otrc from the Downloads app.   Testing 0.5.04 (APK). Import works fine here. Where can I get 0.5.04 for testing? In the repo, directory /apk Or wait an hour to get it on Google Play. Very nice :) Make sure to join the Beta Program in the Google Plus community to be able to install the new version. Search for org.owntracks.android in the store so you don't get the old app (now called Owntracks Legacy). I've got 0.5.03 from here. Isn't it org.owntracks.android? Opening import work solid now. </comments></extraction>

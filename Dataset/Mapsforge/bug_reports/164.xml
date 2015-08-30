@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831536</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/164]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/164]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:53:9</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/164]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#164</id><title>germany map is defect in level 10 near Cologne (Köln)</title><description>
+
+    
+      
+          From juscho....@gmail.com on August 08, 2011 09:57:13
+
+What steps will reproduce the problem? 1. Zoom into zoom level 10 of germany map 2.4 (20011/08/07) and older 
+   2.3 versions What is the expected output? What do you see instead? map but white screen What version of the product are you using? On what operating system? Locus 1.9.6 Android 2.2 Please provide any additional information below.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=164
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From shortiea...@gmx.net on August 08, 2011 07:48:53
+
+germany-0.2.4-Bonn-MapInfo.png :
+Information about the germany map version
+
+germany-0.2.4-Bonn-NOK.png :
+above Bonn, only whitespaces (zoomlevel 10)
+
+germany-0.2.4-Bonn-OK.png :
+with higher zoom levels, the whitespaces disappear!
+
+Attachment: germany-0.2.4-Bonn-MapInfo.png germany-0.2.4-Bonn-NOK.png germany-0.2.4-Bonn-OK.png
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From karsten.groll on August 30, 2011 10:39:03
+
+I have tried to recreate the bug. I have used AdvancedMapViewer-0.2.4.apk and Germany-0.2.4.map on a Nexus One (with Cyanogen 7 ). I could not find any errors on any zoom level around Köln / Bonn.  
+
+
+Can you please provide me new screenshots with tile frames and tile coordinates activated? You can enable these by pressing Menu -&gt; Settings -&gt; Tile frames / Tile coordinates.
+If you know how to use Logcat: Could you please paste the log output?
+
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From francwal...@gmail.com on December 23, 2011 14:11:15
+
+Is there some news to this issue? 
+It is still broken near cologne.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From wow...@googlemail.com on February 09, 2012 03:53:01
+
+appendix
+in version 4.8.0 of oruxmaps on htc legend this error was not present. in version 4.8.1 on nexus s it is present.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:40 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:40 PM GMT+8</closetime></item></BR></extraction>

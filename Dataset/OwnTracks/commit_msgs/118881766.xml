@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881766</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/f6aec68f368cb0d182c903c8f1589fe9f3e37bcf]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/f6aec68f368cb0d182c903c8f1589fe9f3e37bcf]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:55</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/f6aec68f368cb0d182c903c8f1589fe9f3e37bcf]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Create branch test
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item></source_file></item></commit></extraction>

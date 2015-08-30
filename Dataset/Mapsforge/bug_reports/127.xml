@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831801</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/127]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/127]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:54:22</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/127]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#127</id><title>Offer downloadable map files for more countries and regions</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on June 08, 2011 23:34:39
+
+At the moment the mapsforge FTP server ( ftp://ftp.mapsforge.org/ ) offers map files only for Germany and its 16 federal states. This is way too little. We should aim to offer map files for all European countries and also for other countries on other continents (like for example the USA, Australia and Japan).
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=127
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From fritz.mu...@gmail.com on June 21, 2011 06:19:59
+
+There are lots of files available for gmapsup.img format. Lots are also based on OSM. Look for example on: http://downloads.cloudmade.com/ or: http://wiki.openstreetmap.org/wiki/OSM_Map_On_Garmin/Download If alternate use of this widly distributed format wule be possible - or an conversion to the mapsforge format - this would immediatley enable worldwide coverage of maps and open the way for the apps starting to use this libs. (I use LOCUS). Used to use GLOPUS on Windows mobile some time back - and had good experience with this format lots of free sources available (e.g. altitude line files...)
+Thanks for this interesting project !
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on July 11, 2011 11:04:36
+
+Issue 149 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on January 07, 2012 09:23:09
+
+scandinavian countries will be uploaded with the next weekly map file update
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From cooper....@gmail.com on February 06, 2012 20:00:24
+
+I found maps for New York and California, but would love them for Ohio. Either on the server or a detailed guide to build them myself.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on April 23, 2012 11:50:55
+
+We now cover much more countries at http://download.mapsforge.org/maps/ . If any countries are still missing, please open a new issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:37 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:37 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,71 @@
+<extraction><id>#16</id><title>[CLOSED] iOS MQQtitude TLS connection issues</title><description> Issue by therealprologic from Friday Jan 03, 2014 at 05:54 GMT
+Originally opened as binarybucks/mqttitude#245Not sure if this is a bug or mis-configuration but I'm not able to get the IOS client connected and see this error on the broker side:Any ideas?</description><comments>Comment by jpmens from Friday Jan 03, 2014 at 08:48 GMTWhich broker are you running with what version?This looks a bit as though you have it configured to TLSv2, but the iOS app does TLSv1. Comment by therealprologic from Friday Jan 03, 2014 at 08:50 GMTmosquitto 1.2.3 configured with tlsv1 :/
+(double checks)James Mills / prologicE: prologic@shortcircuit.net.au
+W: prologic.shortcircuit.net.auOn Fri, Jan 3, 2014 at 6:48 PM, JP Mens notifications@github.com wrote:Which broker are you running with what version?This looks a bit as though you have it configured to TLSv2, but the iOS
+app does TLSv1. 
+Reply to this email directly or view it on GitHubbinarybucks/mqttitude#245 (comment)
+. Comment by jpmens from Friday Jan 03, 2014 at 08:58 GMTAnd you have copied / installed the CA certificate onto your device?
+Please also double-check that you've set TLS on in MQTTitude's Expert settings :) Comment by therealprologic from Friday Jan 03, 2014 at 09:03 GMTYes and Yes."Clicked" on "ca.crt" in the iPhone's Mail App.
+"Clicked" Install.
+Prompted for Phone's PIN.TLS is enabled in Expert Settings (had to do this for a few others things
+anyway!)cheers
+JamesJames Mills / prologicE: prologic@shortcircuit.net.au
+W: prologic.shortcircuit.net.auOn Fri, Jan 3, 2014 at 6:58 PM, JP Mens notifications@github.com wrote:And you have copied / installed the CA certificate onto your device?
+Please also double-check that you've set TLS on in MQTTitude's Expert
+settings :) 
+Reply to this email directly or view it on GitHubbinarybucks/mqttitude#245 (comment)
+. Comment by jpmens from Friday Jan 03, 2014 at 09:06 GMTCan you show us your mosquitto.conf? Comment by therealprologic from Friday Jan 03, 2014 at 09:11 GMTpid_file /var/run/mosquitto.pid
+port 8883
+cafile /etc/mosquitto/TLS/ca.crt
+certfile /etc/mosquitto/TLS/localhost.crt
+keyfile /etc/mosquitto/TLS/localhost.key
+tls_version tlsv1
+persistence true
+persistence_location /var/lib/mosquitto/
+log_dest file /var/log/mosquitto.log
+log_dest topic
+log_type error
+log_type warning
+log_type notice
+log_type information
+log_type all
+log_type debug
+password_file /etc/mosquitto/passwdJames Mills / prologicE: prologic@shortcircuit.net.au
+W: prologic.shortcircuit.net.auOn Fri, Jan 3, 2014 at 7:06 PM, JP Mens notifications@github.com wrote:Can you show us your mosquitto.conf?egrep -v '^(#|$)' mosquitto.conf 
+Reply to this email directly or view it on GitHubbinarybucks/mqttitude#245 (comment)
+. Comment by jpmens from Friday Jan 03, 2014 at 09:15 GMTCould you please change toI'm not completely sure, but according to mosquitto.conf(7), port sets the port number for the default (i.e. non TLS?) listener... Comment by therealprologic from Friday Jan 03, 2014 at 09:17 GMTOh I see :) Hmmm this could be a case of
+"I'm stupid and didn't read the man page"!I'll report back!cheers
+JamesJames Mills / prologicE: prologic@shortcircuit.net.au
+W: prologic.shortcircuit.net.auOn Fri, Jan 3, 2014 at 7:15 PM, JP Mens notifications@github.com wrote:Could you please changeport 8883tolistener 8883I'm not completely sure, but according to mosquitto.conf(7), port sets
+the port number for the default (i.e. non TLS?) listener... 
+Reply to this email directly or view it on GitHubbinarybucks/mqttitude#245 (comment)
+. Comment by jpmens from Friday Jan 03, 2014 at 09:17 GMTAlso, can you access your own Mosquitto server with the CLI tools? Comment by therealprologic from Friday Jan 03, 2014 at 09:25 GMTYes of course :) That's the first thing I got working!James Mills / prologicE: prologic@shortcircuit.net.au
+W: prologic.shortcircuit.net.auOn Fri, Jan 3, 2014 at 7:17 PM, JP Mens notifications@github.com wrote:Also, can you access your own Mosquitto server with the CLI tools?mosquitto_sub -h hostname -p 8883 --cafile ca.crt --tls-version tlsv1 --insecure -t '#' -v 
+Reply to this email directly or view it on GitHubbinarybucks/mqttitude#245 (comment)
+. Comment by therealprologic from Friday Jan 03, 2014 at 09:32 GMTSo yes embarrassingly that fixed that issue.
+Now the App claims it's user/pass is not correct.Seems to work okay on my Android device.cheers
+JamesJames Mills / prologicE: prologic@shortcircuit.net.au
+W: prologic.shortcircuit.net.auOn Fri, Jan 3, 2014 at 7:24 PM, James Mills prologic@shortcircuit.net.auwrote:Yes of course :) That's the first thing I got working!James Mills / prologicE: prologic@shortcircuit.net.au
+W: prologic.shortcircuit.net.auOn Fri, Jan 3, 2014 at 7:17 PM, JP Mens notifications@github.com wrote:Also, can you access your own Mosquitto server with the CLI tools?mosquitto_sub -h hostname -p 8883 --cafile ca.crt --tls-version tlsv1 --insecure -t '#' -v 
+Reply to this email directly or view it on GitHubbinarybucks/mqttitude#245 (comment)
+. Comment by jpmens from Friday Jan 03, 2014 at 09:38 GMTThen username/password are incorrect. ;-)Also: please make sure device names (specifically clientIDs) are different or the apps will kick eachother off the MQTT broker (MQTT clientIDs MUST be unique) Comment by therealprologic from Friday Jan 03, 2014 at 09:44 GMTAhh :) Yes username was an uppercase letter in it.
+(Stupid iOS auto-correct!)RE: clientID - Is it worth mentioning the fact that iOS
+APp leaves this blank and doesn't auto fill it out with something
+like the MAC Address of the Phone (Like the Android version does?)cheers
+JamesJames Mills / prologicE: prologic@shortcircuit.net.au
+W: prologic.shortcircuit.net.auOn Fri, Jan 3, 2014 at 7:38 PM, JP Mens notifications@github.com wrote:Then username/password are incorrect. ;-)Also: please make sure device names (specifically clientIDs) are different
+or the apps will kick eachother off the MQTT broker (MQTT clientIDs MUST be
+unique) 
+Reply to this email directly or view it on GitHubbinarybucks/mqttitude#245 (comment)
+. Comment by jpmens from Friday Jan 03, 2014 at 09:46 GMTThe field isn't autofilled, but its value is: you can confirm looking at Status in the app's main screen. Comment by jpmens from Friday Jan 03, 2014 at 09:47 GMTDo feel free to add notes to the Wiki, if you find information is missing there. Comment by therealprologic from Friday Jan 03, 2014 at 09:47 GMTAhh yeap all good!James Mills / prologicE: prologic@shortcircuit.net.au
+W: prologic.shortcircuit.net.auOn Fri, Jan 3, 2014 at 7:46 PM, JP Mens notifications@github.com wrote:The field isn't autofilled, but its value is: you can confirm looking at
+Status in the app's main screen. 
+Reply to this email directly or view it on GitHubbinarybucks/mqttitude#245 (comment)
+. Comment by therealprologic from Friday Jan 03, 2014 at 09:51 GMTYup will do :) Might blog about it too just to
+cover my experiences so far!James Mills / prologicE: prologic@shortcircuit.net.au
+W: prologic.shortcircuit.net.auOn Fri, Jan 3, 2014 at 7:47 PM, JP Mens notifications@github.com wrote:Do feel free to add notes to the Wiki, if you find information is missing
+there. 
+Reply to this email directly or view it on GitHubbinarybucks/mqttitude#245 (comment)
+. Comment by jpmens from Friday Jan 03, 2014 at 09:57 GMTGladly! ;-) Comment by ckrey from Saturday Jan 04, 2014 at 14:12 GMTThe initially reported problem: SSL_GET_PREV_SESSION:session id context uninitialized
+still exists and we only have a workaround in place.
+see ckrey/MQTTInspector#35</comments></extraction>

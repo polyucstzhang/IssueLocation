@@ -1,0 +1,1 @@
+<extraction><id>#76</id><title>Waypoint radius lacks unit</title><description> The "Radius" field when creating or editing a waypoint doesn't specify a unit of measure, it's and entirely dimensionless unit. Is it feet, meters, cubits, angstroms?</description><comments>Meters Jep it's meters. A clear label has also been added to the master branch code. </comments></extraction>

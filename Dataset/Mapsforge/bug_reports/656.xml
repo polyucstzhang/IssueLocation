@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>119526767</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/656]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/656]]></realpath><theme>maps_656</theme><middle>default</middle><createdate>2015-8-25 16:3:15</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/656]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#656</id><title>AndroidPreferences.putLong does not modify the SharedPreferences</title><descrption>
+
+    
+      
+          putLong(String key, long value) method under org.mapsforge.map.android.AndroidPreferences should call createEditor() before setting the key's value:
+
+createEditor();
+this.editor.putLong(key, value);
+      
+    
+
+  </descrption><comments> method under </comments><createtime>Aug 10, 2015, 3:50 AM GMT+8</createtime><closetime>Aug 10, 2015, 2:15 PM GMT+8</closetime></item></BR></extraction>

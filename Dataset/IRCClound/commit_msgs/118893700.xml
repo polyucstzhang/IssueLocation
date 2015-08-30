@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893700</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9d63ba9f4e8448c1e1801900880996e1a3fe1764]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9d63ba9f4e8448c1e1801900880996e1a3fe1764]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:48:26</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9d63ba9f4e8448c1e1801900880996e1a3fe1764]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      More login/splash improvements
+    </title><numbercommit>
+      10 changed files
+    </numbercommit><source_file><item><name>
+              enterprise-res/drawable-xhdpi/splashlogo.png
+            </name></item><item><name>
+              res/drawable-mdpi/logo_shape.png
+            </name></item><item><name>
+              res/drawable-xhdpi/logo_shape.png
+            </name></item><item><name>
+              res/drawable-xhdpi/splashlogo.png
+            </name></item><item><name>
+              res/drawable-xxxhdpi/login_logo.png
+            </name></item><item><name>
+              res/layout-land/activity_main.xml
+            </name></item><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894036</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/5e438c7f865103def65ca098427fd7f0bde208b5]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/5e438c7f865103def65ca098427fd7f0bde208b5]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:1:3</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/5e438c7f865103def65ca098427fd7f0bde208b5]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Wow! Such refactor! Many package! Very HashMap!
+    </title><numbercommit>
+      42 changed files
+    </numbercommit><source_file><item><name>
+              res/layout-sw600dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout-sw800dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout/activity_message.xml
+            </name></item><item><name>
+              res/layout/dialog_channelslist.xml
+            </name></item><item><name>
+              src/com/irccloud/android/CollapsedEventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/ColorFormatter.java
+            </name></item><item><name>
+              src/com/irccloud/android/DashClock.java
+            </name></item><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplication.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              src/com/irccloud/android/SonyExtensionService.java
+            </name></item><item><name>
+              src/com/irccloud/android/SonyRegistrationInformation.java
+            </name></item><item><name>
+              src/com/irccloud/android/BaseActivity.java → ...ccloud/android/activity/BaseActivity.java
+            </name></item><item><name>
+              ...cloud/android/EditConnectionActivity.java → ...roid/activity/EditConnectionActivity.java
+            </name></item><item><name>
+              ...irccloud/android/ImageViewerActivity.java → ...android/activity/ImageViewerActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java → ...ccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              ...com/irccloud/android/MessageActivity.java → ...oud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              ...irccloud/android/PreferencesActivity.java → ...android/activity/PreferencesActivity.java
+            </name></item><item><name>
+              ...m/irccloud/android/BuffersDataSource.java → ...cloud/android/data/BuffersDataSource.java
+            </name></item><item><name>
+              .../irccloud/android/ChannelsDataSource.java → ...loud/android/data/ChannelsDataSource.java
+            </name></item><item><name>
+              ...om/irccloud/android/EventsDataSource.java → ...ccloud/android/data/EventsDataSource.java
+            </name></item><item><name>
+              ...m/irccloud/android/ServersDataSource.java → ...cloud/android/data/ServersDataSource.java
+            </name></item><item><name>
+              ...com/irccloud/android/UsersDataSource.java → ...rccloud/android/data/UsersDataSource.java
+            </name></item><item><name>
+              .../irccloud/android/AcceptListFragment.java → .../android/fragment/AcceptListFragment.java
+            </name></item><item><name>
+              .../irccloud/android/AddChannelFragment.java → .../android/fragment/AddChannelFragment.java
+            </name></item><item><name>
+              ...com/irccloud/android/BanListFragment.java → ...oud/android/fragment/BanListFragment.java
+            </name></item><item><name>
+              ...ccloud/android/BufferOptionsFragment.java → ...droid/fragment/BufferOptionsFragment.java
+            </name></item><item><name>
+              ...irccloud/android/BuffersListFragment.java → ...android/fragment/BuffersListFragment.java
+            </name></item><item><name>
+              ...irccloud/android/ChannelListFragment.java → ...android/fragment/ChannelListFragment.java
+            </name></item><item><name>
+              ...cloud/android/ChannelOptionsFragment.java → ...roid/fragment/ChannelOptionsFragment.java
+            </name></item><item><name>
+              ...cloud/android/EditConnectionFragment.java → ...roid/fragment/EditConnectionFragment.java
+            </name></item><item><name>
+              .../irccloud/android/IgnoreListFragment.java → .../android/fragment/IgnoreListFragment.java
+            </name></item><item><name>
+              ...irccloud/android/MessageViewFragment.java → ...android/fragment/MessageViewFragment.java
+            </name></item><item><name>
+              ...m/irccloud/android/NamesListFragment.java → ...d/android/fragment/NamesListFragment.java
+            </name></item><item><name>
+              ...om/irccloud/android/NickservFragment.java → ...ud/android/fragment/NickservFragment.java
+            </name></item><item><name>
+              ...m/irccloud/android/UsersListFragment.java → ...d/android/fragment/UsersListFragment.java
+            </name></item><item><name>
+              ...com/irccloud/android/WhoListFragment.java → ...oud/android/fragment/WhoListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/WhoisFragment.java → ...cloud/android/fragment/WhoisFragment.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/IgnoreTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

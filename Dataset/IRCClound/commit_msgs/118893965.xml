@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893965</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/89efe1db5d009701146806c3ab3d3c67845405c5]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/89efe1db5d009701146806c3ab3d3c67845405c5]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:58:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/89efe1db5d009701146806c3ab3d3c67845405c5]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Only allow dragging from the drag handle so you can still scroll the …
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-mdpi/transform_move.png
+            </name></item><item><name>
+              res/drawable-xhdpi/move.png
+            </name></item><item><name>
+              res/drawable-xhdpi/transform_move.png
+            </name></item><item><name>
+              res/layout/reorderservers.xml
+            </name></item><item><name>
+              res/layout/row_reorder.xml
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/ServerReorderFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

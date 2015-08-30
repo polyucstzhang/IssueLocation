@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894939</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/0261e6c58141e6c405d60eddc9ad1b5a697b9f6e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/0261e6c58141e6c405d60eddc9ad1b5a697b9f6e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:29</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/0261e6c58141e6c405d60eddc9ad1b5a697b9f6e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Add the 'up' navigation to the MessageActivity action bar
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

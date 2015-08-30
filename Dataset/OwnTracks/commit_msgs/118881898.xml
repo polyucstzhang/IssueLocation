@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881898</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/e2073788092bb33d8755ffa8fd06d518b282f048]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/e2073788092bb33d8755ffa8fd06d518b282f048]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:29:26</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/e2073788092bb33d8755ffa8fd06d518b282f048]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed issue where location services were accessed when not connected
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item></source_file></item></commit></extraction>

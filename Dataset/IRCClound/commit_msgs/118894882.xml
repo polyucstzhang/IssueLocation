@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894882</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/2a0603d2aba0325b6abd95d8100e0ad651b62907]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/2a0603d2aba0325b6abd95d8100e0ad651b62907]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:27:24</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/2a0603d2aba0325b6abd95d8100e0ad651b62907]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      ListView-based message fragment
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/messageview_header.xml
+            </name></item><item><name>
+              res/layout/row_message.xml
+            </name></item><item><name>
+              res/layout/row_timestamp.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

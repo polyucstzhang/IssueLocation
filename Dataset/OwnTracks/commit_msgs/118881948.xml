@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881948</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/3c122db4cd912117d45c25234100293b323c3836]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/3c122db4cd912117d45c25234100293b323c3836]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:22</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/3c122db4cd912117d45c25234100293b323c3836]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Restored autostart on boot functionality
+    </title><numberfile>
+      9 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/layout/fragment_friends.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityLauncher.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ProxyableService.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocatorFused.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/BootCompleteReceiver.java
+            </name></item></source_file></item></commit></extraction>

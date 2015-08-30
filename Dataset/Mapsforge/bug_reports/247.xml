@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830801</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/247]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/247]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:50:53</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/247]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#247</id><title>force a process by MapActivity to prevent out of memory</title><description>
+
+    
+      
+          From smaucourt on February 03, 2012 10:03:04
+
+What steps will reproduce the problem? 1. by default, each activity use a same process.
+2. if we have several MapActivity, we occur an out of memory exception
+
+a way to prevent this problem is to force to use a different process by MaActivity.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=247
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From smaucourt on February 12, 2012 15:19:17
+
+i'll try to find a way.. but if it's possible to get the name of the current process and to throw a RuntimeException if it do not have a good name like ":Map1" .. to prevent memory exception.
+
+ex. from my own manifest.
+
+
+            android:name=".ui.Home"
+            android:icon="@drawable/icon"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:process=":Map1" &gt;
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From steffen....@gmail.com on February 16, 2012 05:21:30
+
+You are probably leaking references to the Activity or debugging the application.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:47 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:47 PM GMT+8</closetime></item></BR></extraction>

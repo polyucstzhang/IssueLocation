@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118827801</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/539]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/539]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:42:9</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/539]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#539</id><title>Some Areas Not Rendered on top of leisure=park Areas</title><description>
+
+    
+      
+          From dglsjpt...@gmail.com on October 31, 2014 17:42:25
+
+What steps will reproduce the problem? Viewing a mapsforge rendered map on my Android device does not show some area features in parks. They appear to be underneath the rendering of the park area, as exhibited by the second example of above.  Part of the natural=wood is showing to the left.  I have not tried testing other values for leisure, amenity or natural to know if it is for all of the key values or just some.
+
+example of natural=water and amenity=parking areas http://www.openstreetmap.org/#map=17/42.44246/-83.39889 example of natural=wood and amenity=parking areas http://www.openstreetmap.org/#map=17/42.28986/-83.52724 What is the expected output? What do you see instead? I would expect to see features like amenity=parking or natural=water to be rendered on top of areas tagged with leisure=park.  They do render properly outside of leisure=park areas. What version of the product are you using? On what operating system? I am using mapsforge through Locus Pro 3.3.1 (current as of now) on Android 4.4.2.  I am not certain which version of the mapsforge library is used by Locus.  I believe it is at least 0.3.
+
+Thank you.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=539
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From dglsjpt...@gmail.com on November 02, 2014 05:03:22
+
+I am not sure I understand what is meant by "define the z-order of the visible elements."  However, the question about themes proved to be an interesting and enlightening question.  All my testing had been by making map edits to see what resulted.  I had not gone back to any other themes to see if they rendered better.  
+
+I have a custom theme based originally off the Cycle HC theme in Locus.  I took features and symbols in other themes to make a superset as well as adding and adjusting zoom-mins.
+
+When I looked at Cycle HC I saw it rendered the water although not the wood.  After much comparison I eventually realized I had moved a few items back into the typical alphabetic order in the theme.  When I moved the water back to where it had been, the water started rendering on top of the park.  I moved certain leisure and landuse to the beginning of the file and the map now rendered more as expected.
+
+I am assuming order is important in the theme file and maps are generally rendered in that order.  Is that correct?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on November 03, 2014 03:46:37
+
+Status: Invalid  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 6:10 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:10 PM GMT+8</closetime></item></BR></extraction>

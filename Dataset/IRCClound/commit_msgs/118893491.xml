@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893491</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/6ba6d9581628f2ef360e35c24b0ef90e61da21ec]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/6ba6d9581628f2ef360e35c24b0ef90e61da21ec]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:40:35</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/6ba6d9581628f2ef360e35c24b0ef90e61da21ec]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      URL regex tests and minor tweaks to better match the web version
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/ColorFormatter.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/FormattingTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

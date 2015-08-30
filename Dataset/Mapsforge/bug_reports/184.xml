@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831286</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/184]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/184]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:52:33</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/184]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#184</id><title>Add contour lines from srtm osm</title><description>
+
+    
+      
+          From pschnapp...@web.de on October 11, 2011 23:03:13
+
+This is not a bug report but a feature request.
+
+As you might know the popular Android-App Oruxmap is know also using mapsforge to display maps. As it is an outdoor app it would be very useful if it also could disply contour lines. I am not an expert but as far as I could see the map files are created from osm files.
+
+I know there exist osm files from srtm data ( http://geoweb.hft-stuttgart.de/SRTM/ ).
+
+Here comes my question: Is it possible to add the contour lines using the osm srtm data?
+
+This would be a very very useful feature. And as Oruxmaps, which is very popular, is using it I am convinced this will boost mapsforge and make it much more popular. Oruxmaps in combination with mapsforge AND contour lines will be as good as Garmin topo maps.
+
+What do you think about it?
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=184
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on January 07, 2012 08:57:02
+
+Labels: -Priority-Medium Priority-Low  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on March 08, 2012 11:42:49
+
+Your experiments look really impressive! Could you please further comment on the approach you have chosen to incorporate the contour lines into the map? Did you modify the renderer or do you use the Overlay-API? What is the current status of your implementation? Do you intend to provide patch, so that we can potentially incorporate the code into the library?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From dido...@gmail.com on March 16, 2012 15:05:50
+
+Its time to show some "not so nice" rendering artifacts  :(
+
+series of screenshot was taken on different zoom level at same location...
+
+I discovered this behavior earlier in area rendering filled with patern and having casing around it
+
+Attachment: screenshot_01.png screenshot_02.png screenshot_03.png screenshot_04.png
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From hansundd...@googlemail.com on July 02, 2012 07:22:50
+
+Issue related to #325: https://code.google.com/p/mapsforge/issues/detail?id=325 By the way: Are there any activities to provide maps with contour lines?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on July 21, 2012 04:17:16
+
+Issue 325 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:42 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:42 PM GMT+8</closetime></item></BR></extraction>

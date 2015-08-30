@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828586</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/471]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/471]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:44:16</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/471]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#471</id><title>Scale dash strokes</title><description>
+
+    
+      
+          From tartami...@gmail.com on December 26, 2013 16:25:43
+
+I think it is incoherent to scale stroke-width according to zoom-level and leave dash-stroke untouched. Especially with round linecaps, when zooming in the actual dash distance decreases to the point that dashes touch each other(because of the growing linecap radius).
+There should be an option to scale both (similar to scale-radius for circles).
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=471
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on January 25, 2014 00:37:48
+
+The dash now scales together with the stroke width in Rescue.
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From pallai...@gmail.com on August 09, 2014 13:33:42
+
+Thanks for the looking! In this case the original report has been misunderstood. This ticket should be re-opened or closed with other reason.
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 6:04 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:04 PM GMT+8</closetime></item></BR></extraction>

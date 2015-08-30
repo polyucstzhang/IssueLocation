@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830064</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/320]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/320]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:48:51</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/320]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#320</id><title>Missing country map files on FTP server</title><description>
+
+    
+      
+          From f3lisca...@gmail.com on June 01, 2012 19:10:24
+
+Related: Issue 127 ( https://code.google.com/p/mapsforge/issues/detail?id=127 )
+
+There are still version 0.3.0 map files for some European countries missing on the ftp server. On first glance I found Denmark and Belgium missing. There might be more. I guess this is not high priority, but as developers are starting to transition away from 0.2.4 it would be nice to have them all.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=320
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From dassrock...@gmail.com on June 03, 2012 05:35:16
+
+Furthermore Albania, Bulgaria, Croatia, Estonia, Latvia and the french parts are missing.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From infim...@gmail.com on July 27, 2012 01:05:07
+
+And some maps are down:
+ greece.map              26-Jul-2012 17:43    0
+ hungary.map             26-Jul-2012 18:10    0
+ iceland.map             26-Jul-2012 18:24    0
+ ireland.map             26-Jul-2012 18:39    0
+ isle_of_man.map         26-Jul-2012 18:53    0
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From bigchips...@gmail.com on September 02, 2012 12:22:05
+
+the state of Maryland is missing from North America / United States .. it would be greatly appreciated if someone would add it...
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on October 11, 2012 10:48:45
+
+French map will be generated and made available soon
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on October 12, 2012 11:00:37
+
+@phols
+
+please provide a simple clip polygon for Thailand and/or Bangkok in the format as described at http://download.geofabrik.de/clipbounds/README
+
+Labels: -Type-Defect Type-Task  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From spe...@gmail.com on October 14, 2012 10:00:43
+
+Thank you so much for Madeira map!
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From hansgeor...@gmail.com on January 09, 2014 04:59:06
+
+single map of France is still lost
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on June 19, 2014 07:35:10
+
+I have added Thailand, unfortunately the cloudmade seem to have pivoted and do not do OSM related stuff any more, so the links to their download servers are outdated.
+
+To add other regions I need a polygon file and a start point (which should be the center of the capital or the region)
+
+Thailand should appear with next rendering at start of month.
+
+Status: Started  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I pushed some changes on map-creator repository:
+
+
+Rename back France centre to its OSM default.
+Move France 'outside Europe regions' to inherit from planet osm. I tried to make them build inside the europe/france folder. Ludwig will this work?
+Update the related polygons in case we had errors.
+
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:53 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:53 PM GMT+8</closetime></item></BR></extraction>

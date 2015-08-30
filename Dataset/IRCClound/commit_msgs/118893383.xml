@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893383</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/cbe04ae268994e6a336b737446d3979b0736258a]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/cbe04ae268994e6a336b737446d3979b0736258a]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:37:25</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/cbe04ae268994e6a336b737446d3979b0736258a]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a few crashes
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              make-iana-tld-pattern.py
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

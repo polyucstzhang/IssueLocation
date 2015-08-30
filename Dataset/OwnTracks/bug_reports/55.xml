@@ -1,0 +1,39 @@
+<extraction><id>#55</id><title>App crash on being flooded with messages</title><description> Android with latest app store version. App had been offline for a while. When connecting to broker it stayed connected for a few seconds, then disconnect.Broker logs show:This was reproducible. It appears to me as though lots of PUBs (all of which are at least QoS=1 and retained) to the app make it crash, or at least disconnect.I changed the clientID in app prefs, and could then connect and stay connected without a problem.</description><comments>The socket error looks like a Paho issue to me. I see if I can reproduce this and if so check if it still exists in the latest Paho build. I also see a similar issue that ends in a 'data disabled' disconnect after a socket error.On Mon, May 12, 2014 at 5:39 pm,  owntracks/android &lt;reply@reply.github.com&gt; wrote:            Android with latest app store version. App had been offline for a while. When connecting to broker it stayed connected for a few seconds, then disconnect.
+
+Broker logs show:
+
+New client connected from a.b.c.d as alx-y300 (c0, k900).
+Sending CONNACK to alx-y300 (0)
+Sending PUBREC to alx-y300 (Mid: 2)
+Sending PUBLISH to alx-y300 (d1, q1, r1, m6031, 'owntracks/jpm/5s', ... (96 bytes))
+Sending PUBLISH to alx-y300 (d1, q1, r1, m6032, 'owntracks/alx/y300', ... (112 bytes))
+Sending PUBLISH to alx-y300 (d1, q1, r1, m6033, 'owntracks/yyy/4s', ... (94 bytes))
+Sending PUBREC to alx-y300 (Mid: 20)
+Sending PUBLISH to alx-y300 (d1, q1, r1, m6034, 'owntracks/jpm/5s', ... (96 bytes))
+Sending PUBLISH to alx-y300 (d1, q1, r1, m6035, 'owntracks/alx/y300', ... (112 bytes))
+Sending PUBLISH to alx-y300 (d1, q1, r1, m6036, 'owntracks/yyy/4s', ... (94 bytes))
+Sending PUBLISH to alx-y300 (d1, q1, r1, m6037, 'owntracks/jpm/5s', ... (96 bytes))
+Sending PUBLISH to alx-y300 (d1, q1, r1, m6038, 'owntracks/alx/y300', ... (112 bytes))
+Sending PUBLISH to alx-y300 (d1, q1, r1, m6039, 'owntracks/yyy/4s', ... (94 bytes))
+Sending PUBREC to alx-y300 (Mid: 23)
+Sending PUBLISH to alx-y300 (d1, q1, r0, m6040, 'owntracks/yyy/4s', ... (96 bytes))
+Sending PUBREC to alx-y300 (Mid: 24)
+Sending PUBLISH to alx-y300 (d1, q1, r0, m6041, 'owntracks/yyy/4s', ... (96 bytes))
+Sending PUBLISH to alx-y300 (d1, q1, r0, m6042, 'owntracks/yyy/4s', ... (95 bytes))
+Sending PUBLISH to alx-y300 (d1, q1, r0, m6043, 'owntracks/yyy/4s', ... (95 bytes))
+Sending PUBREC to alx-y300 (Mid: 25)
+Sending PUBREC to alx-y300 (Mid: 26)
+Sending PUBREC to alx-y300 (Mid: 28)
+Sending PUBREC to alx-y300 (Mid: 30)
+Sending PUBREC to alx-y300 (Mid: 32)
+Sending PUBREC to alx-y300 (Mid: 33)
+Sending PUBREC to alx-y300 (Mid: 34)
+Sending PUBLISH to alx-y300 (d0, q0, r0, m0, 'owntracks/alx/y300', ... (37 bytes))
+Socket read error on client alx-y300, disconnecting.
+
+
+This was reproducible. It appears to me as though lots of PUBs (all of which are at least QoS=1 and retained) to the app make it crash, or at least disconnect.
+
+I changed the clientID in app prefs, and could then connect and stay connected without a problem.
+
+ Reply to this email directly or view it on GitHub. We've seen the 'data disabled' **very frequently** here; I was assuming some issue with the device. Nope, I think that's some new issue in the broker service. Getting a solid connection with 20 qos=1 messages.  Syslog of my DHCP and broker server shows a new DHCP request when Owntracks disconnects right after I start the app. Sometimes it seems to hang with DATA_DISABLED, sometimes it connects again. In the event of the disconnect, the NetInfo shows the network as online.  Unable to reproduce with master and latest Paho client. Reopen if it occurs again. </comments></extraction>

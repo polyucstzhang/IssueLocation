@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829578</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/378]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/378]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:47:9</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/378]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#378</id><title>MapView resize OutOfMemory at createBitmap</title><description>
+
+    
+      
+          From devemu...@gmail.com on November 25, 2012 19:35:54
+
+What steps will reproduce the problem? 1. I have a map view with a map file loaded.
+2. I resize programmatically the map view window, trying both ways from full screen to smaller window and from smaller window to full screen.
+3. I try on tablets or emulator with big resolution (~ 1280 x 800) What is the expected output? What do you see instead? I expect the map to resize and function properly.
+Instead I see "OutOfMemoryError: bitmap size exceeds VM budget"" at FrameBuffer and/or OverlayController at the points where they re-create their bitmaps after the size change. What version of the product are you using? On what operating system? I use the latest trunk version. Please provide any additional information below. In smaller resolutions I see no out of memory errors at map view resize. I don't know if the recycle of the bitmaps before their recreation is not fast enough and there are out of memory errors at map view resize at large resolutions.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=378
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on December 19, 2012 02:41:25
+
+Hi,
+
+I try your clone version. Unfortunately I still seet memory issues at devices with large resolutions ~720p
+
+Also I see the known phenomenon of:
+java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+    at android.graphics.Bitmap.nativeCreate(Native Method)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:477)
+    at org.mapsforge.android.maps.overlay.OverlayController.changeSize(OverlayController.java:148)
+that occurs every second start of application. That is 1st time the app starts normally - I close it, 2nd with OOM error, 3rd normally - I close it, 4th with OOM etc.
+After the OOM error the android VM closes the app, probably clearing its heap, so next time there is free memory to use?
+At app close there are still leftovers of bitmaps that occupy memory?
+
+I want to make more tests on the tablet I initially noticed the OOM (a LG Optimus Pad V900) but it isn't available right now.
+
+Thanks.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on December 21, 2012 00:24:36
+
+Alas I rushed with my results..
+More rarely but still occur OOM errors at map view resize caused from map rotate (1280x768 &lt;-&gt; 1492x1492)
+
+java.lang.OutOfMemoryError
+    at android.graphics.Bitmap.nativeCreate(Native Method)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:604)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:584)
+    at org.mapsforge.android.maps.overlay.OverlayController.changeSize(OverlayController.java:148)
+
+The only solution I have found for my app is to have always the map view at expanded size, Math.hypot(w, h) i.e. 1492x1492 and don't resize it at all.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on December 23, 2012 11:57:39
+
+Thanks for the clarifications. 
+
+After I had posted this fix in a hurry, I thought that it would not actually fix the problem as a orientation change will probably not result in a view exactly the same size as there is some more stuff on the screen (like the action bar). Maybe a way would be to only allocate if it is bigger or substantially smaller (so a reallocation would generally happen once to go to the larger of the portrait/landscape orientation).
+
+The one other thing I am still unclear about is how the aspect ratio of the bitmap actually does not make a difference as long as there is enough space, but I have not spotted a problem with it.
+
+I will play a bit more with it and hope to get out another patch sometime before the end of the year. 
+
+Thanks everyone for their input. Happy holidays.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on January 14, 2013 02:00:55
+
+I pushed most of the changes proposed in my branch. See the commit for details.
+I have not added the change where the bitmap is not reallocated if it is already large enough regardless of aspect. Not only had this not received sufficient testing, I also feel that just ignoring the x/y size of the bitmap is asking for trouble.
+
+This change still does not fully address all of the issues re bitmap reallocation. For Android versions prior to 3.0 the bitmap problem seems a bit intractable, but if anyone has any further good ideas please submit them. I am leaving this issue open for the time being.
+
+Labels: -Priority-High Priority-Medium  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:58 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:58 PM GMT+8</closetime></item></BR></extraction>

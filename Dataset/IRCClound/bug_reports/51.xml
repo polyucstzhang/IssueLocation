@@ -1,0 +1,1 @@
+<extraction><id>#51</id><title>Handle backlog download failures better</title><description> Sometimes the backlog doesn't download and doesn't trigger the error handler, so the user is presented with the modal Add Connection dialog</description><comments> </comments></extraction>

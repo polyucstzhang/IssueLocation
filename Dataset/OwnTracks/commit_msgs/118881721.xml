@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881721</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/202250115fb7dde381afcbd22452e280eb9626f3]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/202250115fb7dde381afcbd22452e280eb9626f3]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:21:59</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/202250115fb7dde381afcbd22452e280eb9626f3]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Rewrote keystore handling for </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item></source_file></item></commit></extraction>

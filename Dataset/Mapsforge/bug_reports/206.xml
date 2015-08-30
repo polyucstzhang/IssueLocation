@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831027</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/206]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/206]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:51:57</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/206]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#206</id><title>open-cycle based maps</title><description>
+
+    
+      
+          From thd...@googlemail.com on November 15, 2011 11:10:28
+
+What steps will reproduce the problem? 1.download files from http://download.mapsforge.org/ What is the expected output? What do you see instead? I worked with open-cycle maps in bitmap format. It seems to be much more usefull for outdoor navigation. Is there a plan to generate open-cycle based maps in mapsforge format? Would be great! What version of the product are you using? On what operating system? Latest orux maps on android 2.2.3 (LG P 350) Please provide any additional information below. Open-cycle maps as mapsforge data would blame any professionals like garmin etc.
+
+Thanks a lot - Thomas
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=206
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on January 07, 2012 08:48:50
+
+Status: WontFix  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Bikingo4...@googlemail.com on January 22, 2012 05:58:18
+
+Dear Thilo, 
+
+thanks for your detailed answer. I think I began to understand the system of OSM. You mean, that all those cycle routes are included within the full vector maps but a special xml file is needed to display them. With 0.3 it would be possible to extract these data and display them. That sounds great! Does this new approach need an update of OruxMaps as well? Or would this function be available with the publication of your 0.3.0 version without an Orux-update?
+
+Finally best wishes for you and your team for doing this fabulous work :). 
+
+If someony would write a OCM.xml or something like that, a dream would come true for many cyclists :D. Or is there a manual for these steps?
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:44 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:44 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894196</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/2d605b389aea6c47cc73afa97eff69afe1c1914b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/2d605b389aea6c47cc73afa97eff69afe1c1914b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:6:44</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/2d605b389aea6c47cc73afa97eff69afe1c1914b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Show 'join channel' button when a connection has no buffers
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/color/row_label_join.xml
+            </name></item><item><name>
+              res/drawable/row_buffer_bg_join.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

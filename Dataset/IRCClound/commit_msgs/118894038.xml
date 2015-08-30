@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894038</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/97d0244b3e15d8c67f4f82f03d1073af14e15148]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/97d0244b3e15d8c67f4f82f03d1073af14e15148]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:1:7</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/97d0244b3e15d8c67f4f82f03d1073af14e15148]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Update the background colors for highlights, self, and notices. Use a…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

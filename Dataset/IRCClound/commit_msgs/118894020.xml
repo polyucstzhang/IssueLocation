@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894020</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b5e414cf47f6d8afe0f553b4da7bb6cac6f20d3b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b5e414cf47f6d8afe0f553b4da7bb6cac6f20d3b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:0:22</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b5e414cf47f6d8afe0f553b4da7bb6cac6f20d3b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Refactor MessageActivity and MessageViewFragment to use a Buffer obje…
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

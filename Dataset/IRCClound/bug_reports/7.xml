@@ -1,0 +1,1 @@
+<extraction><id>#7</id><title>HTTP Proxy support</title><description> The websockets library currently opens a direct socket connection, change this to check the system's HTTP proxy settings and connect via the proxy if required by the user's APN</description><comments> </comments></extraction>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828043</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/526]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/526]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:42:33</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/526]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#526</id><title>Train stations and roundabouts are dropped by mapsforge-map-writer</title><description>
+
+    
+      
+          From yst...@gmail.com on September 23, 2014 10:33:07
+
+What steps will reproduce the problem? 1. Obtain an OSM with train stations (building=train_station, railway=station) or roundabouts (junction=roundabout, highway=*).
+2. Convert the OSM to MAP using mapsforge-map-writer. What is the expected output? What do you see instead? The train stations and roundabouts should be in the output MAP file, but they are dropped by the writer. What version of the product are you using? On what operating system? Latest master revision - 25b5f2d, on Linux. Please provide any additional information below. The problem should be due to the OSMUtils.isArea(way) checking in TDWay.java. Removing the checking can solve the issue.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=526
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From yst...@gmail.com on October 23, 2014 14:35:43
+
+For train station, way ID: 199004441.
+For roundabout, way ID: 42391108.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on November 07, 2014 10:57:01
+
+Sorry, that previous fix and comments were totally wrong. 
+
+I have commited a new fix 578078a which fixes the roundabout issue as well. (The bug introduced was that if a way with matching endpoints is not an area, it was dropped entirely).
+
+The new change has been pushed to dev, I checked with the Hong Kong area in question and both the roundabout and the railway station are there.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on November 10, 2014 00:21:02
+
+Thanks for checking, I will advance the code to master branch.
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 6:08 PM GMT+8</createtime><closetime>Nov 8, 2014, 5:17 AM GMT+8</closetime></item></BR></extraction>

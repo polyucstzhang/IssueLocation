@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828847</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/440]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/440]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:45:11</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/440]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#440</id><title>Map Tiles completely distorted after panning/zooming on Sony Xperia</title><description>
+
+    
+      
+          From c.step...@wwu.de on July 06, 2013 18:27:35
+
+I am using mapsforge 0.3.0 to show a map together with a way overlay. I am facing the problem that the map is completely distorted as soon as I start zooming or panning (see attachments). Initially the map is being displayed correctly. This issue seems only to show up with the device Sony Xperia (4.1.2). The map (the same source code) runs perfectly on Samsung Galaxy Nexus (4.2.2), HTC Nexus One (2.3.3), HTC Desire S (2.3.5) and Samsung Nexus S (4.1.2).
+
+The source code of my map is online at: https://github.com/enviroCar/enviroCar-app/blob/master/org.envirocar.app/src/org/envirocar/app/activity/Map.java
+
+Attachment: Screenshot_2013-07-06-18-14-20.png Screenshot_2013-07-06-18-14-44.png
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=440
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on July 08, 2013 16:44:11
+
+Interesting. Short of us doing your debugging work for you: does this also happen if you do not have any overlays? Can you log the coordinates you are passing in to your zoom function? My first hunch would be that somehow the coordinates you are passing are not correct.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on January 18, 2014 04:22:18
+
+Is this issue reproducible with the Rescue branch?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From paulo...@gmail.com on February 05, 2014 02:24:48
+
+Hello,
+
+Thank you for the prompt reply.
+I can confirm that the 0.4.0 rescue branch doesn't have the problem on the BQ aquaris 4.5. I do notice some tile flickering when panning the map. That flickering is not present in other devices, but regarding this perticular issue, it is "solved" in 0.4.0.
+
+regards
+paulo
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          Could be the unsupported drawing operations with hardware acceleration in our calls.
+(Android 4.1 is API level 16)
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 6:02 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:02 PM GMT+8</closetime></item></BR></extraction>

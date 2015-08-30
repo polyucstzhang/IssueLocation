@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830314</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/280]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/280]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:50:1</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/280]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#280</id><title>Map rendering version 3 missing too many data to display</title><description>
+
+    
+      
+          From dientran...@gmail.com on March 28, 2012 09:48:05
+
+What steps will reproduce the problem? 1.I create a map file by mapsforge-map-0.2.4.jar to get map file vesion 2, and a map file by mapsforge-map-0.3.0-SNAPSHOT-jar-with-dependencies.jar library to get map file vesion 3.
+2.When display on androidphone, ,compared to map file vesion 2, map file vesion 3 is display very few data, many way is missing...
+(My area is "giai phong, ha noi, Viet Nam") Please provide any additional information below. Thanks advanced!
+
+Attachment: Map screenshot-version2.jpeg
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=280
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From solvex.t...@gmail.com on March 28, 2012 06:04:40
+
+Use https://code.google.com/p/mapsforge/wiki/GettingStartedMapWriter#Defining_a_Custom_Tag_Mapping_via_XML
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on April 22, 2012 02:55:28
+
+Closing this issue as the reporter did not provide the requested information.
+
+Status: Invalid  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:50 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:50 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893165</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/79f678ad85052349b15011a9696585176f8898a6]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/79f678ad85052349b15011a9696585176f8898a6]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:34:3</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/79f678ad85052349b15011a9696585176f8898a6]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      new pastebin editor UI
+    </title><numbercommit>
+      14 changed files
+    </numbercommit><source_file><item><name>
+              build.gradle
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/color/mth_tab_widget_text.xml
+            </name></item><item><name>
+              res/layout/activity_pastebineditor.xml
+            </name></item><item><name>
+              res/layout/dialog_pastebinprompt.xml
+            </name></item><item><name>
+              res/menu/activity_pastebineditor.xml
+            </name></item><item><name>
+              res/values-v21/styles.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PastebinEditorActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PastebinViewerActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/PastebinEditorFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

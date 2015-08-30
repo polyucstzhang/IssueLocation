@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831283</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/187]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/187]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:52:27</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/187]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#187</id><title>Rounding error leads to geometry errors leads to crash of writer (r1451)</title><description>
+
+    
+      
+          From LudwigBr...@gmail.com on October 16, 2011 12:12:57
+
+I know the code currently checked for the new mapsfile writer is not yet production ready, but it exhibits a problem that is likely to persist in the code.
+
+I was running the r1451 code to produce a map for the Munich area. 
+
+This crashed with the following error:
+
+java.lang.IllegalArgumentException: Invalid number of points in LinearRing (found 2 - must be 0 or &gt;= 4)
+    at com.vividsolutions.jts.geom.LinearRing.validateConstruction(LinearRing.java:114)
+    at com.vividsolutions.jts.geom.LinearRing.(LinearRing.java:106)
+    at com.vividsolutions.jts.geom.GeometryFactory.createLinearRing(GeometryFactory.java:341)
+    at com.vividsolutions.jts.geom.GeometryFactory.createLinearRing(GeometryFactory.java:328)
+    at org.mapsforge.preprocessing.map.osmosis.GeoUtils.toJTSGeometry(GeoUtils.java:82)
+    at org.mapsforge.preprocessing.map.osmosis.GeoUtils.toJtsWayBlock(GeoUtils.java:574)
+    at org.mapsforge.preprocessing.map.osmosis.GeoUtils.preprocessWay(GeoUtils.java:777)
+    at org.mapsforge.preprocessing.map.osmosis.MapFileWriter.preprocessWayNodes(MapFileWriter.java:812)
+    at org.mapsforge.preprocessing.map.osmosis.MapFileWriter.writeSubfile(MapFileWriter.java:564)
+
+Putting a bit more debugging info this, I tracked this down to the following way:
+
+
+  
+  
+    
+    
+    
+    
+    
+    
+  
+
+This way contains two nodes with distinct nodes at either end, so technically this part of a test for a linear ring should have not been reached.  
+
+However, the rounding employed by the various routines in between makes the two nodes identical in coordinates as their difference is very small and only affects the lowest digits. However, those digits are 'cut off' when converting the floating point value in the OSM data to int in TDNode, resulting in the same double values when converting back to double for the JTS Coordinate.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=187
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on October 16, 2011 05:47:16
+
+An additional comment on this. 
+
+When I was investigating this, I noticed that there are several spots in the code where errors are suppressed by simply putting out a, at the end of the day pretty meaningless, error message, such as "inner polygon does not belong to outer polygon". This error message is meaningless as it has no further information on which polygons are involved here, making it near impossible to track down the error (which could be in OSM data or in the code). The code prints out the message and continues on regardless, which might or might not lead to problems later. 
+
+When I looked at the code it was impossible at this point to generate more information as all the essential OSM information had been stripped off in the various transformations that had taken place up to that point in processing (in case of this message the JtsWayBlock).
+
+I think every effort should be made to carry down essential OSM information as far as possible, so that meaningful error messages can be constructed. This will help everyone enormously when tracking down problems to either their root in faulty OSM data or faulty processing. Obviously at the point where the data is handed over to JTS the OSM information is lost, but all classes before that should better be wrappers that contain the relevant OSM ids.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on November 21, 2011 10:13:36
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:42 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:42 PM GMT+8</closetime></item></BR></extraction>

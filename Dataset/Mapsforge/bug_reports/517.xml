@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828051</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/517]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/517]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:42:49</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/517]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#517</id><title>Zooming by fingers bug</title><description>
+
+    
+      
+          From pomni.o....@gmail.com on August 26, 2014 09:22:02
+
+What steps will reproduce the problem? 1.Open map
+2.Zoom map by two fingers
+3.You see map jumping(fast moving center of zooming)
+
+Nexus 4, Android 4.4, mapsforge 0.5
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=517
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From pomni.o....@gmail.com on August 26, 2014 01:04:07
+
+Wow! It is working now) Thanks!
+      
+    
+
+  </contents></item><item><commenter>Bersh</commenter><contents>
+
+    
+      
+          I've faced the same issue.
+But setLayerType(View.LAYER_TYPE_SOFTWARE, null); doesn't helps me. I even tried to turn off hardware acceleration for whole application in AndroidManifest with the same result.
+Does anyone have idea what is wrong?
+Nexus 4, mapsforge 0.5.0-rc3, Android 5.0
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 6:07 PM GMT+8</createtime><closetime>Dec 2, 2014, 10:13 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882037</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/f8182bdaf9c1f46e3e0e0fb7084f276ca5d32d0d]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/f8182bdaf9c1f46e3e0e0fb7084f276ca5d32d0d]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:34:15</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/f8182bdaf9c1f46e3e0e0fb7084f276ca5d32d0d]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      updated to new paho version
+    </title><numberfile>
+      6 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Events.java
+            </name></item></source_file></item></commit></extraction>

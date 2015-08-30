@@ -1,0 +1,3 @@
+<extraction><id>#147</id><title>Sometimes GPS stays on, after going in background mode (0.5.11, Android 5.0.1)</title><description> I don't know if someone else is seeing this, so I'll report it anyway.Androind 5.0.1 (nex4) set up with gelocation services in high precision.
+Owntracks 0.5.11 setup to be in Balanced power mode in background accuracy and High power mode when in foreground.Very frequently I'm seeing that the GPS stays on after opening the app and (for example) editing waypoints or just being in foreground. this results in battery drain.Am I the only one seeing this? </description><comments>No, I'm looking into that at the moment.
+I cannot really say why that is though.</comments></extraction>

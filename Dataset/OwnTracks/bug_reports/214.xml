@@ -1,0 +1,4 @@
+<extraction><id>#214</id><title>Add config extention (otrc) to open with app owntracks</title><description> Handle the extention otrc with app. If i now get the file per mail i can't open the file. I have to save it and open it from the explorer using owntracks. Would be nice if this is possible directly from the mail application.</description><comments>Works fine here with the latest master channel. When tapping on an .otrc file in Dropbox or the Gmail, Android offers to open the file with OwnTracks. Could you specify which app version you are refering to and with which app you are trying to open the .otrc file? 0.5.16, tried from gmail &amp; k-9 mail.
+
+Alexander Rust &lt;notifications@github.com&gt; schreef op 1 juli 2015 18:27:30 CEST: Fixed in upcomming 0.5.21. 
+Hosted files are exported with application/json MIME type that was previously not associated with the app. </comments></extraction>

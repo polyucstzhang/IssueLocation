@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832465</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/52]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/52]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:56:49</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/52]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#52</id><title>Coastlines not displayed correctly</title><description>
+
+    
+      
+          From julia.ru...@maki-car-rental.com on November 28, 2010 13:05:41
+
+This issue is probably related to https://code.google.com/p/mapsforge/issues/detail?id=44 On some occasions (I don't know what exactly triggers the problem), coastlines are not recognized correctly. This could mean one of two things:
+a) parts of land are displayed in blue
+b) parts of water are displayed in white
+
+Example screenshots for both are attached. To reproduce use:
+1.png: http://ifile.it/2cbyrw0 (0,4 MB, bbox=-20.78,57.06,-19.57,58.09)
+2.png: http://ifile.it/agpf0zs (5 MB, bbox=64.52,-14.62,65.55,-13.14)
+
+Attachment: 1.png 2.png
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=52
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From julia.ru...@maki-car-rental.com on November 28, 2010 10:48:22
+
+The 2nd file is made from http://downloads.cloudmade.com/europe/iceland/iceland.osm.bz2 I noticed that this original xml has a bbox of 63.28675,-24.54652,66.56377,-13.49581 and indeed one tidy little part of the coastline seems to be not within this bbox. That's probably the reason why converting it even with a larger bbox of 63.28675,-24.54652,66.56377,-13.3 results in similar glitches.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 24, 2010 17:04:09
+
+I was now able to reproduce and understand the cause of the problem in the first screenshot. In revision r738 i have made some substantial changes to the coastline algorithm which should fix all false positives.
+
+The fix requires all coastline ways to be written with a special value for the sub tile bitmap, so existing map files must be recreated with a new version of the mapfile-writer (which has not been officially published yet). The next release (hopefully in Januar 2011) will include all that fixes, hopefully we will be able to completely resolve this issue till then.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on February 18, 2011 00:05:54
+
+Believe me, it has also something to to with Cloudmade vs. Geofabrik. When you are clipping an area (for example New York) from a larger file (say, the planet.xml file) with Osmosis, there are many parameters which affect the output, namely "completeWays", "completeRelations" and "clipIncompleteEntities" (see: http://wiki.openstreetmap.org/wiki/Osmosis/Detailed_Usage ).
+
+I don't know which settings are used at Cloudmade, but as i can see that their files produce problems in many water scenarios where Geofabrik files work correctly, it must have something to do with that. Unfortunately, there is no New York extract available at Geofabrik, so i cannot make a comparrison here like i did with Denmark.
+
+The area of a binary map file is defined as the minimum bouding rectangle which includes all ways and pois of the input file. With the help of Osmosis it is possible to clip ways exactely to an arbitrary bounding box. What you give to the mapfile-writer will be stored in the binary map file and later appear at rendering time. That is the desired behaviour.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on March 16, 2011 11:25:58
+
+I've just committed a fix for the issue reported in comments 12 and 13. Please checkout the latest revision from our SVN and verify.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on March 24, 2011 08:35:53
+
+I close this issue as the 0.2.2 release should fix alle the mentioned problems. Please open a new issue if you are having troubles with coastlines or water areas.
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:31 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:31 PM GMT+8</closetime></item></BR></extraction>

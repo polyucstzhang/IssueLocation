@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118262222</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/61bfeb589c05285bfb1f3eda88e8713ed87c6d50]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/61bfeb589c05285bfb1f3eda88e8713ed87c6d50]]></realpath><theme>mapsforge_04n</theme><middle>default</middle><createdate>2015-8-21 16:40:6</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/61bfeb589c05285bfb1f3eda88e8713ed87c6d50]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      - added abstraction layer for low level graphics classes
+    </title><number>
+      97 changed files
+    </number></item></BR></extraction>

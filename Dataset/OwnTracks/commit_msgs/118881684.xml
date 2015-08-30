@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881684</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/74d1b1411b71967bf3db0162411bf875dcebadae]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/74d1b1411b71967bf3db0162411bf875dcebadae]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:20:20</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/74d1b1411b71967bf3db0162411bf875dcebadae]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      implementing JSON datatypes
+    </title><numberfile>
+      13 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityExport.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityImport.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityWaypoint.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/BeaconMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/ConfigurationMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/DumpMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/LocationMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/WaypointMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/model/GeocodableLocation.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/StringifiedJSONArray.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/StringifiedJSONObject.java
+            </name></item></source_file></item></commit></extraction>

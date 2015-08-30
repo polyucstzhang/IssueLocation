@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893757</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/27578d1d55f10004f051f749f01883f7dc5529e7]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/27578d1d55f10004f051f749f01883f7dc5529e7]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:50:32</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/27578d1d55f10004f051f749f01883f7dc5529e7]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Renew the GCM token when the OS build fingerprint changes
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

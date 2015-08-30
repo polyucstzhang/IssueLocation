@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828036</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/534]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/534]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:42:19</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/534]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#534</id><title>LatLongUtils.zoomForBounds problem?</title><description>
+
+    
+      
+          From ivan.mar...@gmail.com on October 18, 2014 20:54:24
+
+
+What steps will reproduce the problem?
+Get attached ZoomToBounds.java
+and Update ZoomToBounds class in Samples projects.
+Start "ZoomToBounds" sample
+
+What is the expected output? What do you see instead?
+
+
+The markers will always appear outside the MapView area. 
+
+
+What version of the product are you using? On what operating system?
+0.4.3
+0.5.0-rc1
+0.5.0-rc2
+
+Please provide any additional information below.
+
+
+Try to uncomment 
+
+dimension = new Dimension((int)(dimension.width / 2f), (int)(dimension.height / 2f));
+
+Markers will be displayed inside the area
+
+What's wrong ?
+
+Attachment: ZoomToBounds.java
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=534
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on October 18, 2014 12:51:14
+
+Since you're playing with the code and the Samples app has changed,
+can you check this issue using the latest dev?
+
+Emux
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on October 21, 2014 02:58:24
+
+I have pushed at dev a fixed / improved formula in the LatLongUtils.zoomForBounds method.
+Can you check it and report any issues you may have?
+
+Emux
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on October 22, 2014 10:12:57
+
+Could you please post this issue (with the picture) at mailing list where it'll get better visibility and we can continue the discussion?
+
+It's related to another mapsforge mechanism, so I'll close this issue if there is no objection.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 6:09 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:09 PM GMT+8</closetime></item></BR></extraction>

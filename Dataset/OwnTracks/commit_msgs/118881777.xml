@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881777</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/ef3d499f0763f1f474102c1e990e198554da9b90]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/ef3d499f0763f1f474102c1e990e198554da9b90]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:24:22</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/ef3d499f0763f1f474102c1e990e198554da9b90]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Merge pull request </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

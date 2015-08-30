@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894530</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ef5aa8b254a39e7268061cbc645ecdf7d9ea1e9d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ef5aa8b254a39e7268061cbc645ecdf7d9ea1e9d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:18:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ef5aa8b254a39e7268061cbc645ecdf7d9ea1e9d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Avoid adding another activity to the stack when tapping a notificatio…
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/LaunchBidBroadcastReceiver.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

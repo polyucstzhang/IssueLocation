@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893509</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a1b74677a59c3c79b69ef1f775ba157fb908cf3f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a1b74677a59c3c79b69ef1f775ba157fb908cf3f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:41:17</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a1b74677a59c3c79b69ef1f775ba157fb908cf3f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Only use the larger sizes on tablets
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              res/values-sw600dp-land/dimens.xml
+            </name></item><item><name>
+              res/values-sw600dp/dimens.xml
+            </name></item><item><name>
+              res/values-sw800dp/dimens.xml
+            </name></item><item><name>
+              res/values/dimens.xml
+            </name></item><item><name>
+              res/xml-v14/preferences_display.xml
+            </name></item><item><name>
+              res/xml/preferences_display.xml
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

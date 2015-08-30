@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894811</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/6116583355facd3b891dc400d0fe2d12812060a4]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/6116583355facd3b891dc400d0fe2d12812060a4]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:25:2</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/6116583355facd3b891dc400d0fe2d12812060a4]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      BRING BACK THE OLDE channel join dialog
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/AddChannelFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

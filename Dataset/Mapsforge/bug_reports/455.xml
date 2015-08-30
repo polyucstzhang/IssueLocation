@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828832</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/455]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/455]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:44:44</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/455]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#455</id><title>Regression: No transparency when adding Marker with PNG with transparent background </title><description>
+
+    
+      
+          From cpe...@gmail.com on September 19, 2013 14:06:35
+
+What steps will reproduce the problem? What is the expected output? What do you see instead? I'm loading a PNG with a transparent background
+
+Bitmap markerIcon = GRAPHIC_FACTORY.createBitmap(MapsforgeMapView.class.getResourceAsStream("marker.png"));
+
+and place it as a layer on the map
+
+Marker marker = new Marker(asLatLong(position), markerIcon, 8, -16);
+mapView.getLayerManager().getLayers().add(marker);
+
+Unfortunately, since commit f8d46f3 from 2013-08-04 this does not respect the transparency anymore.
+
+I've tracked this down to
+
+----- mapsforge-map-awt/src/main/java/org/mapsforge/map/awt/AwtCanvas.java -----
+index f0036fe..a0d0c62 100644
+@@ -14,6 +14,7 @@
+  */
+ package org.mapsforge.map.awt;
+
++import java.awt.AlphaComposite;
+ import java.awt.Graphics2D;
+ import java.awt.RenderingHints;
+ import java.awt.font.TextLayout;
+@@ -210,6 +211,7 @@ class AwtCanvas implements Canvas {
+     }
+
+ private void fillColor(java.awt.Color color) {
+
+
+
+       this.graphics2D.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC));
+     this.graphics2D.setColor(color);
+     this.graphics2D.fillRect(0, 0, getWidth(), getHeight());
+ }
+
+
+When I comment out this change, it works as before.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=455
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Max.Boda...@gmail.com on October 22, 2013 10:24:19
+
+I'm attached a small fix patch.
+
+Attachment: transparency.fix
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From cpe...@gmail.com on October 29, 2013 02:41:14
+
+I found a solution for the rewrite Branch and the AWT mod which draws the MapScaleBar without traces of older scale text and lines and which respects the transparency of PNGs. 
+The patch basically sets and resets the AlphaComposite, not really nice, but it works for me.
+
+Attachment: mapsforge_fix_PNG_with_transparent_background_and_MapScaleBar_redraw.patch
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on January 18, 2014 21:48:31
+
+Thanks.
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 6:03 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:03 PM GMT+8</closetime></item></BR></extraction>

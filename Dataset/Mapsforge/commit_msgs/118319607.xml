@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118319607</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/c1403838c36b6617cfc2ca42eddba3b997409682]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/c1403838c36b6617cfc2ca42eddba3b997409682]]></realpath><theme>mapsforge_13n</theme><middle>default</middle><createdate>2015-8-21 21:53:6</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/c1403838c36b6617cfc2ca42eddba3b997409682]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      TouchEventHandler: handling situation where there was no prior location
+    </title><number>
+      1 changed file
+    </number></item></BR></extraction>

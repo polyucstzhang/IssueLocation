@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882023</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/985b3da6c1ae94da99cb7850dbfe86fb0dc7d5f6]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/985b3da6c1ae94da99cb7850dbfe86fb0dc7d5f6]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:33:45</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/985b3da6c1ae94da99cb7850dbfe86fb0dc7d5f6]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixed merge conflicts
+    </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item></source_file></item></commit></extraction>

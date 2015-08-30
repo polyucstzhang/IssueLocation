@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894747</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/698ea19e8ec0742885cc65d60e36a3fe5e1d8afa]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/698ea19e8ec0742885cc65d60e36a3fe5e1d8afa]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:22:59</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/698ea19e8ec0742885cc65d60e36a3fe5e1d8afa]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      buffer group bg 9-patch image
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-nodpi/buffergroup_bg_rest.9.png
+            </name></item><item><name>
+              res/drawable-nodpi/buffergroup_bg_selected.9.png
+            </name></item><item><name>
+              res/drawable/row_buffergroup_bg.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

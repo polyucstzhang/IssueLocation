@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894013</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/fe2d49d2c8c223dd6d4ebab56001ab38e795656c]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/fe2d49d2c8c223dd6d4ebab56001ab38e795656c]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:0:3</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/fe2d49d2c8c223dd6d4ebab56001ab38e795656c]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Retry the connection if the backlog has a valid HTTP status code but …
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

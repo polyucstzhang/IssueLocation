@@ -1,0 +1,1 @@
+<extraction><id>#100</id><title>Text field loses focus when device is locked</title><description> See if we can check if the on-screen keyboard is visible and request focus in onResume otherwise hide the keyboard in onPause</description><comments> </comments></extraction>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881724</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/62879f532aa1319b52b350349c4ef7f95ea71c67]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/62879f532aa1319b52b350349c4ef7f95ea71c67]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:5</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/62879f532aa1319b52b350349c4ef7f95ea71c67]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added material app icon for </title><numberfile>
+      16 changed files
+    </numberfile><source_file><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/App.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_launcher.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_launcher.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_icon.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_launcher.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_launcher.png
+            </name></item><item><name>
+              src/main/res/drawable-xxxhdpi/ic_launcher.png
+            </name></item><item><name>
+              src/main/res/values/bools.xml
+            </name></item><item><name>
+              src/main/res/values/keys.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

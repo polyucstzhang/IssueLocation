@@ -1,0 +1,1 @@
+<extraction><id>#30</id><title>Refactor MessageActivity/MessageViewFragment to store a Buffer object instead of individual values</title><description> Match the IOS app internally and tidy up some messy stuff</description><comments> </comments></extraction>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828034</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/536]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/536]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:42:15</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/536]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#536</id><title>way-clipping produces bad tiles</title><description>
+
+    
+      
+          From cak...@gmail.com on October 24, 2014 11:45:57
+
+What steps will reproduce the problem? 1.Extract bbox 42.72/2.81 42.30/3.40 from europe.osm.pbf (geofabrik)
+2.Convert to .map file with standards options What is the expected output? What do you see instead? The map is partially incomplete and the background is visible for zoom 8/11 What version of the product are you using? On what operating system? Writer 0.4.0 or 0.5.0-rc2
+Linux ubuntu 14-04 Please provide any additional information below. With the same PBF file and with way-clipping=false the map is correct for all zoom levels
+
+Attachment: ko.png ok.png
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=536
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From cak...@gmail.com on November 05, 2014 05:19:38
+
+I have the same problem with the latest dev version (today)
+The fix is in the writer or in the reader ?
+
+With this dev version I encounter the same behavior as # issue 526 with roundabouts
+
+Thanks
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on November 10, 2014 00:35:15
+
+Issue 531 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 6:09 PM GMT+8</createtime><closetime>Nov 13, 2014, 6:14 PM GMT+8</closetime></item></BR></extraction>

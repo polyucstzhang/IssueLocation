@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881756</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/ba111b1fecf5e056e0b57c70086cafcd925986a1]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/ba111b1fecf5e056e0b57c70086cafcd925986a1]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:30</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/ba111b1fecf5e056e0b57c70086cafcd925986a1]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      experimental testing of monitoring remote locations without geofence
+    </title><numberfile>
+      12 changed files
+    </numberfile><source_file><item><name>
+              DaoGenerator/src/main/java/org/owntracks/android/DaoGenerator.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/adapter/MultitypeAdapter.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/adapter/WaypointAdapter.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/db/WaypointDao.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Events.java
+            </name></item><item><name>
+              src/main/res/layout/row_header.xml
+            </name></item><item><name>
+              src/main/res/layout/row_waypoint.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

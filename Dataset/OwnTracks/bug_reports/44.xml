@@ -1,0 +1,6 @@
+<extraction><id>#44</id><title>OwnTracks 0.4.21 fresh install from PlayStore</title><description> in prefs/Connection I see "Error: java.lang.illegalArgumentException" (before configuring connection parameters).Other than that, everything looks very good! Congrats!</description><comments>Ah well, that now shows errors reported by the mqtt client such as bad
+username and password or SSL missmatch things instead of a plain "Error".
+The problem is when you don't have anything configured it still tries to
+connect with invalid parameters, hence the illegal argument exception, so
+it's just cosmetics. I'll fix this in a later version when I add a setup
+wizzard or sth. alike.</comments></extraction>

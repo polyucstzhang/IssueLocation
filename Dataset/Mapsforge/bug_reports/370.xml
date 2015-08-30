@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829586</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/370]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/370]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:47:25</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/370]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#370</id><title> Android 4.2: java.lang.RuntimeException: Buffer not large enough </title><description>
+
+    
+      
+          From sashi...@gmail.com on November 13, 2012 18:50:14
+
+What steps will reproduce the problem? 1. Install advanced map viewer on android 4.2
+2. Run App and open a map. 
+3. See exception What is the expected output? What do you see instead? should work, but see exception:
+E/AndroidRuntime( 3178): FATAL EXCEPTION: MapWorker
+E/AndroidRuntime( 3178): java.lang.RuntimeException: Buffer not large enough for pixels
+E/AndroidRuntime( 3178):        at android.graphics.Bitmap.copyPixelsToBuffer(Bi tmap.java:381)
+E/AndroidRuntime( 3178):        at org.mapsforge.android.maps.mapgenerator.InMemoryTileCache.put(InMemoryTileCache.java:142)E/AndroidRuntime( 3178):        at org.mapsforge.android.maps.mapgenerator.MapWorker.doWork(MapWorker.jaa:77)
+E/AndroidRuntime( 3178):        at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:94)
+W/ActivityManager(  390):   Force finishing activity org.mapsforge.applications.android.advancedmapviewer/.AdvancedMapViewer What version of the product are you using? On what operating system? 0.3.0 Please provide any additional information below. running on a galaxy nexus with 4.2
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=370
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Niklas.S...@gmail.com on November 15, 2012 04:58:31
+
+So after further debugging it turns out that prior to 4.2 copyPixelsFromBuffer() did not advance buffer.position() however it does now. So we need to do a this.byteBuffer.rewind() before calling copyPixelsToBuffer() in InMemoryTileCache.java. I've tried adding it in the online source editor which created Issue #374 . For reference I've attached the patch here too.
+
+Attachment: InMemoryTileCache.java.patch
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on November 18, 2012 01:25:10
+
+Thank you for your patch. I have just applied it and it the AMV is now working again - at least in my Emulator - on Android 4.2.
+
+Labels: -Priority-Medium Priority-High  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From zoefz...@gmail.com on November 22, 2012 01:49:41
+
+I can't seem to find your mailadres, but you will be a life saver if you send this jar to alex@zoefzoek.nl
+Thanks in advance!
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From weidig.m...@gmail.com on January 04, 2013 07:56:24
+
+http://www.x-droid.de/attachments/mapsforge-map-0.3.0-jar-with-dependencies.jar
+
+Attachment: mapsforge-map-0.3.0-jar-with-dependencies.jar
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From neilboyd on May 29, 2013 22:15:09
+
+I created a fork for maintenance on 0.3.0, including this bug: https://code.google.com/r/neilboyd-mapsforge-031/
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:57 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:57 PM GMT+8</closetime></item></BR></extraction>

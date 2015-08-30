@@ -1,0 +1,1 @@
+<extraction><id>#204</id><title>Incorrect UTF-8 location (Public)</title><description> Some of the public CARDs have strange (corrupt?) locations</description><comments>This is not a bug in the app; geo-coding issue.</comments></extraction>

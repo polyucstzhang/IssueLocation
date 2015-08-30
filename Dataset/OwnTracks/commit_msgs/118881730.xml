@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881730</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/82e0dc2e3acd360212f2f7369a51af70b03a5fde]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/82e0dc2e3acd360212f2f7369a51af70b03a5fde]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:24</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/82e0dc2e3acd360212f2f7369a51af70b03a5fde]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      closes </title><numberfile>
+      135 changed files
+    </numberfile><source_file><item><name>
+              .gitignore
+            </name></item><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              DaoGenerator/src/main/java/org/owntracks/android/DaoGenerator.java
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              debug-keystore.jks
+            </name></item><item><name>
+              lint.xml
+            </name></item><item><name>
+              ...va/st/alr/mqttitude/ActivityLauncher.java → ...g/owntracks/android/ActivityLauncher.java
+            </name></item><item><name>
+              ...n/java/st/alr/mqttitude/ActivityMain.java → ...a/org/owntracks/android/ActivityMain.java
+            </name></item><item><name>
+              ...st/alr/mqttitude/ActivityPreferences.java → ...wntracks/android/ActivityPreferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/ActivityWaypoint.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/App.java → src/main/java/org/owntracks/android/App.java
+            </name></item><item><name>
+              ...alr/mqttitude/adapter/ContactAdapter.java → ...racks/android/adapter/ContactAdapter.java
+            </name></item><item><name>
+              .../st/alr/mqttitude/adapter/MapAdapter.java → ...owntracks/android/adapter/MapAdapter.java
+            </name></item><item><name>
+              ...r/mqttitude/adapter/MultitypeAdapter.java → ...cks/android/adapter/MultitypeAdapter.java
+            </name></item><item><name>
+              ...lr/mqttitude/adapter/WaypointAdapter.java → ...acks/android/adapter/WaypointAdapter.java
+            </name></item><item><name>
+              ...java/st/alr/mqttitude/db/ContactLink.java → ...org/owntracks/android/db/ContactLink.java
+            </name></item><item><name>
+              ...a/st/alr/mqttitude/db/ContactLinkDao.java → .../owntracks/android/db/ContactLinkDao.java
+            </name></item><item><name>
+              ...n/java/st/alr/mqttitude/db/DaoMaster.java → ...a/org/owntracks/android/db/DaoMaster.java
+            </name></item><item><name>
+              .../java/st/alr/mqttitude/db/DaoSession.java → .../org/owntracks/android/db/DaoSession.java
+            </name></item><item><name>
+              ...in/java/st/alr/mqttitude/db/Waypoint.java → ...va/org/owntracks/android/db/Waypoint.java
+            </name></item><item><name>
+              ...java/st/alr/mqttitude/db/WaypointDao.java → ...org/owntracks/android/db/WaypointDao.java
+            </name></item><item><name>
+              ...alr/mqttitude/messages/BeaconMessage.java → ...racks/android/messages/BeaconMessage.java
+            </name></item><item><name>
+              ...titude/messages/ConfigurationMessage.java → ...ndroid/messages/ConfigurationMessage.java
+            </name></item><item><name>
+              ...t/alr/mqttitude/messages/DumpMessage.java → ...ntracks/android/messages/DumpMessage.java
+            </name></item><item><name>
+              ...r/mqttitude/messages/LocationMessage.java → ...cks/android/messages/LocationMessage.java
+            </name></item><item><name>
+              ...r/mqttitude/messages/WaypointMessage.java → ...cks/android/messages/WaypointMessage.java
+            </name></item><item><name>
+              .../java/st/alr/mqttitude/model/Contact.java → .../org/owntracks/android/model/Contact.java
+            </name></item><item><name>
+              ...r/mqttitude/model/GeocodableLocation.java → ...cks/android/model/GeocodableLocation.java
+            </name></item><item><name>
+              ...mqttitude/preferences/ActivityExport.java → ...s/android/preferences/ActivityExport.java
+            </name></item><item><name>
+              ...ferences/ImplementedDialogPreference.java → ...ferences/ImplementedDialogPreference.java
+            </name></item><item><name>
+              ...titude/preferences/PreferencesBroker.java → ...ndroid/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              ...titude/preferences/ToolbarPreference.java → ...ndroid/preferences/ToolbarPreference.java
+            </name></item><item><name>
+              .../mqttitude/services/ProxyableService.java → ...ks/android/services/ProxyableService.java
+            </name></item><item><name>
+              ...qttitude/services/ServiceApplication.java → .../android/services/ServiceApplication.java
+            </name></item><item><name>
+              ...alr/mqttitude/services/ServiceBeacon.java → ...racks/android/services/ServiceBeacon.java
+            </name></item><item><name>
+              ...r/mqttitude/services/ServiceBindable.java → ...cks/android/services/ServiceBindable.java
+            </name></item><item><name>
+              ...alr/mqttitude/services/ServiceBroker.java → ...racks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              ...lr/mqttitude/services/ServiceLocator.java → ...acks/android/services/ServiceLocator.java
+            </name></item><item><name>
+              .../alr/mqttitude/services/ServiceProxy.java → ...tracks/android/services/ServiceProxy.java
+            </name></item><item><name>
+              ...support/BluetoothStateChangeReceiver.java → ...support/BluetoothStateChangeReceiver.java
+            </name></item><item><name>
+              ...ttitude/support/BootCompleteReceiver.java → ...android/support/BootCompleteReceiver.java
+            </name></item><item><name>
+              ...va/st/alr/mqttitude/support/Defaults.java → ...g/owntracks/android/support/Defaults.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/DrawerFactory.java
+            </name></item><item><name>
+              ...titude/support/EditIntegerPreference.java → ...ndroid/support/EditIntegerPreference.java
+            </name></item><item><name>
+              ...java/st/alr/mqttitude/support/Events.java → ...org/owntracks/android/support/Events.java
+            </name></item><item><name>
+              ...tude/support/FragmentToolbarProvider.java → ...roid/support/FragmentToolbarProvider.java
+            </name></item><item><name>
+              ...titude/support/ListIntegerPreference.java → ...ndroid/support/ListIntegerPreference.java
+            </name></item><item><name>
+              ...st/alr/mqttitude/support/Preferences.java → ...wntracks/android/support/Preferences.java
+            </name></item><item><name>
+              ...ttitude/support/ReverseGeocodingTask.java → ...android/support/ReverseGeocodingTask.java
+            </name></item><item><name>
+              ...ttitude/support/ServiceMqttCallbacks.java → ...android/support/ServiceMqttCallbacks.java
+            </name></item><item><name>
+              .../alr/mqttitude/support/StaticHandler.java → ...tracks/android/support/StaticHandler.java
+            </name></item><item><name>
+              ...itude/support/StaticHandlerInterface.java → ...droid/support/StaticHandlerInterface.java
+            </name></item><item><name>
+              ...titude/support/StringifiedJSONObject.java → ...ndroid/support/StringifiedJSONObject.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/res/anim/zoom_in.xml
+            </name></item><item><name>
+              src/main/res/anim/zoom_out.xml
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_add.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_contact_link.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_contact_unlink.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_done.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_geofence.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_location.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_mylocation.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_radius.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_report.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_settings.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_share.png
+            </name></item><item><name>
+              src/main/res/drawable-hdpi/ic_waypoints.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_add.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_contact_link.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_contact_unlink.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_done.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_geofence.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_location.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_mylocation.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_radius.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_report.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_settings.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_share.png
+            </name></item><item><name>
+              src/main/res/drawable-mdpi/ic_waypoints.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_add.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_contact_link.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_contact_unlink.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_done.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_geofence.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_location.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_mylocation.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_radius.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_report.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_settings.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_share.png
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/ic_waypoints.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_add.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_contact_link.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_contact_unlink.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_done.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_geofence.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_location.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_mylocation.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_radius.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_report.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_settings.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_share.png
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/ic_waypoints.png
+            </name></item><item><name>
+              src/main/res/drawable/inset.xml
+            </name></item><item><name>
+              src/main/res/layout/activity_main.xml
+            </name></item><item><name>
+              src/main/res/layout/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/layout/activity_waypoints.xml
+            </name></item><item><name>
+              src/main/res/layout/activity_wizzard.xml
+            </name></item><item><name>
+              src/main/res/layout/drawer_header.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_contacts.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_details.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_map.xml
+            </name></item><item><name>
+              src/main/res/layout/fragment_waypoint.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_broker.xml
+            </name></item><item><name>
+              src/main/res/layout/preferences_licenses.xml
+            </name></item><item><name>
+              src/main/res/layout/row_contact.xml
+            </name></item><item><name>
+              src/main/res/layout/row_header.xml
+            </name></item><item><name>
+              src/main/res/layout/row_waypoint.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_main.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_waypoints.xml
+            </name></item><item><name>
+              src/main/res/menu/activity_wizzard.xml
+            </name></item><item><name>
+              src/main/res/menu/fragment_contacts.xml
+            </name></item><item><name>
+              src/main/res/menu/fragment_details.xml
+            </name></item><item><name>
+              src/main/res/menu/fragment_map.xml
+            </name></item><item><name>
+              src/main/res/values/bools.xml
+            </name></item><item><name>
+              src/main/res/values/integers.xml
+            </name></item><item><name>
+              src/main/res/values/keys.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/values/styles.xml
+            </name></item><item><name>
+              src/main/res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

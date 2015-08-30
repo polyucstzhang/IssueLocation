@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881645</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/d11879f7adf60b784748eac779d6a58bfda2e232]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/d11879f7adf60b784748eac779d6a58bfda2e232]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:18:42</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/d11879f7adf60b784748eac779d6a58bfda2e232]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      trying BroadcastReceiver for geofencing, fixed some queueing issues
+    </title><numberfile>
+      8 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/model/Contact.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBindable.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceLocator.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceProxy.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/LocationReceiver.java
+            </name></item><item><name>
+              src/main/res/values/defaults.xml
+            </name></item></source_file></item></commit></extraction>

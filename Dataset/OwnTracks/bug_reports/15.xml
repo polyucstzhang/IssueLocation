@@ -1,0 +1,21 @@
+<extraction><id>#15</id><title>[CLOSED] Layout Issues v4.02 on Galaxy S2</title><description> Issue by ijwhite from Thursday Nov 28, 2013 at 21:31 GMT
+Originally opened as binarybucks/mqttitude#216On the samsung Galaxy S2:Datetime is truncated leaving on the seconds value of the time visible (the rest is scrolled off the top of the view) both on the map view and Locations viewLng/Lat overwrite each other due to fine precision values Galaxy S4 is fine.</description><comments>Comment by binarybucks from Friday Nov 29, 2013 at 08:33 GMTCould you please attach a screenshot?On Thu, Nov 28, 2013 at 10:31 PM, ijwhite notifications@github.com wrote:On the samsung Galaxy S2:1.Datetime is truncated leaving on the seconds value of the time visible
+   (the rest is scrolled off the top of the view) both on the map view and
+   Locations view
+   2.Lng/Lat overwrite each other due to fine precision valuesGalaxy S4 is fine. 
+Reply to this email directly or view it on GitHubbinarybucks/mqttitude#216
+.Mit freundlichen Gr  en / With kind regards
+Alexander Rust Comment by jpmens from Friday Dec 20, 2013 at 17:45 GMT@ijwhite Is this still an issue? Could you  please show us a screenshot? Comment by ijwhite from Friday Dec 20, 2013 at 17:56 GMTYes it is.  I'll grab a screen capture.-------- Original message --------
+From: JP Mens notifications@github.com
+Date:20/12/2013  17:45  (GMT+00:00)
+To: binarybucks/mqttitude mqttitude@noreply.github.com
+Cc: ijwhite iandl@tiscali.co.uk
+Subject: Re: [mqttitude] Layout Issues v4.02 on Galaxy S2 (#216)@ijwhite Is this still an issue? Could you  please show us a screenshot?Reply to this email directly or view it on GitHub:
+binarybucks/mqttitude#216 (comment) Comment by binarybucks from Friday Dec 20, 2013 at 18:01 GMTI'm just reworking the layouts to easier support different screen-sizes. 
+I generally have an issue with the accuracy and time information shown together with a contact's location. I don't want to make a contact view higher than two rows, of which one is needed for the name and one for the location. Both, however, could take up the whole row horizontallyCan we come up with a clever way to display the information that doesn't take up so much space? Mind, that a single tap on a contact is taken for any popup invoking touch action. I thought of a long press on a contact to bring up a dialog with additional information (somewhere I also have to integrate future geofence UI things).Any better idea? Comment by jpmens from Friday Dec 20, 2013 at 18:07 GMTI like the long press idea, unless you there's the possibility, like on iOS, to have an additional 'click' area? This is what it looks like in iOS: Comment by binarybucks from Saturday Dec 21, 2013 at 13:25 GMTThe problem is that the additional click area takes up approximately the same space  Comment by ijwhite from Tuesday Dec 24, 2013 at 12:28 GMTIt's taken me some time,  had to wrestle hold of the phone from the good lady.-------- Original message --------
+From: Alexander Rust notifications@github.com
+Date:21/12/2013  13:25  (GMT+00:00)
+To: binarybucks/mqttitude mqttitude@noreply.github.com
+Cc: ijwhite iandl@tiscali.co.uk
+Subject: Re: [mqttitude] Layout Issues v4.02 on Galaxy S2 (#216)The problem is that the additional click area takes up approximately the same spaceReply to this email directly or view it on GitHub:
+binarybucks/mqttitude#216 (comment) Comment by jpmens from Tuesday Dec 24, 2013 at 12:54 GMT@ijwhite Not much to be seen ... I don't think you can attach images to tickets in reply-to-email; you have to drag them into the ticket on the Web interface. ;) Comment by ijwhite from Tuesday Dec 24, 2013 at 13:18 GMTOk try this. Ian Comment by jpmens from Tuesday Dec 24, 2013 at 13:25 GMT@ijwhite Thank you. Comment by binarybucks from Tuesday Dec 24, 2013 at 13:44 GMTThanks, I'll see what I can do.  Comment by binarybucks from Tuesday Jan 21, 2014 at 18:08 GMT@ijwhite can you check if it looks better in the recent beta version? Comment by binarybucks from Sunday Jan 26, 2014 at 11:11 GMTplease reopen if layout issues persist with the newer versions</comments></extraction>

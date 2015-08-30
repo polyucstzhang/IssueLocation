@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831293</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/177]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/177]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:52:46</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/177]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#177</id><title>MapView logic tied into MapActivity, making it impossible to work with Fragments</title><description>
+
+    
+      
+          From idan...@gmail.com on September 24, 2011 16:03:32
+
+Currently, the logic in MapView is integrated with MapActivity. That didn't use to be a problem until Fragment was introduced in Honeycomb.
+
+This makes it impossible to use a maps fragment as part as an activity. You can in theory use a MapActivity, but this solution is not clean and may affect other fragments.
+
+I've managed to workaround the issue by refactoring MapActivity and MapView, so that MapActivity actually implements a new interface named MapContext which MapView relies on instead.
+
+Attached is the patch I'm currently using. I have also created MapFragment which is not part of the patch, and is being used here: https://market.android.com/details?id=org.idansof.otp.ui&amp;feature=search_result https://code.google.com/p/otp-android/
+
+Attachment: mapsforge-mapcontext.patch
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=177
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on January 07, 2012 09:08:46
+
+Issue 141 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From vincent....@gmail.com on May 14, 2012 01:13:34
+
+(Sorry for the double post)
+
+Beware, this patch also include a bug fix in the MapView file (the overlayController thread was not stopped properly).
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on December 19, 2012 00:27:19
+
+Issue 384 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on May 14, 2013 19:35:34
+
+Support for standard Android Fragments has been included in the rewrite branch, with an example for use in the Samples app. 
+
+There will not be any changes or fixes for this issue in the 0.3 branch.
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:41 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:41 PM GMT+8</closetime></item></BR></extraction>

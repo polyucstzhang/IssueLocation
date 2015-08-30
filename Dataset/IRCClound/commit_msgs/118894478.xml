@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894478</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/404229a0cb25654e9dd29fa0dc58792f5566bb11]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/404229a0cb25654e9dd29fa0dc58792f5566bb11]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:16:32</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/404229a0cb25654e9dd29fa0dc58792f5566bb11]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      rename buffer options and channel options to display options
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              res/menu/activity_message_console.xml
+            </name></item><item><name>
+              res/menu/activity_message_conversation.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BufferOptionsFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/ChannelOptionsFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

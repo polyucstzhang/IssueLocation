@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894911</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/5887d322d9955924aa71a10cebd3a45a9ccdd0bb]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/5887d322d9955924aa71a10cebd3a45a9ccdd0bb]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:28:28</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/5887d322d9955924aa71a10cebd3a45a9ccdd0bb]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Display the connection status below the chat area
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/messageview.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

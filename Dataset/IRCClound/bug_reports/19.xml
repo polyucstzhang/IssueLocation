@@ -1,0 +1,1 @@
+<extraction><id>#19</id><title>Bring some of the iOS optimizations back to Android</title><description> Cache the formatted timestamps and event days, and only clear the formatted strings when the settings are updated</description><comments> </comments></extraction>

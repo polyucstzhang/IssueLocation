@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826424</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/658]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/658]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:39:51</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/658]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#658</id><title>Layer visibility handling</title><description>
+
+    
+      
+          Request a redraw on layer visibility change.
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          Done via f46b682.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          With 44fc1af I made the redraw optional on visibility change.
+
+It's a needed feature in case we're having multiple layers and don't want consecutive redraws.
+      
+    
+
+  </contents></item></comments><createtime>Aug 15, 2015, 5:40 PM GMT+8</createtime><closetime>Aug 15, 2015, 5:45 PM GMT+8</closetime></item></BR></extraction>

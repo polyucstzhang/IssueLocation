@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118634002</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/pull/599]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/pull/599]]></realpath><theme>issue_599</theme><middle>default</middle><createdate>2015-8-22 22:37:53</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/pull/599]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#599</id><title>AssetsRenderTheme shouldn't ignore relativePathPrefix</title><comments>
+    
+
+  
+    
+    
+
+  
+
+
+
+
+  
+
+    
+      lincomatic
+    
+
+    commented
+
+    
+      on Apr 10
+    
+  
+
+
+
+  
+
+    
+      
+          AssetsRenderTheme was ignoring relativePathPrefix, so symbol &amp; pattern folders had to be in root of assets.
+      
+    
+
+  
+
+
+  
+  
+
+  
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      lincomatic
+    
+
+  
+      AssetsRenderTheme shouldn't ignore relativePathPrefix
+
+
+  
+
+  
+        
+          
+
+        
+
+
+      cb30899
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 10
+    
+  
+
+
+
+  
+
+    
+      
+          Thanks for the PR.
+
+Actually the relativePathPrefix was primarily introduced for the case we use a render theme in assets that retrieve its resources from a jar (like mapsforge jar).
+So the relativePathPrefix was the relative path inside the jar itself.
+
+But I understand that we may have a similar case with assets paths too.
+
+Nevertheless the relativePathPrefix is about the resources only.
+The theme path can be fully described with the fileName parameter.
+So I don't think we need the change in AssetsRenderTheme class.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 10
+    
+  
+
+
+
+  
+
+    
+      
+          A general note, please try following our code and style conventions (e.g. indentation).
+      
+    
+
+  
+
+
+  
+  
+  
+
+  
+      
+
+  
+
+
+
+
+  
+
+    
+      lincomatic
+    
+
+    commented on cb30899
+
+    
+      on Apr 10
+    
+  
+
+
+
+  
+
+    
+      
+          Sorry about the indentation. I use Emacs, which mixes spaces and tabs, and the indentation looked the same as yours in my git client. I will be careful to recheck it another way next time.
+
+I would agree with that an easy workaround is to simply add the relative path prefixes to the assets: tags in the theme file. However, this makes the theme formats inconsistent between using file: and assets:. I noticed this when I was tweaking a theme using the SwingMapViewer, which am using with an Android app. Rather than just swapping "file:" and "assets:," I have to swap "file:" for "assets:relativepath/."
+
+Also, it is confusing that  the AssetsRenderTheme constructor accepts a relativePathPrefix parameter, but essential ignores it.  Furthermore, the relativePathPrefix is handled consistently between "jar:" and "file:," so shouldn't it behave the same way with "assets:?"
+      
+    
+
+  
+
+
+  
+
+
+  
+
+  
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      lincomatic
+    
+
+  
+      fix indentation
+
+
+  
+
+  
+
+        
+
+
+      8e33ab5
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 10
+    
+  
+
+
+
+  
+
+    
+      
+          We can make rendertheme-v4 external by replacing the assets: with file: prefix.
+You just need to have in the same dir the render theme xml and the patterns / symbols folders, a common way of packaging render themes.
+
+The relativePathPrefix is not ignored, as said it's handled when we use an assets render theme that declares resources from a jar.
+
+About your PR, can you repost it with the AndroidGraphicFactory changes?
+      
+    
+
+  
+
+
+  
+  
+
+  
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      lincomatic
+    
+
+  
+      correct botched indentation fix commit
+
+
+  
+
+  
+
+        
+
+
+      bd1fff9
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+
+
+  
+
+    
+      lincomatic
+    
+
+    commented
+
+    
+      on Apr 11
+    
+  
+
+
+
+  
+
+    
+      
+          Actually, you just described the exact reason for my PR. Without my PR, when I use rendertheme-v4 as file: or jar: theme, it looks for the patterns/symbols folders as subfolder of relativePathPrefix, so I can package the whole theme in its own folder. But when used as assets:, it ignores relativePathPrefix, so the symbols/patterns are always relative to the root of assets.
+
+Sorry, I am not very good with git. I don't know why the commit deleted my change to AndroidGraphicFactory, rather than fixing the indent. Will resubmit now.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 11
+    
+  
+
+
+
+  
+
+    
+      
+          Yes the relativePathPrefix is needed for assets too, the AndroidGraphicFactory changes are useful.
+
+About GitHub, it's recommended for every PR to create a (dev) topic branch in your repository.
+That allows you to build new features or test out ideas without putting your main branch at risk.
+Of course you need to rebase it, each time dev changes.
+(e.g. I have updated dev from your last fork)
+
+You can read more in GitHub Help.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+
+
+  
+
+    
+      lincomatic
+    
+
+    commented
+
+    
+      on Apr 11
+    
+  
+
+
+
+  
+
+    
+      
+          That is great advice. Thank you for the tip.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 11
+    
+  
+
+
+
+  
+
+    
+      
+          @lincomatic your latest code seems ok, but we don't need the changes for AssetsRenderTheme.
+It refers to render theme xml path, which is described fine with the fileName parameter.
+
+We only need the changes in AndroidGraphicFactory for the resources themselves.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+
+
+  
+
+    
+      lincomatic
+    
+
+    commented
+
+    
+      on Apr 17
+    
+  
+
+
+
+  
+
+    
+      
+          Sorry for taking so long to reply.. I didn't see your latest comment until now.
+Actually, we also need the change in AssetsRenderTheme, because the user instantiates the rendertheme by calling the constructor of AssetsRenderTheme(). If we only use the changes in AndroidGraphicFactory, there's no way to pass the relativePathPrefix down to AndroidGraphicFactory, so the change is useless.
+      
+    
+
+  
+
+
+  
+  
+
+  
+      
+          
+          
+          devemux86
+          commented on the diff
+          on Apr 17
+
+      
+    
+      
+
+
+  
+    
+        View full changes
+    
+    
+      ...sforge/map/android/rendertheme/AssetsRenderTheme.java
+    
+  
+  
+    
+            
+    
+      
+        
+      
+    
+    @@ -43,7 +43,7 @@ public AssetsRenderTheme(Context context, String relativePathPrefix, String file
+  
+
+    
+
+
+    
+
+    
+
+  
+
+     	public AssetsRenderTheme(Context context, String relativePathPrefix, String fileName, XmlRenderThemeMenuCallback menuCallback) throws IOException {
+
+  
+
+
+    
+
+
+    
+
+    
+
+  
+
+     		this.assetName = fileName;
+
+  
+
+
+    
+
+
+    
+
+    
+
+  
+
+     		this.relativePathPrefix = relativePathPrefix;
+
+  
+
+
+
+    
+  
+
+
+
+  
+
+  
+
+
+  
+      
+
+  
+    
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    added a note
+
+    
+      on Apr 17
+    
+  
+
+
+
+  
+
+    
+      
+          The relativePathPrefix is passed down here.
+      
+    
+
+  
+
+
+
+  
+
+  
+  
+    Add a line note
+
+  
+
+  
+      
+	Sign up for free
+	to join this conversation on GitHub.
+	Already have an account?
+	Sign in to comment
+
+
+  
+
+
+
+
+
+
+
+
+    
+  
+
+
+  
+
+  
+      
+          
+          
+          devemux86
+          commented on the diff
+          on Apr 17
+
+      
+    
+      
+
+
+  
+    
+        View full changes
+    
+    
+      ...sforge/map/android/rendertheme/AssetsRenderTheme.java
+    
+  
+  
+    
+            
+    
+      
+        
+      
+    
+    @@ -43,7 +43,7 @@ public AssetsRenderTheme(Context context, String relativePathPrefix, String file
+  
+
+    
+
+
+    
+
+    
+
+  
+
+     	public AssetsRenderTheme(Context context, String relativePathPrefix, String fileName, XmlRenderThemeMenuCallback menuCallback) throws IOException {
+
+  
+
+
+    
+
+
+    
+
+    
+
+  
+
+     		this.assetName = fileName;
+
+  
+
+
+    
+
+
+    
+
+    
+
+  
+
+     		this.relativePathPrefix = relativePathPrefix;
+
+  
+
+
+    
+
+
+    
+
+    
+
+  
+
+    -		this.inputStream = context.getAssets().open(this.assetName);
+
+  
+
+
+    
+
+
+    
+
+    
+
+  
+
+    +		this.inputStream = context.getAssets().open((this.relativePathPrefix == null) ? "" : this.relativePathPrefix + this.assetName);
+
+  
+
+
+
+    
+  
+
+
+
+  
+
+  
+
+
+  
+      
+
+  
+    
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    added a note
+
+    
+      on Apr 17
+    
+  
+
+
+
+  
+
+    
+      
+          Here we parse the render theme xml file, i.e. fileName parameter which becomes assetName variable.
+
+The xml file path can be totally described by this, so we don't need any mix with the relativePathPrefix which is for the resources paths in the xml itself.
+      
+    
+
+  
+
+
+
+  
+
+  
+  
+    Add a line note
+
+  
+
+  
+      
+	Sign up for free
+	to join this conversation on GitHub.
+	Already have an account?
+	Sign in to comment
+
+
+  
+
+
+
+
+
+
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on May 16
+    
+  
+
+
+
+  
+
+    
+      
+          Any news on this?
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+
+
+  
+
+    
+      lincomatic
+    
+
+    commented
+
+    
+      on May 19
+    
+  
+
+
+
+  
+
+    
+      
+          Excluding this change:
+
+
+      this.inputStream = context.getAssets().open(this.assetName);
+      this.inputStream = context.getAssets().open((this.relativePathPrefix == null) ? "" : this.relativePathPrefix + this.assetName);
+
+
+forces the theme XML file to be stored in the root of the assets, unless we instantiate AssetsRenderTheme with fileName=relativePathPrefix+fileName. I have a rendertheme that's stored like this:
+osma/
+osma/mysomatheme.xml
+osma/patterns
+osma/symbols
+
+Without my change, we need to use
+AssetsRenderTheme(context,"osma","osma/mysosmatheme.xml"....
+This is redundant, and unexpected, since the parameter is called "fileName," not filePath. 
+If you feel strongly about it, I don't mind, It might be easier to just close this PR and make the changes the way you like them, since my PR ugly, with 3 commits.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on May 19
+    
+  
+
+
+
+  
+
+    
+      
+          Ok now I understand better what you mean.
+I don't oppose to the changes, but can you squash the commits into one?
+
+I posted some instructions here:
+https://groups.google.com/d/msg/mapsforge-dev/AK3yjjd8E6s/a6Ct5V7b-i8J
+      
+    
+
+  
+
+
+  
+  
+      
+    
+      
+
+      
+      lincomatic
+
+      referenced
+      this pull request
+      
+        on May 20
+      
+    
+
+      
+          
+        Merged
+      
+
+
+
+    
+      
+        AssetsRenderTheme shouldn't ignore relativePathPrefix
+        #612
+    
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+
+
+  
+
+    
+      lincomatic
+    
+
+    commented
+
+    
+      on May 20
+    
+  
+
+
+
+  
+
+    
+      
+          I tried squashing but every time I synced it, the squash would get undone, because I had already pushed it to the remote. Hope you don't mind.. I just created a new PR instead. 
+#612
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on May 20
+    
+  
+
+
+
+  
+
+    
+      
+          @lincomatic it's ok, Git is very powerful but it can get equally hard to manage too.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      closed this   on May 20
+    
+  
+
+  
+
+
+
+
+      
+
+
+  
+    
+
+      
+      
+      lincomatic
+      deleted the  lincomatic:dev branch on May 20
+    
+  
+
+
+
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      added the bug label on Jul 21
+    
+  
+
+
+
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      added this to the 0.5.2 milestone on Jul 21
+    
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  </comments></item></BR></extraction>

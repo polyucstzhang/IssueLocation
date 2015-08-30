@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894957</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/76e0bff7efc6e1ead7dd8f4e7783aa9fa78f206b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/76e0bff7efc6e1ead7dd8f4e7783aa9fa78f206b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:30:7</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/76e0bff7efc6e1ead7dd8f4e7783aa9fa78f206b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Handle makeserver and makebuffer events + buffer list display fragment
+    </title><numbercommit>
+      11 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_main.xml
+            </name></item><item><name>
+              res/layout/row_buffer.xml
+            </name></item><item><name>
+              res/layout/row_buffergroup.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/DBHelper.java
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplication.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/ServersDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

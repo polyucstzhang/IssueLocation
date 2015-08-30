@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881786</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/3dd6cd61bee08103ad335d4fc518a1b21d6b771a]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/3dd6cd61bee08103ad335d4fc518a1b21d6b771a]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:24:42</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/3dd6cd61bee08103ad335d4fc518a1b21d6b771a]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Added primitive AltBeacon support
+    </title><numberfile>
+      8 changed files
+    </numberfile><source_file><item><name>
+              .idea/misc.xml
+            </name></item><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/messages/BeaconMessage.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceProxy.java
+            </name></item></source_file></item></commit></extraction>

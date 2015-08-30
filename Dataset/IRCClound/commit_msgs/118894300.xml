@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894300</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9c6fd161177b6e59befe4b3af367a82e0c34f8fb]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9c6fd161177b6e59befe4b3af367a82e0c34f8fb]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:10:32</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9c6fd161177b6e59befe4b3af367a82e0c34f8fb]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Update the list of preset IRC servers, fix a bug where the SSL checkb…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/EditConnectionFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

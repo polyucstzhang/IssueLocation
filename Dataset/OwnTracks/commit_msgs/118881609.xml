@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881609</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/d7e7cd0923cb60e91da9d31ee235c3542f579290]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/d7e7cd0923cb60e91da9d31ee235c3542f579290]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:17:7</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/d7e7cd0923cb60e91da9d31ee235c3542f579290]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixed merge conflict
+    </title><numberfile>
+      4 changed files
+    </numberfile><source_file><item><name>
+              CHANGELOG.md
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              settings.gradle
+            </name></item><item><name>
+              src/main/res/layout/activity_statistics.xml
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832456</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/61]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/61]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:56:32</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/61]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#61</id><title>Problems trying to generate .map from osm.pbf</title><description>
+
+    
+      
+          From vegeto...@gmail.com on December 23, 2010 18:05:10
+
+Hi Guys, I followed ALL the steps trying to generate the .map and then I got stuck in 
+"org.openstreetmap.osmosis.core.OsmosisRuntimeException: Task type mapfile-writer doesn't exist." even thought I created the folder in /home/andre/.openstreetmap/osmosis/plugin/ and dropped the mapfile plugin there
+
+thanks in advance,
+Andre Mariano
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=61
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 23, 2010 11:08:13
+
+Hello Andre,
+
+can you please provide the output of the following command:
+ls -al /home/andre/.openstreetmap/osmosis/plugins/
+
+Please print the full command how you are starting Osmosis ("bin/osmosis ...") with all the parameters for the mapfile-writer, maybe there is a typo somewhere.
+
+(I assume you mean JTS 1.11 and not JTS 1.1)
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From vegeto...@gmail.com on December 27, 2010 10:54:26
+
+I don't know if it helps, but I'm running as root
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From vegeto...@gmail.com on December 28, 2010 04:16:20
+
+It took about 2 hours, but finished :D
+thanks guys, this worked really great! Great API you guys have
+thanks again!
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:32 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:32 PM GMT+8</closetime></item></BR></extraction>

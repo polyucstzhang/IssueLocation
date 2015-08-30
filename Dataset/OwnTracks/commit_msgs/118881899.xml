@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881899</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/d65de3a0386e8583e6cd2adf2cd4d8f482ce5389]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/d65de3a0386e8583e6cd2adf2cd4d8f482ce5389]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:29:28</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/d65de3a0386e8583e6cd2adf2cd4d8f482ce5389]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed #285
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/services/ServiceProxy.java
+            </name></item></source_file></item></commit></extraction>

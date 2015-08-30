@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881872</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/6f96d2d57e80c80cc8b89ff89f39e67bbd39d9ea]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/6f96d2d57e80c80cc8b89ff89f39e67bbd39d9ea]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:28:28</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/6f96d2d57e80c80cc8b89ff89f39e67bbd39d9ea]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      fixed crash when location client was not connected
+    </title><numberfile>
+      4 changed files
+    </numberfile><source_file><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item></source_file></item></commit></extraction>

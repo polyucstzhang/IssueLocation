@@ -1,0 +1,5 @@
+<extraction><id>#77</id><title>TLS CertPathValidatorException</title><description> Reported by JP: Thanks. I've spent 15m trying to configure TLS. All I get is "Error
+java.security.cert.CertPathValidatorException: Trust anchor for
+certification path not found". both when using TLS (with a previously
+imported CA certificate) and when using explicit path.</description><comments>I do not have any problems with TLS in both forms. 
+The Trust anchor indicates that it cannot confirm that the server certificate is trusted. As a first step, could you try to clear the application data (app info, clear data) as quite some things changed internally and then set the ca.crt path and connection security again? Works after clearing data (ocurred to me later).</comments></extraction>

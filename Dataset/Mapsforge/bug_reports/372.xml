@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829584</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/372]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/372]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:47:21</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/372]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#372</id><title>MyLocation icon redraw during zoom</title><description>
+
+    
+      
+          From devemu...@gmail.com on November 14, 2012 14:34:26
+
+Hi,
+
+I use an arrow for my location icon in order to rotate it at the direction of the user, based on Sensor.TYPE_ORIENTATION
+In order to refresh the arrow direction I call mapView.getOverlayController().redrawOverlays() in onSensorChanged.
+
+The problem:
+When I pinch the map to zoom in/out (without raising the fingers from the screen) and the arrow redraws, its position does not follow the mapview zoom in/out. Because of the frequent redrawOverlays calls, it appears in its original position, ignoring the zoom in/out.
+
+Is there any solution to this?
+Is there any way to know when the user tries to zoom in/out in order to not call the redrawOverlays?
+I know the mapView.isZoomAnimatorRunning() but it is "true" only when the zoom actually happens, when the user raises its fingers from the screen. During the pinch period, is there any way to know this?
+
+Thanks.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=372
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on November 25, 2012 07:39:22
+
+Thanks for reporting this bug, it is a known problem of the current overlay implementation. The drawing mechanism of the MapView and the OverlayController is simply not designed for non-integer zoom levels but only for discrete steps. :-(
+
+Status: Accepted  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on May 19, 2013 03:34:07
+
+This is fixed in the upcoming 0.4.0 version. There will not be any changes or fixes for this issue in the 0.3 branch.
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:58 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:58 PM GMT+8</closetime></item></BR></extraction>

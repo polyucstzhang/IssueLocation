@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881879</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/6161b160877ad0f83546439b4df11e4a74f01621]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/6161b160877ad0f83546439b4df11e4a74f01621]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:28:46</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/6161b160877ad0f83546439b4df11e4a74f01621]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Another go at fixing #293, Preventive fix for other occurence of #302
+    </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item></source_file></item></commit></extraction>

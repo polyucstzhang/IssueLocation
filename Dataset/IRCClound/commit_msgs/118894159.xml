@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894159</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/95051aaffdb59241ee90e8e959543265dd6c2a52]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/95051aaffdb59241ee90e8e959543265dd6c2a52]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:5:27</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/95051aaffdb59241ee90e8e959543265dd6c2a52]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Switch from ACRA to TestFlight for crash reporting
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              build.gradle
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              libs/TestFlightLib.jar
+            </name></item><item><name>
+              libs/acra-4.4.0.jar
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplication.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

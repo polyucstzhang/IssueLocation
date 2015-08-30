@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894658</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/54e70ebdd441f054beb3aea229e5740d95515dcf]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/54e70ebdd441f054beb3aea229e5740d95515dcf]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:21:41</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/54e70ebdd441f054beb3aea229e5740d95515dcf]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      invalid_nick_change prompt
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

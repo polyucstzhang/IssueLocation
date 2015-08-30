@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118301497</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/a738bbeda26e11e07f14dd163ebe488c061f208a]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/a738bbeda26e11e07f14dd163ebe488c061f208a]]></realpath><theme>mapsforge_09n</theme><middle>default</middle><createdate>2015-8-21 20:38:22</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/a738bbeda26e11e07f14dd163ebe488c061f208a]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      TileSize refactoring: the tile size to use is now configurable per vi…
+    </title><number>
+      104 changed files
+    </number></item></BR></extraction>

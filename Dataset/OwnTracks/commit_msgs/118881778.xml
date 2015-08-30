@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881778</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/ca5bb4362fad9fd17431bb440d382bd3878483b3]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/ca5bb4362fad9fd17431bb440d382bd3878483b3]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:24:24</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/ca5bb4362fad9fd17431bb440d382bd3878483b3]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Remove iBeacon support due to IP concerns
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBeacon.java
+            </name></item></source_file></item></commit></extraction>

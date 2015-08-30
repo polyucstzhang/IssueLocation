@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881854</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/490e365da3d4662decfa00d16e408fa44d88f3d2]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/490e365da3d4662decfa00d16e408fa44d88f3d2]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:28:1</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/490e365da3d4662decfa00d16e408fa44d88f3d2]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Resolved ConcurrentModificationExceptions with ConcurentHashMap, Fixe…
+    </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item></source_file></item></commit></extraction>

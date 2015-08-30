@@ -1,0 +1,2 @@
+<extraction><id>#117</id><title>HardwareCanvas.java line 29</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/5500771e7d7854d7c9b229a6</description><comments>This is a bug in the Android support library.</comments></extraction>

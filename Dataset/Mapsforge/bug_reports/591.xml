@@ -1,0 +1,2226 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118631092</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/591]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/591]]></realpath><theme>issue_591</theme><middle>default</middle><createdate>2015-8-22 22:25:21</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/591]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#591</id><title>Multithreaded Rendering: rendering errors</title><comments>
+          
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Mar 21
+    
+  
+
+
+
+  
+
+    
+      
+          The new multi-threaded renderer does not play well with labels/icons across tile borders. 
+
+For the original discussion see: 
+https://groups.google.com/forum/?utm_medium=email&amp;utm_source=footer#!msg/mapsforge-dev/x19w0iPealM/K3SgbhwdcowJ
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      ludwigb
+
+      referenced
+      this issue
+      from a commit
+      
+        on Mar 21
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      ludwigb
+    
+
+  
+      Partial fix for #591, labels cut by multi-threaded renderer
+
+
+  
+
+  
+
+
+      c16993b
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Mar 21
+    
+  
+
+
+
+  
+
+    
+      
+          With c16993b I have just pushed a fix for this. 
+
+The problem is that the LabelCache was not synchronized properly and that also tiles that were in the process of being rendered were not taken into account for the label boundary overlap calculations. 
+
+With a threaded TileStore there is still a window for this to happen. As with a multi-threaded renderer the TileStore does not need threading anymore, this should be removed, closing this window. With that done it will also be possible to simplify the synchronization with the LabelCache a bit. 
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 21
+    
+  
+
+
+
+  
+
+    
+      
+          With ff0ca39 I pushed a fix for a NPE happening with LabelLayer.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 21
+    
+  
+
+
+
+  
+
+    
+      
+          About the multi-threaded renderer so far the tests work fine (threaded cache off).
+
+I have seen once some rendering artifacts that went away when I reloaded the map.
+Somehow part of a tile showed blurry graphics, like above zoom level.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      added the bug label on Mar 21
+    
+  
+
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 21
+    
+  
+
+
+
+  
+
+    
+      
+          Playing with 8 threads, tile mixes show up (screenshot).
+
+
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      ludwigb
+
+      referenced
+      this issue
+      from a commit
+      
+        on Mar 22
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      ludwigb
+    
+
+  
+      FileSystemTileCache: remove threading (not needed anymore, see:wqq #591)
+
+
+  
+
+  
+
+
+      13d3682
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 23
+    
+  
+
+
+
+  
+
+    
+      
+          It's very easy to mix the tiles with consecutive pan / zoom actions (screenshot).
+Playing with default settings of 6 threads.
+
+Also with large maps I have very often app crashes at small zoom levels (whole country view).. 
+
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 23
+    
+  
+
+
+
+  
+
+    
+      
+          And the exception from the app crash:
+
+Caught a RuntimeException from the binder stub implementation.java.lang.NullPointerException
+    at android.inputmethodservice.IInputMethodWrapper.setSessionEnabled(IInputMethodWrapper.java:280)
+    at com.android.internal.view.IInputMethod$Stub.onTransact(IInputMethod.java:129)
+    at android.os.Binder.execTransact(Binder.java:404)
+    at dalvik.system.NativeStart.run(Native Method)
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Mar 28
+    
+  
+
+
+
+  
+
+    
+      
+          I think we are hitting two things here: 
+the app crash is likely to come from an OOM error somewhere way below, which is not totally unlikely with too many threads that all load a bit of data. 
+the mixing might come from a situation where somehow the bitmap is already reused before it should be. 
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Mar 28
+    
+  
+
+
+
+  
+
+    
+      
+          Is there any trick to reproduce the problem? I cannot get it to paint the tiles incorrectly. 
+Anything special with the device?
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 28
+    
+  
+
+
+
+  
+
+    
+      
+          It happens in Android and Java with consecutive zooms and pans in a row.
+
+For Android I have tried also in Genymotion and see it there too.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Mar 30
+    
+  
+
+
+
+  
+
+    
+      
+          I cannot really reproduce this, but my understanding is that the ill-painted tiles are actually zoom-up tiles from lower zoom levels that should be replaced by the right zoom level once the tiles have been produced. So, it looks like some tiles are never produced.
+
+In 104713b I have put a timeout on the wait and added a missing notify call.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 30
+    
+  
+
+
+
+  
+
+    
+      
+          
+I cannot really reproduce this
+
+
+
+That's the kind of errors I don't like, the not deterministic ones..
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 30
+    
+  
+
+
+
+  
+
+    
+      
+          Ludwig I don't see any new commit.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      ludwigb
+
+      referenced
+      this issue
+      from a commit
+      
+        on Mar 30
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      ludwigb
+    
+
+  
+      Synchronization: fixed some potential synchronization issues, see #591
+
+
+  
+
+  
+
+
+      104713b
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+      
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Mar 30
+    
+  
+
+
+
+  
+
+    
+      
+          It is there now.
+
+I could not push for a while, timeout after timeout, and then I decided to
+back off for a moment, because that way I was contributing to the DDOS on
+github.
+
+Ludwig
+…
+On 29 March 2015 at 16:08, Emux &lt;notifications@github.com&gt; wrote:
+ Ludwig I don't see any new commit.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/591#issuecomment-87455924&gt;.
+
+
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 30
+    
+  
+
+
+
+  
+
+    
+      
+          I see (often) again the tiles mix (screenshot).
+
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+      
+
+    
+      applantation
+    
+
+    commented
+
+    
+      on Mar 30
+    
+  
+
+
+
+  
+
+    
+      
+          That is again a tile from a lower zoom level blown up to fit the space
+until the real rendered tile becomes available.
+So the missing tile either never gets rendered or the missing tile gets
+rendered but the screen is not redrawn when it is finished. (If you then
+pan on the screen does the middle tile get redrawn correctly?)
+
+I only have two devices with me at the moment, running 5.0 and 5.1, maybe
+too fast to show the behaviour.
+
+I will probably try to put some debugging messages into dev later, maybe
+from reading a trace what happens will help me understand what is wrong.
+…
+On 30 March 2015 at 05:26, Emux &lt;notifications@github.com&gt; wrote:
+ I see often again the tiles mix.
+
+ [image: sample]
+ &lt;https://cloud.githubusercontent.com/assets/3484020/6892775/7b12df24-d6cf-11e4-837b-975947b0a1df.png&gt;
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/591#issuecomment-87589830&gt;.
+
+
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 30
+    
+  
+
+
+
+  
+
+    
+      
+          No the cache is already altered at that point (none panning or zoom fixes that tile).
+I mean I find the blurry tile in the cache at this zoom level (where it does not belong).
+
+The exact same behavior happens also in Java.
+(I recommend to try the Genymotion VMs, they can help in debugging)
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+      
+
+    
+      applantation
+    
+
+    commented
+
+    
+      on Mar 31
+    
+  
+
+
+
+  
+
+    
+      
+          Can you confirm that tile really is in the file system tile cache?
+
+Because this is never a tile that we would render that way, blurry and all.
+It is definitely a tile that is drawn with the drawParentTile, scaling up a
+tile from a lower zoom level, that fits into that space (see how the roads
+line up).
+
+My suspicion is that for some reason the tile never gets written to the
+cache, so in the following code the tileCache never returns a bitmap, and
+the code always falls back to the parent bitmap (TileLayer.java):
+
+TileBitmap bitmap = this.tileCache.getImmediately(job);
+
+if (bitmap == null) {
+if (this.hasJobQueue &amp;&amp; !this.tileCache.containsKey(job)) {
+this.jobQueue.add(job);
+}
+drawParentTileBitmap(canvas, point, tile);
+} else {
+if (isTileStale(tile, bitmap) &amp;&amp; this.hasJobQueue &amp;&amp;
+!this.tileCache.containsKey(job)) {
+this.jobQueue.add(job);
+}
+retrieveLabelsOnly(job);
+canvas.drawBitmap(bitmap, (int) Math.round(point.x), (int)
+Math.round(point.y));
+bitmap.decrementRefCount();
+}
+
+
+Ludwig
+…
+On 30 March 2015 at 09:34, Emux &lt;notifications@github.com&gt; wrote:
+ No the cache is already altered at that point (none pan or zoom fixes that
+ tile).
+ I mean I find the blurry tile in the cache at this zoom level (where it
+ does not belong).
+
+ The exact same behavior happens also in Java.
+ (I recommend to try the Genymotion VMs, they can help in debugging)
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/591#issuecomment-87661530&gt;.
+
+
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 31
+    
+  
+
+
+
+  
+
+    
+      
+          Sure, here is a fresh example - quite easy to reproduce along with a lot of crashes too.
+
+The blurry tile (12/2200/1344.tile) is taken from the cache on the file system:
+
+
+The app screenshot:
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 31
+    
+  
+
+
+
+  
+
+    
+      
+          I just tried in Android 2.3 and after drawing 3-4 tiles we have immediate OOM crashes:
+
+java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+    at android.graphics.Bitmap.nativeCreate(Native Method)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:477)
+    at org.mapsforge.map.android.graphics.AndroidBitmap.createAndroidBitmap(AndroidBitmap.java:55)
+    at org.mapsforge.map.android.graphics.AndroidTileBitmap.&lt;init&gt;(AndroidTileBitmap.java:142)
+    at org.mapsforge.map.android.graphics.AndroidGraphicFactory.createTileBitmap(AndroidGraphicFactory.java:233)
+    at org.mapsforge.map.layer.renderer.DatabaseRenderer.executeJob(DatabaseRenderer.java:144)
+    at org.mapsforge.map.layer.renderer.MapWorkerPool$MapWorker.run(MapWorkerPool.java:111)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+    at java.lang.Thread.run(Thread.java:1019)
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+      
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Mar 31
+    
+  
+
+
+
+  
+
+    
+      
+          The crash is most likely to having too many threads retrieving data at the
+same time, we will need to find a way of aligning threads not only with
+processor capacity, but also available memory. Six, like at the moment, is
+definitely too many, but it seems worthwhile to try with so many as that
+shakes out some of the problems we are having.
+
+Interesting to see that that tile really ends up in the cache, currently I
+have no explication.
+
+Ludwig
+…
+On 31 March 2015 at 10:13, Emux &lt;notifications@github.com&gt; wrote:
+ I just tried in Android 2.3 and we have after drawing 3-4 tiles immediate
+ OOM crash:
+
+ java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+     at android.graphics.Bitmap.nativeCreate(Native Method)
+     at android.graphics.Bitmap.createBitmap(Bitmap.java:477)
+     at org.mapsforge.map.android.graphics.AndroidBitmap.createAndroidBitmap(AndroidBitmap.java:55)
+     at org.mapsforge.map.android.graphics.AndroidTileBitmap.&lt;init&gt;(AndroidTileBitmap.java:142)
+     at org.mapsforge.map.android.graphics.AndroidGraphicFactory.createTileBitmap(AndroidGraphicFactory.java:233)
+     at org.mapsforge.map.layer.renderer.DatabaseRenderer.executeJob(DatabaseRenderer.java:144)
+     at org.mapsforge.map.layer.renderer.MapWorkerPool$MapWorker.run(MapWorkerPool.java:111)
+     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+     at java.lang.Thread.run(Thread.java:1019)
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/591#issuecomment-88079272&gt;.
+
+
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Apr 1
+    
+  
+
+
+
+  
+
+    
+      
+          I think I have an explantation for what is happening now, but not yet a solution. 
+
+The wrong tiles that we see are not zoomed-up versions from lower levels, that was a wrong hunch. 
+
+The problem lies in the rendertheme matching somewhere. The tiles that are drawn incorrectly are drawn with rendertheme instructions that match a different zoom level from the one that is actually shown. That is why we see this mismatch, which I have now managed to recreate, at zoom levels where there is a change in the render theme instructions for the levels involved. It looks like something is not quite thread-safe at this point: I assume the wrong tiles are already scheduled, then the zoom level changes, but the zoom level for matching stays at the previous level.
+
+Some progress, but not quite a solution yet.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Apr 2
+    
+  
+
+
+
+  
+
+    
+      
+          The problem with the tiles are the text and line width scaling that is zoom level specific, but only applied once to each render instruction. When changing the zoom level the scale factors change, which affects all tiles that are being drawn at the time. So, that is why with zoom level changes we get tiles that appear half drawn and some that are drawn thicker than others. 
+
+Fixing this is not trivial as it requires storing more information per render instruction, as we need to keep the information around for each zoom level. 
+
+I made an attempt to store the render theme instructions properly scaled for each zoom level, but that uses so much memory that it is not an option. 
+
+Equally, it is not an option to apply the scaling factors only at drawing time, as the correct size information is already needed at layout time (label clashes).
+
+Again, some progress, but not quite a solution yet.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 2
+    
+  
+
+
+
+  
+
+    
+      
+          Thanks for the feedback Ludwig.
+
+You mean the RenderContext.setScaleStrokeWidth(zoomLevel) ?
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Apr 2
+    
+  
+
+
+
+  
+
+    
+      
+          Yes, strokes and text sizes are scaled per zoom level, but this is not thread safe.
+
+I have now a working solution (I hope), but I will need a bit more testing and cleanup. Will hopefull push fix tomorrow.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      ludwigb
+      changed the title from  Multithreaded Rendering: labels not rendered correctly on borders to Multithreaded Rendering: rendering errors on Apr 2
+    
+  
+
+
+
+
+
+      
+  
+    
+      
+
+      
+      ludwigb
+
+      referenced
+      this issue
+      from a commit
+      
+        on Apr 2
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      ludwigb
+    
+
+  
+      Multithreaded Rendering: fix for #591 by making textScale and strokeS…
+
+        
+          …
+        
+        …cale thread-safe
+
+  
+
+  
+
+
+      6e2bfa5
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Apr 2
+    
+  
+
+
+
+  
+
+    
+      
+          With 6e2bfa5 I have pushed a change that hopefully fixes the rendering problem.
+
+The problem was that each zoom level has its own stroke and text scaling to increase text size and stroke width even if there is no change in the rendertheme. The problem was that this was a fixed change on the rendertheme object that then applied to all threads rendering. This was not a problem in the single-threaded case, for obvious reasons.
+
+In the multithreaded case it would also not have been a problem, had we been only rendering tiles at the same zoom level. However, when tiles from two different zoom levels were rendered at the same time (which can happen with a rapid change of zoom levels, when e.g. a lower zoom level has not yet been fully rendered while changing to a higher one) the setting for some of the tiles was wrong. This appeared as thicker line rendering that mostly applied to whole tiles, but could also apply just to part tiles.
+
+The solution was to have different paints for the renderinstructions for different zoom levels. The paints are instantiated when tiles at that level are actually rendered and are copied from the original paint, which now remains something like a template for the paints actually used. 
+
+A different approach attempted was to have specific rules for all zoom levels, but this turned out to be too memory hungry to be feasible. 
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on Apr 2
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      Multithreaded Rendering #591: fix NPE
+
+
+  
+
+  
+
+
+      3d4c465
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 2
+    
+  
+
+
+
+  
+
+    
+      
+          With 3d4c465 I pushed a NPE fix.
+
+I studied the changes, I'm a bit hesitant for the paints recreation during the map lifetime.
+I'll continue with the testing.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 2
+    
+  
+
+
+
+  
+
+    
+      
+          We have drawing issues, like the thick black lines (screenshot):
+
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 2
+    
+  
+
+
+
+  
+
+    
+      
+          By the way, we still have OOM errors.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+      
+
+    
+      applantation
+    
+
+    commented
+
+    
+      on Apr 2
+    
+  
+
+
+
+  
+
+    
+      
+          On 2 April 2015 at 05:59, Emux &lt;notifications@github.com&gt; wrote:
+ By the way, we still have OOM errors.
+
+I had, more for testing, set the number of concurrent threads very high: as
+each thread holds the data for a tile that can obviously be too much memory
+for low-memory devices. In c82ff43 I have reduced the number of threads
+to availableProcessors() + 1, which should go some way of adapting to
+device capabilities, but it would still be better if we had some better
+idea about the device.
+
+I studied the changes, I'm a bit hesitant for the paints recreation during
+ the map lifetime.
+Yes, that is obviously not ideal. With ce48908 it again introduces a
+test so that at least the paints are only created once per zoom level.
+I had previously thought of only applying the scaling at the point of
+drawing, but correct size (at least of text) is also required when laying
+out labels.
+A better idea how to achieve this would be welcome, but at least we now
+know where the problem with the tiles came from.
+
+We have some drawing issues, like the thick black lines (screenshot):
+
+I have now seen this. I have, at this point, not again tried to recreate
+it, but it is possible that the latest change  ce48908 fixes this as
+my hunch is that it was caused by a synchronization error (the paint was
+just being replaced when a new RenderContext was created). This now only
+happens once per zoom level and is synchronized, so all the paints should
+be there when a thread starts rendering.
+
+Ludwig
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 2
+    
+  
+
+
+
+  
+
+    
+      
+          
+I have reduced the number of threads to availableProcessors() + 1
+
+
+ 
+
+About the black lines, I still see them.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Apr 3
+    
+  
+
+
+
+  
+
+    
+      
+          With ef7dad6 I have pushed a fix for the black line problem. Black lines sometimes appeared where lines had a bitmap shader defined (e.g. private access roads with a hatched pattern).
+
+The problem was that access to a bitmap shader was not synchronized. This should now be fixed.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 3
+    
+  
+
+
+
+  
+
+    
+      
+          I see strange things with the rendering (we need thorough testing).
+
+The same tile in file cache appears different in 2 platforms, in Java it has transparencies.
+(save the 2 images and open them with an image viewer to see the transparency at 2nd one)
+
+Android 17/70404/42985.tile
+
+
+Java 17/70404/42985.tile
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 3
+    
+  
+
+
+
+  
+
+    
+      
+          Also e.g. in Java I see bold black rendering at some elements that goes away with little pan at same zoom level.
+
+Before drag:
+
+
+After drag:
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 3
+    
+  
+
+
+
+  
+
+    
+      
+          Ok the above behavior happens because in SwingMapViewer we create the TileRendererLayer with isTransparent=true.
+
+Nevertheless it's something to check.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Apr 8
+    
+  
+
+
+
+  
+
+    
+      
+          Where are we with this? 
+
+I understand that the rendering issues regarding the Swing MapViewer are caused by the transparency, is this something that still needs to be addressed? 
+
+I am internally testing the threaded rendering, so far I do not see any issues, but this is one device only.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 8
+    
+  
+
+
+
+  
+
+    
+      
+          The transparency issue exists and I think we should check it eventually, the optical result for the end user is certainly not good.
+See also #579 where we have another transparency issue introduced some time ago by former code changes.
+
+About the multithreaded rendering I find it currently unusable because of the continuous crashes.
+With various tests in Android (Gingerbread to Lollipop) and Java, with my apps and Samples.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+      
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Apr 9
+    
+  
+
+
+
+  
+
+    
+      
+          What happens if you set the thread number to 1? I would be interested if
+that still creates crashes or if that behaves ok.
+The biggest problem that we have is with the multiplication of resources as
+every different zoom level needs its own paints.
+
+(Obviously, there are more resources required to process two tiles at once,
+but that is the question if we still get the crashes with just one thread)
+…
+On 8 April 2015 at 03:06, Emux &lt;notifications@github.com&gt; wrote:
+ The transparency issue exists and I think we should check it eventually,
+ the optical result for the end user is certainly not good.
+ See also #579 &lt;https://github.com/mapsforge/mapsforge/issues/579&gt; where
+ we have another transparency issue introduced some time ago with former
+ code changes.
+
+ About the multi-threaded rendering I find it currently unusable because of
+ the continuous crashes.
+ Various tests in Java and Android (from Gingerbread to Lollipop), with my
+ apps and Samples.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/591#issuecomment-90814937&gt;.
+
+
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Apr 9
+    
+  
+
+
+
+  
+
+    
+      
+          Sorry for not mentioning it earlier..
+
+Actually I currently use dev branch with thread number to 1.
+(that's how I publish my Beta versions too)
+
+So far I have not seen any issues with 1 thread.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+      
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Apr 12
+    
+  
+
+
+
+  
+
+    
+      
+          I think the problem is that we are sailing so close to the memory limit
+that, at least on some devices, we do not have the memory available to load
+the data for two tiles at the same time.
+
+The problem with the map reader interface is that we
+
+   1. load the data from the tile at once and only then start rendering
+   2. load all the data from the tile regardless if it is needed for
+   rendering (what is rendered is only decided later through the rendering
+   process, but all the ways at that point have to be decoded already)
+
+This is a fundamental flaw in the design of the interaction, which has, in
+a generic fashion, been solved a long time ago: with database access:
+
+
+   1. use a cursor to iterate over data as it is loaded from the DB, never
+   load all the data at once.
+   2. only load the data the data that is actually required, the loading
+   process could be decided by the rendertheme, iterating through the layers.
+…
+On 9 April 2015 at 03:12, Emux &lt;notifications@github.com&gt; wrote:
+ Sorry for not mentioning earlier..
+
+ Actually I currently use dev branch with thread number to 1.
+ (that's how I publish my Beta versions too)
+
+ So far I have not seen any issue with 1 thread.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/591#issuecomment-91124979&gt;.
+
+
+
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on Jul 21
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      Multithreaded Rendering: for stability reasons we set number of threads
+
+        
+          …
+        
+        to 1, #591
+
+  
+
+  
+
+
+      6f411c4
+  
+
+
+    
+  
+
+
+  
+      
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      
+        9 days ago
+      
+    
+
+      
+          
+        Closed
+      
+
+
+
+    
+      
+        Use several threads for parallel map tile rendering on multi-core CPUs
+        #73
+    
+    
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+        </comments></item></BR></extraction>

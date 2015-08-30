@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831304</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/166]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/166]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:53:5</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/166]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#166</id><title>RoutingGraphWriterTask creates invalid output for spain.osm.pbf, because of tab character in street name</title><description>
+
+    
+      
+          From t.be...@web.de on August 14, 2011 23:19:11
+
+Unable to process spain.osm.pbf because street name contains tab character.
+This results in invalid sql file.
+
+
+
+
+
+
+
+
+
+[exec] psql:data/temp/spain.sql:38: NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "pk_rge" for table "rg_edge"
+[exec] psql:data/temp/spain.sql:2362228: ERROR:  extra data after last expected column
+[exec] KONTEXT:  COPY rg_edge, line 32410: "32409   178165  819982  9623018     Valle de Cabuérniga-Espinilla-Salcedillo   CA-280      752.0203506413507   f..."
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+
+
+
+
+
+
+
+
+RoutingGraphWriterTask.toPgString(String) should eventually contain something like
+
+return s.replaceAll("\t", " ").trim();
+
+,to erase the tabulator from the strings.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=166
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on August 18, 2011 09:54:06
+
+Assigned the issue to the appropriate component owners.
+
+Status: Accepted
+  Owner: Fels.Rob...@gmail.com
+  Cc: thilo.ra...@fu-berlin.de  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From Fels.Rob...@gmail.com on September 13, 2011 10:21:30
+
+Thx, didn't know that with the 4 backslashes, it just looks weird :)
+But yeah should work.
+
+Cheers
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:41 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:41 PM GMT+8</closetime></item></BR></extraction>

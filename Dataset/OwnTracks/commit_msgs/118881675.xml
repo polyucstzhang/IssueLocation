@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881675</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/6f32b090bce9b54d78874a8ffd30869da4539b0d]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/6f32b090bce9b54d78874a8ffd30869da4539b0d]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:20:1</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/6f32b090bce9b54d78874a8ffd30869da4539b0d]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Merge branch 'master' of github:owntracks/android
+    </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBeacon.java
+            </name></item></source_file></item></commit></extraction>

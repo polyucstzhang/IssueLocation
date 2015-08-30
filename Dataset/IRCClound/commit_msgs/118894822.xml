@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894822</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/e2aeba9783231de0394127fc8b6143d18181eda0]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/e2aeba9783231de0394127fc8b6143d18181eda0]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:25:24</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/e2aeba9783231de0394127fc8b6143d18181eda0]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Add buttons to the network group rows
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/row_buffergroup.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

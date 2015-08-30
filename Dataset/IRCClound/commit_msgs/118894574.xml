@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894574</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3918cb3340c3a9595a8627648d661175dfb48578]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3918cb3340c3a9595a8627648d661175dfb48578]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:19:48</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3918cb3340c3a9595a8627648d661175dfb48578]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Strip the formatting from text entered into the message edittext
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

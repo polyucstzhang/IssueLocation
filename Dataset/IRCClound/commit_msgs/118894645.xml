@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894645</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f163a877381f6fe74239e83f5b97cf7c9d1189ba]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f163a877381f6fe74239e83f5b97cf7c9d1189ba]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:21:13</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f163a877381f6fe74239e83f5b97cf7c9d1189ba]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix handling of fail_info when connection state changes, properly ren…
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/ServersDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

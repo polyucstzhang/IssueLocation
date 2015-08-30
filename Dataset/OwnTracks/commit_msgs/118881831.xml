@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881831</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/3d6fb9367afc9293b847aeed7efd4d2110f5a5f0]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/3d6fb9367afc9293b847aeed7efd4d2110f5a5f0]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:27:10</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/3d6fb9367afc9293b847aeed7efd4d2110f5a5f0]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed some hint issues, improved notification handling
+    </title><numberfile>
+      7 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/layout/preferences_broker.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Preferences.java
+            </name></item></source_file></item></commit></extraction>

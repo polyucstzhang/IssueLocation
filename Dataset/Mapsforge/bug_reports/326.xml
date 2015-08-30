@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830058</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/326]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/326]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:48:40</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/326]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#326</id><title>ftp.mapsforge.org: "ls" command hangs?</title><description>
+
+    
+      
+          From mbi...@gmail.com on June 13, 2012 13:07:21
+
+What steps will reproduce the problem? 1. Connect to ftp.mapsforge.org
+2. Try to get a directory listing What is the expected output? What do you see instead? Expected: Directory listing
+What I see: The connection hangs until timeout What version of the product are you using? On what operating system? Chrome Browser, Linux ftp client, FolderSync (Android) from 2 different locations Please provide any additional information below. Worked fine a week ago.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=326
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From mbi...@gmail.com on June 13, 2012 14:46:43
+
+I use FolderSync for Android to keep the maps on my device up to date. FolderSync only works with FTP servers so I was glad I found ftp.mapsforge.org in Google.
+
+Will the FTP access vanish over the time or do both machines work in parallel?
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From pjalaran...@gmail.com on August 10, 2012 02:18:13
+
+The link above was something I found that I thought could help solve the problem. However I just run my program again and all work out fine so the problem is no longer available. I believe you can close this issue.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:54 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:54 PM GMT+8</closetime></item></BR></extraction>

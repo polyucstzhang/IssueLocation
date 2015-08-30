@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832941</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/6]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/6]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:58:9</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/6]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#6</id><title>Implement a fast lossless compression algorithm for cached tiles</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on May 27, 2010 19:53:37
+
+Currently we cache rendered map tiles as uncompressed bitmaps in RAM and on
+SD card. Using PNG files is not an option, as compression and decompression
+takes to much time and kills the performance of the slippy map. JPEG is not
+an option as it results in a loss of quality.
+
+Therefore we need another compression algorithm for images, that runs much
+faster than PNG but still saves some space. Maybe run length encoding would
+be an option, as map tiles tend to have larger areas with the same color
+where RLE might be quite efficient.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=6
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on October 02, 2010 10:32:56
+
+I cannot tell you any numbers right now. We will simply have to test each potential solution carefully on different devices to see the impact on the FPS ratio while moving the map around.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on October 03, 2010 05:48:03
+
+Well, if addJob() fails, the job does not make it into the queue and will not get rendered by the MapGenerator. If the user continues to move the map, the same job will be entered into the queue with the next frame, otherwise it will never get rendered and the tile will be missing in the map (just a white square).
+
+But why should addJob() fail? The queue is a PriorityQueue, and according to the docs, offer may only fail, if the argument is null or not a MapGeneratorJob, neither of this cases can happen.
+
+Decompressing images should not happen in the MapGenerator thread. If we organize a queue in this new thread with images that need to be decompressed, we also have to think about a scheduling in this queue. When the map is moved while there are images in the queue, their importance may change. Simply decompressing them in the order they were added to the queue is far from perfect.
+
+Therefore i am still not convinced that async is the best solution, as it introduces a high complexity and many new problems. Scheduling a long queue takes some time as well as switching between threads. If for example RLE is much faster than PNG and still offers reasonable compression rates, we should use that and focus on some more important problems, for example issue #20 .
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 11, 2011 06:03:45
+
+Owner: ---
+  Cc: -thilo.mu...@gmail.com  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:27 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:27 PM GMT+8</closetime></item></BR></extraction>

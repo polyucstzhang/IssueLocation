@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893698</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c62736a3857a297ec9cb1cb5205d1d1cc8ecb489]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c62736a3857a297ec9cb1cb5205d1d1cc8ecb489]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:48:22</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c62736a3857a297ec9cb1cb5205d1d1cc8ecb489]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Add missing images to last commit
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-mdpi/login_logo.png
+            </name></item><item><name>
+              res/drawable-xhdpi/login_logo.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/login_logo.png
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894112</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/14c7de4b5e00062c87fef3c22d22b922bed22efb]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/14c7de4b5e00062c87fef3c22d22b922bed22efb]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:3:43</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/14c7de4b5e00062c87fef3c22d22b922bed22efb]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Animated nav drawer hamburger icon
+    </title><numbercommit>
+      17 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-hdpi/ic_navigation_drawer_highlight.png
+            </name></item><item><name>
+              res/drawable-hdpi/ic_navigation_drawer_unread.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_navigation_drawer.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_navigation_drawer_highlight.png
+            </name></item><item><name>
+              res/drawable-mdpi/ic_navigation_drawer_unread.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_navigation_drawer.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_navigation_drawer_highlight.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_navigation_drawer_unread.png
+            </name></item><item><name>
+              res/drawable-xhdpi/up.png
+            </name></item><item><name>
+              res/drawable-xhdpi/up_highlight.png
+            </name></item><item><name>
+              res/drawable-xhdpi/up_unread.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/ic_navigation_drawer.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/ic_navigation_drawer_highlight.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/ic_navigation_drawer_unread.png
+            </name></item><item><name>
+              res/layout/actionbar_messageview.xml
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

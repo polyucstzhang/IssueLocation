@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893901</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c81f3374b913e14389ac6d39c26782aba804cf41]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c81f3374b913e14389ac6d39c26782aba804cf41]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:56:0</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c81f3374b913e14389ac6d39c26782aba804cf41]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a few potential race conditions, closes </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/ChannelsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/ServersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/UsersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

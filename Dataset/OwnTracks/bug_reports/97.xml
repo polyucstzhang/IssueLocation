@@ -1,0 +1,2 @@
+<extraction><id>#97</id><title>No Map view</title><description> With Version 0.5.02, there is no map view anymore. See http://bka.li/Screenshot_2015-02-23-16-14-40.png</description><comments>My bad, compiled in a wrong Maps API key.  Works great :) 
+Thank you If the app freezes when opening the preferences, please uninstall the app and install 0.5.03 from Github again. I had to upload it again due to a recursion issue. </comments></extraction>

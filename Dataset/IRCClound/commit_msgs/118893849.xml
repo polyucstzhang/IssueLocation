@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893849</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/44e9d2ee2a503e823a3af9874b14d6a224a4950f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/44e9d2ee2a503e823a3af9874b14d6a224a4950f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:53:54</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/44e9d2ee2a503e823a3af9874b14d6a224a4950f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Verify the SSL certificate fingerprint
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

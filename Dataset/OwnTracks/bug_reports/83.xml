@@ -1,0 +1,9 @@
+<extraction><id>#83</id><title>Missing data items from Android messages?</title><description> When my server receives location messages from the Android client, the only properties sent are:
+    {
+        type: location,
+        lat: -42.8926992,
+        lon: 147.3347587,
+        tst: 1420860181,
+        acc: 30.0,
+        batt: 93
+    }I am particularly interested in the (missing?)  cog: and vel: properties as described in the API section of the Owntracks wiki.  Do I need to configure something on the client to get these?  Have they been implemented yet in the client?</description><comments>The cog and vel properties are currently published only by our iOS client; this hasn't as yet been done/released for Android. And I'm sorry to say, I cannot say when it will be there. Thanks for the info jp.  If I knew Java I' offer to help but alas..... That's a shame @rbarkas. I was hoping ... ;-)</comments></extraction>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882028</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/c025414e1cbb72439b8fb0fa4eea40b0a4c548dd]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/c025414e1cbb72439b8fb0fa4eea40b0a4c548dd]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:33:57</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/c025414e1cbb72439b8fb0fa4eea40b0a4c548dd]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      added communication with locator service for </title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocatorFused.java
+            </name></item></source_file></item></commit></extraction>

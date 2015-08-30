@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894672</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/918c2cf768231de2564c822545425bd01a92ac6f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/918c2cf768231de2564c822545425bd01a92ac6f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:22:9</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/918c2cf768231de2564c822545425bd01a92ac6f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Ignore unimportant messages when calculating the highlight count
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/IRCCloudJSONObject.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

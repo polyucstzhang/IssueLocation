@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828332</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/496]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/496]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:43:29</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/496]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#496</id><title>Migrate a project from 0.3.0 to 0.4.0</title><description>
+
+    
+      
+          From bennob...@gmail.com on May 07, 2014 10:13:54
+
+Up to now i was using mapsforge release 0.3.0 in my project.
+
+The new release 0.4.0 seems to be not compatible at all with the 0.3.0.
+
+Can you please update the wiki with some hints like GettingStarted with release 0.4.0,
+i.e. how the Overlays have to be used ...
+and how to migrate a project from 0.3.0 to 0.4.0.
+
+Greetings
+Benno
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=496
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From wish7code on May 12, 2014 05:18:04
+
+A step-by-step guide (or a simple checklist) would indeed be very helpful...
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on July 27, 2014 02:42:22
+
+Please use the mailing list for such questions. http://groups.google.com/group/mapsforge-dev The issue tracker is for documenting bugs and feature requests.
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 6:06 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:06 PM GMT+8</closetime></item></BR></extraction>

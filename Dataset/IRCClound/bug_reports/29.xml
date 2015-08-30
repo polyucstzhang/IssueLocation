@@ -1,0 +1,1 @@
+<extraction><id>#29</id><title>Parse networks.json file</title><description> Replace the hard-coded list of networks with this URL: http://irccloud.com/static/networks.json</description><comments> </comments></extraction>

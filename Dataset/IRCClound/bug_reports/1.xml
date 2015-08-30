@@ -1,0 +1,1 @@
+<extraction><id>#1</id><title>Check ignore list for notifications and buffers list</title><description> Local notifications and the red highlight indicator don't currently check the ignore list</description><comments> </comments></extraction>

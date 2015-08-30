@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893773</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/de342636f1f691501b281e167b0948cf16f20958]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/de342636f1f691501b281e167b0948cf16f20958]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:51:6</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/de342636f1f691501b281e167b0948cf16f20958]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Don't use mashape for oembed
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/ImageViewerActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

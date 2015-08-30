@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881618</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/4dbf9527a79a5cc9c55203420a094c460783c030]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/4dbf9527a79a5cc9c55203420a094c460783c030]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:17:25</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/4dbf9527a79a5cc9c55203420a094c460783c030]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Use normal clientID for hosted mode (same as private)
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item></source_file></item></commit></extraction>

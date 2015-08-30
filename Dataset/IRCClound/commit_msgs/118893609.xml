@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893609</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/fbd6b40698d610a5ba2c2d6df2adc7bc366181fc]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/fbd6b40698d610a5ba2c2d6df2adc7bc366181fc]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:44:58</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/fbd6b40698d610a5ba2c2d6df2adc7bc366181fc]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Move the connecting / loading status into the action bar
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/messageview.xml
+            </name></item><item><name>
+              res/values-v11/styles.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

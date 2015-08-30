@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893973</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ce52ca1f249dced563127f83b48bf610d6efd79b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ce52ca1f249dced563127f83b48bf610d6efd79b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:58:37</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ce52ca1f249dced563127f83b48bf610d6efd79b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a crash when long-pressing a message with no nick set, show the s…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/UsersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

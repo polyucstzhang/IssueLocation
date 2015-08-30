@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881937</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/c6b8a50c36535a3df682d26128d178129a229d82]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/c6b8a50c36535a3df682d26128d178129a229d82]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:29:52</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/c6b8a50c36535a3df682d26128d178129a229d82]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Disabled waypoint access in production build for 0.4
+    </title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              res/layout/row_waypoint.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/adapter/WaypointAdapter.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item></source_file></item></commit></extraction>

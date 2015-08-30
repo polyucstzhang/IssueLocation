@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832657</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/31]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/31]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:57:27</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/31]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#31</id><title>Add an API to modify the rendering style at runtime</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on July 30, 2010 09:04:45
+
+Currently much of the rendering style is hard-coded and cannot be changed at runtime. But one of the strongest advantages of ad-hoc rendering is possibility to fully customize the rendering style (font sizes, colors, z-ordering, replace default POI symbols, hide certain elements, ...).
+
+We therefore need to implement a mechanism like for example MapCSS ( http://wiki.openstreetmap.org/wiki/MapCSS ) and add an API to our map rendering component to control the rendering.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=31
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on January 28, 2011 00:20:12
+
+Issue 64 has been merged into this issue.
+
+Cc: muehlb...@inf.fu-berlin.de  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on August 28, 2011 10:23:16
+
+I have committed my current working copy in revision r1383 . There are still some known bugs (like for example missing water areas) and the performance needs to be polished. But besides that it works already quite well. Rendering is now completely configurable via XML files, which are very similar to osmarender stylesheets (see: http://wiki.openstreetmap.org/wiki/Osmarender/Rules ).
+
+All "early adopters" are invited to check out the new version and test it, so that we can locate and fix as many bugs as possible prior to the next release (which will most likely be called 0.3.0). A detailed wiki article describing the structure of the render theme XML files and the new MapView API will be published later.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From wms...@googlemail.com on September 22, 2011 23:51:52
+
+Hi all,
+
+the mapsforge is a very nice project! Can you look to "OSM MAP Composer". This is a Franwork to configure the tools for generate Garmin IMG files. Do  you know "MAP Composer"? http://composer.waldpfa.de/index.php/MC/Composer It would be nice if you could marryd "mapsforge" with "OSM Composer"
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:29 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:29 PM GMT+8</closetime></item></BR></extraction>

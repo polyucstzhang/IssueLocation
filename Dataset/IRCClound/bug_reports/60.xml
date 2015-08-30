@@ -1,0 +1,19 @@
+<extraction><id>#60</id><title>potential races in MessageActivity.java and MessageViewFragment.java</title><description> Dear developers of irccloud,I'm a Ph.D. student and I'm doing research on checking data races for
+Android apps. I found potential races in MessageActivity.java and
+MessageViewFragment.java:In MessageActivity.java at line 649, "messageTxt" is used in an
+AsyncTask. Android document suggests that we shouldn't access GUI
+wedgits out of UI thread. Is this a potential race with other access
+to "messageTxt" in UI thread (for example, user can change the text
+of "messageTxt" concurrently, or "messageTxt.setText" is invoked at
+line 544 and so on). Why not move "messageTxt.getText().toString()" at
+line 649 to "preExecute" and pass the String to "doInBackground"?In MessageViewFragment.java at line 1305,
+"EventsDataSource.getInstance()" is invoked in an AsyncTask and it
+returns a singleton EventsDataSource object. However, this method is
+also invoked many times by UI thread, e.g., line 213, 395 and so
+on. Since this method is not synchronized, it is possible that the
+EventsDataSource object is created multiple times (thus, not singleton anymore) 
+when invoked concurrently. So we can make this method synchronized.Also, at the same line 1305, "buffer.bid" is read in AsyncTask, but
+"buffer" is also initialized at line 806. I'm not sure if these two
+statements may happen in parallel. If so, this is also a data race
+that may lead to bugs.What's your opinion?Thanks,
+Yu</description><comments>Thanks for letting us know about these issues! You're welcome:) I'm glad to see our report is useful.</comments></extraction>

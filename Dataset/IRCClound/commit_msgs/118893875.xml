@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893875</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/7fd1b22925408f80b2e688075dec2003ed6e31b4]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/7fd1b22925408f80b2e688075dec2003ed6e31b4]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:54:48</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/7fd1b22925408f80b2e688075dec2003ed6e31b4]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a few crashes, fix a case where the message fragment wouldn't swi…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

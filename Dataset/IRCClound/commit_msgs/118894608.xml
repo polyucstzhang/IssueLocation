@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894608</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/5c3e06591353ff2c5c9a39c025c13c3592730ddc]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/5c3e06591353ff2c5c9a39c025c13c3592730ddc]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:21:0</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/5c3e06591353ff2c5c9a39c025c13c3592730ddc]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a mode change collapsing bug
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

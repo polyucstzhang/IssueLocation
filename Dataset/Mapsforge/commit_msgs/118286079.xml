@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118286079</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/da9411abd917468cb0b8899662bba2f4d64e4915]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/da9411abd917468cb0b8899662bba2f4d64e4915]]></realpath><theme>mapsforge_07n</theme><middle>default</middle><createdate>2015-8-21 19:29:17</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/da9411abd917468cb0b8899662bba2f4d64e4915]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      FileSystemTileCache: made threading configurable and added configurat…
+    </title><number>
+      7 changed files
+    </number></item></BR></extraction>

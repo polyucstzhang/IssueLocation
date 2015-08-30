@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894605</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3aa900adf69a2375ae9d53801907298b5d53e730]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3aa900adf69a2375ae9d53801907298b5d53e730]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:20:52</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3aa900adf69a2375ae9d53801907298b5d53e730]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Change the ignore list activity into a dialog fragment
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_ignore_list.xml
+            </name></item><item><name>
+              res/layout/ignorelist.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/IgnoreListActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/IgnoreListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

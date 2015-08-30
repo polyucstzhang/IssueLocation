@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881806</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/08e716d3bd05d63ec8332722384243d8b08ff274]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/08e716d3bd05d63ec8332722384243d8b08ff274]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:25:44</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/08e716d3bd05d63ec8332722384243d8b08ff274]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      UI support for zero-length MQTT v. 3.1.1 client ids
+    </title><numberfile>
+      7 changed files
+    </numberfile><source_file><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/layout/preferences_broker.xml
+            </name></item><item><name>
+              src/main/res/values/bools.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

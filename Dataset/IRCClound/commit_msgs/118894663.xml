@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894663</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b5f047af991baefa2d46e2683cb57ce0ffa6323d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b5f047af991baefa2d46e2683cb57ce0ffa6323d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:21:52</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b5f047af991baefa2d46e2683cb57ce0ffa6323d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Very experimental join/part/quit/nickchange grouping
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/CollapsedEventsList.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/IRCCloudJSONObject.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/UsersDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

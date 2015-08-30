@@ -1,0 +1,2 @@
+<extraction><id>#132</id><title>HardwareRenderer.java line 258</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/550d4ea85141dcfd8f30b20d</description><comments>should be fixed in next build</comments></extraction>

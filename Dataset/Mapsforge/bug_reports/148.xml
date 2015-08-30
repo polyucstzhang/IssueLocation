@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831551</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/148]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/148]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:53:38</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/148]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#148</id><title>Render issue forrest Reichswald/Nbg</title><description>
+
+    
+      
+          From debiltel...@googlemail.com on July 10, 2011 19:22:22
+
+What steps will reproduce the problem? 1. Use 0.2.4 map viewer and corresponding map file for Germany.
+2. Move map to Fischbach near Nürnberg, resize to see the area to Laufamholz.
+
+There should be a large green, continuous area: Reichswald. Instead, only parts are rendered as forest. Compare with OSM data and rendering, where the Reichswald can bere seen.
+
+Galaxy Tab  7" with Froyo.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=148
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From debiltel...@googlemail.com on July 10, 2011 11:20:04
+
+http://www.openstreetmap.org/?lat=49.4371&amp;lon=11.1737&amp;zoom=13&amp;layers=M
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on July 20, 2011 14:44:25
+
+Hi,
+
+I've just taken a more closer look at the described issue. The tags are all correctly copied. The problem is that the outer ways, considered separately, are not closed polygons and are therefore discarded. (look for log outputs such as 'outer way is not a polygon, id: 103422599') Currently the map file writer does not reconstruct closed polygons from multiple outer ways. I'm not sure if the existence of outer ways as parts of multi-polygons that are not polygons on their own is actually a mapping mistake in the OSM data.
+
+Constructing a valid polygon from multiple outer ways should not be a big issue. (I guess something similar is done in the coastline processing.) It should suffice to compare the start and end nodes of the outer ways.
+Ways that are merged in such a way must afterwards be deleted from the list of simple ways.
+
+Theoretically a similar problem might occur with inner ways...
+
+Best regards,
+Jürgen
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on December 23, 2011 05:33:53
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:39 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:39 PM GMT+8</closetime></item></BR></extraction>

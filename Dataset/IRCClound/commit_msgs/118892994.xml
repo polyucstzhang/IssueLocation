@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892994</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/39497cda6033e6d7bb7e10542add1e394a5d7dec]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/39497cda6033e6d7bb7e10542add1e394a5d7dec]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:30:21</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/39497cda6033e6d7bb7e10542add1e394a5d7dec]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Use a Material progress bar on Lollipop
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              res/values-v21/styles.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

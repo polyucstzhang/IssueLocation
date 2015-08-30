@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894313</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/011a33545d3659a881e8820dd9aacb3c43c98fb0]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/011a33545d3659a881e8820dd9aacb3c43c98fb0]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:10:58</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/011a33545d3659a881e8820dd9aacb3c43c98fb0]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Prune the messages array if a buffer has reached the maxiumum backlog…
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-hdpi/lock.png
+            </name></item><item><name>
+              res/drawable-hdpi/world.png
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

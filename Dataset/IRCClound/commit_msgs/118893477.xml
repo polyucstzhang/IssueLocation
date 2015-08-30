@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893477</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/0e4855448b451664c12e3057179550d556ac017f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/0e4855448b451664c12e3057179550d556ac017f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:40:3</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/0e4855448b451664c12e3057179550d556ac017f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Flag emojis don't need to be converted on Lollipop
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

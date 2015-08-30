@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831795</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/134]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/134]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:54:10</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/134]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#134</id><title>Problem converting New Hampshire maps.</title><description>
+
+    
+      
+          From rijackso...@gmail.com on June 23, 2011 23:43:48
+
+I have tried converting the NH map, using the pbf file from here: http://download.geofabrik.de/osm/north-america/us/ and the bz2 file from here: http://downloads.cloudmade.com/americas/northern_america/united_states/new_hampshire#downloads_breadcrumbs with identical results. 
+
+If I try to convert the pbf file:
+osmosis --rb file=new_hampshire.osm.pbf --mapfile-writer file=NH.map type=HD 
+I get a java.lang.NullPointerException. To narrow down the problem I added a bounding box:
+osmosis --rb file=new_hampshire.osm.pbf --mapfile-writer file=NH.map type=HD bbox=L1,-72.5,L2,70.7
+and varied L1 and L2. 
+The south: L1=42.7, L2=43.7 works, but L1=42.7, L2=43.8 fails 
+The North: L1=44.7, L2=45.4 works, but L1=44.6, L2=45.4 fails
+
+For some reason I cannot even create a very small slice out of the center, because L1=43.7, L2=43.8 fails.
+
+I'm using 0.2.3 on Windows XP, but the NullPointerException has also been seen for the pbf file on a Debian server.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=134
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on June 24, 2011 11:55:08
+
+Hi,
+
+thanks for reporting this defect. I could confirm the described issue and pinpoint the cause.
+
+Find a patched mapfile-writer attached. Please test and report again. (works for me)
+
+For the interested folks:
+During map file creation, we calculate histograms with regard to the use of the different tags. Knowing the distribution for a concrete region which is to be converted to a mapsforge map, allows us to optimize the mapping from tags to ids. The higher the frequency of occurrence of a tag, the lower its ID representation in our binary file. Using varbyte encoding, just one byte is necessary to encode all tags with ids lower than 127. All other tags take two bytes. However, due to our optimization these are the infrequent tags.
+
+Now to the bug - we forgot to count tags that were introduced by relations. What happened was, that a count of zero occurred for a specific tag (here: boundary=national_park) as it just occurred with a relation, not with a way. The tag was not considered any further. But as ways "inherit" the tags of associated relations, we came to a way with that tag. As we removed from the list of known tags, the above error occurred.
+
+Interestingly this bug did not occur before. Seems to be a very unlikely case that relations introduce tags that no way itself is tagged with...
+
+Best regards
+
+Status: Started  
+
+Attachment: mapsforge-mapfile-writer-0.2.3.jar
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on June 25, 2011 12:06:20
+
+Just committed a new version of the mapfile-writer to the repository that fixes the issue also when the HD option is chosen.
+
+A compiled version is attached.
+
+Attachment: mapsforge-mapfile-writer-0.2.3-patched-issue134.jar
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:38 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:38 PM GMT+8</closetime></item></BR></extraction>

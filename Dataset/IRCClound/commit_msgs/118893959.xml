@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893959</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/be7711920fb54437cf4bbba66eacce200b606f0e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/be7711920fb54437cf4bbba66eacce200b606f0e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:58:4</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/be7711920fb54437cf4bbba66eacce200b606f0e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Less padding around the send icon to match the newer Hangouts app
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-mdpi/ic_action_send.png
+            </name></item><item><name>
+              res/drawable-xhdpi/ic_action_send.png
+            </name></item><item><name>
+              res/drawable-xxhdpi/ic_action_send.png
+            </name></item><item><name>
+              res/layout-v11/sendbtn.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

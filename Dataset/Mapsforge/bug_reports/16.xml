@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832672</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/16]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/16]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:57:53</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/16]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#16</id><title>Simple geocoding component</title><description>
+
+    
+      
+          From jjbross@gmail.com on May 28, 2010 14:26:45
+
+A geocoding component is by now completely lacking. It is an essential
+component for routing services and also for searching within the map. A
+first try would be extract street names from OSM, clean the data and use a
+TRIE data structure (e.g. PatriciaTrie) to index and compress the data.
+Android already offers an AutoCompleteTextView that may be used to let the
+user type in and choose a street.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=16
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on October 06, 2010 06:02:49
+
+Owner: sebastian.kuerten  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on December 22, 2011 09:27:03
+
+Issue 159 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:28 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:28 PM GMT+8</closetime></item></BR></extraction>

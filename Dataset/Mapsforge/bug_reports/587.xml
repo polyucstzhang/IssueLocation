@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826830</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/587]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/587]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:41:13</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/587]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#587</id><title>Offline TileStore continuously ask for missing tile</title><description>
+
+    
+      
+          Use the library v5 RC4.
+
+If in the tile store there are some missing tile, the library always carry it continuously, 
+It generate an active and infinite CPU consumption. 
+See the bellow log for example:
+
+Mar 04, 2015 11:31:54 PM org.mapsforge.map.layer.cache.TileStore findFile
+INFO: Failed to find directory C:\Users\Max\Documents\Work\Soft\Viewer\data\tilestores\TestTileSToreDir\16
+Mar 04, 2015 11:31:54 PM org.mapsforge.map.layer.cache.TileStore findFile
+INFO: Failed to find directory C:\Users\Max\Documents\Work\Soft\Viewer\data\tilestores\TestTileSToreDir\15
+Mar 04, 2015 11:31:54 PM org.mapsforge.map.layer.cache.TileStore findFile
+INFO: Failed to find directory C:\Users\Max\Documents\Work\Soft\Viewer\data\tilestores\TestTileSToreDir\14\8312
+Mar 04, 2015 11:31:54 PM org.mapsforge.map.layer.cache.TileStore findFile
+INFO: Failed to find directory C:\Users\Max\Documents\Work\Soft\Viewer\data\tilestores\TestTileSToreDir\17
+Mar 04, 2015 11:31:54 PM org.mapsforge.map.layer.cache.TileStore findFile
+INFO: Failed to find directory 
+
+
+In the file "TileLayer.java", and more precisely in the "draw" method, 
+it seem that the condition below recursively ask for redraw and so until bitmap is found
+it always fire a file not found exception: 
+
+if (waitingForCachedTiles) 
+{
+    this.requestRedraw();
+}
+
+
+See the following thread for discussion: https://groups.google.com/forum/#!topic/mapsforge-dev/uD1Pgigu9pw
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          That seems a nice way to go.
+      
+    
+
+  </contents></item><item><commenter>applantation</commenter><contents>
+
+    
+      
+          Missing file added
+…
+On 5 March 2015 at 11:11, ludwigb &lt;notifications@github.com&gt; wrote:
+ The change removes the busy wait for all TileLayers and makes the
+ TileLayer only redraw when a change happens in the TileCache (i.e. a new
+ tile is added). That should reduce CPU time for all TileLayers.
+ (Drawback at the moment is that there might be changes happening to the
+ tile cache that are not visible.)
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/587#issuecomment-77369437&gt;.
+
+
+
+      
+    
+
+  </contents></item><item><commenter>applantation</commenter><contents>
+
+    
+      
+          I just pushed the change that also the TileDownloadLayer will react to
+tilecache changes
+…
+On 6 March 2015 at 12:39, xamix &lt;notifications@github.com&gt; wrote:
+ Tested a bit the patch you provided and it seem to do the job :)
+
+ Thanks.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/587#issuecomment-77579093&gt;.
+
+
+
+      
+    
+
+  </contents></item><item><commenter>applantation</commenter><contents>
+
+    
+      
+          Could do, but it could also be done in easily derived class....
+…
+On 6 March 2015 at 18:46, Emux &lt;notifications@github.com&gt; wrote:
+ Yes usually a TileStore is created with a fixed tiles pyramid.
+ I'm thinking of cases where we want to be flexible with that, e.g. apps
+ where the tile store is being updated.
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/587#issuecomment-77641961&gt;.
+
+
+
+      
+    
+
+  </contents></item></comments><createtime>Mar 5, 2015, 6:47 PM GMT+8</createtime><closetime>Mar 6, 2015, 2:22 AM GMT+8</closetime></item></BR></extraction>

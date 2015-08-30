@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118848146</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/641]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/641]]></realpath><theme>i641</theme><middle>default</middle><createdate>2015-8-23 22:58:29</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/641]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#641</id><title>Android bitmap conversion</title><description>
+
+    
+      
+          We can enhance AndroidGraphicFactory.convertToBitmap to support also custom Paint (e.g. with ColorFilter) at conversion from Drawable to Bitmap.
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          We can enhance AndroidGraphicFactory.convertToBitmap to support also custom Paint (e.g. with ColorFilter) at conversion from Drawable to Bitmap.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I pushed on dev a new implementation supporting input Paint for custom bitmap conversion.
+
+This is demonstrated in Samples ChangingBitmaps example, using only one drawable and changing its color.
+      
+    
+
+  </contents></item></comments><createtime>Jul 4, 2015, 5:19 PM GMT+8</createtime><closetime>Jul 4, 2015, 5:27 PM GMT+8</closetime></item></BR></extraction>

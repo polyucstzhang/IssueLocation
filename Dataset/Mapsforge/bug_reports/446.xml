@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828841</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/446]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/446]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:45:0</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/446]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#446</id><title>What does "renderable=false" exactly mean?</title><description>
+
+    
+      
+          From uzemelt...@gmail.com on July 31, 2013 10:55:30
+
+In the XML schema documentation for tag-mapping.xml (see https://code.google.com/p/mapsforge/source/browse/mapsforge-map-writer/src/main/resources/tag-mapping.xsd ), the 'renderable' attribute is documented as follows: 
+
+"The attribute 'renderable' specifies
+                        whether the tag is renderable. Omitting the attribute is
+                        interpreted as renderable=true."
+
+and, later: 
+
+"Indicates whether the tag is renderable. Omitting
+                                the attribute indicates that the tag is renderable."
+
+This is like saying "the name of a person indicates the name of a person". Please document this attribute properly. I don't really understand what it does and when it should be used.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=446
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on January 26, 2014 04:15:10
+
+Status: Accepted
+  Owner: jjbross@gmail.com  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on October 09, 2014 06:48:35
+
+I think a similar case is also with 'enabled'.
+
+We should update what the src code dictates (default=true), so the value should be changed.
+
+We accept regular patch files and pull requests.
+The PR are easier for the mirror repository at GitHub: https://github.com/applantation/mapsforge Emux
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on October 09, 2014 11:21:09
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 6:03 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:03 PM GMT+8</closetime></item></BR></extraction>

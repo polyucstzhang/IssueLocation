@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826820</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/600]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/600]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:40:54</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/600]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#600</id><title>Model.MapViewPosition.getMapLimit() may return null?</title><description>
+
+    
+      
+          In fact for me it does return null. Is there a way to get the current lat/long span of the map?
+      
+    
+
+  </description><comments><item><commenter>hurzl</commenter><contents>
+
+    
+      
+          I misunderstood limits. Your complicated line works though, thank you very much.
+      
+    
+
+  </contents></item><item><commenter>hurzl</commenter><contents>
+
+    
+      
+          very nice 
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          Are you sure you're not using a cached MapPosition ?
+Try printing its coordinates / zoom prior using it.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Apr 10, 2015, 4:33 PM GMT+8</createtime><closetime>Apr 10, 2015, 5:50 PM GMT+8</closetime></item></BR></extraction>

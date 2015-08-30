@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118261930</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/28c7510358bcd9a4ff1af22adc508db9d8c39989]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/28c7510358bcd9a4ff1af22adc508db9d8c39989]]></realpath><theme>mapsforge_02n</theme><middle>default</middle><createdate>2015-8-21 16:16:17</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/28c7510358bcd9a4ff1af22adc508db9d8c39989]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      - use correct PorterDuff mode in the AndroidCanvas.fillColor(Color)
+    </title><number>
+      1 changed file
+    </number></item></BR></extraction>

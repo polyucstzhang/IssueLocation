@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893630</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/74970620491d6405a406b05699bc7b518b24c20d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/74970620491d6405a406b05699bc7b518b24c20d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:45:44</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/74970620491d6405a406b05699bc7b518b24c20d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Remove the drop shadow below the action bar
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              .idea/copyright/Apache.xml
+            </name></item><item><name>
+              .idea/copyright/profiles_settings.xml
+            </name></item><item><name>
+              .idea/misc.xml
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/layout/messageview.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

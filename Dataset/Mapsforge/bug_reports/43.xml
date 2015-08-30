@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832474</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/43]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/43]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:57:7</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/43]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#43</id><title>Improve label placement algorithm</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on November 23, 2010 12:31:39
+
+The currently implemented label placement algorithm is able to avoid collisions among POIs and area labels. However, it does not include collision detection with way names which happens very often.
+
+In addition the current implementation solves collisions simply by eliminating labels until no collisions remain. This leads to the problem that important labels get removed in favour of less important labels. Therefore overlapping labels need to be removed based on their importance, starting with the least important labels.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=43
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jakubowi...@gmail.com on June 19, 2011 05:22:18
+
+for follow up on this issue see the branch prioritized-labeling. feedback is welcome.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 29, 2011 07:06:18
+
+Hi Amit,
+
+i just checked out your branch and tried to understand which classes are actually necessary for the labeling process. As everything seems to be in a single package, it is really difficult to identify and copy them into the current trunk.
+
+Another thing that confuses me that we have a folder "mapsforge" in your branch, which again contains a "mapsforge" folder. Each folder seems to include a whole copy of the mapsforge source as it looked half a year ago. I am not sure which of them contains the latest version of your code. Maybe you can delete one of them?
+
+The version of the map library in the trunk has become stable in the last weeks and it should be much easier to understand now due to the better package structure. I spent a lot of time refactoring and rewriting the code to improve the readability.
+
+For me it would already be very helpful, if you could move all classes which are actually required for the labeling process into a new sub-package called "labeling" or so. I also would appreciate if you could clean up the code with the help of PMD/checkstyle/FindBugs. Currently i also get a lot of compiler warnings.
+
+Adding configuration parameters for the labeling algorithm to the render theme API will be pretty easy to implement. However, first we have to merge your code into the trunk and get it running with some reasonable default parameters before we start with this.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on May 19, 2013 03:57:37
+
+Issue 314 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From kusra...@gmail.com on February 26, 2014 08:35:06
+
+Is this branch(prioritized-labeling) exist at least? Having a big trouble with fragmented streets labels.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:30 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:30 PM GMT+8</closetime></item></BR></extraction>

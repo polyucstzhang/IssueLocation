@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894269</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/08c9be21245e62beeb947181cab4356f00352296]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/08c9be21245e62beeb947181cab4356f00352296]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:9:31</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/08c9be21245e62beeb947181cab4356f00352296]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Add a pref to Bring Back The Olde Keyboard
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/ActionEditText.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

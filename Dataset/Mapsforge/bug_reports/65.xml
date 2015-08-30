@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832252</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/65]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/65]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:56:25</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/65]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#65</id><title>Add other location sources to the AdvancedMapViewer</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on January 05, 2011 14:42:39
+
+At the moment the only supported location source in the AdvancedMapViewer is the GPS sensor. Handling of other sources like cell tower or Wi-Fi signals is not yet included.
+
+Therefore the AdvancedMapViewer should be enhanced to support all location sources as described in the official Android developer documentation: http://developer.android.com/guide/topics/location/obtaining-user-location.html
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=65
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on June 05, 2011 09:38:37
+
+I have just applied the patch and committed everything in revision 1112 , after some minor changes. First of all i don't like the idea to change the zoom level (especially not to a hard coded value). Second, i modified the method to select the location fix with the best accuracy (your code just took the first available location).
+
+I have tested the feature on a Milestone 2 device and it worked as it should. Translations for -fi and -it are still missing, but they will come soon i hope.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on June 26, 2011 13:52:36
+
+Since revision r1199 the AMV now uses also the best available location provider for showing and following the current position on the map.
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:32 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:32 PM GMT+8</closetime></item></BR></extraction>

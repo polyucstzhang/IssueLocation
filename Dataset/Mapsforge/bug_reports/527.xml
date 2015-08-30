@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118633261</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/527]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/527]]></realpath><theme>issue_527</theme><middle>default</middle><createdate>2015-8-22 22:34:41</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/527]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#527</id><title>Unexpected zoom out while using multi-touch to zoom in</title><comments>
+          
+
+  
+    
+    
+
+  
+
+
+    Owner
+
+
+  
+
+    
+      mapsforge
+    
+
+    commented
+
+    
+      on Nov 6, 2014
+    
+  
+
+
+
+  
+
+    
+      
+          From yst...@gmail.com on September 23, 2014 11:07:53
+
+What steps will reproduce the problem? Use two fingers to zoom in, but just touch the screen for a short time. What is the expected output? What do you see instead? Expect the map to zoom in, or keep the existing zoom level if the gesture is not complete, but the map will zoom out sometimes. What version of the product are you using? On what operating system? Latest master revision - 25b5f2d. Please provide any additional information below. Issue 60 added a feature "multi-touch tap to zoom out". https://code.google.com/p/mapsforge/issues/detail?id=60 Suggest to provide a method to disable this behaviour, as this behaviour can be annoying sometimes.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=527
+      
+    
+
+  
+
+
+  
+  
+      
+
+
+  
+    
+
+      
+      
+      mapsforge
+        added bug imported Priority-Medium labels on Nov 6, 2014
+    
+  
+
+
+
+  
+    
+    
+
+  
+
+
+    Owner
+
+
+  
+
+    
+      mapsforge
+    
+
+    commented
+
+    
+      on Nov 6, 2014
+    
+  
+
+
+
+  
+
+    
+      
+          From LudwigBr...@gmail.com on October 05, 2014 10:15:09
+
+Status: Accepted  
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on Jun 10
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      ScaleListener: improve zoom calculation during scale gestures #616, fix
+
+        
+          …
+        
+        #527
+
+  
+
+  
+
+
+      0f0476b
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Jun 10
+    
+  
+
+
+
+  
+
+    
+      
+          This issue is fixed with commits 0e6bd94 and 0f0476b in #616.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      closed this   on Jun 10
+    
+  
+
+  
+
+
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      added this to the 0.5.2 milestone on Jul 21
+    
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+        </comments></item></BR></extraction>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826519</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/616]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/616]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:40:35</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/616]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#616</id><title>Gesture detectors</title><description>
+
+    
+      
+          We need to review the gesture detectors implementation in order to solve various reported issues and improve its functionality.
+
+We could examine the use of an external framework for this purpose, like Android Gesture Detectors.
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents/></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          BTW I tested Mapsforge 0.3.X with latest Android and we have also with it pinch zoom issues.
+Apparently it's not something new we have added since then, but nevertheless things to be improved.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents/></item><item><commenter>devemux86</commenter><contents/></item><item><commenter>devemux86</commenter><contents/></item></comments><createtime>May 24, 2015, 4:23 AM GMT+8</createtime><closetime>Jun 10, 2015, 4:00 PM GMT+8</closetime></item></BR></extraction>

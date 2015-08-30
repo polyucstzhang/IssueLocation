@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893954</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/6b96b7e9a4c4e2f4d7753c06fe8d888406ec5a19]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/6b96b7e9a4c4e2f4d7753c06fe8d888406ec5a19]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:57:52</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/6b96b7e9a4c4e2f4d7753c06fe8d888406ec5a19]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Shift the content of the message table up when the soft keyboard appears
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/reorderservers.xml
+            </name></item><item><name>
+              src/com/irccloud/android/ListViewHax.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

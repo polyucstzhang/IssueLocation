@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826516</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/619]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/619]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:40:29</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/619]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#619</id><title>ReadBuffer Limit Too Small</title><description>
+
+    
+      
+          In ReadBuffer.java, 
+
+static final int MAXIMUM_BUFFER_SIZE = 2500000;
+
+
+is too small for the Japan map, causing blank tiles.
+
+
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          Also with what map file (from where) is that test?
+      
+    
+
+  </contents></item><item><commenter>lincomatic</commenter><contents>
+
+    
+      
+          Warning message I posted above is from MapFile.java
+
+            } else if (currentBlockSize &gt; ReadBuffer.MAXIMUM_BUFFER_SIZE) {
+                // the current block is too large, continue with the next block
+                LOGGER.warning("current block size too large: " + currentBlockSize);
+                continue;
+
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents/></item><item><commenter>devemux86</commenter><contents/></item></comments><createtime>May 29, 2015, 1:14 AM GMT+8</createtime><closetime>May 29, 2015, 7:13 AM GMT+8</closetime></item></BR></extraction>

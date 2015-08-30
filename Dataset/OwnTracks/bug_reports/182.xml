@@ -1,0 +1,2 @@
+<extraction><id>#182</id><title>MultitypeAdapter.java line 108</title><description> There's a lot more information about this crash on crashlytics.com:
+https://fabric.io/owntracks/android/apps/org.owntracks.android/issues/554b4e65f505b5ccf0bf0a96</description><comments>MultitypeAdapter will be refactored to RecyclerView in future versions </comments></extraction>

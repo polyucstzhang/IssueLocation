@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881611</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/f3f0b421d75be232ea892d2de508f89c5670f6af]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/f3f0b421d75be232ea892d2de508f89c5670f6af]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:17:10</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/f3f0b421d75be232ea892d2de508f89c5670f6af]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Android-v.0.5.21APK
+    </title><numberfile>
+      24 changed files
+    </numberfile><source_file><item><name>
+              .idea/gradle.xml
+            </name></item><item><name>
+              .idea/misc.xml
+            </name></item><item><name>
+              .idea/modules.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              CHANGELOG.md
+            </name></item><item><name>
+              DaoGenerator/DaoGenerator.iml
+            </name></item><item><name>
+              owntracks-android.iml → android.iml
+            </name></item><item><name>
+              apk/owntracks.apk
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/App.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityExport.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityImport.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/ConfigurationMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/DrawerFactory.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/drawable-xhdpi/Thumbs.db
+            </name></item><item><name>
+              src/main/res/drawable-xxhdpi/Thumbs.db
+            </name></item><item><name>
+              src/main/res/drawable/Thumbs.db
+            </name></item><item><name>
+              src/main/res/layout/activity_export.xml
+            </name></item><item><name>
+              src/main/res/layout/activity_import.xml
+            </name></item><item><name>
+              src/main/res/values/keys.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

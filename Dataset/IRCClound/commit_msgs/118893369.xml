@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893369</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/beb468d460c24d3d0d44d7a268c3c5726f07dd2f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/beb468d460c24d3d0d44d7a268c3c5726f07dd2f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:36:55</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/beb468d460c24d3d0d44d7a268c3c5726f07dd2f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a crash, work around a memory leak in AppCompat ShareActionProvider
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/fragment/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

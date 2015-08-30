@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893861</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a12b018d16f617c781ecdbf086c284ddf850c80b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a12b018d16f617c781ecdbf086c284ddf850c80b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:54:19</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a12b018d16f617c781ecdbf086c284ddf850c80b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Remove the link_channel popup and improve message format
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/data/EventsDataSource.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893387</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3262c7cdd36a6119e0569ea8e948201a2f7ea6e3]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3262c7cdd36a6119e0569ea8e948201a2f7ea6e3]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:37:33</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3262c7cdd36a6119e0569ea8e948201a2f7ea6e3]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Change the SSL checkbox to a switch, fix the button order on the Logo…
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/dialog_edit_connection_hostname.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PreferencesActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/EditConnectionFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

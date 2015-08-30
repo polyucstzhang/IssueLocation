@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894461</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/513b88725df692f8b0c6c63765466126bbe7c80f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/513b88725df692f8b0c6c63765466126bbe7c80f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:15:58</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/513b88725df692f8b0c6c63765466126bbe7c80f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a bug where dismissing the keyboard could leave the drawer partia…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivityPager.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

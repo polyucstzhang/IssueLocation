@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893746</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f296ccb16be4264b21f09aebcbbde2f1f76d575f]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f296ccb16be4264b21f09aebcbbde2f1f76d575f]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:50:8</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f296ccb16be4264b21f09aebcbbde2f1f76d575f]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Merge branch 'master' into L
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              res/xml-sw600dp/preferences_device.xml
+            </name></item><item><name>
+              res/xml/preferences_device.xml
+            </name></item><item><name>
+              res/xml/preferences_photos.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PreferencesActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

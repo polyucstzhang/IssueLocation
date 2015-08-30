@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826824</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/595]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/595]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:41:2</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/595]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#595</id><title>LabelLayer: cache overwriting</title><description>
+
+    
+      
+          Testing LabelLayer with multiple adjacent maps via MapDataStore, I see continuous overwriting warnings where the maps are connected.
+(If I disable the LabelLayer the warnings dissappear)
+
+org.mapsforge.map.layer.cache.FileSystemTileCache storeData
+WARNING: overwriting cached entry: 7/64/41
+org.mapsforge.map.layer.cache.FileSystemTileCache storeData
+WARNING: overwriting cached entry: 7/65/44
+org.mapsforge.map.layer.cache.FileSystemTileCache storeData
+WARNING: overwriting cached entry: 7/65/41
+org.mapsforge.map.layer.cache.FileSystemTileCache storeData
+WARNING: overwriting cached entry: 7/64/44
+      
+    
+
+  </description><comments><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          Further tests show that the above behavior appears also with a single map at map borders.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          With LabelLayer we have the current issue of overwriting tiles in file cache at map borders.
+This goes away with the above change, so I'm wondering what's going on.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          Further searching it, reveals that the tiles which keep regenerating and overwriting in cache, are actually adjacent and completely outside the map bounding box.
+So somehow the LabelLayer bounds cause this behavior.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item><item><commenter>devemux86</commenter><contents/></item></comments><createtime>Apr 1, 2015, 4:22 AM GMT+8</createtime><closetime>Jul 4, 2015, 8:34 PM GMT+8</closetime></item></BR></extraction>

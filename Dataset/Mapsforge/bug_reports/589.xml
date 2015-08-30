@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826828</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/589]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/589]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:41:9</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/589]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#589</id><title>Labels for underground rivers are shown on map</title><description>
+
+    
+      
+          I do not know if this is map writer or map renderer issue, but map contains labels for underground rivers. You can find an example at 55.818406 37.651917 - horizontal blue labels to the left and vertical blue labels to the bottom starting at zoom 17, the same labels to the right above children's playground to the right at zoom 19. It can be viewed on moskovskaya.map (Russia). 
+      
+    
+
+  </description><comments><item><commenter>andreynovikov</commenter><contents>
+
+    
+      
+          Here is the screenshot:
+
+
+These are two underground rivers, one of them (vertical) is joining the other (horizontal) in the center of the view.
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          I was meaning as an option.
+I had the case of building marine maps from ENC data (which use masks).
+It was straightforward in TileMill, but in Mapsforge I had to use all possible tricks for making that working.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Mar 14, 2015, 4:18 AM GMT+8</createtime><closetime>Mar 15, 2015, 11:38 PM GMT+8</closetime></item></BR></extraction>

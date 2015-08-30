@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893356</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ec959f21d938911cb7cea10ba9874251ff156f2b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ec959f21d938911cb7cea10ba9874251ff156f2b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:36:29</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ec959f21d938911cb7cea10ba9874251ff156f2b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Rename IRCCloud Files to File Uploads
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

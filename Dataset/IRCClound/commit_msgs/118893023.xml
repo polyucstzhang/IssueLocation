@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893023</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b1e9dbee3a466553de1d10af873c2267b48731c7]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b1e9dbee3a466553de1d10af873c2267b48731c7]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:31:32</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b1e9dbee3a466553de1d10af873c2267b48731c7]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      preload a page of backlog when recieving a notification when the app …
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ShareChooserActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/EventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

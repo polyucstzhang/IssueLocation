@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892974</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ee7ad4f83e29b84fc367bae56e1b05fe0320d653]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ee7ad4f83e29b84fc367bae56e1b05fe0320d653]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:29:34</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ee7ad4f83e29b84fc367bae56e1b05fe0320d653]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Clear formatting between user_realname and user_logged_in_as
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/fragment/WhoisFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

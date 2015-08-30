@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894610</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/8857dce9eb25bd77ef03a754741572cf3ace084b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/8857dce9eb25bd77ef03a754741572cf3ace084b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:21:4</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/8857dce9eb25bd77ef03a754741572cf3ace084b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      JUnit tests for collapsed events
+    </title><numbercommit>
+      13 changed files
+    </numbercommit><source_file><item><name>
+              tests/.classpath
+            </name></item><item><name>
+              tests/.project
+            </name></item><item><name>
+              tests/.settings/org.eclipse.core.resources.prefs
+            </name></item><item><name>
+              tests/AndroidManifest.xml
+            </name></item><item><name>
+              tests/proguard-project.txt
+            </name></item><item><name>
+              tests/project.properties
+            </name></item><item><name>
+              tests/res/drawable-hdpi/ic_launcher.png
+            </name></item><item><name>
+              tests/res/drawable-ldpi/ic_launcher.png
+            </name></item><item><name>
+              tests/res/drawable-mdpi/ic_launcher.png
+            </name></item><item><name>
+              tests/res/drawable-xhdpi/ic_launcher.png
+            </name></item><item><name>
+              tests/res/values/strings.xml
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

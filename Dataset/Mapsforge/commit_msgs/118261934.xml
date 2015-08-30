@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118261934</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/51292545925a93ac55a95ac73e20516a6e959072]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/51292545925a93ac55a95ac73e20516a6e959072]]></realpath><theme>mapsforge_02n</theme><middle>default</middle><createdate>2015-8-21 16:16:48</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/51292545925a93ac55a95ac73e20516a6e959072]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      - renamed AndroidGraphics class to AndroidGraphicFactory
+    </title><number>
+      6 changed files
+    </number></item></BR></extraction>

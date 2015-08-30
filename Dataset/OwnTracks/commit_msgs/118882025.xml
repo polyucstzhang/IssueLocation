@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882025</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/e7bb0dd0d7695bb1467aa30824588bbb9023df48]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/e7bb0dd0d7695bb1467aa30824588bbb9023df48]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:33:50</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/e7bb0dd0d7695bb1467aa30824588bbb9023df48]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Merge branch 'master' of github.com:binarybucks/mqttitude
+    </title><numberfile>
+      4 changed files
+    </numberfile><source_file><item><name>
+              res/menu/activity_main.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item></source_file></item></commit></extraction>

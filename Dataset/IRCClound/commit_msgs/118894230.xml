@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894230</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/81ffc90196cc8f7fd5afff303bb8258907d67e40]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/81ffc90196cc8f7fd5afff303bb8258907d67e40]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:8:12</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/81ffc90196cc8f7fd5afff303bb8258907d67e40]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a few crashes reported through ACRA
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BanListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              src/com/irccloud/android/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

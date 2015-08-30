@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894935</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/495c566694a581968c4326b5d38c5dc5c6ef7706]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/495c566694a581968c4326b5d38c5dc5c6ef7706]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:20</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/495c566694a581968c4326b5d38c5dc5c6ef7706]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Keep the loading spinner visible during the initial backlog download …
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

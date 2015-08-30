@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831814</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/114]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/114]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:54:48</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/114]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#114</id><title>Failure Creating Map File Using Osmosis - Make preprocessing robust against dangling pointers</title><description>
+
+    
+      
+          From jjbross@gmail.com on April 19, 2011 18:05:43
+
+This is a defect report from Steve Johnson as reported via mapsforge-dev@googlegroups.com.
+
+I am trying to create a map file using osmosis 0.38 and mapsforge-
+mapfile-writer-0.2.2.jar.
+I have successfully created a map for Washington DC using the
+following command: "osmosis --rx file=district_of_columbia.osm --
+mapfile-writer file=dc.map bbox=38.8900,-77.0437,38.9099,-76.9721
+type=hd".
+
+However, when I try to create a map for Broomfield, Colorado using
+this command: "osmosis --rx file=colorado.osm --mapfile-writer
+file=broomfield.map
+bbox=39.9205552,-105.0861114,39.9205560,-105.0861108 type=hd" - the
+creation fails with the following output:
+
+Apr 18, 2011 5:08:16 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Osmosis Version 0.38
+Apr 18, 2011 5:08:17 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Preparing pipeline.
+Apr 18, 2011 5:08:17 PM
+org.mapsforge.preprocessing.map.osmosis.MapFileWriterTask 
+INFO: mapfile-writer version 0.2.2
+Apr 18, 2011 5:08:17 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Launching pipeline execution.
+Apr 18, 2011 5:08:17 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Pipeline executing, waiting for completion.
+Apr 18, 2011 5:15:51 PM
+org.mapsforge.preprocessing.map.osmosis.MapFileWriterTask complete
+INFO: completing read...
+Apr 18, 2011 5:19:56 PM
+org.openstreetmap.osmosis.core.store.RandomAccessObjectStore release
+WARNING: Unable to delete file C:\Users\Stephen\AppData\Local\Temp
+\idxNodesd2710927126852545161.tmp
+Apr 18, 2011 5:19:56 PM
+org.openstreetmap.osmosis.core.store.RandomAccessObjectStore release
+WARNING: Unable to delete file C:\Users\Stephen\AppData\Local\Temp
+\idxNodesi7527384832625674089.tmp
+Apr 18, 2011 5:19:56 PM
+org.openstreetmap.osmosis.core.store.RandomAccessObjectStore release
+WARNING: Unable to delete file C:\Users\Stephen\AppData\Local\Temp
+\idxWaysd1249829743462511417.tmp
+Apr 18, 2011 5:19:56 PM
+org.openstreetmap.osmosis.core.store.RandomAccessObjectStore release
+WARNING: Unable to delete file C:\Users\Stephen\AppData\Local\Temp
+\idxWaysi7816343742396957180.tmp
+Apr 18, 2011 5:19:56 PM
+org.openstreetmap.osmosis.core.store.SimpleObjectStore release
+WARNING: Unable to delete file C:\Users\Stephen\AppData\Local\Temp
+\heapWays4523798429660771881.tmp
+Apr 18, 2011 5:19:56 PM
+org.openstreetmap.osmosis.core.pipeline.common.ActiveTaskManager
+waitForCompletion
+SEVERE: Thread for task 1-rx failed
+org.openstreetmap.osmosis.core.store.NoSuchIndexElementException:
+Requested key 51529733 does not exist.
+        at
+org.openstreetmap.osmosis.core.store.IndexStoreReader.get(IndexStoreReader.java:
+197)
+        at
+org.openstreetmap.osmosis.core.store.IndexedObjectStoreReader.get(IndexedObjectStoreReader.java:
+51)
+        at
+org.mapsforge.preprocessing.map.osmosis.HDTileBasedDataStore.getInnerWaysOfMultipolygon(HDTileBasedDataStore.java:
+173)
+        at
+org.mapsforge.preprocessing.map.osmosis.HDTileBasedDataStore.complete(HDTileBasedDataStore.java:
+319)
+        at
+org.mapsforge.preprocessing.map.osmosis.MapFileWriterTask.complete(MapFileWriterTask.java:
+159)
+        at
+org.openstreetmap.osmosis.xml.v0_6.XmlReader.run(XmlReader.java:110)
+        at java.lang.Thread.run(Thread.java:662)
+Apr 18, 2011 5:19:56 PM org.openstreetmap.osmosis.core.Osmosis main
+SEVERE: Execution aborted.
+org.openstreetmap.osmosis.core.OsmosisRuntimeException: One or more
+tasks failed.
+        at
+org.openstreetmap.osmosis.core.pipeline.common.Pipeline.waitForCompletion(Pipeline.java:
+146)
+        at org.openstreetmap.osmosis.core.Osmosis.run(Osmosis.java:92)
+        at org.openstreetmap.osmosis.core.Osmosis.main(Osmosis.java:
+37)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:
+39)
+        at
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:
+25)
+        at java.lang.reflect.Method.invoke(Method.java:597)
+        at
+org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:
+329)
+        at
+org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:
+239)
+        at
+org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:
+409)
+        at
+org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:
+352)
+        at org.codehaus.classworlds.Launcher.main(Launcher.java:31)
+
+Any idea what I am doing wrong?  I have also tried to create a map for
+Arlington, Virginia and it fails with the same error (just a different
+ID in the "Requested key  does not exist" line).  However, I have
+successfully created a map in New Jersey.  I am confused as to why
+some map creations work and others fail.
+
+I have tried different values for JAVACMD_OPTIONS in the osmosis.bat
+file.  Currently I am using JAVACMD_OPTIONS=-Xmx1500m.
+The sizes of the osm files are as follows.  I wonder if the Colorado
+and Virginia files are too large, but thought I would get a different
+error message (more related to memory) if that were the case.
+
+Osm File Sizes:
+colorado.osm                  2,655,255,602
+district_of_columbia.osm    284,989,113
+new_jersey.osm              1,066,860,477
+virginia.osm                    4,055,024,388
+
+I am using Windows Vista 64 with 4 GB of Memory and a dual-core
+processor.  I have also tried to create the Colorado map using osmosis
+0.39 and it failed with the same error.
+
+Thanks for any help.  I appreciate it.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=114
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From sjohnson...@gmail.com on April 19, 2011 09:37:29
+
+Yes, I downloaded the file from cloudmade.com ( http://downloads.cloudmade.com/americas/northern_america/united_states/colorado/colorado.osm.bz2 ).
+
+Thanks for working a patch.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on April 23, 2011 12:23:44
+
+r1015 fixes this issue. A code review of RAM/HDTileBasedDataStore revealed no further problems with dangling pointers in input data.
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:36 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:36 PM GMT+8</closetime></item></BR></extraction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893432</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/a1f0f12be318c776abcd865fbdde2ce8b5900f2d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/a1f0f12be318c776abcd865fbdde2ce8b5900f2d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:38:29</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/a1f0f12be318c776abcd865fbdde2ce8b5900f2d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Tunnel HTTPS image URLs through a local proxy object on Gingerbread a…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ImageViewerActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

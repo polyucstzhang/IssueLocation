@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881840</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/faed426e1b5d43bcfca6067d8920b10da45bdf9c]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/faed426e1b5d43bcfca6067d8920b10da45bdf9c]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:27:31</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/faed426e1b5d43bcfca6067d8920b10da45bdf9c]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed </title><numberfile>
+      21 changed files
+    </numberfile><source_file><item><name>
+              bin/classes.dex
+            </name></item><item><name>
+              bin/owntracks.apk
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_accept.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_add.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_discard.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_enter.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_icon.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_launcher.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_leave.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_mylocation.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_notification.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_overflow.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_share.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/ic_upload.png
+            </name></item><item><name>
+              bin/res/crunch/drawable-xhdpi/noimage.png
+            </name></item><item><name>
+              bin/res/crunch/drawable/ab_solid.9.png
+            </name></item><item><name>
+              bin/res/crunch/drawable/button_green_default.9.png
+            </name></item><item><name>
+              bin/res/crunch/drawable/button_green_pressed.9.png
+            </name></item><item><name>
+              bin/resources.ap_
+            </name></item><item><name>
+              res/drawable/ab_solid.9.png
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item></source_file></item></commit></extraction>

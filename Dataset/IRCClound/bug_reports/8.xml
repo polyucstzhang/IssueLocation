@@ -1,0 +1,1 @@
+<extraction><id>#8</id><title>Queue outgoing messages</title><description> Queue outgoing messages while disconnected, send them when a connection is re-established, mark them failed after a minute</description><comments>Also make sure the text area can't be modified between tapping send and sending the message</comments></extraction>

@@ -1,0 +1,1 @@
+<extraction><id>#142</id><title>reportCommand must be at ../cmd</title><description> command reportLocation is understood at base-topic only. Should be at basetopic/cmd</description><comments>fixed</comments></extraction>

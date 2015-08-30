@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893183</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b4d619fb26482fbf8d51f158a1a1adc7951747d6]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b4d619fb26482fbf8d51f158a1a1adc7951747d6]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:34:41</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b4d619fb26482fbf8d51f158a1a1adc7951747d6]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Look up imgur URLs using the imgur gallery and image APIs
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/ImageViewerActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PastebinViewerActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881689</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/515f7b9d7e3ab8cd982065f6c26591176d59bcbb]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/515f7b9d7e3ab8cd982065f6c26591176d59bcbb]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:20:31</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/515f7b9d7e3ab8cd982065f6c26591176d59bcbb]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Android-v.0.5.10 APK
+    </title><numberfile>
+      16 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              apk/owntracks.apk
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityPreferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityWaypoint.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityWaypoints.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/DrawerFactory.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/menu/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/values/integers.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/values/styles.xml
+            </name></item></source_file></item></commit></extraction>

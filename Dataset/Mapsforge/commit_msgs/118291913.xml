@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118291913</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/5493d4c351c3dae96e645176172423e3dfce0cb9]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/5493d4c351c3dae96e645176172423e3dfce0cb9]]></realpath><theme>mapsforge_08n</theme><middle>default</middle><createdate>2015-8-21 19:55:5</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/5493d4c351c3dae96e645176172423e3dfce0cb9]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      merge master into dev (version on dev is dev-SNAPSHOT).
+    </title><number>
+      19 changed files
+    </number></item></BR></extraction>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894774</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/5541fa7aa6014b67e22ea5536e3f8a9a7f88e38e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/5541fa7aa6014b67e22ea5536e3f8a9a7f88e38e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:23:52</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/5541fa7aa6014b67e22ea5536e3f8a9a7f88e38e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Custom action bar view that scrolls the buffer list to the top
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

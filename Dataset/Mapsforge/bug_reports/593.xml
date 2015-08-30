@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118826826</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/593]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/593]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:41:5</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/593]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#593</id><title>Build failed - bad class file magic (cafebabe) or version (0034.0000)</title><description>
+
+    
+      
+          * What went wrong:
+Execution failed for task ':Applications:Android:Samples:preDexDebug'.
+&gt; com.android.ide.common.internal.LoggedErrorException: Failed to run command:
+        /.../android/sdk/build-tools/22/dx --dex --output /.../mapsforge/Applications/Android/Samples/build/intermediates/pre-dexed/debug/mapsforge-map-0.5.1-c28fbb330a20f2bd2caceff3ecff8ca602a1543f.jar /.../mapsforge/mapsforge-map/build/libs/mapsforge-map-0.5.1.jar
+  Error Code:
+        1
+  Output:
+
+        UNEXPECTED TOP-LEVEL EXCEPTION:
+        com.android.dx.cf.iface.ParseException: bad class file magic (cafebabe) or version (0034.0000)
+                at com.android.dx.cf.direct.DirectClassFile.parse0(DirectClassFile.java:472)
+                at com.android.dx.cf.direct.DirectClassFile.parse(DirectClassFile.java:406)
+                at com.android.dx.cf.direct.DirectClassFile.parseToInterfacesIfNecessary(DirectClassFile.java:388)
+                at com.android.dx.cf.direct.DirectClassFile.getMagic(DirectClassFile.java:251)
+                at com.android.dx.command.dexer.Main.processClass(Main.java:704)
+                at com.android.dx.command.dexer.Main.processFileBytes(Main.java:673)
+                at com.android.dx.command.dexer.Main.access$300(Main.java:83)
+                at com.android.dx.command.dexer.Main$1.processFileBytes(Main.java:602)
+                at com.android.dx.cf.direct.ClassPathOpener.processArchive(ClassPathOpener.java:284)
+                at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:166)
+                at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:144)
+                at com.android.dx.command.dexer.Main.processOne(Main.java:632)
+                at com.android.dx.command.dexer.Main.processAllFiles(Main.java:510)
+                at com.android.dx.command.dexer.Main.runMonoDex(Main.java:280)
+                at com.android.dx.command.dexer.Main.run(Main.java:246)
+                at com.android.dx.command.dexer.Main.main(Main.java:215)
+                at com.android.dx.command.Main.main(Main.java:106)
+        ...while parsing org/mapsforge/map/view/MapView.class
+
+        1 error; aborting
+
+
+Somewhere I read it had to do with using java 1.8, I don't have 1.7, so I changed in build.gradle to 
+
+    compileOptions {
+      sourceCompatibility JavaVersion.VERSION_1_8
+      targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+but that didn't change anything. Ideas?
+      
+    
+
+  </description><comments><item><commenter>applantation</commenter><contents>
+
+    
+      
+          The apk from the download site should install and run.
+…
+On 28 March 2015 at 06:44, hurzl &lt;notifications@github.com&gt; wrote:
+ Also for running the binary downloads?
+ And why does the apk not install?
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/593#issuecomment-87198190&gt;.
+
+
+
+      
+    
+
+  </contents></item><item><commenter>ludwigb</commenter><contents>
+
+    
+      
+          Try the debug version,
+http://ci.mapsforge.org/job/0.5.1/lastSuccessfulBuild/artifact/Applications/Android/Samples/build/outputs/apk/Samples-release-unsigned.apk
+
+
+http://ci.mapsforge.org/job/0.5.1/
+
+I think we are linking to the release version, which might need to get
+signed first before using.
+
+Ludwig
+…
+On 28 March 2015 at 07:40, hurzl &lt;notifications@github.com&gt; wrote:
+ No on an android phone, 5.0.2
+ I compiled apps with jdk 1.8, I don't know why 1.8 shouldn't (or doesn't)
+ compile 1.7 compliant code?
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/593#issuecomment-87204043&gt;.
+
+
+
+      
+    
+
+  </contents></item><item><commenter>ludwigb</commenter><contents/></item><item><commenter>devemux86</commenter><contents>
+
+    
+      
+          +1
+      
+    
+
+  </contents></item></comments><createtime>Mar 28, 2015, 5:19 PM GMT+8</createtime><closetime>Mar 28, 2015, 7:45 PM GMT+8</closetime></item></BR></extraction>

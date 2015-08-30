@@ -1,0 +1,1 @@
+<extraction><id>#160</id><title>unable to force close app</title><description> location request restarts app even if it was force closed</description><comments>fixed by using a location listener some versions ago</comments></extraction>

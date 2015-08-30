@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831813</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/115]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/115]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:54:46</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/115]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#115</id><title>The mapfile-writer should support the rewriting of tags</title><description>
+
+    
+      
+          From thilo.mu...@gmail.com on April 22, 2011 13:36:46
+
+Like discussed in https://code.google.com/p/mapsforge/issues/detail?id=86#c13 the mapfile-writer should offer a possibility to rewrite tags. This means, that whenever tag x is found in the input data, tag y is written to the map file instead.
+
+One example where this can be used are pseudo-boolean tags like the "oneway=..." tag ( http://tagstat.hypercube.telascience.org/tagdetails.php?tag=oneway ). Different values like "yes", "true" or "1" are currently assigned three different tag IDs. Although rendererd equally, this bloats the code that is necessary to handle all three values.
+
+It should somehow be possible to configure the mapping from one tag to another one in the tag-mapping.xml file, for example like this:
+
+
+An interesting question is: what happens in case of cyclic rewritings? Can a rewritten value be rewritten again? For example:
+
+
+
+Should this be possible?
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=115
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on April 22, 2011 11:33:28
+
+An even better idea, i agree. Of course there is no sense in cyclic rewrites.
+
+By the way (quote from http://en.wikipedia.org/wiki/CamelCase#Other_uses ):
+"The NIEM registry requires that XML data elements use upper camel case and XML attributes use lower camel case."
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on April 22, 2011 14:03:42
+
+Some remarks:
+
+1) Please rename the newly introduced attribute to "equivalent-values" instead of "equivalent-attributes" to better reflect its purpose
+2) All "oneway=..." entries in the XML file should have a renderable="false" attribute.
+3) Move the  line back to where it was before, as the last block lists all the way tags which are not associated with a zoom level. The oneway entries should be moved to this block as well.
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:36 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:36 PM GMT+8</closetime></item></BR></extraction>

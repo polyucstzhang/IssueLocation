@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894553</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/113555e9ae7a2f4b8ec83b4d2e17729266c9c8d4]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/113555e9ae7a2f4b8ec83b4d2e17729266c9c8d4]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:19:4</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/113555e9ae7a2f4b8ec83b4d2e17729266c9c8d4]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Acquire a wifi lock while connected, add settings to keep screen on a…
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              res/xml/preferences_device.xml
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplication.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/PreferencesActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881737</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/625dcdcab22e1ce8df71214501f320669a3b89ec]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/625dcdcab22e1ce8df71214501f320669a3b89ec]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:22:42</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/625dcdcab22e1ce8df71214501f320669a3b89ec]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed ActivityPreferences Toolbar Text Color, PreferenceScreen back i…
+    </title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/ActivityPreferences.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/preferences/ToolbarPreference.java
+            </name></item><item><name>
+              src/main/res/layout/fragment_contacts.xml
+            </name></item><item><name>
+              src/main/res/layout/settings_toolbar.xml
+            </name></item></source_file></item></commit></extraction>

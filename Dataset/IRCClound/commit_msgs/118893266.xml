@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893266</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/670b1408b799aee1fffd24bd85d77ee84dca4fed]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/670b1408b799aee1fffd24bd85d77ee84dca4fed]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:35:26</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/670b1408b799aee1fffd24bd85d77ee84dca4fed]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Google Smart Lock login support
+    </title><numbercommit>
+      10 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/layout/activity_login.xml
+            </name></item><item><name>
+              res/values-v21/styles.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PreferencesActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

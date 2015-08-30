@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894778</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/cacb34122b3830d42742636df1151f18cbbf4510]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/cacb34122b3830d42742636df1151f18cbbf4510]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:23:59</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/cacb34122b3830d42742636df1151f18cbbf4510]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Move the channel topic into the subtitle, use a custom view with an o…
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/menu/activity_message_channel.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

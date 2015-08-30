@@ -1,0 +1,1 @@
+<extraction><id>#47</id><title>IllegalStateException shown when connection is not configured</title><description> Just a cosmetic issue but should show something as "Not configured" instead. </description><comments /></extraction>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881757</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/04138ef461f3f7f0e353203bd036b0b32885dd04]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/04138ef461f3f7f0e353203bd036b0b32885dd04]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:32</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/04138ef461f3f7f0e353203bd036b0b32885dd04]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      respecting general waypoint notification settings
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item></source_file></item></commit></extraction>

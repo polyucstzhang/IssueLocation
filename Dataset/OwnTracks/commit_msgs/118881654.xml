@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881654</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/0941826957fc38948d252d65b49bd6ecb960fabc]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/0941826957fc38948d252d65b49bd6ecb960fabc]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:19:6</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/0941826957fc38948d252d65b49bd6ecb960fabc]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      removing transition types from waypoint, fixing preferences
+    </title><numberfile>
+      21 changed files
+    </numberfile><source_file><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              CHANGELOG.md
+            </name></item><item><name>
+              DaoGenerator/src/main/java/org/owntracks/android/DaoGenerator.java
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityMain.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityPreferences.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityWaypoint.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/db/DaoMaster.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/db/Waypoint.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/db/WaypointDao.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/ConfigurationMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/messages/WaypointMessage.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/services/ServiceLocator.java
+            </name></item><item><name>
+              src/main/java/org/owntracks/android/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/layout/activity_waypoint.xml
+            </name></item><item><name>
+              src/main/res/menu/preferences_connection.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/xml/hostedpreferences.xml → src/main/res/xml/preferences_hosted.xml
+            </name></item><item><name>
+              src/main/res/xml/privatepreferences.xml → src/main/res/xml/preferences_private.xml
+            </name></item><item><name>
+              src/main/res/xml/publicpreferences.xml → src/main/res/xml/preferences_public.xml
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894443</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ce497e3b21a6766265615553428f3abe885167c7]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ce497e3b21a6766265615553428f3abe885167c7]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:15:21</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ce497e3b21a6766265615553428f3abe885167c7]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      msg_services, NickServ dialog
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/EditConnectionFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/EventsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/NickservFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

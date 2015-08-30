@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893632</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/30ecb8a8ebbae78c0019e8bf8a3f116434ba32df]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/30ecb8a8ebbae78c0019e8bf8a3f116434ba32df]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:45:49</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/30ecb8a8ebbae78c0019e8bf8a3f116434ba32df]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Use CardView for ignore list / channel list / ban list / etc.
+    </title><numbercommit>
+      14 changed files
+    </numbercommit><source_file><item><name>
+              res/layout-sw600dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout-v11/sendbtn.xml
+            </name></item><item><name>
+              res/layout/activity_login.xml
+            </name></item><item><name>
+              res/layout/dialog_channelslist.xml
+            </name></item><item><name>
+              res/layout/ignorelist.xml
+            </name></item><item><name>
+              res/layout/row_acceptlist.xml
+            </name></item><item><name>
+              res/layout/row_banlist.xml
+            </name></item><item><name>
+              res/layout/row_channel.xml
+            </name></item><item><name>
+              res/layout/row_hostmask.xml
+            </name></item><item><name>
+              res/layout/row_who.xml
+            </name></item><item><name>
+              res/layout/sendbtn.xml
+            </name></item><item><name>
+              res/values-v11/colors.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

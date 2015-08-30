@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894238</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/87ca94b37c7979e3acbaf7185e84282ba8b2de92]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/87ca94b37c7979e3acbaf7185e84282ba8b2de92]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:8:30</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/87ca94b37c7979e3acbaf7185e84282ba8b2de92]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix the selection state for a disconnected server, show disconnect in…
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/ChannelListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/EditConnectionFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              src/com/irccloud/android/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

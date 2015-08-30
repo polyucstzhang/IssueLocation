@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894279</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b8ed44a417aa234d39d1590885410223a2bed4ef]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b8ed44a417aa234d39d1590885410223a2bed4ef]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:9:50</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b8ed44a417aa234d39d1590885410223a2bed4ef]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Close the drawer when hiding the soft keyboard
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118261951</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/0eb912c5bb1773a17bb27908c6562707d40f8a3c]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/0eb912c5bb1773a17bb27908c6562707d40f8a3c]]></realpath><theme>mapsforge_03n</theme><middle>default</middle><createdate>2015-8-21 16:24:16</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/0eb912c5bb1773a17bb27908c6562707d40f8a3c]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      Code Quality: fixed Sonar violations mostly in Android code, should h…
+    </title><number>
+      23 changed files
+    </number></item></BR></extraction>

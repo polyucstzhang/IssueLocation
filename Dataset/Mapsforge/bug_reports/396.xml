@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829340</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/396]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/396]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:46:34</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/396]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#396</id><title>Issue 358</title><description>
+
+    
+      
+          From kel...@gmail.com on January 10, 2013 13:35:28
+
+I am submitting this because I don't know if issue 358 is still being read, it being closed an all. What steps will reproduce the problem? 1. Just navigating through the map, zooming in or out or sliding causes a freeze on the entire app, randomly What is the expected output? What do you see instead? Normal map behavior. I see a crash. What version of the product are you using? On what operating system? 0.3.0 with the changes suggested by Ludwig on Issue 358 . I replaced the drawBitmap method with the one provided in his patch.
+
+I also put a Log line before entering the synchronized region of drawBitmap, and another one just before returning. When the app crashes, I only get the first log line, so I'd say the problem is indeed in here.
+
+I am attaching my modified FrameBuffer.java.
+
+Attachment: FrameBuffer.java
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=396
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From kel...@gmail.com on January 10, 2013 08:28:04
+
+Could it be a problem with the matrixPostScale and matrixPostTranslate methods? This would explain why I am getting this problem only with overlays... and also I think it crashes when I pinch to zoom or slide to move, with my finger ending up in one of the markers, maybe interferring with the onTap method? Does that make sense?
+
+I've seen than in 0.3.1 the syncronized region has been removed from these methods, but since the whole overlay structure was changed I don't know if it would be correct to remove it from these as well. I did try and it seems to be working fine now though...
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on January 13, 2013 01:46:57
+
+Thank you for the stacktrace, looking at it, it seems you are using parts of the old overlay architecture, like ItemizedOverlays and Arrayoverlays together with the head revision to implement things like onTap on overlay items.
+
+at com.bretema.rutas.map.OverlayForge.doShowBallon(OverlayForge.java:162)
+  at com.bretema.rutas.map.OverlayForge.onTap(OverlayForge.java:219)
+  at org.mapsforge.android.maps.overlay.ItemizedOverlay.checkItemHit(ItemizedOverlay.java:184)
+  at org.mapsforge.android.maps.overlay.ItemizedOverlay.onTap(ItemizedOverlay.java:102)
+
+I can understand that you want these features, but this mix is not supported and, as you are experiencing unlikely to work.
+
+What you are reporting is not a problem with issue358 , but simply something that you introduced by patching together incompatible versions of the library. 
+
+This whole area is under rework, but you will need to be patient.
+
+Status: Invalid  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 6:00 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:00 PM GMT+8</closetime></item></BR></extraction>

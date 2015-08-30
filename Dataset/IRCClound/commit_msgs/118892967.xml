@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892967</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/2736088c3b67cf39a442673f108e866d44c68d52]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/2736088c3b67cf39a442673f108e866d44c68d52]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:29:13</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/2736088c3b67cf39a442673f108e866d44c68d52]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix empty messages list on launch
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              debug-src/com/irccloud/android/IRCCloudApplication.java
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894312</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/eeeac7efbf24662ccf050c061f5d479737b2c3e1]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/eeeac7efbf24662ccf050c061f5d479737b2c3e1]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:10:56</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/eeeac7efbf24662ccf050c061f5d479737b2c3e1]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Move the images into the xdpi folder
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-xhdpi/lock.png
+            </name></item><item><name>
+              res/drawable-xhdpi/world.png
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

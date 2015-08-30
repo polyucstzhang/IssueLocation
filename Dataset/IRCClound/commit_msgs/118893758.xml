@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893758</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/19dd6d5a790a5357966142b8f760c3c05405d1a0]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/19dd6d5a790a5357966142b8f760c3c05405d1a0]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:50:34</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/19dd6d5a790a5357966142b8f760c3c05405d1a0]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Use the updated Android Wear voice reply API
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/CollapsedEventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name>
+              src/com/irccloud/android/RemoteInputService.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882055</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/81cd97e79d0ab9e827c5b02f79c50ac373e609b6]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/81cd97e79d0ab9e827c5b02f79c50ac373e609b6]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:34:54</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/81cd97e79d0ab9e827c5b02f79c50ac373e609b6]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Closes issue </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              res/xml/preferences.xml
+            </name></item></source_file></item></commit></extraction>

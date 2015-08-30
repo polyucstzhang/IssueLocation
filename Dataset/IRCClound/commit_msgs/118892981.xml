@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892981</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b96a3cf9d08c106756f4b161cc043732dc13825b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b96a3cf9d08c106756f4b161cc043732dc13825b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:29:52</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b96a3cf9d08c106756f4b161cc043732dc13825b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix empty action bar during loading
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/SyncService.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

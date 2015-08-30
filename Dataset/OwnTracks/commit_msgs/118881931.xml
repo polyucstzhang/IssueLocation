@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881931</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/4141e168426f114977a064aac40d6810c63dea21]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/4141e168426f114977a064aac40d6810c63dea21]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:29:32</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/4141e168426f114977a064aac40d6810c63dea21]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Debug notifications
+    </title><numberfile>
+      2 changed files
+    </numberfile><source_file><item><name>
+              libs/google-play-services-libproject/google-play-services_lib/bin/jarlist.cache
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item></source_file></item></commit></extraction>

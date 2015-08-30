@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893936</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/db93e8830cf1dc7f1bd47de06a4d76c063defb2d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/db93e8830cf1dc7f1bd47de06a4d76c063defb2d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:57:9</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/db93e8830cf1dc7f1bd47de06a4d76c063defb2d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Update joined / key icon when refreshing individual buffers, update t…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

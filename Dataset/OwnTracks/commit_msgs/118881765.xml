@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881765</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/9c6b05624aa8746cc87e181cc4fed55230e47cea]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/9c6b05624aa8746cc87e181cc4fed55230e47cea]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:53</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/9c6b05624aa8746cc87e181cc4fed55230e47cea]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Implements </title><numberfile>
+      15 changed files
+    </numberfile><source_file><item><name>
+              .idea/.name
+            </name></item><item><name>
+              .idea/libraries/android_beacon_library_2_0_beta7.xml
+            </name></item><item><name>
+              .idea/libraries/appcompat_v7_19_1_0.xml
+            </name></item><item><name>
+              .idea/libraries/bugsnag_1_2_6.xml
+            </name></item><item><name>
+              .idea/libraries/bugsnag_android_2_1_1.xml
+            </name></item><item><name>
+              .idea/libraries/eventbus_2_2_0.xml
+            </name></item><item><name>
+              .idea/libraries/greendao_1_3_7.xml
+            </name></item><item><name>
+              .idea/libraries/mqtt_client_0_4_0.xml
+            </name></item><item><name>
+              .idea/libraries/play_services_4_4_52.xml
+            </name></item><item><name>
+              .idea/libraries/support_v4_19_1_0.xml
+            </name></item><item><name>
+              .idea/vcs.xml
+            </name></item><item><name>
+              android.iml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBroker.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Preferences.java
+            </name></item></source_file></item></commit></extraction>

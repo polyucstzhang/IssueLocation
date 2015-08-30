@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118892977</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ec2d4edc3b9bb717f4961648f51469c900cdf414]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ec2d4edc3b9bb717f4961648f51469c900cdf414]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:29:42</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ec2d4edc3b9bb717f4961648f51469c900cdf414]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Disable offline cache and periodic background refresh for now, instea…
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/GCMService.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

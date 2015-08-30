@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893732</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/4736e6848f7eb5b0c7104fec60c7810f43b0df96]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/4736e6848f7eb5b0c7104fec60c7810f43b0df96]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:49:38</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/4736e6848f7eb5b0c7104fec60c7810f43b0df96]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      handle ACTION_SEND intents for images and text from other apps
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_share_chooser.xml
+            </name></item><item><name>
+              res/values-v11/styles.xml
+            </name></item><item><name>
+              res/values/dimens.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ShareChooserActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/BuffersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,22 @@
+<extraction><id>#33</id><title>Multiple crashes with invalid data</title><description> 0.4.16 here.Opened app which said "Location reported", but nothing was being published. Tried multiple times. Rebooted nexus4 (that has helped previously); nothing doing.Mosquitto log showswith appropriate lwt being published by the broker.After, oh, about 10 attempts, things back to normal.</description><comments>Mh, so it didn't actually crash as the title implies but it just didn't publish it?Had that issue before where it said it published but it didn't and the broker had a socket-read error. In this case it wasn't a fault of the app (if it says it published, the pub function returned successfully) but mosquitto or paho had some hickups. Changed isse name Nailed it!First I panicked, and stupidly, removed the Mosquitto persistance database. Stupid, because now I'd like to know what was in there.Be that as it may, Android crashes (ie. is disconnected from broker) as soon as a binary? payload is published to it. Reproduce withI deduce that what was happening to me was a binary/kaputt/whatever payload of a message which wasn't ACKed by Android, and upon receiving it at each restart, the app went away. I'll check if I can reproduce it and get a stacktrace for it  0.4.17 is still crashing for me when I connect, possibly due to the null payload published to that topic  Clarification: sorry, by "crash", I mean disconnection with subsequent lwt, of course. O.O
+What did I push yesterday?
+
+The issue is that the app receives the null payload, tries to make a JSON
+object from it which throws an exception, which gets caught by the MQTT
+client, which disconnects.
+The .17 code "should" catch the exception earlier and just ignore it as an
+invalid message.
+
+Will look at it later. My broker is trying to deliver something which was published with qos=2.If I change client-id in app and connect, all is fine.Change the id back to what it was, the app connects, and then immediately disconnects as soon as it 'sniffs' the original message. There is definitely something mucho wrong with 0.4.17.I wiped Mosquitto's persistence db (sigh) and restarted. Then all appeared fine for an hour or so. Now I'm getting constant disconnects again. mosquitto_pub -h 192.168.8.2 -p 1883 -t "mqttitude/bucks/crap" -n -r -q 1 results in an "invalid message" and nothing else on my device. Can you give me a pub message that causes the problem for you? No, sorry. I've spent hours looking at Mosquitto's persistence database,
+and can't find anything wrong. I've rebooted the N4 to no avail: same
+results: connect and immediate disconnect when it 'smells' one of the
+messages.
+
+I've rebooted the N4; no difference.
+
+I've now, once again, cleared out Mosquitto's persistence db, and
+restarted Mosquitto. I've cleared the app's cache and relaunched.
+
+Connections now stay up.
+
+I cannot explain why/what caused it. Sorry. I'm now assuming gremlins</comments></extraction>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882046</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/bb0657792f9b8e82b3d94dfe28201b3de43c87bc]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/bb0657792f9b8e82b3d94dfe28201b3de43c87bc]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:34:35</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/bb0657792f9b8e82b3d94dfe28201b3de43c87bc]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Made ticker on successfull publish configurable
+    </title><numberfile>
+      6 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/values-de/strings.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Locator.java
+            </name></item></source_file></item></commit></extraction>

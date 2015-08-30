@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894309</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/cf61577b68f03675782d76147396c0deb6dbb92b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/cf61577b68f03675782d76147396c0deb6dbb92b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:10:49</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/cf61577b68f03675782d76147396c0deb6dbb92b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Change padding to margin on the sidebar icons, add 16x16 mdpi sidebar…
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-mdpi/lock.png
+            </name></item><item><name>
+              res/drawable-mdpi/world.png
+            </name></item><item><name>
+              res/layout/row_buffer.xml
+            </name></item><item><name>
+              res/layout/row_buffergroup.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

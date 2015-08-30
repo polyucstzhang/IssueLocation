@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831554</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/145]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/145]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:53:44</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/145]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#145</id><title>Generated map file size</title><description>
+
+    
+      
+          From menion.asamm on July 07, 2011 11:13:58
+
+What steps will reproduce the problem? 1. prepare all required data
+2. generate some area with low density of OSM data, but huge area. Some area of Canada, Asia or Africa are good samples What is the expected output? What do you see instead? Size of created map should be similar to size of source PBF file. But for these areas are maps much more bigger. For example Bolivia - from 3MB to 47MB!, LIBYA - from 3MB to 467MB!!! What version of the product are you using? On what operating system? latest 0.2.4 Please provide any additional information below. I know you use own format, generated from PBF files, but I think that some optimization is here really required, because from areas out of Europe, there is really huge storage needed even when source file is small
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=145
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 23, 2011 13:47:06
+
+With the latest version of the mapfile-writer, we are now clipping all ways and filtering out even more way points. In combination with other improvements in the new version of the binary file format (like the optional double-delta encoding of way points), this will make our map files smaller.
+
+When the 0.3.0 release has been published, we should check again if the mentioned figures for Bolivia and Libya are still valid, otherwise we could then close this issue.
+
+Status: Started
+  Labels: -Type-Defect Type-Enhancement  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on February 26, 2012 06:27:47
+
+should be fixed with r1852 , please test
+
+now i get libya.map with ~ 8mb and bolivia.map with ~ 15mb
+
+problem was that some large closed polygons (boundaries) were incorrectly recognized as areas, so that they spanned several 10,000 tiles
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on February 26, 2012 07:07:33
+
+I would really appreciate, if you could built check all maps of the world.
+
+Please try to built the latest map file writer from the sources. You find a description in the Wiki article GettingStartedDevelopers . It should be quite easy.
+If you still encounter problems, please let us know. We are interested in making the build process as easy as possible.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:38 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:39 PM GMT+8</closetime></item></BR></extraction>

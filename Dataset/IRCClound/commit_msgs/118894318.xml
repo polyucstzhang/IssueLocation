@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894318</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3174f2f9fd57ff3cdf5b38622c76f4a6fbf34f0d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3174f2f9fd57ff3cdf5b38622c76f4a6fbf34f0d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:11:8</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3174f2f9fd57ff3cdf5b38622c76f4a6fbf34f0d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      32x32 add, lock, and world icon
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-mdpi/lock.png
+            </name></item><item><name>
+              res/drawable-mdpi/world.png
+            </name></item><item><name>
+              res/layout/row_buffergroup.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

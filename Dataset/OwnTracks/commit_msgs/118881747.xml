@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881747</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/0023f57f625cca791d7075e0c1e14239bdc413cd]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/0023f57f625cca791d7075e0c1e14239bdc413cd]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:7</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/0023f57f625cca791d7075e0c1e14239bdc413cd]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Closes </title><numberfile>
+      8 changed files
+    </numberfile><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/messages/ConfigurationMessage.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/preferences/ActivityExport.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Preferences.java
+            </name></item><item><name>
+              src/main/res/layout/activity_export.xml
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item><item><name>
+              src/main/res/xml/filepaths.xml
+            </name></item></source_file></item></commit></extraction>

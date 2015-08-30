@@ -1,0 +1,8 @@
+<extraction><id>#165</id><title>Secure connection failing with "Could not validate certificate: null" on Android</title><description> Android  running on a Moto X
+OwnTracks 0.5.11
+Using a self-signed CA and the custom certificate path (though I tested by importing the CA to the phones trusted store and got the same error).I've been using OwnTracks beta for a few weeks now without any trouble until early this morning when it stopped being able to connect. I've not change anything in the configuration on either the phone or the server. The error reported in the app is:"com.android.org.bouncycastle.jce.exception.ExtCertPathValidatorException: Could not validate certificate: null"On the server side running Mosquitto it logs:New connection from 123.45.67.89 on port 8883.
+Socket error on client , disconnecting.This didn't seem to be the same as Issue #94 and I couldn't find any other issues that looked similar.ThanksRich</description><comments>Haven't seen that one before either. If it worked correctly without changing anything it is unlikely a bug in the app.  Looks like its my bad. I thought I created the cert to not expire until
+2016 but double checking it shows it expired at 4am this morning.
+
+Thanks for pointing me in the right direction and I thank your for your
+time.</comments></extraction>

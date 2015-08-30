@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894931</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d3cb46c5795234696691b50b25f65d27a92b3bcb]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d3cb46c5795234696691b50b25f65d27a92b3bcb]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:13</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d3cb46c5795234696691b50b25f65d27a92b3bcb]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      User list
+    </title><numbercommit>
+      14 changed files
+    </numbercommit><source_file><item><name>
+              res/layout-sw600dp-land/activity_message.xml
+            </name></item><item><name>
+              res/layout/activity_user_list.xml
+            </name></item><item><name>
+              res/layout/row_user.xml
+            </name></item><item><name>
+              res/layout/row_usergroup.xml
+            </name></item><item><name>
+              res/menu-sw600dp-land/activity_message.xml
+            </name></item><item><name>
+              res/menu/activity_user_list.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/ChannelsDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/UserListActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/UsersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118639395</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/634]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/634]]></realpath><theme>issue_634</theme><middle>default</middle><createdate>2015-8-22 23:0:7</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/634]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#634</id><title>Logging improvements</title><comments>
+
+        
+          
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Jun 27
+    
+  
+
+
+
+  
+
+    
+      
+          Improve Mapsforge logging (e.g. with proper use of tags).
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      added the enhancement label on Jun 27
+    
+  
+
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+      
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Jun 27
+    
+  
+
+
+
+  
+
+    
+      
+          I am all in favour of this.
+
+For me the main question is: what is actually the most efficient way of
+logging where we can have a debug build (with lots of debug logging
+enabled) and a release build (with most logging disabled).
+
+If we can agree on a scheme, I would suggest a bulk change.
+…
+On 27 June 2015 at 11:39, Emux &lt;notifications@github.com&gt; wrote:
+ Improve Mapsforge logging (e.g. with proper use of tags).
+
+ —
+ Reply to this email directly or view it on GitHub
+ &lt;https://github.com/mapsforge/mapsforge/issues/634&gt;.
+
+
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Jun 27
+    
+  
+
+
+
+  
+
+    
+      
+          We use 2 different logging frameworks (Java and Android) because Mapsforge core modules are not platform specific (and avoiding external frameworks).
+Having only Java Logging in libraries would be convenient.
+
+I'd suggest using the full class name as tag (including the org.mapsforge package).
+That way we can watch closely e.g. specific class development.
+
+If we want global org.mapsforge filtering at command line, this can be achieved via wildcards / regular expressions.
+
+According to Android official docs: Debug logs are compiled in but stripped at runtime.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Jun 27
+    
+  
+
+
+
+  
+
+    
+      
+          Controlling the logging via a global flag in Android could be done via provided BuildConfig.DEBUG.
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+
+
+  
+
+    
+      emdete
+    
+
+    commented
+
+    
+      on Jun 28
+    
+  
+
+
+
+  
+
+    
+      
+          i suggest to implement a logging wrapper that for android uses Log and for JVM uses java.util.logging. it's the only way to avoid libraries (which i like much). 
+
+the wrapper should be efficient in the do-not-log decision (for example by consulting BuildConfig.DEBUG) and do the message formatting after. there is a message formatting class in java which has issues but it's the direction i would go.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on Jun 29
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      Logging: various improvements #634
+
+
+  
+
+  
+
+
+      f529cba
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Jun 29
+    
+  
+
+
+
+  
+
+    
+      
+          With f529cba I scanned the whole Mapsforge code improving the logging and using proper tagging.
+
+The situation right now is:
+
+
+In library modules we use Java Logging
+In Samples we use Android Logging
+
+      
+    
+
+  
+
+
+  
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Jun 29
+    
+  
+
+
+
+  
+
+    
+      
+          I'd avoid filling Mapsforge with external dependencies (for many reasons).
+We need to be very strict with this rule, to not lose control in the process.
+
+Logging frameworks or facades are probably useful in applications.
+But users usually find very annoying libraries that force them to use external loggers (or mix them with their own).
+      
+    
+
+  
+
+
+  
+
+
+
+
+
+
+    
+
+
+
+        
+
+          
+                
+	Sign up for free
+	to join this conversation on GitHub.
+	Already have an account?
+	Sign in to comment
+
+
+
+          
+      </comments></item></BR></extraction>

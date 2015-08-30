@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881988</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/f6de48f3d4ab64e85f747e852687f5fff4829e8c]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/f6de48f3d4ab64e85f747e852687f5fff4829e8c]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:31:55</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/f6de48f3d4ab64e85f747e852687f5fff4829e8c]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Closes </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              res/layout/fragment_friends.xml
+            </name></item><item><name>
+              res/layout/friend_list_item.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item></source_file></item></commit></extraction>

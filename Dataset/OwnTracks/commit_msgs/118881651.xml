@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881651</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/28dab5710ad174c46b2d489fdf3ea2f89eb9f6b9]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/28dab5710ad174c46b2d489fdf3ea2f89eb9f6b9]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:18:56</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/28dab5710ad174c46b2d489fdf3ea2f89eb9f6b9]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Android-v0.5.12 APK
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              apk/owntracks.apk
+            </name></item></source_file></item></commit></extraction>

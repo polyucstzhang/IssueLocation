@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894364</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9b430fe4489cf3d656a2a5da555f6c96f3b53c7e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9b430fe4489cf3d656a2a5da555f6c96f3b53c7e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:12:42</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9b430fe4489cf3d656a2a5da555f6c96f3b53c7e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Use the back RPC method instead of /back
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

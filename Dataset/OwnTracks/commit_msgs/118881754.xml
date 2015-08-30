@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881754</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/beb3eed1596c1f62f4ad5a4c0bb1d0294c2fe6c3]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/beb3eed1596c1f62f4ad5a4c0bb1d0294c2fe6c3]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:23:26</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/beb3eed1596c1f62f4ad5a4c0bb1d0294c2fe6c3]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Refactor scanning state, fix preferences key for ranging, remove Scan…
+    </title><numberfile>
+      4 changed files
+    </numberfile><source_file><item><name>
+              src/main/java/st/alr/mqttitude/services/ServiceBeacon.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/BluetoothStateChangeReceiver.java
+            </name></item><item><name>
+              src/main/java/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/main/res/values/strings.xml
+            </name></item></source_file></item></commit></extraction>

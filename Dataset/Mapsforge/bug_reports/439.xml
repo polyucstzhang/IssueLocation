@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828848</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/439]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/439]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:45:12</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/439]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#439</id><title>Fails to run with osmosis 0.43.1</title><description>
+
+    
+      
+          From bdiscoe on June 28, 2013 23:51:46
+
+What steps will reproduce the problem? 1. Install the latest osmosis (0.43.1)
+2. Install the latest mapwriter (mapsforge-map-writer-0.3.0-jar-with-dependencies.jar)
+3. Try to run with "osmosis --mapwriter"
+
+Result: A failure message about 'unknown or has incompatible version':
+
+Jun 28, 2013 2:42:14 PM org.openstreetmap.osmosis.core.Osmosis run
+INFO: Osmosis Version 0.43.1
+Jun 28, 2013 2:42:14 PM org.openstreetmap.osmosis.core.Osmosis main
+SEVERE: Execution aborted.
+org.openstreetmap.osmosis.core.OsmosisRuntimeException: Cannot load JPF-plugin 'org.mapsforge.MapFileWriter' for extensionpoint 'Task'
+        at org.openstreetmap.osmosis.core.TaskRegistrar.loadJPFPlugins(TaskRegistrar.java:186)
+        at org.openstreetmap.osmosis.core.TaskRegistrar.initialize(TaskRegistrar.java:88)
+        at org.openstreetmap.osmosis.core.Osmosis.run(Osmosis.java:81)
+        at org.openstreetmap.osmosis.core.Osmosis.main(Osmosis.java:37)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+        at java.lang.reflect.Method.invoke(Unknown Source)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchStandard(Launcher.java:329)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:239)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+        at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+Caused by: org.java.plugin.PluginLifecycleException: plug-in org.mapsforge.map.mapfile-writer requires plug-in org.openstreetmap.osmosis.core.plugin.Core which
+is unknown or has incompatible version
+        at org.java.plugin.standard.StandardPluginManager.checkPrerequisites(StandardPluginManager.java:460)
+        at org.java.plugin.standard.StandardPluginManager.activatePlugin(StandardPluginManager.java:397)
+        at org.java.plugin.standard.StandardPluginManager.activatePlugin(StandardPluginManager.java:245)
+        at org.openstreetmap.osmosis.core.TaskRegistrar.loadJPFPlugins(TaskRegistrar.java:182)
+        ... 12 more
+
+On what operating system?
+Seen on Windows, but nothing about it looks platform-specific.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=439
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From f.hoeff...@gmail.com on August 09, 2013 01:59:27
+
+try osmois 0.40.1 that version worked for me...
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on January 25, 2014 00:44:35
+
+Issue 479 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 6:02 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:02 PM GMT+8</closetime></item></BR></extraction>

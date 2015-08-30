@@ -1,0 +1,11 @@
+<extraction><id>#51</id><title>Err:Timeout | Conneted and missed geofence (Enter) event</title><description> Today I've noticed a missing geofence event.
+Looking at the notifications on the phone the reported status was Err:Timeout | ConnectedSince I use mqttwarn to push notifications I've double checked the log and the last notification pushed is the relative prior "Leave" event.These are my settings right now:</description><comments>That might happen if your phone loses connection e.g. when it transitions
+out of the home wifi before publishing and fails to establish a connection
+to the broker within 30 seconds.
+
+I'm working on a fix to handle this better with qos 1 and, 2 such that the
+message isn't lost.
+
+Mit freundlichen Gr  en / With kind regards
+Alexander Rust
+--Sent from mobile As there's nothing new on this issue and an improvement is being worked on, I'm closing this one for now. </comments></extraction>

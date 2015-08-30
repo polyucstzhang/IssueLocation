@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893978</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/842cfbf8e182a8da1f02e513acb841ca9057e7ca]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/842cfbf8e182a8da1f02e513acb841ca9057e7ca]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:58:47</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/842cfbf8e182a8da1f02e513acb841ca9057e7ca]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Instagram
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/ImageViewerActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

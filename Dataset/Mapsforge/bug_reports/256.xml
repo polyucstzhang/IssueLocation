@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830582</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/256]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/256]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:50:37</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/256]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#256</id><title>mapsforge without sdcard</title><description>
+
+    
+      
+          From smaucourt on February 22, 2012 06:35:31
+
+What steps will reproduce the problem? 1. remove the sdcard of your phone
+2. launch applications using mapforgs What is the expected output? What do you see instead? java.lang.RuntimeException: Unable to start activity ComponentInfo{my activity}: java.lang.IllegalArgumentException: could not create directory: /mnt/sdcard/Android/data/org.mapsforge.android.maps/cache/1 What version of the product are you using? On what operating system? android 2.2.1 Please provide any additional information below. who should catch this exception?
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=256
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on February 25, 2012 09:19:58
+
+Labels: -Priority-Low Priority-Medium  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on April 05, 2012 07:02:07
+
+Context.openFileOutput opens "a private file associated with this Context's application package for writing." ( http://developer.android.com/reference/android/content/Context.html#openFileOutput(java.lang.String , int)).
+
+Storing map files in the private storage ensures that they cannot be deleted accidentally and also that the storage is reclaimed when the user uninstalls the app, so this is not totally unreasonable for e.g. apps that download map files from the internet. 
+
+I had not encountered the problem in the wild with the exception of maybe one user where the problem turned out that the SD card was not mounted correctly.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on April 16, 2012 05:00:39
+
+Do you have a device where this error happens 'naturally'? 
+
+I have had to fiddle around with things, which make testing patches less than reliable. 
+
+The patch I supplied is pretty easy but recently I have seen one error where an app crashed even if the SD card was there and writable because the directory could not be created. I am not sure if this could be  a common problem for some reason with my patch, even though I have no explanation for it.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on December 19, 2012 17:39:16
+
+Issue 389 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:48 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:48 PM GMT+8</closetime></item></BR></extraction>

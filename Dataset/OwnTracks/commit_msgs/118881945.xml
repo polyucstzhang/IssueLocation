@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881945</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/640c7583ea1932629bc2bb982a7449147a331cc3]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/640c7583ea1932629bc2bb982a7449147a331cc3]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:14</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/640c7583ea1932629bc2bb982a7449147a331cc3]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      slightly better contact handling for </title><numberfile>
+      11 changed files
+    </numberfile><source_file><item><name>
+              res/layout/fragment_details.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/model/LocationReport.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/model/Report.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item></source_file></item></commit></extraction>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881957</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/5f72fb1e48db02d21e43c545d08efbdd83594ef0]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/5f72fb1e48db02d21e43c545d08efbdd83594ef0]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:30:46</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/5f72fb1e48db02d21e43c545d08efbdd83594ef0]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      cleanup, implemented </title><numberfile>
+      4 changed files
+    </numberfile><source_file><item><name>
+              res/layout/fragment_friends.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/StaticHandler.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/StaticHandlerInterface.java
+            </name></item></source_file></item></commit></extraction>

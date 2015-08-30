@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118637725</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/592]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/592]]></realpath><theme>issue_592</theme><middle>default</middle><createdate>2015-8-22 23:4:45</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/592]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#592</id><title>Code optimization (i.e. Android Lint)</title><comments>
+
+        
+          
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      ludwigb
+    
+
+    commented
+
+    
+      on Mar 22
+    
+  
+
+
+
+  
+
+    
+      
+          Ongoing task of reducing number of code warnings. 
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      ludwigb
+
+      referenced
+      this issue
+      from a commit
+      
+        on Mar 22
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      ludwigb
+    
+
+  
+      Android Lint: automatic fix of some reported issues #592
+
+
+  
+
+  
+
+
+      4c732ef
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Mar 22
+    
+  
+
+
+
+  
+
+    
+      
+          We have also the deprecated Resources.getDrawable with Android 5.1.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      added the Type-Task label on May 30
+    
+  
+
+
+
+  
+      
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      
+        on May 30
+      
+    
+
+      
+          
+        Closed
+      
+
+
+
+    
+      
+        Avoid creating unnecessary objects
+        #622
+    
+    
+  
+
+
+  
+
+
+      
+
+
+  
+    
+
+      
+      
+      devemux86
+      changed the title from  Android Lint: reduce number of warnings to Code optimization (i.e. Android Lint) on May 30
+    
+  
+
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on May 30
+    
+  
+
+
+
+  
+
+    
+      
+          Lint does not always report unnecessary object creation, we should take care for it too.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on May 30
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      AndroidPaint: avoid creating unnecessary objects, #592
+
+
+  
+
+  
+
+
+      8d2b441
+  
+
+
+    
+  
+
+
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on May 30
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      AwtPaint: avoid creating unnecessary objects #592, dispose used graphics
+
+
+  
+
+  
+
+
+      05cd30a
+  
+
+
+    
+  
+
+
+  
+    
+    
+
+  
+
+
+    Collaborator
+
+
+  
+
+    
+      devemux86
+    
+
+    commented
+
+    
+      on Jun 16
+    
+  
+
+
+
+  
+
+    
+      
+          With f5a6c21 I cleaned up some Lint warnings taking also care of the deprecated Resources.getDrawable with Android 5.1.
+      
+    
+
+  
+
+
+  
+  
+
+
+      
+  
+    
+      
+
+      
+      devemux86
+
+      referenced
+      this issue
+      from a commit
+      
+        on Jun 25
+      
+    
+
+    
+      
+
+
+
+  
+      
+  
+
+    
+      
+    
+
+    
+      devemux86
+    
+
+  
+      Sort some methods (no functionality change) #592
+
+
+  
+
+  
+
+
+      d65d118
+  
+
+
+    
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+        
+
+          
+                
+	Sign up for free
+	to join this conversation on GitHub.
+	Already have an account?
+	Sign in to comment
+
+
+
+          
+      </comments></item></BR></extraction>

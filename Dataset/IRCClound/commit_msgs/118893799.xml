@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893799</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/3cd9f361e3e4f5c54148d5c7f9ac167dd8c1153a]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/3cd9f361e3e4f5c54148d5c7f9ac167dd8c1153a]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:52:5</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/3cd9f361e3e4f5c54148d5c7f9ac167dd8c1153a]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a few crashes
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/IRCCloudJSONObject.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PreferencesActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/NickservFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893872</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/9fa421c44d8b98ab142274175b84915347816071]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/9fa421c44d8b98ab142274175b84915347816071]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:54:42</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/9fa421c44d8b98ab142274175b84915347816071]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Always show the user list button on phones, allow swiping open the us…
+    </title><numbercommit>
+      8 changed files
+    </numbercommit><source_file><item><name>
+              res/layout-sw800dp-land/activity_message.xml
+            </name></item><item><name>
+              res/menu-sw600dp-land/activity_message_channel_userlist.xml
+            </name></item><item><name>
+              res/menu-sw800dp/activity_message_channel_userlist.xml
+            </name></item><item><name>
+              res/values-sw600dp-land/hideUserListFragment.xml
+            </name></item><item><name>
+              res/values-sw800dp/hideUserListFragment.xml
+            </name></item><item><name>
+              res/values/hideUserListFragment.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

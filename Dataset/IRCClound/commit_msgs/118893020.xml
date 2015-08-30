@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893020</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d512b52716c0e3a3c75fd0f2e79f54f2520c9f13]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d512b52716c0e3a3c75fd0f2e79f54f2520c9f13]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:31:26</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d512b52716c0e3a3c75fd0f2e79f54f2520c9f13]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      store notifications in the sqlite database
+    </title><numbercommit>
+      15 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name>
+              src/com/irccloud/android/IRCCloudApplicationBase.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/NotificationDismissBroadcastReceiver.java
+            </name></item><item><name>
+              src/com/irccloud/android/RemoteInputService.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PreferencesActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/QuickReplyActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java → ...id/data/collection/NotificationsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/collection/ServersList.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/model/Notification.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/model/Notification_LastSeenEID.java
+            </name></item><item><name>
+              src/com/irccloud/android/data/model/Notification_Network.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/NotificationsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

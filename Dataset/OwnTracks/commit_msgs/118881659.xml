@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881659</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/998e8fa996c35940add2c925607ad49a877dd1d4]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/998e8fa996c35940add2c925607ad49a877dd1d4]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:19:17</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/998e8fa996c35940add2c925607ad49a877dd1d4]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      closes </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/java/org/owntracks/android/activities/ActivityImport.java
+            </name></item></source_file></item></commit></extraction>

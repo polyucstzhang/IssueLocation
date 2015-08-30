@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894741</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/27715493d77289c8b9952ee77e8f7eebc0a427b8]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/27715493d77289c8b9952ee77e8f7eebc0a427b8]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:22:48</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/27715493d77289c8b9952ee77e8f7eebc0a427b8]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Remove the buffer list fragment from MainActivity and remove the up n…
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/bufferslist.xml
+            </name></item><item><name>
+              src/com/irccloud/androidnative/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

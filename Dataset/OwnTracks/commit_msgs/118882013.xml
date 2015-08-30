@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882013</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/0d9f3587069c66a076806a2617f67a322298f79d]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/0d9f3587069c66a076806a2617f67a322298f79d]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:33:22</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/0d9f3587069c66a076806a2617f67a322298f79d]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      bonus feature for </title><numberfile>
+      9 changed files
+    </numberfile><source_file><item><name>
+              .idea/workspace.xml
+            </name></item><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              res/drawable-xhdpi/ab_bottom_solid.9.png
+            </name></item><item><name>
+              res/menu/activity_preferences.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/BackgroundPublishReceiver.java
+            </name></item></source_file></item></commit></extraction>

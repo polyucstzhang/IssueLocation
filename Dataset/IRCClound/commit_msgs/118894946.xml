@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894946</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/7c601d7940ab633624706ea705e0558c44a07856]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/7c601d7940ab633624706ea705e0558c44a07856]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:43</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/7c601d7940ab633624706ea705e0558c44a07856]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Handle heartbeat_echo events and refresh the buffer list with the new…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

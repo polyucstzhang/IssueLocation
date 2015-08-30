@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894794</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/6ac209f0fdb54da3fcc6ffdd33657315112d638c]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/6ac209f0fdb54da3fcc6ffdd33657315112d638c]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:24:30</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/6ac209f0fdb54da3fcc6ffdd33657315112d638c]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Even better positioning of the scrollbar after loading backlog
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/row_message.xml
+            </name></item><item><name>
+              res/layout/row_timestamp.xml
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

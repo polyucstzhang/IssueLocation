@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118830075</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/308]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/308]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:49:11</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/308]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#308</id><title>NullPointer Exception in MapViewProjection</title><description>
+
+    
+      
+          From Viktoria...@googlemail.com on April 27, 2012 18:58:00
+
+What steps will reproduce the problem? 1. First use of Mapforge in an application on a device with an overlay 2. 3. What is the expected output? What do you see instead? App craches with a NullPointer Exception in MapViewProjection What version of the product are you using? On what operating system? 0.3.1 Snapshot Please provide any additional information below. From MapViewProjection:
+
+MapPosition mapPosition = this.mapView.getMapPosition().getMapPosition();
+
+This may return Null in case the MapPosition is not Valid
+
+// calculate the pixel coordinates of the top left corner
+GeoPoint geoPoint = mapPosition.geoPoint; &lt;= this line causes the Nullpointer Exception
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=308
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From fakhouri...@gmail.com on October 24, 2012 03:13:42
+
+did someone resolve this issue ??
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on August 25, 2014 07:04:42
+
+We already check there the mapView size and don't proceed if it has not been set.
+Would it make sense to also check mapPosition for null?
+
+Emux
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on November 10, 2014 00:30:41
+
+I assume this is fixed and will close the issue.
+
+Status: Fixed  
+      
+    
+
+  </contents></item><item><commenter>devemux86</commenter><contents/></item></comments><createtime>Nov 6, 2014, 5:52 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:52 PM GMT+8</closetime></item></BR></extraction>

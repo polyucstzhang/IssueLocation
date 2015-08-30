@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893016</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/0631230105e289420fa15bc1cb4bbc3c5982ef76]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/0631230105e289420fa15bc1cb4bbc3c5982ef76]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:31:15</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/0631230105e289420fa15bc1cb4bbc3c5982ef76]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Style the cold start background, fix the scroll bar on Lollipop
+    </title><numbercommit>
+      9 changed files
+    </numbercommit><source_file><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              res/drawable-nodpi/splash_logo.png
+            </name></item><item><name>
+              res/drawable/splash.xml
+            </name></item><item><name>
+              res/values-v21/dimens.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

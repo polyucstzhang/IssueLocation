@@ -1,0 +1,5 @@
+<extraction><id>#105</id><title>Referrer tracking</title><description> POST /chat/android-impressions
+adid
+referrer
+Send session cookie (if applicable) and user agent
+(Note: all anon and some logged in requests will 404 until highgate has been migrated to ealing)</description><comments> </comments></extraction>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881612</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/9437d77a033ef649740644a564c6822adec39877]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/9437d77a033ef649740644a564c6822adec39877]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:17:12</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/9437d77a033ef649740644a564c6822adec39877]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Merge pull request </title><numberfile>
+      3 changed files
+    </numberfile><source_file><item><name>
+              owntracks-android.iml
+            </name></item><item><name>
+              settings.gradle
+            </name></item><item><name>
+              src/main/res/layout/activity_statistics.xml
+            </name></item></source_file></item></commit></extraction>

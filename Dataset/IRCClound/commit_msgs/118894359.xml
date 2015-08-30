@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894359</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/c1c78024e4aa78e7c6e2bd360b2f745ab9227dd5]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/c1c78024e4aa78e7c6e2bd360b2f745ab9227dd5]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:12:32</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/c1c78024e4aa78e7c6e2bd360b2f745ab9227dd5]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Improved display of waiting_to_retry status, add a message to abnorma…
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivityPager.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

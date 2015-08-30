@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118262220</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/8d2b441d1df36a0b11f98712a429dd7a4f2f1148]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/8d2b441d1df36a0b11f98712a429dd7a4f2f1148]]></realpath><theme>mapsforge_04n</theme><middle>default</middle><createdate>2015-8-21 16:39:56</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/8d2b441d1df36a0b11f98712a429dd7a4f2f1148]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      AndroidPaint: avoid creating unnecessary objects, </title><number>
+      1 changed file
+    </number></item></BR></extraction>

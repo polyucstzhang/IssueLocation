@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894927</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/14429d6e954ed19fb153863874f49404cb9a3222]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/14429d6e954ed19fb153863874f49404cb9a3222]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:29:3</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/14429d6e954ed19fb153863874f49404cb9a3222]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Some orientation-switching improvements
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/UserListActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

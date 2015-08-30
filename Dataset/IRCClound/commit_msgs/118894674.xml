@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894674</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ef20f5be13e8c6fa3d34b22d46895a2cf27027fb]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ef20f5be13e8c6fa3d34b22d46895a2cf27027fb]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:22:13</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ef20f5be13e8c6fa3d34b22d46895a2cf27027fb]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      colored up chevron to indicate unread/highlight status
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-xhdpi/up_highlight.png
+            </name></item><item><name>
+              res/drawable-xhdpi/up_unread.png
+            </name></item><item><name>
+              res/layout/actionbar_messageview.xml
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageActivityPager.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

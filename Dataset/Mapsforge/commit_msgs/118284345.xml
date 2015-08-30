@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118284345</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/16dba11e10df3ad67d028f6a9442b710a4f0ae96]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/commit/16dba11e10df3ad67d028f6a9442b710a4f0ae96]]></realpath><theme>mapsforge_06n</theme><middle>default</middle><createdate>2015-8-21 19:20:39</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/commit/16dba11e10df3ad67d028f6a9442b710a4f0ae96]]></uri></bucketBaseURI></baseURI>
+<BR><item><title>
+      Remove scattered © signs at copyright header in Java sources to make it
+    </title><number>
+      78 changed files
+    </number></item></BR></extraction>

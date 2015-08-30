@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893903</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/2367f4bf078f7ea835f10810b48402732132095b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/2367f4bf078f7ea835f10810b48402732132095b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:56:4</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/2367f4bf078f7ea835f10810b48402732132095b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      A few tweaks to the Android 4.x notification layouts
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              res/layout-v11/notification_expanded.xml
+            </name></item><item><name>
+              res/layout-v11/notification_title.xml
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

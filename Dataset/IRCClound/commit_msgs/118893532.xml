@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893532</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/caa3329aeaa5acf2900f99a83778365a96b32ccf]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/caa3329aeaa5acf2900f99a83778365a96b32ccf]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:42:8</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/caa3329aeaa5acf2900f99a83778365a96b32ccf]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Emojify notifications, fix visible HTML markup in Android Wear notifi…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

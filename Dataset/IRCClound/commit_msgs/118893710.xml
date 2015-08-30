@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893710</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/034adb17a404ffb7ffce7021006db7660bdb6dde]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/034adb17a404ffb7ffce7021006db7660bdb6dde]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:48:51</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/034adb17a404ffb7ffce7021006db7660bdb6dde]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Strip HTML from notifications, closes </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

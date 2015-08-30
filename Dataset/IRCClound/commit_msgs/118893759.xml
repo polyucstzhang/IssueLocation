@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893759</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b2c71b847dfd6a2a5d4fb1b34ccabe4ba39a224e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b2c71b847dfd6a2a5d4fb1b34ccabe4ba39a224e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:50:36</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b2c71b847dfd6a2a5d4fb1b34ccabe4ba39a224e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Better formatting of join &gt; quit &gt; nickchange collapsed events
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

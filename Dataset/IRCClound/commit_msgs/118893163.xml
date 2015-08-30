@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893163</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/d4b2fa0950a73b97784be80cefc11280b4f629e2]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/d4b2fa0950a73b97784be80cefc11280b4f629e2]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:33:57</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/d4b2fa0950a73b97784be80cefc11280b4f629e2]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix pastebin editor on tablets
+    </title><numbercommit>
+      6 changed files
+    </numbercommit><source_file><item><name>
+              res/layout/activity_pastebineditor.xml
+            </name></item><item><name>
+              res/values-v11/styles.xml
+            </name></item><item><name>
+              res/values-v21/styles.xml
+            </name></item><item><name>
+              res/values/styles.xml
+            </name></item><item><name>
+              src/com/irccloud/android/activity/PastebinEditorActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

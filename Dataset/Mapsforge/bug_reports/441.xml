@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118828846</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/441]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/441]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:45:9</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/441]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#441</id><title>ftp.mapsforge.org is outdated</title><description>
+
+    
+      
+          From DirkWind...@gmail.com on July 22, 2013 08:11:11
+
+Hello,
+
+the most files (maybe all) on ftp.mapsforge.org are strongly outdated. For example Germany is generated at the 4th February 2013. 
+
+I found no information, that the automatic update will be stopped, so I expect a little bit newer files there, or are I'm completley wrong?
+
+I'll apreciate if this could be checked, as I like the generated files very much!
+
+Thanks in advance,
+DW
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=441
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From LudwigBr...@gmail.com on January 18, 2014 02:30:02
+
+Issue 467 has been merged into this issue.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on January 25, 2014 04:34:54
+
+The data available at ftp.mapsforge.org (and download.mapsforge.org) are hosted by Freie Universität Berlin (FUB). This was totally fine when Thilo and I were studying/employed at the FUB. But since I graduated last year there is no one left at the FUB who is actively involved in the mapsforge project. A few days agao, Thilo and I had a private discussion about the future of the ftp.mapsforge.org service: we came to the conclusion that we have to shut it down in the near future. However, we are aware that such a service is essential, so we hope that the community can manage to setup something similar. There will be a separate mail on the mailing list discussing this topic.
+
+Status: Started
+  Owner: jjbross@gmail.com  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From s.luksc...@googlemail.com on March 12, 2014 03:47:11
+
+Before shutting it down, is it possible to get some information from you to perhaps continue your work?
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 6:02 PM GMT+8</createtime><closetime>Nov 6, 2014, 6:03 PM GMT+8</closetime></item></BR></extraction>

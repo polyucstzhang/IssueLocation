@@ -1,0 +1,24 @@
+<extraction><id>#59</id><title>Suggest a name for Waypoint from OSM</title><description> Google is OK as a basemap, but OSM gives you a lot more in terms of underlying data.
+There are a number of reverse geocoding APIs and query tools that could recommend a name for your current location.
+Examples of useful results might include favourite eating spots, or bus stops, train stations,  etc.An alternative would be lookup by name (place auto complete).</description><comments>The original intention upon creating waypoints was that *you* specify a name (e.g. "my favorite restaurant", "met with XXX here").
+
+I personally don't think waypoint-naming suggestions are a good idea. I certainly agree for home addresses or places with personal context, but
+for someone like myself I have invested a lot of effort in naming, mapping
+etc points of interest (businesses, train stations, etc) via OSM; I can use
+this data in other applications. IE skobbler (gps nav solution by telenav),
+vespucchi or any of the wide range of other OSM tools on mobile or the Web.
+
+To re-enter labels from scratch adds a maintenance overhead, and you don't
+have the option of knowing 'more' about the waypoint you are at - ie if
+it's a restaurant for example.
+You can do this with a service consuming the mqtt and guessing what is at
+the coordinates, but that falls down a bit if you introduce a Z axis - are
+you at work, or the coffee shop downstairs?
+With owntracks you can tag a waypoint and potentially interact with a user
+to disambiguate, publishing the exact waypoint similar to a foursquare
+check in.... But on open data. If you already have the data, you may be interested to know that OwnTracks for Android will allow importing waypoints from JSON. It will be made available "when it's ready". :-) Yes. But "when it's ready" momentarily moved out to end of the year as I'm involved in a software project at work that has priority (@jpmens You could create a Twitter broadcast if anyone is willling to assist me in Android development).
+Theoretically the waypoint could resolve the current location's geocoder and suggest that as a name. I wouldn't go as far as to also pull in OSM. One weird library is enough IMHO.  That sounds rather helpful! I'd be willing to dabble, or post an elance job to get this sort of thing
+in.
+
+Right now I'm looking at Owntracks a bit for work (people/fleet tracking
+kinda thing) as well as personal use; so more than happy to contribute. For import, add a new _type=config after https://github.com/owntracks/android/blob/master/src/main/java/st/alr/mqttitude/services/ServiceBroker.java#L737 and pass it to https://github.com/owntracks/android/blob/master/src/main/java/st/alr/mqttitude/support/Preferences.java#L126 Waypoint import is lacking from this though.  No osm for now. New version will have Geocoder resolved addresses from lat/lon inputs. </comments></extraction>

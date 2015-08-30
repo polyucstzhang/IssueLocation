@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893292</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/ecb36b243c44234d90cf3849b6467442704d703d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/ecb36b243c44234d90cf3849b6467442704d703d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:36:22</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/ecb36b243c44234d90cf3849b6467442704d703d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a crash
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/LoginActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/ShareChooserActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/UploadsActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/fragment/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

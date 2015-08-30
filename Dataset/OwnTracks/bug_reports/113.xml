@@ -1,0 +1,21 @@
+<extraction><id>#113</id><title>Cloud storage for Owntracks</title><description> Hello there,I would like to introduce you to Cozy, a free and open source Personal Cloud solution. Basically Cozy is a platform that allows the users to deploy his web apps and his data on his own hardware. He can sync his devices too. All that, without compromising his privacy. One of our users suggests that it might be good to build bridges between Owntracks and Cozy. So, I would like to know if you might be interested in allowing the backup of Owntracks data in Cozy.  What do you think about it?Website: http://cozy.io</description><comments>You are going to have to elaborate what you want us to do. Also, what does this have to do with MQTT? :-) Ok, sorry I didn't read well the Owntracks documentation. So, if we add a MQTT broker to Cozy, or a MQTT client that listens to all data published by Owntracks on a given broker, that could be enough to store data. Is that right?The purpose is to store data in Cozy and allow other Cozy apps to reuse that data. Here is an app I built that could take advantage of it: http://frankrousseau.github.io/kyou/ @jomens Please move to owntracks/owntracks issues and close this. Not
+Android related.
+
+On 06 Mar 2015, at 10:50, Frank Rousseau &lt;notifications@github.com&gt; wrote:
+
+Ok, sorry I didn't read well the Owntracks documentation.
+
+So, if we add a MQTT broker to Cozy, or a MQTT client that listens to all
+data published by Owntracks on a given broker, that could be enough to
+store data. Is that right?
+
+The purpose is to store data in Cozy and allow other Cozy apps to reuse
+that data. Here is an app I built that could take advantage of it:
+http://frankrousseau.github.io/kyou/
+
+ 
+Reply to this email directly or view it on GitHub
+&lt;https://github.com/owntracks/android/issues/113#issuecomment-77533065&gt;. @frankrousseau Due to the nature of OwnTracks (own your data), we are not interested in this. If people do it themselves, that's their issue. Thanks anyway.@binarybucks Sorry: didn't notice. #ETOOMANYREPOS ;-) @frankrousseau you're of course free to run your own broker or o2s instance that stores location data on Cozy. You can allready do this with the current code. 
+If you're after building the functionality into the apps themselves, that's probably not going to happen.  @binarybucks Hello @binarybucks. Sorry for chosing the wrong project and if my tone seems rude. My primary goal was to say hi and see if we could build easily bridges between our projects (like we did with DAVDroid and Remote Storage). 
+What makes Cozy interesting is that you can fetch data from it to add unexpected features to your app. For your users it's good to store their data in a Cozy, because they will be able to reuse them in anoher context. For us, it will be a new source of data, which is great.@jpmens Sorry, I didn't explain well what Cozy is about. The goal is to give back their data to users. To achieve that we provide them with a FOSS platform. It allows them to store their data on their own hardware. 
+Once users are empowered with their data, app developers can imagine new services around it because they can cross all users data. That's why our community member suggested we talk each other. @binarybucks Thank you for confirming that Cozy can act as broker to store location data. I don't know of it can tbh but you're free to run your own of course ;) @frankrousseau Feel free to open this as a new issue with details at https://github.com/owntracks/owntracks/ so that we can discuss there.</comments></extraction>

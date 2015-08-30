@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894164</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/4d5d535875d8b5293cfd27f829305fd69289fa9e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/4d5d535875d8b5293cfd27f829305fd69289fa9e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:5:39</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/4d5d535875d8b5293cfd27f829305fd69289fa9e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Upgrade to the new GCM library built-into Google Play Services
+    </title><numbercommit>
+      11 changed files
+    </numbercommit><source_file><item><name>
+              AndroidManifest.xml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              irccloud-android.iml
+            </name></item><item><name>
+              libs/dashclock-api-r1.1.jar
+            </name></item><item><name>
+              libs/gcm.jar
+            </name></item><item><name>
+              src/com/irccloud/android/BaseActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/GCMBroadcastReceiver.java
+            </name></item><item><name>
+              src/com/irccloud/android/GCMIntentService.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

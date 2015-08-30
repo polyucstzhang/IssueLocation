@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118882012</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/17b447e06f24aa246c4682ea44f191028320b5b6]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/17b447e06f24aa246c4682ea44f191028320b5b6]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:33:20</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/17b447e06f24aa246c4682ea44f191028320b5b6]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixes </title><numberfile>
+      5 changed files
+    </numberfile><source_file><item><name>
+              res/layout/preferences_broker.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item></source_file></item></commit></extraction>

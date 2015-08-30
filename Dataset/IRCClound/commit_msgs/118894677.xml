@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894677</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b3d21870942381137aa21b9dddb6d0e4d6f5062e]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b3d21870942381137aa21b9dddb6d0e4d6f5062e]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:22:20</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b3d21870942381137aa21b9dddb6d0e4d6f5062e]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Animated transition when switching between buffers so the UI thread i…
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/androidnative/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/androidnative/UsersListFragment.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

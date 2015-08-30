@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894602</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/e8c4371673fb6b2cd2d2675c2ff75ea6534cdf00]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/e8c4371673fb6b2cd2d2675c2ff75ea6534cdf00]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:20:46</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/e8c4371673fb6b2cd2d2675c2ff75ea6534cdf00]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      owners, admins, and half-ops, oh my\!
+    </title><numbercommit>
+      14 changed files
+    </numbercommit><source_file><item><name>
+              res/color/heading_halfop.xml
+            </name></item><item><name>
+              res/color/heading_owner.xml
+            </name></item><item><name>
+              res/drawable/row_admins_bg.xml
+            </name></item><item><name>
+              res/drawable/row_halfops_bg.xml
+            </name></item><item><name>
+              res/drawable/row_operator_bg.xml
+            </name></item><item><name>
+              res/drawable/row_owners_bg.xml
+            </name></item><item><name>
+              res/drawable/row_voiced_bg.xml
+            </name></item><item><name>
+              res/values/colors.xml
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/CollapsedEventsList.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/UsersListFragment.java
+            </name></item><item><name>
+              tests/src/com/irccloud/android/test/CollapsedEventsTests.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

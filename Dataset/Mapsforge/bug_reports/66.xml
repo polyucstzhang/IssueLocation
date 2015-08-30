@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118832251</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/66]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/66]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:56:23</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/66]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#66</id><title>White/blank Map-Tiles</title><description>
+
+    
+      
+          From andregoe...@gmx.de on January 12, 2011 16:27:34
+
+What steps will reproduce the problem? 1. download osm-xml-file from http://www.openstreetmap.org 's export Page
+2. use osmosis with mapfilewriter with/without bbox and map-start-position
+3. copy map file to emulated sdcard
+4. load mymap.map in own APK or in AdvancedMapViewer What is the expected output? What do you see instead? A Mapview from Univerity Dortmund is expected. MapTiles are only blank/white. What version of the product are you using? On what operating system? From Download-Page: mapfilewriter 0.2.0, mapsforge 0.2.0
+OS: Debian Linux to create Mapfile with Osmosis, Win XP for use Mapfile in Android Emulator Please provide any additional information below. MapView.hasValidMapFile() returns true
+MapView.getMapCenter() returns GPS-Coordinates in right area
+
+Attachment: tudortmund.osm dortmund.map
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=66
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From jjbross@gmail.com on January 12, 2011 10:25:21
+
+Thanks for reporting this issue.
+
+The provided dortmund.map also produces blank tiles on my device and the log shows error messages such as 'invalid current block pointer: 0'.
+
+However, when building the map from the provided tudortmund.osm on my own with mapfile-writer 0.2.0 from the download section, I cannot reproduce the problem. The created map file (attached to this comment) renders perfectly on my device.
+
+Which values did you provide for bbox and for map-start-position? Does the provided dortmund_issue66_c2.map render correctly your emulator?
+
+Attachment: dortmund_issue66_c2.map
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on January 19, 2011 10:26:38
+
+We could reproduce your original problem today during a debug session. Binary map files with included debug information were not handled correctly. But as these debug data is only an internally used feature for testing and developing, this should not be a big problem for other people. Note that by the default the mapfile writer does not write these additional debug information. You should not use it on unless you really know what you are doing.
+
+Anyway, the issue will be fixed in the next mapsforge release (currently planed for February 2011). Thank you again for reporting!
+
+Status: Started  
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:32 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:32 PM GMT+8</closetime></item></BR></extraction>

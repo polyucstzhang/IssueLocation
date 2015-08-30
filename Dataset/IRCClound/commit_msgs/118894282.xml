@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894282</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/4dd3ee09b72ac8e7a8d372b6df5d73bcdcc4aaae]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/4dd3ee09b72ac8e7a8d372b6df5d73bcdcc4aaae]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:9:56</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/4dd3ee09b72ac8e7a8d372b6df5d73bcdcc4aaae]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Add a preference to unregister / register for GCM
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/MessageActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/PreferencesActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

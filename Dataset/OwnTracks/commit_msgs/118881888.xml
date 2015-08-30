@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881888</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/e797a8088db5ceeb22c0aa5b34fe58572ebf3909]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/e797a8088db5ceeb22c0aa5b34fe58572ebf3909]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:29:5</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/e797a8088db5ceeb22c0aa5b34fe58572ebf3909]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Fixed not working geofence leave events, refactored geofence setup
+    </title><numberfile>
+      4 changed files
+    </numberfile><source_file><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceApplication.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceLocator.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Events.java
+            </name></item></source_file></item></commit></extraction>

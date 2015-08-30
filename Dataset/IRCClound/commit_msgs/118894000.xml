@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894000</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/e31dcccc61f79582964e7fc63cab22d9456209c5]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/e31dcccc61f79582964e7fc63cab22d9456209c5]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:59:36</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/e31dcccc61f79582964e7fc63cab22d9456209c5]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Remove the old Config.java and replace it with Gradle properties file…
+    </title><numbercommit>
+      5 changed files
+    </numbercommit><source_file><item><name>
+              .idea/gradle.xml
+            </name></item><item><name>
+              build.gradle
+            </name></item><item><name>
+              src/com/irccloud/android/Config.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/MessageActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

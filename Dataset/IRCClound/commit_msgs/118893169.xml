@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893169</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/1b407133d79e1e931de74c28baa398ba51cc5397]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/1b407133d79e1e931de74c28baa398ba51cc5397]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:34:12</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/1b407133d79e1e931de74c28baa398ba51cc5397]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Fix a few crashes
+    </title><numbercommit>
+      3 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/activity/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/activity/UploadsActivity.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

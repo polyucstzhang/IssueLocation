@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118894923</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/f29662463221c70f5467b8117b4c9662389b4438]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/f29662463221c70f5467b8117b4c9662389b4438]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 18:28:56</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/f29662463221c70f5467b8117b4c9662389b4438]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Support for requesting additional backlog, automatically request more…
+    </title><numbercommit>
+      7 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/BuffersDataSource.java
+            </name></item><item><name>
+              src/com/irccloud/android/BuffersListFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/DBHelper.java
+            </name></item><item><name>
+              src/com/irccloud/android/MainActivity.java
+            </name></item><item><name>
+              src/com/irccloud/android/MessageViewFragment.java
+            </name></item><item><name>
+              src/com/irccloud/android/NetworkConnection.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

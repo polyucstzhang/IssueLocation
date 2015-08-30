@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831545</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/155]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/155]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:53:25</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/155]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#155</id><title>Position of zoom controls should be configurable</title><description>
+
+    
+      
+          From muc...@gmail.com on July 15, 2011 10:01:09
+
+When using Google zoom button are on the middle and when using OSM zoom button are on right. And there is no external control of them when they could be.
+
+Eather to make public methos to set Gravity or make field protected not private.
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=155
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From muc...@gmail.com on July 16, 2011 00:06:12
+
+I'll try to look into it and made a pach. And look into my code what makes google center the zoom levels. I adopted an application and I still go trough code.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on August 16, 2011 11:53:57
+
+Thank you for your patch. I will take a look at it as soon as possible.
+
+Status: Started
+  Owner: thilo.mu...@gmail.com  
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From gautier....@gmail.com on October 09, 2012 06:17:13
+
+Hmm : stupid question from a beginner : how to use this new functoin??
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:39 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:39 PM GMT+8</closetime></item></BR></extraction>

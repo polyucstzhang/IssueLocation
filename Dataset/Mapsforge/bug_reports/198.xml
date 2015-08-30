@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118831035</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/198]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/198]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:52:12</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/198]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#198</id><title>TileCache is very slow</title><description>
+
+    
+      
+          From steffen....@gmail.com on October 28, 2011 12:19:58
+
+When the TileCache is used a lot, many tiny files are generated. This slows down the loading a lot.
+Possible solutions: Use a hierarchy of directories so that a directory only contains around 100-1000 files. Use Pack them all together in large files.
+
+When I have time I will look into this myself sometime.
+
+Attachment: Bildschirmfoto am 2011-10-28 12:13:33.png
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=198
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From steffen....@gmail.com on October 31, 2011 12:23:06
+
+The numbers are from a Huawei Ideos X3 (600mhz, 265MB RAM) using a 8GB Class 2 MicroSD.
+I'm from a university project developing our own route planing service. Map rendering became very slow i.e. start up time was very bad. Deleting the cache solved the problem.
+
+I will try to replicate the problem and get better numbers as soon as I have time.
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From thilo.mu...@gmail.com on December 18, 2011 14:43:55
+
+Regarding your request for a new release, please read my comment here: https://code.google.com/p/mapsforge/issues/detail?id=214#c3 I am closing this issue now on request of the original reporter, assuming that the problem is fixed.
+
+Status: Fixed  
+      
+    
+
+  </contents></item></comments><createtime>Nov 6, 2014, 5:43 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:43 PM GMT+8</closetime></item></BR></extraction>

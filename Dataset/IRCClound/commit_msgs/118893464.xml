@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893464</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/b8dd204a5c99cbff32852c085ab745f92784ce6d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/b8dd204a5c99cbff32852c085ab745f92784ce6d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:39:35</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/b8dd204a5c99cbff32852c085ab745f92784ce6d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      send Android Wear replies via POST instead of waiting for a websocket…
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/RemoteInputService.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

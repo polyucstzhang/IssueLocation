@@ -1,0 +1,28 @@
+<extraction><id>#131</id><title>0.5.09 over 330 kms</title><description> I note:Not sure this is helpful for you, but you may find the odd tidbit in today's log: </description><comments>Re lwt: what keepalive value is set?
+Re no updates: I'm slowly convinced that you cannot do reliable location
+reporting with the train wreck of Play Services location API. Try rebooting
+the device, I'm quite certain that it will work again afterwards. Keepalive = default (empty, i.e. 3600) BTW the connection prefs page says Paremeters (typo :-) Switching phone on to look at keepalive pubilshed a message (at $HOME), but no event. A recent messages or a queued one? If it's a recent one, the lib is really
+broken as the Geofences are generally independent from the normal location
+request for reports (even less influence). Recent: tst=1426872967 Fri Mar 20 18:36:07 2015 In this case
+1. Kill you device with fire a reboot
+2. Go to https://code.google.com/p/android/issues/detail?id=57707 and report with your Play Services version that the issue is NOT obsoleteRegarding lwts, I've no idea why the broker considers the connection as terminated even though less than the keepalive interval passed (e.g. between the publish at 1426857488 and the following lwt at 1426857035 we have 453 seconds passed which is &lt;&lt; than 3600). 
+On the Android side the OS could close the TCP connection when a cell handover appears (7 minutes at 120 km/h is around 14 km which is an entirely possible GSM cell size), but then the broker wouldn't only notice it after 3600 seconds unless the app sends a clean disconnect (which it can't when a handover appears). Any ideas? I'll ask ralight if there are any known defects with longer keepalive values.    I dug a bit in the 3.1.1 spec. Max keepalive us 16bit so 3600 s fits is
+valid. The broker expects activity or PINGREQs in 1.5xkeepalive after which
+it may terminate the connection. The app sends pings every keepalive
+seconds so this should also be fine. However the spec says that  "a Server
+is permitted to disconnect a Client that it determines to be inactive or
+non-responsive at any time, regardless of the Keep Alive value provided by
+that Client.".
+I would guess that this is the case. Can you try with a smaller keepalive?
+This will use more battery but maybe it convinces the broker that we're
+still around.
+--
+Alexander Rust
+
+On 20 Mar 2015, at 18:45, JP Mens &lt;notifications@github.com&gt; wrote:
+
+Recent: tst=1426872967 Fri Mar 20 18:36:07 2015
+
+ 
+Reply to this email directly or view it on GitHub
+&lt;https://github.com/owntracks/android/issues/131#issuecomment-84086283&gt;. Bad news: I enter keepalive (e.g. 300), but that value isn't saved. When I tap on Parameters again, field is empty with default of 3600 behind it. I see from the last import I did that keepalive was 60.I have imported a new config with keepalive=360 and have verified that the broker sees that (even though Parameters doesn't display it) Keepalive setting now works in 0.5.10, thanks.</comments></extraction>

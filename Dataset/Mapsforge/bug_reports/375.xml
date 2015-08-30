@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118829581</clueid><fullpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/375]]></fullpath><realpath><![CDATA[https://github.com/mapsforge/mapsforge/issues/375]]></realpath><theme>mapsforgex_item</theme><middle>default</middle><createdate>2015-8-23 17:47:15</createdate><baseURI><bucketBaseURI><bucketName>BR</bucketName><uri><![CDATA[https://github.com/mapsforge/mapsforge/issues/375]]></uri></bucketBaseURI></baseURI>
+<BR><item><id>#375</id><title>Support resolution-dependent images in render-themes</title><description>
+
+    
+      
+          From LudwigBr...@gmail.com on November 21, 2012 13:22:19
+
+The size of the icons provided in the AMV is too small for high dpi screens, they become pretty much unreadable.
+
+Selecting an appropriate icon size for a display needs a new approach, best integrated with the standard Android way of selecting the right drawables from resources. 
+
+I am currently not familiar how this could be achieved within the current rendertheme context, but I am willing to look into it. Does anyone have suggestions on how to do this?
+
+However, the first step would be to produce higher res icons.
+
+Is my impression right that the icons come from the OSM osmarender theme? http://svn.openstreetmap.org/applications/rendering/osmarender/stylesheets/symbols/
+
+Original issue: http://code.google.com/p/mapsforge/issues/detail?id=375
+      
+    
+
+  </description><comments><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on November 25, 2012 08:21:30
+
+"As the render-theme is supposed to be an Android-independent maven artifact, we might need to come up with some sort of interface for resource-providers which serves as an Adapter to the Android resource mechanism."
+
+I think that osmdroid project has implemented such a mechanism, you can have a look at its classes of the 'library': https://code.google.com/p/osmdroid/source/browse/trunk/osmdroid-android/src/main/java/org/osmdroid/ResourceProxy.java https://code.google.com/p/osmdroid/source/browse/trunk/osmdroid-android/src/main/java/org/osmdroid/DefaultResourceProxyImpl.java And the extended class of an 'application' using them: https://code.google.com/p/osmdroid/source/browse/trunk/OpenStreetMapViewer/src/org/osmdroid/ResourceProxyImpl.java
+      
+    
+
+  </contents></item><item><commenter>mapsforge</commenter><contents>
+
+    
+      
+          From devemu...@gmail.com on April 16, 2013 06:20:18
+
+Besides images, it would be nice for the labels to scale automatically depending on the screen dpi (regardless that there is the setTextScale method to do it manual).
+      
+    
+
+  </contents></item><item><commenter/><contents/></item></comments><createtime>Nov 6, 2014, 5:58 PM GMT+8</createtime><closetime>Nov 6, 2014, 5:58 PM GMT+8</closetime></item></BR></extraction>

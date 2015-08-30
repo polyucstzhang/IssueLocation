@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893539</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/baf0559d2546ae3b92c87ca24270bb029ee78b8b]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/baf0559d2546ae3b92c87ca24270bb029ee78b8b]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:42:22</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/baf0559d2546ae3b92c87ca24270bb029ee78b8b]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Adjust the margin on the Android 5 expanded notification layout, twea…
+    </title><numbercommit>
+      4 changed files
+    </numbercommit><source_file><item><name>
+              res/drawable-xhdpi/actionbar.9.png
+            </name></item><item><name>
+              res/layout-v21/notification_expanded.xml
+            </name></item><item><name>
+              src/com/irccloud/android/Notifications.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

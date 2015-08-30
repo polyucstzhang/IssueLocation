@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881997</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/e4fd75bd9b5a61d8fa111281dacb8a52b433226f]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/e4fd75bd9b5a61d8fa111281dacb8a52b433226f]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:32:25</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/e4fd75bd9b5a61d8fa111281dacb8a52b433226f]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      refactored preferences to make adding and removing required values ea…
+    </title><numberfile>
+      21 changed files
+    </numberfile><source_file><item><name>
+              bin/R.txt
+            </name></item><item><name>
+              bin/classes.dex
+            </name></item><item><name>
+              bin/mqttitude.apk
+            </name></item><item><name>
+              bin/resources.ap_
+            </name></item><item><name>
+              gen/st/alr/mqttitude/R.java
+            </name></item><item><name>
+              libs/google-play-services-libproject/google-play-services_lib/bin/jarlist.cache
+            </name></item><item><name>
+              res/layout/friend_list_item.xml
+            </name></item><item><name>
+              res/layout/preferences_broker.xml
+            </name></item><item><name>
+              res/menu/activity_main.xml
+            </name></item><item><name>
+              res/values/strings.xml
+            </name></item><item><name>
+              res/xml/preferences.xml
+            </name></item><item><name>
+              src/st/alr/mqttitude/ActivityMain.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/App.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/ActivityPreferences.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/preferences/PreferencesBroker.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/services/ServiceMqtt.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Friend.java → src/st/alr/mqttitude/support/Contact.java
+            </name></item><item><name>
+              ...r/mqttitude/support/FriendMapAdapter.java → ...alr/mqttitude/support/ContactAdapter.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Defaults.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/Events.java
+            </name></item><item><name>
+              src/st/alr/mqttitude/support/MapAdapter.java
+            </name></item></source_file></item></commit></extraction>

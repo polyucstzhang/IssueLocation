@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118893484</clueid><fullpath><![CDATA[https://github.com/irccloud/android/commit/edb7cd5282681d4f0e8cce7694857a90348a800d]]></fullpath><realpath><![CDATA[https://github.com/irccloud/android/commit/edb7cd5282681d4f0e8cce7694857a90348a800d]]></realpath><theme>irccloudCommit_item</theme><middle>default</middle><createdate>2015-8-24 17:40:20</createdate><baseURI><bucketBaseURI><bucketName>Commit</bucketName><uri><![CDATA[https://github.com/irccloud/android/commit/edb7cd5282681d4f0e8cce7694857a90348a800d]]></uri></bucketBaseURI></baseURI>
+<Commit><item><title>
+      Rewrite Http to http so Android can launch the URLs
+    </title><numbercommit>
+      2 changed files
+    </numbercommit><source_file><item><name>
+              src/com/irccloud/android/ColorFormatter.java
+            </name></item><item><name/></item></source_file></item></Commit></extraction>

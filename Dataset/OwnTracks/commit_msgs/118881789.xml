@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><extraction><clueid>118881789</clueid><fullpath><![CDATA[https://github.com/owntracks/android/commit/f218aa8be0d7c3de0bc2e2dfcecbfcabadb1c4c2]]></fullpath><realpath><![CDATA[https://github.com/owntracks/android/commit/f218aa8be0d7c3de0bc2e2dfcecbfcabadb1c4c2]]></realpath><theme>owntracksCommit_item</theme><middle>default</middle><createdate>2015-8-24 14:24:49</createdate><baseURI><bucketBaseURI><bucketName>commit</bucketName><uri><![CDATA[https://github.com/owntracks/android/commit/f218aa8be0d7c3de0bc2e2dfcecbfcabadb1c4c2]]></uri></bucketBaseURI></baseURI>
+<commit><item><title>
+      Permit minus sign
+    </title><numberfile>
+      1 changed file
+    </numberfile><source_file><item><name>
+              src/main/res/layout/fragment_waypoint.xml
+            </name></item></source_file></item></commit></extraction>
